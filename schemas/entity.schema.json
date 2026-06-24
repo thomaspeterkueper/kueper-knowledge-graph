@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KUEPER Knowledge Graph Entity",
+  "type": "object",
+  "required": ["entity_id", "typ", "name", "domäne", "status", "beschreibung", "erstellt", "kurator"],
+  "properties": {
+    "entity_id": { "type": "string" },
+    "typ": { "enum": ["Concept", "Person", "Place", "Technology", "Event", "Organization", "Document", "Universe", "LearningModule"] },
+    "name": { "type": "string" },
+    "name_en": { "type": "string" },
+    "domäne": { "type": "string" },
+    "status": { "enum": ["[R]", "[T]", "[H]", "[S]", "[F]", "[I]", "[OFFEN]"] },
+    "is_instance": { "type": "boolean" },
+    "instance_of": { "type": "string" },
+    "foundation_node": { "type": "boolean" },
+    "bridge_node_candidate": { "type": "boolean" },
+    "schichten": { "type": "array", "items": { "enum": ["KUEPER", "SSF", "OTA", "NOXIA", "SOURCE"] } },
+    "beschreibung": { "type": "string" },
+    "erster_nachweis": { "type": "string" },
+    "erstellt": { "type": "string" },
+    "kurator": { "type": "string" }
+  }
+}
