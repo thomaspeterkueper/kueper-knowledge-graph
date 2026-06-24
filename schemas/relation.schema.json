@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KUEPER Knowledge Graph Relation",
+  "type": "object",
+  "required": ["relation_id", "quelle", "relation", "ziel", "status", "erstellt", "kurator"],
+  "properties": {
+    "relation_id": { "type": "string" },
+    "quelle": { "type": "string" },
+    "relation": { "type": "string" },
+    "ziel": { "type": "string" },
+    "status": { "enum": ["[R]", "[T]", "[H]", "[S]", "[F]", "[I]", "[OFFEN]"] },
+    "kommentar": { "type": "string" },
+    "erstellt": { "type": "string" },
+    "kurator": { "type": "string" }
+  }
+}
