@@ -1,0 +1,9 @@
+building_id: BLD:NOX:wasseraufbereitung-1
+name: Wasseraufbereitung I
+category: life_support
+requires:
+  - UNL:NOX:water-processing
+effects:
+  - water_supply
+created: '2026-06-25'
+curator: T.P.K.
