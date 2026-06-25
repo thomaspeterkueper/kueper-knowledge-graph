@@ -1,0 +1,12 @@
+module_id: LRN:SSF:BIO-1201
+name: Photosynthese Grundlagen
+domain: BIO
+status: '[R]'
+requires:
+  - LRN:SSF:BIO-1101
+teaches:
+  - CON:L1:photosynthese
+unlocks:
+  - UNL:NOX:greenhouse-systems
+created: '2026-06-25'
+curator: T.P.K.
