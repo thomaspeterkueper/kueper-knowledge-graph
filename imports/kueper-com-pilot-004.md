@@ -12,6 +12,20 @@ Repository: `thomaspeterkueper/kueper.com`
 
 Astro Content Collection: `kue`
 
+Bestätigte Pfadregel:
+
+```text
+src/content/kue/[kategorie]/[datei].md
+```
+
+Beispiele:
+
+```text
+src/content/kue/phi/kue-phi-0001-2026-de.md
+src/content/kue/sci/kue-sci-0001-2026-de.md
+src/content/kue/lsc/kue-lsc-XXXX-2026-de.md
+```
+
 Schema laut `src/content/config.ts`:
 
 ```ts
@@ -44,6 +58,13 @@ Nicht alle Dokumente importieren. Zuerst ein KUE-Basiscluster mit 10–20 Dokume
 5. MAT/MET — Mathematik und Methodik, soweit im Bestand vorhanden
 6. OBS — reale Beobachtungsnotizen als [R]-Anker
 
+## Bereits bestätigte Pilotdokumente
+
+| Signatur | Pfad | Rolle im Graph |
+|---|---|---|
+| KUE-PHI-0001-2026-DE | `src/content/kue/phi/kue-phi-0001-2026-de.md` | Interpretation/Motivation des AVI-Modells |
+| KUE-SCI-0001-2026-DE | `src/content/kue/sci/kue-sci-0001-2026-de.md` | Theorie-/Definitionsdokument des AVI-Modells |
+
 ## Extraktionsformat
 
 Für jedes KUE-Dokument entsteht ein DOC-Knoten:
@@ -65,6 +86,8 @@ Dazu Relationen:
 
 ```text
 DOC:KUE:<signatur> describes CON:<domain>:<concept>
+DOC:KUE:<signatur> defines CON:<domain>:<concept>
+DOC:KUE:<signatur> interprets CON:<domain>:<concept>
 DOC:KUE:<signatur> references DOC:KUE:<andere-signatur>
 DOC:KUE:<signatur> anchors CON:<domain>:<foundation-node>
 ```
@@ -82,8 +105,16 @@ DOC:KUE:<signatur> anchors CON:<domain>:<foundation-node>
 - CON:AST:habitable-zone
 - CON:PHY:strahlung
 
+## Neue Beziehungstyp-Kandidaten aus KUE-Pilot
+
+| Typ | Grund | Beispiel |
+|---|---|---|
+| `defines` | Dokument definiert eine Theorie oder Entität formal | KUE-SCI-0001 defines CON:PHY:avi-modell |
+| `interprets` | Dokument deutet oder motiviert eine Entität, ohne sie formal zu definieren | KUE-PHI-0001 interprets CON:PHY:avi-modell |
+| `anchors` | Dokument verankert einen Foundation Node im KUE-Bestand | KUE-SCI-0001 anchors CON:PHY:zeit |
+
 ## Offene technische Notiz
 
-Der GitHub-Connector kann aktuell Dateien abrufen, aber keine Verzeichnisse auflisten, wenn der genaue Pfad unbekannt ist. Sobald die KUE-Dokumentpfade bekannt sind oder ein Dokumentindex vorliegt, kann der Import automatisiert fortgesetzt werden.
+Der GitHub-Connector kann Dateien abrufen, wenn der konkrete Pfad bekannt ist. Die Pfadregel ist nun bestätigt. Für größere Importe wird zusätzlich eine maschinenlesbare Dateiliste oder ein Index empfohlen.
 
 ᐃ
