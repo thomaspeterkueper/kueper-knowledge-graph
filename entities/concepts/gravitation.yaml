@@ -1,0 +1,18 @@
+entity_id: CON:L1:gravitation
+typ: Concept
+layer: L1
+name: Gravitation
+domain: PHY
+status: '[R]'
+definition: Gravitation beschreibt die gegenseitige Anziehung von Massen und Energie.
+derived_from:
+  - CON:L0:raum
+  - CON:L0:zeit
+  - CON:L0:materie
+  - CON:L0:energie
+enables:
+  - CON:L1:orbitalmechanik
+  - CON:L1:planetologie
+  - CON:L1:kosmologie
+created: '2026-06-25'
+curator: T.P.K.
