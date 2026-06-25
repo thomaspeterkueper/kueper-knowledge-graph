@@ -1,0 +1,13 @@
+[
+  {"id":"BLD:NOX:raumhafen-1","name":"Raumhafen I","category":"transport","requires":["UNL:NOX:orbital-navigation"],"effects":["local_trade","ship_operations"]},
+  {"id":"BLD:NOX:frachtkontrolle-1","name":"Frachtkontrolle I","category":"logistics","requires":["UNL:NOX:transfer-routes"],"effects":["route_planning","cargo_management"]},
+  {"id":"BLD:NOX:solarfeld-1","name":"Solarfeld I","category":"energy","requires":["UNL:NOX:power-generation"],"effects":["energy_production"]},
+  {"id":"BLD:NOX:batteriespeicher-1","name":"Batteriespeicher I","category":"energy","requires":["UNL:NOX:solar-grid"],"effects":["energy_storage"]},
+  {"id":"BLD:NOX:wasseraufbereitung-1","name":"Wasseraufbereitung I","category":"life_support","requires":["UNL:NOX:water-processing"],"effects":["water_supply"]},
+  {"id":"BLD:NOX:mars-habitat-1","name":"Mars Habitat I","category":"colony","requires":["UNL:NOX:mars-habitat"],"effects":["population_capacity","life_support"]},
+  {"id":"BLD:NOX:biolabor-1","name":"Biolabor I","category":"science","requires":["UNL:NOX:controlled-biology"],"effects":["biological_research"]},
+  {"id":"BLD:NOX:gewaechshaus-1","name":"Gewaechshaus I","category":"food","requires":["UNL:NOX:greenhouse-systems"],"effects":["food_production"]},
+  {"id":"BLD:NOX:nahrungsproduktion-1","name":"Nahrungsproduktion I","category":"food","requires":["UNL:NOX:greenhouse-systems"],"effects":["colony_food_supply"]},
+  {"id":"BLD:NOX:mine-1","name":"Mine I","category":"extraction","requires":["UNL:NOX:resource-extraction"],"effects":["ore_production"]},
+  {"id":"BLD:NOX:schmelze-1","name":"Schmelze I","category":"industry","requires":["UNL:NOX:smelting"],"effects":["metal_production"]}
+]
