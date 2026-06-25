@@ -1,0 +1,12 @@
+module_id: LRN:SSF:TEC-1101
+name: Werkzeuge und Maschinen
+domain: TEC
+status: '[R]'
+requires:
+  - LRN:SSF:CHE-1301
+teaches:
+  - CON:L1:werkzeuge
+unlocks:
+  - UNL:NOX:industrial-tools
+created: '2026-06-25'
+curator: T.P.K.
