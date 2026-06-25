@@ -1,0 +1,12 @@
+entity_id: CON:L1:evolution
+typ: Concept
+layer: L1
+name: Evolution
+domain: BIO
+status: '[R]'
+derived_from:
+  - CON:L0:leben
+  - CON:L0:veraenderung
+  - CON:L0:information
+created: '2026-06-25'
+curator: T.P.K.
