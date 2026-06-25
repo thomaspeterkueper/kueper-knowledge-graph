@@ -1,0 +1,72 @@
+[
+  {
+    "relation_id": "REL-KUE-P4-0001",
+    "quelle": "DOC:KUE:KUE-PHI-0001-2026-DE",
+    "relation": "interprets",
+    "ziel": "CON:PHY:avi-modell",
+    "status": "[I]",
+    "kommentar": "Das Dokument legt philosophische Motivationen und ontologische Deutung des AVI-Modells offen, ohne Teil der Theorie selbst zu sein. Beziehungstyp interprets ist Kandidat für ARC-0006-Erweiterung.",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL-KUE-P4-0002",
+    "quelle": "DOC:KUE:KUE-SCI-0001-2026-DE",
+    "relation": "defines",
+    "ziel": "CON:PHY:avi-modell",
+    "status": "[T]",
+    "kommentar": "KUE-SCI-0001 definiert AVI als axiomatischen theoretischen Rahmen. Beziehungstyp defines ist Kandidat für ARC-0006-Erweiterung.",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL-KUE-P4-0003",
+    "quelle": "CON:PHY:avi-modell",
+    "relation": "extends",
+    "ziel": "CON:PHY:standardkosmologie-lcdm",
+    "status": "[T]",
+    "kommentar": "AVI wird als alternativer theoretischer Rahmen gegenüber ΛCDM motiviert, ohne ΛCDM vollständig zu ersetzen.",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL-KUE-P4-0004",
+    "quelle": "CON:PHY:phi-a-parameter",
+    "relation": "part_of",
+    "ziel": "CON:PHY:avi-modell",
+    "status": "[T]",
+    "kommentar": "Φ(a) ist zentraler globaler Vakuumzustandsparameter des AVI-Modells.",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL-KUE-P4-0005",
+    "quelle": "CON:PHY:nicht-markovsche-vakuumgeschichte",
+    "relation": "part_of",
+    "ziel": "CON:PHY:avi-modell",
+    "status": "[T]",
+    "kommentar": "AVI postuliert reduzierte Nicht-Markovschheit: Geschichte ist im Zustandsvektor komprimiert anwesend.",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL-KUE-P4-0006",
+    "quelle": "CON:PHY:vakuumzustand",
+    "relation": "part_of",
+    "ziel": "CON:PHY:avi-modell",
+    "status": "[T]",
+    "kommentar": "Das Vakuum wird im AVI-Modell als Zustand statt als bloßer Parameter behandelt.",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL-KUE-P4-0007",
+    "quelle": "DOC:KUE:KUE-PHI-0001-2026-DE",
+    "relation": "references",
+    "ziel": "DOC:KUE:KUE-SCI-0001-2026-DE",
+    "status": "[I]",
+    "kommentar": "PHI-0001 reflektiert Motivationen des in SCI-0001 formalisierten AVI-Modells.",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  }
+]
