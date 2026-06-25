@@ -1,0 +1,28 @@
+entity_id: CON:L0:energie
+typ: Concept
+layer: L0
+name: Energie
+name_en: Energy
+domain: PHY
+status: '[R]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Energie beschreibt die Faehigkeit eines Systems, Veraenderungen hervorzubringen.
+function: >
+  Energie verbindet Physik, Technik, Biologie und Raumfahrt.
+relations:
+  - relation: enables
+    target: CON:L0:veraenderung
+  - relation: enables
+    target: CON:L1:bewegung
+  - relation: enables
+    target: CON:L0:leben
+created: '2026-06-25'
+curator: T.P.K.
