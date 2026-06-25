@@ -1,0 +1,29 @@
+entity_id: CON:L0:raum
+typ: Concept
+layer: L0
+name: Raum
+name_en: Space
+domain: MET
+status: '[R]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Raum beschreibt die Beziehungen von Positionen zueinander.
+function: >
+  Raum bildet die Grundlage von Geometrie, Astronomie, Navigation,
+  Kartographie und Architektur.
+relations:
+  - relation: enables
+    target: CON:L1:geometrie
+  - relation: enables
+    target: CON:L1:bewegung
+  - relation: relates_to
+    target: CON:L0:struktur
+created: '2026-06-25'
+curator: T.P.K.
