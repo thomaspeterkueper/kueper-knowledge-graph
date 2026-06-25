@@ -1,0 +1,13 @@
+module_id: LRN:SSF:AST-1201
+name: Mars ist nicht die Erde
+domain: AST
+status: '[R]'
+requires:
+  - LRN:SSF:CHE-1101
+teaches:
+  - CON:L1:atmosphaerenphysik
+  - CON:L1:habitabilitaet
+unlocks:
+  - UNL:NOX:mars-habitat
+created: '2026-06-25'
+curator: T.P.K.
