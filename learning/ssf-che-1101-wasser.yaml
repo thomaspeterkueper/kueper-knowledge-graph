@@ -1,0 +1,12 @@
+module_id: LRN:SSF:CHE-1101
+name: Wasser im Sonnensystem
+domain: CHE
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-1301
+teaches:
+  - CON:L1:wasser
+unlocks:
+  - UNL:NOX:water-processing
+created: '2026-06-25'
+curator: T.P.K.
