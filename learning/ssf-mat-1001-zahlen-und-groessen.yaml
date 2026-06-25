@@ -1,0 +1,20 @@
+module_id: LRN:SSF:MAT-1001
+typ: LearningModule
+layer: L3
+name: Zahlen und Groessen
+domain: MAT
+difficulty: Basis
+status: '[R]'
+duration_minutes: 10
+teaches:
+  - CON:L1:zahlen
+  - CON:L1:einheiten
+requires: []
+unlocks:
+  - UNL:SSF:basic-physics-ready
+learning_goals:
+  - Der Spieler kann einfache Zahlenwerte und Einheiten unterscheiden.
+  - Der Spieler versteht, dass physikalische Aussagen Messgroessen brauchen.
+  - Der Spieler erkennt Groessen wie Strecke, Zeit, Masse und Energie als Spielwerte.
+created: '2026-06-25'
+curator: T.P.K.
