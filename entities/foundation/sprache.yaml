@@ -1,0 +1,28 @@
+entity_id: CON:L0:sprache
+typ: Concept
+layer: L0
+name: Sprache
+name_en: Language
+domain: LNG
+status: '[R]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Sprache ist ein System zur Uebertragung und Strukturierung von Information.
+function: >
+  Sprache ermoeglicht Kommunikation, Kultur, Wissenschaft und Zusammenarbeit.
+relations:
+  - relation: requires
+    target: CON:L0:information
+  - relation: enables
+    target: CON:L1:wissen
+  - relation: enables
+    target: CON:L1:kultur
+created: '2026-06-25'
+curator: T.P.K.
