@@ -1,0 +1,10 @@
+building_id: BLD:NOX:mars-habitat-1
+name: Mars Habitat I
+category: colony
+requires:
+  - UNL:NOX:mars-habitat
+effects:
+  - population_capacity
+  - life_support
+created: '2026-06-25'
+curator: T.P.K.
