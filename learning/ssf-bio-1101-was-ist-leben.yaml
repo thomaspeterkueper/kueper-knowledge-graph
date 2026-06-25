@@ -1,0 +1,12 @@
+module_id: LRN:SSF:BIO-1101
+name: Was ist Leben?
+domain: BIO
+status: '[R]'
+requires:
+  - LRN:SSF:CHE-1101
+teaches:
+  - CON:L1:leben
+unlocks:
+  - UNL:NOX:controlled-biology
+created: '2026-06-25'
+curator: T.P.K.
