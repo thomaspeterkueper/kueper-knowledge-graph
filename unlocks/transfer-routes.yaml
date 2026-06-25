@@ -1,0 +1,8 @@
+unlock_id: UNL:NOX:transfer-routes
+name: Transferrouten
+requires:
+  - LRN:SSF:AST-2101
+unlocks:
+  - BLD:NOX:frachtkontrolle-1
+created: '2026-06-25'
+curator: T.P.K.
