@@ -1,0 +1,14 @@
+module_id: LRN:SSF:PHY-1301
+typ: LearningModule
+layer: L3
+name: Was ist Energie?
+domain: PHY
+status: '[R]'
+requires:
+  - LRN:SSF:MAT-1001
+teaches:
+  - CON:L1:energie
+unlocks:
+  - UNL:NOX:power-generation
+created: '2026-06-25'
+curator: T.P.K.
