@@ -1,0 +1,9 @@
+unlock_id: UNL:NOX:orbital-navigation
+name: Orbitale Navigation
+requires:
+  - LRN:SSF:PHY-1101
+unlocks:
+  - BLD:NOX:raumhafen-1
+description: Grundverstaendnis von Gravitation als Voraussetzung fuer Raumfahrt.
+created: '2026-06-25'
+curator: T.P.K.
