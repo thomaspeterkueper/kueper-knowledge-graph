@@ -1,0 +1,42 @@
+module_id: LRN:SSF:AST-1101
+typ: LearningModule
+layer: L3
+name: Das Sonnensystem als Karte
+status: '[R]'
+domain: AST
+difficulty: Einstieg
+duration_minutes: 12
+source_documents:
+  - DOC:KUE:KUE-AST-0001-2026-DE
+teaches:
+  - CON:L1:planetologie
+  - CON:L1:orbitalmechanik
+touches_l0:
+  - CON:L0:raum
+  - CON:L0:zeit
+  - CON:L0:materie
+  - CON:L0:energie
+requires: []
+unlocks:
+  noxia:
+    - map_layer:solar_system_basic
+    - building_hint:observatory_basic
+    - codex_entry:solar_system
+learning_goals:
+  - Der Spieler versteht, dass das Sonnensystem aus Sonne, Planeten, Zwergplaneten, Monden, Asteroiden und Kometen besteht.
+  - Der Spieler unterscheidet innere Planeten, aeussere Planeten, Asteroidenguertel und transneptunische Objekte.
+  - Der Spieler erkennt Mars und Ceres als fruehe NOXIA-Orte mit unterschiedlicher Ressourcensituation.
+core_explanation: >
+  Das Sonnensystem ist kein leerer Raum mit einzelnen Planeten, sondern eine geordnete Struktur. Innen liegen kleine felsige Planeten. Weiter aussen folgen Asteroidenguertel, Gasriesen, Eisriesen und transneptunische Koerper. Fuer NOXIA bedeutet das: Jede Route, jede Kolonie und jede Ressource haengt davon ab, wo ein Objekt in dieser Struktur liegt.
+exercise:
+  type: multiple_choice
+  question: Warum ist Ceres fuer ein fruehes Raumfahrt- und Handelsspiel interessant?
+  options:
+    - Weil Ceres ein Stern ist.
+    - Weil Ceres im Asteroidenguertel liegt und Ressourcen- sowie Logistikfragen verbindet.
+    - Weil Ceres groesser als Mars ist.
+    - Weil Ceres keine Gravitation hat.
+  correct: 1
+  explanation: Ceres liegt im Asteroidenguertel und verbindet Planetologie, Ressourcen und Transportlogistik.
+created: '2026-06-25'
+curator: T.P.K.
