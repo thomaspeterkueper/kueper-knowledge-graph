@@ -1,0 +1,9 @@
+unlock_id: UNL:NOX:greenhouse-systems
+name: Gewaechshaussysteme
+requires:
+  - LRN:SSF:BIO-1201
+unlocks:
+  - BLD:NOX:gewaechshaus-1
+  - BLD:NOX:nahrungsproduktion-1
+created: '2026-06-25'
+curator: T.P.K.
