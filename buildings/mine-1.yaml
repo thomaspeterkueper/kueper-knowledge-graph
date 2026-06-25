@@ -1,0 +1,9 @@
+building_id: BLD:NOX:mine-1
+name: Mine I
+category: extraction
+requires:
+  - UNL:NOX:resource-extraction
+effects:
+  - ore_production
+created: '2026-06-25'
+curator: T.P.K.
