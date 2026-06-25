@@ -1,0 +1,30 @@
+entity_id: CON:L0:veraenderung
+typ: Concept
+layer: L0
+name: Veraenderung
+name_en: Change
+domain: MET
+status: '[R]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Veraenderung beschreibt den Uebergang eines Systems von einem Zustand in
+  einen anderen.
+function: >
+  Veraenderung bildet die Grundlage von Dynamik, Entwicklung, Lernen und
+  Evolution.
+relations:
+  - relation: requires
+    target: CON:L0:zeit
+  - relation: requires
+    target: CON:L0:energie
+  - relation: enables
+    target: CON:L1:evolution
+created: '2026-06-25'
+curator: T.P.K.
