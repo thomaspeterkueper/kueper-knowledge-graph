@@ -1,0 +1,13 @@
+module_id: LRN:SSF:CHE-1301
+name: Metalle und Rohstoffe
+domain: CHE
+status: '[R]'
+requires:
+  - LRN:SSF:MAT-1201
+teaches:
+  - CON:L1:metalle
+  - CON:L1:rohstoffe
+unlocks:
+  - UNL:NOX:smelting
+created: '2026-06-25'
+curator: T.P.K.
