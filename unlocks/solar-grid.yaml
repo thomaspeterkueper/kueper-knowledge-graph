@@ -1,0 +1,8 @@
+unlock_id: UNL:NOX:solar-grid
+name: Solarnetz
+requires:
+  - LRN:SSF:PHY-1302
+unlocks:
+  - BLD:NOX:batteriespeicher-1
+created: '2026-06-25'
+curator: T.P.K.
