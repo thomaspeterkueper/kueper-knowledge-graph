@@ -1,0 +1,9 @@
+building_id: BLD:NOX:gewaechshaus-1
+name: Gewaechshaus I
+category: food
+requires:
+  - UNL:NOX:greenhouse-systems
+effects:
+  - food_production
+created: '2026-06-25'
+curator: T.P.K.
