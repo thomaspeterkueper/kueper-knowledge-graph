@@ -1,0 +1,16 @@
+module_id: LRN:SSF:PHY-1201
+typ: LearningModule
+layer: L3
+name: Bewegung und Geschwindigkeit
+domain: PHY
+difficulty: Basis
+status: '[R]'
+requires:
+  - LRN:SSF:MAT-1002
+teaches:
+  - CON:L1:bewegung
+  - CON:L1:geschwindigkeit
+unlocks:
+  - UNL:SSF:orbital-ready
+created: '2026-06-25'
+curator: T.P.K.
