@@ -1,0 +1,8 @@
+unlock_id: UNL:NOX:mars-habitat
+name: Mars Habitat
+requires:
+  - LRN:SSF:AST-1201
+unlocks:
+  - BLD:NOX:mars-habitat-1
+created: '2026-06-25'
+curator: T.P.K.
