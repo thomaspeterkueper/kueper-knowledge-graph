@@ -1,0 +1,18 @@
+{
+  "userId": "demo",
+  "completedModules": [
+    "LRN:SSF:MAT-1001",
+    "LRN:SSF:MAT-1002",
+    "LRN:SSF:PHY-1201",
+    "LRN:SSF:PHY-1101"
+  ],
+  "unlocks": [
+    "UNL:SSF:basic-physics-ready",
+    "UNL:SSF:motion-ready",
+    "UNL:SSF:orbital-ready",
+    "UNL:NOX:orbital-navigation"
+  ],
+  "buildings": [
+    "BLD:NOX:raumhafen-1"
+  ]
+}
