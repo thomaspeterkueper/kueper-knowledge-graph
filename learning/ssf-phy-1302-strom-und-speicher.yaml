@@ -1,0 +1,13 @@
+module_id: LRN:SSF:PHY-1302
+name: Strom und Energiespeicher
+domain: PHY
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-1301
+teaches:
+  - CON:L1:elektrizitaet
+  - CON:L1:energiespeicher
+unlocks:
+  - UNL:NOX:solar-grid
+created: '2026-06-25'
+curator: T.P.K.
