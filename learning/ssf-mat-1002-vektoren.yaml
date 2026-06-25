@@ -1,0 +1,15 @@
+module_id: LRN:SSF:MAT-1002
+typ: LearningModule
+layer: L3
+name: Vektoren und Richtung
+domain: MAT
+difficulty: Basis
+status: '[R]'
+requires:
+  - LRN:SSF:MAT-1001
+teaches:
+  - CON:L1:vektoren
+unlocks:
+  - UNL:SSF:motion-ready
+created: '2026-06-25'
+curator: T.P.K.
