@@ -1,0 +1,13 @@
+module_id: LRN:SSF:AST-2101
+name: Orbitalmechanik Grundlagen
+domain: AST
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-1101
+  - LRN:SSF:PHY-1201
+teaches:
+  - CON:L1:orbitalmechanik
+unlocks:
+  - UNL:NOX:transfer-routes
+created: '2026-06-25'
+curator: T.P.K.
