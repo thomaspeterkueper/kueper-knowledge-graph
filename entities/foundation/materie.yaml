@@ -1,0 +1,29 @@
+entity_id: CON:L0:materie
+typ: Concept
+layer: L0
+name: Materie
+name_en: Matter
+domain: PHY
+status: '[R]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Materie bezeichnet die physische Substanz, aus der beobachtbare Objekte
+  bestehen.
+function: >
+  Materie bildet die Grundlage von Chemie, Geologie, Planetologie und Biologie.
+relations:
+  - relation: relates_to
+    target: CON:L0:struktur
+  - relation: relates_to
+    target: CON:L0:energie
+  - relation: enables
+    target: CON:L0:leben
+created: '2026-06-25'
+curator: T.P.K.
