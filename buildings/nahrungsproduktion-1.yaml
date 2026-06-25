@@ -1,0 +1,9 @@
+building_id: BLD:NOX:nahrungsproduktion-1
+name: Nahrungsproduktion I
+category: food
+requires:
+  - UNL:NOX:greenhouse-systems
+effects:
+  - colony_food_supply
+created: '2026-06-25'
+curator: T.P.K.
