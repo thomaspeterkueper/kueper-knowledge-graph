@@ -1,0 +1,9 @@
+building_id: BLD:NOX:biolabor-1
+name: Biolabor I
+category: science
+requires:
+  - UNL:NOX:controlled-biology
+effects:
+  - biological_research
+created: '2026-06-25'
+curator: T.P.K.
