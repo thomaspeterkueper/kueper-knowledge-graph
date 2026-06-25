@@ -1,0 +1,12 @@
+module_id: LRN:SSF:TEC-1201
+name: Fertigung Grundlagen
+domain: TEC
+status: '[R]'
+requires:
+  - LRN:SSF:TEC-1101
+teaches:
+  - CON:L1:fertigung
+unlocks:
+  - UNL:NOX:industrial-production
+created: '2026-06-25'
+curator: T.P.K.
