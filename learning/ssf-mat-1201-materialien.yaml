@@ -1,0 +1,12 @@
+module_id: LRN:SSF:MAT-1201
+name: Stoffe und Materialien
+domain: MAT
+status: '[R]'
+requires:
+  - LRN:SSF:MAT-1001
+teaches:
+  - CON:L1:materialien
+unlocks:
+  - UNL:NOX:resource-extraction
+created: '2026-06-25'
+curator: T.P.K.
