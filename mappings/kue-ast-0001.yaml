@@ -1,0 +1,15 @@
+document: DOC:KUE:KUE-AST-0001-2026-DE
+source_repo: thomaspeterkueper/kueper.com
+source_path: src/content/kue/ast/kue-ast-0001-2026-de.md
+touches_l0:
+  - CON:L0:raum
+  - CON:L0:zeit
+  - CON:L0:materie
+  - CON:L0:energie
+touches_l1:
+  - CON:L1:gravitation
+  - CON:L1:orbitalmechanik
+  - CON:L1:planetologie
+  - CON:L1:atmosphaerenphysik
+created: '2026-06-25'
+curator: T.P.K.
