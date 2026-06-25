@@ -1,0 +1,41 @@
+module_id: LRN:SSF:AST-2101
+typ: LearningModule
+layer: L3
+name: Warum Raumflug immer Bewegung um etwas ist
+status: '[R]'
+domain: AST
+difficulty: Grundlagen
+duration_minutes: 15
+source_documents:
+  - DOC:KUE:KUE-AST-0001-2026-DE
+teaches:
+  - CON:L1:orbitalmechanik
+requires:
+  - LRN:SSF:AST-1101
+touches_l0:
+  - CON:L0:raum
+  - CON:L0:zeit
+  - CON:L0:energie
+unlocks:
+  noxia:
+    - mechanic:transfer_routes_basic
+    - building:orbital_navigation_terminal
+    - action:plot_simple_transfer
+learning_goals:
+  - Der Spieler versteht, dass ein Orbit kein Stillstand ist, sondern permanentes Fallen um einen Himmelskoerper.
+  - Der Spieler erkennt, dass Raumflug Energie kostet, weil Bahn, Geschwindigkeit und Zielkoerper zusammenhaengen.
+  - Der Spieler kann erklaeren, warum direkte Linien im All meist keine guten Flugrouten sind.
+core_explanation: >
+  Ein Raumschiff fliegt im Sonnensystem nicht wie ein Auto auf einer geraden Strasse. Es bewegt sich in Gravitationsfeldern. Ein Orbit ist ein Gleichgewicht aus Vorwaertsgeschwindigkeit und Fallbewegung. Wer eine Kolonie versorgen will, muss deshalb nicht nur Entfernung kennen, sondern auch Bahn, Geschwindigkeit und Energiebedarf.
+exercise:
+  type: multiple_choice
+  question: Was ist ein Orbit am besten beschrieben?
+  options:
+    - Ein Ort, an dem ein Raumschiff stillsteht.
+    - Eine gerade Linie zwischen zwei Planeten.
+    - Eine dauerhafte Fallbewegung um einen Himmelskoerper.
+    - Ein Gebiet ohne Gravitation.
+  correct: 2
+  explanation: In einem Orbit faellt ein Objekt staendig, bewegt sich aber seitwaerts schnell genug, um den Himmelskoerper zu verfehlen.
+created: '2026-06-25'
+curator: T.P.K.
