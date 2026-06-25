@@ -1,0 +1,29 @@
+entity_id: CON:L0:struktur
+typ: Concept
+layer: L0
+name: Struktur
+name_en: Structure
+domain: MET
+status: '[R]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Struktur beschreibt die Anordnung von Bestandteilen und deren Beziehungen.
+function: >
+  Struktur erscheint auf allen Skalen: Kristalle, Zellen, Organismen,
+  Sprachen, Gesellschaften und Galaxien.
+relations:
+  - relation: organizes
+    target: CON:L0:information
+  - relation: organizes
+    target: CON:L0:materie
+  - relation: enables
+    target: CON:L0:leben
+created: '2026-06-25'
+curator: T.P.K.
