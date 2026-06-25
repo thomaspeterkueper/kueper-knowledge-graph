@@ -1,0 +1,12 @@
+[
+  {"id":"UNL:NOX:orbital-navigation","name":"Orbitale Navigation","requires":["LRN:SSF:PHY-1101"],"unlocks":["BLD:NOX:raumhafen-1"]},
+  {"id":"UNL:NOX:transfer-routes","name":"Transferrouten","requires":["LRN:SSF:AST-2101"],"unlocks":["BLD:NOX:frachtkontrolle-1"]},
+  {"id":"UNL:NOX:power-generation","name":"Energieerzeugung","requires":["LRN:SSF:PHY-1301"],"unlocks":["BLD:NOX:solarfeld-1"]},
+  {"id":"UNL:NOX:solar-grid","name":"Solarnetz","requires":["LRN:SSF:PHY-1302"],"unlocks":["BLD:NOX:batteriespeicher-1"]},
+  {"id":"UNL:NOX:water-processing","name":"Wasseraufbereitung","requires":["LRN:SSF:CHE-1101"],"unlocks":["BLD:NOX:wasseraufbereitung-1"]},
+  {"id":"UNL:NOX:mars-habitat","name":"Mars Habitat","requires":["LRN:SSF:AST-1201"],"unlocks":["BLD:NOX:mars-habitat-1"]},
+  {"id":"UNL:NOX:controlled-biology","name":"Kontrollierte Biologie","requires":["LRN:SSF:BIO-1101"],"unlocks":["BLD:NOX:biolabor-1"]},
+  {"id":"UNL:NOX:greenhouse-systems","name":"Gewaechshaussysteme","requires":["LRN:SSF:BIO-1201"],"unlocks":["BLD:NOX:gewaechshaus-1","BLD:NOX:nahrungsproduktion-1"]},
+  {"id":"UNL:NOX:resource-extraction","name":"Rohstoffgewinnung","requires":["LRN:SSF:MAT-1201"],"unlocks":["BLD:NOX:mine-1"]},
+  {"id":"UNL:NOX:smelting","name":"Schmelztechnik","requires":["LRN:SSF:CHE-1301"],"unlocks":["BLD:NOX:schmelze-1"]}
+]
