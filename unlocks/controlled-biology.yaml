@@ -1,0 +1,8 @@
+unlock_id: UNL:NOX:controlled-biology
+name: Kontrollierte Biologie
+requires:
+  - LRN:SSF:BIO-1101
+unlocks:
+  - BLD:NOX:biolabor-1
+created: '2026-06-25'
+curator: T.P.K.
