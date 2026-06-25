@@ -1,0 +1,9 @@
+building_id: BLD:NOX:schmelze-1
+name: Schmelze I
+category: industry
+requires:
+  - UNL:NOX:smelting
+effects:
+  - metal_production
+created: '2026-06-25'
+curator: T.P.K.
