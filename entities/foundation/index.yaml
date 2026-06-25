@@ -1,0 +1,32 @@
+foundation_layer: L0
+version: '0.1'
+status: productive_start
+created: '2026-06-25'
+curator: T.P.K.
+principle: >
+  Diese zehn Foundation Nodes bilden die oberste Ebene des Wissensgraphen.
+  Alle L1-Knoten muessen mindestens auf einen L0-Knoten zurueckfuehrbar sein.
+  Alle L2-Modelle muessen mindestens zwei L0- oder L1-Knoten verbinden.
+nodes:
+  - CON:L0:information
+  - CON:L0:zeit
+  - CON:L0:raum
+  - CON:L0:materie
+  - CON:L0:energie
+  - CON:L0:struktur
+  - CON:L0:veraenderung
+  - CON:L0:leben
+  - CON:L0:sprache
+  - CON:L0:bewusstsein
+next_layer_candidates:
+  L1:
+    - CON:L1:gravitation
+    - CON:L1:magnetismus
+    - CON:L1:orbitalmechanik
+    - CON:L1:atmosphaerenphysik
+    - CON:L1:geologie
+    - CON:L1:evolution
+    - CON:L1:genetik
+    - CON:L1:oekologie
+    - CON:L1:statistik
+    - CON:L1:informationsverarbeitung
