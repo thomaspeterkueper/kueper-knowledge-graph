@@ -1,0 +1,29 @@
+entity_id: CON:L0:bewusstsein
+typ: Concept
+layer: L0
+name: Bewusstsein
+name_en: Consciousness
+domain: PSY
+status: '[T]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Bewusstsein bezeichnet die Faehigkeit eines Systems, Zustaende zu erleben
+  und zu reflektieren.
+function: >
+  Bewusstsein verbindet Wahrnehmung, Erkenntnis, Lernen und Selbstbezug.
+relations:
+  - relation: relates_to
+    target: CON:L0:information
+  - relation: requires
+    target: CON:L0:leben
+  - relation: relates_to
+    target: CON:L0:sprache
+created: '2026-06-25'
+curator: T.P.K.
