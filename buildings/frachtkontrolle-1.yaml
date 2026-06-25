@@ -1,0 +1,10 @@
+building_id: BLD:NOX:frachtkontrolle-1
+name: Frachtkontrolle I
+category: logistics
+requires:
+  - UNL:NOX:transfer-routes
+effects:
+  - route_planning
+  - cargo_management
+created: '2026-06-25'
+curator: T.P.K.
