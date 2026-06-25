@@ -1,0 +1,11 @@
+building_id: BLD:NOX:raumhafen-1
+name: Raumhafen I
+category: transport
+requires:
+  - UNL:NOX:orbital-navigation
+effects:
+  - local_trade
+  - ship_operations
+description: Erster orbitaler Umschlagplatz fuer Personen, Rohstoffe und Versorgungsgueter.
+created: '2026-06-25'
+curator: T.P.K.
