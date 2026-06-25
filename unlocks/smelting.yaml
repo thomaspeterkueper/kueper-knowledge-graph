@@ -1,0 +1,8 @@
+unlock_id: UNL:NOX:smelting
+name: Schmelztechnik
+requires:
+  - LRN:SSF:CHE-1301
+unlocks:
+  - BLD:NOX:schmelze-1
+created: '2026-06-25'
+curator: T.P.K.
