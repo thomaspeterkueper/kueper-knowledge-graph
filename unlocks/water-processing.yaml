@@ -1,0 +1,8 @@
+unlock_id: UNL:NOX:water-processing
+name: Wasseraufbereitung
+requires:
+  - LRN:SSF:CHE-1101
+unlocks:
+  - BLD:NOX:wasseraufbereitung-1
+created: '2026-06-25'
+curator: T.P.K.
