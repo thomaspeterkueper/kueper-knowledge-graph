@@ -1,0 +1,20 @@
+module_id: LRN:SSF:PHY-1101
+typ: LearningModule
+layer: L3
+name: Was ist Gravitation?
+domain: PHY
+difficulty: Einstieg
+status: '[R]'
+duration_minutes: 10
+teaches:
+  - CON:L1:gravitation
+requires:
+  - LRN:SSF:MAT-1001
+unlocks:
+  - UNL:NOX:orbital-navigation
+learning_goals:
+  - Der Spieler versteht Gravitation als Grundidee von Anziehung.
+  - Der Spieler erkennt, dass Raumfahrt ohne Gravitation nicht verstanden werden kann.
+  - Der Spieler versteht, dass Planeten, Monde und Orbits zusammenhaengen.
+created: '2026-06-25'
+curator: T.P.K.
