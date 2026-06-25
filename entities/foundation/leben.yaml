@@ -1,0 +1,31 @@
+entity_id: CON:L0:leben
+typ: Concept
+layer: L0
+name: Leben
+name_en: Life
+domain: BIO
+status: '[R]'
+is_instance: false
+foundation_node: true
+bridge_node_candidate: true
+schichten:
+  - KUEPER
+  - SSF
+  - OTA
+  - NOXIA
+definition: >
+  Leben bezeichnet organisierte Systeme, die Informationen speichern, Energie
+  nutzen und sich veraendern koennen.
+function: >
+  Leben verbindet Biologie, Evolution, Oekologie und Bewusstsein.
+relations:
+  - relation: requires
+    target: CON:L0:information
+  - relation: requires
+    target: CON:L0:energie
+  - relation: enables
+    target: CON:L1:evolution
+  - relation: enables
+    target: CON:L0:bewusstsein
+created: '2026-06-25'
+curator: T.P.K.
