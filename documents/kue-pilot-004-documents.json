@@ -1,0 +1,26 @@
+[
+  {
+    "entity_id": "DOC:KUE:KUE-PHI-0001-2026-DE",
+    "typ": "Document",
+    "name": "Philosophische Motivationen des AVI-Modells — Ontologie eines dynamischen Vakuums",
+    "domäne": "PHI",
+    "status": "[I]",
+    "is_instance": true,
+    "beschreibung": "Reflexion über die philosophischen Motivationen des AVI-Modells: Vakuum als Zustand, nicht-markovsche Geschichte, globale Zustandsstruktur und Trennung von Theorie und Interpretation.",
+    "erster_nachweis": "kueper.com / KUE-PHI-0001-2026-DE",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  },
+  {
+    "entity_id": "DOC:KUE:KUE-SCI-0001-2026-DE",
+    "typ": "Document",
+    "name": "AVI — Axiomatisches Vakuum-Integral (Vollständige Fassung v1.4)",
+    "domäne": "SCI",
+    "status": "[T]",
+    "is_instance": true,
+    "beschreibung": "Axiomatischer theoretischer Rahmen für ein dynamisches kosmologisches Vakuum mit globalem Zustandsparameter Φ(a), reduzierter Nicht-Markovschheit und explizitem Arbeitsansatz für G(s) und ρ_vac(Φ).",
+    "erster_nachweis": "kueper.com / KUE-SCI-0001-2026-DE",
+    "erstellt": "2026-06-24",
+    "kurator": "T.P.K."
+  }
+]
