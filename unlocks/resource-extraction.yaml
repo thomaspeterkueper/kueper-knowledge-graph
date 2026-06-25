@@ -1,0 +1,8 @@
+unlock_id: UNL:NOX:resource-extraction
+name: Rohstoffgewinnung
+requires:
+  - LRN:SSF:MAT-1201
+unlocks:
+  - BLD:NOX:mine-1
+created: '2026-06-25'
+curator: T.P.K.
