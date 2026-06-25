@@ -1,0 +1,9 @@
+building_id: BLD:NOX:solarfeld-1
+name: Solarfeld I
+category: energy
+requires:
+  - UNL:NOX:power-generation
+effects:
+  - energy_production
+created: '2026-06-25'
+curator: T.P.K.
