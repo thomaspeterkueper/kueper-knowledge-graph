@@ -14,13 +14,7 @@
       "status": "planned",
       "repo": "thomaspeterkueper/kueper-knowledge-graph",
       "consumes": [],
-      "publishes": [
-        "KXF",
-        "ecosystem_registry",
-        "system_registry",
-        "domain_registry",
-        "legal_registry"
-      ]
+      "publishes": ["KXF", "ecosystem_registry", "system_registry", "domain_registry", "legal_registry"]
     },
     {
       "id": "DOM:L3:kueper-com",
@@ -61,6 +55,46 @@
       "status": "active",
       "repo": "thomaspeterkueper/noxiagame",
       "consumes": ["KXF", "legal_registry"]
+    },
+    {
+      "id": "DOM:L3:zereya-de",
+      "type": "Domain",
+      "domain": "zereya.de",
+      "system": "SYS:KUEPER:zereya",
+      "role": "narrative_project_site",
+      "status": "planned",
+      "repo": "TBD",
+      "consumes": ["KXF", "legal_registry", "narrative_entities"]
+    },
+    {
+      "id": "DOM:L3:contracosmology-org",
+      "type": "Domain",
+      "domain": "contracosmology.org",
+      "system": "SYS:KUEPER:contracosmology",
+      "role": "model_and_cosmology_project_site",
+      "status": "planned",
+      "repo": "TBD",
+      "consumes": ["KXF", "legal_registry", "models", "documents"]
+    },
+    {
+      "id": "DOM:L3:feli-project",
+      "type": "Domain",
+      "domain": "TBD",
+      "system": "SYS:KUEPER:feli",
+      "role": "childrens_book_project_site",
+      "status": "candidate",
+      "repo": "TBD",
+      "consumes": ["KXF", "legal_registry", "narrative_entities"]
+    },
+    {
+      "id": "DOM:L3:soma-retep-project",
+      "type": "Domain",
+      "domain": "TBD",
+      "system": "SYS:KUEPER:soma-retep",
+      "role": "science_fiction_project_site",
+      "status": "candidate",
+      "repo": "TBD",
+      "consumes": ["KXF", "legal_registry", "narrative_entities", "models"]
     }
   ]
 }
