@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kg.kueper.com/schemas/learning-module.schema.json",
+  "title": "KXF LearningModule",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "layer",
+    "system",
+    "defaultLanguage",
+    "availableLanguages",
+    "title",
+    "summary"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "const": "LearningModule" },
+    "layer": { "const": "L3" },
+    "system": { "type": "string" },
+    "defaultLanguage": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+    "availableLanguages": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z]{2}(-[A-Z]{2})?$" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "title": { "$ref": "localized-text.schema.json" },
+    "summary": { "$ref": "localized-text.schema.json" },
+    "body": { "$ref": "localized-text.schema.json" },
+    "teaches": { "type": "array", "items": { "type": "string" } },
+    "requires": { "type": "array", "items": { "type": "string" } },
+    "unlocks": { "type": "array", "items": { "type": "string" } },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "question"],
+        "properties": {
+          "id": { "type": "string" },
+          "question": { "$ref": "localized-text.schema.json" },
+          "answer": { "$ref": "localized-text.schema.json" },
+          "hint": { "$ref": "localized-text.schema.json" }
+        }
+      }
+    },
+    "status": { "type": "string" },
+    "visibility": { "enum": ["public", "members", "internal", "restricted", "private"] },
+    "createdFromRequest": { "type": "string" },
+    "updated": { "type": "string" },
+    "curator": { "type": "string" }
+  }
+}
