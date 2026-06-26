@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kg.kueper.com/schemas/media-asset.schema.json",
+  "title": "KXF MediaAsset",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "layer",
+    "mediaType",
+    "title",
+    "visibility",
+    "rights",
+    "source"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^MED:L3:[a-z0-9-]+$" },
+    "type": { "const": "MediaAsset" },
+    "layer": { "const": "L3" },
+    "mediaType": {
+      "enum": [
+        "image",
+        "diagram",
+        "video",
+        "audio",
+        "score",
+        "animation",
+        "interactive",
+        "model3d",
+        "thumbnail",
+        "cover",
+        "map"
+      ]
+    },
+    "format": { "type": "string" },
+    "title": { "$ref": "localized-text.schema.json" },
+    "description": { "$ref": "localized-text.schema.json" },
+    "visibility": { "enum": ["public", "members", "internal", "restricted", "private"] },
+    "rights": {
+      "type": "object",
+      "required": ["owner", "license"],
+      "properties": {
+        "owner": { "type": "string" },
+        "license": { "type": "string" },
+        "creator": { "type": "string" },
+        "creationMethod": {
+          "enum": ["human_created", "ai_generated", "ai_assisted", "photograph", "scan", "recording", "composition", "mixed", "unknown"]
+        },
+        "allowedSystems": { "type": "array", "items": { "type": "string" } },
+        "restrictedSystems": { "type": "array", "items": { "type": "string" } },
+        "externalLicenseUrl": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["storage"],
+      "properties": {
+        "storage": {
+          "enum": ["repo", "github_lfs", "cloudflare_r2", "s3", "private_storage", "youtube_private", "vimeo_private", "external_archive", "unknown"]
+        },
+        "path": { "type": "string" },
+        "url": { "type": "string" },
+        "checksum": { "type": "string" }
+      }
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "format"],
+        "properties": {
+          "role": { "type": "string" },
+          "format": { "type": "string" },
+          "path": { "type": "string" },
+          "url": { "type": "string" },
+          "width": { "type": "integer" },
+          "height": { "type": "integer" },
+          "durationSeconds": { "type": "number" },
+          "checksum": { "type": "string" }
+        }
+      }
+    },
+    "relatesTo": { "type": "array", "items": { "type": "string" } },
+    "usedBy": { "type": "array", "items": { "type": "string" } },
+    "createdFromRequest": { "type": "string" },
+    "status": { "type": "string" },
+    "updated": { "type": "string" },
+    "curator": { "type": "string" }
+  }
+}
