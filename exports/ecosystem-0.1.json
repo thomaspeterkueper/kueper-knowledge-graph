@@ -1,0 +1,91 @@
+{
+  "schema": "KUEPER-ECOSYSTEM-0.1",
+  "master": "kueper-knowledge-graph",
+  "exchange_format": "KXF-0.1",
+  "principle": "single_source_of_truth",
+  "systems": [
+    {
+      "id": "SYS:KUEPER:knowledge-graph",
+      "name": "KUEPER Knowledge Graph",
+      "repo": "thomaspeterkueper/kueper-knowledge-graph",
+      "role": "master_system",
+      "owns": [
+        "entities",
+        "relations",
+        "ids",
+        "mappings",
+        "taxonomies",
+        "kxf_exports",
+        "system_registry"
+      ]
+    },
+    {
+      "id": "SYS:KUEPER:kueper-com",
+      "name": "kueper.com",
+      "repo": "thomaspeterkueper/kueper.com",
+      "role": "published_knowledge_source",
+      "consumes": [
+        "documents",
+        "entities",
+        "references"
+      ],
+      "produces": [
+        "published_documents"
+      ]
+    },
+    {
+      "id": "SYS:KUEPER:ssf",
+      "name": "Solar Science Foundation",
+      "repo": "thomaspeterkueper/solarsciencefoundation",
+      "role": "learning_platform",
+      "consumes": [
+        "entities",
+        "learning_modules",
+        "relations",
+        "documents"
+      ],
+      "produces": [
+        "quizzes",
+        "progress",
+        "membership",
+        "certificates",
+        "noxia_unlocks"
+      ]
+    },
+    {
+      "id": "SYS:KUEPER:noxia",
+      "name": "NOXIA Game",
+      "repo": "thomaspeterkueper/noxiagame",
+      "role": "game_and_simulation",
+      "consumes": [
+        "entities",
+        "research",
+        "unlocks",
+        "buildings"
+      ],
+      "produces": [
+        "game_states",
+        "colonies",
+        "trade",
+        "production"
+      ]
+    },
+    {
+      "id": "SYS:KUEPER:ota",
+      "name": "OverTime Archive",
+      "repo": "thomaspeterkueper/overtime-archive",
+      "role": "archive_model_and_fiction_layer",
+      "consumes": [
+        "entities",
+        "documents",
+        "models"
+      ],
+      "produces": [
+        "hypotheses",
+        "archives",
+        "alternative_models",
+        "fictionalisations"
+      ]
+    }
+  ]
+}
