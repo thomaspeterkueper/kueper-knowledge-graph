@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "DOMAIN-REGISTRY-0.1",
+  "id": "REG:L3:domains",
+  "type": "DomainRegistry",
+  "master": "SYS:KUEPER:knowledge-graph",
+  "principle": "single_source_of_truth",
+  "domains": [
+    {
+      "id": "DOM:L3:kg-kueper-com",
+      "type": "Domain",
+      "domain": "kg.kueper.com",
+      "system": "SYS:KUEPER:knowledge-graph",
+      "role": "canonical_public_kg_endpoint",
+      "status": "planned",
+      "repo": "thomaspeterkueper/kueper-knowledge-graph",
+      "consumes": [],
+      "publishes": [
+        "KXF",
+        "ecosystem_registry",
+        "system_registry",
+        "domain_registry",
+        "legal_registry"
+      ]
+    },
+    {
+      "id": "DOM:L3:kueper-com",
+      "type": "Domain",
+      "domain": "kueper.com",
+      "system": "SYS:KUEPER:kueper-com",
+      "role": "published_knowledge_website",
+      "status": "active",
+      "repo": "thomaspeterkueper/kueper.com",
+      "consumes": ["KXF", "legal_registry"]
+    },
+    {
+      "id": "DOM:L3:solarsciencefoundation-org",
+      "type": "Domain",
+      "domain": "solarsciencefoundation.org",
+      "system": "SYS:KUEPER:ssf",
+      "role": "learning_platform",
+      "status": "active",
+      "repo": "thomaspeterkueper/solarsciencefoundation",
+      "consumes": ["KXF", "legal_registry"]
+    },
+    {
+      "id": "DOM:L3:overtimearchive-org",
+      "type": "Domain",
+      "domain": "overtimearchive.org",
+      "system": "SYS:KUEPER:ota",
+      "role": "archive_and_model_layer",
+      "status": "active",
+      "repo": "thomaspeterkueper/overtime-archive",
+      "consumes": ["KXF", "legal_registry"]
+    },
+    {
+      "id": "DOM:L3:noxia-vercel-app",
+      "type": "Domain",
+      "domain": "noxiagame.vercel.app",
+      "system": "SYS:KUEPER:noxia",
+      "role": "game_application",
+      "status": "active",
+      "repo": "thomaspeterkueper/noxiagame",
+      "consumes": ["KXF", "legal_registry"]
+    }
+  ]
+}
