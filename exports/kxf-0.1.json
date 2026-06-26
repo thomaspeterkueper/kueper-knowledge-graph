@@ -1,0 +1,85 @@
+{
+  "schema": "KXF-0.1",
+  "name": "KUEPER Exchange Format",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "principle": "single_source_of_truth",
+  "records": {
+    "entities": [
+      {
+        "id": "CON:L1:gravitation",
+        "type": "Concept",
+        "layer": "L1",
+        "domain": "PHY",
+        "name": "Gravitation"
+      },
+      {
+        "id": "CON:L1:orbitalmechanik",
+        "type": "Concept",
+        "layer": "L1",
+        "domain": "AST",
+        "name": "Orbitalmechanik"
+      },
+      {
+        "id": "PLC:AST:mars",
+        "type": "Place",
+        "domain": "AST",
+        "name": "Mars"
+      },
+      {
+        "id": "ORG:SSF",
+        "type": "Organization",
+        "name": "Solar Science Foundation"
+      }
+    ],
+    "documents": [
+      {
+        "id": "DOC:KUE:KUE-AST-0001-2026-DE",
+        "system": "SYS:KUEPER:kueper-com",
+        "repo": "thomaspeterkueper/kueper.com",
+        "path": "src/content/kue/ast/kue-ast-0001-2026-de.md",
+        "type": "published_foundation_document"
+      }
+    ],
+    "learningModules": [
+      {
+        "id": "LRN:SSF:PHY-1101",
+        "system": "SYS:KUEPER:ssf",
+        "name": "Was ist Gravitation?",
+        "teaches": ["CON:L1:gravitation"],
+        "requires": ["LRN:SSF:MAT-1001"],
+        "unlocks": ["UNL:NOX:orbital-navigation"]
+      }
+    ],
+    "unlocks": [
+      {
+        "id": "UNL:NOX:orbital-navigation",
+        "system": "SYS:KUEPER:ssf",
+        "target_system": "SYS:KUEPER:noxia",
+        "requires": ["LRN:SSF:PHY-1101"],
+        "unlocks": ["BLD:NOX:raumhafen-1"]
+      }
+    ],
+    "buildings": [
+      {
+        "id": "BLD:NOX:raumhafen-1",
+        "system": "SYS:KUEPER:noxia",
+        "name": "Raumhafen I",
+        "requires": ["UNL:NOX:orbital-navigation"]
+      }
+    ],
+    "mappings": [
+      {
+        "id": "MAP:KUE-AST-0001",
+        "document": "DOC:KUE:KUE-AST-0001-2026-DE",
+        "touches_l1": [
+          "CON:L1:gravitation",
+          "CON:L1:orbitalmechanik"
+        ],
+        "contains_entities": [
+          "PLC:AST:mars"
+        ]
+      }
+    ]
+  }
+}
