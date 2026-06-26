@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kg.kueper.com/schemas/localized-text.schema.json",
+  "title": "KXF LocalizedText",
+  "description": "A dynamic language-code to text map. KXF does not restrict content to a fixed set of languages.",
+  "type": "object",
+  "minProperties": 1,
+  "patternProperties": {
+    "^[a-z]{2}(-[A-Z]{2})?$": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "de": "Gravitation",
+      "en": "Gravity"
+    },
+    {
+      "de": "Gravitation",
+      "en": "Gravity",
+      "fr": "Gravitation"
+    }
+  ]
+}
