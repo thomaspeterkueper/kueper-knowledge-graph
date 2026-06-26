@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KUEPER Knowledge Graph Request",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "layer",
+    "requester",
+    "requestType",
+    "purpose",
+    "requestedContent",
+    "priority",
+    "blocking",
+    "status",
+    "created",
+    "curator"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^REQ:L3:[0-9]{6}$" },
+    "type": { "const": "Request" },
+    "layer": { "const": "L3" },
+    "requester": { "type": "string" },
+    "requestType": {
+      "enum": [
+        "entity_request",
+        "relation_request",
+        "mapping_request",
+        "document_request",
+        "export_request",
+        "schema_request",
+        "system_request",
+        "domain_request",
+        "site_request",
+        "migration_request"
+      ]
+    },
+    "purpose": { "type": "string" },
+    "requestedContent": { "type": "array", "items": { "type": "string" } },
+    "priority": { "enum": ["high", "medium", "low"] },
+    "blocking": { "type": "string" },
+    "suggestedIds": { "type": "array", "items": { "type": "string" } },
+    "targetExport": { "type": "string" },
+    "status": { "enum": ["open", "review", "accepted", "implemented", "rejected", "superseded", "archived"] },
+    "created": { "type": "string" },
+    "implemented": { "type": "string" },
+    "curator": { "type": "string" },
+    "createdObjects": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" }
+  }
+}
