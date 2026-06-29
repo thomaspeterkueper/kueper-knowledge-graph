@@ -1,7 +1,7 @@
 # Project Contracts
 
 ## Zweck
-
+  
 Project Contracts definieren, was ein angeschlossenes KUEPER-System darf und was nicht.
 
 Sie verhindern, dass Websites, Lernplattformen, Spiele oder narrative Spezialseiten eigene kanonische Wissensobjekte erzeugen.
