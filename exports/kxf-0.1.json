@@ -4,6 +4,12 @@
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
   "principle": "single_source_of_truth",
+  "version": "0.1",
+  "updated": "2026-07-01",
+  "sourceDocuments": [
+    "KG-ARC-0001-2026-DE",
+    "OTA-ARC-0005-2026-DE"
+  ],
   "records": {
     "entities": [
       {
@@ -49,6 +55,317 @@
         "teaches": ["CON:L1:gravitation"],
         "requires": ["LRN:SSF:MAT-1001"],
         "unlocks": ["UNL:NOX:orbital-navigation"]
+      }
+    ],
+    "knowledgeDomains": [
+      {
+        "id": "KNOW:PHYS-MECH",
+        "type": "KnowledgeDomain",
+        "name": "Klassische Mechanik",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["PHYS-MECH", "Classical mechanics", "Mechanik"]
+      },
+      {
+        "id": "KNOW:PHYS-WAVE",
+        "type": "KnowledgeDomain",
+        "name": "Wellenphysik, Akustik, Resonanz",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["PHYS-WAVE", "Wave physics", "Akustik", "Resonanz"]
+      },
+      {
+        "id": "KNOW:PHYS-EM",
+        "type": "KnowledgeDomain",
+        "name": "Elektromagnetismus, Magnetfelder",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["PHYS-EM", "Electromagnetism", "Magnetfelder"]
+      },
+      {
+        "id": "KNOW:PHYS-THERM",
+        "type": "KnowledgeDomain",
+        "name": "Thermodynamik, Wärmelehre",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["PHYS-THERM", "Thermodynamics", "Wärmelehre"]
+      },
+      {
+        "id": "KNOW:PHYS-QM",
+        "type": "KnowledgeDomain",
+        "name": "Quantenmechanik",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["PHYS-QM", "Quantum mechanics", "Quantenphysik"]
+      },
+      {
+        "id": "KNOW:GEO-SEISM",
+        "type": "KnowledgeDomain",
+        "name": "Seismologie",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["GEO-SEISM", "Seismology", "Planetary seismology", "Mars-Seismik"]
+      },
+      {
+        "id": "KNOW:GEO-PETRO",
+        "type": "KnowledgeDomain",
+        "name": "Petrologie, Mineralogie, Gesteinsbildung",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["GEO-PETRO", "Petrology", "Mineralogy", "Gesteinskunde"]
+      },
+      {
+        "id": "KNOW:GEO-PLANET",
+        "type": "KnowledgeDomain",
+        "name": "Planetologie, innere Struktur",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["GEO-PLANET", "Planetology", "Planetary interiors", "Planetare Struktur"]
+      },
+      {
+        "id": "KNOW:GEO-DYNA",
+        "type": "KnowledgeDomain",
+        "name": "Geodynamik, Plattentektonik, Mantelkonvektion",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["GEO-DYNA", "Geodynamics", "Mantle convection", "Plattentektonik"]
+      },
+      {
+        "id": "KNOW:GEO-PALEO",
+        "type": "KnowledgeDomain",
+        "name": "Paläogeologie, geologische Zeitskalen",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["GEO-PALEO", "Paleogeology", "Geological timescales"]
+      },
+      {
+        "id": "KNOW:ASTRO-BASIC",
+        "type": "KnowledgeDomain",
+        "name": "Astronomische Grundlagen, Sonnensystem",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["ASTRO-BASIC", "Astronomy basics", "Sonnensystem"]
+      },
+      {
+        "id": "KNOW:ASTRO-SPEC",
+        "type": "KnowledgeDomain",
+        "name": "Spektroskopie, Emissionslinien",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["ASTRO-SPEC", "Spectroscopy", "Emissionslinien"]
+      },
+      {
+        "id": "KNOW:ASTRO-RADIO",
+        "type": "KnowledgeDomain",
+        "name": "Radioastronomie, Interferometrie",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["ASTRO-RADIO", "Radio astronomy", "Interferometry"]
+      },
+      {
+        "id": "KNOW:MATH-STAT",
+        "type": "KnowledgeDomain",
+        "name": "Statistik, Wahrscheinlichkeitsrechnung",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["MATH-STAT", "Statistics", "Probability", "Wahrscheinlichkeitsrechnung"]
+      },
+      {
+        "id": "KNOW:MATH-BAYES",
+        "type": "KnowledgeDomain",
+        "name": "Bayes'sche Inferenz",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["MATH-BAYES", "Bayesian inference", "Bayes-Inferenz"]
+      },
+      {
+        "id": "KNOW:MATH-DIFF",
+        "type": "KnowledgeDomain",
+        "name": "Differentialgleichungen",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["MATH-DIFF", "Differential equations", "DGL"]
+      },
+      {
+        "id": "KNOW:MATH-ANAL",
+        "type": "KnowledgeDomain",
+        "name": "Analysis, Fourieranalyse",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["MATH-ANAL", "Analysis", "Calculus", "Fourier analysis"]
+      },
+      {
+        "id": "KNOW:BIO-BASIC",
+        "type": "KnowledgeDomain",
+        "name": "Biologie Grundlagen",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["BIO-BASIC", "Biology basics", "Biologie"]
+      },
+      {
+        "id": "KNOW:BIO-NEURO",
+        "type": "KnowledgeDomain",
+        "name": "Neurowissenschaften",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["BIO-NEURO", "Neuroscience", "Neurowissenschaft"]
+      },
+      {
+        "id": "KNOW:BIO-EVOL",
+        "type": "KnowledgeDomain",
+        "name": "Evolutionsbiologie, Habitabilität",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["BIO-EVOL", "Evolutionary biology", "Habitability"]
+      },
+      {
+        "id": "KNOW:CHEM-BASIC",
+        "type": "KnowledgeDomain",
+        "name": "Chemie Grundlagen",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["CHEM-BASIC", "Chemistry basics", "Chemie"]
+      },
+      {
+        "id": "KNOW:CHEM-GEO",
+        "type": "KnowledgeDomain",
+        "name": "Geochemie",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["CHEM-GEO", "Geochemistry", "Geochemie"]
+      },
+      {
+        "id": "KNOW:HIS-METHOD",
+        "type": "KnowledgeDomain",
+        "name": "Historiographische Methodik",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["HIS-METHOD", "Historiography", "Quellenkritik"]
+      },
+      {
+        "id": "KNOW:HIS-ARCH",
+        "type": "KnowledgeDomain",
+        "name": "Archäologie, Befundinterpretation",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["HIS-ARCH", "Archaeology", "Befundinterpretation"]
+      },
+      {
+        "id": "KNOW:PHIL-EPIST",
+        "type": "KnowledgeDomain",
+        "name": "Erkenntnistheorie, Epistemologie",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["PHIL-EPIST", "Epistemology", "Erkenntnistheorie"]
+      },
+      {
+        "id": "KNOW:PHIL-SCI",
+        "type": "KnowledgeDomain",
+        "name": "Wissenschaftstheorie, Falsifikation",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["PHIL-SCI", "Philosophy of science", "Wissenschaftstheorie"]
+      },
+      {
+        "id": "KNOW:LANG-DE",
+        "type": "KnowledgeDomain",
+        "name": "Deutsch, Lesekompetenz",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["LANG-DE", "German reading competence", "Deutsch"]
+      },
+      {
+        "id": "KNOW:LANG-EN",
+        "type": "KnowledgeDomain",
+        "name": "Englisch, Lesekompetenz und Primärliteratur",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["LANG-EN", "English reading competence", "Scientific English"]
+      },
+      {
+        "id": "KNOW:LANG-SCI",
+        "type": "KnowledgeDomain",
+        "name": "Wissenschaftliches Lesen",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["LANG-SCI", "Scientific literacy", "Wissenschaftliche Lesekompetenz"]
+      },
+      {
+        "id": "KNOW:TOOL-PEERLIT",
+        "type": "KnowledgeDomain",
+        "name": "Umgang mit peer-reviewed Literatur",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["TOOL-PEERLIT", "Peer-reviewed literature", "Literaturarbeit"]
+      },
+      {
+        "id": "KNOW:TOOL-DATASCI",
+        "type": "KnowledgeDomain",
+        "name": "Datenauswertung und Modellierung",
+        "levelSupport": ["N1", "N2", "N3", "N4"],
+        "aliases": ["TOOL-DATASCI", "Data science", "Modellierung", "Datenauswertung"]
+      }
+    ],
+    "prerequisites": [
+      {
+        "id": "REQ:OTA-SCI-0083-2026-DE:KNOW-GEO-SEISM:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-SCI-0083-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:GEO-SEISM",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-SCI-0083-2026-DE:KNOW-GEO-PETRO:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-SCI-0083-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:GEO-PETRO",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-SCI-0083-2026-DE:KNOW-MATH-BAYES:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-SCI-0083-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:MATH-BAYES",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-SCI-0083-2026-DE:KNOW-GEO-PLANET:N1:READ",
+        "type": "Prerequisite",
+        "from": "OTA-SCI-0083-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:GEO-PLANET",
+        "level": "N1",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-SCI-0083-2026-DE:KNOW-LANG-EN:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-SCI-0083-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:LANG-EN",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-FND-0028-2026-DE:KNOW-PHYS-QM:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-FND-0028-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:PHYS-QM",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-FND-0028-2026-DE:KNOW-MATH-DIFF:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-FND-0028-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:MATH-DIFF",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-FND-0028-2026-DE:KNOW-PHIL-SCI:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-FND-0028-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:PHIL-SCI",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
+      },
+      {
+        "id": "REQ:OTA-FND-0028-2026-DE:KNOW-PHYS-EM:N2:READ",
+        "type": "Prerequisite",
+        "from": "OTA-FND-0028-2026-DE",
+        "relation": "DOCUMENT_REQUIRES_DOMAIN",
+        "to": "KNOW:PHYS-EM",
+        "level": "N2",
+        "purpose": "read",
+        "source": "OTA-ARC-0005-2026-DE"
       }
     ],
     "unlocks": [
