@@ -1,0 +1,280 @@
+{
+  "schema": "KUEPER-KG-KNOWLEDGE-DOMAINS",
+  "version": "0.1",
+  "created": "2026-07-01",
+  "curator": "Thomas Peter Küper",
+  "sourceDocument": "KG-ARC-0001-2026-DE",
+  "description": "Kanonischer Start-Export der KnowledgeDomain-Entitäten für OTA, SSF, NOXIA, KUEPER.com und weitere KUEPER-Projekte.",
+  "levelScale": [
+    {
+      "id": "N1",
+      "name": "Grundlagen",
+      "description": "Schulwissen oder populärwissenschaftliche Einführung genügt. Das Material erklärt zentrale Begriffe kurz mit."
+    },
+    {
+      "id": "N2",
+      "name": "Fortgeschritten",
+      "description": "Universitäres Grundstudium oder äquivalente Selbstbildung nötig. Fachbegriffe werden nicht vollständig eingeführt."
+    },
+    {
+      "id": "N3",
+      "name": "Experte",
+      "description": "Primärliteratur, Fachmethodik und peer-review-nahe Argumentation werden vorausgesetzt."
+    },
+    {
+      "id": "N4",
+      "name": "Kurator / Forschung",
+      "description": "Fähigkeit, Quellen, Modelle, Daten und epistemologische Marker eigenständig kuratorisch oder forschungsnah zu integrieren."
+    }
+  ],
+  "knowledgeDomains": [
+    {
+      "id": "KNOW:PHYS-MECH",
+      "type": "KnowledgeDomain",
+      "name": "Klassische Mechanik",
+      "description": "Bewegung, Kräfte, Energie, Impuls und grundlegende Modelle makroskopischer physikalischer Systeme.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["PHYS-MECH", "Classical mechanics", "Mechanik"]
+    },
+    {
+      "id": "KNOW:PHYS-WAVE",
+      "type": "KnowledgeDomain",
+      "name": "Wellenphysik, Akustik, Resonanz",
+      "description": "Wellen, Schwingungen, Resonanz, Ausbreitung, Frequenz, Dämpfung und akustische Grundphänomene.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["PHYS-WAVE", "Wave physics", "Akustik", "Resonanz"]
+    },
+    {
+      "id": "KNOW:PHYS-EM",
+      "type": "KnowledgeDomain",
+      "name": "Elektromagnetismus, Magnetfelder",
+      "description": "Elektrische und magnetische Felder, elektromagnetische Wechselwirkungen, Strahlung und Feldmodelle.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["PHYS-EM", "Electromagnetism", "Magnetfelder"]
+    },
+    {
+      "id": "KNOW:PHYS-THERM",
+      "type": "KnowledgeDomain",
+      "name": "Thermodynamik, Wärmelehre",
+      "description": "Wärme, Temperatur, Energieübertragung, Phasen, Zustandsgrößen und thermodynamische Prozesse.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["PHYS-THERM", "Thermodynamics", "Wärmelehre"]
+    },
+    {
+      "id": "KNOW:PHYS-QM",
+      "type": "KnowledgeDomain",
+      "name": "Quantenmechanik",
+      "description": "Grundlagen quantenphysikalischer Modelle, Zustände, Messung, Feldquantisierung und Vakuumenergie im jeweils angegebenen Niveau.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["PHYS-QM", "Quantum mechanics", "Quantenphysik"]
+    },
+    {
+      "id": "KNOW:GEO-SEISM",
+      "type": "KnowledgeDomain",
+      "name": "Seismologie",
+      "description": "Seismische Wellen, Tomographie und Ausbreitung in planetaren Körpern.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["GEO-SEISM", "Seismology", "Planetary seismology", "Mars-Seismik"]
+    },
+    {
+      "id": "KNOW:GEO-PETRO",
+      "type": "KnowledgeDomain",
+      "name": "Petrologie, Mineralogie, Gesteinsbildung",
+      "description": "Entstehung, Zusammensetzung, Textur und Interpretation von Gesteinen und Mineralen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["GEO-PETRO", "Petrology", "Mineralogy", "Gesteinskunde"]
+    },
+    {
+      "id": "KNOW:GEO-PLANET",
+      "type": "KnowledgeDomain",
+      "name": "Planetologie, innere Struktur",
+      "description": "Aufbau, Entwicklung, innere Differenzierung und geophysikalische Eigenschaften planetarer Körper.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["GEO-PLANET", "Planetology", "Planetary interiors", "Planetare Struktur"]
+    },
+    {
+      "id": "KNOW:GEO-DYNA",
+      "type": "KnowledgeDomain",
+      "name": "Geodynamik, Plattentektonik, Mantelkonvektion",
+      "description": "Dynamik planetarer Lithosphären und Mäntel, Plattentektonik, Konvektion und langfristige geologische Prozesse.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["GEO-DYNA", "Geodynamics", "Mantle convection", "Plattentektonik"]
+    },
+    {
+      "id": "KNOW:GEO-PALEO",
+      "type": "KnowledgeDomain",
+      "name": "Paläogeologie, geologische Zeitskalen",
+      "description": "Geologische Zeiträume, Erdgeschichte, stratigraphische Ordnung und langfristige Entwicklung geologischer Systeme.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["GEO-PALEO", "Paleogeology", "Geological timescales"]
+    },
+    {
+      "id": "KNOW:ASTRO-BASIC",
+      "type": "KnowledgeDomain",
+      "name": "Astronomische Grundlagen, Sonnensystem",
+      "description": "Grundlagen von Himmelskörpern, Bahnen, Beobachtung, Sonnensystemstruktur und astronomischer Orientierung.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["ASTRO-BASIC", "Astronomy basics", "Sonnensystem"]
+    },
+    {
+      "id": "KNOW:ASTRO-SPEC",
+      "type": "KnowledgeDomain",
+      "name": "Spektroskopie, Emissionslinien",
+      "description": "Analyse von Spektren, Emissions- und Absorptionslinien sowie physikalische Interpretation elektromagnetischer Signaturen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["ASTRO-SPEC", "Spectroscopy", "Emissionslinien"]
+    },
+    {
+      "id": "KNOW:ASTRO-RADIO",
+      "type": "KnowledgeDomain",
+      "name": "Radioastronomie, Interferometrie",
+      "description": "Astronomische Beobachtung im Radiobereich, Interferometrie, Signalverarbeitung und Auflösungsprinzipien.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["ASTRO-RADIO", "Radio astronomy", "Interferometry"]
+    },
+    {
+      "id": "KNOW:MATH-STAT",
+      "type": "KnowledgeDomain",
+      "name": "Statistik, Wahrscheinlichkeitsrechnung",
+      "description": "Wahrscheinlichkeit, Verteilungen, Schätzung, Unsicherheit, statistische Kennzahlen und grundlegende Dateninterpretation.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["MATH-STAT", "Statistics", "Probability", "Wahrscheinlichkeitsrechnung"]
+    },
+    {
+      "id": "KNOW:MATH-BAYES",
+      "type": "KnowledgeDomain",
+      "name": "Bayes'sche Inferenz",
+      "description": "Wahrscheinlichkeitstheoretische Aktualisierung von Annahmen anhand von Evidenz, inklusive Prior, Likelihood und Posterior.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["MATH-BAYES", "Bayesian inference", "Bayes-Inferenz"]
+    },
+    {
+      "id": "KNOW:MATH-DIFF",
+      "type": "KnowledgeDomain",
+      "name": "Differentialgleichungen",
+      "description": "Mathematische Beschreibung von Änderungsprozessen durch gewöhnliche und partielle Differentialgleichungen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["MATH-DIFF", "Differential equations", "DGL"]
+    },
+    {
+      "id": "KNOW:MATH-ANAL",
+      "type": "KnowledgeDomain",
+      "name": "Analysis, Fourieranalyse",
+      "description": "Funktionen, Grenzwerte, Ableitung, Integration, Reihen und Fourieranalyse als Werkzeuge kontinuierlicher Modellierung.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["MATH-ANAL", "Analysis", "Calculus", "Fourier analysis"]
+    },
+    {
+      "id": "KNOW:BIO-BASIC",
+      "type": "KnowledgeDomain",
+      "name": "Biologie Grundlagen",
+      "description": "Grundlagen lebender Systeme, Zellen, Organismen, Stoffwechsel, Vererbung und biologische Organisation.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["BIO-BASIC", "Biology basics", "Biologie"]
+    },
+    {
+      "id": "KNOW:BIO-NEURO",
+      "type": "KnowledgeDomain",
+      "name": "Neurowissenschaften",
+      "description": "Struktur und Funktion des Nervensystems, neuronale Informationsverarbeitung, Kognition und Bewusstsein im jeweiligen Niveau.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["BIO-NEURO", "Neuroscience", "Neurowissenschaft"]
+    },
+    {
+      "id": "KNOW:BIO-EVOL",
+      "type": "KnowledgeDomain",
+      "name": "Evolutionsbiologie, Habitabilität",
+      "description": "Evolution, Anpassung, Selektion, Entstehung von Leben und Bedingungen biologischer Bewohnbarkeit.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["BIO-EVOL", "Evolutionary biology", "Habitability"]
+    },
+    {
+      "id": "KNOW:CHEM-BASIC",
+      "type": "KnowledgeDomain",
+      "name": "Chemie Grundlagen",
+      "description": "Atome, Moleküle, Bindungen, Reaktionen, Stoffeigenschaften und chemische Grundprinzipien.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["CHEM-BASIC", "Chemistry basics", "Chemie"]
+    },
+    {
+      "id": "KNOW:CHEM-GEO",
+      "type": "KnowledgeDomain",
+      "name": "Geochemie",
+      "description": "Chemische Prozesse und Zusammensetzungen in Gesteinen, Planeten, Krusten, Mänteln und geologischen Systemen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["CHEM-GEO", "Geochemistry", "Geochemie"]
+    },
+    {
+      "id": "KNOW:HIS-METHOD",
+      "type": "KnowledgeDomain",
+      "name": "Historiographische Methodik",
+      "description": "Methoden der Geschichtswissenschaft, Quellenkritik, Kontextualisierung und Rekonstruktion historischer Aussagen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["HIS-METHOD", "Historiography", "Quellenkritik"]
+    },
+    {
+      "id": "KNOW:HIS-ARCH",
+      "type": "KnowledgeDomain",
+      "name": "Archäologie, Befundinterpretation",
+      "description": "Archäologische Methoden, Befund- und Fundinterpretation, Materialkultur und historische Kontextbildung.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["HIS-ARCH", "Archaeology", "Befundinterpretation"]
+    },
+    {
+      "id": "KNOW:PHIL-EPIST",
+      "type": "KnowledgeDomain",
+      "name": "Erkenntnistheorie, Epistemologie",
+      "description": "Fragen nach Wissen, Rechtfertigung, Wahrheit, Evidenz, Modellstatus und Grenzen von Erkenntnis.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["PHIL-EPIST", "Epistemology", "Erkenntnistheorie"]
+    },
+    {
+      "id": "KNOW:PHIL-SCI",
+      "type": "KnowledgeDomain",
+      "name": "Wissenschaftstheorie, Falsifikation",
+      "description": "Methoden, Geltungsansprüche, Falsifikation, Modellbildung und erkenntnistheoretische Grundlagen der Wissenschaften.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["PHIL-SCI", "Philosophy of science", "Wissenschaftstheorie"]
+    },
+    {
+      "id": "KNOW:LANG-DE",
+      "type": "KnowledgeDomain",
+      "name": "Deutsch, Lesekompetenz",
+      "description": "Fähigkeit, deutschsprachige Sach-, Fach- und Archivtexte auf dem angegebenen Niveau zu lesen und zu verstehen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["LANG-DE", "German reading competence", "Deutsch"]
+    },
+    {
+      "id": "KNOW:LANG-EN",
+      "type": "KnowledgeDomain",
+      "name": "Englisch, Lesekompetenz und Primärliteratur",
+      "description": "Fähigkeit, englischsprachige Sach-, Fach- und Primärliteratur auf dem angegebenen Niveau zu lesen und zu verstehen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["LANG-EN", "English reading competence", "Scientific English"]
+    },
+    {
+      "id": "KNOW:LANG-SCI",
+      "type": "KnowledgeDomain",
+      "name": "Wissenschaftliches Lesen",
+      "description": "Fähigkeit, wissenschaftliche Texte, Paper, Abstracts, Methodenabschnitte, Abbildungen und Unsicherheitsaussagen strukturiert zu lesen.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["LANG-SCI", "Scientific literacy", "Wissenschaftliche Lesekompetenz"]
+    },
+    {
+      "id": "KNOW:TOOL-PEERLIT",
+      "type": "KnowledgeDomain",
+      "name": "Umgang mit peer-reviewed Literatur",
+      "description": "Recherche, Auswahl, Lektüre, Bewertung und Zitierfähigkeit wissenschaftlicher Primär- und Sekundärliteratur.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["TOOL-PEERLIT", "Peer-reviewed literature", "Literaturarbeit"]
+    },
+    {
+      "id": "KNOW:TOOL-DATASCI",
+      "type": "KnowledgeDomain",
+      "name": "Datenauswertung und Modellierung",
+      "description": "Strukturierte Arbeit mit Daten, Modellen, Visualisierung, Unsicherheit und reproduzierbaren Auswertungsschritten.",
+      "levelSupport": ["N1", "N2", "N3", "N4"],
+      "aliases": ["TOOL-DATASCI", "Data science", "Modellierung", "Datenauswertung"]
+    }
+  ]
+}
