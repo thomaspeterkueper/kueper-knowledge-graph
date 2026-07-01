@@ -45,6 +45,75 @@
         "repo": "thomaspeterkueper/kueper.com",
         "path": "src/content/kue/ast/kue-ast-0001-2026-de.md",
         "type": "published_foundation_document"
+      },
+      {
+        "id": "DOC:OTA:OTA-SCI-0083-2026-DE",
+        "canonicalId": "OTA-SCI-0083-2026-DE",
+        "type": "Document",
+        "system": "SYS:KUEPER:ota",
+        "title": "Transkrustaler Magmatismus am Mars",
+        "series": "SCI",
+        "category": "Science / Planetologie / Mars-Geophysik",
+        "language": "DE",
+        "status": "Canonical",
+        "documentType": "SCI",
+        "summary": "OTA-Metadokument zu transkrustalem Magmatismus am Mars mit Bezügen zu Seismologie, Petrologie, Planetologie und Bayes'scher Inferenz. Der Knowledge Graph speichert nur Metadaten; Volltext bleibt im OverTime Archive.",
+        "publicationDate": "2026",
+        "author": "Thomas Peter Küper",
+        "sourceUrl": null,
+        "prerequisiteIds": [
+          "REQ:OTA-SCI-0083-2026-DE:KNOW-GEO-SEISM:N2:READ",
+          "REQ:OTA-SCI-0083-2026-DE:KNOW-GEO-PETRO:N2:READ",
+          "REQ:OTA-SCI-0083-2026-DE:KNOW-MATH-BAYES:N2:READ",
+          "REQ:OTA-SCI-0083-2026-DE:KNOW-GEO-PLANET:N1:READ",
+          "REQ:OTA-SCI-0083-2026-DE:KNOW-LANG-EN:N2:READ"
+        ],
+        "relatedDocuments": [
+          "OTA-SCI-0043",
+          "OTA-META-0001"
+        ],
+        "relatedKnowledgeDomains": [
+          "KNOW:GEO-SEISM",
+          "KNOW:GEO-PETRO",
+          "KNOW:MATH-BAYES",
+          "KNOW:GEO-PLANET",
+          "KNOW:LANG-EN"
+        ],
+        "markerProfile": ["R", "H", "OFFEN"],
+        "contentOwnership": "OverTime Archive",
+        "metadataOwner": "KUEPER Knowledge Graph"
+      },
+      {
+        "id": "DOC:OTA:OTA-FND-0028-2026-DE",
+        "canonicalId": "OTA-FND-0028-2026-DE",
+        "type": "Document",
+        "system": "SYS:KUEPER:ota",
+        "title": "AVI-Modell, axiomatisch",
+        "series": "FND",
+        "category": "Foundation / Modellarchitektur / Axiomatik",
+        "language": "DE",
+        "status": "Canonical",
+        "documentType": "FND",
+        "summary": "OTA-Fundamentdokument zum AVI-Modell in axiomatischer Form mit Bezügen zu Quantenmechanik, Differentialgleichungen, Elektromagnetismus und Wissenschaftstheorie. Der Knowledge Graph speichert nur Metadaten; Volltext bleibt im OverTime Archive.",
+        "publicationDate": "2026",
+        "author": "Thomas Peter Küper",
+        "sourceUrl": null,
+        "prerequisiteIds": [
+          "REQ:OTA-FND-0028-2026-DE:KNOW-PHYS-QM:N2:READ",
+          "REQ:OTA-FND-0028-2026-DE:KNOW-MATH-DIFF:N2:READ",
+          "REQ:OTA-FND-0028-2026-DE:KNOW-PHIL-SCI:N2:READ",
+          "REQ:OTA-FND-0028-2026-DE:KNOW-PHYS-EM:N2:READ"
+        ],
+        "relatedDocuments": [],
+        "relatedKnowledgeDomains": [
+          "KNOW:PHYS-QM",
+          "KNOW:MATH-DIFF",
+          "KNOW:PHIL-SCI",
+          "KNOW:PHYS-EM"
+        ],
+        "markerProfile": ["T", "H", "F", "OFFEN"],
+        "contentOwnership": "OverTime Archive",
+        "metadataOwner": "KUEPER Knowledge Graph"
       }
     ],
     "learningModules": [
