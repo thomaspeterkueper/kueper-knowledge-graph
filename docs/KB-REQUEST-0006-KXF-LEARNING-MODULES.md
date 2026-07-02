@@ -2,7 +2,7 @@
 
 ## Status
 
-Implemented, 2026-07-02
+Implemented and aligned, 2026-07-02
 
 ## Ursprung
 
@@ -24,7 +24,9 @@ Der Export stellt SSF-Lernmodule in einer UI-nahen Struktur bereit. Er ist kein 
 {
   "schema": "KXF-LEARNING-MODULES-0.1",
   "records": {
-    "learning_modules": []
+    "learning_modules": [],
+    "knowledge_domains": [],
+    "competencies": []
   }
 }
 ```
@@ -51,7 +53,9 @@ Die Feldnamen folgen der SSF-Implementierung, insbesondere:
 records.learning_modules
 meta.subject
 dependencies.requires
-dependencies.unlocks
+dependencies.module_unlocks
+dependencies.path_unlocks
+dependencies.archive_unlocks
 ```
 
 ## Subject Codes
@@ -59,12 +63,46 @@ dependencies.unlocks
 Der Export verwendet die von SSF erwarteten Codes:
 
 ```text
-PHY
-CHM
-BIO
 MAT
-GEO
-TEC
+PHY
+CHE
+AST
+BIO
+EAR
+```
+
+`GEO` wird nicht mehr als SSF-Subject exportiert. Planetologie wird in diesem View unter `AST` gefuehrt, Seismologie und Petrologie unter `EAR`.
+
+`TEC` wird nicht exportiert, bis SSF eine kanonische Zuordnung fuer Methodik- und Lesekompetenzmodule definiert.
+
+## Unlock-Semantik
+
+`dependencies.unlocks` wurde entfernt, weil es verschiedene Bedeutungen vermischte.
+
+Stattdessen gibt es:
+
+```text
+module_unlocks
+path_unlocks
+archive_unlocks
+```
+
+`noxia.grants` bleibt getrennt.
+
+## KD/CMP-Aufloesung
+
+Der Export enthaelt `records.knowledge_domains` und `records.competencies`, damit `KD:*`- und `CMP:*`-Referenzen aus demselben Export aufloesbar sind.
+
+`KNOW:*` bleibt Legacy und erscheint nur als `legacyId`.
+
+## Source of Truth
+
+Fuer `LRN:SSF:*` gilt:
+
+```text
+Kanonische KG-Basis: exports/learning-model-0.1.json
+SSF /learn View:     exports/kxf-learning-modules-0.1.json records.learning_modules
+Legacy compact KXF:  records.learningModules, nur Kompatibilitaet
 ```
 
 ## Regel
