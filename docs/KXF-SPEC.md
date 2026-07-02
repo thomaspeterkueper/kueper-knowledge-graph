@@ -6,7 +6,7 @@ Draft productive, 2026-07-02
 
 ## Zweck
 
-KXF ist das Austauschformat des KUEPER Knowledge Graph. Es exportiert kanonische Entitaeten, Dokument-Metadaten, Knowledge Domains, Prerequisites, Relationen, Lernmodule, Unlocks und Mappings fuer OTA, SSF, NOXIA und kueper.com.
+KXF ist das Austauschformat des KUEPER Knowledge Graph. Es exportiert kanonische Entitaeten, Dokument-Metadaten, Knowledge Domains, Prerequisites, Relationen, Lernmodule, Unlocks, Mappings und Ingestion-Metadaten fuer OTA, SSF, NOXIA und kueper.com.
 
 Der Knowledge Graph bleibt die Single Source of Truth. Andere Systeme konsumieren KXF, definieren aber keine eigenen kanonischen Wissensobjekte.
 
@@ -17,17 +17,19 @@ Der Knowledge Graph bleibt die Single Source of Truth. Andere Systeme konsumiere
 | KXF-0.1 | draft_productive | Grundexport mit Entities, Documents, `KNOW:*`-Domains und Prerequisites |
 | KXF-0.2 | draft_productive | niveaugebundene `KD:*:N*`-KnowledgeDomains und kanonische `REQUIRES`-Prerequisites |
 | KXF-0.3 | draft_productive | explizite `Relation`-Records als Graph-Kanten |
+| KXF-0.4 | draft_productive | Competencies, LearningModules, Assessments und LearningPaths |
+| KXF-0.5 | draft_productive | OTA-Ingestion-Regeln, IngestionRuns und Normalisierung |
 
 ## Top-Level-Struktur
 
 ```json
 {
-  "schema": "KXF-0.3",
+  "schema": "KXF-0.5",
   "name": "KUEPER Exchange Format",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
   "principle": "single_source_of_truth",
-  "version": "0.3",
+  "version": "0.5",
   "updated": "2026-07-02",
   "records": {
     "entities": [],
@@ -35,7 +37,12 @@ Der Knowledge Graph bleibt die Single Source of Truth. Andere Systeme konsumiere
     "knowledgeDomains": [],
     "prerequisites": [],
     "relations": [],
+    "competencies": [],
     "learningModules": [],
+    "assessments": [],
+    "learningPaths": [],
+    "ingestionRules": [],
+    "ingestionRuns": [],
     "unlocks": [],
     "buildings": [],
     "mappings": []
@@ -125,17 +132,68 @@ Ab KXF-0.3 werden semantische Graph-Kanten als eigene Records exportiert.
 }
 ```
 
-Relationen ersetzen spezialisierte Records nicht automatisch. Eine `Prerequisite` kann weiterhin existieren, waehrend dieselbe Verbindung zusaetzlich als `Relation` exportiert wird.
+## Learning Model
+
+Ab KXF-0.4 koennen Kompetenzen und Lernpfade exportiert werden.
+
+```json
+{
+  "id": "CMP:GEO-SEISM:N2",
+  "type": "Competency",
+  "knowledgeDomain": "KD:GEO-SEISM:N2",
+  "level": "N2"
+}
+```
+
+```json
+{
+  "id": "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
+  "type": "LearningPath",
+  "target": "DOC:OTA:OTA-SCI-0083-2026-DE",
+  "purpose": "read",
+  "steps": ["LRN:SSF:GEO-2201", "ASM:SSF:GEO-2201"]
+}
+```
+
+## Ingestion Metadata
+
+Ab KXF-0.5 koennen Importregeln und Importlaeufe exportiert werden.
+
+```json
+{
+  "id": "IR:OTA:PREREQ",
+  "type": "IngestionRule",
+  "field": "prerequisites",
+  "action": "map_to_knowledge_domain",
+  "targetFormat": "KD:<DOMAIN-CODE>:<LEVEL>",
+  "required": false
+}
+```
+
+```json
+{
+  "id": "ING:OTA:2026-07-02:0001",
+  "type": "IngestionRun",
+  "sourceSystem": "SYS:KUEPER:ota",
+  "targetSystem": "SYS:KUEPER:knowledge-graph",
+  "status": "draft_productive",
+  "documentsProcessed": 2,
+  "reviewRequired": 0
+}
+```
 
 ## Erlaubte Relationstypen ab KG-0003
 
 | Relation | Quelle | Ziel |
 |---|---|---|
 | REQUIRES | Document, LearningModule, Project, Building | KnowledgeDomain, Unlock, LearningModule |
-| TEACHES | LearningModule | KnowledgeDomain, Concept |
+| TEACHES | LearningModule | KnowledgeDomain, Concept, Competency |
 | COVERS | Document | KnowledgeDomain, Concept, Place |
 | PARENT_OF | KnowledgeDomain | KnowledgeDomain |
-| SATISFIES | LearningModule | Prerequisite |
+| SATISFIES | LearningModule, Assessment, Competency | Prerequisite |
+| VALIDATES | Assessment | Competency |
+| PART_OF | LearningModule, Assessment | LearningPath |
+| TARGETS | LearningPath | Document, Unlock, Building, Project |
 | UNLOCKS | LearningModule, Unlock | Unlock, Building, Mechanic, Project |
 | MAPS_TO | Legacy-ID, Mapping | Canonical-ID |
 | OWNED_BY | Document, MetadataRecord | System, Repository, Organization |
@@ -147,11 +205,6 @@ Relationen ersetzen spezialisierte Records nicht automatisch. Eine `Prerequisite
 
 Neue Prerequisites muessen auf `KD:*:N*` zeigen.
 
-```text
-Alt: REQ:OTA-SCI-0083-2026-DE:KNOW-GEO-SEISM:N2:READ
-Neu: REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ
-```
-
 ## Validierungsregeln
 
 1. Jeder Record besitzt `id` und `type`.
@@ -161,5 +214,11 @@ Neu: REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ
 5. Neue Prerequisites duerfen nicht mehr auf `KNOW:*` zeigen.
 6. Jede Relation besitzt `from`, `relation`, `to`, `status` und `source`.
 7. `Relation.relation` muss aus dem erlaubten Relationstyp-Katalog stammen.
-8. Dokumente speichern keinen Volltext, sondern nur Metadaten und Verweise.
-9. Exporte muessen `schema`, `version` und `updated` enthalten.
+8. Jede Competency muss auf eine KnowledgeDomain zeigen.
+9. Jedes LearningModule braucht `teaches`.
+10. Jedes Assessment braucht `validates`.
+11. Jeder LearningPath braucht `target` und `steps`.
+12. Jeder IngestionRun braucht `sourceSystem`, `targetSystem`, `status` und Zaehlerfelder.
+13. Ingestion darf keine neuen KnowledgeDomains ohne Review erzeugen.
+14. Dokumente speichern keinen Volltext, sondern nur Metadaten und Verweise.
+15. Exporte muessen `schema`, `version` und `updated` enthalten.
