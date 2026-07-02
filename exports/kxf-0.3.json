@@ -1,0 +1,131 @@
+{
+  "schema": "KXF-0.3",
+  "name": "KUEPER Exchange Format",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "principle": "single_source_of_truth",
+  "version": "0.3",
+  "updated": "2026-07-02",
+  "sourceDocuments": [
+    "KG-ARC-0001-2026-DE",
+    "KG-0002-KNOWLEDGE-DOMAINS-CANONICAL",
+    "KG-0003-RELATIONS"
+  ],
+  "records": {
+    "entities": [
+      { "id": "CON:L1:gravitation", "type": "Concept", "layer": "L1", "domain": "PHY", "name": "Gravitation" },
+      { "id": "CON:L1:orbitalmechanik", "type": "Concept", "layer": "L1", "domain": "AST", "name": "Orbitalmechanik" },
+      { "id": "PLC:AST:mars", "type": "Place", "domain": "AST", "name": "Mars" },
+      { "id": "ORG:SSF", "type": "Organization", "name": "Solar Science Foundation" }
+    ],
+    "documents": [
+      { "id": "DOC:KUE:KUE-AST-0001-2026-DE", "system": "SYS:KUEPER:kueper-com", "repo": "thomaspeterkueper/kueper.com", "path": "src/content/kue/ast/kue-ast-0001-2026-de.md", "type": "published_foundation_document" },
+      {
+        "id": "DOC:OTA:OTA-SCI-0083-2026-DE",
+        "canonicalId": "OTA-SCI-0083-2026-DE",
+        "type": "Document",
+        "system": "SYS:KUEPER:ota",
+        "title": "Transkrustaler Magmatismus am Mars",
+        "series": "SCI",
+        "category": "Science / Planetologie / Mars-Geophysik",
+        "language": "DE",
+        "status": "Canonical",
+        "documentType": "SCI",
+        "summary": "OTA-Metadokument zu transkrustalem Magmatismus am Mars mit Bezuegen zu Seismologie, Petrologie, Planetologie und Bayes'scher Inferenz. Der Knowledge Graph speichert nur Metadaten; Volltext bleibt im OverTime Archive.",
+        "publicationDate": "2026",
+        "author": "Thomas Peter Kueper",
+        "sourceUrl": null,
+        "prerequisiteIds": ["REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ", "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-PETRO:N2:READ", "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:MATH-BAYES:N2:READ", "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-PLANET:N1:READ", "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:LANG-EN:N2:READ"],
+        "relatedKnowledgeDomains": ["KD:GEO-SEISM:N2", "KD:GEO-PETRO:N2", "KD:MATH-BAYES:N2", "KD:GEO-PLANET:N1", "KD:LANG-EN:N2"],
+        "markerProfile": ["R", "H", "OFFEN"],
+        "contentOwnership": "OverTime Archive",
+        "metadataOwner": "KUEPER Knowledge Graph"
+      },
+      {
+        "id": "DOC:OTA:OTA-FND-0028-2026-DE",
+        "canonicalId": "OTA-FND-0028-2026-DE",
+        "type": "Document",
+        "system": "SYS:KUEPER:ota",
+        "title": "AVI-Modell, axiomatisch",
+        "series": "FND",
+        "category": "Foundation / Modellarchitektur / Axiomatik",
+        "language": "DE",
+        "status": "Canonical",
+        "documentType": "FND",
+        "summary": "OTA-Fundamentdokument zum AVI-Modell in axiomatischer Form mit Bezuegen zu Quantenmechanik, Differentialgleichungen, Elektromagnetismus und Wissenschaftstheorie. Der Knowledge Graph speichert nur Metadaten; Volltext bleibt im OverTime Archive.",
+        "publicationDate": "2026",
+        "author": "Thomas Peter Kueper",
+        "sourceUrl": null,
+        "prerequisiteIds": ["REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-QM:N2:READ", "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:MATH-DIFF:N2:READ", "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHIL-SCI:N2:READ", "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-EM:N2:READ"],
+        "relatedKnowledgeDomains": ["KD:PHYS-QM:N2", "KD:MATH-DIFF:N2", "KD:PHIL-SCI:N2", "KD:PHYS-EM:N2"],
+        "markerProfile": ["T", "H", "F", "OFFEN"],
+        "contentOwnership": "OverTime Archive",
+        "metadataOwner": "KUEPER Knowledge Graph"
+      }
+    ],
+    "knowledgeDomains": [
+      { "id": "KD:GEO:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO", "level": "N1", "title": "Geowissenschaften - Orientierung", "parent": null, "description": "Orientierung in geologischen und planetologischen Grundbegriffen, Materialien, Prozessen und Skalen." },
+      { "id": "KD:GEO-SEISM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-SEISM", "level": "N2", "title": "Seismologie - arbeitsfaehiges Grundverstaendnis", "parent": "KD:GEO:N1", "description": "Grundlagen seismischer Wellen, Messdaten und Interpretationslogik, ausreichend zum Lesen planetologischer OTA-Dokumente." },
+      { "id": "KD:GEO-PETRO:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-PETRO", "level": "N2", "title": "Petrologie - arbeitsfaehiges Grundverstaendnis", "parent": "KD:GEO:N1", "description": "Grundlagen von Gesteinsbildung, Mineralogie, Schmelzprozessen und petrologischer Interpretation." },
+      { "id": "KD:GEO-PLANET:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-PLANET", "level": "N1", "title": "Planetologie und planetare Struktur - Orientierung", "parent": "KD:GEO:N1", "description": "Grundorientierung zu planetaren Koerpern, innerer Struktur, Kruste, Mantel, Kern und geologischer Entwicklung." },
+      { "id": "KD:MATH:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH", "level": "N1", "title": "Mathematik - Orientierung", "parent": null, "description": "Orientierung in mathematischen Grundbegriffen, Symbolsprache, Funktionen, Wahrscheinlichkeiten und Modelllogik." },
+      { "id": "KD:MATH-BAYES:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH-BAYES", "level": "N2", "title": "Bayes'sche Inferenz - arbeitsfaehiges Grundverstaendnis", "parent": "KD:MATH:N1", "description": "Wahrscheinlichkeitstheoretische Aktualisierung von Annahmen anhand von Evidenz, inklusive Priors, Likelihood und Posterior-Logik." },
+      { "id": "KD:MATH-DIFF:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH-DIFF", "level": "N2", "title": "Differentialgleichungen - arbeitsfaehiges Grundverstaendnis", "parent": "KD:MATH:N1", "description": "Grundlagen von Differentialgleichungen als Beschreibung dynamischer Systeme, Felder, Veraenderungsraten und Modellverhalten." },
+      { "id": "KD:PHYS:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS", "level": "N1", "title": "Physik - Orientierung", "parent": null, "description": "Orientierung in physikalischen Grundbegriffen wie Energie, Kraft, Feld, Welle, Materie und Messung." },
+      { "id": "KD:PHYS-QM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-QM", "level": "N2", "title": "Quantenmechanik - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen quantenmechanischer Konzepte, Zustaende, Operatoren, Messung und Modellgrenzen." },
+      { "id": "KD:PHYS-EM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-EM", "level": "N2", "title": "Elektromagnetismus - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen elektrischer und magnetischer Felder, elektromagnetischer Wechselwirkung und feldphysikalischer Modellierung." },
+      { "id": "KD:PHIL-SCI:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHIL-SCI", "level": "N2", "title": "Wissenschaftstheorie - arbeitsfaehiges Grundverstaendnis", "parent": null, "description": "Grundlagen wissenschaftlicher Methode, Falsifizierbarkeit, Evidenz, Modellgrenzen, Hypothesenstatus und epistemischer Markierung." },
+      { "id": "KD:LANG-EN:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "LANG-EN", "level": "N2", "title": "Englisch fuer wissenschaftliche Primaerliteratur", "parent": null, "description": "Lesekompetenz fuer englischsprachige wissenschaftliche Abstracts, Paper, Datentabellen und Fachterminologie." }
+    ],
+    "prerequisites": [
+      { "id": "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-SEISM:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-PETRO:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-PETRO:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:MATH-BAYES:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:MATH-BAYES:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-PLANET:N1:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-PLANET:N1", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:LANG-EN:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:LANG-EN:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-QM:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHYS-QM:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:MATH-DIFF:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:MATH-DIFF:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHIL-SCI:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHIL-SCI:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" },
+      { "id": "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-EM:N2:READ", "type": "Prerequisite", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHYS-EM:N2", "purpose": "read", "status": "canonical", "source": "KG-0002" }
+    ],
+    "learningModules": [
+      { "id": "LRN:SSF:PHY-1101", "system": "SYS:KUEPER:ssf", "name": "Was ist Gravitation?", "teaches": ["CON:L1:gravitation"], "requires": ["LRN:SSF:MAT-1001"], "unlocks": ["UNL:NOX:orbital-navigation"] }
+    ],
+    "relations": [
+      { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-SEISM:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-SEISM:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-PETRO:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-PETRO:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:MATH-BAYES:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:MATH-BAYES:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-PLANET:N1", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-PLANET:N1", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:LANG-EN:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:LANG-EN:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:PHYS-QM:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHYS-QM:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:MATH-DIFF:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:MATH-DIFF:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:PHIL-SCI:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHIL-SCI:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:PHYS-EM:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHYS-EM:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:KD:GEO:N1:PARENT_OF:KD:GEO-SEISM:N2", "type": "Relation", "from": "KD:GEO:N1", "relation": "PARENT_OF", "to": "KD:GEO-SEISM:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:KD:GEO:N1:PARENT_OF:KD:GEO-PETRO:N2", "type": "Relation", "from": "KD:GEO:N1", "relation": "PARENT_OF", "to": "KD:GEO-PETRO:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:KD:GEO:N1:PARENT_OF:KD:GEO-PLANET:N1", "type": "Relation", "from": "KD:GEO:N1", "relation": "PARENT_OF", "to": "KD:GEO-PLANET:N1", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:KD:MATH:N1:PARENT_OF:KD:MATH-BAYES:N2", "type": "Relation", "from": "KD:MATH:N1", "relation": "PARENT_OF", "to": "KD:MATH-BAYES:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:KD:MATH:N1:PARENT_OF:KD:MATH-DIFF:N2", "type": "Relation", "from": "KD:MATH:N1", "relation": "PARENT_OF", "to": "KD:MATH-DIFF:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:KD:PHYS:N1:PARENT_OF:KD:PHYS-QM:N2", "type": "Relation", "from": "KD:PHYS:N1", "relation": "PARENT_OF", "to": "KD:PHYS-QM:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:KD:PHYS:N1:PARENT_OF:KD:PHYS-EM:N2", "type": "Relation", "from": "KD:PHYS:N1", "relation": "PARENT_OF", "to": "KD:PHYS-EM:N2", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:COVERS:PLC:AST:mars", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "COVERS", "to": "PLC:AST:mars", "status": "draft_productive", "source": "KG-0003" },
+      { "id": "REL:LRN:SSF:PHY-1101:TEACHES:CON:L1:gravitation", "type": "Relation", "from": "LRN:SSF:PHY-1101", "relation": "TEACHES", "to": "CON:L1:gravitation", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:LRN:SSF:PHY-1101:UNLOCKS:UNL:NOX:orbital-navigation", "type": "Relation", "from": "LRN:SSF:PHY-1101", "relation": "UNLOCKS", "to": "UNL:NOX:orbital-navigation", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:UNL:NOX:orbital-navigation:UNLOCKS:BLD:NOX:raumhafen-1", "type": "Relation", "from": "UNL:NOX:orbital-navigation", "relation": "UNLOCKS", "to": "BLD:NOX:raumhafen-1", "status": "canonical", "source": "KG-0003" },
+      { "id": "REL:MAP:KG-0002:KNOW-GEO-SEISM-N2:MAPS_TO:KD:GEO-SEISM:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-GEO-SEISM-N2", "relation": "MAPS_TO", "to": "KD:GEO-SEISM:N2", "status": "draft_productive", "source": "KG-0003" },
+      { "id": "REL:MAP:KG-0002:KNOW-GEO-PETRO-N2:MAPS_TO:KD:GEO-PETRO:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-GEO-PETRO-N2", "relation": "MAPS_TO", "to": "KD:GEO-PETRO:N2", "status": "draft_productive", "source": "KG-0003" },
+      { "id": "REL:MAP:KG-0002:KNOW-MATH-BAYES-N2:MAPS_TO:KD:MATH-BAYES:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-MATH-BAYES-N2", "relation": "MAPS_TO", "to": "KD:MATH-BAYES:N2", "status": "draft_productive", "source": "KG-0003" }
+    ],
+    "unlocks": [
+      { "id": "UNL:NOX:orbital-navigation", "system": "SYS:KUEPER:ssf", "target_system": "SYS:KUEPER:noxia", "requires": ["LRN:SSF:PHY-1101"], "unlocks": ["BLD:NOX:raumhafen-1"] }
+    ],
+    "buildings": [
+      { "id": "BLD:NOX:raumhafen-1", "system": "SYS:KUEPER:noxia", "name": "Raumhafen I", "requires": ["UNL:NOX:orbital-navigation"] }
+    ],
+    "mappings": [
+      { "id": "MAP:KG-0002:KNOW-GEO-SEISM-N2", "type": "Mapping", "source": "KNOW:GEO-SEISM + N2", "target": "KD:GEO-SEISM:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" },
+      { "id": "MAP:KG-0002:KNOW-GEO-PETRO-N2", "type": "Mapping", "source": "KNOW:GEO-PETRO + N2", "target": "KD:GEO-PETRO:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" },
+      { "id": "MAP:KG-0002:KNOW-MATH-BAYES-N2", "type": "Mapping", "source": "KNOW:MATH-BAYES + N2", "target": "KD:MATH-BAYES:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" }
+    ]
+  }
+}
