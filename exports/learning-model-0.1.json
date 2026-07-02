@@ -1,0 +1,35 @@
+{
+  "schema": "KUEPER-LEARNING-MODEL-0.1",
+  "name": "KUEPER SSF Learning Model",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-02",
+  "sourceDocuments": ["KG-0004-LEARNING-MODEL"],
+  "learningModules": [
+    { "id": "LRN:SSF:GEO-1101", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Orientierung Planetologie", "teaches": ["CMP:GEO-PLANET:N1"], "status": "draft_productive" },
+    { "id": "LRN:SSF:GEO-2201", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Einfuehrung in die planetare Seismologie", "teaches": ["CMP:GEO-SEISM:N2"], "status": "draft_productive" },
+    { "id": "LRN:SSF:GEO-2202", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Petrologie und Gesteinsbildung", "teaches": ["CMP:GEO-PETRO:N2"], "status": "draft_productive" },
+    { "id": "LRN:SSF:MATH-2201", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Bayes-Inferenz fuer Wissenschaftstexte", "teaches": ["CMP:MATH-BAYES:N2"], "status": "draft_productive" },
+    { "id": "LRN:SSF:LANG-2201", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Englische Primaerliteratur lesen", "teaches": ["CMP:LANG-EN:N2"], "status": "draft_productive" },
+    { "id": "LRN:SSF:PHYS-2201", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Quantenmechanik fuer Modellarchitektur", "teaches": ["CMP:PHYS-QM:N2"], "status": "draft_productive" },
+    { "id": "LRN:SSF:MATH-2202", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Differentialgleichungen als Modellsprache", "teaches": ["CMP:MATH-DIFF:N2"], "status": "draft_productive" },
+    { "id": "LRN:SSF:PHIL-2201", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Wissenschaftstheorie und Marker", "teaches": ["CMP:PHIL-SCI:N2"], "status": "draft_productive" },
+    { "id": "LRN:SSF:PHYS-2202", "type": "LearningModule", "system": "SYS:KUEPER:ssf", "title": "Elektromagnetismus und Feldmodelle", "teaches": ["CMP:PHYS-EM:N2"], "status": "draft_productive" }
+  ],
+  "assessments": [
+    { "id": "ASM:SSF:GEO-1101", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:GEO-PLANET:N1"], "status": "draft_productive" },
+    { "id": "ASM:SSF:GEO-2201", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:GEO-SEISM:N2"], "status": "draft_productive" },
+    { "id": "ASM:SSF:GEO-2202", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:GEO-PETRO:N2"], "status": "draft_productive" },
+    { "id": "ASM:SSF:MATH-2201", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:MATH-BAYES:N2"], "status": "draft_productive" },
+    { "id": "ASM:SSF:LANG-2201", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:LANG-EN:N2"], "status": "draft_productive" },
+    { "id": "ASM:SSF:PHYS-2201", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:PHYS-QM:N2"], "status": "draft_productive" },
+    { "id": "ASM:SSF:MATH-2202", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:MATH-DIFF:N2"], "status": "draft_productive" },
+    { "id": "ASM:SSF:PHIL-2201", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:PHIL-SCI:N2"], "status": "draft_productive" },
+    { "id": "ASM:SSF:PHYS-2202", "type": "Assessment", "system": "SYS:KUEPER:ssf", "validates": ["CMP:PHYS-EM:N2"], "status": "draft_productive" }
+  ],
+  "learningPaths": [
+    { "id": "PATH:OTA:OTA-SCI-0083-2026-DE:READ", "type": "LearningPath", "target": "DOC:OTA:OTA-SCI-0083-2026-DE", "purpose": "read", "steps": ["LRN:SSF:GEO-1101", "ASM:SSF:GEO-1101", "LRN:SSF:GEO-2201", "ASM:SSF:GEO-2201", "LRN:SSF:GEO-2202", "ASM:SSF:GEO-2202", "LRN:SSF:MATH-2201", "ASM:SSF:MATH-2201", "LRN:SSF:LANG-2201", "ASM:SSF:LANG-2201"], "status": "draft_productive" },
+    { "id": "PATH:OTA:OTA-FND-0028-2026-DE:READ", "type": "LearningPath", "target": "DOC:OTA:OTA-FND-0028-2026-DE", "purpose": "read", "steps": ["LRN:SSF:PHYS-2201", "ASM:SSF:PHYS-2201", "LRN:SSF:MATH-2202", "ASM:SSF:MATH-2202", "LRN:SSF:PHIL-2201", "ASM:SSF:PHIL-2201", "LRN:SSF:PHYS-2202", "ASM:SSF:PHYS-2202"], "status": "draft_productive" }
+  ]
+}
