@@ -1,0 +1,36 @@
+{
+  "schema": "KUEPER-INGESTION-RULES-0.1",
+  "name": "OTA to KUEPER KG Ingestion Rules",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-02",
+  "sourceDocuments": ["KG-0005-OTA-INGESTION"],
+  "sourceSystem": "SYS:KUEPER:ota",
+  "targetSystem": "SYS:KUEPER:knowledge-graph",
+  "rules": [
+    { "id": "IR:OTA:DOC-ID", "type": "IngestionRule", "field": "signature", "action": "create_document_id", "format": "DOC:OTA:<signature>", "required": true },
+    { "id": "IR:OTA:TITLE", "type": "IngestionRule", "field": "title", "action": "copy_to_document_title", "required": true },
+    { "id": "IR:OTA:SERIES", "type": "IngestionRule", "field": "series", "action": "copy_to_document_series", "required": true },
+    { "id": "IR:OTA:LANG", "type": "IngestionRule", "field": "language", "action": "copy_to_document_language", "required": true },
+    { "id": "IR:OTA:STATUS", "type": "IngestionRule", "field": "status", "action": "normalize_status", "required": true },
+    { "id": "IR:OTA:MARKERS", "type": "IngestionRule", "field": "markerProfile", "action": "copy_marker_profile", "required": false },
+    { "id": "IR:OTA:PREREQ", "type": "IngestionRule", "field": "prerequisites", "action": "map_to_knowledge_domain", "targetFormat": "KD:<DOMAIN-CODE>:<LEVEL>", "required": false },
+    { "id": "IR:OTA:REQ", "type": "IngestionRule", "field": "mappedPrerequisites", "action": "create_prerequisite_records", "targetFormat": "REQ:<DOC-ID>:<KD-ID>:<PURPOSE>", "required": false },
+    { "id": "IR:OTA:REL", "type": "IngestionRule", "field": "mappedPrerequisites", "action": "create_relation_records", "targetFormat": "REL:<DOC-ID>:REQUIRES:<KD-ID>", "required": false },
+    { "id": "IR:OTA:LEARNING-HOOK", "type": "IngestionRule", "field": "mappedPrerequisites", "action": "link_existing_competencies", "targetFormat": "CMP:<DOMAIN-CODE>:<LEVEL>", "required": false },
+    { "id": "IR:OTA:REVIEW", "type": "IngestionRule", "field": "unknown_or_ambiguous_values", "action": "create_review_item", "required": false }
+  ],
+  "normalizationExamples": [
+    { "input": "GEO-SEISM N2", "output": "KD:GEO-SEISM:N2" },
+    { "input": "GEO-PETRO N2", "output": "KD:GEO-PETRO:N2" },
+    { "input": "MATH-BAYES N2", "output": "KD:MATH-BAYES:N2" },
+    { "input": "PHYS-QM N2", "output": "KD:PHYS-QM:N2" }
+  ],
+  "blockedAutoCreation": [
+    "KnowledgeDomain",
+    "Concept",
+    "Model",
+    "CanonicalDocument"
+  ]
+}
