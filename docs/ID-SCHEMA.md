@@ -33,12 +33,35 @@ DOC:L4:die-horcher
 
 ---
 
+## Sonderform fuer Knowledge Domains
+
+Ab KG-0002 besitzen Knowledge Domains eine eigene kanonische, niveaugebundene ID-Form:
+
+```text
+KD:<DOMAIN-CODE>:<LEVEL>
+```
+
+Beispiele:
+
+```text
+KD:GEO-SEISM:N2
+KD:GEO-PETRO:N2
+KD:MATH-BAYES:N2
+KD:PHYS-QM:N2
+```
+
+Begruendung: Eine Wissensvoraussetzung ist nicht nur ein Themenfeld, sondern ein Themenfeld auf einem bestimmten Kompetenzniveau. `GEO-SEISM` allein ist daher kein vollstaendiges Prerequisite-Ziel.
+
+Legacy-IDs im Muster `KNOW:*` bleiben als Aliase und Migrationsquellen erlaubt, duerfen aber nicht mehr als Ziel neuer Prerequisites verwendet werden.
+
+---
+
 ## Layer
 
 | Layer | Bedeutung | Beispiele |
 |---|---|---|
 | L0 | Foundation / universelle Konzepte | Information, Energie, Zeit, Raum |
-| L1 | Fachwissen | Gravitation, Evolution, Photosynthese |
+| L1 | Fachwissen | Gravitation, Evolution, Photosynthese, Knowledge Domains |
 | L2 | Modelle und Theorien | AVI, Temenon |
 | L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, NOXIA-Gebaeude, Domain, Legal-Dokument |
 | L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher |
@@ -50,6 +73,7 @@ DOC:L4:die-horcher
 | Praefix | Typ | Layer-Hinweis |
 |---|---|---|
 | CON | Concept | meist L0 oder L1 |
+| KD | KnowledgeDomain | L1, mit Sonderform `KD:<DOMAIN-CODE>:<LEVEL>` |
 | MOD | Model | meist L2 |
 | SYS | System | meist L3 |
 | ORG | Organization | meist L3 |
@@ -62,6 +86,7 @@ DOC:L4:die-horcher
 | DOC | Document | L1 bis L4 je nach Funktion |
 | PER | Person | meist L3 real oder L4 narrativ |
 | PLC | Place | L1 real/wissenschaftlich oder L4 narrativ |
+| REQ | Prerequisite | eigene Voraussetzung-ID, verweist auf Source und KnowledgeDomain |
 | REL | Relation | eigene Relation-ID, verweist auf Source und Target |
 | MAP | Mapping | eigene Mapping-ID, verweist auf Quelle und Ziel |
 
@@ -82,6 +107,37 @@ Beispiel:
   "name": "Gravitation"
 }
 ```
+
+Knowledge Domains sind die Ausnahme: Sie modellieren eine Wissensvoraussetzung und duerfen deshalb den fachlichen Domain-Code direkt in ihrer ID tragen.
+
+```json
+{
+  "id": "KD:GEO-SEISM:N2",
+  "type": "KnowledgeDomain",
+  "layer": "L1",
+  "code": "GEO-SEISM",
+  "level": "N2",
+  "title": "Seismologie - arbeitsfaehiges Grundverstaendnis"
+}
+```
+
+---
+
+## Prerequisite-IDs
+
+Prerequisites verwenden ab KG-0002 diese Form:
+
+```text
+REQ:<SOURCE-ID>:<TARGET-KD-ID>:<PURPOSE>
+```
+
+Beispiel:
+
+```text
+REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ
+```
+
+Die ID ist bewusst aus Quelle, Ziel und Zweck zusammengesetzt, damit sie eindeutig und maschinenlesbar bleibt.
 
 ---
 
@@ -110,6 +166,19 @@ Beispiel:
 }
 ```
 
+Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
+
+```json
+{
+  "id": "MAP:KG-0002:KNOW-GEO-SEISM-N2",
+  "type": "Mapping",
+  "source": "KNOW:GEO-SEISM + N2",
+  "target": "KD:GEO-SEISM:N2",
+  "mappingType": "legacy_domain_level_to_canonical_knowledge_domain",
+  "status": "draft_productive"
+}
+```
+
 ---
 
 ## Harte Regeln
@@ -122,6 +191,8 @@ Beispiel:
 6. Kein Export ohne Schema-Version.
 7. Narrative duerfen keine L0- oder L1-Wissensbasis definieren.
 8. Websites konsumieren kanonische Daten, sie definieren sie nicht.
+9. Keine neue Prerequisite ohne `KD:<DOMAIN-CODE>:<LEVEL>`-Ziel.
+10. Keine neue KnowledgeDomain ohne Beschreibung.
 
 ---
 
