@@ -1,0 +1,224 @@
+{
+  "schema": "KXF-LEARNING-MODULES-0.1",
+  "name": "KUEPER SSF Learning Modules Export",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "created": "2026-07-02",
+  "modified": "2026-07-02T16:00:00+02:00",
+  "sourceDocuments": [
+    "KG-0004-LEARNING-MODEL",
+    "KB-REQUEST-0006-KXF-LEARNING-MODULES"
+  ],
+  "records": {
+    "learning_modules": [
+      {
+        "id": "LRN:SSF:GEO-1101",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Orientierung Planetologie",
+          "subject": "GEO",
+          "type": "learning_path",
+          "status": "planned",
+          "entry_question": "Wie sind planetare Koerper grundlegend aufgebaut?",
+          "depth_min": 1,
+          "depth_max": 1,
+          "duration_min": 20,
+          "duration_max": 45
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": [], "unlocks": ["LRN:SSF:GEO-2201", "LRN:SSF:GEO-2202"], "related": ["KD:GEO-PLANET:N1", "CMP:GEO-PLANET:N1"] },
+        "noxia": { "grants": [], "required_for": [] },
+        "branches": [
+          { "id": "BR:GEO:PLANET-STRUCTURE", "label": "Planetare Struktur", "unlocks_at": "LRN:SSF:GEO-2201" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:GEO-2201",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Einfuehrung in die planetare Seismologie",
+          "subject": "GEO",
+          "type": "learning_path",
+          "status": "planned",
+          "entry_question": "Wie liest man seismische Hinweise auf den inneren Aufbau eines Planeten?",
+          "depth_min": 2,
+          "depth_max": 2,
+          "duration_min": 45,
+          "duration_max": 90
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": ["LRN:SSF:GEO-1101"], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:GEO-SEISM:N2", "CMP:GEO-SEISM:N2"] },
+        "noxia": { "grants": ["UNL:NOX:planetary-seismology"], "required_for": ["NOXIA-RESEARCH-MARS-MANTLE"] },
+        "branches": [
+          { "id": "BR:GEO:SEISMOLOGY", "label": "Seismologie", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:GEO-2202",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Petrologie und Gesteinsbildung",
+          "subject": "GEO",
+          "type": "learning_path",
+          "status": "planned",
+          "entry_question": "Was verraet Gestein ueber die thermische und geologische Geschichte eines Planeten?",
+          "depth_min": 2,
+          "depth_max": 2,
+          "duration_min": 45,
+          "duration_max": 90
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": ["LRN:SSF:GEO-1101"], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:GEO-PETRO:N2", "CMP:GEO-PETRO:N2"] },
+        "noxia": { "grants": ["UNL:NOX:petrology-basics"], "required_for": ["NOXIA-RESEARCH-MARS-MANTLE"] },
+        "branches": [
+          { "id": "BR:GEO:PETROLOGY", "label": "Petrologie", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:MAT-2201",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Bayes-Inferenz fuer Wissenschaftstexte",
+          "subject": "MAT",
+          "type": "reference",
+          "status": "planned",
+          "entry_question": "Wie veraendert Evidenz eine wissenschaftliche Annahme?",
+          "depth_min": 2,
+          "depth_max": 2,
+          "duration_min": 45,
+          "duration_max": 90
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:MATH-BAYES:N2", "CMP:MATH-BAYES:N2"] },
+        "noxia": { "grants": ["UNL:NOX:evidence-weighting"], "required_for": ["NOXIA-RESEARCH-MARS-MANTLE"] },
+        "branches": [
+          { "id": "BR:MAT:BAYES", "label": "Bayes und Evidenz", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:TEC-1201",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Englische Primaerliteratur lesen",
+          "subject": "TEC",
+          "type": "reference",
+          "status": "planned",
+          "entry_question": "Wie liest man englische Abstracts und Fachbegriffe ohne den Sinn zu verlieren?",
+          "depth_min": 1,
+          "depth_max": 2,
+          "duration_min": 30,
+          "duration_max": 60
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:LANG-EN:N2", "CMP:LANG-EN:N2"] },
+        "noxia": { "grants": [], "required_for": [] },
+        "branches": [
+          { "id": "BR:TEC:SCIENTIFIC-READING", "label": "Wissenschaftlich lesen", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:PHY-2201",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Quantenmechanik fuer Modellarchitektur",
+          "subject": "PHY",
+          "type": "reference",
+          "status": "planned",
+          "entry_question": "Welche quantenmechanischen Grundideen braucht man, um ein Modell einzuordnen?",
+          "depth_min": 2,
+          "depth_max": 2,
+          "duration_min": 60,
+          "duration_max": 120
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:PHYS-QM:N2", "CMP:PHYS-QM:N2"] },
+        "noxia": { "grants": ["UNL:NOX:quantum-model-reading"], "required_for": [] },
+        "branches": [
+          { "id": "BR:PHY:QUANTUM", "label": "Quantenmodell", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:MAT-2202",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Differentialgleichungen als Modellsprache",
+          "subject": "MAT",
+          "type": "reference",
+          "status": "planned",
+          "entry_question": "Wie beschreibt Mathematik Veraenderung, Felder und Dynamik?",
+          "depth_min": 2,
+          "depth_max": 2,
+          "duration_min": 60,
+          "duration_max": 120
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:MATH-DIFF:N2", "CMP:MATH-DIFF:N2"] },
+        "noxia": { "grants": ["UNL:NOX:dynamical-models"], "required_for": [] },
+        "branches": [
+          { "id": "BR:MAT:DIFFERENTIAL", "label": "Dynamische Modelle", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:TEC-2201",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Wissenschaftstheorie und Marker",
+          "subject": "TEC",
+          "type": "reference",
+          "status": "planned",
+          "entry_question": "Woran erkennt man, ob eine Aussage Beobachtung, Hypothese, Modell oder offene Frage ist?",
+          "depth_min": 2,
+          "depth_max": 2,
+          "duration_min": 45,
+          "duration_max": 90
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:PHIL-SCI:N2", "CMP:PHIL-SCI:N2"] },
+        "noxia": { "grants": ["UNL:NOX:epistemic-markers"], "required_for": [] },
+        "branches": [
+          { "id": "BR:TEC:EPISTEMIC-MARKERS", "label": "Epistemische Marker", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
+        ]
+      },
+      {
+        "id": "LRN:SSF:PHY-2202",
+        "version": "0.1.0",
+        "created": "2026-07-02",
+        "modified": "2026-07-02T16:00:00+02:00",
+        "meta": {
+          "title": "Elektromagnetismus und Feldmodelle",
+          "subject": "PHY",
+          "type": "reference",
+          "status": "planned",
+          "entry_question": "Wie denkt Physik in Feldern und Wechselwirkungen?",
+          "depth_min": 2,
+          "depth_max": 2,
+          "duration_min": 60,
+          "duration_max": 120
+        },
+        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
+        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:PHYS-EM:N2", "CMP:PHYS-EM:N2"] },
+        "noxia": { "grants": ["UNL:NOX:field-models"], "required_for": [] },
+        "branches": [
+          { "id": "BR:PHY:FIELDS", "label": "Feldmodelle", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
+        ]
+      }
+    ]
+  }
+}
