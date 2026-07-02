@@ -1,3 +1,4 @@
+import mammoth from 'mammoth';
 import { createSupabaseAdminClient } from '@/lib/supabase/server';
 
 function slugify(value: string) {
@@ -13,7 +14,13 @@ function getTitle(text: string, fallback: string) {
   if (heading) {
     return heading.replace(/^#\s+/, '').trim();
   }
-  return fallback.replace(/\.[^.]+$/, '');
+
+  const firstTextLine = text
+    .split('\n')
+    .map((line) => line.trim())
+    .find((line) => line.length > 0 && line.length <= 140);
+
+  return firstTextLine ?? fallback.replace(/\.[^.]+$/, '');
 }
 
 function getStorageParts(sourcePath: string | null) {
@@ -30,6 +37,37 @@ function getStorageParts(sourcePath: string | null) {
   }
 
   return { bucket, path };
+}
+
+function getSourceFormat(sourceName: string) {
+  const lower = sourceName.toLowerCase();
+  if (lower.endsWith('.md') || lower.endsWith('.markdown')) return 'markdown';
+  if (lower.endsWith('.docx')) return 'docx';
+  return 'text';
+}
+
+async function extractTextFromBlob(blob: Blob, sourceName: string) {
+  const format = getSourceFormat(sourceName);
+
+  if (format === 'docx') {
+    const arrayBuffer = await blob.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    const result = await mammoth.extractRawText({ buffer });
+    return {
+      text: result.value,
+      format,
+      warnings: result.messages.map((message) => ({
+        type: message.type,
+        message: message.message
+      }))
+    };
+  }
+
+  return {
+    text: await blob.text(),
+    format,
+    warnings: []
+  };
 }
 
 export async function runTextImportJob(jobId: string) {
@@ -58,9 +96,9 @@ export async function runTextImportJob(jobId: string) {
       throw download.error ?? new Error('Storage download failed');
     }
 
-    const text = await download.data.text();
     const sourceName = job.source_name ?? path.split('/').pop() ?? 'document.txt';
-    const title = getTitle(text, sourceName);
+    const extracted = await extractTextFromBlob(download.data, sourceName);
+    const title = getTitle(extracted.text, sourceName);
     const docId = `DOC:IMPORT:${slugify(jobId)}`;
 
     const { error: docError } = await supabase
@@ -80,8 +118,9 @@ export async function runTextImportJob(jobId: string) {
           sourcePath: job.source_path,
           targetCollection: job.target_collection,
           defaultLanguage: job.default_language,
-          content: text,
-          format: sourceName.toLowerCase().endsWith('.md') ? 'markdown' : 'text'
+          content: extracted.text,
+          format: extracted.format,
+          extractionWarnings: extracted.warnings
         },
         indexed_at: new Date().toISOString()
       }, { onConflict: 'id' });
@@ -99,6 +138,8 @@ export async function runTextImportJob(jobId: string) {
         data: {
           ...(job.data ?? {}),
           resultDocumentId: docId,
+          sourceFormat: extracted.format,
+          extractionWarnings: extracted.warnings,
           completedAt: new Date().toISOString()
         }
       })
