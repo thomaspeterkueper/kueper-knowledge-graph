@@ -1,0 +1,28 @@
+{
+  "schema": "KUEPER-INGESTION-RUNS-0.1",
+  "name": "KUEPER KG Ingestion Runs",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-02",
+  "sourceDocuments": ["KG-0005-OTA-INGESTION"],
+  "records": [
+    {
+      "id": "ING:OTA:2026-07-02:0001",
+      "type": "IngestionRun",
+      "sourceSystem": "SYS:KUEPER:ota",
+      "targetSystem": "SYS:KUEPER:knowledge-graph",
+      "mode": "projection_from_existing_kg_records",
+      "status": "draft_productive",
+      "documentsProcessed": 2,
+      "documents": [
+        "DOC:OTA:OTA-SCI-0083-2026-DE",
+        "DOC:OTA:OTA-FND-0028-2026-DE"
+      ],
+      "recordsCreated": 0,
+      "recordsProjected": 31,
+      "reviewRequired": 0,
+      "notes": "Initial KG-0005 run documents ingestion rules against the existing KG-0004 dataset. It does not import OTA full text."
+    }
+  ]
+}
