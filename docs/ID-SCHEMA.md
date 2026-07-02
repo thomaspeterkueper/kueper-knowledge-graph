@@ -56,6 +56,30 @@ Legacy-IDs im Muster `KNOW:*` bleiben als Aliase und Migrationsquellen erlaubt, 
 
 ---
 
+## Sonderformen fuer Learning Model
+
+Ab KG-0004 gelten zusaetzlich:
+
+```text
+CMP:<DOMAIN-CODE>:<LEVEL>
+LRN:SSF:<DOMAIN>-<NUMBER>
+ASM:SSF:<DOMAIN>-<NUMBER>
+PATH:<TARGET-SYSTEM>:<TARGET-ID>:<PURPOSE>
+```
+
+Beispiele:
+
+```text
+CMP:GEO-SEISM:N2
+LRN:SSF:GEO-2201
+ASM:SSF:GEO-2201
+PATH:OTA:OTA-SCI-0083-2026-DE:READ
+```
+
+`CMP` bildet die didaktische Kompetenz zu einer `KD` ab. `LRN` vermittelt Kompetenz. `ASM` validiert Kompetenz. `PATH` ordnet Module und Assessments zu einem Zielpfad.
+
+---
+
 ## Layer
 
 | Layer | Bedeutung | Beispiele |
@@ -63,7 +87,7 @@ Legacy-IDs im Muster `KNOW:*` bleiben als Aliase und Migrationsquellen erlaubt, 
 | L0 | Foundation / universelle Konzepte | Information, Energie, Zeit, Raum |
 | L1 | Fachwissen | Gravitation, Evolution, Photosynthese, Knowledge Domains |
 | L2 | Modelle und Theorien | AVI, Temenon |
-| L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, NOXIA-Gebaeude, Domain, Legal-Dokument |
+| L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, Kompetenz, Assessment, NOXIA-Gebaeude, Domain, Legal-Dokument |
 | L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher |
 
 ---
@@ -74,6 +98,9 @@ Legacy-IDs im Muster `KNOW:*` bleiben als Aliase und Migrationsquellen erlaubt, 
 |---|---|---|
 | CON | Concept | meist L0 oder L1 |
 | KD | KnowledgeDomain | L1, mit Sonderform `KD:<DOMAIN-CODE>:<LEVEL>` |
+| CMP | Competency | meist L3, didaktische Kompetenz zu KD |
+| ASM | Assessment | meist L3, validiert Competency |
+| PATH | LearningPath | meist L3, geordnete Lernroute |
 | MOD | Model | meist L2 |
 | SYS | System | meist L3 |
 | ORG | Organization | meist L3 |
@@ -153,19 +180,6 @@ CON:BIO:leben
 
 werden nicht blind geloescht, sondern ueber Mappings auf die neue kanonische Layer-ID gefuehrt.
 
-Beispiel:
-
-```json
-{
-  "id": "MAP:L3:id-migration-con-phy-gravitation",
-  "type": "Mapping",
-  "source": "CON:PHY:gravitation",
-  "target": "CON:L1:gravitation",
-  "mappingType": "legacy_id_to_canonical_id",
-  "status": "draft_productive"
-}
-```
-
 Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 
 ```json
@@ -193,6 +207,10 @@ Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 8. Websites konsumieren kanonische Daten, sie definieren sie nicht.
 9. Keine neue Prerequisite ohne `KD:<DOMAIN-CODE>:<LEVEL>`-Ziel.
 10. Keine neue KnowledgeDomain ohne Beschreibung.
+11. Keine Competency ohne KnowledgeDomain.
+12. Kein LearningModule ohne `teaches`.
+13. Kein Assessment ohne `validates`.
+14. Kein LearningPath ohne `target` und `steps`.
 
 ---
 
