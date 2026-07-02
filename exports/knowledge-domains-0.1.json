@@ -1,280 +1,43 @@
 {
-  "schema": "KUEPER-KG-KNOWLEDGE-DOMAINS",
+  "schema": "KUEPER-KNOWLEDGE-DOMAINS-0.1",
+  "name": "KUEPER Knowledge Domains Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
   "version": "0.1",
-  "created": "2026-07-01",
-  "curator": "Thomas Peter Küper",
-  "sourceDocument": "KG-ARC-0001-2026-DE",
-  "description": "Kanonischer Start-Export der KnowledgeDomain-Entitäten für OTA, SSF, NOXIA, KUEPER.com und weitere KUEPER-Projekte.",
-  "levelScale": [
-    {
-      "id": "N1",
-      "name": "Grundlagen",
-      "description": "Schulwissen oder populärwissenschaftliche Einführung genügt. Das Material erklärt zentrale Begriffe kurz mit."
-    },
-    {
-      "id": "N2",
-      "name": "Fortgeschritten",
-      "description": "Universitäres Grundstudium oder äquivalente Selbstbildung nötig. Fachbegriffe werden nicht vollständig eingeführt."
-    },
-    {
-      "id": "N3",
-      "name": "Experte",
-      "description": "Primärliteratur, Fachmethodik und peer-review-nahe Argumentation werden vorausgesetzt."
-    },
-    {
-      "id": "N4",
-      "name": "Kurator / Forschung",
-      "description": "Fähigkeit, Quellen, Modelle, Daten und epistemologische Marker eigenständig kuratorisch oder forschungsnah zu integrieren."
-    }
+  "updated": "2026-07-02",
+  "sourceDocuments": [
+    "KG-ARC-0001-2026-DE",
+    "KG-0002-KNOWLEDGE-DOMAINS-CANONICAL"
   ],
-  "knowledgeDomains": [
-    {
-      "id": "KNOW:PHYS-MECH",
-      "type": "KnowledgeDomain",
-      "name": "Klassische Mechanik",
-      "description": "Bewegung, Kräfte, Energie, Impuls und grundlegende Modelle makroskopischer physikalischer Systeme.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["PHYS-MECH", "Classical mechanics", "Mechanik"]
-    },
-    {
-      "id": "KNOW:PHYS-WAVE",
-      "type": "KnowledgeDomain",
-      "name": "Wellenphysik, Akustik, Resonanz",
-      "description": "Wellen, Schwingungen, Resonanz, Ausbreitung, Frequenz, Dämpfung und akustische Grundphänomene.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["PHYS-WAVE", "Wave physics", "Akustik", "Resonanz"]
-    },
-    {
-      "id": "KNOW:PHYS-EM",
-      "type": "KnowledgeDomain",
-      "name": "Elektromagnetismus, Magnetfelder",
-      "description": "Elektrische und magnetische Felder, elektromagnetische Wechselwirkungen, Strahlung und Feldmodelle.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["PHYS-EM", "Electromagnetism", "Magnetfelder"]
-    },
-    {
-      "id": "KNOW:PHYS-THERM",
-      "type": "KnowledgeDomain",
-      "name": "Thermodynamik, Wärmelehre",
-      "description": "Wärme, Temperatur, Energieübertragung, Phasen, Zustandsgrößen und thermodynamische Prozesse.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["PHYS-THERM", "Thermodynamics", "Wärmelehre"]
-    },
-    {
-      "id": "KNOW:PHYS-QM",
-      "type": "KnowledgeDomain",
-      "name": "Quantenmechanik",
-      "description": "Grundlagen quantenphysikalischer Modelle, Zustände, Messung, Feldquantisierung und Vakuumenergie im jeweils angegebenen Niveau.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["PHYS-QM", "Quantum mechanics", "Quantenphysik"]
-    },
-    {
-      "id": "KNOW:GEO-SEISM",
-      "type": "KnowledgeDomain",
-      "name": "Seismologie",
-      "description": "Seismische Wellen, Tomographie und Ausbreitung in planetaren Körpern.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["GEO-SEISM", "Seismology", "Planetary seismology", "Mars-Seismik"]
-    },
-    {
-      "id": "KNOW:GEO-PETRO",
-      "type": "KnowledgeDomain",
-      "name": "Petrologie, Mineralogie, Gesteinsbildung",
-      "description": "Entstehung, Zusammensetzung, Textur und Interpretation von Gesteinen und Mineralen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["GEO-PETRO", "Petrology", "Mineralogy", "Gesteinskunde"]
-    },
-    {
-      "id": "KNOW:GEO-PLANET",
-      "type": "KnowledgeDomain",
-      "name": "Planetologie, innere Struktur",
-      "description": "Aufbau, Entwicklung, innere Differenzierung und geophysikalische Eigenschaften planetarer Körper.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["GEO-PLANET", "Planetology", "Planetary interiors", "Planetare Struktur"]
-    },
-    {
-      "id": "KNOW:GEO-DYNA",
-      "type": "KnowledgeDomain",
-      "name": "Geodynamik, Plattentektonik, Mantelkonvektion",
-      "description": "Dynamik planetarer Lithosphären und Mäntel, Plattentektonik, Konvektion und langfristige geologische Prozesse.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["GEO-DYNA", "Geodynamics", "Mantle convection", "Plattentektonik"]
-    },
-    {
-      "id": "KNOW:GEO-PALEO",
-      "type": "KnowledgeDomain",
-      "name": "Paläogeologie, geologische Zeitskalen",
-      "description": "Geologische Zeiträume, Erdgeschichte, stratigraphische Ordnung und langfristige Entwicklung geologischer Systeme.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["GEO-PALEO", "Paleogeology", "Geological timescales"]
-    },
-    {
-      "id": "KNOW:ASTRO-BASIC",
-      "type": "KnowledgeDomain",
-      "name": "Astronomische Grundlagen, Sonnensystem",
-      "description": "Grundlagen von Himmelskörpern, Bahnen, Beobachtung, Sonnensystemstruktur und astronomischer Orientierung.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["ASTRO-BASIC", "Astronomy basics", "Sonnensystem"]
-    },
-    {
-      "id": "KNOW:ASTRO-SPEC",
-      "type": "KnowledgeDomain",
-      "name": "Spektroskopie, Emissionslinien",
-      "description": "Analyse von Spektren, Emissions- und Absorptionslinien sowie physikalische Interpretation elektromagnetischer Signaturen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["ASTRO-SPEC", "Spectroscopy", "Emissionslinien"]
-    },
-    {
-      "id": "KNOW:ASTRO-RADIO",
-      "type": "KnowledgeDomain",
-      "name": "Radioastronomie, Interferometrie",
-      "description": "Astronomische Beobachtung im Radiobereich, Interferometrie, Signalverarbeitung und Auflösungsprinzipien.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["ASTRO-RADIO", "Radio astronomy", "Interferometry"]
-    },
-    {
-      "id": "KNOW:MATH-STAT",
-      "type": "KnowledgeDomain",
-      "name": "Statistik, Wahrscheinlichkeitsrechnung",
-      "description": "Wahrscheinlichkeit, Verteilungen, Schätzung, Unsicherheit, statistische Kennzahlen und grundlegende Dateninterpretation.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["MATH-STAT", "Statistics", "Probability", "Wahrscheinlichkeitsrechnung"]
-    },
-    {
-      "id": "KNOW:MATH-BAYES",
-      "type": "KnowledgeDomain",
-      "name": "Bayes'sche Inferenz",
-      "description": "Wahrscheinlichkeitstheoretische Aktualisierung von Annahmen anhand von Evidenz, inklusive Prior, Likelihood und Posterior.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["MATH-BAYES", "Bayesian inference", "Bayes-Inferenz"]
-    },
-    {
-      "id": "KNOW:MATH-DIFF",
-      "type": "KnowledgeDomain",
-      "name": "Differentialgleichungen",
-      "description": "Mathematische Beschreibung von Änderungsprozessen durch gewöhnliche und partielle Differentialgleichungen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["MATH-DIFF", "Differential equations", "DGL"]
-    },
-    {
-      "id": "KNOW:MATH-ANAL",
-      "type": "KnowledgeDomain",
-      "name": "Analysis, Fourieranalyse",
-      "description": "Funktionen, Grenzwerte, Ableitung, Integration, Reihen und Fourieranalyse als Werkzeuge kontinuierlicher Modellierung.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["MATH-ANAL", "Analysis", "Calculus", "Fourier analysis"]
-    },
-    {
-      "id": "KNOW:BIO-BASIC",
-      "type": "KnowledgeDomain",
-      "name": "Biologie Grundlagen",
-      "description": "Grundlagen lebender Systeme, Zellen, Organismen, Stoffwechsel, Vererbung und biologische Organisation.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["BIO-BASIC", "Biology basics", "Biologie"]
-    },
-    {
-      "id": "KNOW:BIO-NEURO",
-      "type": "KnowledgeDomain",
-      "name": "Neurowissenschaften",
-      "description": "Struktur und Funktion des Nervensystems, neuronale Informationsverarbeitung, Kognition und Bewusstsein im jeweiligen Niveau.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["BIO-NEURO", "Neuroscience", "Neurowissenschaft"]
-    },
-    {
-      "id": "KNOW:BIO-EVOL",
-      "type": "KnowledgeDomain",
-      "name": "Evolutionsbiologie, Habitabilität",
-      "description": "Evolution, Anpassung, Selektion, Entstehung von Leben und Bedingungen biologischer Bewohnbarkeit.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["BIO-EVOL", "Evolutionary biology", "Habitability"]
-    },
-    {
-      "id": "KNOW:CHEM-BASIC",
-      "type": "KnowledgeDomain",
-      "name": "Chemie Grundlagen",
-      "description": "Atome, Moleküle, Bindungen, Reaktionen, Stoffeigenschaften und chemische Grundprinzipien.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["CHEM-BASIC", "Chemistry basics", "Chemie"]
-    },
-    {
-      "id": "KNOW:CHEM-GEO",
-      "type": "KnowledgeDomain",
-      "name": "Geochemie",
-      "description": "Chemische Prozesse und Zusammensetzungen in Gesteinen, Planeten, Krusten, Mänteln und geologischen Systemen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["CHEM-GEO", "Geochemistry", "Geochemie"]
-    },
-    {
-      "id": "KNOW:HIS-METHOD",
-      "type": "KnowledgeDomain",
-      "name": "Historiographische Methodik",
-      "description": "Methoden der Geschichtswissenschaft, Quellenkritik, Kontextualisierung und Rekonstruktion historischer Aussagen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["HIS-METHOD", "Historiography", "Quellenkritik"]
-    },
-    {
-      "id": "KNOW:HIS-ARCH",
-      "type": "KnowledgeDomain",
-      "name": "Archäologie, Befundinterpretation",
-      "description": "Archäologische Methoden, Befund- und Fundinterpretation, Materialkultur und historische Kontextbildung.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["HIS-ARCH", "Archaeology", "Befundinterpretation"]
-    },
-    {
-      "id": "KNOW:PHIL-EPIST",
-      "type": "KnowledgeDomain",
-      "name": "Erkenntnistheorie, Epistemologie",
-      "description": "Fragen nach Wissen, Rechtfertigung, Wahrheit, Evidenz, Modellstatus und Grenzen von Erkenntnis.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["PHIL-EPIST", "Epistemology", "Erkenntnistheorie"]
-    },
-    {
-      "id": "KNOW:PHIL-SCI",
-      "type": "KnowledgeDomain",
-      "name": "Wissenschaftstheorie, Falsifikation",
-      "description": "Methoden, Geltungsansprüche, Falsifikation, Modellbildung und erkenntnistheoretische Grundlagen der Wissenschaften.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["PHIL-SCI", "Philosophy of science", "Wissenschaftstheorie"]
-    },
-    {
-      "id": "KNOW:LANG-DE",
-      "type": "KnowledgeDomain",
-      "name": "Deutsch, Lesekompetenz",
-      "description": "Fähigkeit, deutschsprachige Sach-, Fach- und Archivtexte auf dem angegebenen Niveau zu lesen und zu verstehen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["LANG-DE", "German reading competence", "Deutsch"]
-    },
-    {
-      "id": "KNOW:LANG-EN",
-      "type": "KnowledgeDomain",
-      "name": "Englisch, Lesekompetenz und Primärliteratur",
-      "description": "Fähigkeit, englischsprachige Sach-, Fach- und Primärliteratur auf dem angegebenen Niveau zu lesen und zu verstehen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["LANG-EN", "English reading competence", "Scientific English"]
-    },
-    {
-      "id": "KNOW:LANG-SCI",
-      "type": "KnowledgeDomain",
-      "name": "Wissenschaftliches Lesen",
-      "description": "Fähigkeit, wissenschaftliche Texte, Paper, Abstracts, Methodenabschnitte, Abbildungen und Unsicherheitsaussagen strukturiert zu lesen.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["LANG-SCI", "Scientific literacy", "Wissenschaftliche Lesekompetenz"]
-    },
-    {
-      "id": "KNOW:TOOL-PEERLIT",
-      "type": "KnowledgeDomain",
-      "name": "Umgang mit peer-reviewed Literatur",
-      "description": "Recherche, Auswahl, Lektüre, Bewertung und Zitierfähigkeit wissenschaftlicher Primär- und Sekundärliteratur.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["TOOL-PEERLIT", "Peer-reviewed literature", "Literaturarbeit"]
-    },
-    {
-      "id": "KNOW:TOOL-DATASCI",
-      "type": "KnowledgeDomain",
-      "name": "Datenauswertung und Modellierung",
-      "description": "Strukturierte Arbeit mit Daten, Modellen, Visualisierung, Unsicherheit und reproduzierbaren Auswertungsschritten.",
-      "levelSupport": ["N1", "N2", "N3", "N4"],
-      "aliases": ["TOOL-DATASCI", "Data science", "Modellierung", "Datenauswertung"]
-    }
+  "levelScale": [
+    { "id": "N1", "name": "Orientierung", "description": "Grundbegriffe, erste Einordnung und Lesefaehigkeit fuer Einfuehrungstexte." },
+    { "id": "N2", "name": "Arbeitsfaehiges Grundverstaendnis", "description": "Ausreichend zum Lesen anspruchsvoller OTA-Dokumente und zum Anschluss an SSF-Lernmodule." },
+    { "id": "N3", "name": "Vertiefte Anwendung", "description": "Transfer, Dateninterpretation, Modellarbeit und fachnahe Uebungen." },
+    { "id": "N4", "name": "Fachnahe Expertise", "description": "Analyse, Kritik, eigene Modellbildung und kuratorische Integration." }
+  ],
+  "records": [
+    { "id": "KD:GEO:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO", "level": "N1", "title": "Geowissenschaften - Orientierung", "parent": null, "description": "Orientierung in geologischen und planetologischen Grundbegriffen, Materialien, Prozessen und Skalen.", "aliases": ["GEO N1", "Geoscience N1", "Geowissenschaften N1"] },
+    { "id": "KD:GEO-SEISM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-SEISM", "level": "N2", "title": "Seismologie - arbeitsfaehiges Grundverstaendnis", "parent": "KD:GEO:N1", "description": "Grundlagen seismischer Wellen, Messdaten und Interpretationslogik, ausreichend zum Lesen planetologischer OTA-Dokumente.", "aliases": ["GEO-SEISM N2", "Seismology N2", "Planetary seismology N2", "Mars-Seismik N2"] },
+    { "id": "KD:GEO-PETRO:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-PETRO", "level": "N2", "title": "Petrologie - arbeitsfaehiges Grundverstaendnis", "parent": "KD:GEO:N1", "description": "Grundlagen von Gesteinsbildung, Mineralogie, Schmelzprozessen und petrologischer Interpretation.", "aliases": ["GEO-PETRO N2", "Petrology N2", "Mineralogy N2", "Gesteinskunde N2"] },
+    { "id": "KD:GEO-PLANET:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-PLANET", "level": "N1", "title": "Planetologie und planetare Struktur - Orientierung", "parent": "KD:GEO:N1", "description": "Grundorientierung zu planetaren Koerpern, innerer Struktur, Kruste, Mantel, Kern und geologischer Entwicklung.", "aliases": ["GEO-PLANET N1", "Planetology N1", "Planetary interiors N1"] },
+    { "id": "KD:MATH:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH", "level": "N1", "title": "Mathematik - Orientierung", "parent": null, "description": "Orientierung in mathematischen Grundbegriffen, Symbolsprache, Funktionen, Wahrscheinlichkeiten und Modelllogik.", "aliases": ["MATH N1", "Mathematics N1", "Mathematik N1"] },
+    { "id": "KD:MATH-BAYES:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH-BAYES", "level": "N2", "title": "Bayes'sche Inferenz - arbeitsfaehiges Grundverstaendnis", "parent": "KD:MATH:N1", "description": "Wahrscheinlichkeitstheoretische Aktualisierung von Annahmen anhand von Evidenz, inklusive Priors, Likelihood und Posterior-Logik.", "aliases": ["MATH-BAYES N2", "Bayesian inference N2", "Bayes-Inferenz N2"] },
+    { "id": "KD:MATH-DIFF:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH-DIFF", "level": "N2", "title": "Differentialgleichungen - arbeitsfaehiges Grundverstaendnis", "parent": "KD:MATH:N1", "description": "Grundlagen von Differentialgleichungen als Beschreibung dynamischer Systeme, Felder, Veraenderungsraten und Modellverhalten.", "aliases": ["MATH-DIFF N2", "Differential equations N2", "DGL N2"] },
+    { "id": "KD:PHYS:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS", "level": "N1", "title": "Physik - Orientierung", "parent": null, "description": "Orientierung in physikalischen Grundbegriffen wie Energie, Kraft, Feld, Welle, Materie und Messung.", "aliases": ["PHYS N1", "Physics N1", "Physik N1"] },
+    { "id": "KD:PHYS-QM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-QM", "level": "N2", "title": "Quantenmechanik - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen quantenmechanischer Konzepte, Zustaende, Operatoren, Messung und Modellgrenzen.", "aliases": ["PHYS-QM N2", "Quantum mechanics N2", "Quantenphysik N2"] },
+    { "id": "KD:PHYS-EM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-EM", "level": "N2", "title": "Elektromagnetismus - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen elektrischer und magnetischer Felder, elektromagnetischer Wechselwirkung und feldphysikalischer Modellierung.", "aliases": ["PHYS-EM N2", "Electromagnetism N2", "Magnetfelder N2"] },
+    { "id": "KD:PHIL-SCI:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHIL-SCI", "level": "N2", "title": "Wissenschaftstheorie - arbeitsfaehiges Grundverstaendnis", "parent": null, "description": "Grundlagen wissenschaftlicher Methode, Falsifizierbarkeit, Evidenz, Modellgrenzen, Hypothesenstatus und epistemischer Markierung.", "aliases": ["PHIL-SCI N2", "Philosophy of science N2", "Wissenschaftstheorie N2"] },
+    { "id": "KD:LANG-EN:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "LANG-EN", "level": "N2", "title": "Englisch fuer wissenschaftliche Primaerliteratur", "parent": null, "description": "Lesekompetenz fuer englischsprachige wissenschaftliche Abstracts, Paper, Datentabellen und Fachterminologie.", "aliases": ["LANG-EN N2", "Scientific English N2", "Englisch Primaerliteratur N2"] }
+  ],
+  "legacyMappings": [
+    { "legacy": "KNOW:GEO-SEISM + N2", "canonical": "KD:GEO-SEISM:N2" },
+    { "legacy": "KNOW:GEO-PETRO + N2", "canonical": "KD:GEO-PETRO:N2" },
+    { "legacy": "KNOW:GEO-PLANET + N1", "canonical": "KD:GEO-PLANET:N1" },
+    { "legacy": "KNOW:MATH-BAYES + N2", "canonical": "KD:MATH-BAYES:N2" },
+    { "legacy": "KNOW:MATH-DIFF + N2", "canonical": "KD:MATH-DIFF:N2" },
+    { "legacy": "KNOW:PHYS-QM + N2", "canonical": "KD:PHYS-QM:N2" },
+    { "legacy": "KNOW:PHYS-EM + N2", "canonical": "KD:PHYS-EM:N2" },
+    { "legacy": "KNOW:PHIL-SCI + N2", "canonical": "KD:PHIL-SCI:N2" },
+    { "legacy": "KNOW:LANG-EN + N2", "canonical": "KD:LANG-EN:N2" }
   ]
 }
