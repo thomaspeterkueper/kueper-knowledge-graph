@@ -1,0 +1,30 @@
+{
+  "schema": "KUEPER-ENTITY-REGISTRY-0.1",
+  "name": "KUEPER Entity Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-02",
+  "sourceDocuments": ["KG-0008-REGISTRY"],
+  "records": [
+    { "id": "DOC:OTA:OTA-SCI-0083-2026-DE", "type": "Document", "status": "canonical", "source": "KG-0002", "exports": ["exports/kxf-0.2.json", "exports/kxf-0.3.json", "exports/kxf-0.4.json", "exports/kxf-0.5.json", "exports/kxf-0.6.json"] },
+    { "id": "DOC:OTA:OTA-FND-0028-2026-DE", "type": "Document", "status": "canonical", "source": "KG-0002", "exports": ["exports/kxf-0.2.json", "exports/kxf-0.3.json", "exports/kxf-0.4.json", "exports/kxf-0.5.json", "exports/kxf-0.6.json"] },
+    { "id": "KD:GEO-SEISM:N2", "type": "KnowledgeDomain", "status": "canonical", "source": "KG-0002", "exports": ["exports/knowledge-domains-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "KD:GEO-PETRO:N2", "type": "KnowledgeDomain", "status": "canonical", "source": "KG-0002", "exports": ["exports/knowledge-domains-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "KD:GEO-PLANET:N1", "type": "KnowledgeDomain", "status": "canonical", "source": "KG-0002", "exports": ["exports/knowledge-domains-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "KD:MATH-BAYES:N2", "type": "KnowledgeDomain", "status": "canonical", "source": "KG-0002", "exports": ["exports/knowledge-domains-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "KD:PHYS-QM:N2", "type": "KnowledgeDomain", "status": "canonical", "source": "KG-0002", "exports": ["exports/knowledge-domains-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "KD:MATH-DIFF:N2", "type": "KnowledgeDomain", "status": "canonical", "source": "KG-0002", "exports": ["exports/knowledge-domains-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "KD:PHYS-EM:N2", "type": "KnowledgeDomain", "status": "canonical", "source": "KG-0002", "exports": ["exports/knowledge-domains-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "CMP:GEO-SEISM:N2", "type": "Competency", "status": "draft_productive", "source": "KG-0004", "exports": ["exports/competencies-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "CMP:GEO-PETRO:N2", "type": "Competency", "status": "draft_productive", "source": "KG-0004", "exports": ["exports/competencies-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "CMP:GEO-PLANET:N1", "type": "Competency", "status": "draft_productive", "source": "KG-0004", "exports": ["exports/competencies-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "CMP:MATH-BAYES:N2", "type": "Competency", "status": "draft_productive", "source": "KG-0004", "exports": ["exports/competencies-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "LRN:SSF:AST-1101", "type": "LearningModule", "status": "draft_productive", "source": "KG-0006", "exports": ["exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "LRN:SSF:EAR-2201", "type": "LearningModule", "status": "draft_productive", "source": "KG-0006", "exports": ["exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "LRN:SSF:EAR-2202", "type": "LearningModule", "status": "draft_productive", "source": "KG-0006", "exports": ["exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "PATH:OTA:OTA-SCI-0083-2026-DE:READ", "type": "LearningPath", "status": "draft_productive", "source": "KG-0004", "exports": ["exports/learning-model-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "PATH:OTA:OTA-FND-0028-2026-DE:READ", "type": "LearningPath", "status": "draft_productive", "source": "KG-0004", "exports": ["exports/learning-model-0.1.json", "exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
+    { "id": "exports/learning.json", "type": "Export", "status": "internal_legacy_working_export", "source": "KG-0007", "consumerContract": false, "supersededBy": "exports/kxf-learning-modules-0.1.json" }
+  ]
+}
