@@ -1,0 +1,20 @@
+{
+  "schema": "KUEPER-COMPETENCIES-0.1",
+  "name": "KUEPER Competencies Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-02",
+  "sourceDocuments": ["KG-0004-LEARNING-MODEL"],
+  "records": [
+    { "id": "CMP:GEO-SEISM:N2", "type": "Competency", "knowledgeDomain": "KD:GEO-SEISM:N2", "title": "Seismologie N2 anwenden", "description": "Arbeitsfaehiges Verstaendnis seismologischer Grundkonzepte fuer planetologische OTA-Dokumente.", "level": "N2", "status": "draft_productive" },
+    { "id": "CMP:GEO-PETRO:N2", "type": "Competency", "knowledgeDomain": "KD:GEO-PETRO:N2", "title": "Petrologie N2 verstehen", "description": "Arbeitsfaehiges Verstaendnis von Gesteinsbildung, Mineralogie und petrologischer Interpretation.", "level": "N2", "status": "draft_productive" },
+    { "id": "CMP:MATH-BAYES:N2", "type": "Competency", "knowledgeDomain": "KD:MATH-BAYES:N2", "title": "Bayes'sche Inferenz N2 nutzen", "description": "Grundfaehigkeit, Evidenz, Prior-Annahmen und Posterior-Logik in wissenschaftlichen Argumenten nachzuvollziehen.", "level": "N2", "status": "draft_productive" },
+    { "id": "CMP:GEO-PLANET:N1", "type": "Competency", "knowledgeDomain": "KD:GEO-PLANET:N1", "title": "Planetologie N1 einordnen", "description": "Orientierung zu planetaren Koerpern, innerer Struktur und geologischer Entwicklung.", "level": "N1", "status": "draft_productive" },
+    { "id": "CMP:LANG-EN:N2", "type": "Competency", "knowledgeDomain": "KD:LANG-EN:N2", "title": "Englische Primaerliteratur N2 lesen", "description": "Faehigkeit, englische Abstracts, Paper und wissenschaftliche Fachterminologie grundlegend zu lesen.", "level": "N2", "status": "draft_productive" },
+    { "id": "CMP:PHYS-QM:N2", "type": "Competency", "knowledgeDomain": "KD:PHYS-QM:N2", "title": "Quantenmechanik N2 einordnen", "description": "Arbeitsfaehiges Grundverstaendnis quantenmechanischer Konzepte und Modellgrenzen.", "level": "N2", "status": "draft_productive" },
+    { "id": "CMP:MATH-DIFF:N2", "type": "Competency", "knowledgeDomain": "KD:MATH-DIFF:N2", "title": "Differentialgleichungen N2 lesen", "description": "Grundfaehigkeit, Differentialgleichungen als Beschreibung dynamischer Systeme zu verstehen.", "level": "N2", "status": "draft_productive" },
+    { "id": "CMP:PHIL-SCI:N2", "type": "Competency", "knowledgeDomain": "KD:PHIL-SCI:N2", "title": "Wissenschaftstheorie N2 anwenden", "description": "Grundfaehigkeit, Hypothesenstatus, Evidenz, Modellgrenzen und epistemische Marker zu beurteilen.", "level": "N2", "status": "draft_productive" },
+    { "id": "CMP:PHYS-EM:N2", "type": "Competency", "knowledgeDomain": "KD:PHYS-EM:N2", "title": "Elektromagnetismus N2 verstehen", "description": "Arbeitsfaehiges Grundverstaendnis elektrischer und magnetischer Felder und feldphysikalischer Modellierung.", "level": "N2", "status": "draft_productive" }
+  ]
+}
