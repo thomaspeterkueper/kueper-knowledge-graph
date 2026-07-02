@@ -3,222 +3,129 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1",
+  "version": "0.1.1",
   "created": "2026-07-02",
-  "modified": "2026-07-02T16:00:00+02:00",
+  "modified": "2026-07-02T16:30:00+02:00",
   "sourceDocuments": [
     "KG-0004-LEARNING-MODEL",
-    "KB-REQUEST-0006-KXF-LEARNING-MODULES"
+    "KB-REQUEST-0006-KXF-LEARNING-MODULES",
+    "KG-0006-schema-alignment-ssf-learning-modules"
   ],
+  "contracts": {
+    "consumer": "SYS:KUEPER:ssf",
+    "recordSet": "records.learning_modules",
+    "recordSetRole": "ssf_consumable_view",
+    "canonicalSource": "exports/learning-model-0.1.json",
+    "idNamespace": "LRN:SSF:*",
+    "subjectCodes": ["MAT", "PHY", "CHE", "AST", "BIO", "EAR"],
+    "notes": "This export is the SSF UI-facing view for /learn. KG remains source of truth for canonical IDs. The compact records.learningModules shape in older KXF exports is legacy/compatibility and must not be treated as a second source of truth."
+  },
   "records": {
+    "knowledge_domains": [
+      { "id": "KD:GEO-PLANET:N1", "type": "KnowledgeDomain", "legacyId": "KNOW:GEO-PLANET", "code": "GEO-PLANET", "level": "N1", "title": "Planetologie und planetare Struktur - Orientierung" },
+      { "id": "KD:GEO-SEISM:N2", "type": "KnowledgeDomain", "legacyId": "KNOW:GEO-SEISM", "code": "GEO-SEISM", "level": "N2", "title": "Seismologie - arbeitsfaehiges Grundverstaendnis" },
+      { "id": "KD:GEO-PETRO:N2", "type": "KnowledgeDomain", "legacyId": "KNOW:GEO-PETRO", "code": "GEO-PETRO", "level": "N2", "title": "Petrologie - arbeitsfaehiges Grundverstaendnis" },
+      { "id": "KD:MATH-BAYES:N2", "type": "KnowledgeDomain", "legacyId": "KNOW:MATH-BAYES", "code": "MATH-BAYES", "level": "N2", "title": "Bayes-Inferenz - arbeitsfaehiges Grundverstaendnis" },
+      { "id": "KD:PHYS-QM:N2", "type": "KnowledgeDomain", "legacyId": "KNOW:PHYS-QM", "code": "PHYS-QM", "level": "N2", "title": "Quantenmechanik - arbeitsfaehiges Grundverstaendnis" },
+      { "id": "KD:MATH-DIFF:N2", "type": "KnowledgeDomain", "legacyId": "KNOW:MATH-DIFF", "code": "MATH-DIFF", "level": "N2", "title": "Differentialgleichungen - arbeitsfaehiges Grundverstaendnis" },
+      { "id": "KD:PHYS-EM:N2", "type": "KnowledgeDomain", "legacyId": "KNOW:PHYS-EM", "code": "PHYS-EM", "level": "N2", "title": "Elektromagnetismus - arbeitsfaehiges Grundverstaendnis" }
+    ],
+    "competencies": [
+      { "id": "CMP:GEO-PLANET:N1", "type": "Competency", "knowledgeDomain": "KD:GEO-PLANET:N1", "title": "Planetologie N1 einordnen", "level": "N1" },
+      { "id": "CMP:GEO-SEISM:N2", "type": "Competency", "knowledgeDomain": "KD:GEO-SEISM:N2", "title": "Seismologie N2 anwenden", "level": "N2" },
+      { "id": "CMP:GEO-PETRO:N2", "type": "Competency", "knowledgeDomain": "KD:GEO-PETRO:N2", "title": "Petrologie N2 verstehen", "level": "N2" },
+      { "id": "CMP:MATH-BAYES:N2", "type": "Competency", "knowledgeDomain": "KD:MATH-BAYES:N2", "title": "Bayes-Inferenz N2 nutzen", "level": "N2" },
+      { "id": "CMP:PHYS-QM:N2", "type": "Competency", "knowledgeDomain": "KD:PHYS-QM:N2", "title": "Quantenmechanik N2 einordnen", "level": "N2" },
+      { "id": "CMP:MATH-DIFF:N2", "type": "Competency", "knowledgeDomain": "KD:MATH-DIFF:N2", "title": "Differentialgleichungen N2 lesen", "level": "N2" },
+      { "id": "CMP:PHYS-EM:N2", "type": "Competency", "knowledgeDomain": "KD:PHYS-EM:N2", "title": "Elektromagnetismus N2 verstehen", "level": "N2" }
+    ],
     "learning_modules": [
       {
-        "id": "LRN:SSF:GEO-1101",
-        "version": "0.1.0",
+        "id": "LRN:SSF:AST-1101",
+        "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Orientierung Planetologie",
-          "subject": "GEO",
-          "type": "learning_path",
-          "status": "planned",
-          "entry_question": "Wie sind planetare Koerper grundlegend aufgebaut?",
-          "depth_min": 1,
-          "depth_max": 1,
-          "duration_min": 20,
-          "duration_max": 45
-        },
+        "modified": "2026-07-02T16:30:00+02:00",
+        "meta": { "title": "Orientierung Planetologie", "subject": "AST", "type": "learning_path", "status": "planned", "entry_question": "Wie sind planetare Koerper grundlegend aufgebaut?", "depth_min": 1, "depth_max": 1, "duration_min": 20, "duration_max": 45 },
         "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": [], "unlocks": ["LRN:SSF:GEO-2201", "LRN:SSF:GEO-2202"], "related": ["KD:GEO-PLANET:N1", "CMP:GEO-PLANET:N1"] },
+        "dependencies": { "requires": [], "module_unlocks": ["LRN:SSF:EAR-2201", "LRN:SSF:EAR-2202"], "path_unlocks": [], "archive_unlocks": [], "related": ["KD:GEO-PLANET:N1", "CMP:GEO-PLANET:N1"] },
         "noxia": { "grants": [], "required_for": [] },
-        "branches": [
-          { "id": "BR:GEO:PLANET-STRUCTURE", "label": "Planetare Struktur", "unlocks_at": "LRN:SSF:GEO-2201" }
-        ]
+        "branches": [{ "id": "BR:AST:PLANET-STRUCTURE", "label": "Planetare Struktur", "unlocks_at": "LRN:SSF:EAR-2201" }]
       },
       {
-        "id": "LRN:SSF:GEO-2201",
-        "version": "0.1.0",
+        "id": "LRN:SSF:EAR-2201",
+        "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Einfuehrung in die planetare Seismologie",
-          "subject": "GEO",
-          "type": "learning_path",
-          "status": "planned",
-          "entry_question": "Wie liest man seismische Hinweise auf den inneren Aufbau eines Planeten?",
-          "depth_min": 2,
-          "depth_max": 2,
-          "duration_min": 45,
-          "duration_max": 90
-        },
+        "modified": "2026-07-02T16:30:00+02:00",
+        "meta": { "title": "Einfuehrung in die planetare Seismologie", "subject": "EAR", "type": "learning_path", "status": "planned", "entry_question": "Wie liest man seismische Hinweise auf den inneren Aufbau eines Planeten?", "depth_min": 2, "depth_max": 2, "duration_min": 45, "duration_max": 90 },
         "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": ["LRN:SSF:GEO-1101"], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:GEO-SEISM:N2", "CMP:GEO-SEISM:N2"] },
+        "dependencies": { "requires": ["LRN:SSF:AST-1101"], "module_unlocks": [], "path_unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "archive_unlocks": ["DOC:OTA:OTA-SCI-0083-2026-DE"], "related": ["KD:GEO-SEISM:N2", "CMP:GEO-SEISM:N2"] },
         "noxia": { "grants": ["UNL:NOX:planetary-seismology"], "required_for": ["NOXIA-RESEARCH-MARS-MANTLE"] },
-        "branches": [
-          { "id": "BR:GEO:SEISMOLOGY", "label": "Seismologie", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
-        ]
+        "branches": [{ "id": "BR:EAR:SEISMOLOGY", "label": "Seismologie", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }]
       },
       {
-        "id": "LRN:SSF:GEO-2202",
-        "version": "0.1.0",
+        "id": "LRN:SSF:EAR-2202",
+        "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Petrologie und Gesteinsbildung",
-          "subject": "GEO",
-          "type": "learning_path",
-          "status": "planned",
-          "entry_question": "Was verraet Gestein ueber die thermische und geologische Geschichte eines Planeten?",
-          "depth_min": 2,
-          "depth_max": 2,
-          "duration_min": 45,
-          "duration_max": 90
-        },
+        "modified": "2026-07-02T16:30:00+02:00",
+        "meta": { "title": "Petrologie und Gesteinsbildung", "subject": "EAR", "type": "learning_path", "status": "planned", "entry_question": "Was verraet Gestein ueber die thermische und geologische Geschichte eines Planeten?", "depth_min": 2, "depth_max": 2, "duration_min": 45, "duration_max": 90 },
         "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": ["LRN:SSF:GEO-1101"], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:GEO-PETRO:N2", "CMP:GEO-PETRO:N2"] },
+        "dependencies": { "requires": ["LRN:SSF:AST-1101"], "module_unlocks": [], "path_unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "archive_unlocks": ["DOC:OTA:OTA-SCI-0083-2026-DE"], "related": ["KD:GEO-PETRO:N2", "CMP:GEO-PETRO:N2"] },
         "noxia": { "grants": ["UNL:NOX:petrology-basics"], "required_for": ["NOXIA-RESEARCH-MARS-MANTLE"] },
-        "branches": [
-          { "id": "BR:GEO:PETROLOGY", "label": "Petrologie", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
-        ]
+        "branches": [{ "id": "BR:EAR:PETROLOGY", "label": "Petrologie", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }]
       },
       {
         "id": "LRN:SSF:MAT-2201",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Bayes-Inferenz fuer Wissenschaftstexte",
-          "subject": "MAT",
-          "type": "reference",
-          "status": "planned",
-          "entry_question": "Wie veraendert Evidenz eine wissenschaftliche Annahme?",
-          "depth_min": 2,
-          "depth_max": 2,
-          "duration_min": 45,
-          "duration_max": 90
-        },
+        "modified": "2026-07-02T16:30:00+02:00",
+        "meta": { "title": "Bayes-Inferenz fuer Wissenschaftstexte", "subject": "MAT", "type": "reference", "status": "planned", "entry_question": "Wie veraendert Evidenz eine wissenschaftliche Annahme?", "depth_min": 2, "depth_max": 2, "duration_min": 45, "duration_max": 90 },
         "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:MATH-BAYES:N2", "CMP:MATH-BAYES:N2"] },
+        "dependencies": { "requires": [], "module_unlocks": [], "path_unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "archive_unlocks": ["DOC:OTA:OTA-SCI-0083-2026-DE"], "related": ["KD:MATH-BAYES:N2", "CMP:MATH-BAYES:N2"] },
         "noxia": { "grants": ["UNL:NOX:evidence-weighting"], "required_for": ["NOXIA-RESEARCH-MARS-MANTLE"] },
-        "branches": [
-          { "id": "BR:MAT:BAYES", "label": "Bayes und Evidenz", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
-        ]
-      },
-      {
-        "id": "LRN:SSF:TEC-1201",
-        "version": "0.1.0",
-        "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Englische Primaerliteratur lesen",
-          "subject": "TEC",
-          "type": "reference",
-          "status": "planned",
-          "entry_question": "Wie liest man englische Abstracts und Fachbegriffe ohne den Sinn zu verlieren?",
-          "depth_min": 1,
-          "depth_max": 2,
-          "duration_min": 30,
-          "duration_max": 60
-        },
-        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"], "related": ["KD:LANG-EN:N2", "CMP:LANG-EN:N2"] },
-        "noxia": { "grants": [], "required_for": [] },
-        "branches": [
-          { "id": "BR:TEC:SCIENTIFIC-READING", "label": "Wissenschaftlich lesen", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }
-        ]
+        "branches": [{ "id": "BR:MAT:BAYES", "label": "Bayes und Evidenz", "unlocks_at": "PATH:OTA:OTA-SCI-0083-2026-DE:READ" }]
       },
       {
         "id": "LRN:SSF:PHY-2201",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Quantenmechanik fuer Modellarchitektur",
-          "subject": "PHY",
-          "type": "reference",
-          "status": "planned",
-          "entry_question": "Welche quantenmechanischen Grundideen braucht man, um ein Modell einzuordnen?",
-          "depth_min": 2,
-          "depth_max": 2,
-          "duration_min": 60,
-          "duration_max": 120
-        },
+        "modified": "2026-07-02T16:30:00+02:00",
+        "meta": { "title": "Quantenmechanik fuer Modellarchitektur", "subject": "PHY", "type": "reference", "status": "planned", "entry_question": "Welche quantenmechanischen Grundideen braucht man, um ein Modell einzuordnen?", "depth_min": 2, "depth_max": 2, "duration_min": 60, "duration_max": 120 },
         "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:PHYS-QM:N2", "CMP:PHYS-QM:N2"] },
+        "dependencies": { "requires": [], "module_unlocks": [], "path_unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "archive_unlocks": ["DOC:OTA:OTA-FND-0028-2026-DE"], "related": ["KD:PHYS-QM:N2", "CMP:PHYS-QM:N2"] },
         "noxia": { "grants": ["UNL:NOX:quantum-model-reading"], "required_for": [] },
-        "branches": [
-          { "id": "BR:PHY:QUANTUM", "label": "Quantenmodell", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
-        ]
+        "branches": [{ "id": "BR:PHY:QUANTUM", "label": "Quantenmodell", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }]
       },
       {
         "id": "LRN:SSF:MAT-2202",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Differentialgleichungen als Modellsprache",
-          "subject": "MAT",
-          "type": "reference",
-          "status": "planned",
-          "entry_question": "Wie beschreibt Mathematik Veraenderung, Felder und Dynamik?",
-          "depth_min": 2,
-          "depth_max": 2,
-          "duration_min": 60,
-          "duration_max": 120
-        },
+        "modified": "2026-07-02T16:30:00+02:00",
+        "meta": { "title": "Differentialgleichungen als Modellsprache", "subject": "MAT", "type": "reference", "status": "planned", "entry_question": "Wie beschreibt Mathematik Veraenderung, Felder und Dynamik?", "depth_min": 2, "depth_max": 2, "duration_min": 60, "duration_max": 120 },
         "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:MATH-DIFF:N2", "CMP:MATH-DIFF:N2"] },
+        "dependencies": { "requires": [], "module_unlocks": [], "path_unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "archive_unlocks": ["DOC:OTA:OTA-FND-0028-2026-DE"], "related": ["KD:MATH-DIFF:N2", "CMP:MATH-DIFF:N2"] },
         "noxia": { "grants": ["UNL:NOX:dynamical-models"], "required_for": [] },
-        "branches": [
-          { "id": "BR:MAT:DIFFERENTIAL", "label": "Dynamische Modelle", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
-        ]
-      },
-      {
-        "id": "LRN:SSF:TEC-2201",
-        "version": "0.1.0",
-        "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Wissenschaftstheorie und Marker",
-          "subject": "TEC",
-          "type": "reference",
-          "status": "planned",
-          "entry_question": "Woran erkennt man, ob eine Aussage Beobachtung, Hypothese, Modell oder offene Frage ist?",
-          "depth_min": 2,
-          "depth_max": 2,
-          "duration_min": 45,
-          "duration_max": 90
-        },
-        "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:PHIL-SCI:N2", "CMP:PHIL-SCI:N2"] },
-        "noxia": { "grants": ["UNL:NOX:epistemic-markers"], "required_for": [] },
-        "branches": [
-          { "id": "BR:TEC:EPISTEMIC-MARKERS", "label": "Epistemische Marker", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
-        ]
+        "branches": [{ "id": "BR:MAT:DIFFERENTIAL", "label": "Dynamische Modelle", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }]
       },
       {
         "id": "LRN:SSF:PHY-2202",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:00:00+02:00",
-        "meta": {
-          "title": "Elektromagnetismus und Feldmodelle",
-          "subject": "PHY",
-          "type": "reference",
-          "status": "planned",
-          "entry_question": "Wie denkt Physik in Feldern und Wechselwirkungen?",
-          "depth_min": 2,
-          "depth_max": 2,
-          "duration_min": 60,
-          "duration_max": 120
-        },
+        "modified": "2026-07-02T16:30:00+02:00",
+        "meta": { "title": "Elektromagnetismus und Feldmodelle", "subject": "PHY", "type": "reference", "status": "planned", "entry_question": "Wie denkt Physik in Feldern und Wechselwirkungen?", "depth_min": 2, "depth_max": 2, "duration_min": 60, "duration_max": 120 },
         "assets": { "text": [], "svg": [], "image": [], "video": [], "audio": [], "experiment": [] },
-        "dependencies": { "requires": [], "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "related": ["KD:PHYS-EM:N2", "CMP:PHYS-EM:N2"] },
+        "dependencies": { "requires": [], "module_unlocks": [], "path_unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"], "archive_unlocks": ["DOC:OTA:OTA-FND-0028-2026-DE"], "related": ["KD:PHYS-EM:N2", "CMP:PHYS-EM:N2"] },
         "noxia": { "grants": ["UNL:NOX:field-models"], "required_for": [] },
-        "branches": [
-          { "id": "BR:PHY:FIELDS", "label": "Feldmodelle", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }
-        ]
+        "branches": [{ "id": "BR:PHY:FIELDS", "label": "Feldmodelle", "unlocks_at": "PATH:OTA:OTA-FND-0028-2026-DE:READ" }]
       }
     ]
-  }
+  },
+  "deferred_modules": [
+    { "oldId": "LRN:SSF:TEC-1201", "reason": "SSF has no TEC subject code. Cross-cutting language/scientific-reading modules require SSF taxonomy decision before export." },
+    { "oldId": "LRN:SSF:TEC-2201", "reason": "SSF has no TEC subject code. Methodology/epistemology modules require SSF taxonomy decision before export." }
+  ],
+  "legacyIdMappings": [
+    { "legacy": "LRN:SSF:GEO-1101", "canonicalViewId": "LRN:SSF:AST-1101", "reason": "Planetology content maps to SSF subject AST." },
+    { "legacy": "LRN:SSF:GEO-2201", "canonicalViewId": "LRN:SSF:EAR-2201", "reason": "Seismology content maps to SSF subject EAR." },
+    { "legacy": "LRN:SSF:GEO-2202", "canonicalViewId": "LRN:SSF:EAR-2202", "reason": "Petrology content maps to SSF subject EAR." }
+  ]
 }
