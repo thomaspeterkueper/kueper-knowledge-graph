@@ -1,0 +1,32 @@
+{
+  "schema": "KUEPER-RELATION-REGISTRY-0.1",
+  "name": "KUEPER Relation Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-02",
+  "sourceDocuments": ["KG-0003-RELATIONS", "KG-0008-REGISTRY"],
+  "relationTypes": [
+    "REQUIRES",
+    "COVERS",
+    "TEACHES",
+    "VALIDATES",
+    "UNLOCKS",
+    "PARENT_OF",
+    "MAPS_TO",
+    "TARGETS",
+    "PART_OF",
+    "SATISFIES"
+  ],
+  "records": [
+    { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-SEISM:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-SEISM:N2", "status": "canonical", "source": "KG-0003" },
+    { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-PETRO:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-PETRO:N2", "status": "canonical", "source": "KG-0003" },
+    { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:MATH-BAYES:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:MATH-BAYES:N2", "status": "canonical", "source": "KG-0003" },
+    { "id": "REL:LRN:SSF:AST-1101:TEACHES:CMP:GEO-PLANET:N1", "type": "Relation", "from": "LRN:SSF:AST-1101", "relation": "TEACHES", "to": "CMP:GEO-PLANET:N1", "status": "draft_productive", "source": "KG-0008" },
+    { "id": "REL:LRN:SSF:EAR-2201:TEACHES:CMP:GEO-SEISM:N2", "type": "Relation", "from": "LRN:SSF:EAR-2201", "relation": "TEACHES", "to": "CMP:GEO-SEISM:N2", "status": "draft_productive", "source": "KG-0008" },
+    { "id": "REL:LRN:SSF:EAR-2202:TEACHES:CMP:GEO-PETRO:N2", "type": "Relation", "from": "LRN:SSF:EAR-2202", "relation": "TEACHES", "to": "CMP:GEO-PETRO:N2", "status": "draft_productive", "source": "KG-0008" },
+    { "id": "REL:CMP:GEO-SEISM:N2:SATISFIES:REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ", "type": "Relation", "from": "CMP:GEO-SEISM:N2", "relation": "SATISFIES", "to": "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ", "status": "draft_productive", "source": "KG-0008" },
+    { "id": "REL:PATH:OTA:OTA-SCI-0083-2026-DE:READ:TARGETS:DOC:OTA:OTA-SCI-0083-2026-DE", "type": "Relation", "from": "PATH:OTA:OTA-SCI-0083-2026-DE:READ", "relation": "TARGETS", "to": "DOC:OTA:OTA-SCI-0083-2026-DE", "status": "draft_productive", "source": "KG-0008" },
+    { "id": "REL:PATH:OTA:OTA-FND-0028-2026-DE:READ:TARGETS:DOC:OTA:OTA-FND-0028-2026-DE", "type": "Relation", "from": "PATH:OTA:OTA-FND-0028-2026-DE:READ", "relation": "TARGETS", "to": "DOC:OTA:OTA-FND-0028-2026-DE", "status": "draft_productive", "source": "KG-0008" }
+  ]
+}
