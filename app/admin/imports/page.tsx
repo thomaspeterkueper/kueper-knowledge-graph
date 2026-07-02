@@ -35,7 +35,15 @@ export default async function ImportCenterPage() {
         <h2>Letzte Import-Jobs</h2>
         <ul>
           {jobs.map((job) => (
-            <li key={job.id}>{job.id} - {job.job_type} - {job.status}</li>
+            <li key={job.id} style={{ marginBottom: 10 }}>
+              <span>{job.id} - {job.job_type} - {job.status}</span>
+              {' '}
+              {job.status === 'pending' ? (
+                <form action={`/api/import-jobs/${job.id}/run`} method="post" style={{ display: 'inline' }}>
+                  <button type="submit">Run</button>
+                </form>
+              ) : null}
+            </li>
           ))}
         </ul>
       </section>
