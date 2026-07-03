@@ -3,9 +3,9 @@
   "name": "KUEPER Relation Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1",
-  "updated": "2026-07-02",
-  "sourceDocuments": ["KG-0003-RELATIONS", "KG-0008-REGISTRY"],
+  "version": "0.1.1",
+  "updated": "2026-07-03",
+  "sourceDocuments": ["KG-0003-RELATIONS", "KG-0008-REGISTRY", "KG-0012"],
   "relationTypes": [
     "REQUIRES",
     "COVERS",
@@ -18,10 +18,25 @@
     "PART_OF",
     "SATISFIES"
   ],
+  "linkingPatterns": [
+    {
+      "id": "LP:ARCHIVMODUL:READ-TARGET",
+      "type": "LinkingPattern",
+      "moduleType": "archivmodul",
+      "pattern": "PATH:<system>:<doc-id>:READ --TARGETS--> DOC:<system>:<doc-id>",
+      "description": "Canonical source-agnostic Archivmodul target pattern for any registered document source. OTA and KUE documents use the same mechanism through namespaced IDs."
+    }
+  ],
   "records": [
     { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-SEISM:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-SEISM:N2", "status": "canonical", "source": "KG-0003" },
     { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-PETRO:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-PETRO:N2", "status": "canonical", "source": "KG-0003" },
     { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:MATH-BAYES:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:MATH-BAYES:N2", "status": "canonical", "source": "KG-0003" },
+    { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-PLANET:N1", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-PLANET:N1", "status": "canonical", "source": "KG-0012" },
+    { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:LANG-EN:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:LANG-EN:N2", "status": "canonical", "source": "KG-0012" },
+    { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:PHYS-QM:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHYS-QM:N2", "status": "canonical", "source": "KG-0012" },
+    { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:MATH-DIFF:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:MATH-DIFF:N2", "status": "canonical", "source": "KG-0012" },
+    { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:PHIL-SCI:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHIL-SCI:N2", "status": "canonical", "source": "KG-0012" },
+    { "id": "REL:DOC:OTA:OTA-FND-0028-2026-DE:REQUIRES:KD:PHYS-EM:N2", "type": "Relation", "from": "DOC:OTA:OTA-FND-0028-2026-DE", "relation": "REQUIRES", "to": "KD:PHYS-EM:N2", "status": "canonical", "source": "KG-0012" },
     { "id": "REL:LRN:SSF:AST-1101:TEACHES:CMP:GEO-PLANET:N1", "type": "Relation", "from": "LRN:SSF:AST-1101", "relation": "TEACHES", "to": "CMP:GEO-PLANET:N1", "status": "draft_productive", "source": "KG-0008" },
     { "id": "REL:LRN:SSF:EAR-2201:TEACHES:CMP:GEO-SEISM:N2", "type": "Relation", "from": "LRN:SSF:EAR-2201", "relation": "TEACHES", "to": "CMP:GEO-SEISM:N2", "status": "draft_productive", "source": "KG-0008" },
     { "id": "REL:LRN:SSF:EAR-2202:TEACHES:CMP:GEO-PETRO:N2", "type": "Relation", "from": "LRN:SSF:EAR-2202", "relation": "TEACHES", "to": "CMP:GEO-PETRO:N2", "status": "draft_productive", "source": "KG-0008" },
