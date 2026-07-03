@@ -3,10 +3,11 @@
   "name": "KUEPER SSF Learning Module Type Vocabulary",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1",
+  "version": "0.1.1",
   "updated": "2026-07-03",
-  "sourceDocuments": ["OTA-ARC-0005-2026-DE", "KG-0009", "KG-0012"],
+  "sourceDocuments": ["OTA-ARC-0005-2026-DE", "KG-0009", "KG-0012", "ARC-0006"],
   "appliesTo": "exports/kxf-learning-modules-0.1.json -> records.learning_modules[].meta.type",
+  "note": "Learning paths are PATH objects, not learning module types.",
   "records": [
     {
       "id": "LMT:grundmodul",
@@ -33,18 +34,16 @@
       "description": "Reference-oriented module for a specific method, concept or prerequisite."
     },
     {
-      "id": "LMT:learning_path",
-      "type": "LearningModuleType",
-      "value": "learning_path",
-      "description": "Path-like module grouping a sequence or thematic branch."
-    },
-    {
       "id": "LMT:experiment",
       "type": "LearningModuleType",
       "value": "experiment",
       "description": "Module centered on an experiment, observation, simulation or applied activity."
     }
   ],
+  "pathObjectRule": {
+    "id": "POR:PATH-NOT-MODULE-TYPE",
+    "description": "PATH records are separate aggregate or target-route objects and must not be encoded as records.learning_modules[].meta.type."
+  },
   "archivmodulLinkingPattern": {
     "id": "LP:ARCHIVMODUL:READ-TARGET",
     "pattern": "PATH:<system>:<doc-id>:READ --TARGETS--> DOC:<system>:<doc-id>",
