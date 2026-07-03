@@ -1,0 +1,128 @@
+{
+  "manifest": "kg-signature-registry",
+  "version": "0.1.0",
+  "_meta": {
+    "owner": "KG",
+    "role": "Signatur-Resolver: bildet kanonische Signaturen auf ihren autoritativen Ablageort ab, unabhaengig vom physischen Pfad.",
+    "domainNote": "Dieses Manifest VERZEICHNET, wo eine Signatur aufloest. Es BEWEGT und SUBTYPISIERT keine Dokumente. Physisches Verschieben oder ein in-Dokument arc_type-Feld ist OTA-Domaene und laeuft als external-task ins OTA.",
+    "canonicalSource": "OTA-ARC-0006-2026-DE (§II.b Nummer ohne Bedeutung, §III ID-Schema/Governance, §III.3 Legacy-Mapping)",
+    "authoredBy": "kueper-knowledge-graph",
+    "date": "2026-07-03"
+  },
+
+  "resolution": {
+    "howToResolve": [
+      "1. Eintrag per exakter Signatur in 'entries' suchen.",
+      "2. Ist status == 'superseded' oder 'split', dem Feld 'supersededBy' bzw. 'successors' folgen, bis ein aktiver Eintrag erreicht ist.",
+      "3. 'location' des aktiven Eintrags lesen (system + repo + path).",
+      "4. Alte Eintraege werden NIE geloescht (§III.2 Invalidierung, nicht Wiederverwendung) — sie bleiben als Weiterleitung erhalten."
+    ],
+    "referenceForm": "Konsumenten (z. B. KXF sourceDocuments) referenzieren per Signatur, NICHT per Dateipfad. Dadurch bricht ein Umzug keine Referenz.",
+    "statusValues": ["canonical", "superseded", "split", "transitional", "reserved", "unverified"]
+  },
+
+  "systems": {
+    "KG":  { "role": "Definiert Wissen: IDs, Relationen, Voraussetzungen, Mappings, PATH-Referenzen", "repo": "thomaspeterkueper/kueper-knowledge-graph", "repoStatus": "verified" },
+    "SSF": { "role": "Definiert Lernen: konsumiert KG-Module, stellt Lernpfade zusammen",             "repo": "thomaspeterkueper/solarsciencefoundation", "repoStatus": "verified" },
+    "NOXIA": { "role": "Definiert Anwendung: narrative Freischaltungen",                              "repo": "thomaspeterkueper/noxiagame", "repoStatus": "verified" },
+    "OTA": { "role": "OverTime Archive: publizierte Werk-Setzungen (ARC-Serie u. a.)",               "repo": null, "repoStatus": "unconfirmed" },
+    "KUE": { "role": "Publikations-/Wissenskanon (kueper.com)",                                       "repo": null, "repoStatus": "unconfirmed" }
+  },
+
+  "kxfExports": {
+    "_note": "Kanonische, stabile Auflösungspunkte, unter denen der KG die KXF publiziert. Von SSF (lib/kxf.ts) zur Laufzeit konsumiert (revalidate 300).",
+    "legacy": "https://raw.githubusercontent.com/thomaspeterkueper/kueper-knowledge-graph/main/exports/kxf-0.1.json",
+    "learningModules": "https://raw.githubusercontent.com/thomaspeterkueper/kueper-knowledge-graph/main/exports/kxf-learning-modules-0.1.json"
+  },
+
+  "arcCategories": {
+    "A": { "label": "Archivstandard", "definition": "Beschreibt das Archiv selbst (Format, Epistemologie, Serienstruktur)." },
+    "B": { "label": "Systemarchitektur", "definition": "Beschreibt die Infrastruktur unter dem Archiv (KG/SSF/NOXIA)." },
+    "_provenance": "A/B-Split vorgeschlagen vom OTA-Kurator. Hier als Referenz verzeichnet. Kanonische in-Dokument-Subtypisierung (Option 3, arc_type-Feld) waere OTA-external-task."
+  },
+
+  "entries": [
+    {
+      "signature": "OTA-ARC-0001-2025-DE",
+      "kind": "arc-document",
+      "title": "Stilrichtlinien und Dokumentationsstandards",
+      "arcCategory": "A",
+      "status": "canonical",
+      "version": null,
+      "location": { "system": "OTA", "repo": null, "path": null, "pathStatus": "unconfirmed" },
+      "supersededBy": null,
+      "successors": null,
+      "notes": null
+    },
+    {
+      "signature": "OTA-ARC-0004-2026-DE",
+      "kind": "arc-document",
+      "title": "LSC-Serieneinfuehrung",
+      "arcCategory": "A",
+      "status": "canonical",
+      "version": null,
+      "location": { "system": "OTA", "repo": null, "path": null, "pathStatus": "unconfirmed" },
+      "supersededBy": null,
+      "successors": null,
+      "notes": null
+    },
+    {
+      "signature": "OTA-ARC-0005-2026-DE",
+      "kind": "arc-document",
+      "title": "PREREQUISITES-Feld — Knowledge Domains, Proficiency N0–N3",
+      "arcCategory": "B",
+      "status": "canonical",
+      "version": null,
+      "location": { "system": "OTA", "repo": null, "path": null, "pathStatus": "unconfirmed" },
+      "supersededBy": null,
+      "successors": null,
+      "notes": "Kategorie-B-Kandidat fuer spaetere Auslagerung/Ablosung."
+    },
+    {
+      "signature": "OTA-ARC-0006-2026-DE",
+      "kind": "arc-document",
+      "title": "Lernmodul-Granularitaet, Level-System und Modultypen",
+      "arcCategory": "B",
+      "status": "canonical",
+      "version": "1.3",
+      "location": { "system": "OTA", "repo": null, "path": null, "pathStatus": "unconfirmed" },
+      "supersededBy": null,
+      "successors": null,
+      "notes": "Definiert KG/SSF/NOXIA-Grenzen. Bei Variante 2 (Ablosung durch SYS-ARC-0001): status -> 'superseded', supersededBy setzen; dieser Eintrag bleibt als Weiterleitung erhalten."
+    },
+    {
+      "signature": "OTA-ARC-0007-2026-DE",
+      "kind": "arc-document",
+      "title": "Migrationsprotokoll (KXF-ID-Migration)",
+      "arcCategory": "B",
+      "status": "unverified",
+      "version": null,
+      "location": { "system": "OTA", "repo": null, "path": null, "pathStatus": "unconfirmed" },
+      "supersededBy": null,
+      "successors": null,
+      "notes": "Signatur, Jahr und Version vom Kurator zu bestaetigen."
+    },
+
+    { "signature": "MAT-L0-000001", "kind": "module", "title": "Zahlen und Muster",        "legacyId": "LRN:SSF:MAT-1001", "level": "L0", "domain": "MAT", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "MAT-L0-000002", "kind": "module", "title": "Algebra Grundlagen",       "legacyId": "LRN:SSF:MAT-1002", "level": "L0", "domain": "MAT", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "MAT-L0-000003", "kind": "module", "title": "Geometrie Grundlagen",     "legacyId": "LRN:SSF:MAT-1003", "level": "L0", "domain": "MAT", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "MAT-L1-000001", "kind": "module", "title": "Funktionen verstehen",     "legacyId": "LRN:SSF:MAT-1101", "level": "L1", "domain": "MAT", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "MAT-L1-000002", "kind": "module", "title": "Statistik Grundlagen",     "legacyId": "LRN:SSF:MAT-1102", "level": "L1", "domain": "MAT", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "MAT-L1-000003", "kind": "module", "title": "Wahrscheinlichkeit",       "legacyId": "LRN:SSF:MAT-1103", "level": "L1", "domain": "MAT", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "MAT-L2-000001", "kind": "module", "title": "Analysis",                 "legacyId": "LRN:SSF:MAT-2101", "level": "L2", "domain": "MAT", "status": "transitional", "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": "Uebergangsobjekt → atomisieren (§II)." },
+    { "signature": "MAT-L2-000002", "kind": "module", "title": "Bayes-Inferenz",           "legacyId": "LRN:SSF:MAT-2102", "level": "L2", "domain": "MAT", "status": "transitional", "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": "Uebergangsobjekt → atomisieren (§II)." },
+    { "signature": "MAT-L2-000003", "kind": "module", "title": "Differentialgleichungen",  "legacyId": "LRN:SSF:MAT-2103", "level": "L2", "domain": "MAT", "status": "transitional", "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": "Uebergangsobjekt → atomisieren (§II)." },
+    { "signature": "PHY-L1-000001", "kind": "module", "title": "Gravitation und Bewegung", "legacyId": "LRN:SSF:PHY-1101", "level": "L1", "domain": "PHY", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "PHY-L2-000001", "kind": "module", "title": "Quantenmechanik fuer Modellarchitektur", "legacyId": "LRN:SSF:PHY-2201", "level": "L2", "domain": "PHY", "status": "transitional", "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": "Uebergangsobjekt → atomisieren (§II)." },
+    { "signature": "PHY-L2-000002", "kind": "module", "title": "Elektromagnetismus und Feldmodelle",     "legacyId": "LRN:SSF:PHY-2202", "level": "L2", "domain": "PHY", "status": "transitional", "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": "Uebergangsobjekt → atomisieren (§II)." },
+    { "signature": "CHE-L1-000001", "kind": "module", "title": "Chemische Grundlagen",     "legacyId": "LRN:SSF:CHE-1101", "level": "L1", "domain": "CHE", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "AST-L1-000001", "kind": "module", "title": "Orientierung Planetologie","legacyId": "LRN:SSF:AST-1101", "level": "L1", "domain": "AST", "status": "canonical",    "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "EAR-L2-000001", "kind": "module", "title": "Einfuehrung in die planetare Seismologie", "legacyId": "LRN:SSF:EAR-2201", "level": "L2", "domain": "EAR", "status": "canonical", "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null },
+    { "signature": "EAR-L2-000002", "kind": "module", "title": "Petrologie und Gesteinsbildung",           "legacyId": "LRN:SSF:EAR-2202", "level": "L2", "domain": "EAR", "status": "canonical", "location": { "system": "KG", "repo": null, "path": null, "pathStatus": "unconfirmed" }, "notes": null }
+  ],
+
+  "extensibility": {
+    "plannedKinds": ["path", "competency", "knowledge-domain", "prerequisite", "doc"],
+    "note": "PATH-, CMP-, KD-, REQ- und DOC-Signaturen (ARC-0006 §V, §VIII) koennen spaeter mit demselben Eintragsschema aufgenommen werden."
+  }
+}
