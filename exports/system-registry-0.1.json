@@ -3,15 +3,15 @@
   "name": "KUEPER System Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1",
-  "updated": "2026-07-02",
-  "sourceDocuments": ["KG-0008-REGISTRY"],
+  "version": "0.1.1",
+  "updated": "2026-07-03",
+  "sourceDocuments": ["KG-0008-REGISTRY", "KG-0011"],
   "records": [
     { "id": "SYS:KUEPER:knowledge-graph", "type": "System", "name": "KUEPER Knowledge Graph", "role": "canonical_registry_and_export_source", "owns": ["canonical_ids", "entities", "relations", "mappings", "exports", "registries"], "exports": ["exports/kxf-0.6.json", "exports/entity-registry-0.1.json", "exports/system-registry-0.1.json", "exports/relation-registry-0.1.json"] },
     { "id": "SYS:KUEPER:ota", "type": "System", "name": "OverTime Archive", "role": "document_source", "owns": ["ota_fulltext", "ota_document_history"], "consumes": ["exports/kxf-0.5.json", "exports/kxf-0.6.json"] },
     { "id": "SYS:KUEPER:ssf", "type": "System", "name": "Solar Science Foundation", "role": "learning_platform", "owns": ["learning_ui", "module_pages", "ssf_progress"], "consumes": ["exports/kxf-learning-modules-0.1.json", "exports/kxf-0.6.json"] },
     { "id": "SYS:KUEPER:noxia", "type": "System", "name": "NOXIA", "role": "simulation_and_unlock_consumer", "owns": ["simulation_state", "gameplay_mechanics", "building_runtime"], "consumes": ["exports/kxf-0.6.json"] },
-    { "id": "SYS:KUEPER:kueper-com", "type": "System", "name": "kueper.com", "role": "publication_site", "owns": ["published_web_pages"], "consumes": ["exports/kxf-0.6.json"] },
+    { "id": "SYS:KUEPER:kueper-com", "type": "System", "name": "kueper.com", "role": "publication_site_and_draft_learning_content_originator", "owns": ["published_web_pages", "draft_learning_content"], "draftLearningContentScope": { "description": "Foundation-level MINT-plus draft units authored outside the archive before KG curation.", "domains": ["MAT", "PHY", "CHE", "AST", "BIO", "EAR", "LANG-*", "HIS-*", "PHIL-*", "TEC-methodology"], "canonicalization": "Draft content submitted by kueper.com is not canonical until accepted by SYS:KUEPER:knowledge-graph through the request workflow.", "exportsAfterAcceptance": ["exports/kxf-learning-modules-0.1.json"] }, "consumes": ["exports/kxf-0.6.json"] },
     { "id": "SYS:KUEPER:web", "type": "System", "name": "KUEPER Web Layer", "role": "generic_web_consumer", "owns": [], "consumes": ["exports/kxf-0.6.json"] }
   ]
 }
