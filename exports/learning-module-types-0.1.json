@@ -1,0 +1,62 @@
+{
+  "schema": "KUEPER-LEARNING-MODULE-TYPES-0.1",
+  "name": "KUEPER SSF Learning Module Type Vocabulary",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-03",
+  "sourceDocuments": ["OTA-ARC-0005-2026-DE", "KG-0009", "KG-0012"],
+  "appliesTo": "exports/kxf-learning-modules-0.1.json -> records.learning_modules[].meta.type",
+  "records": [
+    {
+      "id": "LMT:grundmodul",
+      "type": "LearningModuleType",
+      "value": "grundmodul",
+      "description": "Foundation module with no or minimal prerequisites; introduces a core knowledge area."
+    },
+    {
+      "id": "LMT:brueckenmodul",
+      "type": "LearningModuleType",
+      "value": "brueckenmodul",
+      "description": "Bridge module connecting foundation modules to higher-level domains or applied modules."
+    },
+    {
+      "id": "LMT:archivmodul",
+      "type": "LearningModuleType",
+      "value": "archivmodul",
+      "description": "Module leading a learner toward reading a specific source document. The source document may belong to any registered document source."
+    },
+    {
+      "id": "LMT:reference",
+      "type": "LearningModuleType",
+      "value": "reference",
+      "description": "Reference-oriented module for a specific method, concept or prerequisite."
+    },
+    {
+      "id": "LMT:learning_path",
+      "type": "LearningModuleType",
+      "value": "learning_path",
+      "description": "Path-like module grouping a sequence or thematic branch."
+    },
+    {
+      "id": "LMT:experiment",
+      "type": "LearningModuleType",
+      "value": "experiment",
+      "description": "Module centered on an experiment, observation, simulation or applied activity."
+    }
+  ],
+  "archivmodulLinkingPattern": {
+    "id": "LP:ARCHIVMODUL:READ-TARGET",
+    "pattern": "PATH:<system>:<doc-id>:READ --TARGETS--> DOC:<system>:<doc-id>",
+    "examples": [
+      {
+        "path": "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
+        "target": "DOC:OTA:OTA-SCI-0083-2026-DE"
+      },
+      {
+        "path": "PATH:KUE:KUE-PHI-0001-2026-DE:READ",
+        "target": "DOC:KUE:KUE-PHI-0001-2026-DE"
+      }
+    ]
+  }
+}
