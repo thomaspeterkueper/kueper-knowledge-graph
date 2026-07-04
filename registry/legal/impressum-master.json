@@ -1,0 +1,25 @@
+{
+  "schema": "KUEPER-LEGAL-REGISTRY-0.1",
+  "id": "LEGAL:L3:impressum-master",
+  "status": "canonical",
+  "source": "KG-0013",
+  "updated": "2026-07-04",
+  "curator": "T.P.K.",
+  "responsible": {
+    "name": "Thomas Peter Küper",
+    "address": "Mörfelder Landstraße 103, 60598 Frankfurt am Main, Deutschland",
+    "email": "t.kueper@camaleo.de"
+  },
+  "documents": {
+    "imprint": "DOC:KUE:LEGAL-IMPRINT-DE",
+    "privacy": "DOC:KUE:LEGAL-PRIVACY-DE",
+    "terms": "DOC:KUE:LEGAL-TERMS-DE"
+  },
+  "consumers": [
+    "SYS:KUEPER:contracomology",
+    "SYS:KUEPER:kueper-com",
+    "SYS:KUEPER:ssf",
+    "SYS:KUEPER:noxia",
+    "SYS:KUEPER:ota"
+  ]
+}
