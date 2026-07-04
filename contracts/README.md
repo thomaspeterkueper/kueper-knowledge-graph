@@ -31,7 +31,7 @@ Aktuelle Systeme:
 Geplante oder moegliche Spezialseiten:
 
 - SYS:KUEPER:zereya
-- SYS:KUEPER:contracosmology
+- SYS:KUEPER:contracomology
 - SYS:KUEPER:feli
 - SYS:KUEPER:soma-retep
 - SYS:KUEPER:omnizedenz
