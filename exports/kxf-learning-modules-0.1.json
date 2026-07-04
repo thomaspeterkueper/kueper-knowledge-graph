@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "created": "2026-07-02",
-  "modified": "2026-07-04T00:00:00+02:00",
+  "modified": "2026-07-04T10:00:00+02:00",
   "sourceDocuments": [
     "KG-0004-LEARNING-MODEL",
     "KB-REQUEST-0006-KXF-LEARNING-MODULES",
@@ -269,6 +269,213 @@
       }
     ],
     "learning_modules": [
+      {
+        "id": "LRN:SSF:PHY-1101",
+        "version": "0.2.0",
+        "created": "2026-06-28",
+        "modified": "2026-07-04T10:00:00+02:00",
+        "meta": {
+          "title": "Was die Welt aus sich macht",
+          "i18n": {
+            "title": {
+              "de": "Was die Welt aus sich macht",
+              "en": "What the World Makes of Itself"
+            }
+          },
+          "subject": "PHY",
+          "type": "learning_path",
+          "status": "built",
+          "entryQuestion": "Warum klingt eine Geige anders als eine Flöte — obwohl beide denselben Ton spielen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 10,
+          "durationMax": 45
+        },
+        "assets": {
+          "text": [
+            "content/phy-1101/prose.md"
+          ],
+          "svg": [
+            "assets/svg/wave-overtones.svg",
+            "assets/svg/em-spectrum.svg"
+          ],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "LRN:SSF:PHY-1102",
+            "LRN:SSF:CHM-1101"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [
+          {
+            "id": "BR:PHY:ACOUSTICS",
+            "label": "Akustik vertiefen",
+            "unlocks_at": "u1_complete"
+          },
+          {
+            "id": "BR:PHY:LIGHT-INTRO",
+            "label": "Licht-Einstieg",
+            "unlocks_at": "u1_complete"
+          }
+        ],
+        "noxiaGrants": [
+          "SENSOR:SPECTRAL"
+        ]
+      },
+      {
+        "id": "LRN:SSF:PHY-1102",
+        "version": "0.2.0",
+        "created": "2026-06-28",
+        "modified": "2026-07-04T10:00:00+02:00",
+        "meta": {
+          "title": "Licht als Informationsträger",
+          "i18n": {
+            "title": {
+              "de": "Licht als Informationsträger",
+              "en": "Light as Information Carrier"
+            }
+          },
+          "subject": "PHY",
+          "type": "learning_path",
+          "status": "built",
+          "entryQuestion": "Warum ist Licht das wichtigste Werkzeug der Astronomie — und was steckt alles darin?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 20,
+          "durationMax": 90
+        },
+        "assets": {
+          "text": [
+            "content/phy-1102/prose.md"
+          ],
+          "svg": [
+            "assets/svg/em-spectrum-full.svg",
+            "assets/svg/wave-compare.svg",
+            "assets/svg/planck-curves.svg",
+            "assets/svg/absorption-lines.svg"
+          ],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "LRN:SSF:PHY-1101"
+          ],
+          "moduleUnlocks": [
+            "LRN:SSF:AST-1101"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [
+          {
+            "id": "BR:PHY:EM-SPECTRUM",
+            "label": "EM-Spektrum",
+            "unlocks_at": "d1_complete"
+          },
+          {
+            "id": "BR:PHY:DOPPLER",
+            "label": "Doppler",
+            "unlocks_at": "d2_complete"
+          },
+          {
+            "id": "BR:PHY:SPECTROSCOPY",
+            "label": "Spektroskopie",
+            "unlocks_at": "d3_complete"
+          },
+          {
+            "id": "BR:PHY:PLANCK",
+            "label": "Planck",
+            "unlocks_at": "d4_complete"
+          },
+          {
+            "id": "BR:PHY:LINE-PROFILES",
+            "label": "Linienprofile",
+            "unlocks_at": "d5_complete"
+          }
+        ],
+        "noxiaGrants": [
+          "SENSOR:SPECTRAL",
+          "MISSION:OBSERVATION-DECK"
+        ]
+      },
+      {
+        "id": "LRN:SSF:CHM-1101",
+        "version": "0.2.0",
+        "created": "2026-06-28",
+        "modified": "2026-07-04T10:00:00+02:00",
+        "meta": {
+          "title": "Was Wasser so besonders macht",
+          "i18n": {
+            "title": {
+              "de": "Was Wasser so besonders macht",
+              "en": "What Makes Water So Special"
+            }
+          },
+          "subject": "CHM",
+          "type": "learning_path",
+          "status": "built",
+          "entryQuestion": "Warum ist Wasser flüssig — obwohl H₂ und O₂ beide Gase sind?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 15,
+          "durationMax": 60
+        },
+        "assets": {
+          "text": [
+            "content/chm-1101/prose.md"
+          ],
+          "svg": [
+            "assets/svg/h2o-molecule.svg",
+            "assets/svg/hbond-network.svg",
+            "assets/svg/energy-profile.svg"
+          ],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "LRN:SSF:CHM-1102",
+            "LRN:SSF:CHM-1103",
+            "LRN:SSF:BIO-1101"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [
+          {
+            "id": "BR:CHM:PSE",
+            "label": "Periodensystem",
+            "unlocks_at": "u1_complete"
+          },
+          {
+            "id": "BR:CHM:BIND",
+            "label": "Bindungen",
+            "unlocks_at": "u2_complete"
+          },
+          {
+            "id": "BR:CHM:REACT",
+            "label": "Reaktionen & Energie",
+            "unlocks_at": "u2_complete"
+          }
+        ],
+        "noxiaGrants": [
+          "REACT:ENERGY",
+          "MISSION:LAB-ALPHA"
+        ]
+      },
       {
         "id": "LRN:SSF:MAT-1001",
         "version": "0.2.0",
@@ -1023,6 +1230,11 @@
       "legacy": "LRN:SSF:CHE-1101",
       "canonicalViewId": "LRN:SSF:CHM-1101",
       "reason": "KG-0006: subject code CHE renamed to CHM (IUPAC-konform)."
+    },
+    {
+      "legacy": "LRN:SSF:CHE-1101",
+      "canonicalViewId": "LRN:SSF:CHM-1101",
+      "reason": "SSF components/LearnMap/types.ts uses CHE; KG canonical subject is CHM. normalizeModule() handles remap."
     }
   ],
   "resolvedQuestions": [
