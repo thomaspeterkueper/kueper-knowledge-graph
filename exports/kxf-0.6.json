@@ -5,14 +5,15 @@
   "status": "draft_productive",
   "principle": "single_source_of_truth",
   "version": "0.6",
-  "updated": "2026-07-02",
+  "updated": "2026-07-04",
   "sourceDocuments": [
     "KG-ARC-0001-2026-DE",
     "KG-0002-KNOWLEDGE-DOMAINS-CANONICAL",
     "KG-0003-RELATIONS",
     "KG-0004-LEARNING-MODEL",
     "KG-0005-OTA-INGESTION",
-    "KG-0008-REGISTRY"
+    "KG-0008-REGISTRY",
+    "KG-0013-CONTRACOMOLOGY-ONBOARDING"
   ],
   "registry": {
     "entityRegistry": "exports/entity-registry-0.1.json",
@@ -31,6 +32,7 @@
       "SYS:KUEPER:ssf",
       "SYS:KUEPER:noxia",
       "SYS:KUEPER:kueper-com",
+      "SYS:KUEPER:contracomology",
       "SYS:KUEPER:web"
     ],
     "activeConsumerContracts": [
@@ -42,9 +44,11 @@
     "sampleResolvableIds": [
       "DOC:OTA:OTA-SCI-0083-2026-DE",
       "KD:GEO-SEISM:N2",
+      "KD:KON:N1",
       "CMP:GEO-SEISM:N2",
       "LRN:SSF:EAR-2201",
-      "PATH:OTA:OTA-SCI-0083-2026-DE:READ"
+      "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
+      "SYS:KUEPER:contracomology"
     ]
   }
 }
