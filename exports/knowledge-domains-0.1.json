@@ -4,10 +4,11 @@
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
   "version": "0.1",
-  "updated": "2026-07-02",
+  "updated": "2026-07-04",
   "sourceDocuments": [
     "KG-ARC-0001-2026-DE",
-    "KG-0002-KNOWLEDGE-DOMAINS-CANONICAL"
+    "KG-0002-KNOWLEDGE-DOMAINS-CANONICAL",
+    "KG-0013-CONTRACOMOLOGY-ONBOARDING"
   ],
   "levelScale": [
     { "id": "N1", "name": "Orientierung", "description": "Grundbegriffe, erste Einordnung und Lesefaehigkeit fuer Einfuehrungstexte." },
@@ -27,6 +28,7 @@
     { "id": "KD:PHYS-QM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-QM", "level": "N2", "title": "Quantenmechanik - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen quantenmechanischer Konzepte, Zustaende, Operatoren, Messung und Modellgrenzen.", "aliases": ["PHYS-QM N2", "Quantum mechanics N2", "Quantenphysik N2"] },
     { "id": "KD:PHYS-EM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-EM", "level": "N2", "title": "Elektromagnetismus - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen elektrischer und magnetischer Felder, elektromagnetischer Wechselwirkung und feldphysikalischer Modellierung.", "aliases": ["PHYS-EM N2", "Electromagnetism N2", "Magnetfelder N2"] },
     { "id": "KD:PHIL-SCI:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHIL-SCI", "level": "N2", "title": "Wissenschaftstheorie - arbeitsfaehiges Grundverstaendnis", "parent": null, "description": "Grundlagen wissenschaftlicher Methode, Falsifizierbarkeit, Evidenz, Modellgrenzen, Hypothesenstatus und epistemischer Markierung.", "aliases": ["PHIL-SCI N2", "Philosophy of science N2", "Wissenschaftstheorie N2"] },
+    { "id": "KD:KON:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "KON", "level": "N1", "title": "Kontrakomologie - Orientierung", "parent": null, "description": "Orientierung im vom Kurator gesetzten Wissenschaftszweig Contracomology/Kontrakomologie. Werk-Theorie; kein empirischer Befund und nicht peer-reviewed.", "aliases": ["KON N1", "Contracomology N1", "Kontrakomologie N1"] },
     { "id": "KD:LANG-EN:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "LANG-EN", "level": "N2", "title": "Englisch fuer wissenschaftliche Primaerliteratur", "parent": null, "description": "Lesekompetenz fuer englischsprachige wissenschaftliche Abstracts, Paper, Datentabellen und Fachterminologie.", "aliases": ["LANG-EN N2", "Scientific English N2", "Englisch Primaerliteratur N2"] }
   ],
   "legacyMappings": [
@@ -38,6 +40,7 @@
     { "legacy": "KNOW:PHYS-QM + N2", "canonical": "KD:PHYS-QM:N2" },
     { "legacy": "KNOW:PHYS-EM + N2", "canonical": "KD:PHYS-EM:N2" },
     { "legacy": "KNOW:PHIL-SCI + N2", "canonical": "KD:PHIL-SCI:N2" },
+    { "legacy": "KNOW:KON + N1", "canonical": "KD:KON:N1" },
     { "legacy": "KNOW:LANG-EN + N2", "canonical": "KD:LANG-EN:N2" }
   ]
 }
