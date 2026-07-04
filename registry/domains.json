@@ -67,13 +67,13 @@
       "consumes": ["KXF", "legal_registry", "narrative_entities"]
     },
     {
-      "id": "DOM:L3:contracosmology-org",
+      "id": "DOM:L3:contracomology-org",
       "type": "Domain",
-      "domain": "contracosmology.org",
-      "system": "SYS:KUEPER:contracosmology",
-      "role": "model_and_cosmology_project_site",
+      "domain": "contracomology.org",
+      "system": "SYS:KUEPER:contracomology",
+      "role": "model_and_document_project_site",
       "status": "planned",
-      "repo": "TBD",
+      "repo": "thomaspeterkueper/contracomology",
       "consumes": ["KXF", "legal_registry", "models", "documents"]
     },
     {
