@@ -91,9 +91,11 @@ Cache-Control: public, s-maxage=3600, stale-while-revalidate=86400
 The implementation currently reads from:
 
 ```text
-exports/kxf-0.4.json
+exports/kxf-0.3.json
 exports/kxf-learning-paths-0.1.json
 ```
+
+`kxf-0.3.json` is used because it contains OTA documents, KnowledgeDomain records and canonical Prerequisite records in one export.
 
 ## Consumers
 
