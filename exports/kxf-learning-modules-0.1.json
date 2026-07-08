@@ -5,14 +5,14 @@
   "status": "draft_productive",
   "version": "0.2.0",
   "created": "2026-07-02",
-  "modified": "2026-07-08T12:00:00+02:00",
+  "modified": "2026-07-08T12:30:00+02:00",
   "sourceDocuments": [
-    "KG-0010",
     "KG-0004-LEARNING-MODEL",
-    "OTA-ARC-0006-2026-DE-v1.3",
-    "KG-0006-schema-alignment-ssf-learning-modules",
     "KB-REQUEST-0006-KXF-LEARNING-MODULES",
+    "KG-0006-schema-alignment-ssf-learning-modules",
     "KG-0009",
+    "KG-0010",
+    "OTA-ARC-0006-2026-DE-v1.3",
     "OTA-ARC-0007-2026-DE-v1.1"
   ],
   "contracts": {
@@ -784,9 +784,7 @@
             "MAT-L2-000003"
           ],
           "pathUnlocks": [],
-          "archiveUnlocks": [
-            "DOC:OTA:OTA-FND-0028-2026-DE"
-          ]
+          "archiveUnlocks": []
         },
         "branches": [],
         "noxiaGrants": [],
