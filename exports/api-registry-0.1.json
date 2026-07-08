@@ -7,11 +7,45 @@
   "updated": "2026-07-08",
   "sourceDocuments": [
     "OTA-API",
+    "DOCUMENT-ARCHITECTURE",
     "REQ-KG-002",
     "REQ-KG-003",
-    "REQ-KG-004"
+    "REQ-KG-004",
+    "DOCUMENT-API"
   ],
   "records": [
+    {
+      "id": "API:KG:DOCUMENTS:LIST:0.1",
+      "type": "ApiRoute",
+      "system": "SYS:KUEPER:knowledge-graph",
+      "path": "/api/documents",
+      "method": "GET",
+      "schema": "KUEPER-DOCUMENT-API-0.1",
+      "status": "draft_productive",
+      "visibility": "public_read",
+      "consumerContract": true,
+      "description": "List KG document references from exports/document-references-0.1.json.",
+      "queryParameters": ["system", "status", "type", "q"],
+      "sourceExports": ["exports/document-references-0.1.json"],
+      "consumers": ["SYS:KUEPER:ota", "SYS:KUEPER:ssf", "SYS:KUEPER:noxia", "SYS:KUEPER:contracomology", "external_read_only_clients"],
+      "cache": "public, s-maxage=3600, stale-while-revalidate=86400"
+    },
+    {
+      "id": "API:KG:DOCUMENTS:DETAIL:0.1",
+      "type": "ApiRoute",
+      "system": "SYS:KUEPER:knowledge-graph",
+      "path": "/api/documents/{id}",
+      "method": "GET",
+      "schema": "KUEPER-DOCUMENT-API-0.1",
+      "status": "draft_productive",
+      "visibility": "public_read",
+      "consumerContract": true,
+      "description": "Read one KG document reference by DOC id or canonical id.",
+      "pathParameters": ["id"],
+      "sourceExports": ["exports/document-references-0.1.json"],
+      "consumers": ["SYS:KUEPER:ota", "SYS:KUEPER:ssf", "SYS:KUEPER:noxia", "SYS:KUEPER:contracomology", "external_read_only_clients"],
+      "cache": "public, s-maxage=3600, stale-while-revalidate=86400"
+    },
     {
       "id": "API:KG:OTA:INDEX:0.1",
       "type": "ApiRoute",
