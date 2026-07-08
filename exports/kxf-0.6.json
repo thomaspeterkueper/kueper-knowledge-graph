@@ -15,6 +15,8 @@
     "KG-0005-OTA-INGESTION",
     "KG-0008-REGISTRY",
     "KG-0013-CONTRACOMOLOGY-ONBOARDING",
+    "DOCUMENT-ARCHITECTURE",
+    "KG-REQ-20260708-document-architecture-consensus",
     "OTA-API",
     "API-REGISTRY",
     "QUERY-MODEL",
@@ -28,12 +30,13 @@
     "systemRegistry": "exports/system-registry-0.1.json",
     "relationRegistry": "exports/relation-registry-0.1.json",
     "apiRegistry": "exports/api-registry-0.1.json",
-    "queryRegistry": "exports/query-registry-0.1.json"
+    "queryRegistry": "exports/query-registry-0.1.json",
+    "documentReferenceRegistry": "exports/document-references-0.1.json"
   },
   "resolution": {
-    "functions": ["resolve", "listExports", "listIncoming", "listOutgoing", "listRelations", "listApiRoutes", "listQueries"],
-    "idFields": ["id", "from", "to", "target", "knowledgeDomain", "path", "query"],
-    "consumerNote": "Consumers should resolve IDs, public API contracts and query contracts through registry exports instead of scanning all historical KXF files."
+    "functions": ["resolve", "listExports", "listIncoming", "listOutgoing", "listRelations", "listApiRoutes", "listQueries", "listDocumentReferences"],
+    "idFields": ["id", "canonicalId", "from", "to", "target", "knowledgeDomain", "path", "query"],
+    "consumerNote": "Consumers should resolve IDs, document references, public API contracts and query contracts through registry exports instead of scanning all historical KXF files."
   },
   "records": {
     "systems": [
@@ -48,6 +51,9 @@
     "activeConsumerContracts": [
       { "consumer": "SYS:KUEPER:ssf", "export": "exports/kxf-learning-modules-0.1.json", "recordSet": "records.learning_modules" },
       { "consumer": "SYS:KUEPER:ssf", "export": "exports/kxf-learning-paths-0.1.json", "recordSet": "records.learning_paths" },
+      { "consumer": "SYS:KUEPER:ssf", "export": "exports/document-references-0.1.json", "recordSet": "records" },
+      { "consumer": "SYS:KUEPER:ota", "export": "exports/document-references-0.1.json", "recordSet": "records" },
+      { "consumer": "SYS:KUEPER:noxia", "export": "exports/document-references-0.1.json", "recordSet": "records" },
       { "consumer": "SYS:KUEPER:ota", "api": "/api/ota/*", "registry": "exports/api-registry-0.1.json" },
       { "consumer": "SYS:KUEPER:ssf", "api": "/api/ota/*", "registry": "exports/api-registry-0.1.json" },
       { "consumer": "SYS:KUEPER:noxia", "api": "/api/ota/*", "registry": "exports/api-registry-0.1.json" },
@@ -59,6 +65,8 @@
     ],
     "sampleResolvableIds": [
       "DOC:OTA:OTA-SCI-0083-2026-DE",
+      "DOC:KUE:KUE-AST-0001-2026-DE",
+      "DOC:KUE:LEGAL-IMPRINT-DE",
       "KD:GEO-SEISM:N2",
       "KD:KON:N1",
       "CMP:GEO-SEISM:N2",
