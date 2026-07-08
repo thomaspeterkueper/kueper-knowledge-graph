@@ -2,13 +2,13 @@
 
 ## Status
 
-Draft productive, 2026-07-02
+Draft productive, 2026-07-08
 
 ## Zweck
 
-KXF ist das Austauschformat des KUEPER Knowledge Graph. Es exportiert kanonische Entitaeten, Dokument-Metadaten, Knowledge Domains, Prerequisites, Relationen, Lernmodule, Unlocks, Mappings und Ingestion-Metadaten fuer OTA, SSF, NOXIA und kueper.com.
+KXF ist das Austauschformat des KUEPER Knowledge Graph. Es exportiert kanonische Entitaeten, Dokument-Metadaten, Knowledge Domains, Prerequisites, Relationen, Lernmodule, Unlocks, Mappings, Ingestion-Metadaten, Registries, API-/Query-Vertraege und Dokumentreferenzen fuer OTA, SSF, NOXIA, kueper.com und weitere KUEPER-Systeme.
 
-Der Knowledge Graph bleibt die Single Source of Truth. Andere Systeme konsumieren KXF, definieren aber keine eigenen kanonischen Wissensobjekte.
+Der Knowledge Graph bleibt die Single Source of Truth fuer IDs, Relationen, Mappings und KXF-Vertraege. Andere Systeme konsumieren KXF, definieren aber keine eigenen kanonischen Wissensobjekte.
 
 ## Versionen
 
@@ -19,33 +19,20 @@ Der Knowledge Graph bleibt die Single Source of Truth. Andere Systeme konsumiere
 | KXF-0.3 | draft_productive | explizite `Relation`-Records als Graph-Kanten |
 | KXF-0.4 | draft_productive | Competencies, LearningModules, Assessments und LearningPaths |
 | KXF-0.5 | draft_productive | OTA-Ingestion-Regeln, IngestionRuns und Normalisierung |
+| KXF-0.6 | draft_productive | Registry View mit Entity-, System-, Relation-, API-, Query- und Document-Reference-Registry |
 
-## Top-Level-Struktur
+## Registry View ab KXF-0.6
 
 ```json
 {
-  "schema": "KXF-0.5",
-  "name": "KUEPER Exchange Format",
-  "master": "kueper-knowledge-graph",
-  "status": "draft_productive",
-  "principle": "single_source_of_truth",
-  "version": "0.5",
-  "updated": "2026-07-02",
-  "records": {
-    "entities": [],
-    "documents": [],
-    "knowledgeDomains": [],
-    "prerequisites": [],
-    "relations": [],
-    "competencies": [],
-    "learningModules": [],
-    "assessments": [],
-    "learningPaths": [],
-    "ingestionRules": [],
-    "ingestionRuns": [],
-    "unlocks": [],
-    "buildings": [],
-    "mappings": []
+  "schema": "KXF-0.6",
+  "registry": {
+    "entityRegistry": "exports/entity-registry-0.1.json",
+    "systemRegistry": "exports/system-registry-0.1.json",
+    "relationRegistry": "exports/relation-registry-0.1.json",
+    "apiRegistry": "exports/api-registry-0.1.json",
+    "queryRegistry": "exports/query-registry-0.1.json",
+    "documentReferenceRegistry": "exports/document-references-0.1.json"
   }
 }
 ```
@@ -63,22 +50,65 @@ Minimalfelder:
 }
 ```
 
-## Document
+## Document / DocumentReference
 
-Dokumente werden als Metadatenobjekte gefuehrt. Volltexte bleiben im Quellsystem.
+Dokumente werden im KG als Metadatenobjekte und Referenzen gefuehrt. Volltexte bleiben im Quellsystem.
+
+Der KG darf Dokumente referenzieren, anreichern und mit Relationen, Prerequisites, LearningPaths und Registries verbinden. Er besitzt den Volltext nicht, sofern keine spaetere Entscheidung das ausdruecklich aendert.
+
+### Required minimum
+
+```text
+id
+type
+system
+title
+status
+contentOwner
+metadataOwner
+```
+
+### Recommended fields
+
+```text
+canonicalId
+documentType
+language
+version
+canonicalUrl
+sourceUrl
+sourceRepository
+sourcePath
+relatedEntities
+relatedKnowledgeDomains
+prerequisiteIds
+markerProfile
+summary
+created
+modified
+```
+
+### Example
 
 ```json
 {
   "id": "DOC:OTA:OTA-SCI-0083-2026-DE",
   "canonicalId": "OTA-SCI-0083-2026-DE",
-  "type": "Document",
+  "type": "DocumentReference",
   "system": "SYS:KUEPER:ota",
   "title": "Transkrustaler Magmatismus am Mars",
+  "documentType": "SCI",
   "language": "DE",
-  "status": "Canonical",
-  "contentOwnership": "OverTime Archive",
-  "metadataOwner": "KUEPER Knowledge Graph"
+  "status": "canonical",
+  "contentOwner": "SYS:KUEPER:ota",
+  "metadataOwner": "SYS:KUEPER:knowledge-graph"
 }
+```
+
+Document references are exported through:
+
+```text
+exports/document-references-0.1.json
 ```
 
 ## KnowledgeDomain
@@ -221,4 +251,5 @@ Neue Prerequisites muessen auf `KD:*:N*` zeigen.
 12. Jeder IngestionRun braucht `sourceSystem`, `targetSystem`, `status` und Zaehlerfelder.
 13. Ingestion darf keine neuen KnowledgeDomains ohne Review erzeugen.
 14. Dokumente speichern keinen Volltext, sondern nur Metadaten und Verweise.
-15. Exporte muessen `schema`, `version` und `updated` enthalten.
+15. DocumentReferences muessen `contentOwner` und `metadataOwner` ausweisen.
+16. Exporte muessen `schema`, `version` und `updated` enthalten.
