@@ -1,0 +1,3302 @@
+{
+  "meta": {
+    "generated": "2026-07-08T10:13:20.393064",
+    "generator": "ota_scanner_v4.py",
+    "version": "4.1",
+    "source_directory": "/mnt/project",
+    "total_documents": 199,
+    "series_counts": {
+      "SCI": 52,
+      "BIO": 29,
+      "FND": 27,
+      "TEC": 24,
+      "RED": 11,
+      "CUL": 9,
+      "OBS": 8,
+      "ORG": 7,
+      "HIS": 6,
+      "LSC": 6,
+      "NAR": 5,
+      "ARC": 4,
+      "KARTE": 3,
+      "KOM": 3,
+      "ART": 1,
+      "INDEX": 1,
+      "LIM": 1,
+      "META": 1,
+      "MON": 1
+    },
+    "note": "Vollständiger Scan Juli 2026 — v4.1 mit Access-Level und Epistemik-Inferenz"
+  },
+  "series_info": {
+    "SCI": "Wissenschaftliche Grundlagen",
+    "TEC": "Technische Dokumentation",
+    "BIO": "Biografische Profile",
+    "FND": "Philosophische Fundamente",
+    "RED": "Redacted / Klassifiziert",
+    "ORG": "Organisationen und Institutionen",
+    "CUL": "Kulturdokumente",
+    "ARC": "Archivrichtlinien (intern)",
+    "HIS": "Historische Rekonstruktionen",
+    "KARTE": "Karten und Referenzkarten",
+    "NAR": "Narrative Dokumente",
+    "OBS": "Beobachtungsprotokolle",
+    "ART": "Artefakt-Dokumentation",
+    "LIM": "Liminale Entitäten",
+    "MON": "Monitor-Dokumente",
+    "LSC": "Life Sciences",
+    "KOM": "Kommunikations- und Musikdokumente",
+    "META": "Meta-Dokumente",
+    "INDEX": "Index-Dokumente"
+  },
+  "documents": [
+    {
+      "signature": "OTA-ARC-0001-2025-DE",
+      "series": "ARC",
+      "number": "0001",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-ARC-0001-2025-DE.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-ARC-0002-2026-DE",
+      "series": "ARC",
+      "number": "0002",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-ARC-0002-MULTI-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "F",
+        "I",
+        "AUSSTEHEND",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ARC-0003-2091-DE",
+      "series": "ARC",
+      "number": "0003",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-ARC-0003-2091-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "H",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ARC-0004-2026-DE",
+      "series": "ARC",
+      "number": "0004",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-ARC-0004-2026-DE.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ART-0001-2087-DE",
+      "series": "ART",
+      "number": "0001",
+      "year": "2087",
+      "language": "DE",
+      "filename": "OTA-ART-0001-2087-DE-v3-COMPLETE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "R",
+        "T"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0000-2025-DE",
+      "series": "BIO",
+      "number": "0000",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0000-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0001-2025-DE",
+      "series": "BIO",
+      "number": "0001",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0001-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-BIO-0003-2195-EN",
+      "series": "BIO",
+      "number": "0003",
+      "year": "2195",
+      "language": "EN",
+      "filename": "OTA-BIO-0003-2195-EN.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-BIO-0004-2096-DE",
+      "series": "BIO",
+      "number": "0004",
+      "year": "2096",
+      "language": "DE",
+      "filename": "OTA-BIO-0004-2096-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0005-2025-DE",
+      "series": "BIO",
+      "number": "0005",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0005-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0006-2025-DE",
+      "series": "BIO",
+      "number": "0006",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0006-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0007-2025-DE",
+      "series": "BIO",
+      "number": "0007",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0007-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0008-2025-DE",
+      "series": "BIO",
+      "number": "0008",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0008-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0009-2025-DE",
+      "series": "BIO",
+      "number": "0009",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0009-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0010-2025-DE",
+      "series": "BIO",
+      "number": "0010",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0010-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0011-2091-DE",
+      "series": "BIO",
+      "number": "0011",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-BIO-0011-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-BIO-0012-2087-DE",
+      "series": "BIO",
+      "number": "0012",
+      "year": "2087",
+      "language": "DE",
+      "filename": "OTA-BIO-0012-2087-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-BIO-0013-2089-DE",
+      "series": "BIO",
+      "number": "0013",
+      "year": "2089",
+      "language": "DE",
+      "filename": "OTA-BIO-0013-2089-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0015-2091-DE",
+      "series": "BIO",
+      "number": "0015",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-BIO-0015-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0016-2123-DE",
+      "series": "BIO",
+      "number": "0016",
+      "year": "2123",
+      "language": "DE",
+      "filename": "OTA-BIO-0016-2123-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-BIO-0017-2026-DE",
+      "series": "BIO",
+      "number": "0017",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0017-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0018-2026-DE",
+      "series": "BIO",
+      "number": "0018",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0018-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0019-2026-DE",
+      "series": "BIO",
+      "number": "0019",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0019-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0020-2026-DE",
+      "series": "BIO",
+      "number": "0020",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0020-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0021-2026-DE",
+      "series": "BIO",
+      "number": "0021",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0021-2026-DE-v1_1.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0022-2026-DE",
+      "series": "BIO",
+      "number": "0022",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0022-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "OFFEN",
+        "F",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0023-2025-DE",
+      "series": "BIO",
+      "number": "0023",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-BIO-0023-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0024-2075-DE",
+      "series": "BIO",
+      "number": "0024",
+      "year": "2075",
+      "language": "DE",
+      "filename": "OTA-BIO-0024-2075-DE-v1_1.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0025-2075-DE",
+      "series": "BIO",
+      "number": "0025",
+      "year": "2075",
+      "language": "DE",
+      "filename": "OTA-BIO-0025-2075-DE-v1_2.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0026-2026-DE",
+      "series": "BIO",
+      "number": "0026",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0026-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0027-2026-DE",
+      "series": "BIO",
+      "number": "0027",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0027-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0028-2026-DE",
+      "series": "BIO",
+      "number": "0028",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0028-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0030-2026-DE",
+      "series": "BIO",
+      "number": "0030",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0030-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-BIO-0031-2026-DE",
+      "series": "BIO",
+      "number": "0031",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-BIO-0031-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0001-2025-DE",
+      "series": "CUL",
+      "number": "0001",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-CUL-0001-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0002-2026-DE",
+      "series": "CUL",
+      "number": "0002",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-CUL-0002-60000BCE-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-CUL-0013-2026-DE",
+      "series": "CUL",
+      "number": "0013",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-CUL-0013-MULTI-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "I",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0014-2152-DE",
+      "series": "CUL",
+      "number": "0014",
+      "year": "2152",
+      "language": "DE",
+      "filename": "OTA-CUL-0014-2152-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0015-2026-DE",
+      "series": "CUL",
+      "number": "0015",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-CUL-0015-MULTI-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0016-2026-DE",
+      "series": "CUL",
+      "number": "0016",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-CUL-0016-MULTI-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0017-2180-DE",
+      "series": "CUL",
+      "number": "0017",
+      "year": "2180",
+      "language": "DE",
+      "filename": "OTA-CUL-0017-2180-DE-v1_3.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0018-2025-DE",
+      "series": "CUL",
+      "number": "0018",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-CUL-0018-2025-DE-v1_2.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-CUL-0019-2026-DE",
+      "series": "CUL",
+      "number": "0019",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-CUL-0019-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0001-2026-DE",
+      "series": "FND",
+      "number": "0001",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0001-noxia.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0002-2025-DE",
+      "series": "FND",
+      "number": "0002",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-FND-0002-2025-DE.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0004-2026-DE",
+      "series": "FND",
+      "number": "0004",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0004.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0005-2025-DE",
+      "series": "FND",
+      "number": "0005",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-FND-0005-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0006-2025-DE",
+      "series": "FND",
+      "number": "0006",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-FND-0006-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0007-2025-DE",
+      "series": "FND",
+      "number": "0007",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-FND-0007-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0008-2025-DE",
+      "series": "FND",
+      "number": "0008",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-FND-0008-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0009-2026-DE",
+      "series": "FND",
+      "number": "0009",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0009-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "T",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-FND-0010-2026-DE",
+      "series": "FND",
+      "number": "0010",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0010-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0011-2026-DE",
+      "series": "FND",
+      "number": "0011",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0011-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "I",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0012-2026-DE",
+      "series": "FND",
+      "number": "0012",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0012-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0013-2026-DE",
+      "series": "FND",
+      "number": "0013",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0013-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0013A-2026-DE",
+      "series": "FND",
+      "number": "0013A",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0013A-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "R",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0013B-2026-DE",
+      "series": "FND",
+      "number": "0013B",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0013B-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-FND-0014-2026-DE",
+      "series": "FND",
+      "number": "0014",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0014-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-FND-0015-2026-DE",
+      "series": "FND",
+      "number": "0015",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0015-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0016-2026-DE",
+      "series": "FND",
+      "number": "0016",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0016-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-FND-0017-2026-DE",
+      "series": "FND",
+      "number": "0017",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0017-NACHTRAG-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "F",
+        "AUSSTEHEND",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0018-4000BCE-DE",
+      "series": "FND",
+      "number": "0018",
+      "year": "4000BCE",
+      "language": "DE",
+      "filename": "OTA-FND-0018-4000BCE-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0019-2025-DE",
+      "series": "FND",
+      "number": "0019",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-FND-0019-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0021-2026-DE",
+      "series": "FND",
+      "number": "0021",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0021-2026-DE.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "OFFEN",
+        "AUSSTEHEND",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0022-2026-DE",
+      "series": "FND",
+      "number": "0022",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0022-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "R",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0023-2026-DE",
+      "series": "FND",
+      "number": "0023",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0023-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0024-2026-DE",
+      "series": "FND",
+      "number": "0024",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0024-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "OFFEN",
+        "R",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0025-2026-DE",
+      "series": "FND",
+      "number": "0025",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0025-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0026-2026-DE",
+      "series": "FND",
+      "number": "0026",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0026-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "OFFEN",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-FND-0030-2026-DE",
+      "series": "FND",
+      "number": "0030",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-FND-0030-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "OFFEN",
+        "F",
+        "H",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-HIS-0003-2087-DE",
+      "series": "HIS",
+      "number": "0003",
+      "year": "2087",
+      "language": "DE",
+      "filename": "OTA-HIS-0003-2087-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 4,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-HIS-0004-2085-DE",
+      "series": "HIS",
+      "number": "0004",
+      "year": "2085",
+      "language": "DE",
+      "filename": "OTA-HIS-0004-2085-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-HIS-0006-9500BCE-DE",
+      "series": "HIS",
+      "number": "0006",
+      "year": "9500BCE",
+      "language": "DE",
+      "filename": "OTA-HIS-0006-9500BCE-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-HIS-0007-1200BCE-DE",
+      "series": "HIS",
+      "number": "0007",
+      "year": "1200BCE",
+      "language": "DE",
+      "filename": "OTA-HIS-0007-1200BCE-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-HIS-0008-2026-DE",
+      "series": "HIS",
+      "number": "0008",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-HIS-0008-MULTI-DE-draft.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "F",
+        "I",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-HIS-0009-1200BCE-DE",
+      "series": "HIS",
+      "number": "0009",
+      "year": "1200BCE",
+      "language": "DE",
+      "filename": "OTA-HIS-0009-1200BCE-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-INDEX-RKF-2026-DE",
+      "series": "INDEX",
+      "number": "RKF",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-INDEX-RKF-2026.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-KARTE-0001-2026-DE",
+      "series": "KARTE",
+      "number": "0001",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-KARTE-0001-Gehirn-Epochen.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "I",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-KARTE-0002-2026-DE",
+      "series": "KARTE",
+      "number": "0002",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-KARTE-0002-Epochen-g-Profile.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-KARTE-0003-2026-DE",
+      "series": "KARTE",
+      "number": "0003",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-KARTE-0003-Baumeister-Netzwerk.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-KOM-0001-2026-DE",
+      "series": "KOM",
+      "number": "0001",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-KOM-0001-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-KOM-0002-2026-DE",
+      "series": "KOM",
+      "number": "0002",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-KOM-0002-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-KOM-0003-2026-DE",
+      "series": "KOM",
+      "number": "0003",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-KOM-0003-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-LIM-0001-2196-DE",
+      "series": "LIM",
+      "number": "0001",
+      "year": "2196",
+      "language": "DE",
+      "filename": "OTA-LIM-0001-2196-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-LSC-0001-2048-DE",
+      "series": "LSC",
+      "number": "0001",
+      "year": "2048",
+      "language": "DE",
+      "filename": "OTA-LSC-0001-2048-DE_v1_0.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-LSC-0002-2026-DE",
+      "series": "LSC",
+      "number": "0002",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-LSC-0002-2026-DE.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-LSC-0003-2026-DE",
+      "series": "LSC",
+      "number": "0003",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-LSC-0003-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-LSC-0004-2026-DE",
+      "series": "LSC",
+      "number": "0004",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-LSC-0004-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-LSC-0006-2026-DE",
+      "series": "LSC",
+      "number": "0006",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-LSC-0006-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-LSC-0007-2026-DE",
+      "series": "LSC",
+      "number": "0007",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-LSC-0007-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-META-0001-2026-DE",
+      "series": "META",
+      "number": "0001",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-META-0001-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-MON-0002-2142-DE",
+      "series": "MON",
+      "number": "0002",
+      "year": "2142",
+      "language": "DE",
+      "filename": "OTA-MON-0002-2142-DE-draft.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-NAR-0001-2087-DE",
+      "series": "NAR",
+      "number": "0001",
+      "year": "2087",
+      "language": "DE",
+      "filename": "OTA-NAR-0001-2087-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-NAR-0002-2025-DE",
+      "series": "NAR",
+      "number": "0002",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-NAR-0002-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-NAR-0003-2026-DE",
+      "series": "NAR",
+      "number": "0003",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-NAR-0003-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-NAR-0004-2026-DE",
+      "series": "NAR",
+      "number": "0004",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-NAR-0004-2026-DE-v1_0.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN",
+        "R",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-NAR-0005-2026-DE",
+      "series": "NAR",
+      "number": "0005",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-NAR-0005-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-OBS-0001-2025-DE",
+      "series": "OBS",
+      "number": "0001",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-OBS-0001-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-OBS-0002-2026-DE",
+      "series": "OBS",
+      "number": "0002",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-OBS-0002-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-OBS-0004-2026-DE",
+      "series": "OBS",
+      "number": "0004",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-OBS-0004-2026-DE-Goebekli-Tepe.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-OBS-0005-2026-DE",
+      "series": "OBS",
+      "number": "0005",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-OBS-0005-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "H",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-OBS-0006-2026-DE",
+      "series": "OBS",
+      "number": "0006",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-OBS-0006-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-OBS-0007-1700BCE-DE",
+      "series": "OBS",
+      "number": "0007",
+      "year": "1700BCE",
+      "language": "DE",
+      "filename": "OTA-OBS-0007-1700BCE-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "S",
+        "T",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-OBS-0008-2026-DE",
+      "series": "OBS",
+      "number": "0008",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-OBS-0008-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-OBS-0009-2026-DE",
+      "series": "OBS",
+      "number": "0009",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-OBS-0009-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ORG-0001-2079-DE",
+      "series": "ORG",
+      "number": "0001",
+      "year": "2079",
+      "language": "DE",
+      "filename": "OTA-ORG-0001-2079-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ORG-0002-2091-DE",
+      "series": "ORG",
+      "number": "0002",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-ORG-0002-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ORG-0003-2089-DE",
+      "series": "ORG",
+      "number": "0003",
+      "year": "2089",
+      "language": "DE",
+      "filename": "OTA-ORG-0003-2089-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ORG-0004-2075-DE",
+      "series": "ORG",
+      "number": "0004",
+      "year": "2075",
+      "language": "DE",
+      "filename": "OTA-ORG-0004-2075-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-ORG-0005-2090-DE",
+      "series": "ORG",
+      "number": "0005",
+      "year": "2090",
+      "language": "DE",
+      "filename": "OTA-ORG-0005-2090-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-ORG-0006-2025-DE",
+      "series": "ORG",
+      "number": "0006",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-ORG-0006-2025-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-ORG-0007-2031-DE",
+      "series": "ORG",
+      "number": "0007",
+      "year": "2031",
+      "language": "DE",
+      "filename": "OTA-ORG-0007-2031-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "OFFEN"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0003-2091-DE",
+      "series": "RED",
+      "number": "0003",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-RED-0003-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 3,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-RED-0012-2171-DE",
+      "series": "RED",
+      "number": "0012",
+      "year": "2171",
+      "language": "DE",
+      "filename": "OTA-RED-0012-2171-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 3,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0015-2156-EN",
+      "series": "RED",
+      "number": "0015",
+      "year": "2156",
+      "language": "EN",
+      "filename": "OTA-RED-0015-2156-EN.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0016-2091-DE",
+      "series": "RED",
+      "number": "0016",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-RED-0016-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 3,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0017-2091-DE",
+      "series": "RED",
+      "number": "0017",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-RED-0017-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 3,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0018-2091-DE",
+      "series": "RED",
+      "number": "0018",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-RED-0018-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 4,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0019-2091-DE",
+      "series": "RED",
+      "number": "0019",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-RED-0019-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 3,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-RED-0020-2091-DE",
+      "series": "RED",
+      "number": "0020",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-RED-0020-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 2,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0021-2040-DE",
+      "series": "RED",
+      "number": "0021",
+      "year": "2040",
+      "language": "DE",
+      "filename": "OTA-RED-0021-2040-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 2,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0022-2026-DE",
+      "series": "RED",
+      "number": "0022",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-RED-0022-MULTI-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-RED-0023-2026-DE",
+      "series": "RED",
+      "number": "0023",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-RED-0023-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0004-2087-DE",
+      "series": "SCI",
+      "number": "0004",
+      "year": "2087",
+      "language": "DE",
+      "filename": "OTA-SCI-0004-2087-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0007-2026-DE",
+      "series": "SCI",
+      "number": "0007",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0007-2026-Cuancoa.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0008-2096-DE",
+      "series": "SCI",
+      "number": "0008",
+      "year": "2096",
+      "language": "DE",
+      "filename": "OTA-SCI-0008-2096-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0009-2025-DE",
+      "series": "SCI",
+      "number": "0009",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0009-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0010-2025-DE",
+      "series": "SCI",
+      "number": "0010",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0010-2025-DE-draft.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0012-2188-DE",
+      "series": "SCI",
+      "number": "0012",
+      "year": "2188",
+      "language": "DE",
+      "filename": "OTA-SCI-0012-2188-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0013-2025-DE",
+      "series": "SCI",
+      "number": "0013",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0013-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0014-2025-DE",
+      "series": "SCI",
+      "number": "0014",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0014-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0015-2025-DE",
+      "series": "SCI",
+      "number": "0015",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0015-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0016-2150-DE",
+      "series": "SCI",
+      "number": "0016",
+      "year": "2150",
+      "language": "DE",
+      "filename": "OTA-SCI-0016-2150-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0017-2025-EN",
+      "series": "SCI",
+      "number": "0017",
+      "year": "2025",
+      "language": "EN",
+      "filename": "OTA-SCI-0017-2025-EN.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0018-2026-DE",
+      "series": "SCI",
+      "number": "0018",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0018-60000BCE-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0019-2025-DE",
+      "series": "SCI",
+      "number": "0019",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0019-2025-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "I",
+        "AUSSTEHEND",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0020-2026-DE",
+      "series": "SCI",
+      "number": "0020",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0020-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0021-2025-DE",
+      "series": "SCI",
+      "number": "0021",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0021-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0022-2025-DE",
+      "series": "SCI",
+      "number": "0022",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0022-2025-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0023-2025-DE",
+      "series": "SCI",
+      "number": "0023",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0023-2025-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "I",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0024-2026-EN",
+      "series": "SCI",
+      "number": "0024",
+      "year": "2026",
+      "language": "EN",
+      "filename": "OTA-SCI-0024-2026-EN.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0025-2091-DE",
+      "series": "SCI",
+      "number": "0025",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-SCI-0025-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0026-2048-DE",
+      "series": "SCI",
+      "number": "0026",
+      "year": "2048",
+      "language": "DE",
+      "filename": "OTA-SCI-0026-2048-DE_v1_0.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0027-2025-DE",
+      "series": "SCI",
+      "number": "0027",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0027-2025-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0028-2025-DE",
+      "series": "SCI",
+      "number": "0028",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0028-2025-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0029-2025-DE",
+      "series": "SCI",
+      "number": "0029",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-SCI-0029-2025-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0030-2090-DE",
+      "series": "SCI",
+      "number": "0030",
+      "year": "2090",
+      "language": "DE",
+      "filename": "OTA-SCI-0030-2090-DE-v1_3.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0031-2024-DE",
+      "series": "SCI",
+      "number": "0031",
+      "year": "2024",
+      "language": "DE",
+      "filename": "OTA-SCI-0031-2024-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0032-2024-DE",
+      "series": "SCI",
+      "number": "0032",
+      "year": "2024",
+      "language": "DE",
+      "filename": "OTA-SCI-0032-2024-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0034-2026-DE",
+      "series": "SCI",
+      "number": "0034",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0034-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0035-2026-DE",
+      "series": "SCI",
+      "number": "0035",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0035-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0036-2026-DE",
+      "series": "SCI",
+      "number": "0036",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0036-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "F",
+        "H",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0037-2026-DE",
+      "series": "SCI",
+      "number": "0037",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0037-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0038-2026-EN",
+      "series": "SCI",
+      "number": "0038",
+      "year": "2026",
+      "language": "EN",
+      "filename": "OTA-SCI-0038-2026-EN-v1_3.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0041-2026-DE",
+      "series": "SCI",
+      "number": "0041",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0041-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0042-2026-DE",
+      "series": "SCI",
+      "number": "0042",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0042-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "H",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0043-2026-DE",
+      "series": "SCI",
+      "number": "0043",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0043-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "H",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0044-2026-DE",
+      "series": "SCI",
+      "number": "0044",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0044-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0045-2026-DE",
+      "series": "SCI",
+      "number": "0045",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0045-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0046-2026-DE",
+      "series": "SCI",
+      "number": "0046",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0046-2026-DE.docx",
+      "version": "v1.0",
+      "status": "aktiv",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0047-2026-DE",
+      "series": "SCI",
+      "number": "0047",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0047-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0048-2026-DE",
+      "series": "SCI",
+      "number": "0048",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0048-NACHTRAG-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0057-2026-DE",
+      "series": "SCI",
+      "number": "0057",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0057-2026-DE-v1_0.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0058-2026-DE",
+      "series": "SCI",
+      "number": "0058",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0058-2026-DE-v1_1.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0059-2026-DE",
+      "series": "SCI",
+      "number": "0059",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0059-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0060-2026-DE",
+      "series": "SCI",
+      "number": "0060",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0060-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0061-2026-DE",
+      "series": "SCI",
+      "number": "0061",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0061-2026-DE-v1_1.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0062-2026-DE",
+      "series": "SCI",
+      "number": "0062",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0062-2026-DE-v1_0.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0063-2026-DE",
+      "series": "SCI",
+      "number": "0063",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0063-2026-DE-v1_0.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0064-2026-DE",
+      "series": "SCI",
+      "number": "0064",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0064-2026-DE-v1_1.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0065-2026-DE",
+      "series": "SCI",
+      "number": "0065",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0065-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "OFFEN",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0066-2026-DE",
+      "series": "SCI",
+      "number": "0066",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0066-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-SCI-0080-2026-DE",
+      "series": "SCI",
+      "number": "0080",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0080-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "OFFEN",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0081-2026-DE",
+      "series": "SCI",
+      "number": "0081",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0081-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-SCI-0082-2026-DE",
+      "series": "SCI",
+      "number": "0082",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-SCI-0082-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-TEC-0001-2196-DE",
+      "series": "TEC",
+      "number": "0001",
+      "year": "2196",
+      "language": "DE",
+      "filename": "OTA-TEC-0001-2196-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0002-2095-DE",
+      "series": "TEC",
+      "number": "0002",
+      "year": "2095",
+      "language": "DE",
+      "filename": "OTA-TEC-0002-2095-DE-framework.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0003-2087-DE",
+      "series": "TEC",
+      "number": "0003",
+      "year": "2087",
+      "language": "DE",
+      "filename": "OTA-TEC-0003-2087-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "T",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-TEC-0004-2087-DE",
+      "series": "TEC",
+      "number": "0004",
+      "year": "2087",
+      "language": "DE",
+      "filename": "OTA-TEC-0004-2087-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0015-2082-DE",
+      "series": "TEC",
+      "number": "0015",
+      "year": "2082",
+      "language": "DE",
+      "filename": "OTA-TEC-0015-2082-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "T",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-TEC-0016-2063-DE",
+      "series": "TEC",
+      "number": "0016",
+      "year": "2063",
+      "language": "DE",
+      "filename": "OTA-TEC-0016-2063-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0018-2091-DE",
+      "series": "TEC",
+      "number": "0018",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0018-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "T",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-TEC-0019-2095-DE",
+      "series": "TEC",
+      "number": "0019",
+      "year": "2095",
+      "language": "DE",
+      "filename": "OTA-TEC-0019-2095-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0020-2091-DE",
+      "series": "TEC",
+      "number": "0020",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0020-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "T",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-TEC-0021-2025-DE",
+      "series": "TEC",
+      "number": "0021",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-TEC-0021-2025-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0022-2025-DE",
+      "series": "TEC",
+      "number": "0022",
+      "year": "2025",
+      "language": "DE",
+      "filename": "OTA-TEC-0022-2025-DE.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0023-2091-DE",
+      "series": "TEC",
+      "number": "0023",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0023-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0024-2150-DE",
+      "series": "TEC",
+      "number": "0024",
+      "year": "2150",
+      "language": "DE",
+      "filename": "OTA-TEC-0024-2150-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0025-2091-DE",
+      "series": "TEC",
+      "number": "0025",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0025-2091-DE-v2_1.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0026-2091-DE",
+      "series": "TEC",
+      "number": "0026",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0026-2091-DE-v1_1-FINAL.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0027-2091-DE",
+      "series": "TEC",
+      "number": "0027",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0027-2091-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0028-2048-DE",
+      "series": "TEC",
+      "number": "0028",
+      "year": "2048",
+      "language": "DE",
+      "filename": "OTA-TEC-0028-2048-DE_v2_0_FINAL.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0029-2048-DE",
+      "series": "TEC",
+      "number": "0029",
+      "year": "2048",
+      "language": "DE",
+      "filename": "OTA-TEC-0029-2048-DE_v1_0.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "R",
+        "T",
+        "W"
+      ],
+      "saga": false
+    },
+    {
+      "signature": "OTA-TEC-0030-2091-DE",
+      "series": "TEC",
+      "number": "0030",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0030-2091-DE.docx",
+      "version": "v1.0",
+      "status": "kanonisch",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0031-2150-DE",
+      "series": "TEC",
+      "number": "0031",
+      "year": "2150",
+      "language": "DE",
+      "filename": "OTA-TEC-0031-2150-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0032-2091-DE",
+      "series": "TEC",
+      "number": "0032",
+      "year": "2091",
+      "language": "DE",
+      "filename": "OTA-TEC-0032-2091-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "W"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0033-2026-DE",
+      "series": "TEC",
+      "number": "0033",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-TEC-0033-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "F",
+        "T",
+        "S",
+        "R"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0035-2026-DE",
+      "series": "TEC",
+      "number": "0035",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-TEC-0035-2026-DE.docx",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "S",
+        "F"
+      ],
+      "saga": true
+    },
+    {
+      "signature": "OTA-TEC-0081-2026-DE",
+      "series": "TEC",
+      "number": "0081",
+      "year": "2026",
+      "language": "DE",
+      "filename": "OTA-TEC-0081-2026-DE.md",
+      "version": "v1.0",
+      "status": "unknown",
+      "accessLevel": 0,
+      "epistemic": [
+        "T",
+        "S",
+        "OFFEN",
+        "F"
+      ],
+      "saga": true
+    }
+  ]
+}
