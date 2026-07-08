@@ -17,20 +17,23 @@
     "KG-0013-CONTRACOMOLOGY-ONBOARDING",
     "OTA-API",
     "API-REGISTRY",
+    "QUERY-MODEL",
     "REQ-KG-002",
     "REQ-KG-003",
-    "REQ-KG-004"
+    "REQ-KG-004",
+    "REQ-KG-005"
   ],
   "registry": {
     "entityRegistry": "exports/entity-registry-0.1.json",
     "systemRegistry": "exports/system-registry-0.1.json",
     "relationRegistry": "exports/relation-registry-0.1.json",
-    "apiRegistry": "exports/api-registry-0.1.json"
+    "apiRegistry": "exports/api-registry-0.1.json",
+    "queryRegistry": "exports/query-registry-0.1.json"
   },
   "resolution": {
-    "functions": ["resolve", "listExports", "listIncoming", "listOutgoing", "listRelations", "listApiRoutes"],
-    "idFields": ["id", "from", "to", "target", "knowledgeDomain", "path"],
-    "consumerNote": "Consumers should resolve IDs and public API contracts through registry exports instead of scanning all historical KXF files."
+    "functions": ["resolve", "listExports", "listIncoming", "listOutgoing", "listRelations", "listApiRoutes", "listQueries"],
+    "idFields": ["id", "from", "to", "target", "knowledgeDomain", "path", "query"],
+    "consumerNote": "Consumers should resolve IDs, public API contracts and query contracts through registry exports instead of scanning all historical KXF files."
   },
   "records": {
     "systems": [
@@ -47,7 +50,9 @@
       { "consumer": "SYS:KUEPER:ssf", "export": "exports/kxf-learning-paths-0.1.json", "recordSet": "records.learning_paths" },
       { "consumer": "SYS:KUEPER:ota", "api": "/api/ota/*", "registry": "exports/api-registry-0.1.json" },
       { "consumer": "SYS:KUEPER:ssf", "api": "/api/ota/*", "registry": "exports/api-registry-0.1.json" },
-      { "consumer": "SYS:KUEPER:noxia", "api": "/api/ota/*", "registry": "exports/api-registry-0.1.json" }
+      { "consumer": "SYS:KUEPER:noxia", "api": "/api/ota/*", "registry": "exports/api-registry-0.1.json" },
+      { "consumer": "SYS:KUEPER:ssf", "api": "/api/query/*", "registry": "exports/query-registry-0.1.json" },
+      { "consumer": "SYS:KUEPER:noxia", "api": "/api/query/*", "registry": "exports/query-registry-0.1.json" }
     ],
     "legacyOrInternalExports": [
       { "export": "exports/learning.json", "status": "internal_legacy_working_export", "consumerContract": false, "supersededBy": "exports/kxf-learning-modules-0.1.json" }
@@ -61,6 +66,7 @@
       "PATH:SSF:EAR-SEISMOLOGY-0001",
       "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
       "API:KG:OTA:DOCUMENTS:0.1",
+      "QUERY:KG:FIND-PREREQUISITES:0.1",
       "SYS:KUEPER:contracomology"
     ]
   }
