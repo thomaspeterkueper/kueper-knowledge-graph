@@ -21,8 +21,8 @@ function readJsonExport(path: string): AnyRecord {
   return JSON.parse(raw) as AnyRecord
 }
 
-function getKxf04() {
-  return readJsonExport('exports/kxf-0.4.json')
+function getKxf03() {
+  return readJsonExport('exports/kxf-0.3.json')
 }
 
 function getLearningPathsExport() {
@@ -30,7 +30,7 @@ function getLearningPathsExport() {
 }
 
 function getRecords() {
-  return getKxf04().records ?? {}
+  return getKxf03().records ?? {}
 }
 
 function getDocuments(): AnyRecord[] {
