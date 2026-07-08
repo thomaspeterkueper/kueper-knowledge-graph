@@ -1,5 +1,5 @@
-import kxf04 from '@/exports/kxf-0.4.json'
-import learningPathsExport from '@/exports/kxf-learning-paths-0.1.json'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 type AnyRecord = Record<string, any>
 
@@ -14,12 +14,40 @@ type ApiEnvelope<T> = {
 }
 
 const API_SCHEMA = 'KUEPER-OTA-API-0.1'
+const ROOT = process.cwd()
 
-const records = (kxf04 as AnyRecord).records ?? {}
-const documents: AnyRecord[] = records.documents ?? []
-const prerequisites: AnyRecord[] = records.prerequisites ?? []
-const knowledgeDomains: AnyRecord[] = records.knowledgeDomains ?? []
-const learningPaths: AnyRecord[] = (learningPathsExport as AnyRecord).records?.learning_paths ?? []
+function readJsonExport(path: string): AnyRecord {
+  const raw = readFileSync(join(ROOT, path), 'utf8')
+  return JSON.parse(raw) as AnyRecord
+}
+
+function getKxf04() {
+  return readJsonExport('exports/kxf-0.4.json')
+}
+
+function getLearningPathsExport() {
+  return readJsonExport('exports/kxf-learning-paths-0.1.json')
+}
+
+function getRecords() {
+  return getKxf04().records ?? {}
+}
+
+function getDocuments(): AnyRecord[] {
+  return getRecords().documents ?? []
+}
+
+function getPrerequisites(): AnyRecord[] {
+  return getRecords().prerequisites ?? []
+}
+
+function getKnowledgeDomains(): AnyRecord[] {
+  return getRecords().knowledgeDomains ?? []
+}
+
+function getLearningPaths(): AnyRecord[] {
+  return getLearningPathsExport().records?.learning_paths ?? []
+}
 
 function normalizeId(value: string): string {
   return decodeURIComponent(value).trim()
@@ -54,7 +82,7 @@ export function listOtaDocuments(searchParams?: URLSearchParams) {
   const type = searchParams?.get('type')
   const q = searchParams?.get('q')?.toLowerCase()
 
-  return documents.filter((doc) => {
+  return getDocuments().filter((doc) => {
     if (doc.system !== 'SYS:KUEPER:ota') return false
     if (status && String(doc.status).toLowerCase() !== status.toLowerCase()) return false
     if (type && String(doc.documentType ?? doc.type).toLowerCase() !== type.toLowerCase()) return false
@@ -71,14 +99,15 @@ export function listOtaDocuments(searchParams?: URLSearchParams) {
 
 export function getOtaDocument(id: string) {
   const normalized = normalizeId(id)
-  return documents.find((doc) => doc.id === normalized || doc.canonicalId === normalized) ?? null
+  return getDocuments().find((doc) => doc.id === normalized || doc.canonicalId === normalized) ?? null
 }
 
 export function getPrerequisitesForDocument(id: string) {
   const doc = getOtaDocument(id)
   if (!doc) return null
 
-  const prereqRecords = prerequisites
+  const knowledgeDomains = getKnowledgeDomains()
+  const prereqRecords = getPrerequisites()
     .filter((req) => req.from === doc.id)
     .map((req) => ({
       ...req,
@@ -97,8 +126,8 @@ export function getLearningPathForDocument(id: string) {
 
   const directPathId = `PATH:OTA:${doc.canonicalId ?? doc.id.replace('DOC:OTA:', '')}:READ`
   const path =
-    learningPaths.find((candidate) => candidate.id === directPathId) ??
-    learningPaths.find((candidate) => candidate.archiveDocuments?.includes(doc.id)) ??
+    getLearningPaths().find((candidate) => candidate.id === directPathId) ??
+    getLearningPaths().find((candidate) => candidate.archiveDocuments?.includes(doc.id)) ??
     null
 
   return {
