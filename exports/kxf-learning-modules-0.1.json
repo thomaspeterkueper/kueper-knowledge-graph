@@ -1,17 +1,19 @@
 {
-  "schema": "KXF-LEARNING-MODULES-0.1",
+  "schema": "KXF-LEARNING-MODULES-0.2",
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.1",
+  "version": "0.2.0",
   "created": "2026-07-02",
-  "modified": "2026-07-04T10:00:00+02:00",
+  "modified": "2026-07-08",
   "sourceDocuments": [
     "KG-0004-LEARNING-MODEL",
     "KB-REQUEST-0006-KXF-LEARNING-MODULES",
     "KG-0006-schema-alignment-ssf-learning-modules",
     "KG-0009",
-    "KG-0010"
+    "KG-0010",
+    "OTA-ARC-0006-2026-DE-v1.3",
+    "OTA-ARC-0007-2026-DE-v1.1"
   ],
   "contracts": {
     "consumer": "SYS:KUEPER:ssf",
@@ -270,10 +272,10 @@
     ],
     "learning_modules": [
       {
-        "id": "LRN:SSF:PHY-1101",
+        "id": "PHY-L1-000001",
         "version": "0.2.0",
         "created": "2026-06-28",
-        "modified": "2026-07-04T10:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Was die Welt aus sich macht",
           "i18n": {
@@ -283,13 +285,13 @@
             }
           },
           "subject": "PHY",
-          "type": "learning_path",
+          "type": "grundmodul",
           "status": "built",
           "entryQuestion": "Warum klingt eine Geige anders als eine Flöte — obwohl beide denselben Ton spielen?",
           "depthMin": 0,
           "depthMax": null,
-          "durationMin": 10,
-          "durationMax": 45
+          "durationMin": 3,
+          "durationMax": 7
         },
         "assets": {
           "text": [
@@ -307,8 +309,8 @@
         "dependencies": {
           "requires": [],
           "moduleUnlocks": [
-            "LRN:SSF:PHY-1102",
-            "LRN:SSF:CHM-1101"
+            "PHY-L1-000002",
+            "CHE-L1-000001"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
@@ -327,13 +329,14 @@
         ],
         "noxiaGrants": [
           "SENSOR:SPECTRAL"
-        ]
+        ],
+        "legacyId": "LRN:SSF:PHY-1101"
       },
       {
-        "id": "LRN:SSF:PHY-1102",
+        "id": "PHY-L1-000002",
         "version": "0.2.0",
         "created": "2026-06-28",
-        "modified": "2026-07-04T10:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Licht als Informationsträger",
           "i18n": {
@@ -343,13 +346,13 @@
             }
           },
           "subject": "PHY",
-          "type": "learning_path",
+          "type": "brueckenmodul",
           "status": "built",
           "entryQuestion": "Warum ist Licht das wichtigste Werkzeug der Astronomie — und was steckt alles darin?",
           "depthMin": 0,
           "depthMax": null,
-          "durationMin": 20,
-          "durationMax": 90
+          "durationMin": 3,
+          "durationMax": 7
         },
         "assets": {
           "text": [
@@ -368,10 +371,10 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:PHY-1101"
+            "PHY-L1-000001"
           ],
           "moduleUnlocks": [
-            "LRN:SSF:AST-1101"
+            "AST-L1-000001"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
@@ -406,13 +409,14 @@
         "noxiaGrants": [
           "SENSOR:SPECTRAL",
           "MISSION:OBSERVATION-DECK"
-        ]
+        ],
+        "legacyId": "LRN:SSF:PHY-1102"
       },
       {
-        "id": "LRN:SSF:CHM-1101",
+        "id": "CHE-L1-000001",
         "version": "0.2.0",
         "created": "2026-06-28",
-        "modified": "2026-07-04T10:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Was Wasser so besonders macht",
           "i18n": {
@@ -422,13 +426,13 @@
             }
           },
           "subject": "CHM",
-          "type": "learning_path",
+          "type": "grundmodul",
           "status": "built",
           "entryQuestion": "Warum ist Wasser flüssig — obwohl H₂ und O₂ beide Gase sind?",
           "depthMin": 0,
           "depthMax": null,
-          "durationMin": 15,
-          "durationMax": 60
+          "durationMin": 3,
+          "durationMax": 7
         },
         "assets": {
           "text": [
@@ -474,13 +478,14 @@
         "noxiaGrants": [
           "REACT:ENERGY",
           "MISSION:LAB-ALPHA"
-        ]
+        ],
+        "legacyId": "LRN:SSF:CHM-1101"
       },
       {
-        "id": "LRN:SSF:MAT-1001",
+        "id": "MAT-L0-000001",
         "version": "0.2.0",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Zahlen und Muster",
           "i18n": {
@@ -495,8 +500,8 @@
           "entryQuestion": "Wie entstehen aus Zaehlen, Vergleichen und Mustern erste mathematische Strukturen?",
           "depthMin": 1,
           "depthMax": 1,
-          "durationMin": 30,
-          "durationMax": 60
+          "durationMin": 2,
+          "durationMax": 4
         },
         "assets": {
           "text": [],
@@ -509,20 +514,21 @@
         "dependencies": {
           "requires": [],
           "moduleUnlocks": [
-            "LRN:SSF:MAT-1002",
-            "LRN:SSF:MAT-1003"
+            "MAT-L0-000002",
+            "MAT-L0-000003"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1001"
       },
       {
-        "id": "LRN:SSF:MAT-1002",
+        "id": "MAT-L0-000002",
         "version": "0.2.0",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Algebra Grundlagen",
           "i18n": {
@@ -537,8 +543,8 @@
           "entryQuestion": "Wie beschreibt Algebra Beziehungen mit Zeichen, Termen und einfachen Gleichungen?",
           "depthMin": 1,
           "depthMax": 1,
-          "durationMin": 30,
-          "durationMax": 60
+          "durationMin": 2,
+          "durationMax": 4
         },
         "assets": {
           "text": [],
@@ -550,22 +556,23 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-1001"
+            "MAT-L0-000001"
           ],
           "moduleUnlocks": [
-            "LRN:SSF:MAT-1101"
+            "MAT-L1-000001"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1002"
       },
       {
-        "id": "LRN:SSF:MAT-1003",
+        "id": "MAT-L0-000003",
         "version": "0.2.0",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Geometrie Grundlagen",
           "i18n": {
@@ -580,8 +587,8 @@
           "entryQuestion": "Wie helfen Formen, Flaechen und Raeume beim mathematischen Denken?",
           "depthMin": 1,
           "depthMax": 1,
-          "durationMin": 30,
-          "durationMax": 60
+          "durationMin": 2,
+          "durationMax": 4
         },
         "assets": {
           "text": [],
@@ -593,22 +600,23 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-1001"
+            "MAT-L0-000001"
           ],
           "moduleUnlocks": [
-            "LRN:SSF:MAT-1101"
+            "MAT-L1-000001"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1003"
       },
       {
-        "id": "LRN:SSF:MAT-1101",
+        "id": "MAT-L1-000001",
         "version": "0.2.0",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Funktionen verstehen",
           "i18n": {
@@ -623,8 +631,8 @@
           "entryQuestion": "Wie beschreibt eine Funktion, dass eine Groesse von einer anderen abhaengt?",
           "depthMin": 1,
           "depthMax": 2,
-          "durationMin": 45,
-          "durationMax": 90
+          "durationMin": 3,
+          "durationMax": 7
         },
         "assets": {
           "text": [],
@@ -636,26 +644,27 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-1002",
-            "LRN:SSF:MAT-1003"
+            "MAT-L0-000002",
+            "MAT-L0-000003"
           ],
           "moduleUnlocks": [
-            "LRN:SSF:PHY-1101",
-            "LRN:SSF:CHM-1101",
-            "LRN:SSF:AST-1101",
-            "LRN:SSF:MAT-2101"
+            "PHY-L1-000001",
+            "CHE-L1-000001",
+            "AST-L1-000001",
+            "MAT-L2-000001"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1101"
       },
       {
-        "id": "LRN:SSF:MAT-1102",
+        "id": "MAT-L1-000002",
         "version": "0.2.0",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Statistik Grundlagen",
           "i18n": {
@@ -670,8 +679,8 @@
           "entryQuestion": "Wie werden Daten geordnet, beschrieben und vorsichtig gedeutet?",
           "depthMin": 1,
           "depthMax": 2,
-          "durationMin": 45,
-          "durationMax": 90
+          "durationMin": 3,
+          "durationMax": 7
         },
         "assets": {
           "text": [],
@@ -684,19 +693,20 @@
         "dependencies": {
           "requires": [],
           "moduleUnlocks": [
-            "LRN:SSF:MAT-1103"
+            "MAT-L1-000003"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1102"
       },
       {
-        "id": "LRN:SSF:MAT-1103",
+        "id": "MAT-L1-000003",
         "version": "0.2.0",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Wahrscheinlichkeit",
           "i18n": {
@@ -711,8 +721,8 @@
           "entryQuestion": "Wie denkt Mathematik ueber Unsicherheit, Chancen und Evidenz?",
           "depthMin": 1,
           "depthMax": 2,
-          "durationMin": 45,
-          "durationMax": 90
+          "durationMin": 3,
+          "durationMax": 7
         },
         "assets": {
           "text": [],
@@ -724,22 +734,23 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-1102"
+            "MAT-L1-000002"
           ],
           "moduleUnlocks": [
-            "LRN:SSF:MAT-2102"
+            "MAT-L2-000002"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1103"
       },
       {
-        "id": "LRN:SSF:MAT-2101",
+        "id": "MAT-L2-000001",
         "version": "0.2.0",
         "created": "2026-07-03",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Analysis",
           "i18n": {
@@ -767,22 +778,25 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-1101"
+            "MAT-L1-000001"
           ],
           "moduleUnlocks": [
-            "LRN:SSF:MAT-2103"
+            "MAT-L2-000003"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-2101",
+        "transitional": true,
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
       },
       {
-        "id": "LRN:SSF:MAT-2102",
+        "id": "MAT-L2-000002",
         "version": "0.2.0",
         "created": "2026-07-03",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Bayes-Inferenz",
           "i18n": {
@@ -810,7 +824,7 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-1103"
+            "MAT-L1-000003"
           ],
           "moduleUnlocks": [],
           "pathUnlocks": [
@@ -829,13 +843,16 @@
         ],
         "noxiaRequiredFor": [
           "NOXIA-RESEARCH-MARS-MANTLE"
-        ]
+        ],
+        "legacyId": "LRN:SSF:MAT-2102",
+        "transitional": true,
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
       },
       {
-        "id": "LRN:SSF:MAT-2103",
+        "id": "MAT-L2-000003",
         "version": "0.2.0",
         "created": "2026-07-03",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Differentialgleichungen",
           "i18n": {
@@ -863,7 +880,7 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-2101"
+            "MAT-L2-000001"
           ],
           "moduleUnlocks": [],
           "pathUnlocks": [
@@ -879,108 +896,26 @@
             "key": "UNL:NOX:dynamical-models",
             "condition": "completed"
           }
-        ]
+        ],
+        "legacyId": "LRN:SSF:MAT-2103",
+        "transitional": true,
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
       },
       {
-        "id": "LRN:SSF:PHY-1101",
-        "version": "0.1.0",
-        "created": "2026-07-03",
-        "modified": "2026-07-03T06:00:00+02:00",
-        "meta": {
-          "title": "Gravitation und Bewegung",
-          "i18n": {
-            "title": {
-              "de": "Gravitation und Bewegung",
-              "en": "Gravity and Motion"
-            }
-          },
-          "subject": "PHY",
-          "type": "grundmodul",
-          "status": "planned",
-          "entryQuestion": "Wie haengen Kraft, Bewegung und Gravitation grundlegend zusammen?",
-          "depthMin": 1,
-          "depthMax": 1,
-          "durationMin": 45,
-          "durationMax": 90
-        },
-        "assets": {
-          "text": [],
-          "svg": [],
-          "image": [],
-          "video": [],
-          "audio": [],
-          "experiment": []
-        },
-        "dependencies": {
-          "requires": [
-            "LRN:SSF:MAT-1101"
-          ],
-          "moduleUnlocks": [
-            "LRN:SSF:PHY-2201"
-          ],
-          "pathUnlocks": [],
-          "archiveUnlocks": []
-        },
-        "branches": [],
-        "noxiaGrants": []
-      },
-      {
-        "id": "LRN:SSF:CHM-1101",
-        "version": "0.1.0",
-        "created": "2026-07-03",
-        "modified": "2026-07-03T06:00:00+02:00",
-        "meta": {
-          "title": "Chemische Grundlagen",
-          "i18n": {
-            "title": {
-              "de": "Chemische Grundlagen",
-              "en": "Chemistry Basics"
-            }
-          },
-          "subject": "CHM",
-          "type": "grundmodul",
-          "status": "planned",
-          "entryQuestion": "Wie entstehen Stoffe, Reaktionen und einfache chemische Modelle?",
-          "depthMin": 1,
-          "depthMax": 1,
-          "durationMin": 45,
-          "durationMax": 90
-        },
-        "assets": {
-          "text": [],
-          "svg": [],
-          "image": [],
-          "video": [],
-          "audio": [],
-          "experiment": []
-        },
-        "dependencies": {
-          "requires": [
-            "LRN:SSF:MAT-1101"
-          ],
-          "moduleUnlocks": [],
-          "pathUnlocks": [],
-          "archiveUnlocks": []
-        },
-        "branches": [],
-        "legacyId": "LRN:SSF:CHE-1101",
-        "noxiaGrants": []
-      },
-      {
-        "id": "LRN:SSF:AST-1101",
+        "id": "AST-L1-000001",
         "version": "0.1.2",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Orientierung Planetologie",
           "subject": "AST",
-          "type": "learning_path",
+          "type": "archivmodul",
           "status": "planned",
           "entryQuestion": "Wie sind planetare Koerper grundlegend aufgebaut?",
           "depthMin": 1,
           "depthMax": 1,
-          "durationMin": 20,
-          "durationMax": 45
+          "durationMin": 3,
+          "durationMax": 7
         },
         "assets": {
           "text": [],
@@ -992,33 +927,34 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:MAT-1101"
+            "MAT-L1-000001"
           ],
           "moduleUnlocks": [
-            "LRN:SSF:GEO-2201",
-            "LRN:SSF:GEO-2202"
+            "EAR-L2-000001",
+            "EAR-L2-000002"
           ],
           "pathUnlocks": [],
           "archiveUnlocks": []
         },
         "branches": [],
-        "noxiaGrants": []
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:AST-1101"
       },
       {
-        "id": "LRN:SSF:GEO-2201",
+        "id": "EAR-L2-000001",
         "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:30:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Einfuehrung in die planetare Seismologie",
           "subject": "GEO",
-          "type": "learning_path",
+          "type": "archivmodul",
           "status": "planned",
           "entryQuestion": "Wie liest man seismische Hinweise auf den inneren Aufbau eines Planeten?",
           "depthMin": 2,
           "depthMax": 2,
-          "durationMin": 45,
-          "durationMax": 90
+          "durationMin": 5,
+          "durationMax": 10
         },
         "assets": {
           "text": [],
@@ -1030,7 +966,7 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:AST-1101"
+            "AST-L1-000001"
           ],
           "moduleUnlocks": [],
           "pathUnlocks": [
@@ -1041,7 +977,7 @@
           ]
         },
         "branches": [],
-        "legacyId": "LRN:SSF:EAR-2201",
+        "legacyId": "LRN:SSF:GEO-2201",
         "noxiaGrants": [
           {
             "key": "UNL:NOX:planetary-seismology",
@@ -1053,20 +989,20 @@
         ]
       },
       {
-        "id": "LRN:SSF:GEO-2202",
+        "id": "EAR-L2-000002",
         "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-02T16:30:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Petrologie und Gesteinsbildung",
           "subject": "GEO",
-          "type": "learning_path",
+          "type": "archivmodul",
           "status": "planned",
           "entryQuestion": "Was verraet Gestein ueber die thermische und geologische Geschichte eines Planeten?",
           "depthMin": 2,
           "depthMax": 2,
-          "durationMin": 45,
-          "durationMax": 90
+          "durationMin": 5,
+          "durationMax": 10
         },
         "assets": {
           "text": [],
@@ -1078,7 +1014,7 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:AST-1101"
+            "AST-L1-000001"
           ],
           "moduleUnlocks": [],
           "pathUnlocks": [
@@ -1089,7 +1025,7 @@
           ]
         },
         "branches": [],
-        "legacyId": "LRN:SSF:EAR-2202",
+        "legacyId": "LRN:SSF:GEO-2202",
         "noxiaGrants": [
           {
             "key": "UNL:NOX:petrology-basics",
@@ -1101,10 +1037,10 @@
         ]
       },
       {
-        "id": "LRN:SSF:PHY-2201",
+        "id": "PHY-L2-000001",
         "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Quantenmechanik fuer Modellarchitektur",
           "subject": "PHY",
@@ -1126,7 +1062,7 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:PHY-1101"
+            "PHY-L1-000001"
           ],
           "moduleUnlocks": [],
           "pathUnlocks": [
@@ -1142,13 +1078,16 @@
             "key": "UNL:NOX:quantum-model-reading",
             "condition": "completed"
           }
-        ]
+        ],
+        "legacyId": "LRN:SSF:PHY-2201",
+        "transitional": true,
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
       },
       {
-        "id": "LRN:SSF:PHY-2202",
+        "id": "PHY-L2-000002",
         "version": "0.1.1",
         "created": "2026-07-02",
-        "modified": "2026-07-03T06:00:00+02:00",
+        "modified": "2026-07-08",
         "meta": {
           "title": "Elektromagnetismus und Feldmodelle",
           "subject": "PHY",
@@ -1170,7 +1109,7 @@
         },
         "dependencies": {
           "requires": [
-            "LRN:SSF:PHY-1101"
+            "PHY-L1-000001"
           ],
           "moduleUnlocks": [],
           "pathUnlocks": [
@@ -1186,7 +1125,10 @@
             "key": "UNL:NOX:field-models",
             "condition": "completed"
           }
-        ]
+        ],
+        "legacyId": "LRN:SSF:PHY-2202",
+        "transitional": true,
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
       }
     ]
   },
