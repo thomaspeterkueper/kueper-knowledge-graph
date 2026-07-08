@@ -1,0 +1,66 @@
+{
+  "schema": "KUEPER-QUERY-REGISTRY-0.1",
+  "name": "KUEPER Query Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-08",
+  "sourceDocuments": ["QUERY-MODEL", "REQ-KG-005"],
+  "records": [
+    {
+      "id": "QUERY:KG:FIND-PREREQUISITES:0.1",
+      "type": "QueryContract",
+      "name": "findPrerequisites",
+      "method": "GET",
+      "path": "/api/query/prerequisites/{documentId}",
+      "input": ["documentId"],
+      "sourceExports": ["exports/kxf-0.3.json"],
+      "returns": ["Document", "Prerequisite", "KnowledgeDomain"],
+      "status": "draft_productive"
+    },
+    {
+      "id": "QUERY:KG:FIND-LEARNING-PATH:0.1",
+      "type": "QueryContract",
+      "name": "findLearningPath",
+      "method": "GET",
+      "path": "/api/query/learning-path/{documentId}",
+      "input": ["documentId"],
+      "sourceExports": ["exports/kxf-0.3.json", "exports/kxf-learning-paths-0.1.json"],
+      "returns": ["Document", "LearningPath"],
+      "status": "draft_productive"
+    },
+    {
+      "id": "QUERY:KG:FIND-DOCUMENTS-BY-KD:0.1",
+      "type": "QueryContract",
+      "name": "findDocumentsByKnowledgeDomain",
+      "method": "GET",
+      "path": "/api/query/documents-by-knowledge-domain/{kdId}",
+      "input": ["kdId"],
+      "sourceExports": ["exports/kxf-0.3.json"],
+      "returns": ["KnowledgeDomain", "Document", "Prerequisite"],
+      "status": "draft_productive"
+    },
+    {
+      "id": "QUERY:KG:FIND-MODULES-BY-CMP:0.1",
+      "type": "QueryContract",
+      "name": "findModulesByCompetency",
+      "method": "GET",
+      "path": "/api/query/modules-by-competency/{cmpId}",
+      "input": ["cmpId"],
+      "sourceExports": ["exports/kxf-learning-modules-0.1.json"],
+      "returns": ["Competency", "LearningModule"],
+      "status": "draft_productive"
+    },
+    {
+      "id": "QUERY:KG:RESOLVE-API-ROUTE:0.1",
+      "type": "QueryContract",
+      "name": "resolveApiRoute",
+      "method": "GET",
+      "path": "/api/query/api-route?path={path}",
+      "input": ["path"],
+      "sourceExports": ["exports/api-registry-0.1.json"],
+      "returns": ["ApiRoute"],
+      "status": "draft_productive"
+    }
+  ]
+}
