@@ -1,17 +1,176 @@
-[
-  {"id":"LRN:SSF:MAT-1001","name":"Zahlen und Groessen","domain":"MAT","requires":[],"unlocks":["UNL:SSF:basic-physics-ready"]},
-  {"id":"LRN:SSF:MAT-1002","name":"Vektoren und Richtung","domain":"MAT","requires":["LRN:SSF:MAT-1001"],"unlocks":["UNL:SSF:motion-ready"]},
-  {"id":"LRN:SSF:PHY-1201","name":"Bewegung und Geschwindigkeit","domain":"PHY","requires":["LRN:SSF:MAT-1002"],"unlocks":["UNL:SSF:orbital-ready"]},
-  {"id":"LRN:SSF:PHY-1101","name":"Was ist Gravitation?","domain":"PHY","requires":["LRN:SSF:MAT-1001"],"unlocks":["UNL:NOX:orbital-navigation"]},
-  {"id":"LRN:SSF:AST-2101","name":"Orbitalmechanik Grundlagen","domain":"AST","requires":["LRN:SSF:PHY-1101","LRN:SSF:PHY-1201"],"unlocks":["UNL:NOX:transfer-routes"]},
-  {"id":"LRN:SSF:PHY-1301","name":"Was ist Energie?","domain":"PHY","requires":["LRN:SSF:MAT-1001"],"unlocks":["UNL:NOX:power-generation"]},
-  {"id":"LRN:SSF:PHY-1302","name":"Strom und Energiespeicher","domain":"PHY","requires":["LRN:SSF:PHY-1301"],"unlocks":["UNL:NOX:solar-grid"]},
-  {"id":"LRN:SSF:CHE-1101","name":"Wasser im Sonnensystem","domain":"CHE","requires":["LRN:SSF:PHY-1301"],"unlocks":["UNL:NOX:water-processing"]},
-  {"id":"LRN:SSF:AST-1201","name":"Mars ist nicht die Erde","domain":"AST","requires":["LRN:SSF:CHE-1101"],"unlocks":["UNL:NOX:mars-habitat"]},
-  {"id":"LRN:SSF:BIO-1101","name":"Was ist Leben?","domain":"BIO","requires":["LRN:SSF:CHE-1101"],"unlocks":["UNL:NOX:controlled-biology"]},
-  {"id":"LRN:SSF:BIO-1201","name":"Photosynthese Grundlagen","domain":"BIO","requires":["LRN:SSF:BIO-1101"],"unlocks":["UNL:NOX:greenhouse-systems"]},
-  {"id":"LRN:SSF:MAT-1201","name":"Stoffe und Materialien","domain":"MAT","requires":["LRN:SSF:MAT-1001"],"unlocks":["UNL:NOX:resource-extraction"]},
-  {"id":"LRN:SSF:CHE-1301","name":"Metalle und Rohstoffe","domain":"CHE","requires":["LRN:SSF:MAT-1201"],"unlocks":["UNL:NOX:smelting"]},
-  {"id":"LRN:SSF:TEC-1101","name":"Werkzeuge und Maschinen","domain":"TEC","requires":["LRN:SSF:CHE-1301"],"unlocks":["UNL:NOX:industrial-tools"]},
-  {"id":"LRN:SSF:TEC-1201","name":"Fertigung Grundlagen","domain":"TEC","requires":["LRN:SSF:TEC-1101"],"unlocks":["UNL:NOX:industrial-production"]}
-]
+{
+  "schema": "KUEPER-LEARNING-LEGACY-0.1",
+  "status": "legacy",
+  "deprecated": true,
+  "deprecatedBy": "exports/kxf-learning-modules-0.1.json",
+  "note": "Dieses Format ist ein früher Arbeitsexport. Kanonische Lernmodule liegen in kxf-learning-modules-0.1.json (v0.2.0). learning.json darf von Konsumenten nicht als aktiver Vertrag behandelt werden.",
+  "migrationGuide": "ID-Mapping: LRN:SSF:MAT-1001 → MAT-L0-000001 (siehe OTA-ARC-0007-2026-DE-v1.1)",
+  "created": "2026-07-01",
+  "deprecated_on": "2026-07-08",
+  "modules_legacy": [
+    {
+      "id": "LRN:SSF:MAT-1001",
+      "name": "Zahlen und Groessen",
+      "domain": "MAT",
+      "requires": [],
+      "unlocks": [
+        "UNL:SSF:basic-physics-ready"
+      ]
+    },
+    {
+      "id": "LRN:SSF:MAT-1002",
+      "name": "Vektoren und Richtung",
+      "domain": "MAT",
+      "requires": [
+        "LRN:SSF:MAT-1001"
+      ],
+      "unlocks": [
+        "UNL:SSF:motion-ready"
+      ]
+    },
+    {
+      "id": "LRN:SSF:PHY-1201",
+      "name": "Bewegung und Geschwindigkeit",
+      "domain": "PHY",
+      "requires": [
+        "LRN:SSF:MAT-1002"
+      ],
+      "unlocks": [
+        "UNL:SSF:orbital-ready"
+      ]
+    },
+    {
+      "id": "LRN:SSF:PHY-1101",
+      "name": "Was ist Gravitation?",
+      "domain": "PHY",
+      "requires": [
+        "LRN:SSF:MAT-1001"
+      ],
+      "unlocks": [
+        "UNL:NOX:orbital-navigation"
+      ]
+    },
+    {
+      "id": "LRN:SSF:AST-2101",
+      "name": "Orbitalmechanik Grundlagen",
+      "domain": "AST",
+      "requires": [
+        "LRN:SSF:PHY-1101",
+        "LRN:SSF:PHY-1201"
+      ],
+      "unlocks": [
+        "UNL:NOX:transfer-routes"
+      ]
+    },
+    {
+      "id": "LRN:SSF:PHY-1301",
+      "name": "Was ist Energie?",
+      "domain": "PHY",
+      "requires": [
+        "LRN:SSF:MAT-1001"
+      ],
+      "unlocks": [
+        "UNL:NOX:power-generation"
+      ]
+    },
+    {
+      "id": "LRN:SSF:PHY-1302",
+      "name": "Strom und Energiespeicher",
+      "domain": "PHY",
+      "requires": [
+        "LRN:SSF:PHY-1301"
+      ],
+      "unlocks": [
+        "UNL:NOX:solar-grid"
+      ]
+    },
+    {
+      "id": "LRN:SSF:CHE-1101",
+      "name": "Wasser im Sonnensystem",
+      "domain": "CHE",
+      "requires": [
+        "LRN:SSF:PHY-1301"
+      ],
+      "unlocks": [
+        "UNL:NOX:water-processing"
+      ]
+    },
+    {
+      "id": "LRN:SSF:AST-1201",
+      "name": "Mars ist nicht die Erde",
+      "domain": "AST",
+      "requires": [
+        "LRN:SSF:CHE-1101"
+      ],
+      "unlocks": [
+        "UNL:NOX:mars-habitat"
+      ]
+    },
+    {
+      "id": "LRN:SSF:BIO-1101",
+      "name": "Was ist Leben?",
+      "domain": "BIO",
+      "requires": [
+        "LRN:SSF:CHE-1101"
+      ],
+      "unlocks": [
+        "UNL:NOX:controlled-biology"
+      ]
+    },
+    {
+      "id": "LRN:SSF:BIO-1201",
+      "name": "Photosynthese Grundlagen",
+      "domain": "BIO",
+      "requires": [
+        "LRN:SSF:BIO-1101"
+      ],
+      "unlocks": [
+        "UNL:NOX:greenhouse-systems"
+      ]
+    },
+    {
+      "id": "LRN:SSF:MAT-1201",
+      "name": "Stoffe und Materialien",
+      "domain": "MAT",
+      "requires": [
+        "LRN:SSF:MAT-1001"
+      ],
+      "unlocks": [
+        "UNL:NOX:resource-extraction"
+      ]
+    },
+    {
+      "id": "LRN:SSF:CHE-1301",
+      "name": "Metalle und Rohstoffe",
+      "domain": "CHE",
+      "requires": [
+        "LRN:SSF:MAT-1201"
+      ],
+      "unlocks": [
+        "UNL:NOX:smelting"
+      ]
+    },
+    {
+      "id": "LRN:SSF:TEC-1101",
+      "name": "Werkzeuge und Maschinen",
+      "domain": "TEC",
+      "requires": [
+        "LRN:SSF:CHE-1301"
+      ],
+      "unlocks": [
+        "UNL:NOX:industrial-tools"
+      ]
+    },
+    {
+      "id": "LRN:SSF:TEC-1201",
+      "name": "Fertigung Grundlagen",
+      "domain": "TEC",
+      "requires": [
+        "LRN:SSF:TEC-1101"
+      ],
+      "unlocks": [
+        "UNL:NOX:industrial-production"
+      ]
+    }
+  ]
+}
