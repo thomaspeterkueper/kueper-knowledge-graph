@@ -1,0 +1,120 @@
+{
+  "schema": "KXF-LEARNING-PATHS-0.1",
+  "name": "KUEPER SSF Learning Paths Export",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "created": "2026-07-08",
+  "modified": "2026-07-08T09:20:00+02:00",
+  "sourceDocuments": [
+    "KG-0002",
+    "KG-0004-LEARNING-MODEL",
+    "KXF-LEARNING-PATHS"
+  ],
+  "records": {
+    "learning_paths": [
+      {
+        "id": "PATH:SSF:AST-PLANET-STRUCTURE-0001",
+        "title": "Planetare Struktur verstehen",
+        "status": "planned",
+        "sourceModuleId": "LRN:SSF:AST-1101",
+        "knowledgeDomains": ["KD:GEO-PLANET:N1"],
+        "prerequisites": [],
+        "sourceDocuments": [],
+        "archiveDocuments": [],
+        "unlocks": [
+          "LRN:SSF:EAR-2201",
+          "LRN:SSF:EAR-2202"
+        ],
+        "nextPaths": [
+          "PATH:SSF:EAR-SEISMOLOGY-0001",
+          "PATH:SSF:EAR-PETROLOGY-0001"
+        ]
+      },
+      {
+        "id": "PATH:SSF:EAR-SEISMOLOGY-0001",
+        "title": "Planetare Seismologie fuer OTA-SCI-0083",
+        "status": "planned",
+        "sourceModuleId": "LRN:SSF:EAR-2201",
+        "knowledgeDomains": ["KD:GEO-SEISM:N2"],
+        "prerequisites": [
+          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ"
+        ],
+        "sourceDocuments": [],
+        "archiveDocuments": ["DOC:OTA:OTA-SCI-0083-2026-DE"],
+        "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"],
+        "nextPaths": []
+      },
+      {
+        "id": "PATH:SSF:EAR-PETROLOGY-0001",
+        "title": "Petrologie fuer OTA-SCI-0083",
+        "status": "planned",
+        "sourceModuleId": "LRN:SSF:EAR-2202",
+        "knowledgeDomains": ["KD:GEO-PETRO:N2"],
+        "prerequisites": [
+          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-PETRO:N2:READ"
+        ],
+        "sourceDocuments": [],
+        "archiveDocuments": ["DOC:OTA:OTA-SCI-0083-2026-DE"],
+        "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"],
+        "nextPaths": []
+      },
+      {
+        "id": "PATH:SSF:MAT-BAYES-0001",
+        "title": "Bayes-Inferenz fuer Wissenschaftstexte",
+        "status": "planned",
+        "sourceModuleId": "LRN:SSF:MAT-2201",
+        "knowledgeDomains": ["KD:MATH-BAYES:N2"],
+        "prerequisites": [
+          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:MATH-BAYES:N2:READ"
+        ],
+        "sourceDocuments": [],
+        "archiveDocuments": ["DOC:OTA:OTA-SCI-0083-2026-DE"],
+        "unlocks": ["PATH:OTA:OTA-SCI-0083-2026-DE:READ"],
+        "nextPaths": []
+      },
+      {
+        "id": "PATH:SSF:PHY-QM-MODEL-0001",
+        "title": "Quantenmechanik fuer Modellarchitektur",
+        "status": "planned",
+        "sourceModuleId": "LRN:SSF:PHY-2201",
+        "knowledgeDomains": ["KD:PHYS-QM:N2"],
+        "prerequisites": [
+          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-QM:N2:READ"
+        ],
+        "sourceDocuments": [],
+        "archiveDocuments": ["DOC:OTA:OTA-FND-0028-2026-DE"],
+        "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"],
+        "nextPaths": []
+      },
+      {
+        "id": "PATH:SSF:MAT-DIFFERENTIAL-0001",
+        "title": "Differentialgleichungen als Modellsprache",
+        "status": "planned",
+        "sourceModuleId": "LRN:SSF:MAT-2202",
+        "knowledgeDomains": ["KD:MATH-DIFF:N2"],
+        "prerequisites": [
+          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:MATH-DIFF:N2:READ"
+        ],
+        "sourceDocuments": [],
+        "archiveDocuments": ["DOC:OTA:OTA-FND-0028-2026-DE"],
+        "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"],
+        "nextPaths": []
+      },
+      {
+        "id": "PATH:SSF:PHY-FIELD-MODELS-0001",
+        "title": "Elektromagnetismus und Feldmodelle",
+        "status": "planned",
+        "sourceModuleId": "LRN:SSF:PHY-2202",
+        "knowledgeDomains": ["KD:PHYS-EM:N2"],
+        "prerequisites": [
+          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-EM:N2:READ"
+        ],
+        "sourceDocuments": [],
+        "archiveDocuments": ["DOC:OTA:OTA-FND-0028-2026-DE"],
+        "unlocks": ["PATH:OTA:OTA-FND-0028-2026-DE:READ"],
+        "nextPaths": []
+      }
+    ]
+  }
+}
