@@ -5,10 +5,11 @@
   "status": "draft_productive",
   "principle": "single_source_of_truth",
   "version": "0.6",
-  "updated": "2026-07-04",
+  "updated": "2026-07-08",
   "sourceDocuments": [
     "KG-ARC-0001-2026-DE",
     "KG-0002-KNOWLEDGE-DOMAINS-CANONICAL",
+    "KG-0002",
     "KG-0003-RELATIONS",
     "KG-0004-LEARNING-MODEL",
     "KG-0005-OTA-INGESTION",
@@ -36,7 +37,8 @@
       "SYS:KUEPER:web"
     ],
     "activeConsumerContracts": [
-      { "consumer": "SYS:KUEPER:ssf", "export": "exports/kxf-learning-modules-0.1.json", "recordSet": "records.learning_modules" }
+      { "consumer": "SYS:KUEPER:ssf", "export": "exports/kxf-learning-modules-0.1.json", "recordSet": "records.learning_modules" },
+      { "consumer": "SYS:KUEPER:ssf", "export": "exports/kxf-learning-paths-0.1.json", "recordSet": "records.learning_paths" }
     ],
     "legacyOrInternalExports": [
       { "export": "exports/learning.json", "status": "internal_legacy_working_export", "consumerContract": false, "supersededBy": "exports/kxf-learning-modules-0.1.json" }
@@ -47,6 +49,7 @@
       "KD:KON:N1",
       "CMP:GEO-SEISM:N2",
       "LRN:SSF:EAR-2201",
+      "PATH:SSF:EAR-SEISMOLOGY-0001",
       "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
       "SYS:KUEPER:contracomology"
     ]
