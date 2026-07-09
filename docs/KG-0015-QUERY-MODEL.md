@@ -24,12 +24,13 @@ The query model does not create new canonical entities. It defines repeatable re
 
 ## Envelope
 
-Query APIs use the same envelope pattern as the OTA API:
+Query APIs use a shared envelope:
 
 ```json
 {
   "ok": true,
   "schema": "KUEPER-QUERY-API-0.1",
+  "query": "resolve",
   "data": {}
 }
 ```
@@ -40,20 +41,23 @@ Errors use:
 {
   "ok": false,
   "schema": "KUEPER-QUERY-API-0.1",
+  "query": "resolve",
   "error": {
-    "code": "QUERY_NOT_FOUND",
+    "code": "ID_NOT_FOUND",
     "message": "..."
   }
 }
 ```
 
-## Route plan
+## Implemented routes
 
 ```text
 GET /api/query/resolve/{id}
 GET /api/query/relations/{id}
-GET /api/query/documents/by-knowledge-domain/{id}
-GET /api/query/modules/by-competency/{id}
+GET /api/query/prerequisites/{documentId}
+GET /api/query/learning-path/{documentId}
+GET /api/query/documents-by-knowledge-domain/{kdId}
+GET /api/query/modules-by-competency/{cmpId}
 GET /api/query/api-route?path=/api/ota/documents
 ```
 
