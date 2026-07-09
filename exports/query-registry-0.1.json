@@ -3,10 +3,32 @@
   "name": "KUEPER Query Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1",
-  "updated": "2026-07-08",
-  "sourceDocuments": ["QUERY-MODEL", "REQ-KG-005"],
+  "version": "0.1.1",
+  "updated": "2026-07-09",
+  "sourceDocuments": ["KG-0015-QUERY-MODEL", "REQ-KG-005"],
   "records": [
+    {
+      "id": "QUERY:KG:RESOLVE:0.1",
+      "type": "QueryContract",
+      "name": "resolve",
+      "method": "GET",
+      "path": "/api/query/resolve/{id}",
+      "input": ["id"],
+      "sourceExports": ["exports/entity-registry-0.1.json", "exports/system-registry-0.1.json", "exports/api-registry-0.1.json"],
+      "returns": ["RegistryRecord"],
+      "status": "draft_productive"
+    },
+    {
+      "id": "QUERY:KG:RELATIONS:0.1",
+      "type": "QueryContract",
+      "name": "findRelations",
+      "method": "GET",
+      "path": "/api/query/relations/{id}",
+      "input": ["id"],
+      "sourceExports": ["exports/relation-registry-0.1.json"],
+      "returns": ["Relation"],
+      "status": "draft_productive"
+    },
     {
       "id": "QUERY:KG:FIND-PREREQUISITES:0.1",
       "type": "QueryContract",
@@ -34,10 +56,10 @@
       "type": "QueryContract",
       "name": "findDocumentsByKnowledgeDomain",
       "method": "GET",
-      "path": "/api/query/documents-by-knowledge-domain/{kdId}",
+      "path": "/api/query/documents/by-knowledge-domain/{kdId}",
       "input": ["kdId"],
-      "sourceExports": ["exports/kxf-0.3.json"],
-      "returns": ["KnowledgeDomain", "Document", "Prerequisite"],
+      "sourceExports": ["exports/kxf-0.3.json", "exports/relation-registry-0.1.json"],
+      "returns": ["KnowledgeDomain", "Document", "Relation"],
       "status": "draft_productive"
     },
     {
@@ -45,10 +67,10 @@
       "type": "QueryContract",
       "name": "findModulesByCompetency",
       "method": "GET",
-      "path": "/api/query/modules-by-competency/{cmpId}",
+      "path": "/api/query/modules/by-competency/{cmpId}",
       "input": ["cmpId"],
-      "sourceExports": ["exports/kxf-learning-modules-0.1.json"],
-      "returns": ["Competency", "LearningModule"],
+      "sourceExports": ["exports/kxf-learning-modules-0.1.json", "exports/relation-registry-0.1.json"],
+      "returns": ["Competency", "LearningModule", "Relation"],
       "status": "draft_productive"
     },
     {
