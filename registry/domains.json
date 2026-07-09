@@ -27,6 +27,16 @@
       "consumes": ["KXF", "legal_registry"]
     },
     {
+      "id": "DOM:L3:thomas-kueper-de",
+      "type": "Domain",
+      "domain": "thomas-kueper.de",
+      "system": "SYS:KUEPER:thomas-kueper",
+      "role": "author_website",
+      "status": "active",
+      "repo": "thomaspeterkueper/thomas-kueper.de",
+      "consumes": ["KXF", "legal_registry"]
+    },
+    {
       "id": "DOM:L3:solarsciencefoundation-org",
       "type": "Domain",
       "domain": "solarsciencefoundation.org",
