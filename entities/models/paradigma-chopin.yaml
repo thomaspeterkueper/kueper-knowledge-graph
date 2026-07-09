@@ -1,0 +1,14 @@
+entity_id: MOD:L2:paradigma-chopin
+typ: Model
+layer: L2
+name: "Paradigma 2 – Chopin (persönlich-psychologisch)"
+domain: KON
+status: '[W]'
+definition: >
+  Die persönlich-psychologische Dimension. Asymmetrische innere Vielstimmigkeit,
+  Zeitarchitektur einer einzelnen Seele; anders als bei Bach trägt eine Stimme die
+  Hauptlast.
+derived_from:
+  - MOD:L2:paradigmentriade
+created: '2026-07-03'
+curator: T.P.K.
