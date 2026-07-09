@@ -1,0 +1,15 @@
+entity_id: CON:L1:avi-punkt
+typ: Concept
+layer: L1
+name: AVI-Punkt
+domain: KON
+status: '[W]'
+definition: >
+  Struktureller Kipppunkt innerhalb einer Zeitform – der Moment, an dem eine
+  Zeitarchitektur ihren qualitativen Charakter sprunghaft ändert (Point of no
+  Return). Paradigmatisch das A2 in Takt 212 der 4. Ballade als Schicksals-Operator.
+  NICHT zu verwechseln mit dem physikalischen AVI (Axiomatisches Vakuum-Integral, ∅ Avi).
+derived_from:
+  - CON:L1:zeitform
+created: '2026-07-03'
+curator: T.P.K.
