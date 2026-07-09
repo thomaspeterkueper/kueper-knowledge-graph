@@ -38,6 +38,18 @@ function apiRegistryRecords() {
   return readJsonExport('exports/api-registry-0.1.json').records ?? []
 }
 
+function entityRegistryRecords() {
+  return readJsonExport('exports/entity-registry-0.1.json').records ?? []
+}
+
+function systemRegistryRecords() {
+  return readJsonExport('exports/system-registry-0.1.json').records ?? []
+}
+
+function relationRegistryRecords() {
+  return readJsonExport('exports/relation-registry-0.1.json').records ?? []
+}
+
 function normalizeId(value: string): string {
   return decodeURIComponent(value).trim()
 }
@@ -66,6 +78,33 @@ export function queryError(query: string, code: string, message: string, status 
   }
 
   return Response.json(body, { status })
+}
+
+export function resolveId(id: string) {
+  const normalized = normalizeId(id)
+  const registries = [
+    { registry: 'entity-registry', records: entityRegistryRecords() },
+    { registry: 'system-registry', records: systemRegistryRecords() },
+    { registry: 'api-registry', records: apiRegistryRecords() },
+  ]
+
+  for (const registry of registries) {
+    const record = registry.records.find((candidate: AnyRecord) => candidate.id === normalized)
+    if (record) return { id: normalized, registry: registry.registry, record }
+  }
+
+  return null
+}
+
+export function findRelations(id: string) {
+  const normalized = normalizeId(id)
+  const relations: AnyRecord[] = relationRegistryRecords()
+
+  return {
+    id: normalized,
+    incoming: relations.filter((relation) => relation.to === normalized),
+    outgoing: relations.filter((relation) => relation.from === normalized),
+  }
 }
 
 export function findDocument(documentId: string) {
@@ -113,15 +152,16 @@ export function findDocumentsByKnowledgeDomain(kdId: string) {
   const id = normalizeId(kdId)
   const records = kxf03Records()
   const documents: AnyRecord[] = records.documents ?? []
-  const prerequisites: AnyRecord[] = records.prerequisites ?? []
   const knowledgeDomains: AnyRecord[] = records.knowledgeDomains ?? []
   const knowledgeDomain = knowledgeDomains.find((kd) => kd.id === id) ?? null
-  const matchingPrerequisites = prerequisites.filter((req) => req.to === id)
-  const matchingDocumentIds = new Set(matchingPrerequisites.map((req) => req.from))
+  const relations = relationRegistryRecords().filter(
+    (relation: AnyRecord) => relation.to === id && ['REQUIRES', 'COVERS'].includes(relation.relation),
+  )
+  const matchingDocumentIds = new Set(relations.map((relation: AnyRecord) => relation.from))
 
   return {
     knowledgeDomain,
-    prerequisites: matchingPrerequisites,
+    relations,
     documents: documents.filter((doc) => matchingDocumentIds.has(doc.id)),
   }
 }
@@ -131,10 +171,15 @@ export function findModulesByCompetency(cmpId: string) {
   const records = learningModulesRecords()
   const competencies: AnyRecord[] = records.competencies ?? []
   const modules: AnyRecord[] = records.learning_modules ?? []
+  const relations = relationRegistryRecords().filter(
+    (relation: AnyRecord) => relation.to === id && relation.relation === 'TEACHES',
+  )
+  const moduleIds = new Set(relations.map((relation: AnyRecord) => relation.from))
 
   return {
     competency: competencies.find((cmp) => cmp.id === id) ?? null,
-    modules: modules.filter((module) => module.dependencies?.related?.includes(id)),
+    relations,
+    modules: modules.filter((module) => moduleIds.has(module.id) || module.dependencies?.related?.includes(id)),
   }
 }
 
