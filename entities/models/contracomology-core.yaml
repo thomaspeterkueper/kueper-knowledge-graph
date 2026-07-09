@@ -1,0 +1,16 @@
+entity_id: MOD:L2:contracomology-core
+typ: Model
+layer: L2
+name: "Kontrakomologie (Kernmodell)"
+domain: KON
+status: '[W]'
+definition: >
+  Kernmodell der Kontrakomologie. Liest Realität als vielstimmige Fuge
+  kontrapunktischer Koexistenz. Getragen von drei Grundoperationen: Interferenz,
+  Zeitentwicklung, Mega-Zyklen.
+derived_from:
+  - CON:L0:zeit-these
+enables:
+  - CON:L1:zeitform
+created: '2026-07-03'
+curator: T.P.K.
