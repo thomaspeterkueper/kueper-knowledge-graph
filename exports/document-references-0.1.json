@@ -4,12 +4,13 @@
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
   "version": "0.1",
-  "updated": "2026-07-08",
+  "updated": "2026-07-09",
   "sourceDocuments": [
     "DOCUMENT-ARCHITECTURE",
     "KG-REQ-20260708-document-architecture-consensus",
     "KG-0005-OTA-INGESTION",
-    "KG-0012-ARCHIVMODUL"
+    "KG-0012-ARCHIVMODUL",
+    "KG-0013"
   ],
   "policy": {
     "fullTextInKg": false,
@@ -117,6 +118,50 @@
       "prerequisiteIds": [],
       "markerProfile": [],
       "summary": "Central legal document reference for consumer websites."
+    },
+    {
+      "id": "DOC:KUE:LEGAL-PRIVACY-DE",
+      "canonicalId": "LEGAL-PRIVACY-DE",
+      "type": "DocumentReference",
+      "system": "SYS:KUEPER:kueper-com",
+      "title": "Datenschutzerklärung",
+      "documentType": "legal",
+      "language": "DE",
+      "status": "canonical",
+      "version": "2026",
+      "canonicalUrl": null,
+      "sourceUrl": null,
+      "sourceRepository": "registry/legal/datenschutz.de.md",
+      "sourcePath": "registry/legal/datenschutz.de.md",
+      "contentOwner": "SYS:KUEPER:knowledge-graph",
+      "metadataOwner": "SYS:KUEPER:knowledge-graph",
+      "relatedEntities": [],
+      "relatedKnowledgeDomains": [],
+      "prerequisiteIds": [],
+      "markerProfile": [],
+      "summary": "Central privacy-policy reference for consumer websites."
+    },
+    {
+      "id": "DOC:KUE:LEGAL-TERMS-DE",
+      "canonicalId": "LEGAL-TERMS-DE",
+      "type": "DocumentReference",
+      "system": "SYS:KUEPER:kueper-com",
+      "title": "Nutzungsbedingungen",
+      "documentType": "legal",
+      "language": "DE",
+      "status": "canonical",
+      "version": "2026",
+      "canonicalUrl": null,
+      "sourceUrl": null,
+      "sourceRepository": "registry/legal/terms.de.md",
+      "sourcePath": "registry/legal/terms.de.md",
+      "contentOwner": "SYS:KUEPER:knowledge-graph",
+      "metadataOwner": "SYS:KUEPER:knowledge-graph",
+      "relatedEntities": [],
+      "relatedKnowledgeDomains": [],
+      "prerequisiteIds": [],
+      "markerProfile": [],
+      "summary": "Central terms-of-use reference for consumer websites."
     }
   ]
 }
