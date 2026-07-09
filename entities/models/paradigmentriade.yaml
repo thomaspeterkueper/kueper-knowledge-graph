@@ -1,0 +1,18 @@
+entity_id: MOD:L2:paradigmentriade
+typ: Model
+layer: L2
+name: Paradigmentriade
+domain: KON
+status: '[W]'
+definition: >
+  Sammelknoten der paradigmatischen Dimensionen der Kontrakomologie: objektiv-
+  strukturell (Bach), persönlich-psychologisch (Chopin), kosmisch-mythologisch
+  (Wagner). Erlaubt die Ergänzung weiterer Paradigmen ohne Umbau des Kernmodells.
+derived_from:
+  - MOD:L2:contracomology-core
+enables:
+  - MOD:L2:paradigma-bach
+  - MOD:L2:paradigma-chopin
+  - MOD:L2:paradigma-wagner
+created: '2026-07-03'
+curator: T.P.K.
