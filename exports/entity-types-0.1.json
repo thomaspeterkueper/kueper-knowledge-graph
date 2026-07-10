@@ -1,0 +1,83 @@
+{
+  "schema": "KUEPER-ENTITY-TYPES-0.1",
+  "name": "KUEPER Canonical Entity Type Vocabulary",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1",
+  "updated": "2026-07-10",
+  "sourceDocuments": ["KG-0008-REGISTRY", "KG-0012", "OTA-ARC-0006-2026-DE-v1.3"],
+  "records": [
+    {
+      "id": "ETYPE:Document",
+      "value": "Document",
+      "idPrefixes": ["DOC:"],
+      "description": "Canonical document reference whose full text is owned by a registered source system."
+    },
+    {
+      "id": "ETYPE:LearningModule",
+      "value": "LearningModule",
+      "idPattern": "<DOMAIN>-L<LEVEL>-<SEQUENCE>",
+      "description": "Atomic or transitional learning unit consumed by SSF and other learning clients."
+    },
+    {
+      "id": "ETYPE:Path",
+      "value": "Path",
+      "idPrefixes": ["PATH:"],
+      "description": "Navigable semantic route or curated sequence. A Path contains no canonical subject-matter content of its own; it connects modules, prerequisites, capabilities or target objects.",
+      "rules": [
+        "Path is a separate entity class and never a learning module meta.type.",
+        "A document-reading Path targets exactly one canonical DOC record.",
+        "A Path may contain ordered module steps and may unlock other Paths, Documents or capabilities.",
+        "PATH system namespace identifies the system responsible for curating the route, not necessarily the owner of the target document."
+      ]
+    },
+    {
+      "id": "ETYPE:KnowledgeDomain",
+      "value": "KnowledgeDomain",
+      "idPrefixes": ["KD:"],
+      "description": "Canonical knowledge domain at a defined prerequisite depth."
+    },
+    {
+      "id": "ETYPE:Competency",
+      "value": "Competency",
+      "idPrefixes": ["CMP:"],
+      "description": "Demonstrable competency associated with one or more knowledge domains."
+    },
+    {
+      "id": "ETYPE:Requirement",
+      "value": "Requirement",
+      "idPrefixes": ["REQ:"],
+      "description": "Explicit prerequisite or governance requirement."
+    },
+    {
+      "id": "ETYPE:Relation",
+      "value": "Relation",
+      "idPrefixes": ["REL:"],
+      "description": "Typed directed edge between canonical entities."
+    },
+    {
+      "id": "ETYPE:System",
+      "value": "System",
+      "idPrefixes": ["SYS:"],
+      "description": "Registered KUEPER ecosystem system with an explicit ownership or consumer role."
+    },
+    {
+      "id": "ETYPE:Domain",
+      "value": "Domain",
+      "idPrefixes": ["DOM:"],
+      "description": "Registered public or planned internet domain mapped to a system."
+    },
+    {
+      "id": "ETYPE:APIContract",
+      "value": "APIContract",
+      "idPrefixes": ["API:"],
+      "description": "Versioned public API contract."
+    },
+    {
+      "id": "ETYPE:QueryContract",
+      "value": "QueryContract",
+      "idPrefixes": ["QUERY:"],
+      "description": "Versioned semantic query contract."
+    }
+  ]
+}
