@@ -4,7 +4,7 @@
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
   "principle": "single_source_of_truth",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "updated": "2026-07-10",
   "sourceDocuments": [
     "KG-ARC-0001-2026-DE",
@@ -31,6 +31,7 @@
   "registry": {
     "entityRegistry": "exports/entity-registry-0.1.json",
     "entityTypeRegistry": "exports/entity-types-0.1.json",
+    "pathRegistry": "exports/path-registry-0.1.json",
     "systemRegistry": "exports/system-registry-0.1.json",
     "relationRegistry": "exports/relation-registry-0.1.json",
     "apiRegistry": "exports/api-registry-0.1.json",
@@ -38,9 +39,9 @@
     "documentReferenceRegistry": "exports/document-references-0.1.json"
   },
   "resolution": {
-    "functions": ["resolve", "listExports", "listIncoming", "listOutgoing", "listRelations", "listApiRoutes", "listQueries", "listDocumentReferences", "resolveEntityType"],
+    "functions": ["resolve", "listExports", "listIncoming", "listOutgoing", "listRelations", "listApiRoutes", "listQueries", "listDocumentReferences", "resolveEntityType", "resolvePath"],
     "idFields": ["id", "canonicalId", "from", "to", "target", "targetDocument", "knowledgeDomain", "path", "query"],
-    "consumerNote": "Consumers should resolve IDs, entity types, document references, public API contracts and query contracts through registry exports instead of scanning historical KXF files."
+    "consumerNote": "Consumers should resolve IDs, entity types, Paths, document references, public API contracts and query contracts through registry exports instead of scanning historical KXF files."
   },
   "records": {
     "systems": [
