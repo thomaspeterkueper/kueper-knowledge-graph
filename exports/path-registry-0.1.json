@@ -3,7 +3,7 @@
   "name": "KUEPER Path Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1",
+  "version": "0.1.1",
   "updated": "2026-07-10",
   "sourceExports": ["exports/kxf-learning-paths-0.1.json", "exports/kxf-learning-modules-0.1.json"],
   "entityType": "Path",
@@ -23,14 +23,16 @@
   ],
   "validation": {
     "status": "warnings",
-    "unresolvedReferences": [
+    "resolvedReferences": [
       "KD:MATH:N1",
-      "KD:MATH-STAT:N1",
-      "KD:PHYS-THERM:N1",
+      "KD:MATH-STAT:N2",
+      "KD:PHYS-THERM:N1"
+    ],
+    "unresolvedReferences": [
       "DOC:OTA:OTA-SCI-0022-2025-DE",
       "DOC:OTA:OTA-SCI-0043-2026-DE",
       "DOC:NOXIA:GENERATION-MARS:CHAPTER-01"
     ],
-    "note": "Unresolved references are recorded but not auto-created. Their owning systems must submit or confirm canonical entity records."
+    "note": "Knowledge-domain references are resolved. Remaining document references require confirmation or creation by their owning systems."
   }
 }
