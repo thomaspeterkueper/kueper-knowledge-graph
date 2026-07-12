@@ -50,9 +50,9 @@ GitHub dient als Quellcode- und Build-Plattform. Die öffentliche Auslieferung d
 
 ## 5. Schriftarten
 
-Die verwendeten Schriftarten sollen lokal beziehungsweise über den Build self-hosted ausgeliefert werden. Beim Laden der Schriftarten findet dann keine Verbindung zu Google Fonts oder anderen externen Font-Diensten statt.
+Die verwendeten Schriftarten werden lokal über den Build ausgeliefert (`next/font/google` — serverseitiges Laden beim Build, keine Laufzeitverbindung zu Google Fonts).
 
-Für NOXIA ist die Umstellung der verbliebenen Remote-Einbindung von Courier Prime und Playfair Display auf `next/font/google` als `NOX-0005` beauftragt. Solange diese Änderung nicht produktiv ausgerollt ist, muss die bestehende Remote-Verbindung zu Google Fonts im veröffentlichten Rechtstext berücksichtigt werden.
+Für NOXIA werden Courier Prime, Playfair Display, Geist und Geist Mono über `next/font/google` eingebunden. Beim Aufruf der Website findet keine separate Verbindung zu Google Fonts statt (`NOX-0005` — abgeschlossen 2026-07-11).
 
 Der Stand von zereya.de ist vor Veröffentlichung gesondert zu verifizieren.
 
