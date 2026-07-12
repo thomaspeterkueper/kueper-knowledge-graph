@@ -101,3 +101,7 @@ Ergänzung von `registry/legal/datenschutz.de.md` §7 mit den bestätigten Werte
 ---
 
 *Kurator: T.P.K. · 2026-07-10*
+
+
+---
+_Resolved 2026-07-12: §7 befuellt via EXT-ECO-KG-20260712-002; Status draft_productive._

@@ -63,3 +63,7 @@ Created:
 
 Curator:
 T.P.K.
+
+
+---
+_Resolved 2026-07-12: Asset-Pfade bereinigt in Commit e5c0356._

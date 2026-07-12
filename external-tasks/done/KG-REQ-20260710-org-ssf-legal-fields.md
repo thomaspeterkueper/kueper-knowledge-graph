@@ -75,3 +75,7 @@ Created:
 
 Curator:
 T.P.K.
+
+
+---
+_Resolved 2026-07-12: Erfuellt/abgeloest durch EXT-ECO-KG-20260712-001; Legal-Felder auf ORG:SSF vorhanden._
