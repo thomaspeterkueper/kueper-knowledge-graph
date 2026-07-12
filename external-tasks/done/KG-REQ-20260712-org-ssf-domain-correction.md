@@ -57,3 +57,7 @@ Created:
 
 Curator:
 T.P.K.
+
+
+---
+_Resolved 2026-07-12: ORG:SSF websiteUrl/privacyUrl/imprintUrl auf solarsciencefoundation.vercel.app korrigiert (Testphase-Subdomain, konsistent mit kueper-ecosystem registry/projects.json). Governance-Punkte 2/3 (projects.json als Domain-SSoT) an Kurator gemeldet._
