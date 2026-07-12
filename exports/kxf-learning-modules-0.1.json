@@ -320,12 +320,9 @@
         },
         "assets": {
           "text": [
-            "content/phy-1101/prose.md"
+            "content/modules/ssf-phy-1101.md"
           ],
-          "svg": [
-            "assets/svg/wave-overtones.svg",
-            "assets/svg/em-spectrum.svg"
-          ],
+          "svg": [],
           "image": [],
           "video": [],
           "audio": [],
@@ -387,15 +384,8 @@
           }
         },
         "assets": {
-          "text": [
-            "content/phy-1102/prose.md"
-          ],
-          "svg": [
-            "assets/svg/em-spectrum-full.svg",
-            "assets/svg/wave-compare.svg",
-            "assets/svg/planck-curves.svg",
-            "assets/svg/absorption-lines.svg"
-          ],
+          "text": [],
+          "svg": [],
           "image": [],
           "video": [],
           "audio": [],
@@ -472,14 +462,8 @@
           }
         },
         "assets": {
-          "text": [
-            "content/chm-1101/prose.md"
-          ],
-          "svg": [
-            "assets/svg/h2o-molecule.svg",
-            "assets/svg/hbond-network.svg",
-            "assets/svg/energy-profile.svg"
-          ],
+          "text": [],
+          "svg": [],
           "image": [],
           "video": [],
           "audio": [],

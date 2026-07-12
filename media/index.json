@@ -4,5 +4,150 @@
   "type": "MediaRegistry",
   "master": "SYS:KUEPER:knowledge-graph",
   "principle": "single_source_of_truth",
-  "records": []
+  "records": [
+    {
+      "id": "MED:L3:ssf-obs-wasserglas-001",
+      "type": "MediaAsset",
+      "layer": "L3",
+      "mediaType": "image",
+      "format": "image/jpeg",
+      "title": {
+        "de": "Wasserglas",
+        "en": "Water glass"
+      },
+      "description": {
+        "de": "Beobachtungsfoto (Teaser). Noch keinem Lernmodul zugeordnet.",
+        "en": "Observation photo (teaser). Not yet assigned to a learning module."
+      },
+      "visibility": "public",
+      "rights": {
+        "owner": "PER:L3:thomas_peter_kueper",
+        "license": "all_rights_reserved",
+        "creator": "Thomas Peter Küper",
+        "creationMethod": "photograph",
+        "allowedSystems": [
+          "SYS:KUEPER:ssf"
+        ]
+      },
+      "source": {
+        "storage": "repo",
+        "path": "public/images/observations/wasserglas-tku.jpg",
+        "url": "https://solarsciencefoundation.org/images/observations/wasserglas-tku.jpg"
+      },
+      "relatesTo": [],
+      "usedBy": [],
+      "status": "unassigned",
+      "createdFromRequest": "KG-REQ-20260710-phy-1101-asset-paths",
+      "updated": "2026-07-11",
+      "curator": "PER:L3:thomas_peter_kueper"
+    },
+    {
+      "id": "MED:L3:ssf-obs-cd-spektrum-001",
+      "type": "MediaAsset",
+      "layer": "L3",
+      "mediaType": "image",
+      "format": "image/jpeg",
+      "title": {
+        "de": "CD-Spektrum",
+        "en": "CD spectrum"
+      },
+      "description": {
+        "de": "Beobachtungsfoto (Teaser). Noch keinem Lernmodul zugeordnet.",
+        "en": "Observation photo (teaser). Not yet assigned to a learning module."
+      },
+      "visibility": "public",
+      "rights": {
+        "owner": "PER:L3:thomas_peter_kueper",
+        "license": "all_rights_reserved",
+        "creator": "Thomas Peter Küper",
+        "creationMethod": "photograph",
+        "allowedSystems": [
+          "SYS:KUEPER:ssf"
+        ]
+      },
+      "source": {
+        "storage": "repo",
+        "path": "public/images/observations/cd-spektrum-tku.jpg",
+        "url": "https://solarsciencefoundation.org/images/observations/cd-spektrum-tku.jpg"
+      },
+      "relatesTo": [],
+      "usedBy": [],
+      "status": "unassigned",
+      "createdFromRequest": "KG-REQ-20260710-phy-1101-asset-paths",
+      "updated": "2026-07-11",
+      "curator": "PER:L3:thomas_peter_kueper"
+    },
+    {
+      "id": "MED:L3:ssf-obs-rolladen-001",
+      "type": "MediaAsset",
+      "layer": "L3",
+      "mediaType": "image",
+      "format": "image/jpeg",
+      "title": {
+        "de": "Rollladen",
+        "en": "Roller shutter"
+      },
+      "description": {
+        "de": "Beobachtungsfoto (Teaser). Noch keinem Lernmodul zugeordnet.",
+        "en": "Observation photo (teaser). Not yet assigned to a learning module."
+      },
+      "visibility": "public",
+      "rights": {
+        "owner": "PER:L3:thomas_peter_kueper",
+        "license": "all_rights_reserved",
+        "creator": "Thomas Peter Küper",
+        "creationMethod": "photograph",
+        "allowedSystems": [
+          "SYS:KUEPER:ssf"
+        ]
+      },
+      "source": {
+        "storage": "repo",
+        "path": "public/images/observations/rolladen-tku.jpg",
+        "url": "https://solarsciencefoundation.org/images/observations/rolladen-tku.jpg"
+      },
+      "relatesTo": [],
+      "usedBy": [],
+      "status": "unassigned",
+      "createdFromRequest": "KG-REQ-20260710-phy-1101-asset-paths",
+      "updated": "2026-07-11",
+      "curator": "PER:L3:thomas_peter_kueper"
+    },
+    {
+      "id": "MED:L3:ssf-obs-kaffeetasse-001",
+      "type": "MediaAsset",
+      "layer": "L3",
+      "mediaType": "image",
+      "format": "image/jpeg",
+      "title": {
+        "de": "Kaffeetasse",
+        "en": "Coffee cup"
+      },
+      "description": {
+        "de": "Beobachtungsfoto (Teaser). Noch keinem Lernmodul zugeordnet.",
+        "en": "Observation photo (teaser). Not yet assigned to a learning module."
+      },
+      "visibility": "public",
+      "rights": {
+        "owner": "PER:L3:thomas_peter_kueper",
+        "license": "all_rights_reserved",
+        "creator": "Thomas Peter Küper",
+        "creationMethod": "photograph",
+        "allowedSystems": [
+          "SYS:KUEPER:ssf"
+        ]
+      },
+      "source": {
+        "storage": "repo",
+        "path": "public/images/observations/kaffeetasse-tku.jpg",
+        "url": "https://solarsciencefoundation.org/images/observations/kaffeetasse-tku.jpg"
+      },
+      "relatesTo": [],
+      "usedBy": [],
+      "status": "unassigned",
+      "createdFromRequest": "KG-REQ-20260710-phy-1101-asset-paths",
+      "updated": "2026-07-11",
+      "curator": "PER:L3:thomas_peter_kueper"
+    }
+  ]
 }

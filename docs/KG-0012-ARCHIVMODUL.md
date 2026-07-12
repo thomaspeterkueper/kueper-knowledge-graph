@@ -47,9 +47,12 @@ grundmodul
 brueckenmodul
 archivmodul
 reference
-learning_path
 experiment
 ```
+
+> Hinweis: `learning_path` wurde mit `OTA-ARC-0006-2026-DE` (v1.3, §IV) aus den
+> Modultypen entfernt. Lernpfade sind eine eigene Objektklasse (`PATH`, → ARC-0006 §VIII),
+> kein `meta.type`. Vgl. `exports/learning-module-types-0.1.json`.
 
 ## Relation registry update
 
