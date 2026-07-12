@@ -502,7 +502,7 @@
         "id": "MAT-L0-000001",
         "version": "0.2.0",
         "created": "2026-07-02",
-        "modified": "2026-07-10",
+        "modified": "2026-07-12",
         "meta": {
           "title": "Zahlen und Muster",
           "i18n": {
@@ -513,7 +513,7 @@
           },
           "subject": "MAT",
           "type": "grundmodul",
-          "status": "planned",
+          "status": "built",
           "entryQuestion": "Wie entstehen aus Zaehlen, Vergleichen und Mustern erste mathematische Strukturen?",
           "depthMin": 1,
           "depthMax": 1,
@@ -526,7 +526,9 @@
           }
         },
         "assets": {
-          "text": [],
+          "text": [
+            "content/modules/ssf-mat-1001.md"
+          ],
           "svg": [],
           "image": [],
           "video": [],
