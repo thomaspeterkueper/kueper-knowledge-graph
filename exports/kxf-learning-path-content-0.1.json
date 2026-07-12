@@ -1,0 +1,17 @@
+{
+  "schema": "KXF-LEARNING-PATH-CONTENT-0.1",
+  "name": "KUEPER SSF Learning Path Content Export",
+  "master": "kueper-knowledge-graph",
+  "status": "draft",
+  "version": "0.1",
+  "created": "2026-07-12",
+  "sourceDocuments": [
+    "KG-REQ-20260711-learning-path-slides-schema",
+    "OTA-ARC-0010-2026-DE",
+    "KG-0002"
+  ],
+  "note": "Optionale Praesentationsschicht fuer Lernpfade. Pro-Folie-content-Form haengt vom Typ ab (8 Typen aus NOXIAs Folie/KursRenderer.tsx: titel, text, tabelle, zwei_spalten, formel, animation, quiz, video). Medien in animation/video/image-Folien werden ueber mediaRefs -> MED:L3:* referenziert (MediaAsset-Registry, ARC-0010). records leer bis zur ersten Pfad-Autorenarbeit.",
+  "records": {
+    "learning_path_content": []
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "KXF-LEARNING-PATH-CONTENT-0.1",
+  "title": "Learning Path Content (Slides)",
+  "type": "object",
+  "required": [
+    "pathId",
+    "slides"
+  ],
+  "properties": {
+    "pathId": {
+      "type": "string",
+      "pattern": "^PATH:SSF:"
+    },
+    "slides": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/slide"
+      }
+    }
+  },
+  "definitions": {
+    "slide": {
+      "type": "object",
+      "required": [
+        "position",
+        "type",
+        "content"
+      ],
+      "properties": {
+        "position": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "type": {
+          "enum": [
+            "titel",
+            "text",
+            "tabelle",
+            "zwei_spalten",
+            "formel",
+            "animation",
+            "quiz",
+            "video"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "content": {
+          "type": "object",
+          "description": "Shape depends on type; renderers per NOXIA KursRenderer.tsx"
+        },
+        "mediaRefs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^MED:L3:"
+          },
+          "description": "Media used by this slide (animation/video/image) -> MediaAsset, see OTA-ARC-0010"
+        }
+      }
+    }
+  }
+}
