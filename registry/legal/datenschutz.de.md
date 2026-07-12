@@ -68,26 +68,25 @@ Falls künftig nicht notwendige Cookies, Analytics- oder Marketing-Dienste einge
 
 ---
 
-## 7. Benutzerkonten und Anwendungsdaten
+## 7. Systemspezifische Supabase-Verarbeitung
 
-Soweit NOXIA oder SSF Konten, Anmeldung, Spielstände, Lernfortschritte oder vergleichbare Zustände anbieten, kann Supabase als Datenbank- und Authentifizierungsdienst eingesetzt werden.
+Auftragsverarbeiter ist Supabase Inc. Das Hosting erfolgt in einer EU-Region; die Datenbank- und Auth-Server stehen innerhalb der EU. Login-E-Mail-Adresse und das (gehashte) Passwort werden vom Supabase-Auth-System in der verwalteten Tabelle `auth.users` gespeichert, nicht in den Anwendungstabellen.
 
-Verarbeitet werden dabei abhängig von der konkreten Funktion insbesondere:
+**NOXIA** (`rrsgswmmjynumwnnolhi.supabase.co`)
 
-- E-Mail-Adresse oder Benutzerkennung,
-- Authentifizierungs- und Sessiondaten,
-- Spielstand oder Lernfortschritt,
-- technische Metadaten zur Nutzung des Kontos.
+- Anmeldung: E-Mail und Passwort (inkl. Passwort-Reset per E-Mail). Kein OAuth, kein Magic Link.
+- Sitzungsverwaltung: cookie-basiert (Supabase-Standard-Session-Cookies über `@supabase/ssr`).
+- Personenbezogene Daten: `profiles` (Nutzer-UUID, `username`, `credits`, `created_at`, `last_seen_at`); `player_buildings`, `ships`, `trade_orders` sowie Spielaktions-/Ereignisdaten referenzieren die Nutzer-UUID. Welt-/Simulationsdaten (`locations`, `resources`, `market_prices` u. a.) sind nicht personenbezogen.
+- Speicherdauer: Konten ohne Aktivität werden nach 6 Monaten gelöscht; Registrierungen mit unbestätigter E-Mail-Adresse nach 1 Monat. Darüber hinaus Speicherung bis zur Löschanfrage. (Spieldaten `price_history` unterliegen einer separaten, nicht personenbezogenen Retention.)
+- Löschung: `profiles.id ON DELETE CASCADE` entfernt abhängige Datensätze.
 
-Rechtsgrundlage ist grundsätzlich Art. 6 Abs. 1 lit. b DSGVO, soweit die Verarbeitung zur Bereitstellung der gewählten Anwendung erforderlich ist. Ergänzende Sicherheits- und Betriebsverarbeitungen können auf Art. 6 Abs. 1 lit. f DSGVO gestützt werden.
+**Solar Science Foundation** (`eiwudquwkymshqdskjxm.supabase.co`)
 
-Vor Veröffentlichung sind je System zu bestätigen:
-
-- ob Benutzerkonten produktiv aktiviert sind,
-- welche Datenfelder tatsächlich gespeichert werden,
-- welche Region und Vertragskonfiguration bei Supabase genutzt wird,
-- welche Lösch- und Aufbewahrungsfristen gelten,
-- wie Nutzer ihr Konto und ihre Anwendungsdaten löschen lassen können.
+- Anmeldung: E-Mail und Passwort mit E-Mail-Bestätigung (Confirm-Signup). Kein OAuth, kein Magic Link.
+- Sitzungsverwaltung: Browser-`localStorage` (`@supabase/supabase-js`; serverseitige Zugriffe ohne persistente Session).
+- Personenbezogene Daten: `profiles` (Nutzer-UUID, `display_name`, abgeleitet aus Anzeigename oder E-Mail-Lokalteil), `member_roles`, `supporter_records`, `learning_progress`, `exercise_attempts`, `unlocks`, `user_achievements`, `project_access_audit`. Alle über die Nutzer-UUID mit `profiles` verknüpft; Row Level Security ist aktiv (Zugriff nur auf eigene Datensätze).
+- Speicherdauer: Konten ohne Aktivität werden nach 6 Monaten gelöscht; Registrierungen mit unbestätigter E-Mail-Adresse nach 1 Monat. Darüber hinaus Speicherung bis zur Löschanfrage.
+- Löschung: durchgängig `ON DELETE CASCADE` auf `profiles(id)` bzw. `auth.users(id)`; `project_access_audit` auf `ON DELETE SET NULL`.
 
 ---
 
