@@ -46,3 +46,7 @@ Created:
 
 Curator:
 T.P.K.
+
+
+---
+_Resolved 2026-07-12: MAT-L0-000001 auf built; Prosa content/modules/ssf-mat-1001.md (Arithmetik + Handelsbeispiel)._

@@ -57,3 +57,7 @@ Created:
 
 Curator:
 T.P.K.
+
+
+---
+_Resolved 2026-07-12: Companion-Export kxf-learning-path-content-0.1.json + Schema angelegt; Medien via MED:L3 (ARC-0010)._

@@ -41,3 +41,7 @@ Created:
 
 Curator:
 T.P.K.
+
+
+---
+_Resolved 2026-07-12: Geroutet: kueper.com traegt bereits EXT-ECO-KUE-20260712-001 (CHE-Quelle per KG-0011/ECO-ARC-0007)._

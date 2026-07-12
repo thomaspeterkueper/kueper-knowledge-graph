@@ -59,3 +59,7 @@ Created:
 
 Curator:
 T.P.K.
+
+
+---
+_Resolved 2026-07-12: 204 DOC:OTA registriert (entity-registry v0.1.5); 1 Ausnahme ohne kg:-Block: OTA-RED-0015-2156-EN.md._
