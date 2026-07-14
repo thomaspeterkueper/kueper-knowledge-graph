@@ -3,7 +3,7 @@
   "name": "KUEPER Entity Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "updated": "2026-07-12",
   "sourceDocuments": [
     "KG-0008-REGISTRY",
@@ -2373,6 +2373,33 @@
       "documentId": "OTA-TEC-0081-2026-DE",
       "system": "SYS:OTA:overtimearchive",
       "title": "OTA-TEC-0081-2026-DE"
+    },
+    {
+      "id": "KD:PHYS-THERM:N1",
+      "type": "KnowledgeDomain",
+      "status": "draft_productive",
+      "source": "KG-REQ-20260712-import-ota-domain-prerequisites",
+      "exports": [
+        "exports/relation-registry-0.1.json"
+      ]
+    },
+    {
+      "id": "KD:PHIL-SCI:N2",
+      "type": "KnowledgeDomain",
+      "status": "draft_productive",
+      "source": "KG-REQ-20260712-import-ota-domain-prerequisites",
+      "exports": [
+        "exports/relation-registry-0.1.json"
+      ]
+    },
+    {
+      "id": "KD:MATH-STAT:N1",
+      "type": "KnowledgeDomain",
+      "status": "draft_productive",
+      "source": "KG-REQ-20260712-import-ota-domain-prerequisites",
+      "exports": [
+        "exports/relation-registry-0.1.json"
+      ]
     }
   ]
 }
