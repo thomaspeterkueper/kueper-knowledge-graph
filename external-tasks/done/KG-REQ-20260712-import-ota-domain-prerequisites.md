@@ -76,3 +76,7 @@ and `PHIL-SCI` if genuinely absent.
 
 `exports/entity-registry-0.1.json` (step 1), `exports/relation-registry-0.1.json`
 (step 2)
+
+
+---
+_Resolved 2026-07-12: 3 Domains registriert + 278 REQUIRES-Relationen importiert (204 Docs). KON-KONTR -> KON normalisiert. KD-vs-KNOW-Inkonsistenz ans Ecosystem gemeldet (EXT-ECO-KG-20260712-003)._
