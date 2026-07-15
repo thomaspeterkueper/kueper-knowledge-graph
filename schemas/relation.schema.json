@@ -8,7 +8,7 @@
     "quelle": { "type": "string" },
     "relation": { "type": "string" },
     "ziel": { "type": "string" },
-    "status": { "enum": ["[R]", "[T]", "[H]", "[S]", "[F]", "[I]", "[OFFEN]"] },
+    "status": { "enum": ["[R]", "[T]", "[H]", "[S]", "[F]", "[I]", "[W]", "[OFFEN]"] },
     "kommentar": { "type": "string" },
     "erstellt": { "type": "string" },
     "kurator": { "type": "string" }

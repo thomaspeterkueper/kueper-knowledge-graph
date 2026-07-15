@@ -139,3 +139,20 @@ kueper:identity:person:thomas-kueper
   (dann reiner Schicht-1-Dienst statt KG-Doppelrolle)?
 - Versionierung: nur wo die kanonische ID sie nicht schon trägt (KD-Weiterentwicklung)?
 - Migrationspfad: bestehende IDs in KG/SSF/NOXIA mappen, oder Neuaufbau?
+
+---
+
+## Status-Marker
+
+Jeder Entity- und Relations-Datensatz trägt einen `status`-Marker. Sieben sind **epistemisch** (Belastbarkeit einer Aussage); `[W]` bildet eine achte, **konstitutive** Kategorie.
+
+| Marker | Bedeutung |
+|---|---|
+| `[R]` | Real — empirisch gesichert |
+| `[T]` | Theorie — theoretisch fundiert |
+| `[H]` | Hypothese — begründete Annahme |
+| `[S]` | Spekulativ — offene Vermutung |
+| `[F]` | Fiktiv — narrativ / erfunden |
+| `[I]` | Illustrativ — didaktisches Beispiel |
+| `[W]` | **Werk-Setzung** — durch autorielle Setzung im eigenen Werk konstituiert (nicht empirisch, sondern gesetzt). Deckt strukturelle `part_of`-Taxonomiekanten selbst-autorisierter Modelle ab (z. B. `contracomology-core`). Definition gemäß OTA-ARC-0006 („Epistemologischer Marker: [W] Werk-Setzung"). |
+| `[OFFEN]` | Offen — noch nicht klassifiziert |

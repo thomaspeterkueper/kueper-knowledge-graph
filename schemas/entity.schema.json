@@ -9,7 +9,7 @@
     "name": { "type": "string" },
     "name_en": { "type": "string" },
     "domäne": { "type": "string" },
-    "status": { "enum": ["[R]", "[T]", "[H]", "[S]", "[F]", "[I]", "[OFFEN]"] },
+    "status": { "enum": ["[R]", "[T]", "[H]", "[S]", "[F]", "[I]", "[W]", "[OFFEN]"] },
     "is_instance": { "type": "boolean" },
     "instance_of": { "type": "string" },
     "foundation_node": { "type": "boolean" },
