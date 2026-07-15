@@ -5,11 +5,14 @@ name: AVI-Punkt
 domain: KON
 status: '[W]'
 definition: >
-  Struktureller Kipppunkt innerhalb einer Zeitform – der Moment, an dem eine
-  Zeitarchitektur ihren qualitativen Charakter sprunghaft ändert (Point of no
-  Return). Paradigmatisch das A2 in Takt 212 der 4. Ballade als Schicksals-Operator.
-  NICHT zu verwechseln mit dem physikalischen AVI (Axiomatisches Vakuum-Integral, ∅ Avi).
+  Der punktuelle Moment innerhalb einer Zeitform, an dem alle Wege offenstehen –
+  die schöpferische Leere (∅ Avi) im temporalen Register: der Punkt maximaler
+  Unbestimmtheit, von dem aus ein Phasenübergang erfolgt. Teilt seine Wurzel mit
+  dem physikalisch-kosmologischen Modell AVI (Axiomatisches Vakuum-Integral) –
+  beide leiten sich aus ∅ Avi ab –, bleibt davon aber als eigenständige Entität im
+  musikalisch-künstlerischen Register getrennt.
 derived_from:
+  - CON:L0:avi
   - CON:L1:zeitform
 created: '2026-07-03'
 curator: T.P.K.

@@ -154,5 +154,5 @@ Jeder Entity- und Relations-Datensatz trägt einen `status`-Marker. Sieben sind 
 | `[S]` | Spekulativ — offene Vermutung |
 | `[F]` | Fiktiv — narrativ / erfunden |
 | `[I]` | Illustrativ — didaktisches Beispiel |
-| `[W]` | **Werk-Setzung** — durch autorielle Setzung im eigenen Werk konstituiert (nicht empirisch, sondern gesetzt). Deckt strukturelle `part_of`-Taxonomiekanten selbst-autorisierter Modelle ab (z. B. `contracomology-core`). Definition gemäß OTA-ARC-0006 („Epistemologischer Marker: [W] Werk-Setzung"). |
+| `[W]` | **Werk-Setzung** — Arbeitsstatus für autoriell gesetzte, strukturell noch in Bearbeitung befindliche Taxonomie-Knoten und -Kanten (z. B. im Aufbau von `contracomology-core`); wird bei inhaltlicher Festlegung auf einen definitiven Marker (i. d. R. `[R]`) gehoben. Bezeichnung kuratorseitig bestätigt (D8, KG-REQ-20260715). In der ARC-Reihe zugleich Marker autorieller Architektur-Setzungen (OTA-ARC-0006). |
 | `[OFFEN]` | Offen — noch nicht klassifiziert |
