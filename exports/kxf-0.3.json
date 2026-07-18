@@ -112,9 +112,9 @@
       { "id": "REL:LRN:SSF:PHY-1101:TEACHES:CON:L1:gravitation", "type": "Relation", "from": "LRN:SSF:PHY-1101", "relation": "TEACHES", "to": "CON:L1:gravitation", "status": "canonical", "source": "KG-0003" },
       { "id": "REL:LRN:SSF:PHY-1101:UNLOCKS:UNL:NOX:orbital-navigation", "type": "Relation", "from": "LRN:SSF:PHY-1101", "relation": "UNLOCKS", "to": "UNL:NOX:orbital-navigation", "status": "canonical", "source": "KG-0003" },
       { "id": "REL:UNL:NOX:orbital-navigation:UNLOCKS:BLD:NOX:raumhafen-1", "type": "Relation", "from": "UNL:NOX:orbital-navigation", "relation": "UNLOCKS", "to": "BLD:NOX:raumhafen-1", "status": "canonical", "source": "KG-0003" },
-      { "id": "REL:MAP:KG-0002:KNOW-GEO-SEISM-N2:MAPS_TO:KD:GEO-SEISM:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-GEO-SEISM-N2", "relation": "MAPS_TO", "to": "KD:GEO-SEISM:N2", "status": "draft_productive", "source": "KG-0003" },
-      { "id": "REL:MAP:KG-0002:KNOW-GEO-PETRO-N2:MAPS_TO:KD:GEO-PETRO:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-GEO-PETRO-N2", "relation": "MAPS_TO", "to": "KD:GEO-PETRO:N2", "status": "draft_productive", "source": "KG-0003" },
-      { "id": "REL:MAP:KG-0002:KNOW-MATH-BAYES-N2:MAPS_TO:KD:MATH-BAYES:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-MATH-BAYES-N2", "relation": "MAPS_TO", "to": "KD:MATH-BAYES:N2", "status": "draft_productive", "source": "KG-0003" }
+      { "id": "REL:MAP:KG-0002:KD-GEO-SEISM-N2:MAPS_TO:KD:GEO-SEISM:N2", "type": "Relation", "from": "MAP:KG-0002:KD-GEO-SEISM-N2", "relation": "MAPS_TO", "to": "KD:GEO-SEISM:N2", "status": "draft_productive", "source": "KG-0003" },
+      { "id": "REL:MAP:KG-0002:KD-GEO-PETRO-N2:MAPS_TO:KD:GEO-PETRO:N2", "type": "Relation", "from": "MAP:KG-0002:KD-GEO-PETRO-N2", "relation": "MAPS_TO", "to": "KD:GEO-PETRO:N2", "status": "draft_productive", "source": "KG-0003" },
+      { "id": "REL:MAP:KG-0002:KD-MATH-BAYES-N2:MAPS_TO:KD:MATH-BAYES:N2", "type": "Relation", "from": "MAP:KG-0002:KD-MATH-BAYES-N2", "relation": "MAPS_TO", "to": "KD:MATH-BAYES:N2", "status": "draft_productive", "source": "KG-0003" }
     ],
     "unlocks": [
       { "id": "UNL:NOX:orbital-navigation", "system": "SYS:KUEPER:ssf", "target_system": "SYS:KUEPER:noxia", "requires": ["LRN:SSF:PHY-1101"], "unlocks": ["BLD:NOX:raumhafen-1"] }
@@ -123,9 +123,9 @@
       { "id": "BLD:NOX:raumhafen-1", "system": "SYS:KUEPER:noxia", "name": "Raumhafen I", "requires": ["UNL:NOX:orbital-navigation"] }
     ],
     "mappings": [
-      { "id": "MAP:KG-0002:KNOW-GEO-SEISM-N2", "type": "Mapping", "source": "KNOW:GEO-SEISM + N2", "target": "KD:GEO-SEISM:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" },
-      { "id": "MAP:KG-0002:KNOW-GEO-PETRO-N2", "type": "Mapping", "source": "KNOW:GEO-PETRO + N2", "target": "KD:GEO-PETRO:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" },
-      { "id": "MAP:KG-0002:KNOW-MATH-BAYES-N2", "type": "Mapping", "source": "KNOW:MATH-BAYES + N2", "target": "KD:MATH-BAYES:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" }
+      { "id": "MAP:KG-0002:KD-GEO-SEISM-N2", "type": "Mapping", "source": "KD:GEO-SEISM + N2", "target": "KD:GEO-SEISM:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" },
+      { "id": "MAP:KG-0002:KD-GEO-PETRO-N2", "type": "Mapping", "source": "KD:GEO-PETRO + N2", "target": "KD:GEO-PETRO:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" },
+      { "id": "MAP:KG-0002:KD-MATH-BAYES-N2", "type": "Mapping", "source": "KD:MATH-BAYES + N2", "target": "KD:MATH-BAYES:N2", "mappingType": "legacy_domain_level_to_canonical_knowledge_domain", "status": "draft_productive" }
     ]
   }
 }
