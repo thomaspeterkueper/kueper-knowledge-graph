@@ -50,3 +50,7 @@ Dieser Request formalisiert ihn im Standard-Request-Format.
 
 Nach KG-Migration: SSF aktualisiert `domainsNeeded`-Felder
 in `learningPaths.ts` von `KNOW:*` auf `KD:*`.
+
+
+---
+_Resolved 2026-07-18: Migration ausgefuehrt (kxf-0.1/0.2/0.3). kxf-0.4/0.5/0.6 waren nicht betroffen. SSF-Folgeaktion (domainsNeeded in learningPaths.ts) steht noch aus._
