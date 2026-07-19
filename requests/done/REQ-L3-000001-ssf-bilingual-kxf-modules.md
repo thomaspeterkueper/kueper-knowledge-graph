@@ -112,3 +112,7 @@ Noch keine.
 ## Notes
 
 Dieser Request erzeugt selbst noch keine KXF-Aenderung. Er beschreibt den Bedarf und muss kuratorisch akzeptiert werden, bevor Schema und Export angepasst werden.
+
+
+---
+_Resolved 2026-07-19: Design bereits fertig (docs/KXF-LOCALIZATION.md, accepted; schemas/learning-module.schema.json referenziert LocalizedText korrekt). Produktionsdaten hatten davon abweichendes Muster (meta.title + meta.i18n.title). Kurator: dokumentiertes flaches Muster ist kanonisch. Alle 17 Module auf title:{de,en} migriert (Commit 5ea684f); 5 fehlende Titel uebersetzt (AST-L1-000001, EAR-L2-000001, EAR-L2-000002, PHY-L2-000001, PHY-L2-000002). meta.title bleibt vorerst erhalten (SSF liest es aktiv, 4 Dateien) - Migrationstask an SSF gestellt (KG-REQ-20260719-ssf-title-migration). summary/body/exercises-Lokalisierung bleibt separat: diese Felder existieren in der echten Modulstruktur nicht (Prosa liegt einsprachig in assets.text)._
