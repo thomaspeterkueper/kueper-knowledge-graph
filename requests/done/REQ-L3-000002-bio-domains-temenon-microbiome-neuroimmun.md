@@ -194,3 +194,7 @@ grundsaetzlich fehlerhaftes Modellierungsmuster erkannt und verworfen
 (fiktive Theorien sind keine KD-Domaenen), erstere wird hiermit als
 regulaerer Request nachgereicht. Beide Dokumente fuehren bis zur Umsetzung
 den Status `[OFFEN]` im Frontmatter.
+
+
+---
+_Resolved 2026-07-19: KD:BIO:N1 + 2 N2-Domaenen, REQUIRES-Relation, 2 DOC:OTA registriert, 2 PATH:OTA:*:READ Eintraege (path-registry-0.1.json, nicht knowledge-domains wie vorgeschlagen - dort liegen Pfade kanonisch). Offen: KD:MATH-STAT:N2 deckt Mediationsanalyse begrifflich nicht ab - Alias/Erweiterung nicht eigenmaechtig vorgenommen, da inhaltliche Erweiterung einer bestehenden kanonischen Domain._
