@@ -3,7 +3,7 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "created": "2026-07-02",
   "modified": "2026-07-10T12:00:00+02:00",
   "sourceDocuments": [
@@ -1741,6 +1741,1267 @@
           "UNL:NOX:PHY:HEAT-CAPACITY",
           "UNL:NOX:PHY:LATENT-HEAT"
         ]
+      },
+      {
+        "id": "CHE-L1-000003",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum löst Spülmittel Fett — aber Wasser allein nicht",
+          "en": "Why Dish Soap Dissolves Grease — But Water Alone Doesn't"
+        },
+        "meta": {
+          "title": "Warum löst Spülmittel Fett — aber Wasser allein nicht",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum löst Spülmittel Fett — aber Wasser allein nicht?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum löst Spülmittel Fett — aber Wasser allein nicht?",
+            "L1": "Warum löst Spülmittel Fett — aber Wasser allein nicht?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-2001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "CHE-L1-000004",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum greift Essig Kalk an — aber nicht Fett",
+          "en": "Why Vinegar Attacks Limescale — But Not Grease"
+        },
+        "meta": {
+          "title": "Warum greift Essig Kalk an — aber nicht Fett",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum greift Essig Kalk an — aber nicht Fett?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum greift Essig Kalk an — aber nicht Fett?",
+            "L1": "Warum greift Essig Kalk an — aber nicht Fett?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-2002",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "CHE-L1-000005",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum bleicht Chlor — und warum darf man es nicht mit Essig mischen",
+          "en": "Why Chlorine Bleaches — And Why You Must Never Mix It With Vinegar"
+        },
+        "meta": {
+          "title": "Warum bleicht Chlor — und warum darf man es nicht mit Essig mischen",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum bleicht Chlor — und warum darf man es nicht mit Essig mischen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum bleicht Chlor — und warum darf man es nicht mit Essig mischen?",
+            "L1": "Warum bleicht Chlor — und warum darf man es nicht mit Essig mischen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000004"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-2003",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "PHY-L1-000011",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum funktioniert derselbe Schwamm auf Glas anders als auf Stein",
+          "en": "Why the Same Sponge Works Differently on Glass Than on Stone"
+        },
+        "meta": {
+          "title": "Warum funktioniert derselbe Schwamm auf Glas anders als auf Stein",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum funktioniert derselbe Schwamm auf Glas anders als auf Stein?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum funktioniert derselbe Schwamm auf Glas anders als auf Stein?",
+            "L1": "Warum funktioniert derselbe Schwamm auf Glas anders als auf Stein?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-2001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "CHE-L1-000006",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum hinterlässt Fensterputzen Streifen — und wie vermeidet man sie",
+          "en": "Why Cleaning Windows Leaves Streaks — And How to Avoid Them"
+        },
+        "meta": {
+          "title": "Warum hinterlässt Fensterputzen Streifen — und wie vermeidet man sie",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum hinterlässt Fensterputzen Streifen — und wie vermeidet man sie?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum hinterlässt Fensterputzen Streifen — und wie vermeidet man sie?",
+            "L1": "Warum hinterlässt Fensterputzen Streifen — und wie vermeidet man sie?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000006"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-2004",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "CHE-L1-000007",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum macht heißes Wasser einen Rotweinfleck schlimmer",
+          "en": "Why Hot Water Makes a Red Wine Stain Worse"
+        },
+        "meta": {
+          "title": "Warum macht heißes Wasser einen Rotweinfleck schlimmer",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum macht heißes Wasser einen Rotweinfleck schlimmer?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum macht heißes Wasser einen Rotweinfleck schlimmer?",
+            "L1": "Warum macht heißes Wasser einen Rotweinfleck schlimmer?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-2005",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "PHY-L1-000012",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum verträgt Holz kein stehendes Wasser — aber Fliesen schon",
+          "en": "Why Wood Can't Tolerate Standing Water — But Tiles Can"
+        },
+        "meta": {
+          "title": "Warum verträgt Holz kein stehendes Wasser — aber Fliesen schon",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum verträgt Holz kein stehendes Wasser — aber Fliesen schon?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum verträgt Holz kein stehendes Wasser — aber Fliesen schon?",
+            "L1": "Warum verträgt Holz kein stehendes Wasser — aber Fliesen schon?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000011"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-2002",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "CHE-L1-000008",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum trennt sich Salatdressing — und wie hält Mayonnaise zusammen",
+          "en": "Why Salad Dressing Separates — And How Mayonnaise Stays Together"
+        },
+        "meta": {
+          "title": "Warum trennt sich Salatdressing — und wie hält Mayonnaise zusammen",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum trennt sich Salatdressing — und wie hält Mayonnaise zusammen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum trennt sich Salatdressing — und wie hält Mayonnaise zusammen?",
+            "L1": "Warum trennt sich Salatdressing — und wie hält Mayonnaise zusammen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-2006",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "CHE-L1-000009",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum wird Gurke in Salzlake weich — und Kartoffel in Salzwasser hart",
+          "en": "Why Cucumber Softens in Brine — And Potato Hardens in Salt Water"
+        },
+        "meta": {
+          "title": "Warum wird Gurke in Salzlake weich — und Kartoffel in Salzwasser hart",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum wird Gurke in Salzlake weich — und Kartoffel in Salzwasser hart?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum wird Gurke in Salzlake weich — und Kartoffel in Salzwasser hart?",
+            "L1": "Warum wird Gurke in Salzlake weich — und Kartoffel in Salzwasser hart?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-2007",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "PHY-L1-000013",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum kocht Wasser in den Bergen bei weniger als 100 Grad",
+          "en": "Why Water Boils Below 100 Degrees in the Mountains"
+        },
+        "meta": {
+          "title": "Warum kocht Wasser in den Bergen bei weniger als 100 Grad",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum kocht Wasser in den Bergen bei weniger als 100 Grad?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum kocht Wasser in den Bergen bei weniger als 100 Grad?",
+            "L1": "Warum kocht Wasser in den Bergen bei weniger als 100 Grad?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000004"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-2003",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "PHY-L1-000014",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum kühlt Kaffee in einer breiten Tasse schneller ab als in einer schmalen",
+          "en": "Why Coffee Cools Faster in a Wide Cup Than in a Narrow One"
+        },
+        "meta": {
+          "title": "Warum kühlt Kaffee in einer breiten Tasse schneller ab als in einer schmalen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum kühlt Kaffee in einer breiten Tasse schneller ab als in einer schmalen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum kühlt Kaffee in einer breiten Tasse schneller ab als in einer schmalen?",
+            "L1": "Warum kühlt Kaffee in einer breiten Tasse schneller ab als in einer schmalen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000008"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-2004",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "CHE-L1-000010",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum karamellisiert Zucker erst bei 160 Grad",
+          "en": "Why Sugar Only Caramelizes at 160 Degrees"
+        },
+        "meta": {
+          "title": "Warum karamellisiert Zucker erst bei 160 Grad",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum karamellisiert Zucker erst bei 160 Grad?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum karamellisiert Zucker erst bei 160 Grad?",
+            "L1": "Warum karamellisiert Zucker erst bei 160 Grad?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-1005",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "CHE-L1-000011",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum wird Gulasch zart — wenn man es lange kocht",
+          "en": "Why Goulash Becomes Tender — When Cooked Long Enough"
+        },
+        "meta": {
+          "title": "Warum wird Gulasch zart — wenn man es lange kocht",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum wird Gulasch zart — wenn man es lange kocht?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum wird Gulasch zart — wenn man es lange kocht?",
+            "L1": "Warum wird Gulasch zart — wenn man es lange kocht?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-1003",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "PHY-L1-000015",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum leuchtet ein Fahrradhelm wenn man ihn drückt",
+          "en": "Why a Bike Helmet Lights Up When You Press It"
+        },
+        "meta": {
+          "title": "Warum leuchtet ein Fahrradhelm wenn man ihn drückt",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum leuchtet ein Fahrradhelm wenn man ihn drückt?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum leuchtet ein Fahrradhelm wenn man ihn drückt?",
+            "L1": "Warum leuchtet ein Fahrradhelm wenn man ihn drückt?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L2-000002"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-4002",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:ELEC:N1"
+      },
+      {
+        "id": "CHE-L1-000012",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum könnte ein Metall die Energiewende blockieren das kaum jemand kennt",
+          "en": "Why a Metal Almost No One Knows Could Block the Energy Transition"
+        },
+        "meta": {
+          "title": "Warum könnte ein Metall die Energiewende blockieren das kaum jemand kennt",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum könnte ein Metall die Energiewende blockieren das kaum jemand kennt?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum könnte ein Metall die Energiewende blockieren das kaum jemand kennt?",
+            "L1": "Warum könnte ein Metall die Energiewende blockieren das kaum jemand kennt?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-6001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:ENV:N1"
+      },
+      {
+        "id": "PHY-L1-000016",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Wie zerlegt ein Elektrolyseur Wasser in Wasserstoff und Sauerstoff",
+          "en": "How an Electrolyzer Splits Water Into Hydrogen and Oxygen"
+        },
+        "meta": {
+          "title": "Wie zerlegt ein Elektrolyseur Wasser in Wasserstoff und Sauerstoff",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie zerlegt ein Elektrolyseur Wasser in Wasserstoff und Sauerstoff?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie zerlegt ein Elektrolyseur Wasser in Wasserstoff und Sauerstoff?",
+            "L1": "Wie zerlegt ein Elektrolyseur Wasser in Wasserstoff und Sauerstoff?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000003"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-5001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:ELEC:N1"
+      },
+      {
+        "id": "ENV-L1-000001",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum braucht die Energiewende so viele seltene Materialien",
+          "en": "Why the Energy Transition Needs So Many Rare Materials"
+        },
+        "meta": {
+          "title": "Warum braucht die Energiewende so viele seltene Materialien",
+          "subject": "ENV",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum braucht die Energiewende so viele seltene Materialien?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum braucht die Energiewende so viele seltene Materialien?",
+            "L1": "Warum braucht die Energiewende so viele seltene Materialien?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000012"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:ENV-6001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:ENV:N1"
+      },
+      {
+        "id": "CHE-L1-000013",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Was ist Zucker eigentlich — und warum braucht Leben ihn",
+          "en": "What Sugar Actually Is — And Why Life Needs It"
+        },
+        "meta": {
+          "title": "Was ist Zucker eigentlich — und warum braucht Leben ihn",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Was ist Zucker eigentlich — und warum braucht Leben ihn?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Was ist Zucker eigentlich — und warum braucht Leben ihn?",
+            "L1": "Was ist Zucker eigentlich — und warum braucht Leben ihn?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000010"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-5001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "CHE-L1-000014",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Wie entsteht Zucker im Weltall — und warum wurde er gerade erst gefunden",
+          "en": "How Sugar Forms in Space — And Why It Was Only Just Discovered"
+        },
+        "meta": {
+          "title": "Wie entsteht Zucker im Weltall — und warum wurde er gerade erst gefunden",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie entsteht Zucker im Weltall — und warum wurde er gerade erst gefunden?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie entsteht Zucker im Weltall — und warum wurde er gerade erst gefunden?",
+            "L1": "Wie entsteht Zucker im Weltall — und warum wurde er gerade erst gefunden?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000013"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-5002",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "BIO-L1-000001",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Wie entstand das erste Leben auf der Erde",
+          "en": "How the First Life on Earth Began"
+        },
+        "meta": {
+          "title": "Wie entstand das erste Leben auf der Erde",
+          "subject": "BIO",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie entstand das erste Leben auf der Erde?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie entstand das erste Leben auf der Erde?",
+            "L1": "Wie entstand das erste Leben auf der Erde?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000014"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:BIO-5001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:BIO:N1"
+      },
+      {
+        "id": "EL-L1-000001",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum darf man eine Diode nicht einfach anschließen",
+          "en": "Why You Can't Just Connect a Diode Any Way You Like"
+        },
+        "meta": {
+          "title": "Warum darf man eine Diode nicht einfach anschließen",
+          "subject": "EL",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum darf man eine Diode nicht einfach anschließen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum darf man eine Diode nicht einfach anschließen?",
+            "L1": "Warum darf man eine Diode nicht einfach anschließen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:EL-1101",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:ELEC:N1"
+      },
+      {
+        "id": "ENG-L1-000001",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Wie schneidet man Stahl der härter ist als jedes Werkzeug",
+          "en": "How to Cut Steel Harder Than Any Tool"
+        },
+        "meta": {
+          "title": "Wie schneidet man Stahl der härter ist als jedes Werkzeug",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie schneidet man Stahl der härter ist als jedes Werkzeug?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie schneidet man Stahl der härter ist als jedes Werkzeug?",
+            "L1": "Wie schneidet man Stahl der härter ist als jedes Werkzeug?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:ENG-1101",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "ENG-L1-000002",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum kann Stahl brechen",
+          "en": "Why Steel Can Break"
+        },
+        "meta": {
+          "title": "Warum kann Stahl brechen",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum kann Stahl brechen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum kann Stahl brechen?",
+            "L1": "Warum kann Stahl brechen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "ENG-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:ENG-1102",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "MAT-L1-000004",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum greift man eine Tür am Rand an",
+          "en": "Why You Grip a Door at the Edge"
+        },
+        "meta": {
+          "title": "Warum greift man eine Tür am Rand an",
+          "subject": "MAT",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum greift man eine Tür am Rand an?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum greift man eine Tür am Rand an?",
+            "L1": "Warum greift man eine Tür am Rand an?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "MAT-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1104",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:MATH:N1"
+      },
+      {
+        "id": "MAT-L1-000005",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Wie löst man zwei Bedingungen gleichzeitig",
+          "en": "How to Solve Two Conditions at Once"
+        },
+        "meta": {
+          "title": "Wie löst man zwei Bedingungen gleichzeitig",
+          "subject": "MAT",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie löst man zwei Bedingungen gleichzeitig?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie löst man zwei Bedingungen gleichzeitig?",
+            "L1": "Wie löst man zwei Bedingungen gleichzeitig?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "MAT-L1-000004"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAT-1105",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:MATH:N1"
+      },
+      {
+        "id": "PHY-L1-000009",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum ist der Himmel blau",
+          "en": "Why the Sky Is Blue"
+        },
+        "meta": {
+          "title": "Warum ist der Himmel blau",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum ist der Himmel blau?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum ist der Himmel blau?",
+            "L1": "Warum ist der Himmel blau?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-1103",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "PHY-L1-000010",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum zieht ein Magnet Eisen an — aber keine Holzschraube",
+          "en": "Why a Magnet Attracts Iron — But Not a Wood Screw"
+        },
+        "meta": {
+          "title": "Warum zieht ein Magnet Eisen an — aber keine Holzschraube",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum zieht ein Magnet Eisen an — aber keine Holzschraube?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum zieht ein Magnet Eisen an — aber keine Holzschraube?",
+            "L1": "Warum zieht ein Magnet Eisen an — aber keine Holzschraube?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L2-000002"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-4001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
       }
     ]
   },
