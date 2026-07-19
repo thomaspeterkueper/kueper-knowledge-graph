@@ -3,7 +3,7 @@
   "id": "LEGAL:L3:impressum-master",
   "status": "canonical",
   "source": "KG-0013",
-  "updated": "2026-07-09",
+  "updated": "2026-07-19",
   "curator": "T.P.K.",
   "responsible": {
     "name": "Thomas Peter Küper",
@@ -21,6 +21,14 @@
     "SYS:KUEPER:ssf",
     "SYS:KUEPER:noxia",
     "SYS:KUEPER:ota",
-    "SYS:KUEPER:thomas-kueper"
+    "SYS:KUEPER:thomas-kueper",
+    "SYS:KUEPER:omnizedenz",
+    "SYS:KUEPER:mishkenaz",
+    "SYS:KUEPER:avi-modell",
+    "SYS:KUEPER:endia",
+    "SYS:KUEPER:zereya",
+    "SYS:KUEPER:davaru",
+    "SYS:KUEPER:fluide-hermeneutik",
+    "SYS:KUEPER:resonanz-ethik"
   ]
 }
