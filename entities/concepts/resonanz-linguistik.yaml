@@ -1,0 +1,17 @@
+entity_id: CON:L1:resonanz-linguistik
+typ: Concept
+layer: L1
+name: Resonanz-Linguistik
+domain: OMNI
+status: '[W]'
+definition: >
+  Aus der Omnizedenz-Ontologie abgeleiteter linguistischer Ansatz: modelliert
+  Sprache als Resonanzphänomen zwischen Sprechenden statt als reines
+  Zeichensystem. Owner-bestätigt als unmittelbare Ableitung aus der
+  Omnizedenz-Ontologie (ECO-ARC-0010 §2). Neues Konzept ohne bisherige
+  Website-Präsenz; als eigenständiges Projekt noch nicht registriert.
+  Beschreibung wird vom Kurator noch vertieft.
+derived_from:
+  - CON:L0:omnizedenz
+created: '2026-07-19'
+curator: T.P.K.

@@ -1,0 +1,15 @@
+entity_id: CON:L2:kora
+typ: Concept
+layer: L2
+name: "⊕ Kora"
+domain: OMNI
+status: '[W]'
+definition: >
+  Integration, Synthese, Heilung. Kernsymbol (Stufe I, Kategorie Ordnung &
+  Integration): sucht nicht den Kompromiss in der Mitte, sondern die dritte
+  Option, die widerstreitende Perspektiven auf neuer Ebene integriert. Ziel
+  ist Heilung, nicht Strafe.
+derived_from:
+  - CON:L0:omnizedenz
+created: '2026-07-19'
+curator: T.P.K.

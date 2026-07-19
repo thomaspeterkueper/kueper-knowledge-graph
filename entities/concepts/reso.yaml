@@ -1,0 +1,15 @@
+entity_id: CON:L1:reso
+typ: Concept
+layer: L1
+name: "⇌ Reso"
+domain: OMNI
+status: '[W]'
+definition: >
+  Resonanz, Wechselwirkung, Schwingung. Kernsymbol (Stufe I, Kategorie
+  Dynamik & Prozess): die bewusste Abstimmung zwischen zwei Entitäten durch
+  wechselseitiges Hören. Symbole wirken selbst als Resonanzkörper – sie regen
+  Wahrnehmung an, statt Bedeutung endgültig festzuschreiben.
+derived_from:
+  - CON:L0:omnizedenz
+created: '2026-07-19'
+curator: T.P.K.

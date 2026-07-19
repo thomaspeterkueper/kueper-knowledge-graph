@@ -1,0 +1,16 @@
+entity_id: CON:L1:resonanz-ethik
+typ: Concept
+layer: L1
+name: Resonanz-Ethik
+domain: OMNI
+status: '[W]'
+definition: >
+  Aus der Omnizedenz-Ontologie abgeleitetes ethisches Rahmenwerk: bewertet
+  Handeln nach relationaler Stimmigkeit statt nach Regelbefolgung (vgl. die
+  Kernsymbole Saha, Palya, Kora, Mira, Skha). Owner-bestätigt als unmittelbare
+  Ableitung aus der Omnizedenz-Ontologie (ECO-ARC-0010 §2). Beschreibung wird
+  vom Kurator noch vertieft.
+derived_from:
+  - CON:L0:omnizedenz
+created: '2026-07-19'
+curator: T.P.K.

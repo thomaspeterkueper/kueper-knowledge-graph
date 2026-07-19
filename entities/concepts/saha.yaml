@@ -1,0 +1,15 @@
+entity_id: CON:L2:saha
+typ: Concept
+layer: L2
+name: "𓂀 Saha"
+domain: OMNI
+status: '[W]'
+definition: >
+  Wahrnehmung, Bewusstsein, Erkenntnis. Kernsymbol (Stufe I, Kategorie
+  Ordnung & Integration / Bewusstsein & Erkenntnis): achtsame Feldwahrnehmung
+  – spezifische, prinzipiell trainierbare Wahrnehmungsfähigkeit relationaler
+  Qualitäten, anders als diffuse Intuition.
+derived_from:
+  - CON:L0:omnizedenz
+created: '2026-07-19'
+curator: T.P.K.

@@ -1,0 +1,27 @@
+entity_id: CON:L0:omnizedenz
+typ: Concept
+layer: L0
+name: Omnizedenz
+domain: OMNI
+status: '[W]'
+definition: >
+  Formal definiertes Zeichensystem zur Repräsentation und Verarbeitung
+  relationaler, prozessualer und emergenter Systemzustände. Wurzelontologie
+  der Omnizedenz-Symbolsprache (Spezifikation v1.0: 28 Kernsymbole in fünf
+  Kategorien – Ursprung & Quelle, Dynamik & Prozess, Herausforderung &
+  Transformation, Ordnung & Integration, Bewusstsein & Erkenntnis – sowie
+  erweiterte, experimentelle und domänenspezifische Symbolstufen). Aus ihr
+  leiten sich sowohl die Einzelsymbole als auch angewandte Rahmenwerke wie
+  Resonanz-Ethik und Resonanz-Linguistik ab.
+enables:
+  - CON:L1:chrona
+  - CON:L1:reso
+  - CON:L2:kora
+  - CON:L2:mira
+  - CON:L2:palya
+  - CON:L2:saha
+  - CON:L2:skha
+  - CON:L1:resonanz-ethik
+  - CON:L1:resonanz-linguistik
+created: '2026-07-19'
+curator: T.P.K.
