@@ -3,7 +3,7 @@ typ: Model
 layer: L2
 name: "Kontrakomologie (Kernmodell)"
 domäne: KON
-status: '[W]'
+status: '[R]'
 beschreibung: >
   Kernmodell der Kontrakomologie. Liest Realität als vielstimmige Fuge
   kontrapunktischer Koexistenz. Getragen von drei Grundoperationen: Interferenz,

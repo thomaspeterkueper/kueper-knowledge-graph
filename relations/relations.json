@@ -104,7 +104,7 @@
     "quelle": "CON:L1:zeitform",
     "relation": "part_of",
     "ziel": "MOD:L2:contracomology-core",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "Grundeinheit im Kernmodell.",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -114,7 +114,7 @@
     "quelle": "CON:L1:avi-punkt",
     "relation": "part_of",
     "ziel": "CON:L1:oem",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "Der AVI-Punkt ist der Übergang, den ein OEM durchläuft.",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -124,7 +124,7 @@
     "quelle": "CON:L1:oem",
     "relation": "part_of",
     "ziel": "MOD:L2:contracomology-core",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -134,7 +134,7 @@
     "quelle": "CON:L1:ma-u",
     "relation": "part_of",
     "ziel": "MOD:L2:contracomology-core",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "Gleichrangig mit Ma'Ta'U.",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -144,7 +144,7 @@
     "quelle": "CON:L1:ma-ta-u",
     "relation": "part_of",
     "ziel": "MOD:L2:contracomology-core",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "Gleichrangig mit Ma'U.",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -154,7 +154,7 @@
     "quelle": "MOD:L2:paradigmentriade",
     "relation": "part_of",
     "ziel": "MOD:L2:contracomology-core",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "Sammelknoten der Paradigmen.",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -164,7 +164,7 @@
     "quelle": "MOD:L2:paradigma-bach",
     "relation": "part_of",
     "ziel": "MOD:L2:paradigmentriade",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -174,7 +174,7 @@
     "quelle": "MOD:L2:paradigma-chopin",
     "relation": "part_of",
     "ziel": "MOD:L2:paradigmentriade",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -184,7 +184,7 @@
     "quelle": "MOD:L2:paradigma-wagner",
     "relation": "part_of",
     "ziel": "MOD:L2:paradigmentriade",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "",
     "erstellt": "2026-07-03",
     "kurator": "T.P.K."
@@ -194,7 +194,7 @@
     "quelle": "CON:L1:avi-transformation",
     "relation": "part_of",
     "ziel": "CON:L1:oem",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "Der vollständige Bogen, den ein OEM durchläuft.",
     "erstellt": "2026-07-15",
     "kurator": "T.P.K."
@@ -204,7 +204,7 @@
     "quelle": "CON:L1:phasenuebergang",
     "relation": "part_of",
     "ziel": "CON:L1:avi-transformation",
-    "status": "[W]",
+    "status": "[R]",
     "kommentar": "Der Umschlag innerhalb des AVI-Bogens.",
     "erstellt": "2026-07-15",
     "kurator": "T.P.K."

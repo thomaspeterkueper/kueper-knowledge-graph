@@ -3,7 +3,7 @@ typ: Concept
 layer: L1
 name: Phasenübergang
 domäne: KON
-status: '[W]'
+status: '[R]'
 beschreibung: >
   Die Wirkung eines AVI-Punktes: der Übergang, bei dem eine Zeitarchitektur ihren
   qualitativen Charakter nicht graduell, sondern sprunghaft ändert. Kein Zustand,
