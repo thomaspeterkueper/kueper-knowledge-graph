@@ -83,3 +83,7 @@ dauerhaft fest und wirkt damit über den KG hinaus.
 Sobald die Richtung feststeht, ist die Umsetzung mechanisch. Sinnvoll wäre, im selben
 Zug einen Validierungslauf zu etablieren, damit dieser Zustand nicht erneut unbemerkt
 entsteht.
+
+
+---
+_Resolved 2026-07-19: Option B umgesetzt - Kurator hat sich fuer deutsche Feldnamen als kanonisch fuer die Entity-Autorenschicht entschieden. Nachtraeglich verifiziert: KG-0006s camelCase-Mandat gilt nur fuer KXF-JSON-Exporte (Interop-Schicht), nicht fuer entities/*.yaml (reine KG-interne Autorenschicht, von keinem Konsumenten-Repo direkt gelesen) - meine urspruengliche Empfehlung A stand auf dieser falschen Praemisse. `definition` -> `beschreibung` uebernommen wie vom Kurator bestaetigt. 38/39 Dateien umbenannt (index.yaml ausgenommen, in README dokumentiert). Schema um layer/function/relations/derived_from/enables ergaenzt (bereits genutzt, bisher undokumentiert) sowie typ-Enum um "Model" (entities/models/* nutzte es seit vor dieser Session). 37/38 Entitaeten validieren jetzt vollstaendig. Verbleibend: entities/concepts/evolution.yaml fehlt beschreibung - eigenstaendige, vorbestehende Inhaltsluecke, nicht erfunden._
