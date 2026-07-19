@@ -3,8 +3,8 @@
   "name": "KUEPER Knowledge Domains Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1.1",
-  "updated": "2026-07-10",
+  "version": "0.1.2",
+  "updated": "2026-07-19",
   "sourceDocuments": [
     "KG-ARC-0001-2026-DE",
     "KG-0002-KNOWLEDGE-DOMAINS-CANONICAL",
@@ -12,38 +12,340 @@
     "KG-0012-PATH-CONSISTENCY"
   ],
   "levelScale": [
-    { "id": "N1", "name": "Orientierung", "description": "Grundbegriffe, erste Einordnung und Lesefaehigkeit fuer Einfuehrungstexte." },
-    { "id": "N2", "name": "Arbeitsfaehiges Grundverstaendnis", "description": "Ausreichend zum Lesen anspruchsvoller OTA-Dokumente und zum Anschluss an SSF-Lernmodule." },
-    { "id": "N3", "name": "Vertiefte Anwendung", "description": "Transfer, Dateninterpretation, Modellarbeit und fachnahe Uebungen." },
-    { "id": "N4", "name": "Fachnahe Expertise", "description": "Analyse, Kritik, eigene Modellbildung und kuratorische Integration." }
+    {
+      "id": "N1",
+      "name": "Orientierung",
+      "description": "Grundbegriffe, erste Einordnung und Lesefaehigkeit fuer Einfuehrungstexte."
+    },
+    {
+      "id": "N2",
+      "name": "Arbeitsfaehiges Grundverstaendnis",
+      "description": "Ausreichend zum Lesen anspruchsvoller OTA-Dokumente und zum Anschluss an SSF-Lernmodule."
+    },
+    {
+      "id": "N3",
+      "name": "Vertiefte Anwendung",
+      "description": "Transfer, Dateninterpretation, Modellarbeit und fachnahe Uebungen."
+    },
+    {
+      "id": "N4",
+      "name": "Fachnahe Expertise",
+      "description": "Analyse, Kritik, eigene Modellbildung und kuratorische Integration."
+    }
   ],
   "records": [
-    { "id": "KD:GEO:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO", "level": "N1", "title": "Geowissenschaften - Orientierung", "parent": null, "description": "Orientierung in geologischen und planetologischen Grundbegriffen, Materialien, Prozessen und Skalen.", "aliases": ["GEO N1", "Geoscience N1", "Geowissenschaften N1"] },
-    { "id": "KD:GEO-SEISM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-SEISM", "level": "N2", "title": "Seismologie - arbeitsfaehiges Grundverstaendnis", "parent": "KD:GEO:N1", "description": "Grundlagen seismischer Wellen, Messdaten und Interpretationslogik, ausreichend zum Lesen planetologischer OTA-Dokumente.", "aliases": ["GEO-SEISM N2", "Seismology N2", "Planetary seismology N2", "Mars-Seismik N2"] },
-    { "id": "KD:GEO-PETRO:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-PETRO", "level": "N2", "title": "Petrologie - arbeitsfaehiges Grundverstaendnis", "parent": "KD:GEO:N1", "description": "Grundlagen von Gesteinsbildung, Mineralogie, Schmelzprozessen und petrologischer Interpretation.", "aliases": ["GEO-PETRO N2", "Petrology N2", "Mineralogy N2", "Gesteinskunde N2"] },
-    { "id": "KD:GEO-PLANET:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "GEO-PLANET", "level": "N1", "title": "Planetologie und planetare Struktur - Orientierung", "parent": "KD:GEO:N1", "description": "Grundorientierung zu planetaren Koerpern, innerer Struktur, Kruste, Mantel, Kern und geologischer Entwicklung.", "aliases": ["GEO-PLANET N1", "Planetology N1", "Planetary interiors N1"] },
-    { "id": "KD:MATH:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH", "level": "N1", "title": "Mathematik - Orientierung", "parent": null, "description": "Orientierung in mathematischen Grundbegriffen, Symbolsprache, Funktionen, Wahrscheinlichkeiten und Modelllogik.", "aliases": ["MATH N1", "Mathematics N1", "Mathematik N1"] },
-    { "id": "KD:MATH-STAT:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH-STAT", "level": "N2", "title": "Statistik - arbeitsfaehiges Grundverstaendnis", "parent": "KD:MATH:N1", "description": "Grundlagen des Beschreibens, Vergleichens und vorsichtigen Interpretierens von Daten, einschliesslich Verteilungen, Lage- und Streuungsmasse.", "aliases": ["MATH-STAT N2", "Statistics N2", "Statistik N2"] },
-    { "id": "KD:MATH-BAYES:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH-BAYES", "level": "N2", "title": "Bayes'sche Inferenz - arbeitsfaehiges Grundverstaendnis", "parent": "KD:MATH:N1", "description": "Wahrscheinlichkeitstheoretische Aktualisierung von Annahmen anhand von Evidenz, inklusive Priors, Likelihood und Posterior-Logik.", "aliases": ["MATH-BAYES N2", "Bayesian inference N2", "Bayes-Inferenz N2"] },
-    { "id": "KD:MATH-DIFF:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "MATH-DIFF", "level": "N2", "title": "Differentialgleichungen - arbeitsfaehiges Grundverstaendnis", "parent": "KD:MATH:N1", "description": "Grundlagen von Differentialgleichungen als Beschreibung dynamischer Systeme, Felder, Veraenderungsraten und Modellverhalten.", "aliases": ["MATH-DIFF N2", "Differential equations N2", "DGL N2"] },
-    { "id": "KD:PHYS:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS", "level": "N1", "title": "Physik - Orientierung", "parent": null, "description": "Orientierung in physikalischen Grundbegriffen wie Energie, Kraft, Feld, Welle, Materie und Messung.", "aliases": ["PHYS N1", "Physics N1", "Physik N1"] },
-    { "id": "KD:PHYS-THERM:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-THERM", "level": "N1", "title": "Thermodynamik - Orientierung", "parent": "KD:PHYS:N1", "description": "Orientierung zu Temperatur, Waerme, Energieuebertragung, Zustaenden und thermodynamischen Grundprozessen.", "aliases": ["PHYS-THERM N1", "Thermodynamics N1", "Thermodynamik N1"] },
-    { "id": "KD:PHYS-QM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-QM", "level": "N2", "title": "Quantenmechanik - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen quantenmechanischer Konzepte, Zustaende, Operatoren, Messung und Modellgrenzen.", "aliases": ["PHYS-QM N2", "Quantum mechanics N2", "Quantenphysik N2"] },
-    { "id": "KD:PHYS-EM:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHYS-EM", "level": "N2", "title": "Elektromagnetismus - arbeitsfaehiges Grundverstaendnis", "parent": "KD:PHYS:N1", "description": "Grundlagen elektrischer und magnetischer Felder, elektromagnetischer Wechselwirkung und feldphysikalischer Modellierung.", "aliases": ["PHYS-EM N2", "Electromagnetism N2", "Magnetfelder N2"] },
-    { "id": "KD:PHIL-SCI:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "PHIL-SCI", "level": "N2", "title": "Wissenschaftstheorie - arbeitsfaehiges Grundverstaendnis", "parent": null, "description": "Grundlagen wissenschaftlicher Methode, Falsifizierbarkeit, Evidenz, Modellgrenzen, Hypothesenstatus und epistemischer Markierung.", "aliases": ["PHIL-SCI N2", "Philosophy of science N2", "Wissenschaftstheorie N2"] },
-    { "id": "KD:KON:N1", "type": "KnowledgeDomain", "layer": "L1", "code": "KON", "level": "N1", "title": "Kontrakomologie - Orientierung", "parent": null, "description": "Orientierung im vom Kurator gesetzten Wissenschaftszweig Contracomology/Kontrakomologie. Werk-Theorie; kein empirischer Befund und nicht peer-reviewed.", "aliases": ["KON N1", "Contracomology N1", "Kontrakomologie N1"] },
-    { "id": "KD:LANG-EN:N2", "type": "KnowledgeDomain", "layer": "L1", "code": "LANG-EN", "level": "N2", "title": "Englisch fuer wissenschaftliche Primaerliteratur", "parent": null, "description": "Lesekompetenz fuer englischsprachige wissenschaftliche Abstracts, Paper, Datentabellen und Fachterminologie.", "aliases": ["LANG-EN N2", "Scientific English N2", "Englisch Primaerliteratur N2"] }
+    {
+      "id": "KD:GEO:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "GEO",
+      "level": "N1",
+      "title": "Geowissenschaften - Orientierung",
+      "parent": null,
+      "description": "Orientierung in geologischen und planetologischen Grundbegriffen, Materialien, Prozessen und Skalen.",
+      "aliases": [
+        "GEO N1",
+        "Geoscience N1",
+        "Geowissenschaften N1"
+      ]
+    },
+    {
+      "id": "KD:GEO-SEISM:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "GEO-SEISM",
+      "level": "N2",
+      "title": "Seismologie - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:GEO:N1",
+      "description": "Grundlagen seismischer Wellen, Messdaten und Interpretationslogik, ausreichend zum Lesen planetologischer OTA-Dokumente.",
+      "aliases": [
+        "GEO-SEISM N2",
+        "Seismology N2",
+        "Planetary seismology N2",
+        "Mars-Seismik N2"
+      ]
+    },
+    {
+      "id": "KD:GEO-PETRO:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "GEO-PETRO",
+      "level": "N2",
+      "title": "Petrologie - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:GEO:N1",
+      "description": "Grundlagen von Gesteinsbildung, Mineralogie, Schmelzprozessen und petrologischer Interpretation.",
+      "aliases": [
+        "GEO-PETRO N2",
+        "Petrology N2",
+        "Mineralogy N2",
+        "Gesteinskunde N2"
+      ]
+    },
+    {
+      "id": "KD:GEO-PLANET:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "GEO-PLANET",
+      "level": "N1",
+      "title": "Planetologie und planetare Struktur - Orientierung",
+      "parent": "KD:GEO:N1",
+      "description": "Grundorientierung zu planetaren Koerpern, innerer Struktur, Kruste, Mantel, Kern und geologischer Entwicklung.",
+      "aliases": [
+        "GEO-PLANET N1",
+        "Planetology N1",
+        "Planetary interiors N1"
+      ]
+    },
+    {
+      "id": "KD:MATH:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "MATH",
+      "level": "N1",
+      "title": "Mathematik - Orientierung",
+      "parent": null,
+      "description": "Orientierung in mathematischen Grundbegriffen, Symbolsprache, Funktionen, Wahrscheinlichkeiten und Modelllogik.",
+      "aliases": [
+        "MATH N1",
+        "Mathematics N1",
+        "Mathematik N1"
+      ]
+    },
+    {
+      "id": "KD:MATH-STAT:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "MATH-STAT",
+      "level": "N2",
+      "title": "Statistik - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:MATH:N1",
+      "description": "Grundlagen des Beschreibens, Vergleichens und vorsichtigen Interpretierens von Daten, einschliesslich Verteilungen, Lage- und Streuungsmasse.",
+      "aliases": [
+        "MATH-STAT N2",
+        "Statistics N2",
+        "Statistik N2"
+      ]
+    },
+    {
+      "id": "KD:MATH-BAYES:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "MATH-BAYES",
+      "level": "N2",
+      "title": "Bayes'sche Inferenz - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:MATH:N1",
+      "description": "Wahrscheinlichkeitstheoretische Aktualisierung von Annahmen anhand von Evidenz, inklusive Priors, Likelihood und Posterior-Logik.",
+      "aliases": [
+        "MATH-BAYES N2",
+        "Bayesian inference N2",
+        "Bayes-Inferenz N2"
+      ]
+    },
+    {
+      "id": "KD:MATH-DIFF:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "MATH-DIFF",
+      "level": "N2",
+      "title": "Differentialgleichungen - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:MATH:N1",
+      "description": "Grundlagen von Differentialgleichungen als Beschreibung dynamischer Systeme, Felder, Veraenderungsraten und Modellverhalten.",
+      "aliases": [
+        "MATH-DIFF N2",
+        "Differential equations N2",
+        "DGL N2"
+      ]
+    },
+    {
+      "id": "KD:PHYS:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "PHYS",
+      "level": "N1",
+      "title": "Physik - Orientierung",
+      "parent": null,
+      "description": "Orientierung in physikalischen Grundbegriffen wie Energie, Kraft, Feld, Welle, Materie und Messung.",
+      "aliases": [
+        "PHYS N1",
+        "Physics N1",
+        "Physik N1"
+      ]
+    },
+    {
+      "id": "KD:PHYS-THERM:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "PHYS-THERM",
+      "level": "N1",
+      "title": "Thermodynamik - Orientierung",
+      "parent": "KD:PHYS:N1",
+      "description": "Orientierung zu Temperatur, Waerme, Energieuebertragung, Zustaenden und thermodynamischen Grundprozessen.",
+      "aliases": [
+        "PHYS-THERM N1",
+        "Thermodynamics N1",
+        "Thermodynamik N1"
+      ]
+    },
+    {
+      "id": "KD:PHYS-QM:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "PHYS-QM",
+      "level": "N2",
+      "title": "Quantenmechanik - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:PHYS:N1",
+      "description": "Grundlagen quantenmechanischer Konzepte, Zustaende, Operatoren, Messung und Modellgrenzen.",
+      "aliases": [
+        "PHYS-QM N2",
+        "Quantum mechanics N2",
+        "Quantenphysik N2"
+      ]
+    },
+    {
+      "id": "KD:PHYS-EM:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "PHYS-EM",
+      "level": "N2",
+      "title": "Elektromagnetismus - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:PHYS:N1",
+      "description": "Grundlagen elektrischer und magnetischer Felder, elektromagnetischer Wechselwirkung und feldphysikalischer Modellierung.",
+      "aliases": [
+        "PHYS-EM N2",
+        "Electromagnetism N2",
+        "Magnetfelder N2"
+      ]
+    },
+    {
+      "id": "KD:PHIL-SCI:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "PHIL-SCI",
+      "level": "N2",
+      "title": "Wissenschaftstheorie - arbeitsfaehiges Grundverstaendnis",
+      "parent": null,
+      "description": "Grundlagen wissenschaftlicher Methode, Falsifizierbarkeit, Evidenz, Modellgrenzen, Hypothesenstatus und epistemischer Markierung.",
+      "aliases": [
+        "PHIL-SCI N2",
+        "Philosophy of science N2",
+        "Wissenschaftstheorie N2"
+      ]
+    },
+    {
+      "id": "KD:KON:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "KON",
+      "level": "N1",
+      "title": "Kontrakomologie - Orientierung",
+      "parent": null,
+      "description": "Orientierung im vom Kurator gesetzten Wissenschaftszweig Contracomology/Kontrakomologie. Werk-Theorie; kein empirischer Befund und nicht peer-reviewed.",
+      "aliases": [
+        "KON N1",
+        "Contracomology N1",
+        "Kontrakomologie N1"
+      ]
+    },
+    {
+      "id": "KD:LANG-EN:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "LANG-EN",
+      "level": "N2",
+      "title": "Englisch fuer wissenschaftliche Primaerliteratur",
+      "parent": null,
+      "description": "Lesekompetenz fuer englischsprachige wissenschaftliche Abstracts, Paper, Datentabellen und Fachterminologie.",
+      "aliases": [
+        "LANG-EN N2",
+        "Scientific English N2",
+        "Englisch Primaerliteratur N2"
+      ]
+    },
+    {
+      "id": "KD:BIO:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "BIO",
+      "level": "N1",
+      "title": "Biologie - Orientierung",
+      "parent": null,
+      "description": "Orientierung in grundlegenden biologischen Begriffen, Zellbiologie, Immunsystem-Grundlagen und Oekosystem-Denken, ausreichend als Basis fuer vertiefende N2-Domaenen.",
+      "aliases": [
+        "BIO N1",
+        "Biology N1"
+      ]
+    },
+    {
+      "id": "KD:BIO-MICROBIOME:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "BIO-MICROBIOME",
+      "level": "N2",
+      "title": "Mikrobiom und Dysbiose - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:BIO:N1",
+      "description": "Grundlagen der Mikrobiom-Oekologie: 16S-rRNA-basierte Taxonomie, Alpha-/Beta-Diversitaetsmetriken, Dysbiose als Krankheitssignatur, kurzkettige Fettsaeuren und Darmbarrierefunktion, gnotobiotische Modellsysteme. Ausreichend zum Lesen mikrobiomzentrierter OTA-Dokumente.",
+      "aliases": [
+        "BIO-MICROBIOME N2",
+        "Microbiome N2",
+        "Dysbiose N2"
+      ]
+    },
+    {
+      "id": "KD:BIO-NEUROIMMUN:N2",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "BIO-NEUROIMMUN",
+      "level": "N2",
+      "title": "Neuroimmunologie - arbeitsfaehiges Grundverstaendnis",
+      "parent": "KD:BIO:N1",
+      "description": "Grundlagen der Neuroimmunologie: Mikroglia-Biologie und Aktivierungsstatus, Blut-Hirn-Schranke und Translokationswege, perivaskulaere Immunzellen, fruehe Proteinopathie-Marker (Tau-Phosphorylierung, Alpha-Synuclein-Oligomere). Baut auf KD:BIO-MICROBIOME:N2 auf (Darm-Hirn-Achse).",
+      "aliases": [
+        "BIO-NEUROIMMUN N2",
+        "Neuroimmunology N2",
+        "Mikroglia N2"
+      ]
+    }
   ],
   "legacyMappings": [
-    { "legacy": "KNOW:GEO-SEISM + N2", "canonical": "KD:GEO-SEISM:N2" },
-    { "legacy": "KNOW:GEO-PETRO + N2", "canonical": "KD:GEO-PETRO:N2" },
-    { "legacy": "KNOW:GEO-PLANET + N1", "canonical": "KD:GEO-PLANET:N1" },
-    { "legacy": "KNOW:MATH-BAYES + N2", "canonical": "KD:MATH-BAYES:N2" },
-    { "legacy": "KNOW:MATH-DIFF + N2", "canonical": "KD:MATH-DIFF:N2" },
-    { "legacy": "KNOW:PHYS-QM + N2", "canonical": "KD:PHYS-QM:N2" },
-    { "legacy": "KNOW:PHYS-EM + N2", "canonical": "KD:PHYS-EM:N2" },
-    { "legacy": "KNOW:PHIL-SCI + N2", "canonical": "KD:PHIL-SCI:N2" },
-    { "legacy": "KNOW:KON + N1", "canonical": "KD:KON:N1" },
-    { "legacy": "KNOW:LANG-EN + N2", "canonical": "KD:LANG-EN:N2" }
+    {
+      "legacy": "KNOW:GEO-SEISM + N2",
+      "canonical": "KD:GEO-SEISM:N2"
+    },
+    {
+      "legacy": "KNOW:GEO-PETRO + N2",
+      "canonical": "KD:GEO-PETRO:N2"
+    },
+    {
+      "legacy": "KNOW:GEO-PLANET + N1",
+      "canonical": "KD:GEO-PLANET:N1"
+    },
+    {
+      "legacy": "KNOW:MATH-BAYES + N2",
+      "canonical": "KD:MATH-BAYES:N2"
+    },
+    {
+      "legacy": "KNOW:MATH-DIFF + N2",
+      "canonical": "KD:MATH-DIFF:N2"
+    },
+    {
+      "legacy": "KNOW:PHYS-QM + N2",
+      "canonical": "KD:PHYS-QM:N2"
+    },
+    {
+      "legacy": "KNOW:PHYS-EM + N2",
+      "canonical": "KD:PHYS-EM:N2"
+    },
+    {
+      "legacy": "KNOW:PHIL-SCI + N2",
+      "canonical": "KD:PHIL-SCI:N2"
+    },
+    {
+      "legacy": "KNOW:KON + N1",
+      "canonical": "KD:KON:N1"
+    },
+    {
+      "legacy": "KNOW:LANG-EN + N2",
+      "canonical": "KD:LANG-EN:N2"
+    }
   ]
 }

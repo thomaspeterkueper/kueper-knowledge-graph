@@ -5,21 +5,134 @@
   "status": "draft_productive",
   "version": "0.1.1",
   "updated": "2026-07-10",
-  "sourceExports": ["exports/kxf-learning-paths-0.1.json", "exports/kxf-learning-modules-0.1.json"],
+  "sourceExports": [
+    "exports/kxf-learning-paths-0.1.json",
+    "exports/kxf-learning-modules-0.1.json"
+  ],
   "entityType": "Path",
   "records": [
-    { "id": "PATH:SSF:AST-PLANET-STRUCTURE-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "learning_sequence", "status": "planned", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:EAR-SEISMOLOGY-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "document_preparation", "status": "planned", "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:EAR-PETROLOGY-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "document_preparation", "status": "planned", "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:MAT-BAYES-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "document_preparation", "status": "planned", "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:PHY-QM-MODEL-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "document_preparation", "status": "planned", "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:MAT-DIFFERENTIAL-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "document_preparation", "status": "planned", "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:PHY-FIELD-MODELS-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "document_preparation", "status": "planned", "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:MAT-FOUNDATIONS-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "learning_sequence", "status": "planned", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:SSF:MAT-STATISTICS-0001", "type": "Path", "curatorSystem": "SYS:KUEPER:ssf", "kind": "learning_sequence", "status": "planned", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:OTA:OTA-SCI-0083-2026-DE:READ", "type": "Path", "curatorSystem": "SYS:KUEPER:ota", "kind": "document_read", "status": "planned", "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:OTA:OTA-FND-0028-2026-DE:READ", "type": "Path", "curatorSystem": "SYS:KUEPER:ota", "kind": "document_read", "status": "planned", "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE", "sourceExport": "exports/kxf-learning-paths-0.1.json" },
-    { "id": "PATH:NOXIA:GEN-MARS:SCIENCE-FOUNDATION", "type": "Path", "curatorSystem": "SYS:KUEPER:noxia", "kind": "application_learning_sequence", "status": "planned", "sourceExport": "exports/kxf-learning-paths-0.1.json" }
+    {
+      "id": "PATH:SSF:AST-PLANET-STRUCTURE-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "learning_sequence",
+      "status": "planned",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:EAR-SEISMOLOGY-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "document_preparation",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:EAR-PETROLOGY-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "document_preparation",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:MAT-BAYES-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "document_preparation",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:PHY-QM-MODEL-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "document_preparation",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:MAT-DIFFERENTIAL-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "document_preparation",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:PHY-FIELD-MODELS-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "document_preparation",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:MAT-FOUNDATIONS-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "learning_sequence",
+      "status": "planned",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:MAT-STATISTICS-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "learning_sequence",
+      "status": "planned",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ota",
+      "kind": "document_read",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:OTA:OTA-FND-0028-2026-DE:READ",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ota",
+      "kind": "document_read",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:NOXIA:GEN-MARS:SCIENCE-FOUNDATION",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:noxia",
+      "kind": "application_learning_sequence",
+      "status": "planned",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:OTA:OTA-SCI-0084-2163-EN:READ",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ota",
+      "kind": "document_read",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-SCI-0084-2163-EN",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:OTA:OTA-SCI-0085-2164-EN:READ",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ota",
+      "kind": "document_read",
+      "status": "planned",
+      "targetDocument": "DOC:OTA:OTA-SCI-0085-2164-EN",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    }
   ],
   "validation": {
     "status": "warnings",

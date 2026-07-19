@@ -2668,6 +2668,15 @@
       "to": "KD:PHYS-THERM:N1",
       "status": "draft_productive",
       "source": "KG-REQ-20260712-import-ota-domain-prerequisites"
+    },
+    {
+      "id": "REL:KD-BIO-NEUROIMMUN-N2:REQUIRES:KD-BIO-MICROBIOME-N2",
+      "type": "Relation",
+      "from": "KD:BIO-NEUROIMMUN:N2",
+      "relation": "REQUIRES",
+      "to": "KD:BIO-MICROBIOME:N2",
+      "status": "draft_productive",
+      "source": "REQ:L3:000002"
     }
   ]
 }

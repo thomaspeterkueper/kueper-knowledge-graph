@@ -2400,6 +2400,22 @@
       "exports": [
         "exports/relation-registry-0.1.json"
       ]
+    },
+    {
+      "id": "DOC:OTA:OTA-SCI-0084-2163-EN",
+      "type": "Document",
+      "status": "registered",
+      "documentId": "OTA-SCI-0084-2163-EN",
+      "system": "SYS:OTA:overtimearchive",
+      "source": "REQ:L3:000002"
+    },
+    {
+      "id": "DOC:OTA:OTA-SCI-0085-2164-EN",
+      "type": "Document",
+      "status": "registered",
+      "documentId": "OTA-SCI-0085-2164-EN",
+      "system": "SYS:OTA:overtimearchive",
+      "source": "REQ:L3:000002"
     }
   ]
 }
