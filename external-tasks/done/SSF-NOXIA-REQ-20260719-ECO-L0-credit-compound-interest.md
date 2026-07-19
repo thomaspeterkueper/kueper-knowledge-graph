@@ -133,3 +133,7 @@ Der Request soll den fachlich sinnvollen Inhalt erhalten, aber die Ownership kor
 ## Priorität
 
 **High** — ohne kanonische Objekte bleibt die NOXIA↔SSF-Integration für wirtschaftliche Grundlagen inkonsistent und NOXIA kann die derzeitigen Fake-IDs nicht sauber ersetzen.
+
+
+---
+_Resolved 2026-07-19: ECO-L0-000001 (Kredit) und ECO-L0-000002 (Zins/Zinseszins) registriert. Abhaengigkeitskette modelliert, MAT-L0-000001 referenziert, status planned (Content-Autorenschaft liegt bei SSF). legacyId erhaelt NOXIA-Platzhalter-IDs zur Rueckverfolgbarkeit. Alle 6 Akzeptanzkriterien erfuellt._
