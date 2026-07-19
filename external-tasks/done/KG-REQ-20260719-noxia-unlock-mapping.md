@@ -82,3 +82,7 @@ Spieler schließt SSF-Modul ab
 - `UNL:NOX:bank-credit` Gate (Bank-Kredit-Tab)
 - `UNL:NOX:SENSOR:SPECTRAL` Gate (Scanner-Detailansicht)
 - `UNL:NOX:NAV:ORBITAL` Gate (erweiterte Reiserouten)
+
+
+---
+_Resolved 2026-07-19: unlocks-Feld auf allen 22 spezifizierten Modulen ergaenzt, exakt nach Vorgabe. Vorab gegen NOXIAs echten Konsum-Code verifiziert (lib/knowledge/remote.ts liest payload.unlocks, nicht noxiaGrants). noxiaGrants unangetastet gelassen - wirkt jetzt wie totes Feld, separate Aufraeum-Entscheidung noetig._
