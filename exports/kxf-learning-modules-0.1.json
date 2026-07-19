@@ -3,7 +3,7 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "created": "2026-07-02",
   "modified": "2026-07-10T12:00:00+02:00",
   "sourceDocuments": [
@@ -1216,6 +1216,121 @@
           "de": "Elektromagnetismus und Feldmodelle",
           "en": "Electromagnetism and Field Models"
         }
+      },
+      {
+        "id": "ECO-L0-000001",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Was ist ein Kredit?",
+          "en": "What Is a Loan?"
+        },
+        "meta": {
+          "title": "Was ist ein Kredit?",
+          "subject": "ECO",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Was ist ein Kredit — und warum gibt jemand heute etwas, das erst später zurückkommt?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Was ist ein Kredit — und warum gibt jemand heute etwas, das erst später zurückkommt?",
+            "L1": null,
+            "L2": null
+          },
+          "scope": [
+            "Kreditgeber und Kreditnehmer",
+            "Kapitalüberlassung über Zeit",
+            "Rückzahlung",
+            "Zins als Preis für zeitweise Kapitalüberlassung und Risiko",
+            "Laufzeit",
+            "Tilgung",
+            "Unterschied Kreditbetrag/Zins/Gesamtrückzahlung",
+            "Abgrenzung zu Einkommen, Geschenk und Eigenkapital"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "MAT-L0-000001"
+          ],
+          "moduleUnlocks": [
+            "ECO-L0-000002"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:ECO-L0-0001",
+        "createdFromRequest": "SSF-NOXIA-REQ-20260719-ECO-L0"
+      },
+      {
+        "id": "ECO-L0-000002",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Zins und Zinseszins",
+          "en": "Interest and Compound Interest"
+        },
+        "meta": {
+          "title": "Zins und Zinseszins",
+          "subject": "ECO",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum wächst ein Betrag schneller, wenn auch die Zinsen wieder verzinst werden?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum wächst ein Betrag schneller, wenn auch die Zinsen wieder verzinst werden?",
+            "L1": null,
+            "L2": null
+          },
+          "scope": [
+            "einfacher Zins",
+            "Zinsperiode",
+            "Zinssatz",
+            "Zinseszins",
+            "exponentielles Wachstum als Folge wiederholter Verzinsung",
+            "Unterschied lineare vs. exponentielle Entwicklung",
+            "Verbindung zu Sparen und Kreditkosten",
+            "Beispiele mit kleinen, nachvollziehbaren Zahlen"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "ECO-L0-000001",
+            "MAT-L0-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:ECO-L0-0002",
+        "createdFromRequest": "SSF-NOXIA-REQ-20260719-ECO-L0"
       }
     ]
   },
