@@ -40,3 +40,10 @@ und Einarbeitung zweier Korrekturen aus der geklärten AVI-Herkunft. Entbindet d
 - Freigabe für die [W] → [R]-Anhebung (Abschnitt 2) inkl. Zeitpunkt.
 - Freigabe für die Archiv-external-task (Abschnitt 6, Glossar-Korrektur).
 - Hinweis: Entity-YAMLs nutzen `domain/definition/created/curator`, `entity.schema.json` verlangt `domäne/beschreibung/erstellt/kurator` — bestehende Feldnamen-Inkonsistenz, separat zu klären.
+
+
+---
+_Resolved 2026-07-19: Beide ausstehenden Punkte durch Kurator entschieden.
+(1) [W]->[R]: alle 24 Datensaetze (13 KON-Entitaeten + 11 Relationen) angehoben, streng auf domaene KON begrenzt (Commit 87dd1cf) - die separaten OMNI-Entitaeten (Omnizedenz-System, anderer Auftrag) blieben unberuehrt.
+(2) Archiv-Glossar-Korrektur: external-task an OTA gestellt (KG-REQ-20260719-avi-akronym-korrektur). Beim Nachpruefen: die im Request zitierte Phrase existierte im OTA-Repo nicht - tatsaechlicher, groesserer Befund ist "Adaptive Vakuum-Interaktion" in 9 Dokumenten, inkl. eines bereits dokumentierten frueheren Falsch-zu-falsch-Korrekturversuchs. An OTA zur redaktionellen Entscheidung uebergeben.
+Feldnamen-Hinweis aus dem urspruenglichen Request ist gegenstandslos - durch KG-REQ-20260718-005 (Option B) laengst geloest._
