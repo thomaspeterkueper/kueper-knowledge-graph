@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Leben
 name_en: Life
-domain: BIO
+domäne: BIO
 status: '[R]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Leben bezeichnet organisierte Systeme, die Informationen speichern, Energie
   nutzen und sich veraendern koennen.
 function: >
@@ -27,5 +27,5 @@ relations:
     target: CON:L1:evolution
   - relation: enables
     target: CON:L0:bewusstsein
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

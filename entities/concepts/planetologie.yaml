@@ -2,9 +2,9 @@ entity_id: CON:L1:planetologie
 typ: Concept
 layer: L1
 name: Planetologie
-domain: AST
+domäne: AST
 status: '[R]'
-definition: Planetologie untersucht Aufbau, Entwicklung und Eigenschaften von Planeten, Monden und Zwergplaneten.
+beschreibung: Planetologie untersucht Aufbau, Entwicklung und Eigenschaften von Planeten, Monden und Zwergplaneten.
 derived_from:
   - CON:L0:materie
   - CON:L0:energie
@@ -13,5 +13,5 @@ enables:
   - CON:L1:atmosphaerenphysik
   - CON:L1:geologie
   - CON:L1:habitabilitaet
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

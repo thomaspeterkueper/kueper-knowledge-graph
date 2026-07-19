@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Energie
 name_en: Energy
-domain: PHY
+domäne: PHY
 status: '[R]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Energie beschreibt die Faehigkeit eines Systems, Veraenderungen hervorzubringen.
 function: >
   Energie verbindet Physik, Technik, Biologie und Raumfahrt.
@@ -24,5 +24,5 @@ relations:
     target: CON:L1:bewegung
   - relation: enables
     target: CON:L0:leben
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

@@ -2,9 +2,9 @@ entity_id: CON:L0:zeit-these
 typ: Concept
 layer: L0
 name: "Grundthese – Musik erzeugt Zeit"
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Grundaxiom der Kontrakomologie. Zeit ist nicht der Rahmen, in dem Musik (und
   Realität) stattfindet – Musik erzeugt Zeit. Realität wird als vielstimmige Fuge
   gelesen, in der widersprüchliche Wahrheiten gleichzeitig gelten, ohne sich
@@ -12,5 +12,5 @@ definition: >
 enables:
   - MOD:L2:contracomology-core
   - CON:L1:zeitform
-created: '2026-07-03'
-curator: T.P.K.
+erstellt: '2026-07-03'
+kurator: T.P.K.

@@ -2,14 +2,14 @@ entity_id: CON:L0:avi
 typ: Concept
 layer: L0
 name: "∅ Avi – schöpferische Leere"
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Wurzelsymbol der Omnizedenz-Symbolsprache: der Punkt, an dem alles möglich ist,
   an dem alle Wege offenstehen – die schöpferische Leere vor jeder Festlegung. Aus
   ∅ Avi leiten sich der musikalisch-künstlerische AVI-Punkt und das physikalisch-
   kosmologische Modell AVI (Axiomatisches Vakuum-Integral) ab.
 enables:
   - CON:L1:avi-punkt
-created: '2026-07-15'
-curator: T.P.K.
+erstellt: '2026-07-15'
+kurator: T.P.K.

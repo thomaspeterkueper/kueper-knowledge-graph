@@ -2,14 +2,14 @@ entity_id: CON:L1:avi-transformation
 typ: Concept
 layer: L1
 name: AVI-Transformation
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Der vollständige Bogen eines OEM: von einer Form der Offenheit durch AVI-Punkt und
   Phasenübergang hindurch in eine neue, veränderte Offenheit. Umfasst den ganzen
   Prozess, nicht den einzelnen Moment. Auch als AVI-Evolution bezeichnet.
 derived_from:
   - CON:L1:oem
   - CON:L1:phasenuebergang
-created: '2026-07-15'
-curator: T.P.K.
+erstellt: '2026-07-15'
+kurator: T.P.K.

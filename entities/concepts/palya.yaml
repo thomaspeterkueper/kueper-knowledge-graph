@@ -2,14 +2,14 @@ entity_id: CON:L2:palya
 typ: Concept
 layer: L2
 name: "✅ Palya"
-domain: OMNI
+domäne: OMNI
 status: '[W]'
-definition: >
+beschreibung: >
   Stimmigkeit, Gedeihen, Wohlbefinden. Kernsymbol (Stufe I, Kategorie Ordnung
   & Integration): prüft multidimensionale Kohärenz einer Handlung – mit dem
   Kontext, den Beteiligten, dem eigenen Empfinden, dem längeren Zeithorizont.
   Fragt nicht "Ist es erlaubt?", sondern "Stimmt es?".
 derived_from:
   - CON:L0:omnizedenz
-created: '2026-07-19'
-curator: T.P.K.
+erstellt: '2026-07-19'
+kurator: T.P.K.

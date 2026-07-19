@@ -2,9 +2,9 @@ entity_id: CON:L1:chrona
 typ: Concept
 layer: L1
 name: "⧛ Chrona"
-domain: OMNI
+domäne: OMNI
 status: '[W]'
-definition: >
+beschreibung: >
   Zeitqualität, Chronologie. Erweitertes Symbol (Stufe II, stabilisiert) im
   Anwendungsbereich temporale Struktur: die alltäglich erlebte, gelebte Zeit
   – mal zäh, mal rasend, meist als gerader Fluss wahrgenommen. Real erlebt,
@@ -12,5 +12,5 @@ definition: >
   Zeitqualität).
 derived_from:
   - CON:L0:omnizedenz
-created: '2026-07-19'
-curator: T.P.K.
+erstellt: '2026-07-19'
+kurator: T.P.K.

@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Information
 name_en: Information
-domain: MET
+domäne: MET
 status: '[R]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Information ist die Unterscheidbarkeit von Zustaenden. Wo kein Unterschied
   existiert, existiert keine Information.
 function: >
@@ -28,5 +28,5 @@ relations:
     target: CON:L1:kommunikation
   - relation: explains
     target: CON:L1:wissen
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

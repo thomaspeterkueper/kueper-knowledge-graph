@@ -2,9 +2,9 @@ entity_id: CON:L1:phasenuebergang
 typ: Concept
 layer: L1
 name: Phasenübergang
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Die Wirkung eines AVI-Punktes: der Übergang, bei dem eine Zeitarchitektur ihren
   qualitativen Charakter nicht graduell, sondern sprunghaft ändert. Kein Zustand,
   sondern der Vollzug des Umschlags von einer Zeitqualität in eine andere.
@@ -12,5 +12,5 @@ definition: >
   Spannungsentladung, nach dem die kontrapunktische Ordnung zusammenbricht.
 derived_from:
   - CON:L1:avi-punkt
-created: '2026-07-15'
-curator: T.P.K.
+erstellt: '2026-07-15'
+kurator: T.P.K.

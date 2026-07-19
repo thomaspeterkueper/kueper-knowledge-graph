@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Materie
 name_en: Matter
-domain: PHY
+domäne: PHY
 status: '[R]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Materie bezeichnet die physische Substanz, aus der beobachtbare Objekte
   bestehen.
 function: >
@@ -25,5 +25,5 @@ relations:
     target: CON:L0:energie
   - relation: enables
     target: CON:L0:leben
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

@@ -2,9 +2,9 @@ entity_id: CON:L0:omnizedenz
 typ: Concept
 layer: L0
 name: Omnizedenz
-domain: OMNI
+domäne: OMNI
 status: '[W]'
-definition: >
+beschreibung: >
   Formal definiertes Zeichensystem zur Repräsentation und Verarbeitung
   relationaler, prozessualer und emergenter Systemzustände. Wurzelontologie
   der Omnizedenz-Symbolsprache (Spezifikation v1.0: 28 Kernsymbole in fünf
@@ -23,5 +23,5 @@ enables:
   - CON:L2:skha
   - CON:L1:resonanz-ethik
   - CON:L1:resonanz-linguistik
-created: '2026-07-19'
-curator: T.P.K.
+erstellt: '2026-07-19'
+kurator: T.P.K.

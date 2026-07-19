@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Struktur
 name_en: Structure
-domain: MET
+domäne: MET
 status: '[R]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Struktur beschreibt die Anordnung von Bestandteilen und deren Beziehungen.
 function: >
   Struktur erscheint auf allen Skalen: Kristalle, Zellen, Organismen,
@@ -25,5 +25,5 @@ relations:
     target: CON:L0:materie
   - relation: enables
     target: CON:L0:leben
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

@@ -2,13 +2,13 @@ entity_id: MOD:L2:paradigma-wagner
 typ: Model
 layer: L2
 name: "Paradigma 3 – Wagner (kosmisch-mythologisch)"
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Die kosmisch-mythologische Dimension. Zyklen von Aufbau und Kollaps über große
   Zeitbögen (der Ring als 15-Stunden-Architektur); Vergangenheit kehrt transformiert
   zurück.
 derived_from:
   - MOD:L2:paradigmentriade
-created: '2026-07-03'
-curator: T.P.K.
+erstellt: '2026-07-03'
+kurator: T.P.K.

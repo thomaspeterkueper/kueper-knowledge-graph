@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Zeit
 name_en: Time
-domain: PHY
+domäne: PHY
 status: '[R]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Zeit beschreibt die Ordnung von Veraenderungen. Zeit ist nicht Veraenderung
   selbst, sondern die Struktur, innerhalb derer Veraenderungen unterschieden
   werden koennen.
@@ -26,5 +26,5 @@ relations:
     target: CON:L1:geschichte
   - relation: part_of
     target: CON:L1:evolution
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

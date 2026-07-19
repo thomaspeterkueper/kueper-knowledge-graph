@@ -2,13 +2,13 @@ entity_id: CON:L2:skha
 typ: Concept
 layer: L2
 name: "▼ Skha"
-domain: OMNI
+domäne: OMNI
 status: '[W]'
-definition: >
+beschreibung: >
   Dissonanz, Bruch, destabilisierende Kraft. Kernsymbol (Stufe I, Kategorie
   Herausforderung & Transformation): zeigt an, wo Heilung nötig ist. Kein
   Fehler im System, sondern ein Signal des Systems.
 derived_from:
   - CON:L0:omnizedenz
-created: '2026-07-19'
-curator: T.P.K.
+erstellt: '2026-07-19'
+kurator: T.P.K.

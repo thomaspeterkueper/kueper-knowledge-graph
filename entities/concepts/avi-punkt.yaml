@@ -2,9 +2,9 @@ entity_id: CON:L1:avi-punkt
 typ: Concept
 layer: L1
 name: AVI-Punkt
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Der punktuelle Moment innerhalb einer Zeitform, an dem alle Wege offenstehen –
   die schöpferische Leere (∅ Avi) im temporalen Register: der Punkt maximaler
   Unbestimmtheit, von dem aus ein Phasenübergang erfolgt. Teilt seine Wurzel mit
@@ -14,5 +14,5 @@ definition: >
 derived_from:
   - CON:L0:avi
   - CON:L1:zeitform
-created: '2026-07-03'
-curator: T.P.K.
+erstellt: '2026-07-03'
+kurator: T.P.K.

@@ -2,9 +2,9 @@ entity_id: CON:L2:mira
 typ: Concept
 layer: L2
 name: "◊ Mira"
-domain: OMNI
+domäne: OMNI
 status: '[W]'
-definition: >
+beschreibung: >
   Staunen, Offenheit, Neugier. Kernsymbol (Stufe I, Kategorie Ordnung &
   Integration / Bewusstsein & Erkenntnis): die wache Bereitschaft, ein
   Phänomen ohne vorschnelle Einordnung zu betrachten. Kanonische Definition
@@ -12,5 +12,5 @@ definition: >
   Website-Fassung "Frequenzpflege" (veralteter Stand).
 derived_from:
   - CON:L0:omnizedenz
-created: '2026-07-19'
-curator: T.P.K.
+erstellt: '2026-07-19'
+kurator: T.P.K.

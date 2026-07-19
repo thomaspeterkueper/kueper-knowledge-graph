@@ -2,9 +2,9 @@ entity_id: CON:L1:oem
 typ: Concept
 layer: L1
 name: "OEM (Omnizedentes Entfaltungsmodul)"
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Strukturelle Einheit mit dem Charakter einer Funktion (Abbildung Offenheit →
   Offenheit), die einen vollständigen Prozess durchläuft: von einer Form der Offenheit
   durch einen Phasenübergang in eine neue, veränderte Offenheit. Kann ein Ton, ein
@@ -14,5 +14,5 @@ derived_from:
   - CON:L1:zeitform
 enables:
   - CON:L1:avi-punkt
-created: '2026-07-03'
-curator: T.P.K.
+erstellt: '2026-07-03'
+kurator: T.P.K.

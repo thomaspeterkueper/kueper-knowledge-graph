@@ -2,12 +2,12 @@ entity_id: MOD:L2:paradigma-bach
 typ: Model
 layer: L2
 name: "Paradigma 1 – Bach (objektiv-strukturell)"
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Die objektiv-strukturelle Dimension. Die Fuge als mathematisches Prinzip;
   Zeitarchitektur ohne subjektives Zentrum, Stimmen strukturell gleichwertig.
 derived_from:
   - MOD:L2:paradigmentriade
-created: '2026-07-03'
-curator: T.P.K.
+erstellt: '2026-07-03'
+kurator: T.P.K.

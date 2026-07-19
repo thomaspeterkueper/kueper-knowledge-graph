@@ -2,9 +2,9 @@ entity_id: CON:L1:zeitform
 typ: Concept
 layer: L1
 name: Zeitform
-domain: KON
+domäne: KON
 status: '[W]'
-definition: >
+beschreibung: >
   Grundeinheit der kontrakomologischen Analyse. Beschreibt, wie ein Werk Zeit
   erzeugt und welche Qualität Zeit in ihm annimmt (gleichzeitig, offen, retrograd,
   transformativ, stehend). Keine metrische Kategorie, kein Tempo. Offenes System –
@@ -14,5 +14,5 @@ derived_from:
 enables:
   - CON:L1:avi-punkt
   - CON:L1:oem
-created: '2026-07-03'
-curator: T.P.K.
+erstellt: '2026-07-03'
+kurator: T.P.K.

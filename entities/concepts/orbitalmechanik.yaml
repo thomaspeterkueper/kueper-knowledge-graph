@@ -2,9 +2,9 @@ entity_id: CON:L1:orbitalmechanik
 typ: Concept
 layer: L1
 name: Orbitalmechanik
-domain: AST
+domäne: AST
 status: '[R]'
-definition: Orbitalmechanik beschreibt Bahnen unter Gravitationseinfluss.
+beschreibung: Orbitalmechanik beschreibt Bahnen unter Gravitationseinfluss.
 derived_from:
   - CON:L0:raum
   - CON:L0:zeit
@@ -13,5 +13,5 @@ derived_from:
 enables:
   - CON:L1:transferbahnen
   - LRN:SSF:AST-2101
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

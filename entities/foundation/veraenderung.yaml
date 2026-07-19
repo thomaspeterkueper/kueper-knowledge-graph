@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Veraenderung
 name_en: Change
-domain: MET
+domäne: MET
 status: '[R]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Veraenderung beschreibt den Uebergang eines Systems von einem Zustand in
   einen anderen.
 function: >
@@ -26,5 +26,5 @@ relations:
     target: CON:L0:energie
   - relation: enables
     target: CON:L1:evolution
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.

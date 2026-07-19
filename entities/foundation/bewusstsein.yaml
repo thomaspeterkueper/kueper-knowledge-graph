@@ -3,7 +3,7 @@ typ: Concept
 layer: L0
 name: Bewusstsein
 name_en: Consciousness
-domain: PSY
+domäne: PSY
 status: '[T]'
 is_instance: false
 foundation_node: true
@@ -13,7 +13,7 @@ schichten:
   - SSF
   - OTA
   - NOXIA
-definition: >
+beschreibung: >
   Bewusstsein bezeichnet die Faehigkeit eines Systems, Zustaende zu erleben
   und zu reflektieren.
 function: >
@@ -25,5 +25,5 @@ relations:
     target: CON:L0:leben
   - relation: relates_to
     target: CON:L0:sprache
-created: '2026-06-25'
-curator: T.P.K.
+erstellt: '2026-06-25'
+kurator: T.P.K.
