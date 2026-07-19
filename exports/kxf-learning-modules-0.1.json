@@ -3,7 +3,7 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "created": "2026-07-02",
   "modified": "2026-07-10T12:00:00+02:00",
   "sourceDocuments": [
@@ -352,7 +352,11 @@
         "title": {
           "de": "Was die Welt aus sich macht",
           "en": "What the World Makes of Itself"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:SENSOR:SPECTRAL",
+          "UNL:NOX:SENSOR:WAVE"
+        ]
       },
       {
         "id": "PHY-L1-000002",
@@ -428,7 +432,11 @@
         "title": {
           "de": "Licht als Informationsträger",
           "en": "Light as Information Carrier"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:SENSOR:SPECTRAL",
+          "UNL:NOX:MISSION:OBSERVATION-DECK"
+        ]
       },
       {
         "id": "CHE-L1-000001",
@@ -490,7 +498,11 @@
         "title": {
           "de": "Was Wasser so besonders macht",
           "en": "What Makes Water So Special"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:CHEM:DIPOLE",
+          "UNL:NOX:CHEM:HYDRATION"
+        ]
       },
       {
         "id": "MAT-L0-000001",
@@ -538,7 +550,10 @@
         "title": {
           "de": "Zahlen und Muster",
           "en": "Numbers and Patterns"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:MATH:LGS"
+        ]
       },
       {
         "id": "MAT-L0-000002",
@@ -585,7 +600,10 @@
         "title": {
           "de": "Algebra Grundlagen",
           "en": "Algebra Basics"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:ANALYSIS:MATRIX"
+        ]
       },
       {
         "id": "MAT-L0-000003",
@@ -632,7 +650,10 @@
         "title": {
           "de": "Geometrie Grundlagen",
           "en": "Geometry Basics"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:NAV:CURVATURE"
+        ]
       },
       {
         "id": "MAT-L1-000001",
@@ -683,7 +704,10 @@
         "title": {
           "de": "Funktionen verstehen",
           "en": "Understanding Functions"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:SIGNAL:FOURIER"
+        ]
       },
       {
         "id": "MAT-L1-000002",
@@ -730,7 +754,10 @@
         "title": {
           "de": "Statistik Grundlagen",
           "en": "Statistics Basics"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:ANALYSIS:ERROR"
+        ]
       },
       {
         "id": "MAT-L1-000003",
@@ -941,7 +968,10 @@
         "title": {
           "de": "Differentialgleichungen",
           "en": "Differential Equations"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:SENSOR:GEODESIC"
+        ]
       },
       {
         "id": "AST-L1-000001",
@@ -989,7 +1019,11 @@
         "title": {
           "de": "Orientierung Planetologie",
           "en": "Planetology Orientation"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:NAV:ORBITAL",
+          "UNL:NOX:SENSOR:ATMOSPHERE"
+        ]
       },
       {
         "id": "EAR-L2-000001",
@@ -1046,7 +1080,11 @@
         "title": {
           "de": "Einfuehrung in die planetare Seismologie",
           "en": "Introduction to Planetary Seismology"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:SENSOR:STRAIN",
+          "UNL:NOX:SENSOR:STRESS"
+        ]
       },
       {
         "id": "EAR-L2-000002",
@@ -1103,7 +1141,11 @@
         "title": {
           "de": "Petrologie und Gesteinsbildung",
           "en": "Petrology and Rock Formation"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:SENSOR:SPECTRAL",
+          "UNL:NOX:MAT:HARDNESS-SCALE"
+        ]
       },
       {
         "id": "PHY-L2-000001",
@@ -1215,7 +1257,11 @@
         "title": {
           "de": "Elektromagnetismus und Feldmodelle",
           "en": "Electromagnetism and Field Models"
-        }
+        },
+        "unlocks": [
+          "UNL:NOX:TOOL:ELECTROMAGNET",
+          "UNL:NOX:SENSOR:MAGNETIC"
+        ]
       },
       {
         "id": "ECO-L0-000001",
@@ -1273,7 +1319,10 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:ECO-L0-0001",
-        "createdFromRequest": "SSF-NOXIA-REQ-20260719-ECO-L0"
+        "createdFromRequest": "SSF-NOXIA-REQ-20260719-ECO-L0",
+        "unlocks": [
+          "UNL:NOX:bank-credit"
+        ]
       },
       {
         "id": "ECO-L0-000002",
@@ -1330,7 +1379,10 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:ECO-L0-0002",
-        "createdFromRequest": "SSF-NOXIA-REQ-20260719-ECO-L0"
+        "createdFromRequest": "SSF-NOXIA-REQ-20260719-ECO-L0",
+        "unlocks": [
+          "UNL:NOX:bank-compound"
+        ]
       },
       {
         "id": "PHY-L1-000003",
@@ -1377,7 +1429,11 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:PHY-3001",
         "createdFromRequest": "KG-REQ-20260718-002",
-        "knowledgeDomain": "KD:CHM:N1"
+        "knowledgeDomain": "KD:CHM:N1",
+        "unlocks": [
+          "UNL:NOX:CHEM:WATER-MOLECULE",
+          "UNL:NOX:CHEM:HYDROGEN-BOND"
+        ]
       },
       {
         "id": "PHY-L1-000004",
@@ -1424,7 +1480,11 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:PHY-3002",
         "createdFromRequest": "KG-REQ-20260718-002",
-        "knowledgeDomain": "KD:PHYS:N1"
+        "knowledgeDomain": "KD:PHYS:N1",
+        "unlocks": [
+          "UNL:NOX:PHY:PHASE-DIAGRAM",
+          "UNL:NOX:PHY:TRIPLE-POINT"
+        ]
       },
       {
         "id": "PHY-L1-000005",
@@ -1471,7 +1531,11 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:PHY-3003",
         "createdFromRequest": "KG-REQ-20260718-002",
-        "knowledgeDomain": "KD:PHYS:N1"
+        "knowledgeDomain": "KD:PHYS:N1",
+        "unlocks": [
+          "UNL:NOX:PHY:DENSITY-ANOMALY",
+          "UNL:NOX:PHY:ICE-STRUCTURE"
+        ]
       },
       {
         "id": "PHY-L1-000006",
@@ -1518,7 +1582,11 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:PHY-3004",
         "createdFromRequest": "KG-REQ-20260718-002",
-        "knowledgeDomain": "KD:PHYS:N1"
+        "knowledgeDomain": "KD:PHYS:N1",
+        "unlocks": [
+          "UNL:NOX:PHY:SURFACE-TENSION",
+          "UNL:NOX:PHY:CAPILLARY-ACTION"
+        ]
       },
       {
         "id": "PHY-L1-000007",
@@ -1565,7 +1633,11 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:PHY-3005",
         "createdFromRequest": "KG-REQ-20260718-002",
-        "knowledgeDomain": "KD:PHYS:N1"
+        "knowledgeDomain": "KD:PHYS:N1",
+        "unlocks": [
+          "UNL:NOX:PHY:SUBLIMATION",
+          "UNL:NOX:PHY:VAPOR-PRESSURE"
+        ]
       },
       {
         "id": "CHE-L1-000002",
@@ -1612,7 +1684,12 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:CHE-3001",
         "createdFromRequest": "KG-REQ-20260718-002",
-        "knowledgeDomain": "KD:CHM:N1"
+        "knowledgeDomain": "KD:CHM:N1",
+        "unlocks": [
+          "UNL:NOX:CHEM:SOLUBILITY",
+          "UNL:NOX:CHEM:ION-DISSOLUTION",
+          "UNL:NOX:CHEM:SURFACTANT"
+        ]
       },
       {
         "id": "PHY-L1-000008",
@@ -1659,7 +1736,11 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:PHY-3006",
         "createdFromRequest": "KG-REQ-20260718-002",
-        "knowledgeDomain": "KD:PHYS:N1"
+        "knowledgeDomain": "KD:PHYS:N1",
+        "unlocks": [
+          "UNL:NOX:PHY:HEAT-CAPACITY",
+          "UNL:NOX:PHY:LATENT-HEAT"
+        ]
       }
     ]
   },
