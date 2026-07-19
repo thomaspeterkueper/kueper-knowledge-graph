@@ -132,6 +132,22 @@
       "status": "planned",
       "targetDocument": "DOC:OTA:OTA-SCI-0085-2164-EN",
       "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:MAT-FUNCTIONS-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "learning_sequence",
+      "status": "planned",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:MAT-PROBABILITY-0001",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "learning_sequence",
+      "status": "planned",
+      "sourceExport": "exports/kxf-learning-paths-0.1.json"
     }
   ],
   "validation": {

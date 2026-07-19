@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Paths Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2",
+  "version": "0.3",
   "created": "2026-07-08",
-  "modified": "2026-07-08T09:56:30+02:00",
+  "modified": "2026-07-19T00:00:00+02:00",
   "sourceDocuments": [
     "KG-0002",
     "KG-0004-LEARNING-MODEL",
@@ -337,6 +337,54 @@
         "nextPaths": [
           "PATH:OTA:OTA-SCI-0083-2026-DE:READ"
         ]
+      },
+      {
+        "id": "PATH:SSF:MAT-FUNCTIONS-0001",
+        "title": "Funktionen verstehen",
+        "status": "planned",
+        "sourceModuleId": "MAT-L1-000001",
+        "steps": [
+          "MAT-L0-000001",
+          "MAT-L0-000002",
+          "MAT-L0-000003",
+          "MAT-L1-000001"
+        ],
+        "knowledgeDomains": [
+          "KD:MATH:N1"
+        ],
+        "prerequisites": [],
+        "archiveDocuments": [],
+        "unlocks": [
+          "PHY-L1-000001",
+          "CHE-L1-000001",
+          "AST-L1-000001",
+          "MAT-L2-000001"
+        ],
+        "nextPaths": [],
+        "createdFromRequest": "KG-REQ-20260718-003"
+      },
+      {
+        "id": "PATH:SSF:MAT-PROBABILITY-0001",
+        "title": "Wahrscheinlichkeit",
+        "status": "planned",
+        "sourceModuleId": "MAT-L1-000003",
+        "steps": [
+          "MAT-L0-000001",
+          "MAT-L1-000002",
+          "MAT-L1-000003"
+        ],
+        "knowledgeDomains": [
+          "KD:MATH-STAT:N1"
+        ],
+        "prerequisites": [],
+        "archiveDocuments": [],
+        "unlocks": [
+          "MAT-L2-000002"
+        ],
+        "nextPaths": [
+          "PATH:SSF:MAT-BAYES-0001"
+        ],
+        "createdFromRequest": "KG-REQ-20260718-003"
       }
     ]
   }
