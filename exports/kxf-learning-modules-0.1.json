@@ -3,7 +3,7 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "created": "2026-07-02",
   "modified": "2026-07-10T12:00:00+02:00",
   "sourceDocuments": [
@@ -1331,6 +1331,335 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:ECO-L0-0002",
         "createdFromRequest": "SSF-NOXIA-REQ-20260719-ECO-L0"
+      },
+      {
+        "id": "PHY-L1-000003",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum ist Wasser eigentlich so seltsam",
+          "en": "Why Is Water So Strange, Really"
+        },
+        "meta": {
+          "title": "Warum ist Wasser eigentlich so seltsam",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum ist Wasser eigentlich so seltsam?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum ist Wasser eigentlich so seltsam?",
+            "L1": "Warum ist Wasser eigentlich so seltsam?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-3001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "PHY-L1-000004",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum hat Wasser genau drei Formen — und wie wechselt es zwischen ihnen",
+          "en": "Why Does Water Have Exactly Three Forms — and How Does It Switch Between Them"
+        },
+        "meta": {
+          "title": "Warum hat Wasser genau drei Formen — und wie wechselt es zwischen ihnen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum hat Wasser genau drei Formen — und wie wechselt es zwischen ihnen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum hat Wasser genau drei Formen — und wie wechselt es zwischen ihnen?",
+            "L1": "Warum hat Wasser genau drei Formen — und wie wechselt es zwischen ihnen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000003"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-3002",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "PHY-L1-000005",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum platzen Wasserleitungen im Winter von innen",
+          "en": "Why Water Pipes Burst From the Inside in Winter"
+        },
+        "meta": {
+          "title": "Warum platzen Wasserleitungen im Winter von innen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum platzen Wasserleitungen im Winter von innen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum platzen Wasserleitungen im Winter von innen?",
+            "L1": "Warum platzen Wasserleitungen im Winter von innen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000004"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-3003",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "PHY-L1-000006",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum kann eine Bueroklammer auf Wasser schwimmen",
+          "en": "Why a Paperclip Can Float on Water"
+        },
+        "meta": {
+          "title": "Warum kann eine Bueroklammer auf Wasser schwimmen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum kann eine Büroklammer auf Wasser schwimmen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum kann eine Büroklammer auf Wasser schwimmen?",
+            "L1": "Warum kann eine Büroklammer auf Wasser schwimmen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000003"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-3004",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "PHY-L1-000007",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum trocknet Waesche auch im Winter draussen",
+          "en": "Why Laundry Dries Outside Even in Winter"
+        },
+        "meta": {
+          "title": "Warum trocknet Waesche auch im Winter draussen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum trocknet Wäsche auch im Winter draußen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum trocknet Wäsche auch im Winter draußen?",
+            "L1": "Warum trocknet Wäsche auch im Winter draußen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000004"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-3005",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "CHE-L1-000002",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum loest Wasser fast alles — aber nicht Oel",
+          "en": "Why Water Dissolves Almost Everything — But Not Oil"
+        },
+        "meta": {
+          "title": "Warum loest Wasser fast alles — aber nicht Oel",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum löst Wasser fast alles — aber nicht Öl?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum löst Wasser fast alles — aber nicht Öl?",
+            "L1": "Warum löst Wasser fast alles — aber nicht Öl?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000003"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:CHE-3001",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:CHM:N1"
+      },
+      {
+        "id": "PHY-L1-000008",
+        "version": "0.1.0",
+        "created": "2026-07-19",
+        "modified": "2026-07-19",
+        "title": {
+          "de": "Warum braucht Wasser so lange zum Kochen — aber kuehlt so langsam ab",
+          "en": "Why Water Takes So Long to Boil — But Cools So Slowly"
+        },
+        "meta": {
+          "title": "Warum braucht Wasser so lange zum Kochen — aber kuehlt so langsam ab",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum braucht Wasser so lange zum Kochen — aber kühlt so langsam ab?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum braucht Wasser so lange zum Kochen — aber kühlt so langsam ab?",
+            "L1": "Warum braucht Wasser so lange zum Kochen — aber kühlt so langsam ab?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000004"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-3006",
+        "createdFromRequest": "KG-REQ-20260718-002",
+        "knowledgeDomain": "KD:PHYS:N1"
       }
     ]
   },
