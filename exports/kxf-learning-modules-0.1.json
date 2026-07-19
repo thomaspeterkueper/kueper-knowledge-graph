@@ -3,7 +3,7 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "created": "2026-07-02",
   "modified": "2026-07-10T12:00:00+02:00",
   "sourceDocuments": [
@@ -298,12 +298,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Was die Welt aus sich macht",
-          "i18n": {
-            "title": {
-              "de": "Was die Welt aus sich macht",
-              "en": "What the World Makes of Itself"
-            }
-          },
           "subject": "PHY",
           "type": "grundmodul",
           "status": "built",
@@ -354,7 +348,11 @@
         "noxiaGrants": [
           "SENSOR:SPECTRAL"
         ],
-        "legacyId": "LRN:SSF:PHY-1101"
+        "legacyId": "LRN:SSF:PHY-1101",
+        "title": {
+          "de": "Was die Welt aus sich macht",
+          "en": "What the World Makes of Itself"
+        }
       },
       {
         "id": "PHY-L1-000002",
@@ -363,12 +361,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Licht als Informationsträger",
-          "i18n": {
-            "title": {
-              "de": "Licht als Informationsträger",
-              "en": "Light as Information Carrier"
-            }
-          },
           "subject": "PHY",
           "type": "brueckenmodul",
           "status": "built",
@@ -432,7 +424,11 @@
           "SENSOR:SPECTRAL",
           "MISSION:OBSERVATION-DECK"
         ],
-        "legacyId": "LRN:SSF:PHY-1102"
+        "legacyId": "LRN:SSF:PHY-1102",
+        "title": {
+          "de": "Licht als Informationsträger",
+          "en": "Light as Information Carrier"
+        }
       },
       {
         "id": "CHE-L1-000001",
@@ -441,12 +437,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Was Wasser so besonders macht",
-          "i18n": {
-            "title": {
-              "de": "Was Wasser so besonders macht",
-              "en": "What Makes Water So Special"
-            }
-          },
           "subject": "CHM",
           "type": "grundmodul",
           "status": "built",
@@ -496,7 +486,11 @@
           "REACT:ENERGY",
           "MISSION:LAB-ALPHA"
         ],
-        "legacyId": "LRN:SSF:CHM-1101"
+        "legacyId": "LRN:SSF:CHM-1101",
+        "title": {
+          "de": "Was Wasser so besonders macht",
+          "en": "What Makes Water So Special"
+        }
       },
       {
         "id": "MAT-L0-000001",
@@ -505,12 +499,6 @@
         "modified": "2026-07-12",
         "meta": {
           "title": "Zahlen und Muster",
-          "i18n": {
-            "title": {
-              "de": "Zahlen und Muster",
-              "en": "Numbers and Patterns"
-            }
-          },
           "subject": "MAT",
           "type": "grundmodul",
           "status": "built",
@@ -546,7 +534,11 @@
         },
         "branches": [],
         "noxiaGrants": [],
-        "legacyId": "LRN:SSF:MAT-1001"
+        "legacyId": "LRN:SSF:MAT-1001",
+        "title": {
+          "de": "Zahlen und Muster",
+          "en": "Numbers and Patterns"
+        }
       },
       {
         "id": "MAT-L0-000002",
@@ -555,12 +547,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Algebra Grundlagen",
-          "i18n": {
-            "title": {
-              "de": "Algebra Grundlagen",
-              "en": "Algebra Basics"
-            }
-          },
           "subject": "MAT",
           "type": "grundmodul",
           "status": "planned",
@@ -595,7 +581,11 @@
         },
         "branches": [],
         "noxiaGrants": [],
-        "legacyId": "LRN:SSF:MAT-1002"
+        "legacyId": "LRN:SSF:MAT-1002",
+        "title": {
+          "de": "Algebra Grundlagen",
+          "en": "Algebra Basics"
+        }
       },
       {
         "id": "MAT-L0-000003",
@@ -604,12 +594,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Geometrie Grundlagen",
-          "i18n": {
-            "title": {
-              "de": "Geometrie Grundlagen",
-              "en": "Geometry Basics"
-            }
-          },
           "subject": "MAT",
           "type": "grundmodul",
           "status": "planned",
@@ -644,7 +628,11 @@
         },
         "branches": [],
         "noxiaGrants": [],
-        "legacyId": "LRN:SSF:MAT-1003"
+        "legacyId": "LRN:SSF:MAT-1003",
+        "title": {
+          "de": "Geometrie Grundlagen",
+          "en": "Geometry Basics"
+        }
       },
       {
         "id": "MAT-L1-000001",
@@ -653,12 +641,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Funktionen verstehen",
-          "i18n": {
-            "title": {
-              "de": "Funktionen verstehen",
-              "en": "Understanding Functions"
-            }
-          },
           "subject": "MAT",
           "type": "brueckenmodul",
           "status": "planned",
@@ -697,7 +679,11 @@
         },
         "branches": [],
         "noxiaGrants": [],
-        "legacyId": "LRN:SSF:MAT-1101"
+        "legacyId": "LRN:SSF:MAT-1101",
+        "title": {
+          "de": "Funktionen verstehen",
+          "en": "Understanding Functions"
+        }
       },
       {
         "id": "MAT-L1-000002",
@@ -706,12 +692,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Statistik Grundlagen",
-          "i18n": {
-            "title": {
-              "de": "Statistik Grundlagen",
-              "en": "Statistics Basics"
-            }
-          },
           "subject": "MAT",
           "type": "grundmodul",
           "status": "planned",
@@ -746,7 +726,11 @@
         },
         "branches": [],
         "noxiaGrants": [],
-        "legacyId": "LRN:SSF:MAT-1102"
+        "legacyId": "LRN:SSF:MAT-1102",
+        "title": {
+          "de": "Statistik Grundlagen",
+          "en": "Statistics Basics"
+        }
       },
       {
         "id": "MAT-L1-000003",
@@ -755,12 +739,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Wahrscheinlichkeit",
-          "i18n": {
-            "title": {
-              "de": "Wahrscheinlichkeit",
-              "en": "Probability"
-            }
-          },
           "subject": "MAT",
           "type": "brueckenmodul",
           "status": "planned",
@@ -795,7 +773,11 @@
         },
         "branches": [],
         "noxiaGrants": [],
-        "legacyId": "LRN:SSF:MAT-1103"
+        "legacyId": "LRN:SSF:MAT-1103",
+        "title": {
+          "de": "Wahrscheinlichkeit",
+          "en": "Probability"
+        }
       },
       {
         "id": "MAT-L2-000001",
@@ -804,12 +786,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Analysis",
-          "i18n": {
-            "title": {
-              "de": "Analysis",
-              "en": "Analysis"
-            }
-          },
           "subject": "MAT",
           "type": "reference",
           "status": "planned",
@@ -846,7 +822,11 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAT-2101",
         "transitional": true,
-        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren.",
+        "title": {
+          "de": "Analysis",
+          "en": "Analysis"
+        }
       },
       {
         "id": "MAT-L2-000002",
@@ -855,12 +835,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Bayes-Inferenz",
-          "i18n": {
-            "title": {
-              "de": "Bayes-Inferenz",
-              "en": "Bayesian Inference"
-            }
-          },
           "subject": "MAT",
           "type": "reference",
           "status": "planned",
@@ -907,7 +881,11 @@
         ],
         "legacyId": "LRN:SSF:MAT-2102",
         "transitional": true,
-        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren.",
+        "title": {
+          "de": "Bayes-Inferenz",
+          "en": "Bayesian Inference"
+        }
       },
       {
         "id": "MAT-L2-000003",
@@ -916,12 +894,6 @@
         "modified": "2026-07-10",
         "meta": {
           "title": "Differentialgleichungen",
-          "i18n": {
-            "title": {
-              "de": "Differentialgleichungen",
-              "en": "Differential Equations"
-            }
-          },
           "subject": "MAT",
           "type": "reference",
           "status": "planned",
@@ -965,7 +937,11 @@
         ],
         "legacyId": "LRN:SSF:MAT-2103",
         "transitional": true,
-        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren.",
+        "title": {
+          "de": "Differentialgleichungen",
+          "en": "Differential Equations"
+        }
       },
       {
         "id": "AST-L1-000001",
@@ -1009,7 +985,11 @@
         },
         "branches": [],
         "noxiaGrants": [],
-        "legacyId": "LRN:SSF:AST-1101"
+        "legacyId": "LRN:SSF:AST-1101",
+        "title": {
+          "de": "Orientierung Planetologie",
+          "en": "Planetology Orientation"
+        }
       },
       {
         "id": "EAR-L2-000001",
@@ -1062,7 +1042,11 @@
         ],
         "noxiaRequiredFor": [
           "NOXIA-RESEARCH-MARS-MANTLE"
-        ]
+        ],
+        "title": {
+          "de": "Einfuehrung in die planetare Seismologie",
+          "en": "Introduction to Planetary Seismology"
+        }
       },
       {
         "id": "EAR-L2-000002",
@@ -1115,7 +1099,11 @@
         ],
         "noxiaRequiredFor": [
           "NOXIA-RESEARCH-MARS-MANTLE"
-        ]
+        ],
+        "title": {
+          "de": "Petrologie und Gesteinsbildung",
+          "en": "Petrology and Rock Formation"
+        }
       },
       {
         "id": "PHY-L2-000001",
@@ -1167,7 +1155,11 @@
         ],
         "legacyId": "LRN:SSF:PHY-2201",
         "transitional": true,
-        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren.",
+        "title": {
+          "de": "Quantenmechanik fuer Modellarchitektur",
+          "en": "Quantum Mechanics for Model Architecture"
+        }
       },
       {
         "id": "PHY-L2-000002",
@@ -1219,7 +1211,11 @@
         ],
         "legacyId": "LRN:SSF:PHY-2202",
         "transitional": true,
-        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren."
+        "transitionalNote": "Aggregat; nach OTA-ARC-0006 §II.a zu atomisieren.",
+        "title": {
+          "de": "Elektromagnetismus und Feldmodelle",
+          "en": "Electromagnetism and Field Models"
+        }
       }
     ]
   },
@@ -1287,5 +1283,6 @@
       "id": "RQ:KG-0012:LEARNING-PATH-TYPE",
       "resolution": "Remove learning_path from moduleTypes. Use records.paths for PATH objects."
     }
-  ]
+  ],
+  "updated": "2026-07-19"
 }
