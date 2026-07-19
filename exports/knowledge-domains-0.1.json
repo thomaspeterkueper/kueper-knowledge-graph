@@ -3,7 +3,7 @@
   "name": "KUEPER Knowledge Domains Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "updated": "2026-07-19",
   "sourceDocuments": [
     "KG-ARC-0001-2026-DE",
@@ -303,6 +303,21 @@
         "BIO-NEUROIMMUN N2",
         "Neuroimmunology N2",
         "Mikroglia N2"
+      ]
+    },
+    {
+      "id": "KD:MATH-STAT:N1",
+      "type": "KnowledgeDomain",
+      "layer": "L1",
+      "code": "MATH-STAT",
+      "level": "N1",
+      "title": "Statistik - Orientierung",
+      "parent": "KD:MATH:N1",
+      "description": "Orientierung in grundlegenden statistischen Begriffen: Daten, Stichprobe, Mittelwert, Streuung, Verteilung - ausreichend als Basis fuer vertiefende N2-Statistik.",
+      "aliases": [
+        "MATH-STAT N1",
+        "Statistics N1",
+        "Statistik N1"
       ]
     }
   ],
