@@ -1,0 +1,24 @@
+module_id: LRN:SSF:PHY-L1-000007
+typ: LearningModule
+layer: L3
+name: Warum trocknet Waesche auch im Winter draussen?
+domain: PHY
+subdomain: thermodynamics
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000004
+teaches:
+  - CON:L1:sublimation
+  - CON:L1:dampfdruck
+  - CON:L1:phasenuebergang
+unlocks:
+  - UNL:NOX:PHY:SUBLIMATION
+  - PHY:SUBLIMATION
+  - PHY:VAPOR-PRESSURE
+ssf_path_id: PATH:SSF:PHY-WASSER-SUBLIM-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Dampfdruck Eis bei -10 Celsius: 2.6 mbar.
+  Titan-Analogie: Methan sublimiert/kondensiert bei -180 Celsius.
+  NOXIA: Wasserverlust auf Mars/Titan.
