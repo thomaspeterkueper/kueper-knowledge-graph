@@ -1,0 +1,23 @@
+module_id: LRN:SSF:PHY-4002
+typ: LearningModule
+layer: L3
+name: Warum leuchtet ein Fahrradhelm wenn man ihn drueckt?
+domain: PHY
+subdomain: solid-state-physics
+status: '[R]'
+requires: []
+teaches:
+  - CON:L1:piezoeffekt
+  - CON:L1:kristallsymmetrie
+  - CON:L1:energy-harvesting
+unlocks:
+  - SENSOR:PIEZO
+  - TOOL:ENERGY-HARVESTING
+  - PHY:DIPOLE-MOMENT
+ssf_path_id: PATH:SSF:PHY-PIEZO-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  RPI Chalkogenid-Perowskit 2024: bleifrei, 0.3mm.
+  PZT: toxisch, hoechste Leistung.
+  Regel: P = I^2 * R (Reibung) + T * dS/dq * I (Entropie).
