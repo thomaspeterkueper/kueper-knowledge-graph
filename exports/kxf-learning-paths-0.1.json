@@ -1,391 +1,831 @@
 {
-  "schema": "KXF-LEARNING-PATHS-0.1",
-  "name": "KUEPER SSF Learning Paths Export",
-  "master": "kueper-knowledge-graph",
-  "status": "draft_productive",
-  "version": "0.3",
-  "created": "2026-07-08",
-  "modified": "2026-07-19T00:00:00+02:00",
-  "sourceDocuments": [
-    "KG-0002",
-    "KG-0004-LEARNING-MODEL",
-    "OTA-ARC-0006-2026-DE-v1.3",
-    "OTA-ARC-0007-2026-DE-v1.1",
-    "OTA-ARC-0009-2026-DE"
-  ],
-  "records": {
-    "learning_paths": [
-      {
-        "id": "PATH:SSF:AST-PLANET-STRUCTURE-0001",
-        "title": "Planetare Struktur verstehen",
-        "status": "planned",
-        "sourceModuleId": "AST-L1-000001",
-        "steps": [
-          "MAT-L1-000001",
-          "AST-L1-000001"
-        ],
-        "knowledgeDomains": [
-          "KD:GEO-PLANET:N1"
-        ],
-        "prerequisites": [],
-        "archiveDocuments": [],
-        "unlocks": [
-          "EAR-L2-000001",
-          "EAR-L2-000002"
-        ],
-        "nextPaths": [
-          "PATH:SSF:EAR-SEISMOLOGY-0001",
-          "PATH:SSF:EAR-PETROLOGY-0001"
-        ]
-      },
-      {
-        "id": "PATH:SSF:EAR-SEISMOLOGY-0001",
-        "title": "Planetare Seismologie für OTA-SCI-0083",
-        "status": "planned",
-        "sourceModuleId": "EAR-L2-000001",
-        "steps": [
-          "MAT-L1-000001",
-          "AST-L1-000001",
-          "EAR-L2-000001"
-        ],
-        "knowledgeDomains": [
-          "KD:GEO-SEISM:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-SCI-0083-2026-DE"
-        ],
-        "unlocks": [
-          "PATH:OTA:OTA-SCI-0083-2026-DE:READ"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:SSF:EAR-PETROLOGY-0001",
-        "title": "Petrologie für OTA-SCI-0083",
-        "status": "planned",
-        "sourceModuleId": "EAR-L2-000002",
-        "steps": [
-          "MAT-L1-000001",
-          "AST-L1-000001",
-          "EAR-L2-000002"
-        ],
-        "knowledgeDomains": [
-          "KD:GEO-PETRO:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-PETRO:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-SCI-0083-2026-DE"
-        ],
-        "unlocks": [
-          "PATH:OTA:OTA-SCI-0083-2026-DE:READ"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:SSF:MAT-BAYES-0001",
-        "title": "Bayes-Inferenz für Wissenschaftstexte",
-        "status": "planned",
-        "sourceModuleId": "MAT-L2-000002",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L1-000002",
-          "MAT-L1-000003",
-          "MAT-L2-000002"
-        ],
-        "knowledgeDomains": [
-          "KD:MATH-BAYES:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:MATH-BAYES:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-SCI-0083-2026-DE"
-        ],
-        "unlocks": [
-          "PATH:OTA:OTA-SCI-0083-2026-DE:READ"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:SSF:PHY-QM-MODEL-0001",
-        "title": "Quantenmechanik für Modellarchitektur",
-        "status": "planned",
-        "sourceModuleId": "PHY-L2-000001",
-        "steps": [
-          "MAT-L1-000001",
-          "PHY-L1-000001",
-          "PHY-L2-000001"
-        ],
-        "knowledgeDomains": [
-          "KD:PHYS-QM:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-QM:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-FND-0028-2026-DE"
-        ],
-        "unlocks": [
-          "PATH:OTA:OTA-FND-0028-2026-DE:READ"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:SSF:MAT-DIFFERENTIAL-0001",
-        "title": "Differentialgleichungen als Modellsprache",
-        "status": "planned",
-        "sourceModuleId": "MAT-L2-000003",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L1-000001",
-          "MAT-L2-000001",
-          "MAT-L2-000003"
-        ],
-        "knowledgeDomains": [
-          "KD:MATH-DIFF:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:MATH-DIFF:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-FND-0028-2026-DE"
-        ],
-        "unlocks": [
-          "PATH:OTA:OTA-FND-0028-2026-DE:READ"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:SSF:PHY-FIELD-MODELS-0001",
-        "title": "Elektromagnetismus und Feldmodelle",
-        "status": "planned",
-        "sourceModuleId": "PHY-L2-000002",
-        "steps": [
-          "MAT-L1-000001",
-          "PHY-L1-000001",
-          "PHY-L1-000002",
-          "PHY-L2-000002"
-        ],
-        "knowledgeDomains": [
-          "KD:PHYS-EM:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-EM:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-FND-0028-2026-DE"
-        ],
-        "unlocks": [
-          "PATH:OTA:OTA-FND-0028-2026-DE:READ"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:SSF:MAT-FOUNDATIONS-0001",
-        "title": "Mathematische Grundlagen (L0→L1)",
-        "status": "planned",
-        "sourceModuleId": "MAT-L0-000001",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L0-000002",
-          "MAT-L0-000003",
-          "MAT-L1-000001"
-        ],
-        "estimatedMinutes": 18,
-        "knowledgeDomains": [
-          "KD:MATH:N1"
-        ],
-        "prerequisites": [],
-        "archiveDocuments": [],
-        "unlocks": [
-          "MAT-L2-000001",
-          "MAT-L2-000002",
-          "MAT-L2-000003",
-          "PHY-L1-000001",
-          "CHE-L1-000001",
-          "AST-L1-000001"
-        ],
-        "nextPaths": [
-          "PATH:SSF:MAT-BAYES-0001",
-          "PATH:SSF:MAT-DIFFERENTIAL-0001",
-          "PATH:SSF:AST-PLANET-STRUCTURE-0001",
-          "PATH:SSF:PHY-QM-MODEL-0001"
-        ]
-      },
-      {
-        "id": "PATH:SSF:MAT-STATISTICS-0001",
-        "title": "Statistik und Wahrscheinlichkeit (L1)",
-        "status": "planned",
-        "sourceModuleId": "MAT-L1-000002",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L1-000002",
-          "MAT-L1-000003"
-        ],
-        "estimatedMinutes": 17,
-        "knowledgeDomains": [
-          "KD:MATH-STAT:N1"
-        ],
-        "prerequisites": [],
-        "archiveDocuments": [],
-        "unlocks": [
-          "MAT-L2-000002"
-        ],
-        "nextPaths": [
-          "PATH:SSF:MAT-BAYES-0001"
-        ]
-      },
-      {
-        "id": "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
-        "title": "Brücke zu OTA-SCI-0083 — LLSVPs und Kern-Mantel-Grenze",
-        "status": "planned",
-        "targetDocument": "DOC:OTA:OTA-SCI-0083-2026-DE",
-        "targetUrl": "https://overtimearchive.org/dokument/OTA-SCI-0083-2026-DE",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L1-000002",
-          "MAT-L1-000003",
-          "MAT-L2-000002",
-          "MAT-L1-000001",
-          "AST-L1-000001",
-          "EAR-L2-000001"
-        ],
-        "estimatedMinutes": 47,
-        "knowledgeDomains": [
-          "KD:GEO-SEISM:N2",
-          "KD:MATH-BAYES:N2",
-          "KD:GEO-PETRO:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:GEO-SEISM:N2:READ",
-          "REQ:DOC:OTA:OTA-SCI-0083-2026-DE:KD:MATH-BAYES:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-SCI-0083-2026-DE"
-        ],
-        "unlocks": [
-          "DOC:OTA:OTA-SCI-0083-2026-DE"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:OTA:OTA-FND-0028-2026-DE:READ",
-        "title": "Brücke zu OTA-FND-0028 — Axiomatisches Vacuum Integral",
-        "status": "planned",
-        "targetDocument": "DOC:OTA:OTA-FND-0028-2026-DE",
-        "targetUrl": "https://overtimearchive.org/dokument/OTA-FND-0028-2026-DE",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L1-000001",
-          "MAT-L2-000001",
-          "MAT-L2-000003",
-          "PHY-L1-000001",
-          "PHY-L1-000002",
-          "PHY-L2-000001",
-          "PHY-L2-000002"
-        ],
-        "estimatedMinutes": 71,
-        "knowledgeDomains": [
-          "KD:PHYS-QM:N2",
-          "KD:MATH-DIFF:N2",
-          "KD:PHYS-EM:N2"
-        ],
-        "prerequisites": [
-          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-QM:N2:READ",
-          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:MATH-DIFF:N2:READ",
-          "REQ:DOC:OTA:OTA-FND-0028-2026-DE:KD:PHYS-EM:N2:READ"
-        ],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-FND-0028-2026-DE"
-        ],
-        "unlocks": [
-          "DOC:OTA:OTA-FND-0028-2026-DE"
-        ],
-        "nextPaths": []
-      },
-      {
-        "id": "PATH:NOXIA:GEN-MARS:SCIENCE-FOUNDATION",
-        "title": "Generation Mars — Wissenschaftliches Fundament",
-        "status": "planned",
-        "sourceModuleId": "MAT-L0-000001",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L1-000001",
-          "MAT-L1-000002",
-          "AST-L1-000001",
-          "EAR-L2-000001",
-          "PHY-L1-000001"
-        ],
-        "estimatedMinutes": 40,
-        "knowledgeDomains": [
-          "KD:GEO-PLANET:N1",
-          "KD:PHYS-THERM:N1"
-        ],
-        "prerequisites": [],
-        "archiveDocuments": [
-          "DOC:OTA:OTA-SCI-0022-2025-DE",
-          "DOC:OTA:OTA-SCI-0043-2026-DE"
-        ],
-        "unlocks": [
-          "DOC:NOXIA:GENERATION-MARS:CHAPTER-01"
-        ],
-        "nextPaths": [
-          "PATH:OTA:OTA-SCI-0083-2026-DE:READ"
-        ]
-      },
-      {
-        "id": "PATH:SSF:MAT-FUNCTIONS-0001",
-        "title": "Funktionen verstehen",
-        "status": "planned",
-        "sourceModuleId": "MAT-L1-000001",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L0-000002",
-          "MAT-L0-000003",
-          "MAT-L1-000001"
-        ],
-        "knowledgeDomains": [
-          "KD:MATH:N1"
-        ],
-        "prerequisites": [],
-        "archiveDocuments": [],
-        "unlocks": [
-          "PHY-L1-000001",
-          "CHE-L1-000001",
-          "AST-L1-000001",
-          "MAT-L2-000001"
-        ],
-        "nextPaths": [],
-        "createdFromRequest": "KG-REQ-20260718-003"
-      },
-      {
-        "id": "PATH:SSF:MAT-PROBABILITY-0001",
-        "title": "Wahrscheinlichkeit",
-        "status": "planned",
-        "sourceModuleId": "MAT-L1-000003",
-        "steps": [
-          "MAT-L0-000001",
-          "MAT-L1-000002",
-          "MAT-L1-000003"
-        ],
-        "knowledgeDomains": [
-          "KD:MATH-STAT:N1"
-        ],
-        "prerequisites": [],
-        "archiveDocuments": [],
-        "unlocks": [
-          "MAT-L2-000002"
-        ],
-        "nextPaths": [
-          "PATH:SSF:MAT-BAYES-0001"
-        ],
-        "createdFromRequest": "KG-REQ-20260718-003"
-      }
-    ]
-  }
+  "schema": "kxf-learning-paths",
+  "version": "0.2.0",
+  "generated": "2026-07-20",
+  "source": "solarsciencefoundation/lib/learningPaths.ts v1.2.4",
+  "count": 60,
+  "records": [
+    {
+      "id": "PATH:SSF:PHY-WAVE-SPECTRUM-0001",
+      "title": "Was Schwingungen erzaehlen",
+      "subtitle": "Von der klingenden Kaffeetasse zu Sternspektren: Schwingungsstruktur als Informationstraeger.",
+      "cluster": "physik",
+      "status": "prototype",
+      "units": 2,
+      "kxfModuleId": "LRN:SSF:PHY-1101",
+      "unlocks": [
+        "SENSOR:SPECTRAL",
+        "MISSION:OBSERVATION-DECK"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-SKY-0001",
+      "title": "Von der klingenden Kaffeetasse zu Sternspektren: Schwingungsstruktur als Informationstraeger.",
+      "subtitle": "Von Rayleigh-Streuung zu Sonnenuntergaengen und Mondfinsternissen — dasselbe Prinzip, zwei Perspektiven.",
+      "cluster": "physik",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:PHY-1103",
+      "unlocks": [
+        "SENSOR:ATMOSPHERE",
+        "NAV:ORBITAL"
+      ]
+    },
+    {
+      "id": "PATH:SSF:MAT-ERROR-0001",
+      "title": "Klang & Resonanz",
+      "subtitle": "Fehlerfortpflanzung: Warum der Exponent entscheidet — und wie man den Engpass einer Messung findet.",
+      "cluster": "mathematik",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:MAT-1101",
+      "unlocks": [
+        "SENSOR:PRECISION",
+        "ANALYSIS:ERROR"
+      ]
+    },
+    {
+      "id": "PATH:SSF:EL-DIODE-0001",
+      "title": "Die klingende Tasse",
+      "subtitle": "Kennlinie, Schleusenspannung, Lastgerade — warum der Arbeitspunkt alles entscheidet.",
+      "cluster": "sonstige",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:EL-1101",
+      "unlocks": [
+        "CIRCUIT:DIODE",
+        "SENSOR:CURRENT"
+      ]
+    },
+    {
+      "id": "PATH:SSF:MAT-SERIES-0001",
+      "title": "Eigene Beobachtung: Kontrakomologie",
+      "subtitle": "Von Zenons Paradoxon zur Fourier-Synthese: Konvergenz, Reihen und der Klang der Mathematik.",
+      "cluster": "mathematik",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:MAT-1102",
+      "unlocks": [
+        "SIGNAL:FOURIER",
+        "SENSOR:WAVE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:MAT-DIFFGEO-0001",
+      "title": "Beobachtung: Das kalte Wasserglas",
+      "subtitle": "Polarkurven, Bogenlange und Kruemmung — von Schneckenhaeusen zu Schmiegekreisen.",
+      "cluster": "mathematik",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:MAT-1103",
+      "unlocks": [
+        "NAV:CURVATURE",
+        "SENSOR:GEODESIC"
+      ]
+    },
+    {
+      "id": "PATH:SSF:MAT-VEC-0001",
+      "title": "Experiment 1: Die klingende Tasse",
+      "subtitle": "Vektoren als Pfeile mit Richtung und Betrag — Skalarprodukt, Winkel, Kreuzprodukt und Drehmoment.",
+      "cluster": "mathematik",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:MAT-1104",
+      "unlocks": [
+        "MECH:WORK",
+        "MECH:TORQUE",
+        "CIRCUIT:MOMENT"
+      ]
+    },
+    {
+      "id": "PATH:SSF:ENG-EDM-0001",
+      "title": "Experiment 2: Wellen ueberlagern",
+      "subtitle": "Erodieren: Funken schneiden was Fraesen nicht kann — Draht, Bohr- und Senkerodieren.",
+      "cluster": "ingenieur",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:ENG-1101",
+      "unlocks": [
+        "TOOL:WIRE-EDM",
+        "TOOL:SINK-EDM",
+        "PRECISION:MIKRON"
+      ]
+    },
+    {
+      "id": "PATH:SSF:MAT-LGS-0001",
+      "title": "Beobachtung: Murmel auf verschiedenen Untergruenden",
+      "subtitle": "Lineare Gleichungssysteme — grafisch als Schnittpunkt, systematisch mit Gauss-Elimination.",
+      "cluster": "mathematik",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:MAT-1105",
+      "unlocks": [
+        "MATH:LGS",
+        "ANALYSIS:MATRIX"
+      ]
+    },
+    {
+      "id": "PATH:SSF:ENG-DMS-0001",
+      "title": "Seitenast: Fourier & Klangfarbe",
+      "subtitle": "Von der Waermedehnung zum Dehnungsmessstreifen: Spannung, Dehnung und wie ein DMS aus Widerstandsaenderung Kraft sichtba…",
+      "cluster": "ingenieur",
+      "status": "prototype",
+      "units": 6,
+      "kxfModuleId": "LRN:SSF:ENG-1102",
+      "unlocks": [
+        "SENSOR:STRAIN",
+        "SENSOR:STRESS",
+        "CIRCUIT:WHEATSTONE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-REINIGUNG-TENSIDE-0001",
+      "title": "Quiz Klangstruktur",
+      "subtitle": "Tenside, Mizellen und die Grenze zwischen Wasser und Oel — warum ein Molekuel mit zwei Seiten alles veraendert.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 5,
+      "kxfModuleId": "LRN:SSF:CHE-3001",
+      "unlocks": [
+        "CHEM:SURFACTANT",
+        "CHEM:MICELLE",
+        "SENSE:POLARITY"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-REINIGUNG-KALK-0001",
+      "title": "Licht als Informationstraeger",
+      "subtitle": "Saeuren und Basen im Haushalt: Kalkstein, Neutralisation und warum pH-Wert ueber Wirksamkeit entscheidet.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-2002",
+      "unlocks": [
+        "CHEM:ACID-BASE",
+        "CHEM:PH-SCALE",
+        "TOOL:DESCALER"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-REINIGUNG-CHLOR-0001",
+      "title": "Beobachtung: Licht durch Jalousienritze",
+      "subtitle": "Oxidation, Desinfektion und ein gefaehrlicher Fehler: was Chlor im Molekuel anrichtet und wann es gefaehrlich wird.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-2003",
+      "unlocks": [
+        "CHEM:OXIDATION",
+        "CHEM:DISINFECTION",
+        "SAFETY:CHEMICAL-MIXING"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-REINIGUNG-OBERFLAECHEN-0001",
+      "title": "Beobachtung: CD im Sonnenlicht",
+      "subtitle": "Haerte, Poroesitaet und Oberflaechenstruktur: warum jedes Material anders auf Reinigung reagiert.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3001",
+      "unlocks": [
+        "TOOL:SURFACE-ANALYSIS",
+        "MAT:HARDNESS-SCALE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-REINIGUNG-FENSTER-0001",
+      "title": "Experiment 3: Licht als Frequenz",
+      "subtitle": "Oberflaechenspannung, Verdunstung und warum der perfekte Wischer-Winkel existiert.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-2004",
+      "unlocks": [
+        "TOOL:STREAK-FREE",
+        "PHY:SURFACE-TENSION"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-REINIGUNG-ROTWEIN-0001",
+      "title": "Absorptionslinien: Fingerabdruck der Elemente",
+      "subtitle": "Proteindenaturierung, Loeslichkeit und warum der erste Reflex beim Fleck oft der falsche ist.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-2005",
+      "unlocks": [
+        "CHEM:PROTEIN-DENATURATION",
+        "TOOL:STAIN-REMOVAL"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-REINIGUNG-FLIESEN-HOLZ-0001",
+      "title": "Beobachtung: Doppler-Effekt im Strassenverkehr",
+      "subtitle": "Zellulose, Quellung und warum das Material entscheidet welches Reinigungsmittel sicher ist.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3002",
+      "unlocks": [
+        "MAT:WOOD-CARE",
+        "MAT:TILE-CARE",
+        "TOOL:FLOOR-CLEANING"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-REINIGUNG-EMULSION-0001",
+      "title": "Seitenast: Licht physikalisch",
+      "subtitle": "Emulsionen, Emulgatoren und warum Eigelb das Geheimnis der Kuechenchemie ist.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-2006",
+      "unlocks": [
+        "CHEM:EMULSION",
+        "CHEM:LECITHIN",
+        "TOOL:KITCHEN-CHEMISTRY"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-REINIGUNG-OSMOSE-0001",
+      "title": "Quiz Spektren",
+      "subtitle": "Osmose, Zellturgor und warum Wasser immer in Richtung der hoeheren Konzentration wandert.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-2007",
+      "unlocks": [
+        "CHEM:OSMOSIS",
+        "BIO:CELL-MEMBRANE",
+        "TOOL:FOOD-PRESERVATION"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-REINIGUNG-SIEDEPUNKT-0001",
+      "title": "Warum ist der Himmel blau",
+      "subtitle": "Luftdruck, Siedepunkt und warum Hochgebirgskochen laenger dauert — obwohl das Wasser heisser klingt.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3003",
+      "unlocks": [
+        "PHY:PHASE-DIAGRAM",
+        "PHY:BOILING-POINT",
+        "TOOL:ALTITUDE-COOKING"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-REINIGUNG-WAERME-0001",
+      "title": "Von Rayleigh-Streuung zu Sonnenuntergaengen und Mondfinsternissen — dasselbe Prinzip, zwei Perspektiven.",
+      "subtitle": "Waermeabgabe, Oberflaeche und warum Form Physik ist — nicht nur Aesthetik.",
+      "cluster": "haushalt",
+      "status": "prototype",
+      "units": 5,
+      "kxfModuleId": "LRN:SSF:PHY-3004",
+      "unlocks": [
+        "PHY:HEAT-TRANSFER",
+        "PHY:SURFACE-AREA",
+        "TOOL:THERMAL-DESIGN"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-KUECHE-KARAMELL-0001",
+      "title": "Warum blau?",
+      "subtitle": "Von suessem Zucker zu goldenem Karamell: thermische Zersetzung, Molekuelstruktur und die Kunst des perfekten Timings.",
+      "cluster": "kueche",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-1005",
+      "unlocks": [
+        "TOOL:CARAMELIZATION",
+        "SENSE:SWEET",
+        "CHEM:THERMAL-DECOMP"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-MOLEKUEL-0001",
+      "title": "Beobachtung: Der blaue Himmel",
+      "subtitle": "Das Dipol-Molekuel, Wasserstoffbruecken und warum Wasser fast alle anderen Fluessigkeiten in seinen Eigenschaften uebert…",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3001",
+      "unlocks": [
+        "CHEM:WATER-MOLECULE",
+        "CHEM:HYDROGEN-BOND",
+        "CHEM:DIPOLE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-AGGREGAT-0001",
+      "title": "Experiment: Rayleigh-Streuung",
+      "subtitle": "Schmelzen, Sieden, Sublimieren: Phasenuebergaenge, latente Waerme und das Phasendiagramm des Wassers.",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3002",
+      "unlocks": [
+        "PHY:PHASE-DIAGRAM",
+        "PHY:LATENT-HEAT",
+        "PHY:TRIPLE-POINT"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-ANOMALIE-0001",
+      "title": "Seitenast: Warum nicht violett?",
+      "subtitle": "Die Dichteanomalie des Wassers: warum Eis auf Wasser schwimmt — und was das fuer das Leben auf der Erde bedeutet.",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3003",
+      "unlocks": [
+        "PHY:DENSITY-ANOMALY",
+        "PHY:ICE-STRUCTURE",
+        "KD:LIFE-ON-EARTH"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-OBERFLAECHE-0001",
+      "title": "Quiz Rayleigh",
+      "subtitle": "Oberflaechenspannung, Kohaesion und Kapillarkraft — warum Wasser an sich selbst klebt.",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3004",
+      "unlocks": [
+        "PHY:SURFACE-TENSION",
+        "PHY:CAPILLARY-ACTION",
+        "PHY:CONTACT-ANGLE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-DAMPF-0001",
+      "title": "Warum rot beim Untergang?",
+      "subtitle": "Verdunstung, Sublimation, Dampfdruck und relative Luftfeuchtigkeit — Wasser wechselt den Aggregatzustand auch ohne zu ko…",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3005",
+      "unlocks": [
+        "PHY:VAPOR-PRESSURE",
+        "PHY:DEW-POINT",
+        "PHY:SUBLIMATION"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-WASSER-LOESUNG-0001",
+      "title": "Beobachtung: Sonnenuntergang",
+      "subtitle": "Hydratation, Ionen-Gitter und das Prinzip Gleiches loest Gleiches — warum der Dipol entscheidet was sich loest.",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-3001",
+      "unlocks": [
+        "CHEM:HYDRATION",
+        "CHEM:ION-DISSOLUTION",
+        "CHEM:SOLUBILITY"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-WAERME-0001",
+      "title": "Experiment: Sonnenwinkel und Farbe",
+      "subtitle": "Spezifische Waermekapazitaet, Wasser als Waermespeicher und warum das Klima ohne Ozeane unmoeglich waere.",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3006",
+      "unlocks": [
+        "PHY:HEAT-CAPACITY",
+        "PHY:THERMAL-MASS",
+        "ENV:OCEAN-CLIMATE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-AUTO-BESCHLEUNIGUNG-0001",
+      "title": "Seitenast: Mie-Streuung",
+      "subtitle": "Von Kraft und Bewegung: Entdecke wie Antriebskraft und Haftung zusammenwirken.",
+      "cluster": "auto",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3003",
+      "unlocks": [
+        "TOOL:ACCELERATION",
+        "SENSE:GRIP"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-KUECHE-SIEDEPUNKT-0001",
+      "title": "Quiz Weglaenge",
+      "subtitle": "Vom Berggipfel bis zum Schnellkochtopf: Entdecke wie Luftdruck und Temperatur zusammenwirken.",
+      "cluster": "kueche",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-1002",
+      "unlocks": [
+        "TOOL:PRESSURE_COOKER",
+        "SENSE:TEMP"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-AUTO-MOTOR-0001",
+      "title": "Wie genau wissen wir was wir messen",
+      "subtitle": "Von der Explosion im Zylinder zum Kühlkreislauf: Entdecke wie ein Verbrennungsmotor Wärme erzeugt und wieder loswird.",
+      "cluster": "auto",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3001",
+      "unlocks": [
+        "TOOL:ENGINE",
+        "SENSE:THERMAL"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-KUECHE-EMULSION-0001",
+      "title": "Fehlerfortpflanzung: Warum der Exponent entscheidet — und wie man den Engpass einer Messung findet.",
+      "subtitle": "Von Öl und Essig zu Mayonnaise: Entdecke wie Emulsionen funktionieren.",
+      "cluster": "kueche",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-1004",
+      "unlocks": [
+        "TOOL:EMULSIFICATION",
+        "SENSE:MOUTHFEEL"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-AUTO-KOLBEN-0001",
+      "title": "Fehler pflanzen sich fort",
+      "subtitle": "Von der Explosion zur Drehbewegung: Entdecke die Mechanik des Motors.",
+      "cluster": "auto",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3004",
+      "unlocks": [
+        "TOOL:PISTON",
+        "SENSE:MECHANICAL"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-AUTO-BATTERIE-0001",
+      "title": "Beobachtung: Backrezept",
+      "subtitle": "Reibungswärme trifft Entropie: zwei Kräfte die gegeneinander wirken — und warum langsames Entladen wirklich kühlt.",
+      "cluster": "auto",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-2006",
+      "unlocks": [
+        "SENSE:THERMAL",
+        "TOOL:BATTERY",
+        "PHY:ENTROPY-BASICS"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-PUMPE-WASSER-0001",
+      "title": "Experiment: Kugeldichte",
+      "subtitle": "Von Unterdruck bis Zentrifugalkraft: Entdecke wie Pumpen Wasser bewegen und wie du selbst eine baust.",
+      "cluster": "sonstige",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3001",
+      "unlocks": [
+        "TOOL:PUMP",
+        "SENSE:HYDRAULICS"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-AUTO-BREMSE-0001",
+      "title": "Seitenast: Warum Betraege?",
+      "subtitle": "Von Reibung und Wärme: Entdecke wie Bremsen Energie in Wärme verwandeln.",
+      "cluster": "auto",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-3002",
+      "unlocks": [
+        "TOOL:BRAKES",
+        "SENSE:FRICTION"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-AUTO-VERBRENNUNG-0001",
+      "title": "Quiz Fehlerfortpflanzung",
+      "subtitle": "Von Benzin zu CO₂: Entdecke die Chemie der Verbrennung.",
+      "cluster": "auto",
+      "status": "prototype",
+      "units": 5,
+      "kxfModuleId": "LRN:SSF:CHE-3001",
+      "unlocks": [
+        "TOOL:COMBUSTION",
+        "SENSE:EXHAUST"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-AUTO-DIFFERENTIAL-0001",
+      "title": "Engpass finden",
+      "subtitle": "Von Kurven und Drehzahlen: Entdecke die Mechanik des Ausgleichsgetriebes.",
+      "cluster": "auto",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-2005",
+      "unlocks": [
+        "TOOL:DIFFERENTIAL",
+        "SENSE:STEERING"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-KUECHE-KOLLAGEN-0001",
+      "title": "Experiment: Allgemeiner Fehler-Builder",
+      "subtitle": "Von zähem Fleisch zu zartem Gulasch: Entdecke wie Kollagen zu Gelatine wird.",
+      "cluster": "kueche",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-1003",
+      "unlocks": [
+        "TOOL:SLOW_COOK",
+        "SENSE:TEXTURE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-MAGNETISMUS-0001",
+      "title": "Quiz Fehler-Builder",
+      "subtitle": "Vom Kühlschrankmagnet zum Elektronenspin: Warum manche Stoffe magnetisch sind und andere nicht — und was Magnetismus mit…",
+      "cluster": "physik",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-4001",
+      "unlocks": [
+        "SENSOR:MAGNETIC",
+        "TOOL:ELECTROMAGNET",
+        "CHEM:ELECTRON-SPIN"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-ZUCKER-MOLEKUEL-0001",
+      "title": "Warum darf man eine Diode nicht einfach anschliessen",
+      "subtitle": "Von Haushaltszucker zu DNA-Bausteinen: Monosaccharide, Ribose und warum Zucker weit mehr ist als Süße.",
+      "cluster": "sonstige",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-5001",
+      "unlocks": [
+        "CHEM:MONOSACCHARIDE",
+        "CHEM:RIBOSE",
+        "BIO:DNA-BACKBONE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-ZUCKER-WELTALL-0001",
+      "title": "Kennlinie, Schleusenspannung, Lastgerade — warum der Arbeitspunkt alles entscheidet.",
+      "subtitle": "Erythrulose in der Gaswolke G+0.693-0.027: interstellare Chemie auf Staubteilchen bei fast absolutem Nullpunkt.",
+      "cluster": "sonstige",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-5002",
+      "unlocks": [
+        "SENSOR:SPECTRAL",
+        "CHEM:ASTROCHEMISTRY",
+        "KD:INTERSTELLAR-MEDIUM"
+      ]
+    },
+    {
+      "id": "PATH:SSF:BIO-LEBEN-URSPRUNG-0001",
+      "title": "Kennlinie & Schleusenspannung",
+      "subtitle": "Von Molekülwolken bis zur ersten Zelle: chemische Evolution, Panspermie und die offene Frage nach dem Beginn.",
+      "cluster": "astrobiologie",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:BIO-5001",
+      "unlocks": [
+        "BIO:ORIGIN-OF-LIFE",
+        "CHEM:PREBIOTIC-CHEMISTRY",
+        "MISSION:LAB-ALPHA"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-PIEZO-0001",
+      "title": "Beobachtung: Dioden im Alltag",
+      "subtitle": "Piezoelektrischer Effekt: Wie mechanischer Druck direkt zu elektrischem Strom wird — und warum Straßen bald Energie erze…",
+      "cluster": "energie",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-4002",
+      "unlocks": [
+        "SENSOR:PIEZO",
+        "TOOL:ENERGY-HARVESTING",
+        "PHY:DIPOLE-MOMENT"
+      ]
+    },
+    {
+      "id": "PATH:SSF:CHE-IRIDIUM-0001",
+      "title": "Experiment: Diodenkennlinie",
+      "subtitle": "Iridium: 6,8 Tonnen Weltförderung, 85 Tonnen Bedarf bis 2045. Wie ein seltenes Edelmetall zum Flaschenhals der Wassersto…",
+      "cluster": "energie",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:CHE-6001",
+      "unlocks": [
+        "CHEM:PLATINUM-GROUP",
+        "CHEM:IRIDIUM",
+        "ENV:CRITICAL-MATERIALS"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-ELEKTROLYSE-0001",
+      "title": "Quiz Kennlinie",
+      "subtitle": "PEM-Elektrolyse: Elektrochemie, Membranen und warum grüner Wasserstoff mehr ist als Strom ins Wasser halten.",
+      "cluster": "energie",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-5001",
+      "unlocks": [
+        "CHEM:ELECTROLYSIS",
+        "PHY:PEM",
+        "ENV:GREEN-HYDROGEN"
+      ]
+    },
+    {
+      "id": "PATH:SSF:ENV-ROHSTOFFE-ENERGIEWENDE-0001",
+      "title": "Arbeitspunkt & Lastgerade",
+      "subtitle": "Lithium, Iridium, Kupfer, Dysprosium: Welche Rohstoffe die Energiewende braucht — und wo sie knapp werden könnten.",
+      "cluster": "energie",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:ENV-6001",
+      "unlocks": [
+        "ENV:CRITICAL-MATERIALS",
+        "ENV:CIRCULAR-ECONOMY",
+        "KD:ENERGY-TRANSITION"
+      ]
+    },
+    {
+      "id": "PATH:SSF:ECO-KREDIT-0001",
+      "title": "Experiment: Lastgerade & Arbeitspunkt",
+      "subtitle": "Kreditgeber, Kreditnehmer, Laufzeit und Tilgung: wie geliehenes Geld funktioniert und was es wirklich kostet.",
+      "cluster": "wirtschaft",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:ECO-L0-000001",
+      "unlocks": [
+        "ECO:CREDIT-BASICS",
+        "ECO:LOAN-MECHANICS",
+        "NOXIA:BANK-CREDIT-TAB"
+      ]
+    },
+    {
+      "id": "PATH:SSF:ECO-ZINS-0001",
+      "title": "Seitenast: Warum bleibt UD bei US?",
+      "subtitle": "Einfacher Zins und Zinseszins: lineares versus exponentielles Wachstum — und warum der Unterschied bei langen Zeitraeume…",
+      "cluster": "wirtschaft",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:ECO-L0-000002",
+      "unlocks": [
+        "ECO:COMPOUND-INTEREST",
+        "MATH:EXPONENTIAL-GROWTH",
+        "NOXIA:INVESTMENT-MECHANICS"
+      ]
+    },
+    {
+      "id": "PATH:SSF:AST-SONNENSYSTEM-0001",
+      "title": "Quiz Arbeitspunkt",
+      "subtitle": "Hohmann-Transfer, Gravitationsschlingen und warum Energie im All teurer ist als Zeit.",
+      "cluster": "astronomie",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:AST-L1-000001",
+      "unlocks": [
+        "NAV:ORBITAL",
+        "UNL:NOX:NAV:ORBITAL",
+        "AST:HOHMANN-TRANSFER"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-SPEKTRALANALYSE-0001",
+      "title": "Wann hoert eine unendliche Summe auf zu wachsen",
+      "subtitle": "Spektrallinien als Fingerabdruck: Warum Natrium gelb leuchtet, Helium nicht auf der Erde entdeckt wurde — und wie NOXIA-…",
+      "cluster": "physik",
+      "status": "prototype",
+      "units": 3,
+      "kxfModuleId": "LRN:SSF:PHY-L1-000001",
+      "unlocks": [
+        "SENSOR:SPECTRAL",
+        "UNL:NOX:SENSOR:SPECTRAL",
+        "PHY:QUANTUM-LEVELS"
+      ]
+    },
+    {
+      "id": "PATH:SSF:ECO-KREDIT-NOXIA-0001",
+      "title": "Von Zenons Paradoxon zur Fourier-Synthese: Konvergenz, Reihen und der Klang der Mathematik.",
+      "subtitle": "Zins als Preis fuer Zeit: Kreditsumme, Laufzeit und Rueckzahlung — und wann ein Kredit in NOXIA wirklich lohnt.",
+      "cluster": "wirtschaft",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:ECO-L0-000001",
+      "unlocks": [
+        "ECO:CREDIT-BASICS",
+        "UNL:NOX:bank-credit",
+        "NOXIA:BANK-CREDIT-TAB"
+      ]
+    },
+    {
+      "id": "PATH:SSF:ECO-ZINSESZINS-NOXIA-0001",
+      "title": "Geometrische Reihe",
+      "subtitle": "Zinseszins: Wie 10% Zinsen nach 2 Ticks nicht 1.200 sondern 1.210 Credits ergibt — und warum das im Spiel entscheidend i…",
+      "cluster": "wirtschaft",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:ECO-L0-000002",
+      "unlocks": [
+        "ECO:COMPOUND-INTEREST",
+        "UNL:NOX:bank-compound",
+        "MATH:EXPONENTIAL-GROWTH"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-DIPOL-0001",
+      "title": "Zenons Paradoxon",
+      "subtitle": "Vom Kochtopf zum Dipolmolekül: Warum Wasser bei 100°C siedet statt bei -80°C — und was das mit einem Winkel von 104,5° z…",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 3,
+      "kxfModuleId": "LRN:SSF:PHY-L1-000003",
+      "unlocks": [
+        "CHEM:WATER-MOLECULE",
+        "UNL:NOX:CHEM:WATER-MOLECULE",
+        "CHEM:HYDROGEN-BOND",
+        "CHEM:DIPOLE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-PHASEN-0001",
+      "title": "Experiment: Geometrische Reihe",
+      "subtitle": "Phasendiagramm: Wie Druck und Temperatur bestimmen ob Wasser fest, fluessig oder gasfoermig ist — und warum auf dem Mars…",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 3,
+      "kxfModuleId": "LRN:SSF:PHY-L1-000004",
+      "unlocks": [
+        "PHY:PHASE-DIAGRAM",
+        "UNL:NOX:PHY:PHASE-DIAGRAM",
+        "PHY:TRIPLE-POINT"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-EIS-0001",
+      "title": "Seitenast: Konvergenzkriterien",
+      "subtitle": "Dichteanomalie des Wassers: Warum Eis leichter ist als fluessiges Wasser — und was das fuer Leben auf der Erde bedeutet.",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-L1-000005",
+      "unlocks": [
+        "PHY:DENSITY-ANOMALY",
+        "UNL:NOX:PHY:DENSITY-ANOMALY",
+        "PHY:ICE-STRUCTURE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-OBERFL-0001",
+      "title": "Quiz Reihen",
+      "subtitle": "Oberflaechenspannung und Kapillaritaet: Wie Wassermolekuele an der Oberflaeche ein elastisches Netz bilden — und warum P…",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-L1-000006",
+      "unlocks": [
+        "PHY:SURFACE-TENSION",
+        "UNL:NOX:PHY:SURFACE-TENSION",
+        "PHY:CAPILLARY-ACTION"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-SUBLIM-0001",
+      "title": "Fourier-Synthesizer",
+      "subtitle": "Sublimation und Verdunstung: Wie Wasser als Festkoerper direkt gasfoermig werden kann — und was das auf Titan bedeutet.",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-L1-000007",
+      "unlocks": [
+        "PHY:SUBLIMATION",
+        "UNL:NOX:PHY:SUBLIMATION",
+        "PHY:VAPOR-PRESSURE"
+      ]
+    },
+    {
+      "id": "PATH:SSF:PHY-WASSER-WAERME-0001",
+      "title": "Beobachtung: Synthesizer & Klang",
+      "subtitle": "Spezifische Waermekapazitaet und latente Waerme: Warum Wasser so viel Energie speichert — und Ozeane das Klima der Erde …",
+      "cluster": "wasser",
+      "status": "prototype",
+      "units": 4,
+      "kxfModuleId": "LRN:SSF:PHY-L1-000008",
+      "unlocks": [
+        "PHY:HEAT-CAPACITY",
+        "UNL:NOX:PHY:HEAT-CAPACITY",
+        "PHY:LATENT-HEAT",
+        "ENV:OCEAN-CLIMATE"
+      ]
+    }
+  ]
 }
