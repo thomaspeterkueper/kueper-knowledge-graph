@@ -1,0 +1,25 @@
+module_id: LRN:SSF:PHY-L1-000003
+typ: LearningModule
+layer: L3
+name: Warum ist Wasser eigentlich so seltsam?
+domain: PHY
+subdomain: molecular-physics
+status: '[R]'
+requires: []
+teaches:
+  - CON:L1:dipol
+  - CON:L1:wasserstoffbruecke
+  - CON:L1:elektronegativitaet
+  - CON:L1:siedepunkt-anomalie
+unlocks:
+  - UNL:NOX:CHEM:WATER-MOLECULE
+  - CHEM:WATER-MOLECULE
+  - CHEM:HYDROGEN-BOND
+  - CHEM:DIPOLE
+ssf_path_id: PATH:SSF:PHY-WASSER-DIPOL-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Dipol 104.5deg, Elektronegativitaet O=3.44/H=2.20,
+  H-Bruecken 23 kJ/mol, Siedepunkt-Anomalie.
+  NOXIA: Wasserrecycler-Effizienz-Analyse.
