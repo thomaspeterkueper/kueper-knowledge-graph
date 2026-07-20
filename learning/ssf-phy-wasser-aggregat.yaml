@@ -1,0 +1,25 @@
+module_id: LRN:SSF:PHY-L1-000004
+typ: LearningModule
+layer: L3
+name: Warum hat Wasser genau drei Formen?
+domain: PHY
+subdomain: thermodynamics
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000003
+teaches:
+  - CON:L1:aggregatzustand
+  - CON:L1:phasendiagramm
+  - CON:L1:tripelpunkt
+  - CON:L1:sublimation
+unlocks:
+  - UNL:NOX:PHY:PHASE-DIAGRAM
+  - PHY:PHASE-DIAGRAM
+  - PHY:TRIPLE-POINT
+ssf_path_id: PATH:SSF:PHY-WASSER-PHASEN-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Tripelpunkt 6.11 mbar / 0.01 Celsius.
+  Mars 6.36 mbar -> Sublimation statt Schmelze.
+  Kritischer Punkt 220.6 bar / 374 Celsius.
