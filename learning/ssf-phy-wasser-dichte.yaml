@@ -1,0 +1,25 @@
+module_id: LRN:SSF:PHY-L1-000005
+typ: LearningModule
+layer: L3
+name: Warum platzen Wasserleitungen im Winter von innen?
+domain: PHY
+subdomain: thermodynamics
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000003
+teaches:
+  - CON:L1:dichteanomalie
+  - CON:L1:eisstruktur
+  - CON:L1:volumenexpansion
+unlocks:
+  - UNL:NOX:PHY:DENSITY-ANOMALY
+  - PHY:DENSITY-ANOMALY
+  - PHY:ICE-STRUCTURE
+  - KNOW:LIFE-ON-EARTH
+ssf_path_id: PATH:SSF:PHY-WASSER-EIS-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Eis 917 kg/m3, Wasser bei 4 Celsius 999.97 kg/m3.
+  Volumenexpansion beim Gefrieren +9%.
+  NOXIA: Habitat-Isolierung auf Eisplaneten.
