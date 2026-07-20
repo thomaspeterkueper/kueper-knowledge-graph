@@ -1,0 +1,24 @@
+module_id: LRN:SSF:PHY-4001
+typ: LearningModule
+layer: L3
+name: Warum zieht ein Magnet Eisen an aber keine Holzschraube?
+domain: PHY
+subdomain: electromagnetism
+status: '[R]'
+requires: []
+teaches:
+  - CON:L1:elektronenspin
+  - CON:L1:ferromagnetismus
+  - CON:L1:elektromagnetismus
+  - CON:L1:magnetische-pole
+unlocks:
+  - SENSOR:MAGNETIC
+  - TOOL:ELECTROMAGNET
+  - CHEM:ELECTRON-SPIN
+ssf_path_id: PATH:SSF:PHY-MAGNETISMUS-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Curie-Temperatur Eisen 770 Celsius.
+  IrO2 als ferromagnetisches Material.
+  B = mu0 * N * I / L fuer Spule.
