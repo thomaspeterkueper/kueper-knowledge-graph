@@ -1,0 +1,25 @@
+module_id: LRN:SSF:PHY-5001
+typ: LearningModule
+layer: L3
+name: Wie zerlegt ein Elektrolyseur Wasser in Wasserstoff und Sauerstoff?
+domain: PHY
+subdomain: electrochemistry
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000003
+teaches:
+  - CON:L1:elektrolyse
+  - CON:L1:pem-membran
+  - CON:L1:gruener-wasserstoff
+unlocks:
+  - PHY:PEM
+  - CHEM:ELECTROLYSIS
+  - ENV:GREEN-HYDROGEN
+ssf_path_id: PATH:SSF:PHY-ELEKTROLYSE-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Mindesspannung 1.23 V (thermodynamisch).
+  Praxis: 1.8-2.0 V (Ueberspannung).
+  IrO2-Anode noetig: saure Umgebung, hohe Stabilitaet.
+  Titan-Kontext: O2 aus Wasserelektrolyse fuer CH4-Verbrennung.
