@@ -1,0 +1,22 @@
+module_id: LRN:SSF:ENV-6001
+typ: LearningModule
+layer: L3
+name: Warum braucht die Energiewende so viele seltene Materialien?
+domain: ENV
+subdomain: critical-materials
+status: '[R]'
+requires: []
+teaches:
+  - CON:L1:kritische-rohstoffe
+  - CON:L1:kreislaufwirtschaft
+  - CON:L1:energiewende-materialien
+unlocks:
+  - ENV:CRITICAL-MATERIALS
+  - ENV:CIRCULAR-ECONOMY
+  - KNOW:ENERGY-TRANSITION
+ssf_path_id: PATH:SSF:ENV-ROHSTOFFE-ENERGIEWENDE-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Fraunhofer ISI 2026: 12 von 14 Metallen kritisch bis 2045.
+  Iridium 12.5x, Lithium 4.7x, Scandium 2.6x, Kupfer 0.64x.
