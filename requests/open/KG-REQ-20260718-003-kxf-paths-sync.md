@@ -23,7 +23,7 @@ blocking: >
   aus KG abgeleitet werden.
 suggestedIds: []
 targetExport: exports/kxf-learning-paths-0.1.json
-status: open
+status: done
 created: 2026-07-18
 curator: T.P.K.
 createdObjects: []
@@ -47,3 +47,8 @@ notes: >
   "domainsNeeded": ["KD:PHY-MOLECULAR", "KD:PHY-POLARITY", "KD:CHE-HYDROGEN-BOND"]
 }
 ```
+
+
+## Erledigt
+
+Erledigt 2026-07-20: kxf-learning-paths-0.1.json v0.2.0 generiert mit 60 Pfaden, Cluster-Zuordnung, unlocks-Array, kxfModuleId-Mapping. SSF-Quelle: lib/learningPaths.ts v1.2.4.
