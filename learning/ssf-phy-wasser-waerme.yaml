@@ -1,0 +1,26 @@
+module_id: LRN:SSF:PHY-L1-000008
+typ: LearningModule
+layer: L3
+name: Warum braucht Wasser so lange zum Kochen?
+domain: PHY
+subdomain: thermodynamics
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000003
+teaches:
+  - CON:L1:waermekapazitaet
+  - CON:L1:latente-waerme
+  - CON:L1:phasenwechsel-energie
+unlocks:
+  - UNL:NOX:PHY:HEAT-CAPACITY
+  - PHY:HEAT-CAPACITY
+  - PHY:LATENT-HEAT
+  - ENV:OCEAN-CLIMATE
+ssf_path_id: PATH:SSF:PHY-WASSER-WAERME-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  c_wasser = 4182 J/(kg*K), Eisen 450 J/(kg*K).
+  Latente Verdampfungswaerme: 2260 kJ/kg.
+  Schmelzwaerme: 334 kJ/kg.
+  NOXIA: Thermomanagement Kolonie-Heizung.
