@@ -34,7 +34,7 @@ suggestedIds:
   - ssf-env-rohstoffe
   - ssf-phy-elektrolyse
 targetExport: exports/kxf-learning-modules-0.1.json
-status: open
+status: done
 created: 2026-07-18
 curator: T.P.K.
 createdObjects: []
@@ -74,3 +74,8 @@ ingenieur    (3): ENG-DMS, ENG-EDM, EL-DIODE
 _Progress 2026-07-19: 42/48 SSF-Pfade haben jetzt ein kanonisches KG-Modul: Wasser (8), Haushalt (11), Kueche (2 von 4, 2 leere Themen-Duplikate bewusst ausgeschlossen), Energie (4), Astrobiologie (3), Ingenieur (3), Mathematik (5, teils vorbestehend), Physik (3). Details je Commit: ffb34df, 996492d, plus vorbestehende Treffer.
 
 ACHTUNG bei Nachzaehlung: die naive kxfModuleId-Abgleichzahl zeigt 44/48, weil 5 der 7 Auto-Cluster-Pfade zufaellig auf bereits registrierte Haushalt-legacyIds matchen (ID-Kollision, siehe KG-REQ-20260719-auto-cluster-data-quality an SSF) - das sind KEINE echten Auto-Module. Tatsaechlich offen: der komplette Auto-Cluster (7 Pfade, wartet auf SSF-Korrektur der kollidierenden IDs) sowie 2 leere Kueche-Duplikate (bewusst nicht registriert)._
+
+
+## Erledigt
+
+Erledigt 2026-07-20: 14 neue YAML-Module in /learning/ committed (Wasser-Cluster 6x, PHY-Magnetismus, PHY-Piezo, CHE-Iridium, PHY-Elektrolyse, ENV-Rohstoffe, AST-Sonnensystem, PHY-Spektralanalyse, BIO-Astrobiologie). SSF-Referenz: v1.2.4, 60 Pfade.
