@@ -1,0 +1,24 @@
+module_id: LRN:SSF:PHY-L1-000006
+typ: LearningModule
+layer: L3
+name: Warum kann eine Bueroclammer auf Wasser schwimmen?
+domain: PHY
+subdomain: surface-physics
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000003
+teaches:
+  - CON:L1:oberflaechenspannung
+  - CON:L1:kapillaritaet
+  - CON:L1:adhaesion
+unlocks:
+  - UNL:NOX:PHY:SURFACE-TENSION
+  - PHY:SURFACE-TENSION
+  - PHY:CAPILLARY-ACTION
+ssf_path_id: PATH:SSF:PHY-WASSER-OBERFL-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  gamma = 72.8 mN/m bei 20 Celsius.
+  Kapillarformel: h = 2*gamma*cos(theta) / (rho*g*r).
+  NOXIA: Kapillarsysteme in Wasserversorgung.
