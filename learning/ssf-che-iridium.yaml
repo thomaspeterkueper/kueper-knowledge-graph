@@ -1,0 +1,25 @@
+module_id: LRN:SSF:CHE-6001
+typ: LearningModule
+layer: L3
+name: Warum koennte ein Metall die Energiewende blockieren das kaum jemand kennt?
+domain: CHE
+subdomain: catalysis
+status: '[R]'
+requires: []
+teaches:
+  - CON:L1:iridium
+  - CON:L1:platingruppe
+  - CON:L1:kritische-rohstoffe
+  - CON:L1:pem-katalyse
+unlocks:
+  - CHEM:IRIDIUM
+  - CHEM:PLATINUM-GROUP
+  - ENV:CRITICAL-MATERIALS
+ssf_path_id: PATH:SSF:CHE-IRIDIUM-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Weltproduktion Iridium 6.8 t/Jahr.
+  Bedarf 2045 Nachhaltig-Szenario: 85 t.
+  IrO2 als einzig stabiler Anode-Katalysator in PEM.
+  Preis 2013: 826 USD/oz, 2023: 4682 USD/oz.
