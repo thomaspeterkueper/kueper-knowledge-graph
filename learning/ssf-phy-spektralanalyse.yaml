@@ -1,0 +1,24 @@
+module_id: LRN:SSF:PHY-L1-000001
+typ: LearningModule
+layer: L3
+name: Wie liest man aus dem Licht was ein Stern enthaelt?
+domain: PHY
+subdomain: spectroscopy
+status: '[R]'
+requires: []
+teaches:
+  - CON:L1:spektrallinien
+  - CON:L1:quantenniveaus
+  - CON:L1:fraunhofer-linien
+  - CON:L1:doppler-rotverschiebung
+unlocks:
+  - SENSOR:SPECTRAL
+  - UNL:NOX:SENSOR:SPECTRAL
+  - PHY:QUANTUM-LEVELS
+ssf_path_id: PATH:SSF:PHY-SPEKTRALANALYSE-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Kirchhoff/Bunsen 1859. Fraunhofer 1814 (570+ Linien).
+  Helium 1868 in Sonne entdeckt, 27 Jahre vor Erde.
+  Na bei 589 nm. Balmer-Serie H: 656, 486, 434 nm.
