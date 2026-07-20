@@ -1,0 +1,25 @@
+module_id: LRN:SSF:BIO-5001
+typ: LearningModule
+layer: L3
+name: Wie entstand das erste Leben auf der Erde?
+domain: BIO
+subdomain: astrobiology
+status: '[R]'
+requires:
+  - LRN:SSF:CHE-5001
+teaches:
+  - CON:L1:praebiotische-chemie
+  - CON:L1:miller-urey
+  - CON:L1:rna-welt
+  - CON:L1:erste-zelle
+unlocks:
+  - BIO:ORIGIN-OF-LIFE
+  - CHEM:PREBIOTIC-CHEMISTRY
+  - MISSION:LAB-ALPHA
+ssf_path_id: PATH:SSF:BIO-LEBEN-URSPRUNG-0001
+created: '2026-07-19'
+curator: T.P.K.
+notes: >
+  Miller-Urey 1953: CH4 + NH3 + H2O + H2 + Blitz -> Aminosaeuren.
+  RNA-Welt-Hypothese. Ribose als DNA-Rueckgrat.
+  Erythrulose-Fund G+0.693-0.027, 2026.
