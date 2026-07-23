@@ -1,0 +1,31 @@
+module_id: LRN:SSF:COLONY-L1-000001
+typ: LearningModule
+layer: L1
+name: Wie gruendet man eine Kolonie? — Standortwahl, Lebenserhaltung, Erstversorgung
+domain: ENG
+subdomain: space-colonization
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000003   # Wasserchemie — Recycling
+  - LRN:SSF:ECO-L0-000001   # Kredite — Kapital fuer Erstinvestition
+  - LRN:SSF:AST-L1-000001   # Orbitalmechanik — Anflug und Bahn
+teaches:
+  - CON:L1:standortwahl
+  - CON:L1:lebenserhaltung
+  - CON:L1:erstversorgung
+  - CON:L1:kolonisierung-grundlagen
+  - CON:L1:ressourcenplanung
+unlocks:
+  - UNL:NOX:COLONY:FOUND
+  - UNL:NOX:SHIP:PIONEER
+ssf_path_id: PATH:SSF:ENG-COLONY-FOUND-0001
+created: '2026-07-21'
+curator: T.P.K.
+notes: >
+  Standortkriterien: Ressourcen (Wasser, Metalle), Sonnenlicht (Energie),
+  Strahlung (Abschirmung durch Felsen oder Atmosphaere).
+  Lebenserhaltung Minimalset: O2 (Elektrolyse), H2O (Recycling >95%),
+  Nahrung (1500 kcal/Tag/Person, 2kg Vorrat/Tag).
+  Erstversorgung: kritisches Zeitfenster 0-90 Tage, bis lokale Produktion laeuft.
+  ISRU (In-Situ Resource Utilization): Treibstoff, Baumaterial aus lokalem Gestein.
+  NOXIA: Kolonie-Gruendungs-Gate, Pioneer-Schiff freischalten.
