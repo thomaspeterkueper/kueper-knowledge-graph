@@ -65,3 +65,9 @@ summary: >
 
 SSF-0021 und SSF-0022 warten auf diese Module.
 NOXIA-Gründungs-Gates bleiben deaktiviert bis KG + SSF geliefert haben.
+
+
+## Erledigt 2026-07-21
+
+- `eng-colony-l1-000001.yaml`: COLONY-L1-000001 angelegt
+- `eng-station-l1-000001.yaml`: STATION-L1-000001 angelegt
