@@ -3,7 +3,7 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "created": "2026-07-02",
   "modified": "2026-07-10T12:00:00+02:00",
   "sourceDocuments": [
@@ -3002,6 +3002,116 @@
         "legacyId": "LRN:SSF:PHY-4001",
         "createdFromRequest": "KG-REQ-20260718-002",
         "knowledgeDomain": "KD:PHYS:N1"
+      },
+      {
+        "id": "ENG-L1-000003",
+        "version": "0.1.0",
+        "created": "2026-07-21",
+        "modified": "2026-07-21",
+        "title": {
+          "de": "Wie gründet man eine Kolonie? — Standortwahl, Lebenserhaltung, Erstversorgung",
+          "en": "How to Found a Colony — Site Selection, Life Support, Initial Supply"
+        },
+        "meta": {
+          "title": "Wie gründet man eine Kolonie? — Standortwahl, Lebenserhaltung, Erstversorgung",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "built",
+          "entryQuestion": "Was braucht eine neue menschliche Siedlung auf dem Mars oder dem Mond?",
+          "depthMin": 1,
+          "depthMax": null,
+          "durationMin": 5,
+          "durationMax": 10,
+          "entryQuestions": {
+            "L0": null,
+            "L1": "Was braucht eine neue menschliche Siedlung auf dem Mars oder dem Mond?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [
+            "learning/eng-colony-l1-000001.yaml"
+          ],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000003",
+            "ECO-L0-000001",
+            "AST-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "unlocks": [
+          "UNL:NOX:COLONY:FOUND",
+          "UNL:NOX:SHIP:PIONEER"
+        ],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:COLONY-L1-000001",
+        "createdFromRequest": "KB-REQUEST-0005",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "ENG-L1-000004",
+        "version": "0.1.0",
+        "created": "2026-07-21",
+        "modified": "2026-07-21",
+        "title": {
+          "de": "Raumstationen — Orbit-Mechanik, Andockmanöver, Lebenserhaltung im All",
+          "en": "Space Stations — Orbital Mechanics, Docking, Life Support in Space"
+        },
+        "meta": {
+          "title": "Raumstationen — Orbit-Mechanik, Andockmanöver, Lebenserhaltung im All",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "built",
+          "entryQuestion": "Wie bleibt eine Raumstation in ihrer Umlaufbahn?",
+          "depthMin": 1,
+          "depthMax": null,
+          "durationMin": 5,
+          "durationMax": 10,
+          "entryQuestions": {
+            "L0": null,
+            "L1": "Wie bleibt eine Raumstation in ihrer Umlaufbahn?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [
+            "learning/eng-station-l1-000001.yaml"
+          ],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "AST-L1-000001",
+            "PHY-L1-000003"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "unlocks": [
+          "UNL:NOX:STATION:FOUND",
+          "UNL:NOX:SHIP:PIONEER",
+          "UNL:NOX:NAV:ORBITAL"
+        ],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:STATION-L1-000001",
+        "createdFromRequest": "KB-REQUEST-0005",
+        "knowledgeDomain": "KD:MTL:N1"
       }
     ]
   },
@@ -3070,5 +3180,5 @@
       "resolution": "Remove learning_path from moduleTypes. Use records.paths for PATH objects."
     }
   ],
-  "updated": "2026-07-19"
+  "updated": "2026-07-21"
 }
