@@ -1,0 +1,30 @@
+module_id: LRN:SSF:STATION-L1-000001
+typ: LearningModule
+layer: L1
+name: Raumstationen — Orbit-Mechanik, Andockmanöver, Lebenserhaltung im All
+domain: ENG
+subdomain: space-station
+status: '[R]'
+requires:
+  - LRN:SSF:AST-L1-000001   # Orbitalmechanik — Grundlage Umlaufbahn
+  - LRN:SSF:PHY-L1-000003   # Wasserchemie — Recycling lebenswichtig
+teaches:
+  - CON:L1:leo-meo-geo
+  - CON:L1:andockmanöver
+  - CON:L1:bahnstabilitaet
+  - CON:L1:lebenserhaltung-raumstation
+  - CON:L1:solarenergie-vakuum
+unlocks:
+  - UNL:NOX:STATION:FOUND
+  - UNL:NOX:SHIP:PIONEER
+  - UNL:NOX:NAV:ORBITAL
+ssf_path_id: PATH:SSF:ENG-STATION-FOUND-0001
+created: '2026-07-21'
+curator: T.P.K.
+notes: >
+  LEO 160-2000 km, MEO 2000-35786 km, GEO 35786 km (geostationaer).
+  Andocken: Orbitmaenöver, relative Geschwindigkeit <0.1 m/s bei Kontakt.
+  ISS Wasserrecycling: 93% Effizienz (Urin+Kondensation→Trinkwasser).
+  Solarenergie: ISS 84 kW aus 2500 m² Panels, kein Atmosphärenverlust.
+  Strahlungsschutz: GCR ausserhalb Magnetfeld, Sonnensturm-Shelter nötig.
+  NOXIA: Stations-Gruendungs-Gate, Pioneer-Schiff und Orbital-Nav freischalten.
