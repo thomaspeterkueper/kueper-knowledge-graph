@@ -1,4 +1,5 @@
-module_id: LRN:SSF:BIO-5001
+module_id: BIO-L1-000001
+legacy_id: LRN:SSF:BIO-5001
 typ: LearningModule
 layer: L3
 name: Wie entstand das erste Leben auf der Erde?
@@ -6,13 +7,14 @@ domain: BIO
 subdomain: astrobiology
 status: '[R]'
 requires:
-  - LRN:SSF:CHE-5001
+  - CHE-L1-000014
 teaches:
   - CON:L1:praebiotische-chemie
   - CON:L1:miller-urey
   - CON:L1:rna-welt
   - CON:L1:erste-zelle
-unlocks:
+unlocks: []
+planned_unlocks:
   - BIO:ORIGIN-OF-LIFE
   - CHEM:PREBIOTIC-CHEMISTRY
   - MISSION:LAB-ALPHA
