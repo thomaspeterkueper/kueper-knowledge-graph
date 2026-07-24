@@ -11,27 +11,42 @@ const WRITE = process.argv.includes('--write');
 const canonicalPattern = /^[A-Z]{3,}-L\d+-\d{6}$/;
 
 function fail(message) {
-  console.error(message);
-  process.exitCode = 1;
+  throw new Error(message);
+}
+
+function normalizedText(value) {
+  return String(value ?? '')
+    .normalize('NFKD')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function moduleTitle(module) {
+  if (typeof module?.meta?.title === 'string') return module.meta.title;
+  if (typeof module?.title === 'string') return module.title;
+  if (typeof module?.title?.de === 'string') return module.title.de;
+  return '';
 }
 
 function loadExport() {
   const data = JSON.parse(fs.readFileSync(EXPORT_PATH, 'utf8'));
   const modules = data?.records?.learning_modules ?? [];
-  const canonicalIds = new Set(modules.map((m) => m.id));
-  const legacyToCanonical = new Map();
+  const canonicalById = new Map(modules.map((m) => [m.id, m]));
+  const legacyCandidates = new Map();
+  const explicitMappings = new Map();
 
   for (const module of modules) {
-    if (module.legacyId) legacyToCanonical.set(module.legacyId, module.id);
+    if (module.legacyId) legacyCandidates.set(module.legacyId, module);
   }
 
   for (const mapping of data.legacyIdMappings ?? []) {
     if (mapping.legacy && mapping.canonicalViewId) {
-      legacyToCanonical.set(mapping.legacy, mapping.canonicalViewId);
+      explicitMappings.set(mapping.legacy, mapping.canonicalViewId);
     }
   }
 
-  return { canonicalIds, legacyToCanonical };
+  return { canonicalById, legacyCandidates, explicitMappings };
 }
 
 function parseRootScalar(text, key) {
@@ -40,17 +55,47 @@ function parseRootScalar(text, key) {
   return match ? match[1].replace(/^['"]|['"]$/g, '') : null;
 }
 
-function resolveCanonical(moduleId, canonicalIds, legacyToCanonical) {
-  if (!moduleId) return null;
-  if (canonicalIds.has(moduleId)) return moduleId;
-  if (legacyToCanonical.has(moduleId)) return legacyToCanonical.get(moduleId);
+function titlesAgree(sourceName, module) {
+  const source = normalizedText(sourceName);
+  const target = normalizedText(moduleTitle(module));
+  return Boolean(source && target && source === target);
+}
+
+function resolveCanonical(moduleId, moduleName, canonicalById, legacyCandidates, explicitMappings) {
+  if (!moduleId) return { canonical: null, reason: 'missing-module-id' };
+  if (canonicalById.has(moduleId)) return { canonical: moduleId, reason: 'already-canonical' };
+
+  if (explicitMappings.has(moduleId)) {
+    const target = explicitMappings.get(moduleId);
+    if (canonicalById.has(target)) return { canonical: target, reason: 'explicit-mapping' };
+  }
+
+  if (legacyCandidates.has(moduleId)) {
+    const targetModule = legacyCandidates.get(moduleId);
+    if (titlesAgree(moduleName, targetModule)) {
+      return { canonical: targetModule.id, reason: 'legacy-id-and-title-match' };
+    }
+    return {
+      canonical: null,
+      reason: `semantic-conflict:${targetModule.id}:${moduleTitle(targetModule)}`,
+    };
+  }
 
   if (moduleId.startsWith('LRN:SSF:')) {
     const suffix = moduleId.slice('LRN:SSF:'.length);
-    if (canonicalIds.has(suffix)) return suffix;
+    const targetModule = canonicalById.get(suffix);
+    if (targetModule && titlesAgree(moduleName, targetModule)) {
+      return { canonical: suffix, reason: 'prefixed-canonical-id-and-title-match' };
+    }
+    if (targetModule) {
+      return {
+        canonical: null,
+        reason: `semantic-conflict:${suffix}:${moduleTitle(targetModule)}`,
+      };
+    }
   }
 
-  return null;
+  return { canonical: null, reason: 'no-deterministic-mapping' };
 }
 
 function normalizeUnlocks(text) {
@@ -75,12 +120,17 @@ function normalizeUnlocks(text) {
     break;
   }
 
+  // Nested historic structures such as `unlocks: noxia:` are intentionally
+  // not rewritten automatically. They need a semantic conversion, not a text move.
+  if (entries.length === 0) return { text, rawAliases: [] };
+
   const normative = entries.filter((entry) => entry.startsWith('UNL:NOX:'));
   const rawAliases = entries.filter((entry) => !entry.startsWith('UNL:NOX:'));
   if (rawAliases.length === 0) return { text, rawAliases };
 
   const replacement = ['unlocks:'];
   for (const entry of normative) replacement.push(`  - ${entry}`);
+  if (normative.length === 0) replacement.push('  []');
   replacement.push('planned_unlocks:');
   for (const entry of rawAliases) replacement.push(`  - ${entry}`);
 
@@ -90,17 +140,21 @@ function normalizeUnlocks(text) {
   };
 }
 
-function migrateFile(file, canonicalIds, legacyToCanonical) {
+function migrateFile(file, context) {
   const fullPath = path.join(LEARNING_DIR, file);
   let text = fs.readFileSync(fullPath, 'utf8');
   const moduleId = parseRootScalar(text, 'module_id');
+  const moduleName = parseRootScalar(text, 'name');
   const legacyId = parseRootScalar(text, 'legacy_id');
-  const canonical = resolveCanonical(moduleId, canonicalIds, legacyToCanonical);
+  const resolution = resolveCanonical(moduleId, moduleName, context.canonicalById, context.legacyCandidates, context.explicitMappings);
+  const canonical = resolution.canonical;
 
   const result = {
     file,
     moduleId,
+    moduleName,
     canonical,
+    reason: resolution.reason,
     idChanged: false,
     rawUnlocks: [],
     unresolved: false,
@@ -136,31 +190,31 @@ function migrateFile(file, canonicalIds, legacyToCanonical) {
 if (!fs.existsSync(LEARNING_DIR)) fail('learning/ directory not found');
 if (!fs.existsSync(EXPORT_PATH)) fail('KXF learning-module export not found');
 
-const { canonicalIds, legacyToCanonical } = loadExport();
+const context = loadExport();
 const files = fs.readdirSync(LEARNING_DIR)
   .filter((file) => /\.ya?ml$/i.test(file))
   .sort();
 
-const results = files.map((file) => migrateFile(file, canonicalIds, legacyToCanonical));
+const results = files.map((file) => migrateFile(file, context));
 const changed = results.filter((r) => r.idChanged);
 const unlocks = results.filter((r) => r.rawUnlocks.length > 0);
 const unresolved = results.filter((r) => r.unresolved);
 
 console.log(`learning files: ${results.length}`);
-console.log(`canonical IDs known in export: ${canonicalIds.size}`);
-console.log(`legacy IDs with deterministic mapping: ${changed.length}`);
-console.log(`files with raw unlock aliases: ${unlocks.length}`);
-console.log(`unmapped legacy IDs: ${unresolved.length}`);
+console.log(`canonical IDs known in export: ${context.canonicalById.size}`);
+console.log(`deterministically mappable legacy IDs: ${changed.length}`);
+console.log(`files with flat raw unlock aliases: ${unlocks.length}`);
+console.log(`review-required legacy IDs: ${unresolved.length}`);
 
-for (const r of changed) console.log(`MAP  ${r.file}: ${r.moduleId} -> ${r.canonical}`);
+for (const r of changed) console.log(`MAP  ${r.file}: ${r.moduleId} -> ${r.canonical} [${r.reason}]`);
 for (const r of unlocks) console.log(`UNLOCK ${r.file}: ${r.rawUnlocks.join(', ')}`);
-for (const r of unresolved) console.log(`REVIEW ${r.file}: ${r.moduleId ?? '<missing module_id>'}`);
+for (const r of unresolved) console.log(`REVIEW ${r.file}: ${r.moduleId ?? '<missing module_id>'} [${r.reason}]`);
 
 if (unresolved.length > 0) {
-  console.error('Unmapped legacy IDs remain. Curator mapping is required; no canonical IDs were invented.');
+  console.error('Review cases remain. No canonical IDs were invented and semantic conflicts were not auto-migrated.');
   process.exitCode = 2;
 }
 
 if (!WRITE && (changed.length > 0 || unlocks.length > 0)) {
-  console.log('Dry run only. Re-run with --write to apply deterministic migrations.');
+  console.log('Dry run only. Re-run with --write to apply only semantic-safe deterministic migrations.');
 }
