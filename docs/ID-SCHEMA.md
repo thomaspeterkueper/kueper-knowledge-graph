@@ -25,11 +25,12 @@ CON:L1:gravitation
 CON:L1:orbitalmechanik
 MOD:L2:avi
 SYS:L3:noxia
-LRN:L3:ssf-phy-1101
 BLD:L3:noxia-raumhafen-1
 PER:L4:soma_retep
 DOC:L4:die-horcher
 ```
+
+LearningModules verwenden ab KG-0013 eine eigene Sonderform; siehe unten.
 
 ---
 
@@ -58,25 +59,56 @@ Legacy-IDs im Muster `KNOW:*` bleiben als Aliase und Migrationsquellen erlaubt, 
 
 ## Sonderformen fuer Learning Model
 
-Ab KG-0004 gelten zusaetzlich:
+Ab KG-0004 gelten fuer Kompetenzen, Assessments und Lernpfade:
 
 ```text
 CMP:<DOMAIN-CODE>:<LEVEL>
-LRN:SSF:<DOMAIN>-<NUMBER>
 ASM:SSF:<DOMAIN>-<NUMBER>
 PATH:<TARGET-SYSTEM>:<TARGET-ID>:<PURPOSE>
+```
+
+Ab KG-0013 gilt fuer konkrete SSF-Lernmodule die kanonische Modul-ID:
+
+```text
+<DOMAIN>-L<LEVEL>-<NNNNNN>
 ```
 
 Beispiele:
 
 ```text
 CMP:GEO-SEISM:N2
-LRN:SSF:GEO-2201
+PHY-L1-000003
+AST-L1-000001
 ASM:SSF:GEO-2201
 PATH:OTA:OTA-SCI-0083-2026-DE:READ
 ```
 
-`CMP` bildet die didaktische Kompetenz zu einer `KD` ab. `LRN` vermittelt Kompetenz. `ASM` validiert Kompetenz. `PATH` ordnet Module und Assessments zu einem Zielpfad.
+`CMP` bildet die didaktische Kompetenz zu einer `KD` ab. Ein LearningModule vermittelt Wissen oder Kompetenz und ist als Vermittlungsobjekt weiterhin KG-Layer L3. Das `L<LEVEL>` innerhalb der Modul-ID bezeichnet die didaktische Lernstufe des Moduls und ist nicht der epistemische KG-Layer.
+
+Fruehere Modul-IDs im Muster `LRN:SSF:<DOMAIN>-<NUMBER>` beziehungsweise `LRN:SSF:<DOMAIN>-L<LEVEL>-<NNNNNN>` sind Legacy-IDs. Sie bleiben als `legacyId`/Alias fuer Rueckwaertskompatibilitaet erhalten, duerfen aber nicht mehr als kanonische ID neuer Module vergeben werden.
+
+`ASM` validiert Kompetenz. `PATH` ordnet Module und Assessments zu einem Zielpfad.
+
+---
+
+## LearningModule Source-of-Truth und Projektion
+
+Fuer konkrete SSF-Lernmodule gilt:
+
+```text
+learning/*.yaml
+    -> Autorenquelle / kuratierte Moduldefinition
+    -> exports/kxf-learning-modules-0.1.json
+    -> SSF / NOXIA Consumer-Projektion
+```
+
+Regeln:
+
+1. `learning/*.yaml` ist die kuratierte Autorenquelle fuer konkrete Lernmodule und deren inhaltliche Metadaten.
+2. `exports/kxf-learning-modules-0.1.json` ist die maschinenlesbare KXF-Consumer-Projektion, nicht eine zweite unabhaengige Autorenquelle.
+3. Die Projektion darf keine Modul-ID erfinden, die nicht auf eine kuratierte Moduldefinition oder eine explizite Registry-/Migrationsentscheidung zurueckgefuehrt werden kann.
+4. Legacy-IDs werden nicht geloescht, sondern als Alias/`legacyId` mitgefuehrt.
+5. Consumer wie SSF und NOXIA konsumieren KXF; sie definieren keine kanonischen LearningModule-IDs.
 
 ---
 
@@ -87,7 +119,7 @@ PATH:OTA:OTA-SCI-0083-2026-DE:READ
 | L0 | Foundation / universelle Konzepte | Information, Energie, Zeit, Raum |
 | L1 | Fachwissen | Gravitation, Evolution, Photosynthese, Knowledge Domains |
 | L2 | Modelle und Theorien | AVI, Temenon |
-| L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, Kompetenz, Assessment, NOXIA-Gebaeude, Domain, Legal-Dokument |
+| L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, LearningModule, Kompetenz, Assessment, NOXIA-Gebaeude, Domain, Legal-Dokument |
 | L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher |
 
 ---
@@ -106,7 +138,7 @@ PATH:OTA:OTA-SCI-0083-2026-DE:READ
 | ORG | Organization | meist L3 |
 | DOM | Domain | meist L3 |
 | REPO | Repository | meist L3 |
-| LRN | LearningModule | meist L3 |
+| LRN | Legacy-Praefix fuer LearningModule | L3; keine neue kanonische Modul-ID |
 | UNL | Unlock | meist L3 |
 | BLD | Building | meist L3 |
 | LEGAL | LegalRecord | meist L3 |
@@ -114,7 +146,7 @@ PATH:OTA:OTA-SCI-0083-2026-DE:READ
 | PER | Person | meist L3 real oder L4 narrativ |
 | PLC | Place | L1 real/wissenschaftlich oder L4 narrativ |
 | REQ | Prerequisite | eigene Voraussetzung-ID, verweist auf Source und KnowledgeDomain |
-| REL | Relation | eigene Relation-ID, verweist auf Source und Target |
+| REL | Relation | eigene Relation-ID, verweist auf Quelle und Target |
 | MAP | Mapping | eigene Mapping-ID, verweist auf Quelle und Ziel |
 
 ---
@@ -136,6 +168,8 @@ Beispiel:
 ```
 
 Knowledge Domains sind die Ausnahme: Sie modellieren eine Wissensvoraussetzung und duerfen deshalb den fachlichen Domain-Code direkt in ihrer ID tragen.
+
+LearningModules besitzen ebenfalls eine explizite Sonderform, weil ihre Modul-ID zugleich als stabile didaktische Adresse in SSF/KXF dient. Diese Ausnahme aendert nicht ihren KG-Layer L3.
 
 ```json
 {
@@ -170,15 +204,14 @@ Die ID ist bewusst aus Quelle, Ziel und Zweck zusammengesetzt, damit sie eindeut
 
 ## Migration bestehender IDs
 
-Bestehende IDs nach dem Muster:
+Bestehende IDs werden nicht blind geloescht, sondern ueber Alias-/Mapping-Felder auf die neue kanonische ID gefuehrt.
+
+Beispiele:
 
 ```text
-CON:PHY:gravitation
-CON:CHE:wasser
-CON:BIO:leben
+CON:PHY:gravitation -> CON:L1:gravitation
+LRN:SSF:PHY-1101   -> PHY-L1-000001
 ```
-
-werden nicht blind geloescht, sondern ueber Mappings auf die neue kanonische Layer-ID gefuehrt.
 
 Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 
@@ -211,6 +244,10 @@ Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 12. Kein LearningModule ohne `teaches`.
 13. Kein Assessment ohne `validates`.
 14. Kein LearningPath ohne `target` und `steps`.
+15. Neue LearningModules verwenden `<DOMAIN>-L<LEVEL>-<NNNNNN>` als kanonische ID.
+16. `LRN:SSF:*` darf fuer LearningModules nur noch als Legacy-ID/Alias vorkommen.
+17. Ein LearningModule bleibt KG-Layer L3; die Lernstufe in seiner Modul-ID ist davon unabhaengig.
+18. KXF-LearningModule-Exporte sind Projektionen der kuratierten KG-Modulquelle und keine unabhaengige zweite Source of Truth.
 
 ---
 
