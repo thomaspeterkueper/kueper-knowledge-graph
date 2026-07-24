@@ -1,14 +1,15 @@
-module_id: LRN:SSF:COLONY-L1-000001
+module_id: ENG-L1-000003
+legacy_id: LRN:SSF:COLONY-L1-000001
 typ: LearningModule
-layer: L1
+layer: L3
 name: Wie gruendet man eine Kolonie? — Standortwahl, Lebenserhaltung, Erstversorgung
 domain: ENG
 subdomain: space-colonization
 status: '[R]'
 requires:
-  - LRN:SSF:PHY-L1-000003   # Wasserchemie — Recycling
-  - LRN:SSF:ECO-L0-000001   # Kredite — Kapital fuer Erstinvestition
-  - LRN:SSF:AST-L1-000001   # Orbitalmechanik — Anflug und Bahn
+  - PHY-L1-000003   # Wasserchemie — Recycling
+  - ECO-L0-000001   # Kredite — Kapital fuer Erstinvestition
+  - AST-L1-000001   # Orbitalmechanik — Anflug und Bahn
 teaches:
   - CON:L1:standortwahl
   - CON:L1:lebenserhaltung
