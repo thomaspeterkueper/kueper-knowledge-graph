@@ -1,4 +1,5 @@
-module_id: LRN:SSF:PHY-L1-000004
+module_id: PHY-L1-000004
+legacy_id: LRN:SSF:PHY-L1-000004
 typ: LearningModule
 layer: L3
 name: Warum hat Wasser genau drei Formen?
@@ -6,7 +7,7 @@ domain: PHY
 subdomain: thermodynamics
 status: '[R]'
 requires:
-  - LRN:SSF:PHY-L1-000003
+  - PHY-L1-000003
 teaches:
   - CON:L1:aggregatzustand
   - CON:L1:phasendiagramm
@@ -14,6 +15,7 @@ teaches:
   - CON:L1:sublimation
 unlocks:
   - UNL:NOX:PHY:PHASE-DIAGRAM
+planned_unlocks:
   - PHY:PHASE-DIAGRAM
   - PHY:TRIPLE-POINT
 ssf_path_id: PATH:SSF:PHY-WASSER-PHASEN-0001
