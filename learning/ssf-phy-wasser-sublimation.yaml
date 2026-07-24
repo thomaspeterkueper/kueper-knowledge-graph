@@ -1,4 +1,5 @@
-module_id: LRN:SSF:PHY-L1-000007
+module_id: PHY-L1-000007
+legacy_id: LRN:SSF:PHY-L1-000007
 typ: LearningModule
 layer: L3
 name: Warum trocknet Waesche auch im Winter draussen?
@@ -6,13 +7,14 @@ domain: PHY
 subdomain: thermodynamics
 status: '[R]'
 requires:
-  - LRN:SSF:PHY-L1-000004
+  - PHY-L1-000004
 teaches:
   - CON:L1:sublimation
   - CON:L1:dampfdruck
   - CON:L1:phasenuebergang
 unlocks:
   - UNL:NOX:PHY:SUBLIMATION
+planned_unlocks:
   - PHY:SUBLIMATION
   - PHY:VAPOR-PRESSURE
 ssf_path_id: PATH:SSF:PHY-WASSER-SUBLIM-0001
