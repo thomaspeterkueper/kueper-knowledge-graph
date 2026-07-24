@@ -1,4 +1,5 @@
-module_id: LRN:SSF:PHY-L1-000008
+module_id: PHY-L1-000008
+legacy_id: LRN:SSF:PHY-L1-000008
 typ: LearningModule
 layer: L3
 name: Warum braucht Wasser so lange zum Kochen?
@@ -6,13 +7,14 @@ domain: PHY
 subdomain: thermodynamics
 status: '[R]'
 requires:
-  - LRN:SSF:PHY-L1-000003
+  - PHY-L1-000003
 teaches:
   - CON:L1:waermekapazitaet
   - CON:L1:latente-waerme
   - CON:L1:phasenwechsel-energie
 unlocks:
   - UNL:NOX:PHY:HEAT-CAPACITY
+planned_unlocks:
   - PHY:HEAT-CAPACITY
   - PHY:LATENT-HEAT
   - ENV:OCEAN-CLIMATE
