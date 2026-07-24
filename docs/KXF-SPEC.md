@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft productive, 2026-07-08
+Draft productive, 2026-07-24
 
 ## Zweck
 
@@ -164,7 +164,9 @@ Ab KXF-0.3 werden semantische Graph-Kanten als eigene Records exportiert.
 
 ## Learning Model
 
-Ab KXF-0.4 koennen Kompetenzen und Lernpfade exportiert werden.
+Ab KXF-0.4 koennen Kompetenzen, Lernmodule, Assessments und Lernpfade exportiert werden.
+
+### Competency
 
 ```json
 {
@@ -175,13 +177,56 @@ Ab KXF-0.4 koennen Kompetenzen und Lernpfade exportiert werden.
 }
 ```
 
+### LearningModule
+
+Konkrete SSF-Lernmodule verwenden als kanonische ID:
+
+```text
+<DOMAIN>-L<LEVEL>-<NNNNNN>
+```
+
+Beispiel:
+
+```json
+{
+  "id": "PHY-L1-000003",
+  "type": "LearningModule",
+  "layer": "L3",
+  "legacyId": "LRN:SSF:PHY-1103",
+  "teaches": ["CON:L1:dipol"]
+}
+```
+
+Das `L<LEVEL>` der Modul-ID ist die didaktische Lernstufe. Der KG-Layer des LearningModule bleibt L3.
+
+Fruehere IDs im Muster `LRN:SSF:*` bleiben als `legacyId`/Alias lesbar, duerfen aber nicht mehr als kanonische ID neuer LearningModules erzeugt werden.
+
+### Autorenquelle und KXF-Projektion
+
+Fuer konkrete Lernmodule gilt verbindlich:
+
+```text
+learning/*.yaml
+    -> kuratierte Autorenquelle
+    -> exports/kxf-learning-modules-0.1.json
+    -> SSF / NOXIA
+```
+
+`exports/kxf-learning-modules-0.1.json` ist damit eine Consumer-Projektion der kuratierten KG-Modulquelle, keine zweite unabhaengige Source of Truth.
+
+`exports/learning-model-0.1.json` beschreibt das generische Learning Model und historische/kompatible Learning-Model-Records. Es ist nicht die kanonische Autorenquelle fuer konkrete SSF-Lernmodule.
+
+### LearningPath
+
+Neue oder migrierte LearningPaths muessen kanonische LearningModule-IDs verwenden. Legacy-Schritte duerfen waehrend einer Migration nur zusaetzlich als Alias/Mapping erhalten bleiben.
+
 ```json
 {
   "id": "PATH:OTA:OTA-SCI-0083-2026-DE:READ",
   "type": "LearningPath",
   "target": "DOC:OTA:OTA-SCI-0083-2026-DE",
   "purpose": "read",
-  "steps": ["LRN:SSF:GEO-2201", "ASM:SSF:GEO-2201"]
+  "steps": ["GEO-L2-000001", "ASM:SSF:GEO-2201"]
 }
 ```
 
@@ -235,6 +280,8 @@ Ab KXF-0.5 koennen Importregeln und Importlaeufe exportiert werden.
 
 Neue Prerequisites muessen auf `KD:*:N*` zeigen.
 
+`LRN:SSF:*` bleibt fuer bestehende LearningModules als Legacy-ID/Alias lesbar. Neue LearningModules muessen `<DOMAIN>-L<LEVEL>-<NNNNNN>` verwenden.
+
 ## Validierungsregeln
 
 1. Jeder Record besitzt `id` und `type`.
@@ -246,10 +293,15 @@ Neue Prerequisites muessen auf `KD:*:N*` zeigen.
 7. `Relation.relation` muss aus dem erlaubten Relationstyp-Katalog stammen.
 8. Jede Competency muss auf eine KnowledgeDomain zeigen.
 9. Jedes LearningModule braucht `teaches`.
-10. Jedes Assessment braucht `validates`.
-11. Jeder LearningPath braucht `target` und `steps`.
-12. Jeder IngestionRun braucht `sourceSystem`, `targetSystem`, `status` und Zaehlerfelder.
-13. Ingestion darf keine neuen KnowledgeDomains ohne Review erzeugen.
-14. Dokumente speichern keinen Volltext, sondern nur Metadaten und Verweise.
-15. DocumentReferences muessen `contentOwner` und `metadataOwner` ausweisen.
-16. Exporte muessen `schema`, `version` und `updated` enthalten.
+10. Jedes kanonische LearningModule verwendet `<DOMAIN>-L<LEVEL>-<NNNNNN>` als `id`.
+11. `LRN:SSF:*` ist bei LearningModules nur als Legacy-ID/Alias zulaessig.
+12. Ein LearningModule ist KG-Layer L3; die Lernstufe in der Modul-ID ist davon unabhaengig.
+13. Jedes Assessment braucht `validates`.
+14. Jeder LearningPath braucht `target` und `steps`.
+15. Neue/migrierte LearningPath-Schritte referenzieren kanonische LearningModule-IDs.
+16. Jeder IngestionRun braucht `sourceSystem`, `targetSystem`, `status` und Zaehlerfelder.
+17. Ingestion darf keine neuen KnowledgeDomains ohne Review erzeugen.
+18. Dokumente speichern keinen Volltext, sondern nur Metadaten und Verweise.
+19. DocumentReferences muessen `contentOwner` und `metadataOwner` ausweisen.
+20. Exporte muessen `schema`, `version` und `updated` enthalten.
+21. KXF-LearningModule-Exporte muessen auf die kuratierte KG-Modulquelle zurueckfuehrbar sein; divergierende Parallelpflege ist unzulaessig.
