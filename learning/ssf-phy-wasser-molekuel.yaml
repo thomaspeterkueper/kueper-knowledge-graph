@@ -1,4 +1,5 @@
-module_id: LRN:SSF:PHY-L1-000003
+module_id: PHY-L1-000003
+legacy_id: LRN:SSF:PHY-L1-000003
 typ: LearningModule
 layer: L3
 name: Warum ist Wasser eigentlich so seltsam?
@@ -13,6 +14,7 @@ teaches:
   - CON:L1:siedepunkt-anomalie
 unlocks:
   - UNL:NOX:CHEM:WATER-MOLECULE
+planned_unlocks:
   - CHEM:WATER-MOLECULE
   - CHEM:HYDROGEN-BOND
   - CHEM:DIPOLE
