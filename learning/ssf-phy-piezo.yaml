@@ -1,16 +1,19 @@
-module_id: LRN:SSF:PHY-4002
+module_id: PHY-L1-000015
+legacy_id: LRN:SSF:PHY-4002
 typ: LearningModule
 layer: L3
 name: Warum leuchtet ein Fahrradhelm wenn man ihn drueckt?
 domain: PHY
 subdomain: solid-state-physics
 status: '[R]'
-requires: []
+requires:
+  - PHY-L2-000002
 teaches:
   - CON:L1:piezoeffekt
   - CON:L1:kristallsymmetrie
   - CON:L1:energy-harvesting
-unlocks:
+unlocks: []
+planned_unlocks:
   - SENSOR:PIEZO
   - TOOL:ENERGY-HARVESTING
   - PHY:DIPOLE-MOMENT
