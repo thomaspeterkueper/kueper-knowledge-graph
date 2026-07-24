@@ -1,13 +1,14 @@
-module_id: LRN:SSF:STATION-L1-000001
+module_id: ENG-L1-000004
+legacy_id: LRN:SSF:STATION-L1-000001
 typ: LearningModule
-layer: L1
+layer: L3
 name: Raumstationen — Orbit-Mechanik, Andockmanöver, Lebenserhaltung im All
 domain: ENG
 subdomain: space-station
 status: '[R]'
 requires:
-  - LRN:SSF:AST-L1-000001   # Orbitalmechanik — Grundlage Umlaufbahn
-  - LRN:SSF:PHY-L1-000003   # Wasserchemie — Recycling lebenswichtig
+  - AST-L1-000001   # Orbitalmechanik — Grundlage Umlaufbahn
+  - PHY-L1-000003   # Wasserchemie — Recycling lebenswichtig
 teaches:
   - CON:L1:leo-meo-geo
   - CON:L1:andockmanöver
