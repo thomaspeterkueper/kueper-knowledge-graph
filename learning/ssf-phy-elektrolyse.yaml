@@ -1,4 +1,5 @@
-module_id: LRN:SSF:PHY-5001
+module_id: PHY-L1-000016
+legacy_id: LRN:SSF:PHY-5001
 typ: LearningModule
 layer: L3
 name: Wie zerlegt ein Elektrolyseur Wasser in Wasserstoff und Sauerstoff?
@@ -6,12 +7,13 @@ domain: PHY
 subdomain: electrochemistry
 status: '[R]'
 requires:
-  - LRN:SSF:PHY-L1-000003
+  - PHY-L1-000003
 teaches:
   - CON:L1:elektrolyse
   - CON:L1:pem-membran
   - CON:L1:gruener-wasserstoff
-unlocks:
+unlocks: []
+planned_unlocks:
   - PHY:PEM
   - CHEM:ELECTROLYSIS
   - ENV:GREEN-HYDROGEN
