@@ -1,4 +1,5 @@
-module_id: LRN:SSF:CHE-6001
+module_id: CHE-L1-000012
+legacy_id: LRN:SSF:CHE-6001
 typ: LearningModule
 layer: L3
 name: Warum koennte ein Metall die Energiewende blockieren das kaum jemand kennt?
@@ -11,7 +12,8 @@ teaches:
   - CON:L1:platingruppe
   - CON:L1:kritische-rohstoffe
   - CON:L1:pem-katalyse
-unlocks:
+unlocks: []
+planned_unlocks:
   - CHEM:IRIDIUM
   - CHEM:PLATINUM-GROUP
   - ENV:CRITICAL-MATERIALS
