@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "learning:check": "node scripts/learning-sync.mjs",
+    "learning:migrate": "node scripts/learning-sync.mjs --write"
   },
   "dependencies": {
     "@supabase/supabase-js": "latest",
