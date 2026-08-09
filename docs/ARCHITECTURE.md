@@ -2,7 +2,7 @@
 
 **KG-Arbeitsdokument · Vorschlag zur Konsensfindung · NICHT kanonisch**
 *Vorgesehener Ort: `docs/ARCHITECTURE.md` im KG-Repo.*
-*Revision 0.4 — drei geplante Apps benannt (KI, Mininodes, Assistent); kanonisch-vs-lebend präzisiert.*
+*Revision 0.5 — Narrative World Model und Werkgrenzen ergänzt.*
 
 > Vom KG verfasst. Kanonisiert nichts. Eine Kanonisierung (als OTA-ARC-0008) wäre
 > ein OTA-Akt und liefe als external-task ins OTA — nicht als KG-Alleingang.
@@ -74,7 +74,10 @@ heißt saubere Schichtung — nicht ein Repo, das alles schluckt.
 
 - **KG** (`kueper-knowledge-graph`) — Wissen. **Knowledge Domains (KD) bilden die
   primäre Strukturierungsebene des Wissens**; dazu IDs, Relationen, Voraussetzungen,
-  KXF-Exports, Resolver, Mappings.
+  KXF-Exports, Resolver, Mappings. Ab KG-0009 umfasst die KG-Semantik außerdem
+  kanonische Weltobjekte, zeitabhängige Relationen, States, Events sowie
+  referenzierbare Knowledge-/Belief-Aussagen. Der KG besitzt damit die semantische
+  Identität und zeitliche Weltkonsistenz, nicht aber Manuskript oder Dramaturgie.
   → **KG-Doppelrolle, präzise:** Der KG ist **keine Governance-Autorität**. Er
   *implementiert* nur die technische Auflösung bereits kanonisierter Entscheidungen.
   „KG hält ARC-Mappings" heißt ausdrücklich **nicht** „KG entscheidet ARC".
@@ -82,12 +85,18 @@ heißt saubere Schichtung — nicht ein Repo, das alles schluckt.
   dem KG, erzeugt jedoch eigene Lernobjekte und Lerndaten** (Module, Lernpfade,
   Fortschritt, Difficulty, Empfehlungen, Achievements, Unlocks). Kein bloßer Viewer.
 - **NOXIA** (`noxiagame`) — Spiel: Spielstand, Fraktionen, narrative Freischaltungen.
+  NOXIA darf kanonische Weltobjekte aus dem KG referenzieren, besitzt aber seinen
+  konkreten Spielzustand selbst.
 - **OTA** — Archiv: **Archivwahrheit** (Archivobjekte, ARC-Dokumente, versionierte
   Quellen). Trifft **keine** Wissensklassifikationen.
 - **KUE / kueper.com** — **Publikationswahrheit** (veröffentlichte Darstellung,
   Autorenstruktur, Publikationsmetadaten). Hält keine semantische Systemwahrheit.
   → Dieselbe Datei kann in OTA *archiviert* und auf KUE *veröffentlicht* sein — die
   Wahrheit ist je Ebene verschieden.
+- **Roman-/Universe-Repositories** — Manuskript- und Narrativwahrheit ihrer Werke:
+  Kapitel, Szenenabfolge, Dramaturgie, Story Arcs, Reader-Knowledge-Inszenierung und
+  konkrete Textfassung. Sie referenzieren kanonische KG-IDs, definieren aber keine
+  konkurrierenden kanonischen Weltidentitäten.
 - **Publikations-Frontends:** `overtime-archive.org`, `thomas-kueper.de` — konsumierend.
 - **Drei geplante Anwendungen** `[AUSSTEHEND]` (noch nicht in Git, Rolle/Schicht `[OFFEN]`):
   - **KI** — vermutlich lesender KG-Konsument. Bei direktem KG-Zugriff später
@@ -101,15 +110,46 @@ heißt saubere Schichtung — nicht ein Repo, das alles schluckt.
 
 ---
 
+## Narrative World Model — KG-0009
+
+Für fiktionale Welten und langfristige Werkverbünde gilt die Trennung:
+
+```text
+WORLD MODEL  -> KG: Objekte, Relationen, States, Events, Weltwissen
+HISTORY      -> KG: zeitliche Entwicklung der kanonischen Welt
+STORY        -> Werk-Repo: Auswahl, Dramaturgie, Story Arcs
+TEXT         -> Werk-Repo: Szenen, Kapitel, Manuskript
+```
+
+Eine Szene oder ein Roman kann kanonische Ereignisse zeigen, auslassen oder aus
+begrenzter Perspektive darstellen. Dadurch wird die Darstellung nicht selbst zur
+Weltwahrheit.
+
+Für Perspektive müssen mindestens folgende Ebenen trennbar bleiben:
+
+```text
+REALITY
+CHARACTER_KNOWLEDGE
+CHARACTER_BELIEF
+CHARACTER_CLAIM
+READER_KNOWLEDGE
+```
+
+Diese Trennung ist Voraussetzung für spätere Canon-, Continuity-, Knowledge- und
+Narrative-Checks.
+
+---
+
 ## Source-of-Truth-Kanon (Kurator-Setzung)
 
-```
+```text
 Identität  = KG (semantisch) · Anwendungen (lokale Zustände)   [vorgeschlagen]
 kueper.com = veröffentlichte reale Texte/Dokumente (Publikationswahrheit)
 OTA        = Archivkanon / ARC / Werk-Setzungen (Archivwahrheit)
-KG         = semantische Einordnung / Wissen / KD
+KG         = semantische Einordnung / Wissen / KD / kanonische Weltsemantik
 SSF        = Lernen (inkl. eigener Lerndaten)
 NOXIA      = Spiel
+Werk-Repos = Manuskript / Szenenabfolge / Dramaturgie / Story Arcs
 Hermes     = Vertrags-/Integrationsformen
 ```
 
@@ -137,6 +177,10 @@ sie aber nicht als gegeben. Ihre Aufnahme in den Kanon ist Kurator-/OTA-Ebene.
 - Hermes besitzt **keine** Fachlogik und definiert **keine** Signatur-Standards.
 - OTA trifft **keine** Wissensklassifikationen.
 - KG veröffentlicht **keine** Texte und entscheidet **keine** ARC-Kanonisierung.
+- Werk-Repositories definieren **keine konkurrierenden kanonischen Welt-IDs**.
+- Der KG übernimmt **keine Manuskript- oder Dramaturgiewahrheit** aus Werk-Repositories.
+- Figurenwissen, Figurenglaube und Reader Knowledge werden **nie stillschweigend als Reality** behandelt.
+- Spielzustand, Lernfortschritt und andere anwendungslokale States werden **nicht** zum kanonischen Welt-State des KG umgedeutet.
 
 ---
 
@@ -151,11 +195,11 @@ sie aber nicht als gegeben. Ihre Aufnahme in den Kanon ist Kurator-/OTA-Ebene.
 
 ## Zielbild (schematisch, keine Setzung)
 
-```
+```text
         OTA  (Governance / Archivkanon)
          │
          ▼
-        KG   (Wissen / KD / Resolver)
+        KG   (Wissen / KD / Resolver / Weltsemantik)
        ↙   ↘
      SSF     NOXIA        Akteure (Schicht 0) quer über alle
        ↘   ↙
@@ -163,6 +207,10 @@ sie aber nicht als gegeben. Ihre Aufnahme in den Kanon ist Kurator-/OTA-Ebene.
          │
          ▼
    Frontends / Apps
+
+Werk-Repositories
+   │  Szenen / Arcs / Manuskript
+   └──────────────► referenzieren KG-IDs
 ```
 *Vision, nicht exaktes Diagramm. Hermes ist Quer-/Vertragsschicht, kein bloßer Downstream.*
 
@@ -171,6 +219,10 @@ sie aber nicht als gegeben. Ihre Aufnahme in den Kanon ist Kurator-/OTA-Ebene.
 ## Offen (nächste Runde)
 
 - **Schicht 0:** Setzung „KG besitzt semantische Identität" bestätigen oder verwerfen.
+- **KG-0009 Pilot:** ein einzelnes Universum/Werk mit wenigen Personen, Orten,
+  Events, zeitgebundenen Relationen, Knowledge-/Belief-Fällen und Szenen testen.
+- **KXF:** additive Collections für `states`, `events`, `knowledgeAssertions`,
+  `storyArcs`, `scenes` spezifizieren, ohne bestehende Consumer zu brechen.
 - **KI / Mininodes / Assistent:** Zugriffsart auf den KG festlegen (lesen? pushen?),
   sobald sie konkreter werden — dann Schicht + Integrationsform bestimmen.
 - **NOXIA-DB-Status** und zusätzliche Datenpfade (`KG→NOXIA`, `SSF→NOXIA`) klären.
