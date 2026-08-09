@@ -122,6 +122,8 @@ EVT:<LAYER>:<slug>
 KNO:<SUBJECT-ID>:<MODE>:<ABOUT-ID>:<slug>
 ARCST:<WORK-ID>:<slug>
 SCN:<LAYER>:<work-slug>:<sequence>
+PRI:<LAYER>:<slug>
+REP:<WORK-ID>:<SUBJECT-ID>:<slug>
 ```
 
 Beispiele:
@@ -132,6 +134,8 @@ EVT:L4:korolev-incident-2098-001
 KNO:PER:L4:alice:BELIEF:EVT:L4:incident-x:cause-y
 ARCST:DOC:L4:example-novel:identity
 SCN:L4:example-novel:0042
+PRI:L0:perspektive-ist-nicht-weltwahrheit
+REP:DOC:L4:feli-band-1:PLC:L4:ort-x:kinderperspektive
 ```
 
 `ARCST` bezeichnet einen Story Arc und ist bewusst von `ARC` fuer OTA-Werk-Setzungen getrennt.
@@ -140,17 +144,21 @@ SCN:L4:example-novel:0042
 
 `KNO` beschreibt perspektivische Wissens-, Glaubens- oder Behauptungszustaende. Der Modus muss mindestens zwischen `KNOWLEDGE`, `BELIEF`, `CLAIM` und `READER_KNOWLEDGE` unterscheiden koennen.
 
+`PRI` beschreibt ein explizit kuratiertes Principle. Ein Principle kann philosophisch, ethisch, weltlogisch oder narrativ relevant sein. Es darf nicht allein aus einer einzelnen Szene als allgemeine Weltanschauung abgeleitet werden.
+
+`REP` beschreibt eine werk- oder perspektivgebundene Representation eines bereits kanonisch identifizierten Subjects. Eine Representation erzeugt keine konkurrierende Identitaet fuer Person, Ort, Objekt oder Ereignis.
+
 ---
 
 ## Layer
 
 | Layer | Bedeutung | Beispiele |
 |---|---|---|
-| L0 | Foundation / universelle Konzepte | Information, Energie, Zeit, Raum |
+| L0 | Foundation / universelle Konzepte | Information, Energie, Zeit, Raum, fundamentale Principles |
 | L1 | Fachwissen | Gravitation, Evolution, Photosynthese, Knowledge Domains |
 | L2 | Modelle und Theorien | AVI, Temenon |
 | L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, LearningModule, Kompetenz, Assessment, NOXIA-Gebaeude, Domain, Legal-Dokument |
-| L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher, fiktionale Events, Scenes, Story Arcs |
+| L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher, fiktionale Events, Scenes, Story Arcs, werkbezogene Representations |
 
 ---
 
@@ -180,6 +188,8 @@ SCN:L4:example-novel:0042
 | KNO | KnowledgeAssertion | Wissen, Glauben, Behauptung oder Reader Knowledge |
 | ARCST | StoryArc | werkbezogene narrative Entwicklung; meist L4 |
 | SCN | Scene | werkbezogener narrativer Ausschnitt; L4 |
+| PRI | Principle | explizit kuratierter philosophischer, ethischer oder weltlogischer Grundsatz; meist L0-L2 |
+| REP | Representation | werk-/perspektivgebundene Darstellung eines kanonischen Subjects; meist L4 |
 | REQ | Prerequisite | eigene Voraussetzung-ID, verweist auf Source und KnowledgeDomain |
 | REL | Relation | eigene Relation-ID, verweist auf Quelle und Target |
 | MAP | Mapping | eigene Mapping-ID, verweist auf Quelle und Ziel |
@@ -288,6 +298,9 @@ Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 21. `KNO` darf perspektivisches Wissen oder Glauben nie als objektive Weltwahrheit implizieren.
 22. `ARCST` darf nicht fuer OTA-ARC-Werk-Setzungen verwendet werden.
 23. `SCN` und `ARCST` bleiben werkbezogene Narrativmetadaten; sie ersetzen keine kanonischen Weltobjekte.
+24. Kein `REP` ohne kanonisches `subject` und werk- oder perspektivbezogenen Kontext.
+25. Eine `REP` darf keine zweite kanonische Identitaet fuer ihr `subject` erzeugen.
+26. Ein `PRI` wird nur als allgemeiner Grundsatz angelegt, wenn seine Geltung explizit kuratiert ist; einzelne Werke oder Szenen duerfen keine universelle Principle-Geltung implizieren.
 
 ---
 
