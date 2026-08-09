@@ -112,6 +112,36 @@ Regeln:
 
 ---
 
+## Narrative World Model Sonderformen
+
+Ab KG-0009 gelten fuer zeitfaehige Welt- und Narrativobjekte folgende ID-Formen:
+
+```text
+STA:<OBJECT-ID>:<STATE-SLUG>
+EVT:<LAYER>:<slug>
+KNO:<SUBJECT-ID>:<MODE>:<ABOUT-ID>:<slug>
+ARCST:<WORK-ID>:<slug>
+SCN:<LAYER>:<work-slug>:<sequence>
+```
+
+Beispiele:
+
+```text
+STA:PER:L4:alice:2098-03
+EVT:L4:korolev-incident-2098-001
+KNO:PER:L4:alice:BELIEF:EVT:L4:incident-x:cause-y
+ARCST:DOC:L4:example-novel:identity
+SCN:L4:example-novel:0042
+```
+
+`ARCST` bezeichnet einen Story Arc und ist bewusst von `ARC` fuer OTA-Werk-Setzungen getrennt.
+
+`STA` beschreibt den zeitgebundenen Zustand einer bereits existierenden Entitaet und erzeugt keine neue Weltidentitaet.
+
+`KNO` beschreibt perspektivische Wissens-, Glaubens- oder Behauptungszustaende. Der Modus muss mindestens zwischen `KNOWLEDGE`, `BELIEF`, `CLAIM` und `READER_KNOWLEDGE` unterscheiden koennen.
+
+---
+
 ## Layer
 
 | Layer | Bedeutung | Beispiele |
@@ -120,7 +150,7 @@ Regeln:
 | L1 | Fachwissen | Gravitation, Evolution, Photosynthese, Knowledge Domains |
 | L2 | Modelle und Theorien | AVI, Temenon |
 | L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, LearningModule, Kompetenz, Assessment, NOXIA-Gebaeude, Domain, Legal-Dokument |
-| L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher |
+| L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher, fiktionale Events, Scenes, Story Arcs |
 
 ---
 
@@ -145,6 +175,11 @@ Regeln:
 | DOC | Document | L1 bis L4 je nach Funktion |
 | PER | Person | meist L3 real oder L4 narrativ |
 | PLC | Place | L1 real/wissenschaftlich oder L4 narrativ |
+| STA | State | zeitgebundener Zustand einer bestehenden Entitaet; meist L4 narrativ |
+| EVT | Event | zeitlich oder ordinal eingeordnetes Ereignis; meist L4 narrativ |
+| KNO | KnowledgeAssertion | Wissen, Glauben, Behauptung oder Reader Knowledge |
+| ARCST | StoryArc | werkbezogene narrative Entwicklung; meist L4 |
+| SCN | Scene | werkbezogener narrativer Ausschnitt; L4 |
 | REQ | Prerequisite | eigene Voraussetzung-ID, verweist auf Source und KnowledgeDomain |
 | REL | Relation | eigene Relation-ID, verweist auf Quelle und Target |
 | MAP | Mapping | eigene Mapping-ID, verweist auf Quelle und Ziel |
@@ -248,6 +283,11 @@ Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 16. `LRN:SSF:*` darf fuer LearningModules nur noch als Legacy-ID/Alias vorkommen.
 17. Ein LearningModule bleibt KG-Layer L3; die Lernstufe in seiner Modul-ID ist davon unabhaengig.
 18. KXF-LearningModule-Exporte sind Projektionen der kuratierten KG-Modulquelle und keine unabhaengige zweite Source of Truth.
+19. Kein `STA` ohne bestehendes `subject`-Objekt.
+20. Kein `EVT` ohne zeitliche oder ordinale Einordnung.
+21. `KNO` darf perspektivisches Wissen oder Glauben nie als objektive Weltwahrheit implizieren.
+22. `ARCST` darf nicht fuer OTA-ARC-Werk-Setzungen verwendet werden.
+23. `SCN` und `ARCST` bleiben werkbezogene Narrativmetadaten; sie ersetzen keine kanonischen Weltobjekte.
 
 ---
 
