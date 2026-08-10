@@ -211,52 +211,47 @@
   ],
   "relations": [
     {
-      "id": "REL:PER:L4:feli:FRIEND_OF:PER:L4:jonas-feli",
+      "id": "REL:PER:L4:feli:KNOWS:PER:L4:jonas-feli",
       "type": "Relation",
       "from": "PER:L4:feli",
-      "relation": "FRIEND_OF",
+      "relation": "KNOWS",
       "to": "PER:L4:jonas-feli",
-      "status": "work_derived"
+      "status": "work_derived",
+      "note": "The stronger friendship semantics are retained in role metadata until KG defines a FRIEND_OF relation."
     },
     {
-      "id": "REL:PER:L4:feli:FAMILY_OF:PER:L4:feli-mutter",
+      "id": "REL:PER:L4:feli-mutter:PARENT_OF_PERSON:PER:L4:feli",
       "type": "Relation",
-      "from": "PER:L4:feli",
-      "relation": "CHILD_OF",
-      "to": "PER:L4:feli-mutter",
+      "from": "PER:L4:feli-mutter",
+      "relation": "PARENT_OF_PERSON",
+      "to": "PER:L4:feli",
       "status": "work_derived"
     },
     {
-      "id": "REL:PER:L4:feli:FAMILY_OF:PER:L4:feli-vater",
+      "id": "REL:PER:L4:feli-vater:PARENT_OF_PERSON:PER:L4:feli",
       "type": "Relation",
-      "from": "PER:L4:feli",
-      "relation": "CHILD_OF",
-      "to": "PER:L4:feli-vater",
+      "from": "PER:L4:feli-vater",
+      "relation": "PARENT_OF_PERSON",
+      "to": "PER:L4:feli",
       "status": "work_derived"
     },
     {
-      "id": "REL:PER:L4:herr-lumen:RESIDES_AT:PLC:L4:lumen-haus",
+      "id": "REL:PER:L4:herr-lumen:LOCATED_AT:PLC:L4:lumen-haus",
       "type": "Relation",
       "from": "PER:L4:herr-lumen",
-      "relation": "RESIDES_AT",
+      "relation": "LOCATED_AT",
       "to": "PLC:L4:lumen-haus",
-      "status": "work_derived"
+      "status": "work_derived",
+      "note": "The work states that Lumen lives there; KG-0003 currently provides LOCATED_AT rather than RESIDES_AT."
     },
     {
-      "id": "REL:ANI:L4:lumen-katze:COMPANION_OF:PER:L4:herr-lumen",
-      "type": "Relation",
-      "from": "ANI:L4:lumen-katze",
-      "relation": "COMPANION_OF",
-      "to": "PER:L4:herr-lumen",
-      "status": "work_derived"
-    },
-    {
-      "id": "REL:PER:L4:herr-bergmann-feli:FORMER_STUDENT_OF:PER:L4:herr-lumen",
+      "id": "REL:PER:L4:herr-bergmann-feli:KNOWS:PER:L4:herr-lumen",
       "type": "Relation",
       "from": "PER:L4:herr-bergmann-feli",
-      "relation": "FORMER_STUDENT_OF",
+      "relation": "KNOWS",
       "to": "PER:L4:herr-lumen",
-      "status": "work_derived"
+      "status": "work_derived",
+      "note": "Former-student semantics remain in role metadata until a dedicated relation is defined."
     }
   ],
   "events": [
