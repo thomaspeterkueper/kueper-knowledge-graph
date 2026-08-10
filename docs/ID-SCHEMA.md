@@ -27,6 +27,8 @@ MOD:L2:avi
 SYS:L3:noxia
 BLD:L3:noxia-raumhafen-1
 PER:L4:soma_retep
+OBJ:L4:feli-muschel-mit-sprung
+ANI:L4:lumen-katze
 DOC:L4:die-horcher
 ```
 
@@ -126,6 +128,13 @@ PRI:<LAYER>:<slug>
 REP:<WORK-ID>:<SUBJECT-ID>:<slug>
 ```
 
+Ab KG-0015 gelten fuer stabile narrative Einzelobjekte und Tiere zusaetzlich die Grundformen:
+
+```text
+OBJ:<LAYER>:<slug>
+ANI:<LAYER>:<slug>
+```
+
 Beispiele:
 
 ```text
@@ -136,6 +145,8 @@ ARCST:DOC:L4:example-novel:identity
 SCN:L4:example-novel:0042
 PRI:L0:perspektive-ist-nicht-weltwahrheit
 REP:DOC:L4:feli-band-1:PLC:L4:ort-x:kinderperspektive
+OBJ:L4:feli-muschel-mit-sprung
+ANI:L4:lumen-katze
 ```
 
 `ARCST` bezeichnet einen Story Arc und ist bewusst von `ARC` fuer OTA-Werk-Setzungen getrennt.
@@ -148,6 +159,10 @@ REP:DOC:L4:feli-band-1:PLC:L4:ort-x:kinderperspektive
 
 `REP` beschreibt eine werk- oder perspektivgebundene Representation eines bereits kanonisch identifizierten Subjects. Eine Representation erzeugt keine konkurrierende Identitaet fuer Person, Ort, Objekt oder Ereignis.
 
+`OBJ` bezeichnet ein individuelles, nicht-lebendiges physisches oder narratives Objekt mit stabiler Identitaet, sofern kein spezifischerer KG-Typ greift. Stoffklassen, allgemeine Gegenstandsklassen und Konzepte werden nicht als `OBJ` modelliert.
+
+`ANI` bezeichnet ein individuelles Tier mit stabiler narrativer Identitaet. Biologische Arten und Taxa werden nicht als `ANI` modelliert.
+
 ---
 
 ## Layer
@@ -158,7 +173,7 @@ REP:DOC:L4:feli-band-1:PLC:L4:ort-x:kinderperspektive
 | L1 | Fachwissen | Gravitation, Evolution, Photosynthese, Knowledge Domains |
 | L2 | Modelle und Theorien | AVI, Temenon |
 | L3 | Anwendungen, Systeme, Kurse, technische Artefakte, Registry | SSF-Kurs, LearningModule, Kompetenz, Assessment, NOXIA-Gebaeude, Domain, Legal-Dokument |
-| L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher, fiktionale Events, Scenes, Story Arcs, werkbezogene Representations |
+| L4 | Narrative, Figuren, fiktionale Artefakte | Soma Retep, Mia, Die Horcher, fiktionale Events, individuelle Objekte, Tiere, Scenes, Story Arcs, werkbezogene Representations |
 
 ---
 
@@ -183,6 +198,8 @@ REP:DOC:L4:feli-band-1:PLC:L4:ort-x:kinderperspektive
 | DOC | Document | L1 bis L4 je nach Funktion |
 | PER | Person | meist L3 real oder L4 narrativ |
 | PLC | Place | L1 real/wissenschaftlich oder L4 narrativ |
+| OBJ | Object | individuelles nicht-lebendiges Objekt mit stabiler Identitaet; meist L4 narrativ |
+| ANI | Animal | individuelles Tier mit stabiler narrativer Identitaet; meist L4 |
 | STA | State | zeitgebundener Zustand einer bestehenden Entitaet; meist L4 narrativ |
 | EVT | Event | zeitlich oder ordinal eingeordnetes Ereignis; meist L4 narrativ |
 | KNO | KnowledgeAssertion | Wissen, Glauben, Behauptung oder Reader Knowledge |
@@ -301,6 +318,9 @@ Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 24. Kein `REP` ohne kanonisches `subject` und werk- oder perspektivbezogenen Kontext.
 25. Eine `REP` darf keine zweite kanonische Identitaet fuer ihr `subject` erzeugen.
 26. Ein `PRI` wird nur als allgemeiner Grundsatz angelegt, wenn seine Geltung explizit kuratiert ist; einzelne Werke oder Szenen duerfen keine universelle Principle-Geltung implizieren.
+27. `OBJ` bezeichnet nur individuelle Objekte mit stabiler Identitaet; spezifischere vorhandene Typen haben Vorrang.
+28. `ANI` bezeichnet individuelle Tiere und keine biologischen Taxa.
+29. Sprach- oder werkbezogene Benennungen von `OBJ` und `ANI` werden ueber Representation/Terminologie modelliert und erzeugen keine sprachspezifischen Doppelidentitaeten.
 
 ---
 
