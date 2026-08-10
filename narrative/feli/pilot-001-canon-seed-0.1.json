@@ -1,0 +1,414 @@
+{
+  "schema": "KUEPER-NARRATIVE-PILOT-0.1",
+  "pilot": "FELI-001",
+  "status": "draft_productive",
+  "updated": "2026-08-10",
+  "sourceDocuments": ["KG-0009", "KG-0014", "KG-0015"],
+  "sourceMaterial": [
+    {
+      "work": "DOC:L4:feli-01-lichthaus",
+      "language": "de",
+      "title": "Feli und das Lichthaus",
+      "scope": "Band 1, Kapitel 1-17",
+      "provenance": "user-supplied manuscript"
+    },
+    {
+      "work": "DOC:L4:feli-01-lichthaus",
+      "language": "fr",
+      "title": "Féli et la maison de lumière",
+      "scope": "Tome 1, chapitres 1-17",
+      "provenance": "user-supplied translation"
+    }
+  ],
+  "works": [
+    {
+      "id": "DOC:L4:feli-01-lichthaus",
+      "type": "Document",
+      "layer": "L4",
+      "workType": "children_novel",
+      "series": "Feli",
+      "sequence": 1,
+      "canonicalTitleKey": "feli-01-lichthaus",
+      "status": "work_derived",
+      "note": "Language-neutral work identity; manuscript text remains outside KG."
+    }
+  ],
+  "persons": [
+    {
+      "id": "PER:L4:feli",
+      "type": "Person",
+      "layer": "L4",
+      "canonicalName": "Feli",
+      "roles": ["protagonist", "child"],
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 1-17"]
+    },
+    {
+      "id": "PER:L4:jonas-feli",
+      "type": "Person",
+      "layer": "L4",
+      "canonicalName": "Jonas",
+      "roles": ["friend", "child"],
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 1-17"]
+    },
+    {
+      "id": "PER:L4:herr-lumen",
+      "type": "Person",
+      "layer": "L4",
+      "canonicalName": "Herr Lumen",
+      "roles": ["inventor", "mentor", "former_teacher"],
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 3-17"]
+    },
+    {
+      "id": "PER:L4:feli-mutter",
+      "type": "Person",
+      "layer": "L4",
+      "canonicalName": null,
+      "roles": ["mother_of_feli"],
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 1, 4, 7, 9, 14"]
+    },
+    {
+      "id": "PER:L4:feli-vater",
+      "type": "Person",
+      "layer": "L4",
+      "canonicalName": null,
+      "roles": ["father_of_feli"],
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 13"]
+    },
+    {
+      "id": "PER:L4:herr-bergmann-feli",
+      "type": "Person",
+      "layer": "L4",
+      "canonicalName": "Herr Bergmann",
+      "roles": ["former_student_of_lumen"],
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 16"]
+    }
+  ],
+  "animals": [
+    {
+      "id": "ANI:L4:lumen-katze",
+      "type": "Animal",
+      "layer": "L4",
+      "canonicalName": null,
+      "species": "cat",
+      "properties": {
+        "coat": "black",
+        "marking": "white patch",
+        "named": false
+      },
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 3-17"]
+    }
+  ],
+  "places": [
+    {
+      "id": "PLC:L4:feli-kuestenstadt",
+      "type": "Place",
+      "layer": "L4",
+      "canonicalName": null,
+      "placeType": "small_coastal_town",
+      "status": "work_derived",
+      "certainty": "canonical_in_work_but_unnamed",
+      "evidence": ["Band 1, Kapitel 1"]
+    },
+    {
+      "id": "PLC:L4:feli-klippe",
+      "type": "Place",
+      "layer": "L4",
+      "canonicalName": null,
+      "placeType": "cliff",
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 1-17"]
+    },
+    {
+      "id": "PLC:L4:lumen-haus",
+      "type": "Place",
+      "layer": "L4",
+      "canonicalName": "Lumen-Haus",
+      "placeType": "house",
+      "status": "work_derived",
+      "properties": {
+        "locationContext": "on cliff above coastal town",
+        "hasTower": true,
+        "hasWestFacingRoofWindows": true,
+        "glowsAtNight": true
+      },
+      "evidence": ["Band 1, Kapitel 1-17"]
+    },
+    {
+      "id": "PLC:L4:lumen-keller",
+      "type": "Place",
+      "layer": "L4",
+      "canonicalName": null,
+      "placeType": "cellar",
+      "partOf": "PLC:L4:lumen-haus",
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 5-15"]
+    },
+    {
+      "id": "PLC:L4:feli-strand-watt",
+      "type": "Place",
+      "layer": "L4",
+      "canonicalName": null,
+      "placeType": "tidal_flat_beach",
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 2"]
+    }
+  ],
+  "objects": [
+    {
+      "id": "OBJ:L4:feli-muschel-mit-sprung",
+      "type": "Object",
+      "layer": "L4",
+      "canonicalLabel": "Muschel mit dem Sprung",
+      "objectType": "shell",
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 2, 6, 9, 10, 13-15, 17"]
+    },
+    {
+      "id": "OBJ:L4:lumen-summendes-glas",
+      "type": "Object",
+      "layer": "L4",
+      "canonicalLabel": "summendes Glas",
+      "objectType": "jar",
+      "status": "work_derived",
+      "properties": {"hums": true, "causeKnown": false},
+      "evidence": ["Band 1, Kapitel 5, 8, 12, 15"]
+    },
+    {
+      "id": "OBJ:L4:lumen-prisma",
+      "type": "Object",
+      "layer": "L4",
+      "canonicalLabel": "Prisma",
+      "objectType": "glass_prism",
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 6"]
+    },
+    {
+      "id": "OBJ:L4:feli-notizheft",
+      "type": "Object",
+      "layer": "L4",
+      "canonicalLabel": "Felis Notizheft",
+      "objectType": "notebook",
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 7, 10-12, 14, 17"]
+    },
+    {
+      "id": "OBJ:L4:lumen-halbes-fahrrad",
+      "type": "Object",
+      "layer": "L4",
+      "canonicalLabel": "halbes Fahrrad",
+      "objectType": "unknown_construction",
+      "status": "work_derived",
+      "properties": {"purposeKnown": false},
+      "evidence": ["Band 1, Kapitel 3, 7, 8, 17"]
+    }
+  ],
+  "relations": [
+    {
+      "id": "REL:PER:L4:feli:FRIEND_OF:PER:L4:jonas-feli",
+      "type": "Relation",
+      "from": "PER:L4:feli",
+      "relation": "FRIEND_OF",
+      "to": "PER:L4:jonas-feli",
+      "status": "work_derived"
+    },
+    {
+      "id": "REL:PER:L4:feli:FAMILY_OF:PER:L4:feli-mutter",
+      "type": "Relation",
+      "from": "PER:L4:feli",
+      "relation": "CHILD_OF",
+      "to": "PER:L4:feli-mutter",
+      "status": "work_derived"
+    },
+    {
+      "id": "REL:PER:L4:feli:FAMILY_OF:PER:L4:feli-vater",
+      "type": "Relation",
+      "from": "PER:L4:feli",
+      "relation": "CHILD_OF",
+      "to": "PER:L4:feli-vater",
+      "status": "work_derived"
+    },
+    {
+      "id": "REL:PER:L4:herr-lumen:RESIDES_AT:PLC:L4:lumen-haus",
+      "type": "Relation",
+      "from": "PER:L4:herr-lumen",
+      "relation": "RESIDES_AT",
+      "to": "PLC:L4:lumen-haus",
+      "status": "work_derived"
+    },
+    {
+      "id": "REL:ANI:L4:lumen-katze:COMPANION_OF:PER:L4:herr-lumen",
+      "type": "Relation",
+      "from": "ANI:L4:lumen-katze",
+      "relation": "COMPANION_OF",
+      "to": "PER:L4:herr-lumen",
+      "status": "work_derived"
+    },
+    {
+      "id": "REL:PER:L4:herr-bergmann-feli:FORMER_STUDENT_OF:PER:L4:herr-lumen",
+      "type": "Relation",
+      "from": "PER:L4:herr-bergmann-feli",
+      "relation": "FORMER_STUDENT_OF",
+      "to": "PER:L4:herr-lumen",
+      "status": "work_derived"
+    }
+  ],
+  "events": [
+    {
+      "id": "EVT:L4:feli-01-observes-lumen-house",
+      "type": "Event",
+      "ordinal": 10,
+      "time": {"season": "October", "precision": "month_only", "year": null},
+      "participants": ["PER:L4:feli"],
+      "location": "PLC:L4:feli-klippe",
+      "summary": "Feli observes the regularly glowing house on the cliff for the first time.",
+      "evidence": ["Band 1, Kapitel 1"]
+    },
+    {
+      "id": "EVT:L4:feli-01-meets-lumen",
+      "type": "Event",
+      "ordinal": 20,
+      "participants": ["PER:L4:feli", "PER:L4:herr-lumen"],
+      "location": "PLC:L4:lumen-haus",
+      "summary": "Feli meets Herr Lumen and is invited into the house.",
+      "evidence": ["Band 1, Kapitel 2-3"]
+    },
+    {
+      "id": "EVT:L4:feli-01-understands-light-storage",
+      "type": "Event",
+      "ordinal": 30,
+      "participants": ["PER:L4:feli", "PER:L4:herr-lumen"],
+      "summary": "Feli infers that the house stores light during the day and releases it at night.",
+      "evidence": ["Band 1, Kapitel 4"]
+    },
+    {
+      "id": "EVT:L4:feli-01-jonas-enters-lumen-house",
+      "type": "Event",
+      "ordinal": 40,
+      "participants": ["PER:L4:feli", "PER:L4:jonas-feli", "PER:L4:herr-lumen"],
+      "location": "PLC:L4:lumen-haus",
+      "summary": "Jonas enters the Lumen house for the first time and discovers the darker corner in the cellar system.",
+      "evidence": ["Band 1, Kapitel 8"]
+    },
+    {
+      "id": "EVT:L4:feli-01-light-weakens",
+      "type": "Event",
+      "ordinal": 50,
+      "participants": ["PER:L4:feli", "PER:L4:herr-lumen"],
+      "location": "PLC:L4:lumen-haus",
+      "summary": "Feli notices that the house's light has become weaker and Lumen has largely stopped searching for the cause.",
+      "evidence": ["Band 1, Kapitel 10"]
+    },
+    {
+      "id": "EVT:L4:feli-01-mirrors-realigned",
+      "type": "Event",
+      "ordinal": 60,
+      "participants": ["PER:L4:feli", "PER:L4:jonas-feli", "PER:L4:herr-lumen"],
+      "location": "PLC:L4:lumen-keller",
+      "summary": "Feli and Jonas identify and realign mirrors; at least one dim jar becomes slightly brighter.",
+      "evidence": ["Band 1, Kapitel 11"]
+    },
+    {
+      "id": "EVT:L4:feli-01-sea-shaft-cleared",
+      "type": "Event",
+      "ordinal": 70,
+      "participants": ["PER:L4:feli", "PER:L4:jonas-feli", "PER:L4:herr-lumen"],
+      "location": "PLC:L4:lumen-keller",
+      "summary": "The blocked shaft through the cliff toward the sea is cleared over three days.",
+      "evidence": ["Band 1, Kapitel 12, 14"]
+    },
+    {
+      "id": "EVT:L4:feli-01-sea-glow-returns",
+      "type": "Event",
+      "ordinal": 80,
+      "time": {"season": "late_autumn", "relative": "after storm followed by clear weather", "year": null},
+      "participants": ["PER:L4:feli", "PER:L4:jonas-feli", "PER:L4:herr-lumen"],
+      "location": "PLC:L4:lumen-keller",
+      "summary": "Blue-green marine bioluminescent light enters the house through the reopened shaft for the first time in four years.",
+      "evidence": ["Band 1, Kapitel 15"]
+    }
+  ],
+  "knowledgeAssertions": [
+    {
+      "id": "KNO:PER:L4:jonas-feli:BELIEF:PLC:L4:lumen-haus:spukhaus-geruecht",
+      "type": "KnowledgeAssertion",
+      "subject": "PER:L4:jonas-feli",
+      "mode": "BELIEF",
+      "about": "PLC:L4:lumen-haus",
+      "proposition": "The house may be haunted and Lumen may be dangerous or strange in supernatural ways.",
+      "status": "work_derived",
+      "validUntilEvent": "EVT:L4:feli-01-jonas-enters-lumen-house",
+      "evidence": ["Band 1, Kapitel 1-2, 8"]
+    },
+    {
+      "id": "KNO:PER:L4:feli:KNOWLEDGE:PLC:L4:lumen-haus:light-storage-principle",
+      "type": "KnowledgeAssertion",
+      "subject": "PER:L4:feli",
+      "mode": "KNOWLEDGE",
+      "about": "PLC:L4:lumen-haus",
+      "proposition": "The house stores incoming light and releases it later as visible glow.",
+      "status": "work_derived",
+      "validFromEvent": "EVT:L4:feli-01-understands-light-storage",
+      "evidence": ["Band 1, Kapitel 4-5"]
+    },
+    {
+      "id": "KNO:PER:L4:herr-lumen:KNOWLEDGE:OBJ:L4:lumen-summendes-glas:cause-unknown",
+      "type": "KnowledgeAssertion",
+      "subject": "PER:L4:herr-lumen",
+      "mode": "KNOWLEDGE",
+      "about": "OBJ:L4:lumen-summendes-glas",
+      "proposition": "The cause of the humming is not known to Lumen.",
+      "status": "work_derived",
+      "evidence": ["Band 1, Kapitel 5"]
+    }
+  ],
+  "representations": [
+    {
+      "id": "REP:DOC:L4:feli-01-lichthaus:DOC:L4:feli-01-lichthaus:de-DE",
+      "type": "Representation",
+      "work": "DOC:L4:feli-01-lichthaus",
+      "subject": "DOC:L4:feli-01-lichthaus",
+      "language": "de",
+      "locale": "de-DE",
+      "title": "Feli und das Lichthaus",
+      "seriesLabel": "Band 1",
+      "status": "work_derived"
+    },
+    {
+      "id": "REP:DOC:L4:feli-01-lichthaus:DOC:L4:feli-01-lichthaus:fr-FR",
+      "type": "Representation",
+      "work": "DOC:L4:feli-01-lichthaus",
+      "subject": "DOC:L4:feli-01-lichthaus",
+      "language": "fr",
+      "locale": "fr-FR",
+      "title": "Féli et la maison de lumière",
+      "seriesLabel": "Tome 1",
+      "sourceRepresentation": "REP:DOC:L4:feli-01-lichthaus:DOC:L4:feli-01-lichthaus:de-DE",
+      "status": "work_derived"
+    }
+  ],
+  "terminology": [
+    {"concept": "PER:L4:feli", "de": "Feli", "fr": "Féli", "status": "consistent"},
+    {"concept": "PER:L4:herr-lumen", "de": "Herr Lumen", "fr": "Monsieur Lumen", "status": "consistent"},
+    {"concept": "PLC:L4:lumen-haus", "de": "Lumen-Haus / Haus", "fr": "maison du Lumen / maison", "status": "review_needed", "note": "French alternates descriptive forms; no identity drift detected."},
+    {"concept": "OBJ:L4:feli-muschel-mit-sprung", "de": "Muschel mit dem Sprung", "fr": "coquillage fêlé", "status": "consistent"},
+    {"concept": "OBJ:L4:lumen-halbes-fahrrad", "de": "halbes Fahrrad", "fr": "demi-vélo", "status": "consistent"},
+    {"concept": "light_paint", "de": "Leuchtfarbe", "fr": "peinture lumineuse", "status": "consistent"},
+    {"concept": "marine_bioluminescence", "de": "Meerleuchten / Biolumineszenz", "fr": "luminescence de la mer / bioluminescence", "status": "consistent"}
+  ],
+  "principles": [],
+  "principleNote": "No universal PRI entities are created from Band 1 alone. Candidate motifs require explicit cross-work curation.",
+  "openQuestions": [
+    "Exact real-world or fictional geographic identity of the coastal town is intentionally unresolved.",
+    "Exact year of Band 1 events is unknown.",
+    "The purpose of the half bicycle remains unknown in Band 1.",
+    "The cause of the humming jar remains unknown in Band 1.",
+    "Cross-book continuity cannot be tested until Band 2 is ingested."
+  ]
+}
