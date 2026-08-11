@@ -1,0 +1,31 @@
+entity_id: CON:L1:luca
+typ: Concept
+layer: L1
+name: LUCA
+domäne: BIO
+status: '[R]'
+derived_from:
+  - CON:L0:leben
+  - CON:L0:veraenderung
+beschreibung: >
+  Letzter universeller gemeinsamer Vorfahr des heutigen irdischen Lebens.
+  Für den hier referenzierten Forschungsstand ist insbesondere die
+  Rekonstruktion eines noch unvollständigen enzymatischen Stoffwechsels
+  relevant, dessen weitere Ausgestaltung in den zu Bakterien und Archaea
+  führenden Linien unabhängig erfolgte.
+quelle:
+  autoren: "Mrnjavac, N.; Hoffmann, N.K.; Schlikker, M.L. et al."
+  titel: "Intermediate stages in the origin of metabolism at a phosphorylating hydrothermal vent"
+  journal: "Science Advances"
+  jahr: 2026
+  artikel: eaef3128
+  doi: "10.1126/sciadv.aef3128"
+befund: >
+  Native Übergangsmetalle werden als katalytische Vorläufer von Enzymen und
+  Kofaktoren am Ursprung des Stoffwechsels rekonstruiert. Phosphit ermöglicht
+  in den untersuchten Reaktionen unter Nutzung nativer Metallkatalysatoren
+  Phosphorylierungen in Wasser. Serpentinisierende hydrothermale Systeme
+  werden als energielieferndes und katalytisches Milieu für frühe
+  Stoffwechselentwicklung vorgeschlagen.
+erstellt: '2026-08-11'
+kurator: T.P.K.
