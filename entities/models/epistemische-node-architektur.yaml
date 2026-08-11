@@ -1,0 +1,36 @@
+entity_id: MOD:L2:epistemische-node-architektur
+typ: Model
+layer: L2
+name: "Epistemische Architektur für autonome Node-Verbünde"
+domäne: TEC
+status: '[T]'
+beschreibung: >
+  Technisches Epistemikmodell mit den getrennten Ebenen Observation, Episode,
+  Claim und Belief. Justification ist ein evaluator-lokales Verbindungsobjekt
+  zwischen Claim und Belief und keine fünfte epistemische Ebene.
+derived_from:
+  - MOD:L2:gedaechtnis-zugriffsmodell
+  - CON:L0:information
+  - CON:L0:struktur
+enables:
+  - CON:L1:retrieval-score-confidence
+  - CON:L1:epistemische-rechtfertigung
+  - CON:L1:nichtwissen-zustaende
+invariants:
+  - "Observation != Episode != Claim != Belief"
+  - "Justification is a link object, not a fifth epistemic level"
+  - "Claim-generation provenance != Belief justification"
+  - "Retrieval score != belief confidence"
+  - "Belief confidence is evaluator-local"
+  - "Replay cannot promote epistemic status"
+  - "Shared provenance is not independent evidence"
+object_model:
+  stable_identity: true
+  stateful_over_time: true
+  relation_driven: true
+  knowledge_projection: KNO
+  knowledge_projection_note: >
+    KNO kann Claim- oder Belief-Zustände projizieren, ersetzt aber weder
+    Claim-Generation-Provenance noch Justification des epistemischen Kernels.
+erstellt: '2026-08-11'
+kurator: T.P.K.

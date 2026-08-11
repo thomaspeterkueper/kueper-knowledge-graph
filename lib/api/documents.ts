@@ -21,16 +21,31 @@ function readJsonExport(path: string): AnyRecord {
   return JSON.parse(raw) as AnyRecord
 }
 
-function getDocumentReferenceExport() {
-  return readJsonExport('exports/document-references-0.1.json')
+function getDocumentReferencePaths(): string[] {
+  const registry = readJsonExport('exports/kxf-0.6.json').registry ?? {}
+  const shards = Array.isArray(registry.documentReferenceRegistryShards)
+    ? registry.documentReferenceRegistryShards
+    : []
+
+  return [registry.documentReferenceRegistry, ...shards].filter(
+    (path): path is string => typeof path === 'string' && path.length > 0,
+  )
 }
 
 function getRecords(): AnyRecord[] {
-  return getDocumentReferenceExport().records ?? []
+  return getDocumentReferencePaths().flatMap((path) => readJsonExport(path).records ?? [])
 }
 
 function normalizeId(value: string): string {
   return decodeURIComponent(value).trim()
+}
+
+function recordMatchesId(candidate: AnyRecord, normalized: string): boolean {
+  return (
+    candidate.id === normalized ||
+    candidate.canonicalId === normalized ||
+    (Array.isArray(candidate.aliases) && candidate.aliases.includes(normalized))
+  )
 }
 
 export function documentOk<T>(data: T): Response {
@@ -68,7 +83,15 @@ export function listDocumentReferences(searchParams?: URLSearchParams) {
     if (status && String(doc.status).toLowerCase() !== status.toLowerCase()) return false
     if (type && String(doc.documentType ?? doc.type).toLowerCase() !== type.toLowerCase()) return false
     if (q) {
-      const haystack = [doc.id, doc.canonicalId, doc.title, doc.summary, doc.documentType, doc.system]
+      const haystack = [
+        doc.id,
+        doc.canonicalId,
+        ...(Array.isArray(doc.aliases) ? doc.aliases : []),
+        doc.title,
+        doc.summary,
+        doc.documentType,
+        doc.system,
+      ]
         .filter(Boolean)
         .join(' ')
         .toLowerCase()
@@ -80,7 +103,7 @@ export function listDocumentReferences(searchParams?: URLSearchParams) {
 
 export function getDocumentReference(id: string) {
   const normalized = normalizeId(id)
-  return getRecords().find((doc) => doc.id === normalized || doc.canonicalId === normalized) ?? null
+  return getRecords().find((doc) => recordMatchesId(doc, normalized)) ?? null
 }
 
 export function getDocumentApiIndex() {
@@ -88,8 +111,8 @@ export function getDocumentApiIndex() {
     name: 'KUEPER Document API',
     version: '0.1',
     routes: [
-      { path: '/api/documents', description: 'List KG document references.' },
-      { path: '/api/documents/{id}', description: 'Read one KG document reference by DOC id or canonical id.' },
+      { path: '/api/documents', description: 'List KG document references from the logical base + shard registry.' },
+      { path: '/api/documents/{id}', description: 'Read one KG document reference by DOC id, canonical id or alias.' },
     ],
   }
 }

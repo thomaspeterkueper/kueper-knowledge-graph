@@ -1,0 +1,37 @@
+{
+  "schema": "KUEPER-RELATION-REGISTRY-0.1",
+  "name": "KUEPER Relation Registry — Epistemic Memory Shard",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1.0",
+  "updated": "2026-08-11",
+  "sourceDocuments": [
+    "KG-0003-RELATIONS",
+    "KG-0008-REGISTRY",
+    "KG-0016-EPISTEMIC-MEMORY-MODEL"
+  ],
+  "relationTypes": [
+    "DESCRIBES",
+    "COVERS",
+    "PART_OF",
+    "INFORMS",
+    "FORMALIZES",
+    "IMPLEMENTS",
+    "TESTS",
+    "METHODOLOGICAL_ANALOGY_TO"
+  ],
+  "records": [
+    {"id":"REL:DOC:KUE:KUE-PHI-0002-2026-DE:DESCRIBES:MOD:L2:gedaechtnis-zugriffsmodell","type":"Relation","from":"DOC:KUE:KUE-PHI-0002-2026-DE","relation":"DESCRIBES","to":"MOD:L2:gedaechtnis-zugriffsmodell","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:DOC:KUE:KUE-PHI-0002-2026-DE:COVERS:CON:L1:gedaechtnis-speicher-zugriff","type":"Relation","from":"DOC:KUE:KUE-PHI-0002-2026-DE","relation":"COVERS","to":"CON:L1:gedaechtnis-speicher-zugriff","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:DOC:KUE:KUE-PHI-0002-2026-DE:COVERS:CON:L1:erinnerung-ueberzeugung","type":"Relation","from":"DOC:KUE:KUE-PHI-0002-2026-DE","relation":"COVERS","to":"CON:L1:erinnerung-ueberzeugung","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:CON:L1:gedaechtnis-speicher-zugriff:PART_OF:MOD:L2:gedaechtnis-zugriffsmodell","type":"Relation","from":"CON:L1:gedaechtnis-speicher-zugriff","relation":"PART_OF","to":"MOD:L2:gedaechtnis-zugriffsmodell","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:CON:L1:erinnerung-ueberzeugung:PART_OF:MOD:L2:gedaechtnis-zugriffsmodell","type":"Relation","from":"CON:L1:erinnerung-ueberzeugung","relation":"PART_OF","to":"MOD:L2:gedaechtnis-zugriffsmodell","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:MOD:L2:gedaechtnis-zugriffsmodell:INFORMS:MOD:L2:epistemische-node-architektur","type":"Relation","from":"MOD:L2:gedaechtnis-zugriffsmodell","relation":"INFORMS","to":"MOD:L2:epistemische-node-architektur","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:MOD:L2:epistemische-node-architektur:FORMALIZES:CON:L1:erinnerung-ueberzeugung","type":"Relation","from":"MOD:L2:epistemische-node-architektur","relation":"FORMALIZES","to":"CON:L1:erinnerung-ueberzeugung","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:MOD:L2:epistemische-node-architektur:FORMALIZES:CON:L1:retrieval-score-confidence","type":"Relation","from":"MOD:L2:epistemische-node-architektur","relation":"FORMALIZES","to":"CON:L1:retrieval-score-confidence","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:CON:L1:epistemische-rechtfertigung:PART_OF:MOD:L2:epistemische-node-architektur","type":"Relation","from":"CON:L1:epistemische-rechtfertigung","relation":"PART_OF","to":"MOD:L2:epistemische-node-architektur","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:MOD:L2:minimaler-epistemischer-kernel:IMPLEMENTS:MOD:L2:epistemische-node-architektur","type":"Relation","from":"MOD:L2:minimaler-epistemischer-kernel","relation":"IMPLEMENTS","to":"MOD:L2:epistemische-node-architektur","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:MOD:L2:minimaler-epistemischer-kernel:TESTS:CON:L1:nichtwissen-zustaende","type":"Relation","from":"MOD:L2:minimaler-epistemischer-kernel","relation":"TESTS","to":"CON:L1:nichtwissen-zustaende","status":"draft_productive","source":"KG-0016-EPISTEMIC-MEMORY-MODEL"},
+    {"id":"REL:CON:L1:luca:METHODOLOGICAL_ANALOGY_TO:MOD:L2:gedaechtnis-zugriffsmodell","type":"Relation","from":"CON:L1:luca","relation":"METHODOLOGICAL_ANALOGY_TO","to":"MOD:L2:gedaechtnis-zugriffsmodell","status":"candidate","source":"RES-MET-20260811-001"}
+  ]
+}

@@ -1,0 +1,113 @@
+[
+  {
+    "relation_id": "REL:DOC:KUE:KUE-PHI-0002-2026-DE:DESCRIBES:MOD:L2:gedaechtnis-zugriffsmodell",
+    "quelle": "DOC:KUE:KUE-PHI-0002-2026-DE",
+    "relation": "DESCRIBES",
+    "ziel": "MOD:L2:gedaechtnis-zugriffsmodell",
+    "status": "[I]",
+    "kommentar": "Der publizierte Essay ist die kanonische Lesefassung der Modellskizze.",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:DOC:KUE:KUE-PHI-0002-2026-DE:COVERS:CON:L1:gedaechtnis-speicher-zugriff",
+    "quelle": "DOC:KUE:KUE-PHI-0002-2026-DE",
+    "relation": "COVERS",
+    "ziel": "CON:L1:gedaechtnis-speicher-zugriff",
+    "status": "[I]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:DOC:KUE:KUE-PHI-0002-2026-DE:COVERS:CON:L1:erinnerung-ueberzeugung",
+    "quelle": "DOC:KUE:KUE-PHI-0002-2026-DE",
+    "relation": "COVERS",
+    "ziel": "CON:L1:erinnerung-ueberzeugung",
+    "status": "[I]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:CON:L1:gedaechtnis-speicher-zugriff:PART_OF:MOD:L2:gedaechtnis-zugriffsmodell",
+    "quelle": "CON:L1:gedaechtnis-speicher-zugriff",
+    "relation": "PART_OF",
+    "ziel": "MOD:L2:gedaechtnis-zugriffsmodell",
+    "status": "[I]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:CON:L1:erinnerung-ueberzeugung:PART_OF:MOD:L2:gedaechtnis-zugriffsmodell",
+    "quelle": "CON:L1:erinnerung-ueberzeugung",
+    "relation": "PART_OF",
+    "ziel": "MOD:L2:gedaechtnis-zugriffsmodell",
+    "status": "[I]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:MOD:L2:gedaechtnis-zugriffsmodell:INFORMS:MOD:L2:epistemische-node-architektur",
+    "quelle": "MOD:L2:gedaechtnis-zugriffsmodell",
+    "relation": "INFORMS",
+    "ziel": "MOD:L2:epistemische-node-architektur",
+    "status": "[I]",
+    "kommentar": "Die technische Architektur übernimmt und operationalisiert zentrale Trennungen des Gedächtnismodells.",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:MOD:L2:epistemische-node-architektur:FORMALIZES:CON:L1:erinnerung-ueberzeugung",
+    "quelle": "MOD:L2:epistemische-node-architektur",
+    "relation": "FORMALIZES",
+    "ziel": "CON:L1:erinnerung-ueberzeugung",
+    "status": "[T]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:MOD:L2:epistemische-node-architektur:FORMALIZES:CON:L1:retrieval-score-confidence",
+    "quelle": "MOD:L2:epistemische-node-architektur",
+    "relation": "FORMALIZES",
+    "ziel": "CON:L1:retrieval-score-confidence",
+    "status": "[T]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:CON:L1:epistemische-rechtfertigung:PART_OF:MOD:L2:epistemische-node-architektur",
+    "quelle": "CON:L1:epistemische-rechtfertigung",
+    "relation": "PART_OF",
+    "ziel": "MOD:L2:epistemische-node-architektur",
+    "status": "[T]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:MOD:L2:minimaler-epistemischer-kernel:IMPLEMENTS:MOD:L2:epistemische-node-architektur",
+    "quelle": "MOD:L2:minimaler-epistemischer-kernel",
+    "relation": "IMPLEMENTS",
+    "ziel": "MOD:L2:epistemische-node-architektur",
+    "status": "[T]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:MOD:L2:minimaler-epistemischer-kernel:TESTS:CON:L1:nichtwissen-zustaende",
+    "quelle": "MOD:L2:minimaler-epistemischer-kernel",
+    "relation": "TESTS",
+    "ziel": "CON:L1:nichtwissen-zustaende",
+    "status": "[T]",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL:CON:L1:luca:METHODOLOGICAL_ANALOGY_TO:MOD:L2:gedaechtnis-zugriffsmodell",
+    "quelle": "CON:L1:luca",
+    "relation": "METHODOLOGICAL_ANALOGY_TO",
+    "ziel": "MOD:L2:gedaechtnis-zugriffsmodell",
+    "status": "[I]",
+    "kommentar": "Methodologische Analogie funktionaler Rekonstruktion; keine biologische Ableitung des Gedächtnismodells.",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  }
+]

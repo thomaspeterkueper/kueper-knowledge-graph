@@ -1,0 +1,27 @@
+entity_id: MOD:L2:gedaechtnis-zugriffsmodell
+typ: Model
+layer: L2
+name: "Gedächtnis als Zugriffsproblem"
+domäne: PHI
+status: '[I]'
+beschreibung: >
+  Modellskizze, die Speicherzustand, Zugriff, Reaktivierung, Herkunftsprüfung,
+  Aktualisierung und Selektion trennt. Nichterinnern wird nicht unmittelbar
+  als Nachweis fehlender Speicherung behandelt. Eine zweite Trennung hält
+  Erinnerung und Überzeugung sowie Zugänglichkeit und Zuverlässigkeit auseinander.
+derived_from:
+  - CON:L0:information
+  - CON:L0:struktur
+  - CON:L0:veraenderung
+enables:
+  - CON:L1:gedaechtnis-speicher-zugriff
+  - CON:L1:erinnerung-ueberzeugung
+  - CON:L1:nichtwissen-zustaende
+object_model:
+  stable_identity: true
+  stateful_over_time: true
+  relation_driven: true
+  compatible_with: KG-0009-NARRATIVE-WORLD-MODEL
+source_document: DOC:KUE:KUE-PHI-0002-2026-DE
+erstellt: '2026-08-11'
+kurator: T.P.K.

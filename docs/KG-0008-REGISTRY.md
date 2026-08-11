@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft productive, 2026-07-02
+Draft productive, 2026-07-02; shard extension 2026-08-11
 
 ## Purpose
 
@@ -76,6 +76,34 @@ listRelations(id)
 }
 ```
 
+## Additive registry shards
+
+Ab 2026-08-11 darf eine logische Registry aus einer Basisdatei und explizit in `exports/kxf-0.6.json` registrierten Shards bestehen.
+
+```text
+logical entity registry
+    = entityRegistry
+    + entityRegistryShards[]
+
+logical relation registry
+    = relationRegistry
+    + relationRegistryShards[]
+
+logical document reference registry
+    = documentReferenceRegistry
+    + documentReferenceRegistryShards[]
+```
+
+Die Baseregistries bleiben aus Rückwärtskompatibilitätsgründen bestehen. Neue fachlich geschlossene Erweiterungen dürfen als Shard ergänzt werden, wenn:
+
+1. der Shard dasselbe Registry-Schema verwendet,
+2. IDs über Basis und Shards eindeutig bleiben,
+3. KXF den Shard explizit auflistet,
+4. Consumer Basis und Shards als **eine logische Registry** behandeln,
+5. ein Shard keine konkurrierende Source of Truth erzeugt, sondern nur kanonische Quellobjekte indexiert.
+
+Ein Shard ist damit kein zweiter Graph. Er ist eine partitionierte Projektion derselben Registry.
+
 ## Rules
 
 1. Registry records index canonical or legacy records; they do not create new domain truth by themselves.
@@ -84,6 +112,8 @@ listRelations(id)
 4. Every exported relation should be resolvable through the Relation Registry.
 5. Legacy records may be indexed, but must be marked as `legacy`, `internal` or `compatibility`.
 6. Consumer-facing exports must declare their active contract where possible.
+7. If registry shards are declared in KXF, resolver implementations must aggregate them with the corresponding base registry.
+8. `canonicalId` and explicitly declared `aliases` may resolve to the same stable object ID.
 
 ## Files introduced
 
@@ -93,3 +123,5 @@ exports/system-registry-0.1.json
 exports/relation-registry-0.1.json
 exports/kxf-0.6.json
 ```
+
+The shard extension adds no mandatory shard. It only defines how explicitly registered shards participate in resolution.

@@ -1,0 +1,37 @@
+entity_id: MOD:L2:minimaler-epistemischer-kernel
+typ: Model
+layer: L2
+name: "Minimaler epistemischer Kernel"
+domäne: TEC
+status: '[T]'
+beschreibung: >
+  Minimaler ausführbarer Prototyp zur Operationalisierung der epistemischen
+  Architektur. Primärer Testzweck ist die technische Unterscheidung von
+  Substratverlust, partiellem Retrievaldefekt, vollständig orphaned
+  Repräsentation und Filterblockade.
+derived_from:
+  - MOD:L2:epistemische-node-architektur
+enables:
+  - CON:L1:nichtwissen-zustaende
+prototype_scope:
+  includes:
+    - Observation
+    - Episode
+    - Claim
+    - Justification
+    - Belief
+    - two independent episode retrieval paths
+    - filter selection
+    - diagnostic maintenance scan
+  excludes:
+    - LLM
+    - embedding retrieval
+    - multi-node
+    - Omnizedenz symbol language
+    - associative replay
+object_model:
+  stable_identity: true
+  stateful_over_time: true
+  relation_driven: true
+erstellt: '2026-08-11'
+kurator: T.P.K.

@@ -1,0 +1,88 @@
+{
+  "schema": "KUEPER-ENTITY-REGISTRY-0.1",
+  "name": "KUEPER Entity Registry — Epistemic Memory Shard",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1.0",
+  "updated": "2026-08-11",
+  "sourceDocuments": [
+    "KG-0008-REGISTRY",
+    "KG-0009-NARRATIVE-WORLD-MODEL",
+    "KG-0016-EPISTEMIC-MEMORY-MODEL"
+  ],
+  "records": [
+    {
+      "id": "DOC:KUE:KUE-PHI-0002-2026-DE",
+      "type": "Document",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "documents/kue-phi-0002-memory.json",
+      "aliases": ["KUE-PHI-0002-2026-DE", "DOC:KUE:PHI:0002"],
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "MOD:L2:gedaechtnis-zugriffsmodell",
+      "type": "Model",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/models/gedaechtnis-zugriffsmodell.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "MOD:L2:epistemische-node-architektur",
+      "type": "Model",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/models/epistemische-node-architektur.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "MOD:L2:minimaler-epistemischer-kernel",
+      "type": "Model",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/models/minimaler-epistemischer-kernel.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "CON:L1:gedaechtnis-speicher-zugriff",
+      "type": "Concept",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/concepts/gedaechtnis-speicher-zugriff.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "CON:L1:erinnerung-ueberzeugung",
+      "type": "Concept",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/concepts/erinnerung-ueberzeugung.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "CON:L1:retrieval-score-confidence",
+      "type": "Concept",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/concepts/retrieval-score-confidence.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "CON:L1:nichtwissen-zustaende",
+      "type": "Concept",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/concepts/nichtwissen-zustaende.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "CON:L1:epistemische-rechtfertigung",
+      "type": "Concept",
+      "status": "draft_productive",
+      "source": "KG-0016-EPISTEMIC-MEMORY-MODEL",
+      "sourcePath": "entities/concepts/epistemische-rechtfertigung.yaml",
+      "exports": ["exports/entity-registry-epistemic-0.1.json", "exports/kxf-0.6.json"]
+    }
+  ]
+}

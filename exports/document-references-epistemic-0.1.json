@@ -1,0 +1,48 @@
+{
+  "schema": "KUEPER-DOCUMENT-REFERENCES-0.1",
+  "name": "KUEPER Document References Registry — Epistemic Memory Shard",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1.0",
+  "updated": "2026-08-11",
+  "sourceDocuments": [
+    "DOCUMENT-ARCHITECTURE",
+    "KG-0008-REGISTRY",
+    "KG-0016-EPISTEMIC-MEMORY-MODEL"
+  ],
+  "policy": {
+    "fullTextInKg": false,
+    "metadataOwner": "SYS:KUEPER:knowledge-graph",
+    "principle": "one_canonical_owner_per_information_object"
+  },
+  "records": [
+    {
+      "id": "DOC:KUE:KUE-PHI-0002-2026-DE",
+      "canonicalId": "KUE-PHI-0002-2026-DE",
+      "aliases": ["DOC:KUE:PHI:0002"],
+      "type": "DocumentReference",
+      "system": "SYS:KUEPER:kueper-com",
+      "title": "Gedächtnis als Zugriffsproblem",
+      "documentType": "Essay / Modellskizze",
+      "language": "DE",
+      "status": "published_working",
+      "version": "0.7",
+      "canonicalUrl": "https://kueper.com/kue/phi/kue-phi-0002-2026-de",
+      "sourceUrl": "https://kueper.com/kue/phi/kue-phi-0002-2026-de",
+      "sourceRepository": "thomaspeterkueper/kueper.com",
+      "sourcePath": "src/content/kue/phi/kue-phi-0002-2026-de.md",
+      "contentOwner": "SYS:KUEPER:kueper-com",
+      "metadataOwner": "SYS:KUEPER:knowledge-graph",
+      "relatedEntities": [
+        "MOD:L2:gedaechtnis-zugriffsmodell",
+        "MOD:L2:epistemische-node-architektur",
+        "CON:L1:gedaechtnis-speicher-zugriff",
+        "CON:L1:erinnerung-ueberzeugung"
+      ],
+      "relatedKnowledgeDomains": [],
+      "prerequisiteIds": [],
+      "markerProfile": ["I"],
+      "summary": "Publizierte Arbeitsfassung v7 des Essays über Speicher, Zugriff, Reaktivierung, Selektion sowie die Trennung von Erinnerung, Überzeugung und Zuverlässigkeit."
+    }
+  ]
+}

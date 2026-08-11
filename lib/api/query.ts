@@ -26,6 +26,19 @@ function kxf03Records() {
   return readJsonExport('exports/kxf-0.3.json').records ?? {}
 }
 
+function kxf06Registry() {
+  return readJsonExport('exports/kxf-0.6.json').registry ?? {}
+}
+
+function registryRecords(primaryKey: string, shardKey: string): AnyRecord[] {
+  const registry = kxf06Registry()
+  const primary = registry[primaryKey]
+  const shards = Array.isArray(registry[shardKey]) ? registry[shardKey] : []
+  const paths = [primary, ...shards].filter((path): path is string => typeof path === 'string' && path.length > 0)
+
+  return paths.flatMap((path) => readJsonExport(path).records ?? [])
+}
+
 function learningModulesRecords() {
   return readJsonExport('exports/kxf-learning-modules-0.1.json').records ?? {}
 }
@@ -39,7 +52,7 @@ function apiRegistryRecords() {
 }
 
 function entityRegistryRecords() {
-  return readJsonExport('exports/entity-registry-0.1.json').records ?? []
+  return registryRecords('entityRegistry', 'entityRegistryShards')
 }
 
 function systemRegistryRecords() {
@@ -47,11 +60,23 @@ function systemRegistryRecords() {
 }
 
 function relationRegistryRecords() {
-  return readJsonExport('exports/relation-registry-0.1.json').records ?? []
+  return registryRecords('relationRegistry', 'relationRegistryShards')
+}
+
+function documentReferenceRecords() {
+  return registryRecords('documentReferenceRegistry', 'documentReferenceRegistryShards')
 }
 
 function normalizeId(value: string): string {
   return decodeURIComponent(value).trim()
+}
+
+function recordMatchesId(candidate: AnyRecord, normalized: string): boolean {
+  return (
+    candidate.id === normalized ||
+    candidate.canonicalId === normalized ||
+    (Array.isArray(candidate.aliases) && candidate.aliases.includes(normalized))
+  )
 }
 
 export function queryOk<T>(query: string, data: T): Response {
@@ -89,7 +114,7 @@ export function resolveId(id: string) {
   ]
 
   for (const registry of registries) {
-    const record = registry.records.find((candidate: AnyRecord) => candidate.id === normalized)
+    const record = registry.records.find((candidate: AnyRecord) => recordMatchesId(candidate, normalized))
     if (record) return { id: normalized, registry: registry.registry, record }
   }
 
@@ -110,7 +135,10 @@ export function findRelations(id: string) {
 export function findDocument(documentId: string) {
   const id = normalizeId(documentId)
   const documents: AnyRecord[] = kxf03Records().documents ?? []
-  return documents.find((doc) => doc.id === id || doc.canonicalId === id) ?? null
+  const historical = documents.find((doc) => recordMatchesId(doc, id))
+  if (historical) return historical
+
+  return documentReferenceRecords().find((doc) => recordMatchesId(doc, id)) ?? null
 }
 
 export function findPrerequisites(documentId: string) {
@@ -158,11 +186,15 @@ export function findDocumentsByKnowledgeDomain(kdId: string) {
     (relation: AnyRecord) => relation.to === id && ['REQUIRES', 'COVERS'].includes(relation.relation),
   )
   const matchingDocumentIds = new Set(relations.map((relation: AnyRecord) => relation.from))
+  const currentDocumentRefs = documentReferenceRecords()
 
   return {
     knowledgeDomain,
     relations,
-    documents: documents.filter((doc) => matchingDocumentIds.has(doc.id)),
+    documents: [...documents, ...currentDocumentRefs].filter((doc, index, all) => {
+      if (!matchingDocumentIds.has(doc.id)) return false
+      return all.findIndex((candidate) => candidate.id === doc.id) === index
+    }),
   }
 }
 
