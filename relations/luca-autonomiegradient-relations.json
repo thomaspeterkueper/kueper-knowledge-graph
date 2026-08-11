@@ -1,0 +1,22 @@
+[
+  {
+    "relation_id": "REL-BIO-0001",
+    "quelle": "CON:L1:luca",
+    "relation": "exemplifies",
+    "ziel": "CON:L1:autonomiegradient",
+    "status": "[R]",
+    "kommentar": "Die rekonstruierte schrittweise Übernahme zuvor geochemisch bereitgestellter katalytischer Funktionen illustriert einen Übergang zu größerer organisationsinterner Autonomie.",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  },
+  {
+    "relation_id": "REL-OMNI-0001",
+    "quelle": "CON:L1:autonomiegradient",
+    "relation": "theoretical_extension",
+    "ziel": "CON:L0:omnizedenz",
+    "status": "[T]",
+    "kommentar": "Der Autonomiegradient dient als systemtheoretischer Anschlussbegriff für die Frage, wann relevante Prozessbedingungen Bestandteil der eigenen Organisation eines Systems werden.",
+    "erstellt": "2026-08-11",
+    "kurator": "T.P.K."
+  }
+]
