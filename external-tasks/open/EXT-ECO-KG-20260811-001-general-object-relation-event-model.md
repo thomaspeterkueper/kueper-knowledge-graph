@@ -187,3 +187,13 @@ _Für die Domänenbeispiel-3-Ausarbeitung wären für uns folgende Antworten am 
 
 _NOXIA wartet auf den vollständigen KG-Kern (Domänenbeispiel 3) bevor eine Migration_
 _geplant wird. Bis dahin: keine strukturellen Änderungen an den 7 Tabellen, nur Kenntnisnahme._
+
+
+---
+_Fortschritt 2026-08-14 (KG): Domaenenbeispiel 3 von 3 geliefert - siehe docs/KG-0018-SCIENTIFIC-KNOWLEDGE-PILOT.md (LUCA/Autonomiegradient).
+Damit sind alle drei Pflicht-Domaenenbeispiele erfuellt (narrativ: KG-0015, Simulation: KG-0017, wissenschaftlich: KG-0018).
+Kernfund KG-0018: ein einzelnes status-Feld pro Entitaet kann "Objekt gesichert, Detailbehauptung hypothetisch"
+nicht gleichzeitig ausdruecken (CON:L1:luca ist [R], sein befund-Text ist aber eher [H]/[T]) - konkrete Grenze
+des Modells, keine reine Bestaetigung. Verbleibend aus dem Erwarteten Ergebnis: Synthese-Schritte 1/2/4
+(dokumentierter Kern vs. narrative Spezialtypen; Festlegung STATE/EVENT/ASSERTION/TIME/PROVENANCE systemweit;
+Widerspruchs-/Provenienzregeln) - keine weiteren Domaenenbeispiele mehr noetig._

@@ -134,3 +134,35 @@ Der generalisierte Kern aus KG-0009 trägt auf NOXIAs Simulationsdomäne, ohne e
 
 ## Bezug zu EXT-ECO-KG-20260811-001
 Erfüllt Domänenbeispiel 2 von 3 ("Mess-/Simulationsfall aus NOXIA/SSF/OTA"). Verbleibend: ein wissenschaftlicher Wissensfall (z. B. LUCA/Autonomiegradient oder AVI).
+
+## Nachtrag 2026-08-14: Antworten auf NOXIA-Rückfragen
+
+NOXIA stellte drei konkrete Rückfragen zu diesem Piloten. Beantwortet nach Prüfung des tatsächlichen Codes (`lib/knowledge/unlocks.ts`), nicht aus der Dokumentation abgeleitet.
+
+### 1. Ist `colony_ledger` bereits die richtige Zielstruktur für eine Konsolidierung?
+
+Als Vorbild ja (typisierte Spalten statt Roh-`jsonb`, tick-gebunden), als Zieltabelle selbst nicht direkt: eine Zeile bildet genau einen Effekt ab, kann also kein Mehrfach-Effekt-Ereignis (z. B. „Schiff ändert Status **und** Standort") tragen. Empfehlung: eine neue, geteilte `events`-Tabelle im Stil von `colony_ledger`, ergänzt um `subject_type`/`subject_id`, `effect_group_id` und optionales `effects`-Array. `colony_ledger` kann darauf als Spezialisierung für Ressourcenbuchungen aufsetzen oder auslaufen.
+
+### 2. Wie sähe STATE für NOXIA aus, gegeben nur `tile_entities` + Ledger heute?
+
+`tile_entities` (`built_at`, kein `valid_to`) ist ein Teil-Zustand, kein echtes STATE-Konzept - „aktuell vorhanden" muss aus dem Fehlen eines späteren Abriss-Ledger-Eintrags abgeleitet werden. Minimaler Vorschlag:
+
+```sql
+CREATE TABLE entity_states (
+  id           uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  subject_type text NOT NULL,
+  subject_id   uuid NOT NULL,
+  valid_from   timestamptz NOT NULL,
+  valid_to     timestamptz,     -- NULL = aktuell gültig
+  properties   jsonb NOT NULL,
+  source_event uuid REFERENCES events(id)
+);
+```
+
+Aktueller Zustand = `WHERE subject_id = X AND valid_to IS NULL`; historischer Zustand = Bereichsabfrage. Wird aus demselben Event-Strom geschrieben, der ohnehin Effekte erzeugt - keine parallele Pflege.
+
+### 3. Dürfen `world_events`/`historical_milestones` schon jetzt gedroppt werden, unabhängig vom Ausgang?
+
+Geprüft (nicht vermutet): Beide Tabellen kommen im gesamten TypeScript-Code nirgends in einem `INSERT`/`SELECT` vor - nur in Migration/RLS/Grants. `colony_ledger` dagegen ist aktiv in drei Dateien verdrahtet (`app/api/game/admin/route.ts`, `app/api/game/trade/route.ts`, `lib/game/tick.ts`).
+
+Technisch: ja, gefahrlos droppbar, ohne live etwas zu brechen. Das ist aber nicht die Entscheidung dieses Piloten - die RLS-Policies wirken absichtlich für geplante, noch nicht verdrahtete Features vorbereitet (World-Events-System, Achievement-System). Ob das aufgegebene oder nur noch nicht gebaute Features sind, ist NOXIAs Roadmap-Entscheidung. Aus Architektursicht ist das Droppen keine Voraussetzung für die Konsolidierung - das neue Event-Schema kann parallel eingeführt werden, unabhängig vom Schicksal der beiden ungenutzten Tabellen.
