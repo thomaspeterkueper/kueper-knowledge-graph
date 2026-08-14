@@ -47,7 +47,7 @@
             "ssf-phy-wasser-sublimation.yaml": ["UNL:NOX:PHY:SUBLIMATION"],
             "ssf-phy-wasser-waerme.yaml": ["UNL:NOX:PHY:HEAT-CAPACITY"]
           },
-          "knownDriftBaselineNote": "Wertgebundene Baseline: verzeiht je Datei GENAU die hier hinterlegte unlocks-Liste, wie zum Zeitpunkt der Einfuehrung (2026-07-21) vorgefunden - nicht die Datei pauschal. Aendert sich der unlocks-Wert einer dieser Dateien auf einen anderen, ebenfalls abweichenden Wert, blockiert die Pruefung (neue Drift). Aufloesung gemaess ECO-ARC-0019 §II.5.1: der kanonische Export gewinnt, da seine unlocks-Werte auf KG-REQ-20260719-noxia-unlock-mapping zurueckgehen."
+          "knownDriftBaselineNote": "Wertgebundene Baseline: verzeiht je Datei GENAU die hier hinterlegte unlocks-Liste, wie zum Zeitpunkt der Einfuehrung (2026-07-21) vorgefunden - nicht die Datei pauschal. Aendert sich der unlocks-Wert einer dieser Dateien auf einen anderen, ebenfalls abweichenden Wert, blockiert die Pruefung (neue Drift). Aufloesung gemaess ECO-ARC-0019 §II.5.1: der kanonische Export gewinnt, da seine unlocks-Werte auf KG-REQ-20260719-noxia-unlock-mapping zurueckgehen. 2026-08-14: AST-L1-000001 kanonisch um UNL:NOX:SHIP:SCOUT ergaenzt (fehlender, von NOXIA lib/knowledge/unlocks.ts:canBuildScout() tatsaechlich erwarteter Gate-Key - echter Bugfix, kein Drift-Fund). Der learning/-Vergleichswert bleibt unveraendert, der kanonische Vergleichswert hat sich entsprechend geaendert; die Drift-Baseline-Eintraege fuer ssf-ast-1101-sonnensystem.yaml und ssf-ast-sonnensystem.yaml bleiben gueltig, vergleichen aber jetzt gegen den neuen kanonischen Stand."
         }
       ]
     },
