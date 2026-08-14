@@ -209,3 +209,21 @@ world_events/historical_milestones bestaetigt tot.
 Domaenenbeispiel 3 ist geliefert (docs/KG-0018-SCIENTIFIC-KNOWLEDGE-PILOT.md) - die Wartebedingung fuer die
 Migrationsplanung ist damit erfuellt. KG arbeitet jetzt an der Synthese (Kern vs. narrative Spezialtypen,
 systemweite STATE/EVENT/ASSERTION-Festlegung, Widerspruchs-/Provenienzregeln)._
+
+
+---
+_Fortschritt 2026-08-14 (KG): Synthese-Dokument docs/KG-0019-GENERAL-SEMANTIC-CORE.md geliefert.
+Erfuellt Erwartetes Ergebnis Punkte 1, 2, 4, 5 vollstaendig (Punkt 3 bereits durch KG-0015/0017/0018 erfuellt).
+
+Kernentscheidungen: (a) kein neuer Universaltyp - bestehende Praefixe (DOC/MOD/CON/SYS/...) tragen Objektidentitaet
+weiter. (b) STATE/EVENT/TIME/PROVENANCE systemweit nutzbar, kanonische Formen definiert. (c) EVENT neu
+unterschieden in Weltereignis vs. Wissensereignis (aus KG-0018-Befund). (d) Neuer Baustein ASSERTION loest
+den in KG-0018 gefundenen Mangel (Entitaet gesichert, Detailbehauptung hypothetisch nicht gleichzeitig
+ausdrueckbar) - nutzt das bestehende [R]/[T]/[H]/[S]/[F]/[I]/[OFFEN]-Markervokabular, kein neues erfunden.
+(e) Widerspruchsregeln sind die direkte Uebertragung von ECO-ARC-0019 Regel 5 (Repository-Konflikte) auf
+Assertion-Ebene - derselbe Grundsatz an beiden Stellen.
+
+Keine rueckwirkende Migration bestehender Entitaeten, keine automatisierte Widerspruchspruefung, keine
+KXF-Implementierung - alles bewusst als naechste, spaetere Schritte offengelassen (Punkt 5).
+
+Damit ist der Request inhaltlich vollstaendig bearbeitet. Schliessung liegt beim Kurator._
