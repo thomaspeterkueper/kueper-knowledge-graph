@@ -1,0 +1,79 @@
+{
+  "schema": "SOURCE-OF-TRUTH-0.1",
+  "purpose": "Erklaert je Datentyp, welcher Ort im Repository kanonisch ist. Gemaess ECO-ARC-0019 §II.3. Von scripts/check_source_of_truth.py gelesen.",
+  "updated": "2026-07-21",
+  "declarations": [
+    {
+      "dataType": "learning_modules",
+      "description": "Lernmodul-Definitionen fuer SSF/NOXIA-Konsum",
+      "canonical": {
+        "path": "exports/kxf-learning-modules-0.1.json",
+        "idField": "records.learning_modules[].id",
+        "reason": "Einziger Ort, den SSF/NOXIA tatsaechlich ueber lib/kxf.ts konsumieren."
+      },
+      "deprecated": [
+        {
+          "pathGlob": "learning/*.yaml",
+          "idField": "module_id",
+          "reason": "Vorlaeufer-Autorenformat. Teilweise nicht mit canonical synchron (siehe KG-REQ-20260721-learning-vs-exports-sync). Kein bekannter Konsumationspfad zu SSF/NOXIA.",
+          "crossCheckVia": "legacyId",
+          "knownOrphansBaseline": [
+            "ssf-ast-1201-mars-atmosphaere.yaml",
+            "ssf-ast-2101-orbitalmechanik-core.yaml",
+            "ssf-ast-2101-orbitalmechanik.yaml",
+            "ssf-bio-1101-was-ist-leben.yaml",
+            "ssf-bio-1201-photosynthese.yaml",
+            "ssf-che-1101-wasser.yaml",
+            "ssf-che-1301-metalle.yaml",
+            "ssf-mat-1201-materialien.yaml",
+            "ssf-phy-1201-bewegung.yaml",
+            "ssf-phy-1301-energie.yaml",
+            "ssf-phy-1302-strom-und-speicher.yaml",
+            "ssf-tec-1101-werkzeuge.yaml",
+            "ssf-tec-1201-fertigung.yaml"
+          ],
+          "knownOrphansBaselineNote": "Bekannter Bestand zum Zeitpunkt der Einfuehrung dieser Pruefung (2026-07-21). Diese Dateien blockieren CI nicht, bis Kurator-Entscheidung zu KG-REQ-20260721-learning-vs-exports-sync vorliegt. NEUE Waisen ueber diese Liste hinaus blockieren CI.",
+          "knownDriftBaseline": {
+            "ssf-ast-1101-sonnensystem.yaml": ["noxia"],
+            "ssf-ast-sonnensystem.yaml": ["AST:HOHMANN-TRANSFER", "NAV:ORBITAL", "UNL:NOX:NAV:ORBITAL"],
+            "ssf-mat-1001-zahlen-und-groessen.yaml": ["UNL:SSF:basic-physics-ready"],
+            "ssf-mat-1002-vektoren.yaml": ["UNL:SSF:motion-ready"],
+            "ssf-phy-1101-gravitation.yaml": ["UNL:NOX:orbital-navigation"],
+            "ssf-phy-spektralanalyse.yaml": ["PHY:QUANTUM-LEVELS", "SENSOR:SPECTRAL", "UNL:NOX:SENSOR:SPECTRAL"],
+            "ssf-phy-wasser-aggregat.yaml": ["UNL:NOX:PHY:PHASE-DIAGRAM"],
+            "ssf-phy-wasser-dichte.yaml": ["UNL:NOX:PHY:DENSITY-ANOMALY"],
+            "ssf-phy-wasser-molekuel.yaml": ["UNL:NOX:CHEM:WATER-MOLECULE"],
+            "ssf-phy-wasser-oberflaeche.yaml": ["UNL:NOX:PHY:SURFACE-TENSION"],
+            "ssf-phy-wasser-sublimation.yaml": ["UNL:NOX:PHY:SUBLIMATION"],
+            "ssf-phy-wasser-waerme.yaml": ["UNL:NOX:PHY:HEAT-CAPACITY"]
+          },
+          "knownDriftBaselineNote": "Wertgebundene Baseline: verzeiht je Datei GENAU die hier hinterlegte unlocks-Liste, wie zum Zeitpunkt der Einfuehrung (2026-07-21) vorgefunden - nicht die Datei pauschal. Aendert sich der unlocks-Wert einer dieser Dateien auf einen anderen, ebenfalls abweichenden Wert, blockiert die Pruefung (neue Drift). Aufloesung gemaess ECO-ARC-0019 §II.5.1: der kanonische Export gewinnt, da seine unlocks-Werte auf KG-REQ-20260719-noxia-unlock-mapping zurueckgehen."
+        }
+      ]
+    },
+    {
+      "dataType": "entities",
+      "description": "Konzept-/Modell-Entitaeten (CON:*, MOD:*)",
+      "canonical": {
+        "path": "entities/**/*.yaml",
+        "reason": "Kurator-Entscheidung KG-REQ-20260718-005 (Option B): deutsche Feldnamen kanonisch fuer die Autorenschicht.",
+        "excludedFiles": ["entities/foundation/index.yaml"]
+      },
+      "deprecated": []
+    },
+    {
+      "dataType": "knowledge_domains",
+      "description": "Wissensdomaenen (KD:*)",
+      "canonical": {
+        "path": "exports/knowledge-domains-0.1.json",
+        "reason": "ECO-ARC-0014 (KD kanonisch statt KNOW), ECO-ARC-0017 (Granularitaet/Praefixe)."
+      },
+      "deprecated": [
+        {
+          "pattern": "KNOW:*",
+          "reason": "Migriert auf KD:* (ECO-ARC-0014). Verbleibende KNOW-Vorkommen sind bewusste Legacy-Dokumentation (legacyMappings, legacyId, MAPS_TO-Relationen), keine aktive Nutzung."
+        }
+      ]
+    }
+  ]
+}
