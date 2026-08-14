@@ -123,3 +123,14 @@ Die Anforderung ist erfüllt, wenn der KG:
 ## Folgebezug
 
 Wenn ein stabiler Kern entsteht, soll das Ecosystem anschließend prüfen, ob daraus ein systemweiter Architekturstandard oder eine KXF-Projektionskonvention abgeleitet werden muss. Die fachliche Definition verbleibt zunächst im KG.
+
+
+---
+_Fortschritt 2026-08-14 (KG): Domaenenbeispiel 2 von 3 geliefert - siehe docs/KG-0017-NOXIA-SIMULATION-PILOT.md.
+Bildet die 5 nicht-narrativen KG-0009-Bausteine auf NOXIAs echtes Supabase-Schema ab (nicht auf abstrakte Beispiele).
+Kernfund: NOXIA hat unabhaengig 4 parallele, uneinheitliche Event-Tabellen (events, world_events,
+historical_milestones, colony_ledger) sowie keine STATE-Historie - dasselbe Vielfach-Quellen-Muster,
+das ECO-ARC-0019 fuer den KG selbst adressiert. KNOWLEDGE_BELIEF und die Prospektionskette
+(Ground Truth -> Measurement -> Interpretation) passen beide nicht auf NOXIA, dokumentiert als
+bewusste Nicht-Anwendung. Narratives Beispiel (KG-0015) lag bereits vor. Verbleibend: ein
+wissenschaftlicher Wissensfall (z. B. LUCA/Autonomiegradient oder AVI)._
