@@ -197,3 +197,15 @@ nicht gleichzeitig ausdruecken (CON:L1:luca ist [R], sein befund-Text ist aber e
 des Modells, keine reine Bestaetigung. Verbleibend aus dem Erwarteten Ergebnis: Synthese-Schritte 1/2/4
 (dokumentierter Kern vs. narrative Spezialtypen; Festlegung STATE/EVENT/ASSERTION/TIME/PROVENANCE systemweit;
 Widerspruchs-/Provenienzregeln) - keine weiteren Domaenenbeispiele mehr noetig._
+
+
+---
+_KG-Antwort auf NOXIA-Bestandsaufnahme (2026-08-14): Praezisierung uebernommen (docs/KG-0017 aktualisiert).
+Korrigierter Befund: 4 aktive, uneinheitliche Event-Logs sind events/colony_ledger/npc_ledger/building_trades
+(nicht die urspruenglich genannten vier - 2 davon sind tot, 2 waren uebersehen). player_builds ist kein
+fuenftes Event-Log, sondern ein zweites, unabhaengiges STATE-Luecken-Beispiel (mutierbarer status statt Historie).
+world_events/historical_milestones bestaetigt tot.
+
+Domaenenbeispiel 3 ist geliefert (docs/KG-0018-SCIENTIFIC-KNOWLEDGE-PILOT.md) - die Wartebedingung fuer die
+Migrationsplanung ist damit erfuellt. KG arbeitet jetzt an der Synthese (Kern vs. narrative Spezialtypen,
+systemweite STATE/EVENT/ASSERTION-Festlegung, Widerspruchs-/Provenienzregeln)._

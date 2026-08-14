@@ -25,6 +25,25 @@ Bei der Untersuchung von `supabase/migrations/20260719000000_baseline.sql` zeigt
 
 Dieses Muster entspricht exakt dem Vielfach-Quellen-Problem, das `ECO-ARC-0019` für den KG selbst adressiert (`learning/*.yaml` vs. `exports/kxf-learning-modules-0.1.json`) - nur unabhängig und in NOXIAs eigener Domäne entstanden. Das ist ein eigenständiger Befund dieses Piloten, kein Konstrukt zur Rechtfertigung der Generalisierung.
 
+### Korrektur nach NOXIAs eigener Code-Prüfung (2026-08-14)
+
+NOXIA hat den Befund präzisiert (siehe Nachtrag zu `EXT-ECO-KG-20260811-001`). Die Lage ist nuancierter als "sieben gleichartige Fälle":
+
+**Vier genuin aktive, uneinheitliche Event-Logs** (nicht mehr `events`/`world_events`/`historical_milestones`/`colony_ledger`, sondern):
+
+| Tabelle | Status | Form |
+|---|---|---|
+| `events` | AKTIV (`lib/game/tick.ts:221`) | append-only, `payload` jsonb unstrukturiert |
+| `colony_ledger` | AKTIV (`tick.ts:213`, `trade/route.ts`, `admin/route.ts`) | append-only, typisierte Spalten, `tick`-gebunden - strukturell am nächsten am KG-0009-EVENT |
+| `npc_ledger` | AKTIV | append-only, typisiert (`kind`, `resource`, `goods_delta`, `credit_delta`), `tick`-gebunden |
+| `building_trades` | AKTIV | append-only, typisiert (`seller_id`, `buyer_id`, `price`) |
+
+**Ein weiteres STATE-Lücken-Beispiel, kein Event-Log:** `player_builds` hat ein **mutierbares** `status`-Feld (`building` → `complete`/`cancelled`), wird in-place verändert - keine Historie erhalten. Bestätigt die bereits unten beschriebene STATE-Lücke an einem zweiten, unabhängigen Fall.
+
+**Zwei bestätigt tot:** `world_events`, `historical_milestones` - nirgends im App-Code referenziert, nur in Migration/RLS/Grants vorbereitet.
+
+Die eigentliche Fragmentierung betrifft also vier aktive Event-Logs (nicht die ursprünglich genannten vier - zwei der ursprünglich genannten sind tot, zwei bislang übersehene sind es tatsächlich), plus eine zweite STATE-Lücke. Kein Unterschied in der Kernaussage, aber die genauen betroffenen Tabellen waren zunächst falsch benannt.
+
 ## Abbildung der fünf Bausteine auf reale NOXIA-Tabellen
 
 ### OBJECT
