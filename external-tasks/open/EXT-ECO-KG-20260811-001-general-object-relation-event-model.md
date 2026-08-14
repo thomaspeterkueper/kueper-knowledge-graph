@@ -134,3 +134,56 @@ das ECO-ARC-0019 fuer den KG selbst adressiert. KNOWLEDGE_BELIEF und die Prospek
 (Ground Truth -> Measurement -> Interpretation) passen beide nicht auf NOXIA, dokumentiert als
 bewusste Nicht-Anwendung. Narratives Beispiel (KG-0015) lag bereits vor. Verbleibend: ein
 wissenschaftlicher Wissensfall (z. B. LUCA/Autonomiegradient oder AVI)._
+
+---
+_NOXIA-Bestandsaufnahme 2026-08-14 (NOXIA-seitig, Antwort auf KG-Zwischenstand):_
+
+_Alle 4 genannten Tabellen wurden geprüft (Baseline-Migration + Code-Referenzen):_
+
+```text
+events                  — AKTIV, geschrieben in lib/game/tick.ts:221
+                           { profile_id, location_id, type, payload jsonb, created_at }
+                           generischer Append-Only-Log, aber ohne STATE-Bezug
+
+colony_ledger           — AKTIV, geschrieben in tick.ts:213, trade/route.ts, admin/route.ts
+                           { location_id, tick, entry_type, profile_id, resource_type,
+                             amount, note, created_at }
+                           bereits append-only, bereits mit tick-Nummer — strukturell am
+                           nächsten an einem echten EVENT-Typ im KG-0009-Sinn
+
+world_events             — TOT. Nirgends im App-Code referenziert (nur Migration).
+                           Ursprünglich wohl für zeitlich befristete Welt-Ereignisse gedacht
+                           (starts_at/ends_at/effect jsonb), nie implementiert.
+
+historical_milestones    — TOT. Nirgends im App-Code referenziert (nur Migration).
+                           Ursprünglich wohl für Spieler-Achievements gedacht, nie implementiert.
+```
+
+_Zusätzlich existieren in NOXIA weitere Append-Only-Logs außerhalb der vom KG genannten 4,_
+_die denselben Zweck erfüllen und bereits sauber nach unserem eigenen Architekturprinzip_
+_("append-only event log als source of truth, nie inkrementelle Mutation") gebaut sind:_
+
+```text
+player_builds     — Bau-/Verkaufs-Lebenszyklus (building→complete/cancelled, selling→sold)
+npc_ledger        — NPC-Wirtschaftsaktionen (produce/buy/sell/build), mit tick-Nummer
+building_trades   — Spieler-zu-Spieler Gebäudeverkäufe
+```
+
+_Damit sind es real 7 verschiedene ereignisartige Tabellen, nicht 4 — die Fragmentierung_
+_ist noch etwas größer als im Zwischenstand sichtbar._
+
+_Für die Domänenbeispiel-3-Ausarbeitung wären für uns folgende Antworten am wertvollsten:_
+
+1. _Ist_ `colony_ledger` _bereits nah genug am kanonischen EVENT-Typ, um als Zielstruktur_
+   _zu dienen, in die_ `events`, `player_builds`, `npc_ledger`, `building_trades` _konsolidiert_
+   _werden könnten — oder braucht es eine eigene neue Tabelle?_
+2. _Wie sollte STATE (im KG-0009-Sinn: Zustand einer Entität zu einem Zeitpunkt) für NOXIA_
+   _aussehen? Aktuell wird Zustand ausschließlich aus_ `tile_entities` _(aktuelle Wahrheit)_
+   _plus dem jeweiligen Ledger (Historie) rekonstruiert — nie als eigene State-Snapshot-Tabelle._
+   _Ist das im generalisierten Modell die richtige Lösung, oder fehlt uns eine STATE-Ebene?_
+3. `world_events` _und_ `historical_milestones` _sind vermutlich einfach zu droppen (kein Code_
+   _referenziert sie). Spricht aus KG-0009-Sicht etwas dagegen, das jetzt schon zu tun,_
+   _unabhängig vom Ausgang der Generalisierungsfrage?_
+
+_NOXIA wartet auf den vollständigen KG-Kern (Domänenbeispiel 3) bevor eine Migration_
+_geplant wird. Bis dahin: keine strukturellen Änderungen an den 7 Tabellen, nur Kenntnisnahme._
