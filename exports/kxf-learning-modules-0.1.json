@@ -3,7 +3,7 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "created": "2026-07-02",
   "modified": "2026-07-10T12:00:00+02:00",
   "sourceDocuments": [
@@ -3113,6 +3113,432 @@
         "legacyId": "LRN:SSF:STATION-L1-000001",
         "createdFromRequest": "KB-REQUEST-0005",
         "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "PHY-L1-000017",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Magnetfelder verstehen",
+          "en": "Understanding Magnetic Fields"
+        },
+        "meta": {
+          "title": "Magnetfelder verstehen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Magnetfelder verstehen",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Magnetfelder verstehen",
+            "L1": "Magnetfelder verstehen",
+            "L2": null
+          },
+          "scope": [
+            "Magnetfeld",
+            "magnetischer Dipol",
+            "Elektromagnetismus",
+            "magnetisches Moment"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "PHY-L1-000018"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-001",
+        "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000018",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Warum Materialien magnetisch sind",
+          "en": "Why Materials Are Magnetic"
+        },
+        "meta": {
+          "title": "Warum Materialien magnetisch sind",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum Materialien magnetisch sind",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum Materialien magnetisch sind",
+            "L1": "Warum Materialien magnetisch sind",
+            "L2": null
+          },
+          "scope": [
+            "Dia-/Para-/Ferromagnetismus",
+            "Domänen"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000017"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000019"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-002",
+        "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000019",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Weich- und hartmagnetische Werkstoffe",
+          "en": "Soft and Hard Magnetic Materials"
+        },
+        "meta": {
+          "title": "Weich- und hartmagnetische Werkstoffe",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Weich- und hartmagnetische Werkstoffe",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Weich- und hartmagnetische Werkstoffe",
+            "L1": "Weich- und hartmagnetische Werkstoffe",
+            "L2": null
+          },
+          "scope": [
+            "Hysterese",
+            "Remanenz",
+            "Koerzitivfeldstärke",
+            "weich-/hartmagnetische Werkstoffe"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000018"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000020"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-003",
+        "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000020",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Permanentmagnete als Werkstoffe",
+          "en": "Permanent Magnets as Materials"
+        },
+        "meta": {
+          "title": "Permanentmagnete als Werkstoffe",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Permanentmagnete als Werkstoffe",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Permanentmagnete als Werkstoffe",
+            "L1": "Permanentmagnete als Werkstoffe",
+            "L2": null
+          },
+          "scope": [
+            "Ferrit",
+            "AlNiCo",
+            "SmCo",
+            "NdFeB"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000019"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000021"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-004",
+        "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000021",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Magnetismus und Temperatur",
+          "en": "Magnetism and Temperature"
+        },
+        "meta": {
+          "title": "Magnetismus und Temperatur",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Magnetismus und Temperatur",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Magnetismus und Temperatur",
+            "L1": "Magnetismus und Temperatur",
+            "L2": null
+          },
+          "scope": [
+            "Curie-Temperatur",
+            "Entmagnetisierung"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000020"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000022"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-005",
+        "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000022",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Vom Rohstoff zum Magneten",
+          "en": "From Raw Material to Magnet"
+        },
+        "meta": {
+          "title": "Vom Rohstoff zum Magneten",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Vom Rohstoff zum Magneten",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Vom Rohstoff zum Magneten",
+            "L1": "Vom Rohstoff zum Magneten",
+            "L2": null
+          },
+          "scope": [
+            "Zusammensetzung",
+            "Mikrostruktur",
+            "Verarbeitung",
+            "kritische Rohstoffe",
+            "Recycling"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000021"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000023"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-006",
+        "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000023",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Anwendungen magnetischer Materialien",
+          "en": "Applications of Magnetic Materials"
+        },
+        "meta": {
+          "title": "Anwendungen magnetischer Materialien",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Anwendungen magnetischer Materialien",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Anwendungen magnetischer Materialien",
+            "L1": "Anwendungen magnetischer Materialien",
+            "L2": null
+          },
+          "scope": [
+            "Elektromotor",
+            "Generator",
+            "Transformator",
+            "Hall-Sensor",
+            "magnetische Lager",
+            "Wirbelströme",
+            "magnetische Abschirmung"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000022"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000024"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-007",
+        "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000024",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Fortgeschrittene magnetische Funktionen",
+          "en": "Advanced Magnetic Functions"
+        },
+        "meta": {
+          "title": "Fortgeschrittene magnetische Funktionen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Fortgeschrittene magnetische Funktionen",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Fortgeschrittene magnetische Funktionen",
+            "L1": "Fortgeschrittene magnetische Funktionen",
+            "L2": null
+          },
+          "scope": [
+            "Magnetokalorik",
+            "Supraleitung und Flux Pinning"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000023"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-008",
+        "createdFromRequest": "SSF-0001"
       }
     ]
   },
@@ -3181,5 +3607,5 @@
       "resolution": "Remove learning_path from moduleTypes. Use records.paths for PATH objects."
     }
   ],
-  "updated": "2026-08-14"
+  "updated": "2026-08-21"
 }
