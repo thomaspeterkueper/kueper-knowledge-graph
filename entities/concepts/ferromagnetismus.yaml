@@ -1,0 +1,20 @@
+entity_id: CON:L1:ferromagnetismus
+typ: Concept
+layer: L1
+name: Ferromagnetismus
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Ferromagnetische Materialien wie Eisen richten ihre magnetischen Momente in Domaenen gleich aus und
+  behalten die Magnetisierung auch ohne aeusseres Feld. Ursache ist die Austauschwechselwirkung
+  benachbarter Spins.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:magnetisches-moment
+  - CON:L1:magnetische-domaenen
+enables:
+  - CON:L1:hysterese
+  - CON:L1:remanenz
+  - CON:L1:curie-temperatur
+erstellt: '2026-08-21'
+kurator: T.P.K.

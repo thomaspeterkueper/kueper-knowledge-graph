@@ -1,0 +1,14 @@
+entity_id: CON:L1:diamagnetismus
+typ: Concept
+layer: L1
+name: Diamagnetismus
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Diamagnetische Materialien werden von Magnetfeldern schwach abgestossen. Alle Elektronen sind
+  gepaart; der Effekt tritt in jedem Material auf, ist aber meist sehr schwach.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:elektronenspin
+erstellt: '2026-08-21'
+kurator: T.P.K.

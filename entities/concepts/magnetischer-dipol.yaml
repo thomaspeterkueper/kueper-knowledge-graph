@@ -1,0 +1,17 @@
+entity_id: CON:L1:magnetischer-dipol
+typ: Concept
+layer: L1
+name: Magnetischer Dipol
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Ein magnetischer Dipol besteht aus zwei entgegengesetzten Polen, die nicht getrennt werden koennen.
+  Jeder Stromkreis und jedes magnetisierte Teilchen traegt ein Dipolmoment.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:magnetfeld
+enables:
+  - CON:L1:magnetisches-moment
+  - CON:L1:magnetische-pole
+erstellt: '2026-08-21'
+kurator: T.P.K.

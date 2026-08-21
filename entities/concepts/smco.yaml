@@ -1,0 +1,15 @@
+entity_id: CON:L1:smco
+typ: Concept
+layer: L1
+name: SmCo
+domäne: MTL
+status: '[R]'
+beschreibung: >
+  SmCo-Magnete bestehen aus Samarium und Kobalt. Sie sind temperaturbestaendig und
+  korrosionsresistent, enthalten aber das kritische Rohstoff-Element Samarium.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:hartmagnetische-werkstoffe
+  - CON:L1:kritische-rohstoffe
+erstellt: '2026-08-21'
+kurator: T.P.K.

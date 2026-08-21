@@ -1,0 +1,21 @@
+module_id: PHY-L1-000021
+legacy_id: LRN:SSF:MAG-005
+typ: LearningModule
+layer: L3
+name: Magnetismus und Temperatur
+domain: PHY
+subdomain: materials
+status: '[R]'
+requires:
+  - PHY-L1-000020
+teaches:
+  - CON:L1:curie-temperatur
+  - CON:L1:entmagnetisierung
+unlocks: []
+planned_unlocks: []
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+created: '2026-08-21'
+curator: T.P.K.
+notes: >
+  SSF-0001: MAG-005 Magnetismus und Temperatur. Curie-Temperatur, Temperaturabhaengigkeit, E
+  ntmagnetisierung.

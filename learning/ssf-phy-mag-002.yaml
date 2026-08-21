@@ -1,0 +1,24 @@
+module_id: PHY-L1-000018
+legacy_id: LRN:SSF:MAG-002
+typ: LearningModule
+layer: L3
+name: Warum Materialien magnetisch sind
+domain: PHY
+subdomain: electromagnetism
+status: '[R]'
+requires:
+  - PHY-L1-000017
+teaches:
+  - CON:L1:elektronenspin
+  - CON:L1:magnetisches-moment
+  - CON:L1:diamagnetismus
+  - CON:L1:paramagnetismus
+  - CON:L1:ferromagnetismus
+unlocks: []
+planned_unlocks: []
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+created: '2026-08-21'
+curator: T.P.K.
+notes: >
+  SSF-0001: MAG-002 Warum Materialien magnetisch sind. Spin, magnetisches Moment, Dia-/Para-
+  /Ferromagnetismus.

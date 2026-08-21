@@ -3,8 +3,8 @@
   "name": "KUEPER Path Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1.1",
-  "updated": "2026-07-10",
+  "version": "0.1.2",
+  "updated": "2026-08-21",
   "sourceExports": [
     "exports/kxf-learning-paths-0.1.json",
     "exports/kxf-learning-modules-0.1.json"
@@ -148,6 +148,14 @@
       "kind": "learning_sequence",
       "status": "planned",
       "sourceExport": "exports/kxf-learning-paths-0.1.json"
+    },
+    {
+      "id": "PATH:SSF:MAGNETISM-MATERIALS",
+      "type": "Path",
+      "curatorSystem": "SYS:KUEPER:ssf",
+      "kind": "learning_sequence",
+      "status": "planned",
+      "sourceExport": "exports/kxf-learning-modules-0.1.json"
     }
   ],
   "validation": {

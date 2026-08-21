@@ -1,0 +1,24 @@
+module_id: PHY-L1-000022
+legacy_id: LRN:SSF:MAG-006
+typ: LearningModule
+layer: L3
+name: Vom Rohstoff zum Magneten
+domain: PHY
+subdomain: materials
+status: '[R]'
+requires:
+  - PHY-L1-000021
+teaches:
+  - CON:L1:materialzusammensetzung
+  - CON:L1:mikrostruktur
+  - CON:L1:materialverarbeitung
+  - CON:L1:kritische-rohstoffe
+  - CON:L1:recycling
+unlocks: []
+planned_unlocks: []
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+created: '2026-08-21'
+curator: T.P.K.
+notes: >
+  SSF-0001: MAG-006 Vom Rohstoff zum Magneten. Zusammensetzung, Mikrostruktur, Verarbeitung,
+   kritische Rohstoffe, Recycling.
