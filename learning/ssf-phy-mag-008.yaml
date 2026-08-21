@@ -1,0 +1,23 @@
+module_id: PHY-L1-000024
+legacy_id: LRN:SSF:MAG-008
+typ: LearningModule
+layer: L3
+name: Fortgeschrittene magnetische Funktionen
+domain: PHY
+subdomain: materials
+status: '[R]'
+requires:
+  - PHY-L1-000023
+teaches:
+  - CON:L1:magnetokalorik
+  - CON:L1:supraleitung
+  - CON:L1:flux-pinning
+  - CON:L1:magnetische-abschirmung
+unlocks: []
+planned_unlocks: []
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+created: '2026-08-21'
+curator: T.P.K.
+notes: >
+  SSF-0001: MAG-008 Fortgeschrittene magnetische Funktionen. Magnetokalorik, Supraleitung, F
+  lux Pinning, magnetische Abschirmung. NOXIA-Grants folgen spaeter.

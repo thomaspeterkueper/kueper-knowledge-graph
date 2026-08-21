@@ -1,0 +1,17 @@
+entity_id: CON:L1:curie-temperatur
+typ: Concept
+layer: L1
+name: Curie-Temperatur
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Die Curie-Temperatur ist die Temperatur, oberhalb derer ein ferromagnetisches Material
+  paramagnetisch wird. Die thermische Bewegung ueberwindet dort die Austauschwechselwirkung.
+derived_from:
+  - CON:L0:energie
+  - CON:L0:veraenderung
+  - CON:L1:ferromagnetismus
+enables:
+  - CON:L1:entmagnetisierung
+erstellt: '2026-08-21'
+kurator: T.P.K.

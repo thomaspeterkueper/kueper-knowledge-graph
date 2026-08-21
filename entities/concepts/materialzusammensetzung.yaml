@@ -1,0 +1,14 @@
+entity_id: CON:L1:materialzusammensetzung
+typ: Concept
+layer: L1
+name: Materialzusammensetzung
+domäne: MTL
+status: '[R]'
+beschreibung: >
+  Die Zusammensetzung eines Werkstoffs beschreibt seine chemischen Bestandteile und deren Anteile. Sie
+  bestimmt, welche magnetischen und mechanischen Eigenschaften entstehen.
+derived_from:
+  - CON:L0:materie
+  - CON:L0:struktur
+erstellt: '2026-08-21'
+kurator: T.P.K.

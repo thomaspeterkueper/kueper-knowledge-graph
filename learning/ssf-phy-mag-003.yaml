@@ -1,0 +1,25 @@
+module_id: PHY-L1-000019
+legacy_id: LRN:SSF:MAG-003
+typ: LearningModule
+layer: L3
+name: Weich- und hartmagnetische Werkstoffe
+domain: PHY
+subdomain: materials
+status: '[R]'
+requires:
+  - PHY-L1-000018
+teaches:
+  - CON:L1:magnetische-domaenen
+  - CON:L1:hysterese
+  - CON:L1:remanenz
+  - CON:L1:koerzitivfeldstaerke
+  - CON:L1:weichmagnetische-werkstoffe
+  - CON:L1:hartmagnetische-werkstoffe
+unlocks: []
+planned_unlocks: []
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+created: '2026-08-21'
+curator: T.P.K.
+notes: >
+  SSF-0001: MAG-003 Weich- und hartmagnetische Werkstoffe. Hysterese, Remanenz, Koerzitivfel
+  dstaerke als Trennkriterium.

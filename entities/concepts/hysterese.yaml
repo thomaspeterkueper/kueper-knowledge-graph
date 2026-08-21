@@ -1,0 +1,18 @@
+entity_id: CON:L1:hysterese
+typ: Concept
+layer: L1
+name: Hysterese
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Die Hysteresekurve beschreibt die verzoegerte Magnetisierung eines ferromagnetischen Materials bei
+  wechselndem aeusseren Feld. Ihre Form unterscheidet weiche und harte magnetische Werkstoffe.
+derived_from:
+  - CON:L0:veraenderung
+  - CON:L1:ferromagnetismus
+  - CON:L1:magnetische-domaenen
+enables:
+  - CON:L1:remanenz
+  - CON:L1:koerzitivfeldstaerke
+erstellt: '2026-08-21'
+kurator: T.P.K.

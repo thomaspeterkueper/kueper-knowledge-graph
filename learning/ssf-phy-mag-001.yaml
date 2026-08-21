@@ -1,0 +1,23 @@
+module_id: PHY-L1-000017
+legacy_id: LRN:SSF:MAG-001
+typ: LearningModule
+layer: L3
+name: Magnetfelder verstehen
+domain: PHY
+subdomain: electromagnetism
+status: '[R]'
+requires:
+  []
+teaches:
+  - CON:L1:magnetfeld
+  - CON:L1:magnetischer-dipol
+  - CON:L1:magnetische-pole
+  - CON:L1:elektromagnetismus
+unlocks: []
+planned_unlocks: []
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+created: '2026-08-21'
+curator: T.P.K.
+notes: >
+  SSF-0001: MAG-001 Magnetfelder verstehen. Feldlinien, Feldstaerke, Dipole; Einstieg in den
+   Lernpfad PATH:SSF:MAGNETISM-MATERIALS.

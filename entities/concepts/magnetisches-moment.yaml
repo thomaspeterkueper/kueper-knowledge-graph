@@ -1,0 +1,17 @@
+entity_id: CON:L1:magnetisches-moment
+typ: Concept
+layer: L1
+name: Magnetisches Moment
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Das magnetische Moment beschreibt Staerke und Richtung eines magnetischen Dipols. Es bestimmt, wie
+  stark der Dipol mit einem aeusseren Magnetfeld wechselwirkt.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:magnetfeld
+  - CON:L1:elektronenspin
+enables:
+  - CON:L1:magnetokalorik
+erstellt: '2026-08-21'
+kurator: T.P.K.

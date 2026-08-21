@@ -1,0 +1,14 @@
+entity_id: CON:L1:koerzitivfeldstaerke
+typ: Concept
+layer: L1
+name: Koerzitivfeldstaerke
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Die Koerzitivfeldstaerke ist das Gegenfeld, das noetig ist, um die Remanenz auf null zu bringen. Sie
+  trennt weichmagnetische von hartmagnetischen Werkstoffen.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:hysterese
+erstellt: '2026-08-21'
+kurator: T.P.K.

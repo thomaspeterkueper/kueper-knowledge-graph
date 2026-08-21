@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "created": "2026-07-02",
-  "modified": "2026-07-10T12:00:00+02:00",
+  "modified": "2026-08-21T12:00:00+02:00",
   "sourceDocuments": [
     "KG-0005-entry-question-levels",
     "KG-0010",
@@ -288,6 +288,12 @@
         "purpose": "read",
         "target": "DOC:OTA:OTA-FND-0028-2026-DE",
         "status": "draft_productive"
+      },
+      {
+        "id": "PATH:SSF:MAGNETISM-MATERIALS",
+        "type": "Path",
+        "purpose": "learn",
+        "status": "planned"
       }
     ],
     "learning_modules": [
@@ -3113,6 +3119,394 @@
         "legacyId": "LRN:SSF:STATION-L1-000001",
         "createdFromRequest": "KB-REQUEST-0005",
         "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "PHY-L1-000017",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Magnetfelder verstehen",
+          "en": "Understanding Magnetic Fields"
+        },
+        "meta": {
+          "title": "Magnetfelder verstehen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Was ist ein Magnetfeld — und wie kann man es sichtbar machen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Was ist ein Magnetfeld — und wie kann man es sichtbar machen?",
+            "L1": "Was ist ein Magnetfeld — und wie kann man es sichtbar machen?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "PHY-L1-000018"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-001",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:PHYS-EM:N2"
+      },
+      {
+        "id": "PHY-L1-000018",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Warum Materialien magnetisch sind",
+          "en": "Why Materials Are Magnetic"
+        },
+        "meta": {
+          "title": "Warum Materialien magnetisch sind",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum ist Eisen magnetisch — aber Kupfer nicht?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum ist Eisen magnetisch — aber Kupfer nicht?",
+            "L1": "Warum ist Eisen magnetisch — aber Kupfer nicht?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000017"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000019"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-002",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:PHYS-EM:N2"
+      },
+      {
+        "id": "PHY-L1-000019",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Weich- und hartmagnetische Werkstoffe",
+          "en": "Soft and Hard Magnetic Materials"
+        },
+        "meta": {
+          "title": "Weich- und hartmagnetische Werkstoffe",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum verliert ein Elektromagnet seine Kraft — ein Permanentmagnet aber nicht?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum verliert ein Elektromagnet seine Kraft — ein Permanentmagnet aber nicht?",
+            "L1": "Warum verliert ein Elektromagnet seine Kraft — ein Permanentmagnet aber nicht?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000018"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000020"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-003",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "PHY-L1-000020",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Permanentmagnete als Werkstoffe",
+          "en": "Permanent Magnets as Materials"
+        },
+        "meta": {
+          "title": "Permanentmagnete als Werkstoffe",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Woraus bestehen starke Permanentmagnete — und warum ausgerechnet daraus?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Woraus bestehen starke Permanentmagnete — und warum ausgerechnet daraus?",
+            "L1": "Woraus bestehen starke Permanentmagnete — und warum ausgerechnet daraus?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000019"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000021"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-004",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "PHY-L1-000021",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Magnetismus und Temperatur",
+          "en": "Magnetism and Temperature"
+        },
+        "meta": {
+          "title": "Magnetismus und Temperatur",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum verliert ein Magnet über dem Feuer seine Kraft?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum verliert ein Magnet über dem Feuer seine Kraft?",
+            "L1": "Warum verliert ein Magnet über dem Feuer seine Kraft?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000020"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000022"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-005",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:PHYS-THERM:N1"
+      },
+      {
+        "id": "PHY-L1-000022",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Vom Rohstoff zum Magneten",
+          "en": "From Raw Material to Magnet"
+        },
+        "meta": {
+          "title": "Vom Rohstoff zum Magneten",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie wird aus Erz ein NdFeB-Magnet — und welche Rohstoffe stecken darin?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie wird aus Erz ein NdFeB-Magnet — und welche Rohstoffe stecken darin?",
+            "L1": "Wie wird aus Erz ein NdFeB-Magnet — und welche Rohstoffe stecken darin?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000021"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000023"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-006",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:MTL:N1"
+      },
+      {
+        "id": "PHY-L1-000023",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Anwendungen magnetischer Materialien",
+          "en": "Applications of Magnetic Materials"
+        },
+        "meta": {
+          "title": "Anwendungen magnetischer Materialien",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wo stecken Magnete in Motor, Generator und Transformator?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wo stecken Magnete in Motor, Generator und Transformator?",
+            "L1": "Wo stecken Magnete in Motor, Generator und Transformator?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000022"
+          ],
+          "moduleUnlocks": [
+            "PHY-L1-000024"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-007",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:ELEC:N1"
+      },
+      {
+        "id": "PHY-L1-000024",
+        "version": "0.1.0",
+        "created": "2026-08-21",
+        "modified": "2026-08-21",
+        "title": {
+          "de": "Fortgeschrittene magnetische Funktionen",
+          "en": "Advanced Magnetic Functions"
+        },
+        "meta": {
+          "title": "Fortgeschrittene magnetische Funktionen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie kühlt Magnetismus ohne Kompressor — und was hält einen Supraleiter schwebend?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie kühlt Magnetismus ohne Kompressor — und was hält einen Supraleiter schwebend?",
+            "L1": "Wie kühlt Magnetismus ohne Kompressor — und was hält einen Supraleiter schwebend?",
+            "L2": null
+          }
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000023"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:MAG-008",
+        "createdFromRequest": "SSF-0001-magnetism-functional-materials",
+        "knowledgeDomain": "KD:PHYS-EM:N2"
       }
     ]
   },
@@ -3181,5 +3575,5 @@
       "resolution": "Remove learning_path from moduleTypes. Use records.paths for PATH objects."
     }
   ],
-  "updated": "2026-08-14"
+  "updated": "2026-08-21"
 }

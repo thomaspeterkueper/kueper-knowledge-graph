@@ -1,0 +1,14 @@
+entity_id: CON:L1:magnetische-pole
+typ: Concept
+layer: L1
+name: Magnetische Pole
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Nord- und Suedpol sind die Quellen und Senken eines Magnetfelds. Magnetische Pole treten nie einzeln
+  auf; jeder Dipol besitzt beide.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:magnetfeld
+erstellt: '2026-08-21'
+kurator: T.P.K.

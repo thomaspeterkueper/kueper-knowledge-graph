@@ -1,0 +1,15 @@
+entity_id: CON:L1:magnetokalorik
+typ: Concept
+layer: L1
+name: Magnetokalorik
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Die Magnetokalorik beschreibt die Temperaturaenderung eines Materials bei Magnetisierung
+  beziehungsweise Entmagnetisierung. Sie ermoeglicht magnetische Kuehlung ohne Kompressor.
+derived_from:
+  - CON:L0:energie
+  - CON:L0:veraenderung
+  - CON:L1:magnetisches-moment
+erstellt: '2026-08-21'
+kurator: T.P.K.

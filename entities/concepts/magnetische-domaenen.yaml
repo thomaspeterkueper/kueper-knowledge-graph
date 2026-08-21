@@ -1,0 +1,18 @@
+entity_id: CON:L1:magnetische-domaenen
+typ: Concept
+layer: L1
+name: Magnetische Domaenen (Weiss'sche Bezirke)
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Weiss'sche Bezirke (Domaenen) sind Bereiche einheitlicher Magnetisierung in ferromagnetischen
+  Materialien. Ihre Ausrichtung bestimmt die Gesamtmagnetisierung des Werkstuecks.
+derived_from:
+  - CON:L0:materie
+  - CON:L0:struktur
+  - CON:L1:magnetisches-moment
+enables:
+  - CON:L1:ferromagnetismus
+  - CON:L1:hysterese
+erstellt: '2026-08-21'
+kurator: T.P.K.

@@ -1,0 +1,25 @@
+module_id: PHY-L1-000023
+legacy_id: LRN:SSF:MAG-007
+typ: LearningModule
+layer: L3
+name: Anwendungen magnetischer Materialien
+domain: PHY
+subdomain: electromagnetism
+status: '[R]'
+requires:
+  - PHY-L1-000022
+teaches:
+  - CON:L1:elektromotor
+  - CON:L1:generator
+  - CON:L1:transformator
+  - CON:L1:hall-sensor
+  - CON:L1:magnetische-lager
+  - CON:L1:wirbelstroeme
+unlocks: []
+planned_unlocks: []
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+created: '2026-08-21'
+curator: T.P.K.
+notes: >
+  SSF-0001: MAG-007 Anwendungen magnetischer Materialien. Elektromotor, Generator, Transform
+  ator, Hall-Sensor, magnetische Lager, Wirbelstroeme.
