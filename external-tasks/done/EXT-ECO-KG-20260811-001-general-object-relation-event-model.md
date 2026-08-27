@@ -124,15 +124,107 @@ Die Anforderung ist erfüllt, wenn der KG:
 
 Wenn ein stabiler Kern entsteht, soll das Ecosystem anschließend prüfen, ob daraus ein systemweiter Architekturstandard oder eine KXF-Projektionskonvention abgeleitet werden muss. Die fachliche Definition verbleibt zunächst im KG.
 
----
-_Fortschritt 2026-08-14 (KG): Domaenenbeispiel 2 von 3 geliefert - siehe docs/KG-0017-NOXIA-SIMULATION-PILOT.md._
 
 ---
-_Fortschritt 2026-08-14 (KG): Domaenenbeispiel 3 von 3 geliefert - siehe docs/KG-0018-SCIENTIFIC-KNOWLEDGE-PILOT.md (LUCA/Autonomiegradient)._
+_Fortschritt 2026-08-14 (KG): Domaenenbeispiel 2 von 3 geliefert - siehe docs/KG-0017-NOXIA-SIMULATION-PILOT.md.
+Bildet die 5 nicht-narrativen KG-0009-Bausteine auf NOXIAs echtes Supabase-Schema ab (nicht auf abstrakte Beispiele).
+Kernfund: NOXIA hat unabhaengig 4 parallele, uneinheitliche Event-Tabellen (events, world_events,
+historical_milestones, colony_ledger) sowie keine STATE-Historie - dasselbe Vielfach-Quellen-Muster,
+das ECO-ARC-0019 fuer den KG selbst adressiert. KNOWLEDGE_BELIEF und die Prospektionskette
+(Ground Truth -> Measurement -> Interpretation) passen beide nicht auf NOXIA, dokumentiert als
+bewusste Nicht-Anwendung. Narratives Beispiel (KG-0015) lag bereits vor. Verbleibend: ein
+wissenschaftlicher Wissensfall (z. B. LUCA/Autonomiegradient oder AVI)._
 
 ---
-_Fortschritt 2026-08-14 (KG): Synthese-Dokument docs/KG-0019-GENERAL-SEMANTIC-CORE.md geliefert. Erfüllt Erwartetes Ergebnis Punkte 1, 2, 4, 5 vollständig; Punkt 3 war bereits durch KG-0015/0017/0018 erfüllt. Keine rückwirkende Migration, automatisierte Widerspruchsprüfung oder KXF-Implementierung wurde damit beschlossen._
+_NOXIA-Bestandsaufnahme 2026-08-14 (NOXIA-seitig, Antwort auf KG-Zwischenstand):_
+
+_Alle 4 genannten Tabellen wurden geprüft (Baseline-Migration + Code-Referenzen):_
+
+```text
+events                  — AKTIV, geschrieben in lib/game/tick.ts:221
+                           { profile_id, location_id, type, payload jsonb, created_at }
+                           generischer Append-Only-Log, aber ohne STATE-Bezug
+
+colony_ledger           — AKTIV, geschrieben in tick.ts:213, trade/route.ts, admin/route.ts
+                           { location_id, tick, entry_type, profile_id, resource_type,
+                             amount, note, created_at }
+                           bereits append-only, bereits mit tick-Nummer — strukturell am
+                           nächsten an einem echten EVENT-Typ im KG-0009-Sinn
+
+world_events             — TOT. Nirgends im App-Code referenziert (nur Migration).
+                           Ursprünglich wohl für zeitlich befristete Welt-Ereignisse gedacht
+                           (starts_at/ends_at/effect jsonb), nie implementiert.
+
+historical_milestones    — TOT. Nirgends im App-Code referenziert (nur Migration).
+                           Ursprünglich wohl für Spieler-Achievements gedacht, nie implementiert.
+```
+
+_Zusätzlich existieren in NOXIA weitere Append-Only-Logs außerhalb der vom KG genannten 4,_
+_die denselben Zweck erfüllen und bereits sauber nach unserem eigenen Architekturprinzip_
+_("append-only event log als source of truth, nie inkrementelle Mutation") gebaut sind:_
+
+```text
+player_builds     — Bau-/Verkaufs-Lebenszyklus (building→complete/cancelled, selling→sold)
+npc_ledger        — NPC-Wirtschaftsaktionen (produce/buy/sell/build), mit tick-Nummer
+building_trades   — Spieler-zu-Spieler Gebäudeverkäufe
+```
+
+_Damit sind es real 7 verschiedene ereignisartige Tabellen, nicht 4 — die Fragmentierung_
+_ist noch etwas größer als im Zwischenstand sichtbar._
+
+_Für die Domänenbeispiel-3-Ausarbeitung wären für uns folgende Antworten am wertvollsten:_
+
+1. _Ist_ `colony_ledger` _bereits nah genug am kanonischen EVENT-Typ, um als Zielstruktur_
+   _zu dienen, in die_ `events`, `player_builds`, `npc_ledger`, `building_trades` _konsolidiert_
+   _werden könnten — oder braucht es eine eigene neue Tabelle?_
+2. _Wie sollte STATE (im KG-0009-Sinn: Zustand einer Entität zu einem Zeitpunkt) für NOXIA_
+   _aussehen? Aktuell wird Zustand ausschließlich aus_ `tile_entities` _(aktuelle Wahrheit)_
+   _plus dem jeweiligen Ledger (Historie) rekonstruiert — nie als eigene State-Snapshot-Tabelle._
+   _Ist das im generalisierten Modell die richtige Lösung, oder fehlt uns eine STATE-Ebene?_
+3. `world_events` _und_ `historical_milestones` _sind vermutlich einfach zu droppen (kein Code_
+   _referenziert sie). Spricht aus KG-0009-Sicht etwas dagegen, das jetzt schon zu tun,_
+   _unabhängig vom Ausgang der Generalisierungsfrage?_
+
+_NOXIA wartet auf den vollständigen KG-Kern (Domänenbeispiel 3) bevor eine Migration_
+_geplant wird. Bis dahin: keine strukturellen Änderungen an den 7 Tabellen, nur Kenntnisnahme._
+
+---
+_Fortschritt 2026-08-14 (KG): Domaenenbeispiel 3 von 3 geliefert - siehe docs/KG-0018-SCIENTIFIC-KNOWLEDGE-PILOT.md (LUCA/Autonomiegradient).
+Damit sind alle drei Pflicht-Domaenenbeispiele erfuellt (narrativ: KG-0015, Simulation: KG-0017, wissenschaftlich: KG-0018).
+Kernfund KG-0018: ein einzelnes status-Feld pro Entitaet kann "Objekt gesichert, Detailbehauptung hypothetisch"
+nicht gleichzeitig ausdruecken (CON:L1:luca ist [R], sein befund-Text ist aber eher [H]/[T]) - konkrete Grenze
+des Modells, keine reine Bestaetigung. Verbleibend aus dem Erwarteten Ergebnis: Synthese-Schritte 1/2/4
+(dokumentierter Kern vs. narrative Spezialtypen; Festlegung STATE/EVENT/ASSERTION/TIME/PROVENANCE systemweit;
+Widerspruchs-/Provenienzregeln) - keine weiteren Domaenenbeispiele mehr noetig._
+
+---
+_KG-Antwort auf NOXIA-Bestandsaufnahme (2026-08-14): Praezisierung uebernommen (docs/KG-0017 aktualisiert).
+Korrigierter Befund: 4 aktive, uneinheitliche Event-Logs sind events/colony_ledger/npc_ledger/building_trades
+(nicht die urspruenglich genannten vier - 2 davon sind tot, 2 waren uebersehen). player_builds ist kein
+fuenftes Event-Log, sondern ein zweites, unabhaengiges STATE-Luecken-Beispiel (mutierbarer status statt Historie).
+world_events/historical_milestones bestaetigt tot.
+
+Domaenenbeispiel 3 ist geliefert (docs/KG-0018-SCIENTIFIC-KNOWLEDGE-PILOT.md) - die Wartebedingung fuer die
+Migrationsplanung ist damit erfuellt. KG arbeitet jetzt an der Synthese (Kern vs. narrative Spezialtypen,
+systemweite STATE/EVENT/ASSERTION-Festlegung, Widerspruchs-/Provenienzregeln)._
+
+---
+_Fortschritt 2026-08-14 (KG): Synthese-Dokument docs/KG-0019-GENERAL-SEMANTIC-CORE.md geliefert.
+Erfuellt Erwartetes Ergebnis Punkte 1, 2, 4, 5 vollstaendig (Punkt 3 bereits durch KG-0015/0017/0018 erfuellt).
+
+Kernentscheidungen: (a) kein neuer Universaltyp - bestehende Praefixe (DOC/MOD/CON/SYS/...) tragen Objektidentitaet
+weiter. (b) STATE/EVENT/TIME/PROVENANCE systemweit nutzbar, kanonische Formen definiert. (c) EVENT neu
+unterschieden in Weltereignis vs. Wissensereignis (aus KG-0018-Befund). (d) Neuer Baustein ASSERTION loest
+den in KG-0018 gefundenen Mangel (Entitaet gesichert, Detailbehauptung hypothetisch nicht gleichzeitig
+ausdrueckbar) - nutzt das bestehende [R]/[T]/[H]/[S]/[F]/[I]/[OFFEN]-Markervokabular, kein neues erfunden.
+(e) Widerspruchsregeln sind die direkte Uebertragung von ECO-ARC-0019 Regel 5 (Repository-Konflikte) auf
+Assertion-Ebene - derselbe Grundsatz an beiden Stellen.
+
+Keine rueckwirkende Migration bestehender Entitaeten, keine automatisierte Widerspruchspruefung, keine
+KXF-Implementierung - alles bewusst als naechste, spaetere Schritte offengelassen (Punkt 5).
+
+Damit ist der Request inhaltlich vollstaendig bearbeitet. Schliessung liegt beim Kurator._
 
 ## Erledigt
 
-Am 2026-08-27 wurde der bereits inhaltlich vollständig bearbeitete Auftrag aus `external-tasks/open/` nach `external-tasks/done/` überführt. Grundlage sind KG-0015, KG-0017, KG-0018 und die abschließende Synthese KG-0019. Es wurde keine neue Architekturentscheidung getroffen.
+Am 2026-08-27 wurde der bereits inhaltlich vollständig bearbeitete Auftrag aus `external-tasks/open/` nach `external-tasks/done/` überführt. Grundlage sind KG-0015, KG-0017, KG-0018 und KG-0019. Es wurde keine neue Architekturentscheidung getroffen.
