@@ -5,8 +5,10 @@ name: Diamagnetismus
 domäne: PHY
 status: '[R]'
 beschreibung: >
-  Diamagnetische Materialien werden von Magnetfeldern schwach abgestossen. Alle Elektronen sind
-  gepaart; der Effekt tritt in jedem Material auf, ist aber meist sehr schwach.
+  Diamagnetismus ist eine schwache, dem angelegten Magnetfeld entgegengerichtete magnetische Antwort,
+  die in allen Materialien auftritt. In Stoffen ohne ungepaarte Elektronen ist er typischerweise der
+  alleinige magnetische Beitrag; in anderen Stoffen wird er meist von staerkeren para- oder
+  ferromagnetischen Beitraegen ueberlagert.
 derived_from:
   - CON:L0:materie
   - CON:L1:elektronenspin
