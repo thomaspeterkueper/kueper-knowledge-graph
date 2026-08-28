@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "generated": "2026-07-20",
   "source": "solarsciencefoundation/lib/learningPaths.ts v1.2.4",
-  "count": 60,
+  "count": 61,
   "records": [
     {
       "id": "PATH:SSF:PHY-WAVE-SPECTRUM-0001",
@@ -826,6 +826,16 @@
         "PHY:LATENT-HEAT",
         "ENV:OCEAN-CLIMATE"
       ]
+    },
+    {
+      "id": "PATH:SSF:MAGNETISM-MATERIALS",
+      "title": "Magnetismus & funktionale Materialien",
+      "subtitle": "Vom Magnetfeld zum funktionalen Werkstoff: magnetische Materialien, ihre Herstellung, ihr Temperaturverhalten und ihre Anwendungen.",
+      "cluster": "physik",
+      "status": "prototype",
+      "units": 8,
+      "kxfModuleId": "LRN:SSF:MAG-001",
+      "unlocks": []
     }
   ]
 }

@@ -30,3 +30,6 @@ Die acht Module sollen so exportiert werden, dass SSF sie über `kxf-learning-mo
 ## Abgrenzung
 
 Keine SSF-Didaktik oder NOXIA-Spiellogik im KG implementieren. NOXIA-spezifische Grants können später separat definiert werden, sobald der fachliche Pfad kanonisch vorliegt.
+
+---
+_Resolved 2026-08-21: Lernpfad `PATH:SSF:MAGNETISM-MATERIALS` im KG registriert. Acht kanonische Module `PHY-L1-000017` … `PHY-L1-000024` (MAG-001 … MAG-008) in `exports/kxf-learning-modules-0.1.json` (v0.2.8) angelegt; Abhängigkeitskette MAG-001 → … → MAG-008 über `dependencies.requires`/`moduleUnlocks` modelliert. Die vom Request benannten Konzeptbereiche sind als `meta.scope` der jeweiligen Module geführt. `legacyId` erhält die SSF-Modulnamen (`LRN:SSF:MAG-001` … `LRN:SSF:MAG-008`) zur Rückverfolgbarkeit. Status `planned` — inhaltliche Didaktik bleibt laut Request bei SSF, es wurden keine fachlichen Inhalte erfunden. Keine NOXIA-Unlocks (Grants laut Abgrenzung später). SSF kann die Module ohne lokale Duplikation über den KXF-Export aufnehmen._
