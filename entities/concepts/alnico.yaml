@@ -5,8 +5,10 @@ name: AlNiCo
 domäne: MTL
 status: '[R]'
 beschreibung: >
-  AlNiCo ist eine Legierung aus Aluminium, Nickel und Kobalt. Sie war der erste industrielle
-  Permanentmagnet-Werkstoff und behaelt ihre Magnetisierung bis nahe an die Curie-Temperatur.
+  AlNiCo bezeichnet eine in den 1930er Jahren entwickelte Gruppe von Permanentmagnet-Legierungen
+  auf Basis von Aluminium, Nickel, Kobalt und Eisen. AlNiCo-Magnete besitzen eine hohe Remanenz und
+  eignen sich fuer vergleichsweise hohe Einsatztemperaturen, haben jedoch eine relativ geringe
+  Koerzitivfeldstaerke.
 derived_from:
   - CON:L0:materie
   - CON:L1:hartmagnetische-werkstoffe
