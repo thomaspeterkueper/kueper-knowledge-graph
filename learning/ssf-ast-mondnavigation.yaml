@@ -1,0 +1,32 @@
+module_id: LRN:SSF:AST-MONDNAVIGATION-0001
+typ: LearningModule
+layer: L2
+name: Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?
+domain: AST
+subdomain: navigation
+status: '[R]'
+requires:
+  - LRN:SSF:AST-L1-000001
+teaches:
+  - CON:L1:inertialnavigation
+  - CON:L1:sternennavigation-kein-atmosphaere
+  - CON:L1:bakennavigation
+  - CON:L1:odometrie
+  - CON:L1:navigations-redundanz
+unlocks:
+  - UNL:NOX:NAV:SURFACE
+  - UNL:NOX:SENSOR:INERTIAL
+  - NAV:SURFACE
+  - SENSOR:INERTIAL
+ssf_path_id: PATH:SSF:AST-MONDNAVIGATION-0001
+ota_reference: OTA-TEC-0035 §9 TAUGHT_BY
+created: '2026-07-24'
+curator: T.P.K.
+notes: >
+  Kein GPS auf dem Mond (kein Satellitennetz 2040 [H]).
+  Inertialnavigation: Gyroskope + Beschleunigungssensoren, Drift-Problem bekannt [R].
+  Sternennavigation: kein Atmosphaere -> Sterne immer sichtbar [R], Triangulation moeglich.
+  Odometrie: Apollo-LRV hat Radumdrehungen gezaehlt [R].
+  Horizont-Distanz Mond: ~6.7 km bei Augenhoehe 1.8 m (kleiner Radius) [R].
+  Bakennavigation: Radiobaken von der Basis, Triangulation.
+  Redundanz-Kombination aller Methoden fuer Sicherheit.
