@@ -20,6 +20,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Repair generated-note escaping
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('scripts/apply-noxia-unlock-learning-modules.mjs')
+          lines = p.read_text().splitlines()
+          out = []
+          for line in lines:
+              if 'req += `' in line and 'KG-Ergebnis 2026-08-29' in line:
+                  out.append("  req += '\\n\\n## KG-Ergebnis 2026-08-29\\n\\nDie angeforderten NOXIA-Unlocks sind im Learning-Modules-KXF kanonischen Modulidentitäten zugeordnet. Der bereits bestehende Unlock UNL:NOX:power-generation wird über die bestehende SSF-Identität LRN:SSF:PHY-1301 kanonisiert; die übrigen angeforderten Unlocks erhalten eigene kanonische Modulrecords. Voraussetzungen werden ausschließlich als KG/KXF-Modulabhängigkeiten abgebildet. Es wurden keine neuen NOXIA-Unlock-IDs erfunden und keine SSF-Didaktikinhalte übernommen.\\n';")
+              else:
+                  out.append(line)
+          p.write_text('\n'.join(out) + '\n')
+          PY
       - name: Apply deterministic migration
         run: node scripts/apply-noxia-unlock-learning-modules.mjs
       - name: Validate JSON
@@ -36,6 +50,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- exports/kxf-learning-modules-0.1.json external-tasks/open/EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities.md external-tasks/done/EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities.md
+          git add -- scripts/apply-noxia-unlock-learning-modules.mjs exports/kxf-learning-modules-0.1.json external-tasks/open/EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities.md external-tasks/done/EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities.md
           git commit -m "feat: export canonical NOXIA unlock learning modules"
           git push origin HEAD:task/noxia-unlock-learning-modules
