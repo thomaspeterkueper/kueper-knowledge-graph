@@ -305,7 +305,7 @@ Legacy-Wissensdomaenen aus KG-0001 werden ebenfalls gemappt:
 11. Keine Competency ohne KnowledgeDomain.
 12. Kein LearningModule ohne `teaches`.
 13. Kein Assessment ohne `validates`.
-14. Kein LearningPath ohne `target` und `steps`.
+14. Kein LearningPath ohne `target` und `steps`; geplante `purpose: "learn"`-Pfade duerfen `target` offen lassen, bis das Zielobjekt (Document/Unlock/Certification) vom kuratierenden System definiert ist.
 15. Neue LearningModules verwenden `<DOMAIN>-L<LEVEL>-<NNNNNN>` als kanonische ID.
 16. `LRN:SSF:*` darf fuer LearningModules nur noch als Legacy-ID/Alias vorkommen.
 17. Ein LearningModule bleibt KG-Layer L3; die Lernstufe in seiner Modul-ID ist davon unabhaengig.

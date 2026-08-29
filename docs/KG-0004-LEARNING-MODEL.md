@@ -147,7 +147,7 @@ PATH:OTA:OTA-SCI-0083-2026-DE:READ
 1. Keine Competency ohne KnowledgeDomain.
 2. Kein LearningModule ohne `teaches`.
 3. Kein Assessment ohne `validates`.
-4. Kein LearningPath ohne `target` und `steps`.
+4. Kein LearningPath ohne `target` und `steps`; geplante `purpose: "learn"`-Pfade duerfen `target` offen lassen, bis das Zielobjekt (Document/Unlock/Certification) vom kuratierenden System definiert ist.
 5. Ein LearningPath darf auf ein OTA-Dokument zeigen, aber das OTA-Dokument bleibt im OTA-System.
 6. SSF vermittelt und validiert Wissen; der Knowledge Graph definiert die kanonischen IDs.
 

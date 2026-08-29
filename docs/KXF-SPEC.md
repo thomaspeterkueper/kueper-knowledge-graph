@@ -230,6 +230,18 @@ Neue oder migrierte LearningPaths muessen kanonische LearningModule-IDs verwende
 }
 ```
 
+Geplante Lernpfade mit `purpose: "learn"` (z. B. SSF-Lernsequenzen) koennen ihr `target` offen lassen, bis das Zielobjekt (Document/Unlock/Certification) vom kuratierenden System definiert ist. `steps` bleiben verpflichtend; `target` wird nach Festlegung ergaenzt.
+
+```json
+{
+  "id": "PATH:SSF:MAGNETISM-MATERIALS-0001",
+  "type": "LearningPath",
+  "purpose": "learn",
+  "status": "planned",
+  "steps": ["PHY-L1-000017", "PHY-L1-000018"]
+}
+```
+
 ## Ingestion Metadata
 
 Ab KXF-0.5 koennen Importregeln und Importlaeufe exportiert werden.
@@ -297,7 +309,7 @@ Neue Prerequisites muessen auf `KD:*:N*` zeigen.
 11. `LRN:SSF:*` ist bei LearningModules nur als Legacy-ID/Alias zulaessig.
 12. Ein LearningModule ist KG-Layer L3; die Lernstufe in der Modul-ID ist davon unabhaengig.
 13. Jedes Assessment braucht `validates`.
-14. Jeder LearningPath braucht `target` und `steps`.
+14. Jeder LearningPath braucht `target` und `steps`; geplante `purpose: "learn"`-Pfade duerfen `target` offen lassen, bis das Zielobjekt (Document/Unlock/Certification) vom kuratierenden System definiert ist.
 15. Neue/migrierte LearningPath-Schritte referenzieren kanonische LearningModule-IDs.
 16. Jeder IngestionRun braucht `sourceSystem`, `targetSystem`, `status` und Zaehlerfelder.
 17. Ingestion darf keine neuen KnowledgeDomains ohne Review erzeugen.
