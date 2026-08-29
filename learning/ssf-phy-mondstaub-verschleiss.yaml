@@ -1,0 +1,29 @@
+module_id: LRN:SSF:PHY-MONDSTAUB-VERSCHLEISS-0001
+typ: LearningModule
+layer: L2
+name: Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?
+domain: PHY
+subdomain: surface-materials
+status: '[R]'
+requires: []
+teaches:
+  - CON:L1:mondstaub-eigenschaften
+  - CON:L1:elektrostatische-aufladung-vakuum
+  - CON:L1:abrasion-scharfkantiger-partikel
+  - CON:L1:material-verschleiss-vakuum
+unlocks:
+  - UNL:NOX:TOOL:DUST-MITIGATION
+  - UNL:NOX:SENSOR:DUST-MONITOR
+  - TOOL:DUST-MITIGATION
+ssf_path_id: PATH:SSF:PHY-MONDSTAUB-VERSCHLEISS-0001
+ota_reference: OTA-TEC-0035 §9 TAUGHT_BY
+created: '2026-07-24'
+curator: T.P.K.
+notes: >
+  Mondstaub: extrem feinkoernig (<10 Mikrometer), scharfkantig [R].
+  Kein Wasser-Transport der Kanten abrundet (kein Wasser, kein Wind) [R].
+  Elektrostatische Aufladung durch Sonnenwind -> Staub klebt an Oberflaechen [R].
+  Apollo-Erfahrung: Dichtungsversagen, Raumanzug kaum oeffenbar [R].
+  Mesh-Wheel-Reifen: Drahtgeflecht statt Luftreifen, trotzdem Abrasionsproblem [R].
+  Reinigungsansaetze: elektrische Felder (noch experimentell [H]).
+  Solarzellen-Degradation durch Staubbelag: real messbar auf Mars (Opportunity) [R].
