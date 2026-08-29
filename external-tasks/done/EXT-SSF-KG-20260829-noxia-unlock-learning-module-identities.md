@@ -2,7 +2,7 @@
 
 **Origin:** Solar Science Foundation (SSF)
 **Target:** KUEPER Knowledge Graph
-**Status:** open
+**Status:** done
 **Created:** 2026-08-29
 **Related source task:** `solarsciencefoundation/external-tasks/open/NOX-SSF-REQ-20260829-unlock-learning-paths.md`
 
@@ -50,3 +50,8 @@ Bitte diese Beziehungen nur in der bereits etablierten KG/KXF-Struktur abbilden;
 ## Rückmeldung an SSF
 
 Nach Bereitstellung der Identitäten/KXF-Daten kann SSF die eigentlichen Lerninhalte gefahrlos implementieren und den Quellauftrag abschließen.
+
+
+## KG-Ergebnis 2026-08-29
+
+Die angeforderten NOXIA-Unlocks sind im Learning-Modules-KXF kanonischen Modulidentitäten zugeordnet. Der bereits bestehende Unlock UNL:NOX:power-generation wird über die bestehende SSF-Identität LRN:SSF:PHY-1301 kanonisiert; die übrigen angeforderten Unlocks erhalten eigene kanonische Modulrecords. Voraussetzungen werden ausschließlich als KG/KXF-Modulabhängigkeiten abgebildet. Es wurden keine neuen NOXIA-Unlock-IDs erfunden und keine SSF-Didaktikinhalte übernommen.
