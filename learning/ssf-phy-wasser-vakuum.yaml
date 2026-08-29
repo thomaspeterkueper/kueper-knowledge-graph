@@ -1,0 +1,30 @@
+module_id: LRN:SSF:PHY-WASSER-VAKUUM-0001
+typ: LearningModule
+layer: L2
+name: Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?
+domain: PHY
+subdomain: thermodynamics-vacuum
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-L1-000004
+  - LRN:SSF:PHY-L1-000007
+teaches:
+  - CON:L1:tripelpunkt-wasser
+  - CON:L1:vakuum-sublimation
+  - CON:L1:phasendiagramm-niederdruck
+  - CON:L1:mars-druck-regime
+  - CON:L1:isru-grundlagen
+unlocks:
+  - UNL:NOX:ISRU:WATER-EXTRACTION
+  - ISRU:WATER-EXTRACTION
+  - PHY:VACUUM-PHASE-DIAGRAM
+ssf_path_id: PATH:SSF:PHY-WASSER-VAKUUM-0001
+ota_reference: OTA-TEC-0034 §9 TAUGHT_BY
+created: '2026-07-24'
+curator: T.P.K.
+notes: >
+  Tripelpunkt H2O: 611.7 Pa / 0.01 Celsius [R].
+  Mars-Atmosphaere ~600 Pa -> unterhalb Tripelpunkt -> kein fluessiges Wasser.
+  Sublimation bei Eis-Erwaermung auf -20 bis 0 Celsius und 600 Pa [H, aus OTA-TEC-0034 §3].
+  Kondensationsfalle -80 Celsius: Rekondensation zu Frost, dann aufschmelzen.
+  Armstrong-Grenze: 6.3 kPa, ab hier siedet Blut [R].
