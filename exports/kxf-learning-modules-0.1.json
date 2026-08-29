@@ -42,7 +42,11 @@
       "experiment"
     ],
     "pathObjectRule": "Learning paths are PATH records, not records.learning_modules[].meta.type.",
-    "notes": "SSF /learn view. meta.title remains a string for compatibility; bilingual fields are under meta.i18n. MAT-2201/MAT-2202 are folded into MAT-2102/MAT-2103. KG-0006 resolved: snake_case legacy fields were replaced by camelCase runtime fields. KG-0012 resolved: learning_path removed as module type; use PATH objects."
+    "pathPurposes": [
+      "read",
+      "learn"
+    ],
+    "notes": "SSF /learn view. meta.title remains a string for compatibility; bilingual fields are under meta.i18n. MAT-2201/MAT-2202 are folded into MAT-2102/MAT-2103. KG-0006 resolved: snake_case legacy fields were replaced by camelCase runtime fields. KG-0012 resolved: learning_path removed as module type; use PATH objects. records.paths purpose values: 'read' for document paths (target = Document per KXF-SPEC rule 14), 'learn' for SSF learning sequences, which resolve to their modules via steps and the module-level ssfPathId; a target object (Document/Unlock/Certification) is added once SSF defines one."
   },
   "records": {
     "knowledge_domains": [
@@ -290,9 +294,19 @@
         "status": "draft_productive"
       },
       {
-        "id": "PATH:SSF:MAGNETISM-MATERIALS",
+        "id": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "type": "Path",
         "purpose": "learn",
+        "steps": [
+          "PHY-L1-000017",
+          "PHY-L1-000018",
+          "PHY-L1-000019",
+          "PHY-L1-000020",
+          "PHY-L1-000021",
+          "PHY-L1-000022",
+          "PHY-L1-000023",
+          "PHY-L1-000024"
+        ],
         "status": "planned"
       }
     ],
@@ -3164,6 +3178,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-001",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:PHYS-EM:N2"
       },
@@ -3213,6 +3228,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-002",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:PHYS-EM:N2"
       },
@@ -3262,6 +3278,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-003",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:MTL:N1"
       },
@@ -3311,6 +3328,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-004",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:MTL:N1"
       },
@@ -3360,6 +3378,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-005",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:PHYS-THERM:N1"
       },
@@ -3409,6 +3428,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-006",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:MTL:N1"
       },
@@ -3458,6 +3478,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-007",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:ELEC:N1"
       },
@@ -3505,6 +3526,7 @@
         "branches": [],
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-008",
+        "ssfPathId": "PATH:SSF:MAGNETISM-MATERIALS-0001",
         "createdFromRequest": "SSF-0001-magnetism-functional-materials",
         "knowledgeDomain": "KD:PHYS-EM:N2"
       }

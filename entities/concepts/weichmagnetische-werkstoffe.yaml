@@ -14,5 +14,6 @@ derived_from:
 enables:
   - CON:L1:transformator
   - CON:L1:magnetische-abschirmung
+  - CON:L1:ferrit
 erstellt: '2026-08-21'
 kurator: T.P.K.

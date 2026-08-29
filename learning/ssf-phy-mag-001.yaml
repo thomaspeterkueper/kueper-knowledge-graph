@@ -15,9 +15,9 @@ teaches:
   - CON:L1:elektromagnetismus
 unlocks: []
 planned_unlocks: []
-ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS
+ssf_path_id: PATH:SSF:MAGNETISM-MATERIALS-0001
 created: '2026-08-21'
 curator: T.P.K.
 notes: >
   SSF-0001: MAG-001 Magnetfelder verstehen. Feldlinien, Feldstaerke, Dipole; Einstieg in den
-   Lernpfad PATH:SSF:MAGNETISM-MATERIALS.
+   Lernpfad PATH:SSF:MAGNETISM-MATERIALS-0001.

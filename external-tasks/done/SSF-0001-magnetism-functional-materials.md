@@ -6,7 +6,7 @@ Solar Science Foundation
 
 ## Ziel
 
-Für den neuen SSF-Lernpfad `PATH:SSF:MAGNETISM-MATERIALS` sollen die kanonischen Wissensobjekte und KXF-Lernmodul-Datensätze im KUEPER Knowledge Graph ergänzt werden. Der Knowledge Graph bleibt Source of Truth; SSF übernimmt Didaktik, Darstellung und Fortschritt.
+Für den neuen SSF-Lernpfad `PATH:SSF:MAGNETISM-MATERIALS-0001` sollen die kanonischen Wissensobjekte und KXF-Lernmodul-Datensätze im KUEPER Knowledge Graph ergänzt werden. Der Knowledge Graph bleibt Source of Truth; SSF übernimmt Didaktik, Darstellung und Fortschritt.
 
 ## Benötigte Lernmodule
 
@@ -40,8 +40,8 @@ Erstellt:
 ```text
 exports/kxf-learning-modules-0.1.json   -> 8 Lernmodule PHY-L1-000017..000024
                                             (legacyId LRN:SSF:MAG-001..MAG-008),
-                                            PATH:SSF:MAGNETISM-MATERIALS als records.paths
-exports/path-registry-0.1.json          -> PATH:SSF:MAGNETISM-MATERIALS (learning_sequence, planned)
+                                            PATH:SSF:MAGNETISM-MATERIALS-0001 als records.paths
+exports/path-registry-0.1.json          -> PATH:SSF:MAGNETISM-MATERIALS-0001 (learning_sequence, planned)
 learning/ssf-phy-mag-001..008.yaml      -> Autorenschicht je MAG-Modul (teaches, ssf_path_id)
 entities/concepts/*.yaml                -> 36 kanonische Konzepte (Magnetfeld bis Flux Pinning)
 external-tasks/done/SSF-0001...md       -> diese Datei
@@ -49,5 +49,5 @@ external-tasks/done/SSF-0001...md       -> diese Datei
 
 Abhängigkeiten folgen der Reihenfolge MAG-001 -> MAG-002 -> ... -> MAG-008 (dependencies.requires
 bzw. moduleUnlocks im KXF-Export). SSF kann die Module über den Export ohne lokale Duplikation
-in die Lernkarte des Lernpfads PATH:SSF:MAGNETISM-MATERIALS aufnehmen. NOXIA-Grants bleiben
+in die Lernkarte des Lernpfads PATH:SSF:MAGNETISM-MATERIALS-0001 aufnehmen. NOXIA-Grants bleiben
 bewusst offen (kein unlocks-Eintrag) bis zur kuratorischen Festlegung.

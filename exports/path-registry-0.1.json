@@ -150,7 +150,7 @@
       "sourceExport": "exports/kxf-learning-paths-0.1.json"
     },
     {
-      "id": "PATH:SSF:MAGNETISM-MATERIALS",
+      "id": "PATH:SSF:MAGNETISM-MATERIALS-0001",
       "type": "Path",
       "curatorSystem": "SYS:KUEPER:ssf",
       "kind": "learning_sequence",
