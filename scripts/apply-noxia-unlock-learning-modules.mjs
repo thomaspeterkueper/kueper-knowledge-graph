@@ -12,7 +12,7 @@ const REQUEST_ID = 'EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities'
 const modules = [
   {
     id: 'PHY-L1-000025', legacyId: 'LRN:SSF:PHY-1301', subject: 'PHY',
-    title: 'Energieversorgung — Grundlagen', unlock: 'UNL:NOX:power-generation',
+    title: 'Was ist Energie?', unlock: 'UNL:NOX:power-generation',
     requires: [], moduleUnlocks: ['BIO-L1-000002','PHY-L1-000027','ENG-L1-000007'],
     scope: ['Energie', 'Leistung', 'Energieumwandlung', 'Stromversorgung']
   },
