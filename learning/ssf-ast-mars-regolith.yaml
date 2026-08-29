@@ -1,0 +1,29 @@
+module_id: LRN:SSF:AST-MARS-REGOLITH-0001
+typ: LearningModule
+layer: L2
+name: Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?
+domain: AST
+subdomain: planetary-geology
+status: '[R]'
+requires:
+  - LRN:SSF:AST-L1-000001
+  - LRN:SSF:PHY-L1-000007
+teaches:
+  - CON:L1:marsregolith-zusammensetzung
+  - CON:L1:perchlorat-problem
+  - CON:L1:wassereis-verteilung-mars
+  - CON:L1:neutronenspektrometer-kartierung
+unlocks:
+  - UNL:NOX:SENSOR:SUBSURFACE
+  - UNL:NOX:ISRU:REGOLITH-ANALYSIS
+  - SENSOR:SUBSURFACE
+ssf_path_id: PATH:SSF:AST-MARS-REGOLITH-0001
+ota_reference: OTA-TEC-0034 §9 TAUGHT_BY
+created: '2026-07-24'
+curator: T.P.K.
+notes: >
+  Marsregolith [R]: ~45% SiO2, ~18% Fe2O3, ~10% Al2O3, ~9% SO3.
+  Perchlorat (ClO4-): 0.5-1 Gew.-%, toxisch [R].
+  Wassereis: 2-40 Gew.-% regional [H, OTA-TEC-0034 §3].
+  Neutronenspektrometer MRO CRISM: Wasserstoff-Signatur orbital [R].
+  Staubpartikel <10 Mikrometer, scharfkantig, abrasiv [R].
