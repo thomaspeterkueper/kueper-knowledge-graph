@@ -125,7 +125,6 @@ for (const m of modules) {
   if (existingById && existingById.legacyId !== m.legacyId) fail(`ID collision ${m.id}`);
   if (existingByLegacy && existingByLegacy.id !== m.id) fail(`legacyId collision ${m.legacyId} -> ${existingByLegacy.id}`);
   if (existingUnlockOwner && existingUnlockOwner !== m.id) {
-    // Existing canonical ownership wins; do not duplicate a NOXIA unlock.
     m.reuseId = existingUnlockOwner;
   }
 }
@@ -166,7 +165,7 @@ fs.writeFileSync(EXPORT, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
 if (fs.existsSync(OPEN_REQ)) {
   let req = fs.readFileSync(OPEN_REQ, 'utf8');
   req = req.replace('**Status:** open', '**Status:** done');
-  req += `\n\n## KG-Ergebnis 2026-08-29\n\nDie angeforderten NOXIA-Unlocks sind im Learning-Modules-KXF kanonischen Modulidentitäten zugeordnet. Der bereits bestehende Unlock \\`UNL:NOX:power-generation\\` wird über die bestehende SSF-Identität \\`LRN:SSF:PHY-1301\\` kanonisiert; die übrigen angeforderten Unlocks erhalten eigene kanonische Modulrecords. Voraussetzungen werden ausschließlich als KG/KXF-Modulabhängigkeiten abgebildet. Es wurden keine neuen NOXIA-Unlock-IDs erfunden und keine SSF-Didaktikinhalte übernommen.\n`;
+  req += '\n\n## KG-Ergebnis 2026-08-29\n\nDie angeforderten NOXIA-Unlocks sind im Learning-Modules-KXF kanonischen Modulidentitäten zugeordnet. Der bereits bestehende Unlock UNL:NOX:power-generation wird über die bestehende SSF-Identität LRN:SSF:PHY-1301 kanonisiert; die übrigen angeforderten Unlocks erhalten eigene kanonische Modulrecords. Voraussetzungen werden ausschließlich als KG/KXF-Modulabhängigkeiten abgebildet. Es wurden keine neuen NOXIA-Unlock-IDs erfunden und keine SSF-Didaktikinhalte übernommen.\n';
   fs.mkdirSync(path.dirname(DONE_REQ), { recursive: true });
   fs.writeFileSync(DONE_REQ, req, 'utf8');
   fs.unlinkSync(OPEN_REQ);
