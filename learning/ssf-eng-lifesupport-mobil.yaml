@@ -1,0 +1,31 @@
+module_id: LRN:SSF:ENG-LIFESUPPORT-MOBIL-0001
+typ: LearningModule
+layer: L2
+name: Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?
+domain: ENG
+subdomain: life-support
+status: '[R]'
+requires:
+  - LRN:SSF:PHY-WASSER-VAKUUM-0001
+teaches:
+  - CON:L1:o2-versorgung-mobil
+  - CON:L1:co2-entfernung-lioh
+  - CON:L1:druckkabine-vakuum
+  - CON:L1:life-support-budget
+  - CON:L1:notfallreserve-berechnung
+unlocks:
+  - UNL:NOX:TOOL:LIFE-SUPPORT-MOBILE
+  - UNL:NOX:ENG:PRESSURE-CABIN
+  - ENG:PRESSURE-CABIN
+ssf_path_id: PATH:SSF:ENG-LIFESUPPORT-MOBIL-0001
+ota_reference: OTA-TEC-0035 §9 TAUGHT_BY
+created: '2026-07-24'
+curator: T.P.K.
+notes: >
+  O2-Bedarf: 0.84 kg/Person/Tag (NASA Baseline) [R].
+  H2O-Bedarf: 3.5 L/Person/Tag [R].
+  CO2-Entfernung: LiOH-Kartuschen (Apollo [R]) oder CDRA (ISS [R]).
+  Druckkabine: 35-101 kPa, bei reinem O2 auch 35 kPa ausreichend [R].
+  Armstrong-Grenze: 6.3 kPa, ab hier siedet Blut bei 37 Celsius [R].
+  Notfallreserve: Rueckweg + 20% Sicherheitsmarge.
+  Batteriekapazitaet limitiert Reichweite (nicht Mechanik) [H, OTA-TEC-0035 §3].
