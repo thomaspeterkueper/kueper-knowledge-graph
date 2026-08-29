@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "created": "2026-07-02",
-  "modified": "2026-07-10T12:00:00+02:00",
+  "modified": "2026-08-29T13:45:00+02:00",
   "sourceDocuments": [
     "KG-0005-entry-question-levels",
     "KG-0010",
@@ -15,7 +15,8 @@
     "KB-REQUEST-0006-KXF-LEARNING-MODULES",
     "KG-0012",
     "KG-0004-LEARNING-MODEL",
-    "KG-0009"
+    "KG-0009",
+    "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities"
   ],
   "contracts": {
     "consumer": "SYS:KUEPER:ssf",
@@ -3539,6 +3540,646 @@
         "noxiaGrants": [],
         "legacyId": "LRN:SSF:MAG-008",
         "createdFromRequest": "SSF-0001"
+      },
+      {
+        "id": "PHY-L1-000025",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Was ist Energie?",
+          "en": "Was ist Energie?"
+        },
+        "meta": {
+          "title": "Was ist Energie?",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Was ist Energie?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Was ist Energie?",
+            "L1": "Was ist Energie?",
+            "L2": null
+          },
+          "scope": [
+            "Energie",
+            "Leistung",
+            "Energieumwandlung",
+            "Stromversorgung"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "BIO-L1-000002",
+            "PHY-L1-000027",
+            "ENG-L1-000007"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-1301",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:power-generation"
+        ]
+      },
+      {
+        "id": "ENG-L1-000005",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Rohstoffgewinnung — Prozesskette",
+          "en": "Rohstoffgewinnung — Prozesskette"
+        },
+        "meta": {
+          "title": "Rohstoffgewinnung — Prozesskette",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Rohstoffgewinnung — Prozesskette",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Rohstoffgewinnung — Prozesskette",
+            "L1": "Rohstoffgewinnung — Prozesskette",
+            "L2": null
+          },
+          "scope": [
+            "Deposit",
+            "Entnahme und Abbau",
+            "Zerkleinerung",
+            "Trennung und Anreicherung",
+            "Aufbereitung",
+            "Ausbeute",
+            "Reinheit",
+            "Energiebedarf",
+            "Wasserbedarf",
+            "Reststoffe"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-RESOURCE-EXTRACTION",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:resource-extraction"
+        ]
+      },
+      {
+        "id": "CHE-L1-000015",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Wasseraufbereitung — Grundlagen",
+          "en": "Wasseraufbereitung — Grundlagen"
+        },
+        "meta": {
+          "title": "Wasseraufbereitung — Grundlagen",
+          "subject": "CHE",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wasseraufbereitung — Grundlagen",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wasseraufbereitung — Grundlagen",
+            "L1": "Wasseraufbereitung — Grundlagen",
+            "L2": null
+          },
+          "scope": [
+            "Rohwasserqualität",
+            "Sedimentation",
+            "Filtration",
+            "Adsorption",
+            "Desinfektion",
+            "Membranverfahren",
+            "Umkehrosmose",
+            "Destillation",
+            "Recycling"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "BIO-L1-000002",
+            "ENG-L1-000009"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-WATER-PROCESSING",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:water-processing"
+        ]
+      },
+      {
+        "id": "PHY-L1-000026",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Drucksysteme und Druckhüllen",
+          "en": "Drucksysteme und Druckhüllen"
+        },
+        "meta": {
+          "title": "Drucksysteme und Druckhüllen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Drucksysteme und Druckhüllen",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Drucksysteme und Druckhüllen",
+            "L1": "Drucksysteme und Druckhüllen",
+            "L2": null
+          },
+          "scope": [
+            "Druck",
+            "Gasverhalten",
+            "gasdichte Druckhülle"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "ENG-L1-000006",
+            "BIO-L1-000002"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-PRESSURE-SYSTEMS",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:pressure-systems"
+        ]
+      },
+      {
+        "id": "ENG-L1-000006",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Luftschleusen",
+          "en": "Luftschleusen"
+        },
+        "meta": {
+          "title": "Luftschleusen",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Luftschleusen",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Luftschleusen",
+            "L1": "Luftschleusen",
+            "L2": null
+          },
+          "scope": [
+            "Luftschleuse",
+            "Druckausgleich",
+            "Druckzonentrennung"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000026"
+          ],
+          "moduleUnlocks": [
+            "ENG-L1-000009"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-AIRLOCK",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:airlock"
+        ]
+      },
+      {
+        "id": "BIO-L1-000002",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Lebenserhaltungssysteme",
+          "en": "Lebenserhaltungssysteme"
+        },
+        "meta": {
+          "title": "Lebenserhaltungssysteme",
+          "subject": "BIO",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Lebenserhaltungssysteme",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Lebenserhaltungssysteme",
+            "L1": "Lebenserhaltungssysteme",
+            "L2": null
+          },
+          "scope": [
+            "Sauerstoffversorgung",
+            "CO2-Abscheidung",
+            "Luftumwälzung",
+            "Wasserintegration"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000026",
+            "CHE-L1-000015",
+            "PHY-L1-000025"
+          ],
+          "moduleUnlocks": [
+            "ENG-L1-000008",
+            "ENG-L1-000009"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-LIFE-SUPPORT",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:life-support"
+        ]
+      },
+      {
+        "id": "PHY-L1-000027",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Thermalkontrolle",
+          "en": "Thermalkontrolle"
+        },
+        "meta": {
+          "title": "Thermalkontrolle",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Thermalkontrolle",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Thermalkontrolle",
+            "L1": "Thermalkontrolle",
+            "L2": null
+          },
+          "scope": [
+            "Isolation",
+            "Heizen",
+            "Kühlen",
+            "Wärmetransport"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000025"
+          ],
+          "moduleUnlocks": [
+            "ENG-L1-000009"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-THERMAL-CONTROL",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:thermal-control"
+        ]
+      },
+      {
+        "id": "PHY-L1-000028",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Strahlenschutz für Habitate",
+          "en": "Strahlenschutz für Habitate"
+        },
+        "meta": {
+          "title": "Strahlenschutz für Habitate",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Strahlenschutz für Habitate",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Strahlenschutz für Habitate",
+            "L1": "Strahlenschutz für Habitate",
+            "L2": null
+          },
+          "scope": [
+            "extraterrestrischer Strahlenschutz",
+            "Abschirmung",
+            "geschützter Aufenthaltsbereich"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [
+            "ENG-L1-000009"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-RADIATION-PROTECTION",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:radiation-protection"
+        ]
+      },
+      {
+        "id": "ENG-L1-000007",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Umgebungsüberwachung",
+          "en": "Umgebungsüberwachung"
+        },
+        "meta": {
+          "title": "Umgebungsüberwachung",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Umgebungsüberwachung",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Umgebungsüberwachung",
+            "L1": "Umgebungsüberwachung",
+            "L2": null
+          },
+          "scope": [
+            "Sensorik",
+            "kritische Habitatparameter",
+            "Überwachung"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000025"
+          ],
+          "moduleUnlocks": [
+            "ENG-L1-000008",
+            "ENG-L1-000009"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-ENVIRONMENT-MONITORING",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:environment-monitoring"
+        ]
+      },
+      {
+        "id": "ENG-L1-000008",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Redundanz und Fehlertoleranz im Habitat",
+          "en": "Redundanz und Fehlertoleranz im Habitat"
+        },
+        "meta": {
+          "title": "Redundanz und Fehlertoleranz im Habitat",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Redundanz und Fehlertoleranz im Habitat",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Redundanz und Fehlertoleranz im Habitat",
+            "L1": "Redundanz und Fehlertoleranz im Habitat",
+            "L2": null
+          },
+          "scope": [
+            "Single Points of Failure",
+            "Redundanz",
+            "Fehlertoleranz"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "BIO-L1-000002",
+            "ENG-L1-000007"
+          ],
+          "moduleUnlocks": [
+            "ENG-L1-000009"
+          ],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-HABITAT-REDUNDANCY",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:habitat-redundancy"
+        ]
+      },
+      {
+        "id": "ENG-L1-000009",
+        "version": "0.1.0",
+        "created": "2026-08-29",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Mars-Habitat — Systemintegration",
+          "en": "Mars-Habitat — Systemintegration"
+        },
+        "meta": {
+          "title": "Mars-Habitat — Systemintegration",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Mars-Habitat — Systemintegration",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Mars-Habitat — Systemintegration",
+            "L1": "Mars-Habitat — Systemintegration",
+            "L2": null
+          },
+          "scope": [
+            "Drucksystem",
+            "Luftschleuse",
+            "Lebenserhaltung",
+            "Thermalkontrolle",
+            "Strahlenschutz",
+            "Umgebungsüberwachung",
+            "Redundanz",
+            "Systemintegration"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "CHE-L1-000015",
+            "PHY-L1-000025",
+            "PHY-L1-000026",
+            "ENG-L1-000006",
+            "BIO-L1-000002",
+            "PHY-L1-000027",
+            "PHY-L1-000028",
+            "ENG-L1-000007",
+            "ENG-L1-000008"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:NOX-MARS-HABITAT",
+        "createdFromRequest": "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+        "unlocks": [
+          "UNL:NOX:mars-habitat"
+        ]
       }
     ]
   },
@@ -3607,5 +4248,5 @@
       "resolution": "Remove learning_path from moduleTypes. Use records.paths for PATH objects."
     }
   ],
-  "updated": "2026-08-21"
+  "updated": "2026-08-29"
 }
