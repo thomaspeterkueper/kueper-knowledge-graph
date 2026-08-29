@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "created": "2026-07-02",
-  "modified": "2026-08-29T13:45:00+02:00",
+  "modified": "2026-08-29T22:20:00+02:00",
   "sourceDocuments": [
     "KG-0005-entry-question-levels",
     "KG-0010",
@@ -16,7 +16,8 @@
     "KG-0012",
     "KG-0004-LEARNING-MODEL",
     "KG-0009",
-    "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities"
+    "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
+    "KG-LEARNING-SYNC-20260829-NEW-MODULES"
   ],
   "contracts": {
     "consumer": "SYS:KUEPER:ssf",
@@ -289,6 +290,46 @@
         "purpose": "read",
         "target": "DOC:OTA:OTA-FND-0028-2026-DE",
         "status": "draft_productive"
+      },
+      {
+        "id": "PATH:SSF:AST-MARS-REGOLITH-0001",
+        "type": "Path",
+        "purpose": "learn",
+        "target": "AST-L2-000001",
+        "status": "draft_productive",
+        "sourceSystem": "SSF"
+      },
+      {
+        "id": "PATH:SSF:AST-MONDNAVIGATION-0001",
+        "type": "Path",
+        "purpose": "learn",
+        "target": "AST-L2-000002",
+        "status": "draft_productive",
+        "sourceSystem": "SSF"
+      },
+      {
+        "id": "PATH:SSF:ENG-LIFESUPPORT-MOBIL-0001",
+        "type": "Path",
+        "purpose": "learn",
+        "target": "ENG-L2-000001",
+        "status": "draft_productive",
+        "sourceSystem": "SSF"
+      },
+      {
+        "id": "PATH:SSF:PHY-MONDSTAUB-VERSCHLEISS-0001",
+        "type": "Path",
+        "purpose": "learn",
+        "target": "PHY-L2-000003",
+        "status": "draft_productive",
+        "sourceSystem": "SSF"
+      },
+      {
+        "id": "PATH:SSF:PHY-WASSER-VAKUUM-0001",
+        "type": "Path",
+        "purpose": "learn",
+        "target": "PHY-L2-000004",
+        "status": "draft_productive",
+        "sourceSystem": "SSF"
       }
     ],
     "learning_modules": [
@@ -4180,6 +4221,325 @@
         "unlocks": [
           "UNL:NOX:mars-habitat"
         ]
+      },
+      {
+        "id": "AST-L2-000001",
+        "version": "0.1.0",
+        "created": "2026-07-24",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?",
+          "en": "Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?"
+        },
+        "meta": {
+          "title": "Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?",
+          "subject": "AST",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?",
+            "L1": "Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?",
+            "L2": "Warum kann man auf dem Mars nicht einfach Erde aus dem Boden nehmen?"
+          },
+          "scope": [
+            "CON:L1:marsregolith-zusammensetzung",
+            "CON:L1:perchlorat-problem",
+            "CON:L1:wassereis-verteilung-mars",
+            "CON:L1:neutronenspektrometer-kartierung"
+          ],
+          "subdomain": "planetary-geology"
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "AST-L1-000001",
+            "PHY-L1-000007"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:AST-MARS-REGOLITH-0001",
+        "unlocks": [
+          "UNL:NOX:SENSOR:SUBSURFACE",
+          "UNL:NOX:ISRU:REGOLITH-ANALYSIS",
+          "SENSOR:SUBSURFACE"
+        ],
+        "source": {
+          "authoringFile": "learning/ssf-ast-mars-regolith.yaml",
+          "ssfPathId": "PATH:SSF:AST-MARS-REGOLITH-0001",
+          "otaReference": "OTA-TEC-0034 §9 TAUGHT_BY",
+          "curator": "T.P.K."
+        }
+      },
+      {
+        "id": "AST-L2-000002",
+        "version": "0.1.0",
+        "created": "2026-07-24",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?",
+          "en": "Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?"
+        },
+        "meta": {
+          "title": "Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?",
+          "subject": "AST",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?",
+            "L1": "Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?",
+            "L2": "Wie findet ein Rover auf dem Mond den Weg zurueck — wenn es kein GPS gibt?"
+          },
+          "scope": [
+            "CON:L1:inertialnavigation",
+            "CON:L1:sternennavigation-kein-atmosphaere",
+            "CON:L1:bakennavigation",
+            "CON:L1:odometrie",
+            "CON:L1:navigations-redundanz"
+          ],
+          "subdomain": "navigation"
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "AST-L1-000001"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:AST-MONDNAVIGATION-0001",
+        "unlocks": [
+          "UNL:NOX:NAV:SURFACE",
+          "UNL:NOX:SENSOR:INERTIAL",
+          "NAV:SURFACE",
+          "SENSOR:INERTIAL"
+        ],
+        "source": {
+          "authoringFile": "learning/ssf-ast-mondnavigation.yaml",
+          "ssfPathId": "PATH:SSF:AST-MONDNAVIGATION-0001",
+          "otaReference": "OTA-TEC-0035 §9 TAUGHT_BY",
+          "curator": "T.P.K."
+        }
+      },
+      {
+        "id": "ENG-L2-000001",
+        "version": "0.1.0",
+        "created": "2026-07-24",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?",
+          "en": "Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?"
+        },
+        "meta": {
+          "title": "Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?",
+          "subject": "ENG",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?",
+            "L1": "Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?",
+            "L2": "Wie atmet man in einem Fahrzeug das 400 km vom naechsten Habitat entfernt ist?"
+          },
+          "scope": [
+            "CON:L1:o2-versorgung-mobil",
+            "CON:L1:co2-entfernung-lioh",
+            "CON:L1:druckkabine-vakuum",
+            "CON:L1:life-support-budget",
+            "CON:L1:notfallreserve-berechnung"
+          ],
+          "subdomain": "life-support"
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L2-000004"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:ENG-LIFESUPPORT-MOBIL-0001",
+        "unlocks": [
+          "UNL:NOX:TOOL:LIFE-SUPPORT-MOBILE",
+          "UNL:NOX:ENG:PRESSURE-CABIN",
+          "ENG:PRESSURE-CABIN"
+        ],
+        "source": {
+          "authoringFile": "learning/ssf-eng-lifesupport-mobil.yaml",
+          "ssfPathId": "PATH:SSF:ENG-LIFESUPPORT-MOBIL-0001",
+          "otaReference": "OTA-TEC-0035 §9 TAUGHT_BY",
+          "curator": "T.P.K."
+        }
+      },
+      {
+        "id": "PHY-L2-000003",
+        "version": "0.1.0",
+        "created": "2026-07-24",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?",
+          "en": "Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?"
+        },
+        "meta": {
+          "title": "Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?",
+            "L1": "Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?",
+            "L2": "Warum hat Mondstaub Apollo-Astronauten fast den Einsatz gekostet?"
+          },
+          "scope": [
+            "CON:L1:mondstaub-eigenschaften",
+            "CON:L1:elektrostatische-aufladung-vakuum",
+            "CON:L1:abrasion-scharfkantiger-partikel",
+            "CON:L1:material-verschleiss-vakuum"
+          ],
+          "subdomain": "surface-materials"
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-MONDSTAUB-VERSCHLEISS-0001",
+        "unlocks": [
+          "UNL:NOX:TOOL:DUST-MITIGATION",
+          "UNL:NOX:SENSOR:DUST-MONITOR",
+          "TOOL:DUST-MITIGATION"
+        ],
+        "source": {
+          "authoringFile": "learning/ssf-phy-mondstaub-verschleiss.yaml",
+          "ssfPathId": "PATH:SSF:PHY-MONDSTAUB-VERSCHLEISS-0001",
+          "otaReference": "OTA-TEC-0035 §9 TAUGHT_BY",
+          "curator": "T.P.K."
+        }
+      },
+      {
+        "id": "PHY-L2-000004",
+        "version": "0.1.0",
+        "created": "2026-07-24",
+        "modified": "2026-08-29",
+        "title": {
+          "de": "Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?",
+          "en": "Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?"
+        },
+        "meta": {
+          "title": "Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": "Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?",
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": "Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?",
+            "L1": "Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?",
+            "L2": "Warum kann man auf dem Mars kein Wasser kochen — und was passiert stattdessen?"
+          },
+          "scope": [
+            "CON:L1:tripelpunkt-wasser",
+            "CON:L1:vakuum-sublimation",
+            "CON:L1:phasendiagramm-niederdruck",
+            "CON:L1:mars-druck-regime",
+            "CON:L1:isru-grundlagen"
+          ],
+          "subdomain": "thermodynamics-vacuum"
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000004",
+            "PHY-L1-000007"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-WASSER-VAKUUM-0001",
+        "unlocks": [
+          "UNL:NOX:ISRU:WATER-EXTRACTION",
+          "ISRU:WATER-EXTRACTION",
+          "PHY:VACUUM-PHASE-DIAGRAM"
+        ],
+        "source": {
+          "authoringFile": "learning/ssf-phy-wasser-vakuum.yaml",
+          "ssfPathId": "PATH:SSF:PHY-WASSER-VAKUUM-0001",
+          "otaReference": "OTA-TEC-0034 §9 TAUGHT_BY",
+          "curator": "T.P.K."
+        }
       }
     ]
   },
