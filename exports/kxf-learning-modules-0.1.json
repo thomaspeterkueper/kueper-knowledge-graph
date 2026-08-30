@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "created": "2026-07-02",
-  "modified": "2026-08-30T00:00:00+00:00",
+  "modified": "2026-08-30T14:30:00+00:00",
   "sourceDocuments": [
     "KG-0005-entry-question-levels",
     "KG-0010",
@@ -17,7 +17,8 @@
     "KG-0004-LEARNING-MODEL",
     "KG-0009",
     "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
-    "KG-LEARNING-SYNC-20260829-NEW-MODULES"
+    "KG-LEARNING-SYNC-20260829-NEW-MODULES",
+    "EXT-NOX-KG-20260829-energy-work-gravitational-well-module"
   ],
   "contracts": {
     "consumer": "SYS:KUEPER:ssf",
@@ -328,6 +329,14 @@
         "type": "Path",
         "purpose": "learn",
         "target": "PHY-L2-000004",
+        "status": "draft_productive",
+        "sourceSystem": "SSF"
+      },
+      {
+        "id": "PATH:SSF:PHY-ENERGIE-ARBEIT-0001",
+        "type": "Path",
+        "purpose": "learn",
+        "target": "PHY-L2-000005",
         "status": "draft_productive",
         "sourceSystem": "SSF"
       }
@@ -4539,6 +4548,68 @@
           "ssfPathId": "PATH:SSF:PHY-WASSER-VAKUUM-0001",
           "otaReference": "OTA-TEC-0034 §9 TAUGHT_BY",
           "curator": "T.P.K."
+        }
+      },
+      {
+        "id": "PHY-L2-000005",
+        "version": "0.1.0",
+        "created": "2026-08-30",
+        "modified": "2026-08-30",
+        "title": {
+          "de": "Energie & Arbeit — Gravitationspotential und Gravitationsbrunnen",
+          "en": "Energie & Arbeit — Gravitationspotential und Gravitationsbrunnen"
+        },
+        "meta": {
+          "title": "Energie & Arbeit — Gravitationspotential und Gravitationsbrunnen",
+          "subject": "PHY",
+          "type": "grundmodul",
+          "status": "planned",
+          "entryQuestion": null,
+          "depthMin": 0,
+          "depthMax": null,
+          "durationMin": 3,
+          "durationMax": 7,
+          "entryQuestions": {
+            "L0": null,
+            "L1": null,
+            "L2": null
+          },
+          "scope": [
+            "CON:L1:arbeit-physik",
+            "CON:L1:energie",
+            "CON:L1:potentielle-energie",
+            "CON:L1:gravitationspotential",
+            "CON:L1:gravitationsbrunnen"
+          ],
+          "subdomain": "mechanics-energy-gravitation"
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000025"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-ENERGIE-ARBEIT-0001",
+        "unlocks": [],
+        "source": {
+          "authoringFile": "learning/ssf-phy-energie-arbeit-gravitationsbrunnen.yaml",
+          "ssfPathId": "PATH:SSF:PHY-ENERGIE-ARBEIT-0001",
+          "curator": "T.P.K.",
+          "interactiveRefs": [
+            "gravitationsbrunnen"
+          ]
         }
       }
     ],

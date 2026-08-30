@@ -2,8 +2,9 @@
 
 **Origin:** NOXIA
 **Target:** KUEPER Knowledge Graph
-**Status:** open
+**Status:** done
 **Created:** 2026-08-29
+**Completed:** 2026-08-30
 **Related:** `solarsciencefoundation/external-tasks/open/NOX-SSF-REQ-20260829-gravitationsbrunnen-animation.md`
 **Related:** `noxiagame/external-tasks/open/SSF-NOX-REQ-20260829-gravitationsbrunnen-module-mapping.md`
 
@@ -43,3 +44,18 @@ Sie ist keine kanonische Modulidentität, sondern die NOXIA/SSF-Contentreferenz 
 ## Rückgabe an NOXIA/SSF
 
 Bitte nach Umsetzung die endgültige `LRN:SSF:*`- und `PATH:SSF:*`-ID im Task dokumentieren. NOXIA übernimmt danach ausschließlich die lokale `kurs_id`→`kg_path_id`-Bindung; SSF implementiert Inhalt und Interaktion.
+
+## KG-Ergebnis 2026-08-30
+
+Die kanonische Lernidentität für **Energie & Arbeit** ist festgelegt und im KXF-Export v0.3.1 registriert:
+
+- Modul-ID: `PHY-L2-000005`
+- Legacy-/kanonische Modulidentität: `LRN:SSF:PHY-ENERGIE-ARBEIT-0001`
+- Pfad-ID (für `kg_path_id`-Bindung): `PATH:SSF:PHY-ENERGIE-ARBEIT-0001`
+- Autorendatei: `learning/ssf-phy-energie-arbeit-gravitationsbrunnen.yaml`
+- KXF-Export: `exports/kxf-learning-modules-0.1.json` (v0.3.1, `records.learning_modules` + `records.paths`)
+- Interactive-Referenz: `interactiveRefs: ["gravitationsbrunnen"]` im Modulrecord (`source`-Block)
+
+Fachlicher Scope (im Modulrecord exportiert): `CON:L1:arbeit-physik`, `CON:L1:energie`, `CON:L1:potentielle-energie`, `CON:L1:gravitationspotential`, `CON:L1:gravitationsbrunnen`; Voraussetzung `PHY-L1-000025`.
+
+NOXIA bindet seinen lokalen `foundation_kurse`-Datensatz ausschließlich über `kg_path_id = PATH:SSF:PHY-ENERGIE-ARBEIT-0001` an; SSF hängt den strukturierten `interactive`-Abschnitt `gravitationsbrunnen` an `LRN:SSF:PHY-ENERGIE-ARBEIT-0001` / `PHY-L2-000005`. Es wurden keine neuen IDs erfunden; `gravitationsbrunnen` bleibt die stabile lokale Contentreferenz.
