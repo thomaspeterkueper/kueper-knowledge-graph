@@ -3,102 +3,23 @@
   "name": "KUEPER Canonical Entity Type Vocabulary",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1.1",
-  "updated": "2026-08-10",
-  "sourceDocuments": ["KG-0008-REGISTRY", "KG-0012", "KG-0015", "OTA-ARC-0006-2026-DE-v1.3"],
+  "version": "0.1.2",
+  "updated": "2026-08-30",
+  "sourceDocuments": ["KG-0008-REGISTRY", "KG-0012", "KG-0015", "OTA-ARC-0006-2026-DE-v1.3", "EXT-OTA-KG-20260829-water-extractor-object-identity", "EXT-OTA-KG-20260829-rover-vex-object-identities"],
   "records": [
-    {
-      "id": "ETYPE:Document",
-      "value": "Document",
-      "idPrefixes": ["DOC:"],
-      "description": "Canonical document reference whose full text is owned by a registered source system."
-    },
-    {
-      "id": "ETYPE:LearningModule",
-      "value": "LearningModule",
-      "idPattern": "<DOMAIN>-L<LEVEL>-<SEQUENCE>",
-      "description": "Atomic or transitional learning unit consumed by SSF and other learning clients."
-    },
-    {
-      "id": "ETYPE:Path",
-      "value": "Path",
-      "idPrefixes": ["PATH:"],
-      "description": "Navigable semantic route or curated sequence. A Path contains no canonical subject-matter content of its own; it connects modules, prerequisites, capabilities or target objects.",
-      "rules": [
-        "Path is a separate entity class and never a learning module meta.type.",
-        "A document-reading Path targets exactly one canonical DOC record.",
-        "A Path may contain ordered module steps and may unlock other Paths, Documents or capabilities.",
-        "PATH system namespace identifies the system responsible for curating the route, not necessarily the owner of the target document."
-      ]
-    },
-    {
-      "id": "ETYPE:KnowledgeDomain",
-      "value": "KnowledgeDomain",
-      "idPrefixes": ["KD:"],
-      "description": "Canonical knowledge domain at a defined prerequisite depth."
-    },
-    {
-      "id": "ETYPE:Competency",
-      "value": "Competency",
-      "idPrefixes": ["CMP:"],
-      "description": "Demonstrable competency associated with one or more knowledge domains."
-    },
-    {
-      "id": "ETYPE:Requirement",
-      "value": "Requirement",
-      "idPrefixes": ["REQ:"],
-      "description": "Explicit prerequisite or governance requirement."
-    },
-    {
-      "id": "ETYPE:Relation",
-      "value": "Relation",
-      "idPrefixes": ["REL:"],
-      "description": "Typed directed edge between canonical entities."
-    },
-    {
-      "id": "ETYPE:System",
-      "value": "System",
-      "idPrefixes": ["SYS:"],
-      "description": "Registered KUEPER ecosystem system with an explicit ownership or consumer role."
-    },
-    {
-      "id": "ETYPE:Domain",
-      "value": "Domain",
-      "idPrefixes": ["DOM:"],
-      "description": "Registered public or planned internet domain mapped to a system."
-    },
-    {
-      "id": "ETYPE:APIContract",
-      "value": "APIContract",
-      "idPrefixes": ["API:"],
-      "description": "Versioned public API contract."
-    },
-    {
-      "id": "ETYPE:QueryContract",
-      "value": "QueryContract",
-      "idPrefixes": ["QUERY:"],
-      "description": "Versioned semantic query contract."
-    },
-    {
-      "id": "ETYPE:Object",
-      "value": "Object",
-      "idPrefixes": ["OBJ:"],
-      "description": "Individual non-living physical or narrative object with stable identity when no more specific canonical type applies.",
-      "rules": [
-        "Use only for individual objects, not material classes or general concepts.",
-        "Prefer a more specific existing canonical type when one applies.",
-        "Language-specific names are Representations and do not create duplicate Object identities."
-      ]
-    },
-    {
-      "id": "ETYPE:Animal",
-      "value": "Animal",
-      "idPrefixes": ["ANI:"],
-      "description": "Individual animal with stable narrative identity.",
-      "rules": [
-        "Use for individual animals, not biological taxa.",
-        "Language-specific names are Representations and do not create duplicate Animal identities."
-      ]
-    }
+    {"id":"ETYPE:Document","value":"Document","idPrefixes":["DOC:"],"description":"Canonical document reference whose full text is owned by a registered source system."},
+    {"id":"ETYPE:LearningModule","value":"LearningModule","idPattern":"<DOMAIN>-L<LEVEL>-<SEQUENCE>","description":"Atomic or transitional learning unit consumed by SSF and other learning clients."},
+    {"id":"ETYPE:Path","value":"Path","idPrefixes":["PATH:"],"description":"Navigable semantic route or curated sequence. A Path contains no canonical subject-matter content of its own; it connects modules, prerequisites, capabilities or target objects.","rules":["Path is a separate entity class and never a learning module meta.type.","A document-reading Path targets exactly one canonical DOC record.","A Path may contain ordered module steps and may unlock other Paths, Documents or capabilities.","PATH system namespace identifies the system responsible for curating the route, not necessarily the owner of the target document."]},
+    {"id":"ETYPE:KnowledgeDomain","value":"KnowledgeDomain","idPrefixes":["KD:"],"description":"Canonical knowledge domain at a defined prerequisite depth."},
+    {"id":"ETYPE:Competency","value":"Competency","idPrefixes":["CMP:"],"description":"Demonstrable competency associated with one or more knowledge domains."},
+    {"id":"ETYPE:Requirement","value":"Requirement","idPrefixes":["REQ:"],"description":"Explicit prerequisite or governance requirement."},
+    {"id":"ETYPE:Relation","value":"Relation","idPrefixes":["REL:"],"description":"Typed directed edge between canonical entities."},
+    {"id":"ETYPE:System","value":"System","idPrefixes":["SYS:"],"description":"Registered KUEPER ecosystem system with an explicit ownership or consumer role."},
+    {"id":"ETYPE:Domain","value":"Domain","idPrefixes":["DOM:"],"description":"Registered public or planned internet domain mapped to a system."},
+    {"id":"ETYPE:APIContract","value":"APIContract","idPrefixes":["API:"],"description":"Versioned public API contract."},
+    {"id":"ETYPE:QueryContract","value":"QueryContract","idPrefixes":["QUERY:"],"description":"Versioned semantic query contract."},
+    {"id":"ETYPE:ObjectType","value":"ObjectType","idPrefixes":["OTYPE:"],"description":"Canonical type identity for a class, model or buildable technical object whose individual instances may have independent state.","rules":["Use ObjectType for stable shared model/type identities, not for individual instances.","Individual instances use a suitable instance entity type such as Object and link to the ObjectType with INSTANCE_OF.","Type-level properties must not absorb instance-specific damage, ownership, modifications or emergent state."]},
+    {"id":"ETYPE:Object","value":"Object","idPrefixes":["OBJ:"],"description":"Individual non-living physical or narrative object with stable identity when no more specific canonical type applies.","rules":["Use only for individual objects, not material classes or general concepts.","Prefer a more specific existing canonical type when one applies.","Language-specific names are Representations and do not create duplicate Object identities."]},
+    {"id":"ETYPE:Animal","value":"Animal","idPrefixes":["ANI:"],"description":"Individual animal with stable narrative identity.","rules":["Use for individual animals, not biological taxa.","Language-specific names are Representations and do not create duplicate Animal identities."]}
   ]
 }
