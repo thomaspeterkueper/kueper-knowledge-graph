@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -7,6 +8,7 @@ from pathlib import Path
 SCRIPT = Path(__file__).resolve().parents[1] / 'scripts' / 'kg_curator.py'
 spec = importlib.util.spec_from_file_location('kg_curator', SCRIPT)
 curator = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = curator
 spec.loader.exec_module(curator)
 
 class KgCuratorTests(unittest.TestCase):
