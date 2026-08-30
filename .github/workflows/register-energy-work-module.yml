@@ -1,0 +1,42 @@
+name: Register energy-work learning module
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'learning/ssf-phy-energie-arbeit-gravitationsbrunnen.yaml'
+      - 'scripts/register-energy-work-module.mjs'
+      - '.github/workflows/register-energy-work-module.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  register:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Register canonical module and path
+        run: node scripts/register-energy-work-module.mjs
+      - name: Verify source-of-truth constraints
+        run: |
+          python -m pip install pyyaml
+          python scripts/check_source_of_truth.py
+      - name: Commit projection when changed
+        run: |
+          if git diff --quiet; then
+            echo 'Canonical KXF already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exports/kxf-learning-modules-0.1.json
+          git commit -m 'fix(learning): register energy-work module in canonical KXF'
+          git push
