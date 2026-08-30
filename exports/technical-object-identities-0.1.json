@@ -1,0 +1,65 @@
+{
+  "schema": "KUEPER-TECHNICAL-OBJECT-IDENTITIES-0.1",
+  "name": "KUEPER Technical Object Identity Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "draft_productive",
+  "version": "0.1.0",
+  "updated": "2026-08-30",
+  "sourceTasks": [
+    "EXT-OTA-KG-20260829-water-extractor-object-identity",
+    "EXT-OTA-KG-20260829-rover-vex-object-identities"
+  ],
+  "principles": [
+    "KG owns shared identity and cross-system relations only.",
+    "OTA owns canonical dossier content and fictional technical state.",
+    "NOXIA owns local gameplay representation and balancing.",
+    "Type identity and individual instance identity are distinct."
+  ],
+  "records": [
+    {
+      "id": "OTYPE:OTA:WASSEREXTRAKTOR-MARS-TYP-M",
+      "type": "ObjectType",
+      "status": "canonical",
+      "label": "Wasserextraktor Typ M",
+      "externalObjectId": "wasserextraktor-mars-typ-m",
+      "dossierId": "OTA-TEC-0034-WEX-M",
+      "describedBy": ["DOC:OTA:OTA-TEC-0034-2026-DE"],
+      "consumers": [{"system": "SYS:KUEPER:noxia", "role": "buildable"}]
+    },
+    {
+      "id": "OTYPE:OTA:ERKUNDUNGSROVER-MOND-TYP-P",
+      "type": "ObjectType",
+      "status": "canonical",
+      "label": "Erkundungsrover Typ P",
+      "externalObjectId": "erkundungsrover-mond-typ-p",
+      "dossierId": "OTA-TEC-0036-ROV-P",
+      "describedBy": ["DOC:OTA:OTA-TEC-0036-2026-DE"],
+      "consumers": [{"system": "SYS:KUEPER:noxia", "role": "buildable"}]
+    },
+    {
+      "id": "OTYPE:OTA:VEX-47-EXPLORATIONSDROHNE",
+      "type": "ObjectType",
+      "status": "canonical",
+      "label": "VEX-47 Explorationsdrohne",
+      "externalObjectId": "vex-47-explorationsdrohne-basistyp",
+      "dossierId": "OTA-TEC-0037-VEX-47",
+      "describedBy": ["DOC:OTA:OTA-TEC-0037-2026-DE"],
+      "consumers": [{"system": "SYS:KUEPER:noxia", "role": "buildable"}]
+    },
+    {
+      "id": "OBJ:OTA:VEX-LAIN-EINHEIT-01",
+      "type": "Object",
+      "status": "canonical",
+      "label": "VEX Lain Einheit 01",
+      "externalObjectId": "vex-lain-einheit-01",
+      "sourceCanonicalId": "OTA-TEC-0037-INST-01",
+      "describedBy": ["DOC:OTA:OTA-TEC-0037-2026-DE"],
+      "relations": [
+        {
+          "type": "INSTANCE_OF",
+          "target": "OTYPE:OTA:VEX-47-EXPLORATIONSDROHNE"
+        }
+      ]
+    }
+  ]
+}
