@@ -21,3 +21,6 @@ jobs:
 
       - name: Source-of-Truth prüfen
         run: python3 scripts/check_source_of_truth.py
+
+      - name: KG Curator v0.1 testen
+        run: python3 -m unittest tests/test_kg_curator.py
