@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.3.0",
+  "version": "0.2.11",
   "created": "2026-07-02",
-  "modified": "2026-08-30T00:00:00+00:00",
+  "modified": "2026-08-30T16:55:00+02:00",
   "sourceDocuments": [
     "KG-0005-entry-question-levels",
     "KG-0010",
@@ -17,7 +17,8 @@
     "KG-0004-LEARNING-MODEL",
     "KG-0009",
     "EXT-SSF-KG-20260829-noxia-unlock-learning-module-identities",
-    "KG-LEARNING-SYNC-20260829-NEW-MODULES"
+    "KG-LEARNING-SYNC-20260829-NEW-MODULES",
+    "EXT-NOX-KG-20260829-energy-work-gravitational-well-module"
   ],
   "contracts": {
     "consumer": "SYS:KUEPER:ssf",
@@ -328,6 +329,14 @@
         "type": "Path",
         "purpose": "learn",
         "target": "PHY-L2-000004",
+        "status": "draft_productive",
+        "sourceSystem": "SSF"
+      },
+      {
+        "id": "PATH:SSF:PHY-ENERGIE-ARBEIT-0001",
+        "type": "Path",
+        "purpose": "learn",
+        "target": "PHY-L2-000005",
         "status": "draft_productive",
         "sourceSystem": "SSF"
       }
@@ -4540,6 +4549,67 @@
           "otaReference": "OTA-TEC-0034 §9 TAUGHT_BY",
           "curator": "T.P.K."
         }
+      },
+      {
+        "id": "PHY-L2-000005",
+        "version": "0.1.0",
+        "created": "2026-08-30",
+        "modified": "2026-08-30",
+        "title": {
+          "de": "Energie & Arbeit — Gravitationspotential und Gravitationsbrunnen",
+          "en": "Energy & Work — Gravitational Potential and Gravity Wells"
+        },
+        "meta": {
+          "title": "Energie & Arbeit — Gravitationspotential und Gravitationsbrunnen",
+          "subject": "PHY",
+          "type": "brueckenmodul",
+          "status": "planned",
+          "entryQuestion": "Warum muss man Arbeit verrichten, um aus einem Gravitationsbrunnen herauszukommen?",
+          "depthMin": 1,
+          "depthMax": null,
+          "durationMin": 5,
+          "durationMax": 10,
+          "entryQuestions": {
+            "L0": "Warum kostet es Energie, einen Planeten zu verlassen?",
+            "L1": "Wie hängen Arbeit, potentielle Energie und Gravitationspotential zusammen?",
+            "L2": "Wie beschreibt ein Gravitationsbrunnen die energetische Bindung in einem Gravitationsfeld?"
+          },
+          "scope": [
+            "Arbeit",
+            "Energie",
+            "potentielle Energie",
+            "Gravitationspotential",
+            "gravitationsbrunnen"
+          ]
+        },
+        "assets": {
+          "text": [],
+          "svg": [],
+          "image": [],
+          "video": [],
+          "audio": [],
+          "experiment": []
+        },
+        "dependencies": {
+          "requires": [
+            "PHY-L1-000025"
+          ],
+          "moduleUnlocks": [],
+          "pathUnlocks": [],
+          "archiveUnlocks": []
+        },
+        "branches": [],
+        "noxiaGrants": [],
+        "legacyId": "LRN:SSF:PHY-ENERGIE-ARBEIT-0001",
+        "createdFromRequest": "EXT-NOX-KG-20260829-energy-work-gravitational-well-module",
+        "interactiveRefs": [
+          "gravitationsbrunnen"
+        ],
+        "source": {
+          "authoringFile": "learning/ssf-phy-energie-arbeit-gravitationsbrunnen.yaml",
+          "ssfPathId": "PATH:SSF:PHY-ENERGIE-ARBEIT-0001",
+          "curator": "T.P.K."
+        }
       }
     ],
     "CHE-L1-000015": {
@@ -4672,5 +4742,5 @@
       "resolution": "Remove learning_path from moduleTypes. Use records.paths for PATH objects."
     }
   ],
-  "updated": "2026-08-29"
+  "updated": "2026-08-30"
 }
