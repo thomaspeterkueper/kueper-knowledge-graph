@@ -1,0 +1,29 @@
+module_id: PHY-L2-000005
+legacy_id: LRN:SSF:PHY-ENERGIE-ARBEIT-0001
+typ: LearningModule
+layer: L2
+name: Energie & Arbeit — Gravitationspotential und Gravitationsbrunnen
+domain: PHY
+subdomain: mechanics-energy-gravitation
+status: '[R]'
+requires:
+  - PHY-L1-000025
+teaches:
+  - CON:L1:arbeit-physik
+  - CON:L1:energie
+  - CON:L1:potentielle-energie
+  - CON:L1:gravitationspotential
+  - CON:L1:gravitationsbrunnen
+unlocks: []
+ssf_path_id: PATH:SSF:PHY-ENERGIE-ARBEIT-0001
+interactive_refs:
+  - gravitationsbrunnen
+created: '2026-08-30'
+curator: T.P.K.
+created_from_request: EXT-NOX-KG-20260829-energy-work-gravitational-well-module
+notes: >
+  Kanonische Lernidentität für den fachlichen Gegenstand Energie und Arbeit.
+  Die Interactive-ID gravitationsbrunnen bleibt eine lokale Contentreferenz und
+  ist keine kanonische Modul-ID. SSF besitzt die didaktische Ausgestaltung;
+  NOXIA bindet lokale foundation_kurse-Datensätze ausschließlich über die
+  kanonische PATH-ID an.
