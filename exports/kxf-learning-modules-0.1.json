@@ -3,9 +3,9 @@
   "name": "KUEPER SSF Learning Modules Export",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.2.10",
+  "version": "0.3.0",
   "created": "2026-07-02",
-  "modified": "2026-08-29T22:20:00+02:00",
+  "modified": "2026-08-30T00:00:00+00:00",
   "sourceDocuments": [
     "KG-0005-entry-question-levels",
     "KG-0010",
@@ -4541,7 +4541,71 @@
           "curator": "T.P.K."
         }
       }
-    ]
+    ],
+    "CHE-L1-000015": {
+      "id": "CHE-L1-000015",
+      "legacyId": "LRN:SSF:NOX-WATER-PROCESSING",
+      "version": "0.3.0",
+      "created": "2026-08-30",
+      "modified": "2026-08-30",
+      "title": {
+        "de": "Warum ist Wasser aus dem Fluss nicht trinkbar?",
+        "en": "Water Processing I"
+      },
+      "meta": {
+        "subject": "CHE",
+        "type": "learning_path",
+        "status": "prototype",
+        "durationMin": 15,
+        "durationMax": 30,
+        "entryQuestion": "Warum kann man Wasser aus einem sauber aussehenden Bach nicht einfach trinken?"
+      },
+      "noxiaGrants": [
+        "UNL:NOX:water-processing"
+      ],
+      "unlocks": [
+        "UNL:NOX:water-processing",
+        "BLD:NOX:wasseraufbereitung-1"
+      ],
+      "dependencies": {
+        "requires": [],
+        "moduleUnlocks": [
+          "UNL:NOX:water-processing"
+        ]
+      }
+    },
+    "ENG-L1-000005": {
+      "id": "ENG-L1-000005",
+      "legacyId": "LRN:SSF:NOX-RESOURCE-EXTRACTION",
+      "version": "0.3.0",
+      "created": "2026-08-30",
+      "modified": "2026-08-30",
+      "title": {
+        "de": "Wie kommt ein Mineral aus dem Boden in die Fabrik?",
+        "en": "Resource Extraction I"
+      },
+      "meta": {
+        "subject": "ENG",
+        "type": "learning_path",
+        "status": "prototype",
+        "durationMin": 15,
+        "durationMax": 30,
+        "entryQuestion": "Wie kommt Rohstoff aus dem Boden in die Fabrik — und was geht dabei verloren?"
+      },
+      "noxiaGrants": [
+        "UNL:NOX:resource-extraction"
+      ],
+      "unlocks": [
+        "UNL:NOX:resource-extraction",
+        "BLD:NOX:mine-1"
+      ],
+      "dependencies": {
+        "requires": [],
+        "moduleUnlocks": [
+          "UNL:NOX:resource-extraction"
+        ]
+      }
+    }
   },
   "deferred_modules": [
     {
