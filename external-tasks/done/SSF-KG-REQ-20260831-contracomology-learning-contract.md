@@ -18,7 +18,7 @@ Die angeforderten Identitäten sind als KG-owned Learning Contract registriert:
 
 `CON:L1:ma-u` und `CON:L1:ma-ta-u` bleiben bis zur kanonischen Definitionsfreigabe vom Lernvertrag ausgeschlossen. Es werden keine NOXIA-Unlocks eingeführt.
 
-Maschinenlesbare Bereitstellung: `exports/contracomology-0.1.json`, Recordset `records.learning_contracts`. Die Learning-Identität ist zusätzlich unter `learning/ssf-kon-einfuehrung-0001.yaml` hinterlegt.
+Maschinenlesbare Bereitstellung: `exports/contracomology-0.1.json`, Recordset `records.learning_contracts`. Dieses Export ist bereits als aktiver SSF-Consumer-Contract in KXF registriert; dadurch wird keine zweite konkurrierende Learning-SoT eingeführt.
 
 ## Source-of-Truth-Grenze
 
