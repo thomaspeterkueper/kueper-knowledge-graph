@@ -1,0 +1,52 @@
+{
+  "schema": "KUEPER-RUNTIME-PROJECTION-REGISTRY-0.1",
+  "name": "KUEPER Runtime Projection Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "canonical",
+  "version": "0.1.0",
+  "updated": "2026-08-31",
+  "sourceDocuments": [
+    "KG-0019-RUNTIME-EVENT-PROJECTIONS",
+    "KG-0020-EVENT-STATE-OBJECT-RELATIONS"
+  ],
+  "purpose": "Registers explicit mappings from consumer-owned runtime identifiers to canonical KG identities after promotion. Runtime identifiers never become canonical IDs themselves.",
+  "allowedRuntimeKinds": [
+    "entity",
+    "event",
+    "state"
+  ],
+  "allowedCanonicalTargetTypes": {
+    "entity": ["Object", "Animal", "Document", "System", "*canonical-stable-entity"],
+    "event": ["Event"],
+    "state": ["State"]
+  },
+  "mappingRelation": "PROJECTS_TO",
+  "promotionGate": {
+    "required": [
+      "stable_cross_system_identity",
+      "canonical_subject_or_object_reference",
+      "time_or_validity_resolved_or_explicitly_uncertain",
+      "provenance",
+      "source_of_truth_owner",
+      "explicit_kg_id_assignment"
+    ],
+    "automaticPromotion": false,
+    "consumerMayMintCanonicalIds": false
+  },
+  "recordSchema": {
+    "required": [
+      "id",
+      "consumer",
+      "runtimeKind",
+      "runtimeId",
+      "canonicalId",
+      "mapping",
+      "status",
+      "source"
+    ],
+    "idPattern": "RPM:<consumer-system-slug>:<runtime-kind>:<stable-slug>",
+    "mapping": "PROJECTS_TO",
+    "statusValues": ["candidate", "accepted", "rejected", "superseded"]
+  },
+  "records": []
+}
