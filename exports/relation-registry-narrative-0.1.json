@@ -1,0 +1,74 @@
+{
+  "schema": "KUEPER-RELATION-REGISTRY-0.1",
+  "name": "KUEPER Relation Registry — Narrative World Shard",
+  "master": "kueper-knowledge-graph",
+  "status": "canonical",
+  "version": "0.1.0",
+  "updated": "2026-08-31",
+  "sourceDocuments": [
+    "KG-0003-RELATIONS",
+    "KG-0009-NARRATIVE-WORLD-MODEL",
+    "KG-0019-RUNTIME-EVENT-PROJECTIONS",
+    "KG-0020-EVENT-STATE-OBJECT-RELATIONS"
+  ],
+  "relationTypes": [
+    "DESCRIBES_STATE_OF",
+    "AFFECTS",
+    "PRODUCES_STATE",
+    "ENDS_STATE",
+    "PARTICIPATES_IN",
+    "OCCURS_AT"
+  ],
+  "definitions": [
+    {
+      "relation": "DESCRIBES_STATE_OF",
+      "fromTypes": ["State"],
+      "toTypes": ["Object", "Animal", "Document", "System", "*canonical-stable-entity"],
+      "cardinality": "one-primary-subject-per-state",
+      "description": "Links a canonical temporal state to the stable canonical entity whose state it describes."
+    },
+    {
+      "relation": "AFFECTS",
+      "fromTypes": ["Event"],
+      "toTypes": ["*canonical-entity"],
+      "cardinality": "many",
+      "description": "Links a canonical event to an entity it affects in a canonically relevant way."
+    },
+    {
+      "relation": "PRODUCES_STATE",
+      "fromTypes": ["Event"],
+      "toTypes": ["State"],
+      "cardinality": "many",
+      "description": "Links a canonical event to a canonical state whose validity begins as a consequence of the event."
+    },
+    {
+      "relation": "ENDS_STATE",
+      "fromTypes": ["Event"],
+      "toTypes": ["State"],
+      "cardinality": "many",
+      "description": "Links a canonical event to a canonical state whose validity ends because of the event."
+    },
+    {
+      "relation": "PARTICIPATES_IN",
+      "fromTypes": ["*canonical-entity"],
+      "toTypes": ["Event"],
+      "cardinality": "many",
+      "description": "Links a canonical participant entity to a canonical event."
+    },
+    {
+      "relation": "OCCURS_AT",
+      "fromTypes": ["Event"],
+      "toTypes": ["*canonical-location-entity"],
+      "cardinality": "zero-or-one-primary-location",
+      "description": "Links a canonical event to its canonical primary location when such a location is known."
+    }
+  ],
+  "nonGraphMappingRelations": [
+    {
+      "relation": "PROJECTS_TO",
+      "registry": "exports/runtime-projection-registry-0.1.json",
+      "description": "Maps a consumer runtime identifier to a canonical KG identifier. Runtime identifiers are not KG entities, therefore PROJECTS_TO is not stored as a normal REL edge."
+    }
+  ],
+  "records": []
+}
