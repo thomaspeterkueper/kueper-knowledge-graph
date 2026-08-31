@@ -3,45 +3,13 @@
   "name": "KUEPER Space Knowledge Domains",
   "master": "kueper-knowledge-graph",
   "status": "canonical",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "updated": "2026-08-31",
-  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS"],
+  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS", "RES-20260830-TEC0085A"],
   "records": [
-    {
-      "id": "KD:SPACE:N1",
-      "type": "KnowledgeDomain",
-      "layer": "L1",
-      "code": "SPACE",
-      "level": "N1",
-      "title": "Raumfahrttechnik und Raumflugbetrieb - Orientierung",
-      "parent": null,
-      "description": "Orientierung in Raumfahrtsystemen, Missionsprofilen, Orbitalbegriffen, Antrieben und Betriebsgrenzen.",
-      "aliases": ["SPACE N1", "Spaceflight N1", "Raumfahrt N1"],
-      "status": "canonical"
-    },
-    {
-      "id": "KD:SPACE-ORBITAL-MECHANICS:N2",
-      "type": "KnowledgeDomain",
-      "layer": "L1",
-      "code": "SPACE-ORBITAL-MECHANICS",
-      "level": "N2",
-      "title": "Orbitalmechanik - arbeitsfaehiges Grundverstaendnis",
-      "parent": "KD:SPACE:N1",
-      "description": "Arbeitsfaehiges Grundverstaendnis von Bahnenergie, Transferbahnen, Delta-v, Einfangmanoevern und vereinfachten Zwei- und Mehrkoerpernaeherungen.",
-      "aliases": ["Orbital mechanics N2", "Orbitalmechanik N2"],
-      "status": "canonical"
-    },
-    {
-      "id": "KD:SPACE-PROPULSION:N1",
-      "type": "KnowledgeDomain",
-      "layer": "L1",
-      "code": "SPACE-PROPULSION",
-      "level": "N1",
-      "title": "Raumfahrtantriebe - Orientierung",
-      "parent": "KD:SPACE:N1",
-      "description": "Orientierung zu chemischen Raumfahrtantrieben, spezifischem Impuls, Schub, Massenverhaeltnis, Treibstoffsystemen und kryogenem Betrieb.",
-      "aliases": ["Space propulsion N1", "Raumfahrtantriebe N1"],
-      "status": "canonical"
-    }
+    {"id":"KD:SPACE:N1","type":"KnowledgeDomain","layer":"L1","code":"SPACE","level":"N1","title":"Raumfahrttechnik und Raumflugbetrieb - Orientierung","parent":null,"description":"Orientierung in Raumfahrtsystemen, Missionsprofilen, Orbitalbegriffen, Antrieben und Betriebsgrenzen.","aliases":["SPACE N1","Spaceflight N1","Raumfahrt N1"],"status":"canonical"},
+    {"id":"KD:SPACE-ORBITAL-MECHANICS:N2","type":"KnowledgeDomain","layer":"L1","code":"SPACE-ORBITAL-MECHANICS","level":"N2","title":"Orbitalmechanik - arbeitsfaehiges Grundverstaendnis","parent":"KD:SPACE:N1","description":"Arbeitsfaehiges Grundverstaendnis von Bahnenergie, Transferbahnen, Delta-v, Einfangmanoevern und vereinfachten Zwei- und Mehrkoerpernaeherungen.","aliases":["Orbital mechanics N2","Orbitalmechanik N2"],"status":"canonical"},
+    {"id":"KD:SPACE-PROPULSION:N1","type":"KnowledgeDomain","layer":"L1","code":"SPACE-PROPULSION","level":"N1","title":"Raumfahrtantriebe - Orientierung","parent":"KD:SPACE:N1","description":"Orientierung zu chemischen Raumfahrtantrieben, spezifischem Impuls, Schub, Massenverhaeltnis, Treibstoffsystemen und kryogenem Betrieb.","aliases":["Space propulsion N1","Raumfahrtantriebe N1"],"status":"canonical"},
+    {"id":"KD:SPACE-PROPULSION:N2","type":"KnowledgeDomain","layer":"L1","code":"SPACE-PROPULSION","level":"N2","title":"Raumfahrtantriebe - arbeitsfaehiges Grundverstaendnis","parent":"KD:SPACE-PROPULSION:N1","description":"Vertieft chemische Vakuumantriebe, Triebwerkszyklen, Kammerdruck, Duesenexpansion, spezifischen Impuls, Restart- und Lebensdauerfragen sowie Mehrtriebwerks- und Engine-out-Auslegung. Die Domaene beschreibt reales Fachwissen und kanonisiert keine fiktionalen Leistungswerte.","aliases":["Space propulsion N2","Rocket propulsion N2","Raumfahrtantriebe N2","Hydrolox propulsion N2"],"status":"canonical"}
   ]
 }
