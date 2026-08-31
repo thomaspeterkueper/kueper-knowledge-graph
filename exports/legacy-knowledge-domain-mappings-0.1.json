@@ -54,5 +54,5 @@
     {"legacyId":"KNOW:ENG-FILTRATION","canonicalIds":["KD:ENG-WATER-TREATMENT:N2"],"classification":"new_canonical_domain"},
     {"legacyId":"KNOW:ENV-WATER","canonicalIds":["KD:ENV:N1"],"classification":"maps_existing"}
   ],
-  "summary":{"uniqueLegacyIds":39,"mapsExisting":28,"newCanonicalDomainsReferenced":11,"consumerLocalOnly":0}
+  "summary":{"uniqueLegacyIds":39,"mapsExisting":29,"newCanonicalDomainsDirectlyReferenced":10,"newCanonicalDomainsCreatedIncludingParents":12,"consumerLocalOnly":0}
 }
