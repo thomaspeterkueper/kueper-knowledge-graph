@@ -1,0 +1,15 @@
+entity_id: CON:L1:entmagnetisierung
+typ: Concept
+layer: L1
+name: Entmagnetisierung
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Entmagnetisierung reduziert oder entfernt die Magnetisierung eines Werkstuecks. Sie erfolgt durch
+  Erhitzen ueber die Curie-Temperatur, mechanische Stoesse oder abklingende Wechselfelder.
+derived_from:
+  - CON:L0:veraenderung
+  - CON:L1:hysterese
+  - CON:L1:curie-temperatur
+erstellt: '2026-08-21'
+kurator: T.P.K.

@@ -1,0 +1,19 @@
+entity_id: CON:L1:weichmagnetische-werkstoffe
+typ: Concept
+layer: L1
+name: Weichmagnetische Werkstoffe
+domäne: MTL
+status: '[R]'
+beschreibung: >
+  Weichmagnetische Werkstoffe besitzen eine kleine Koerzitivfeldstaerke und werden leicht
+  ummagnetisiert. Sie werden in Transformatoren, Motoren und magnetischen Abschirmungen eingesetzt.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:ferromagnetismus
+  - CON:L1:koerzitivfeldstaerke
+enables:
+  - CON:L1:transformator
+  - CON:L1:magnetische-abschirmung
+  - CON:L1:ferrit
+erstellt: '2026-08-21'
+kurator: T.P.K.

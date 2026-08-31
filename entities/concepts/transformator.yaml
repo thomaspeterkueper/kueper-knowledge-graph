@@ -1,0 +1,15 @@
+entity_id: CON:L1:transformator
+typ: Concept
+layer: L1
+name: Transformator
+domäne: ELEC
+status: '[R]'
+beschreibung: >
+  Der Transformator uebertraegt Wechselspannung ueber magnetische Kopplung zwischen Spulen. Sein
+  weichmagnetischer Kern fuehrt den magnetischen Fluss mit geringen Verlusten.
+derived_from:
+  - CON:L0:energie
+  - CON:L1:elektromagnetismus
+  - CON:L1:weichmagnetische-werkstoffe
+erstellt: '2026-08-21'
+kurator: T.P.K.

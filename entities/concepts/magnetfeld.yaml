@@ -1,0 +1,21 @@
+entity_id: CON:L1:magnetfeld
+typ: Concept
+layer: L1
+name: Magnetfeld
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Magnetfelder beschreiben die Kraftwirkung, die bewegte Ladungen und magnetische Materialien
+  aufeinander ausueben. Sie werden durch Feldlinien visualisiert und entstehen um Stroeme und
+  magnetische Dipole.
+derived_from:
+  - CON:L0:materie
+  - CON:L0:energie
+  - CON:L0:struktur
+enables:
+  - CON:L1:magnetisches-moment
+  - CON:L1:magnetische-domaenen
+  - CON:L1:wirbelstroeme
+  - CON:L1:magnetische-abschirmung
+erstellt: '2026-08-21'
+kurator: T.P.K.

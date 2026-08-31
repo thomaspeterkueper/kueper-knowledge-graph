@@ -1,0 +1,17 @@
+entity_id: CON:L1:elektronenspin
+typ: Concept
+layer: L1
+name: Elektronenspin
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Der Elektronenspin ist eine intrinsische quantenmechanische Eigenschaft des Elektrons. Er erzeugt
+  ein magnetisches Moment und ist die Ursache des Magnetismus von Atomen.
+derived_from:
+  - CON:L0:materie
+  - CON:L0:energie
+enables:
+  - CON:L1:magnetisches-moment
+  - CON:L1:ferromagnetismus
+erstellt: '2026-08-21'
+kurator: T.P.K.

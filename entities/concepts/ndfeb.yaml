@@ -1,0 +1,17 @@
+entity_id: CON:L1:ndfeb
+typ: Concept
+layer: L1
+name: NdFeB
+domäne: MTL
+status: '[R]'
+beschreibung: >
+  NdFeB-Magnete aus Neodym, Eisen und Bor sind die staerksten kommerziellen Permanentmagnete. Sie sind
+  entscheidend fuer Elektromotoren, aber empfindlich gegen Waerme und Korrosion.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:hartmagnetische-werkstoffe
+  - CON:L1:kritische-rohstoffe
+enables:
+  - CON:L1:elektromotor
+erstellt: '2026-08-21'
+kurator: T.P.K.

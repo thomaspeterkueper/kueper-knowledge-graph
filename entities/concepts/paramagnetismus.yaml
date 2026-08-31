@@ -1,0 +1,14 @@
+entity_id: CON:L1:paramagnetismus
+typ: Concept
+layer: L1
+name: Paramagnetismus
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Paramagnetische Materialien besitzen ungepaarte Elektronenspins, die sich in einem Magnetfeld
+  schwach ausrichten. Ohne aeusseres Feld verschwindet die Ausrichtung durch thermische Bewegung.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:magnetisches-moment
+erstellt: '2026-08-21'
+kurator: T.P.K.

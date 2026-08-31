@@ -1,0 +1,16 @@
+entity_id: CON:L1:diamagnetismus
+typ: Concept
+layer: L1
+name: Diamagnetismus
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Diamagnetismus ist eine schwache, dem angelegten Magnetfeld entgegengerichtete magnetische Antwort,
+  die in allen Materialien auftritt. In Stoffen ohne ungepaarte Elektronen ist er typischerweise der
+  alleinige magnetische Beitrag; in anderen Stoffen wird er meist von staerkeren para- oder
+  ferromagnetischen Beitraegen ueberlagert.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:elektronenspin
+erstellt: '2026-08-21'
+kurator: T.P.K.

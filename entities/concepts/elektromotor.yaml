@@ -1,0 +1,15 @@
+entity_id: CON:L1:elektromotor
+typ: Concept
+layer: L1
+name: Elektromotor
+domäne: ELEC
+status: '[R]'
+beschreibung: >
+  Der Elektromotor wandelt elektrische in mechanische Energie: Strom in Spulen erzeugt ein Drehfeld,
+  das den Rotor antreibt. Moderne Motoren nutzen NdFeB-Magnete im Rotor.
+derived_from:
+  - CON:L0:energie
+  - CON:L1:elektromagnetismus
+  - CON:L1:magnetfeld
+erstellt: '2026-08-21'
+kurator: T.P.K.
