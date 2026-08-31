@@ -1,0 +1,33 @@
+{
+  "schema":"KUEPER-MATERIALS-MAGNETICS-0.1",
+  "name":"KUEPER Magnetic Materials Canonical Concepts",
+  "master":"kueper-knowledge-graph",
+  "status":"canonical",
+  "version":"0.1.0",
+  "updated":"2026-08-31",
+  "sourceDocuments":["KG-0021-PERMANENT-MAGNET-MATERIALS","RES-20260831-EAA9EDD9"],
+  "records":{
+    "knowledgeDomains":[
+      {"id":"KD:MAT-MAGNETIC-MATERIALS:N2","type":"KnowledgeDomain","code":"MAT-MAGNETIC-MATERIALS","level":"N2","title":"Magnetische Werkstoffe und Permanentmagnete - arbeitsfaehiges Grundverstaendnis","status":"canonical"}
+    ],
+    "concepts":[
+      {"id":"CON:MAT:ferrite-magnet","type":"Concept","name":"Hartferrit-Permanentmagnet","status":"canonical"},
+      {"id":"CON:MAT:alnico","type":"Concept","name":"AlNiCo-Permanentmagnet","status":"canonical"},
+      {"id":"CON:MAT:smco","type":"Concept","name":"Samarium-Kobalt-Permanentmagnet","status":"canonical"},
+      {"id":"CON:MAT:ndfeb","type":"Concept","name":"Neodym-Eisen-Bor-Permanentmagnet","status":"canonical"},
+      {"id":"CON:MAT:curie-temperature","type":"Concept","name":"Curie-Temperatur","status":"canonical"},
+      {"id":"CON:MAT:working-temperature","type":"Concept","name":"zulaessige Arbeitstemperatur eines Permanentmagneten","status":"canonical"},
+      {"id":"CON:MAT:demagnetization","type":"Concept","name":"Entmagnetisierung","status":"canonical"}
+    ],
+    "consumerMappings":[
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-004","relation":"COVERS","targets":["CON:MAT:ferrite-magnet","CON:MAT:alnico","CON:MAT:smco","CON:MAT:ndfeb"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-005","relation":"COVERS","targets":["CON:MAT:curie-temperature","CON:MAT:demagnetization","CON:MAT:working-temperature"],"status":"draft_mapping"}
+    ]
+  },
+  "rules":[
+    "Curie temperature is not maximum operating temperature.",
+    "Working temperature is grade, geometry, counter-field and criterion dependent.",
+    "Market prices and supply-chain values are dated evidence snapshots, not invariant concept properties.",
+    "SSF owns teaching text; KG owns canonical concept and knowledge-domain identities."
+  ]
+}
