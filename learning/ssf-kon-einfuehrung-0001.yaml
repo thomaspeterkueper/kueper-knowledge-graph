@@ -1,0 +1,26 @@
+module_id: LRN:SSF:KON-L1-000001
+canonical_id: KON-L1-000001
+typ: LearningModule
+layer: L1
+name: Contracomology - Orientierung
+domain: KON
+knowledge_domain: KD:KON:N1
+status: '[W]'
+requires: []
+teaches:
+  - CON:L1:zeitform
+  - CON:L1:avi-punkt
+  - CON:L1:oem
+  - CON:L1:paradigma-1
+  - CON:L1:paradigma-2
+  - CON:L1:paradigma-3
+excludes_pending_definitions:
+  - CON:L1:ma-u
+  - CON:L1:ma-ta-u
+unlocks: []
+ssf_path_id: PATH:SSF:KON-EINFUEHRUNG-0001
+created: '2026-08-31'
+curator: T.P.K.
+notes: >
+  Canonical identity/learning contract only. SSF remains Source of Truth for
+  didactics, chapters, exercises and competency tests. No NOXIA unlocks.
