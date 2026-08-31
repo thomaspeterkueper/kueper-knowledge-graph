@@ -1,0 +1,18 @@
+entity_id: CON:L1:ferrit
+typ: Concept
+layer: L1
+name: Ferrit
+domäne: MTL
+status: '[R]'
+beschreibung: >
+  Ferrite sind oxidkeramische Werkstoffe auf Eisenoxid-Basis. Die Klasse umfasst weichmagnetische
+  Ferrite (z.B. MnZn-/NiZn-Ferrite, typische Kernmaterialien von Transformatoren und Induktivitaeten)
+  ebenso wie hartmagnetische Ferrite (z.B. Ba-/Sr-Ferrit fuer Permanentmagnete). Ferrite sind
+  preiswert und korrosionsbestaendig; hartmagnetische Ferrite sind allerdings schwaechere Magnete
+  als Seltenerd-Werkstoffe.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:hartmagnetische-werkstoffe
+  - CON:L1:weichmagnetische-werkstoffe
+erstellt: '2026-08-21'
+kurator: T.P.K.

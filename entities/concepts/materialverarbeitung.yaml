@@ -1,0 +1,15 @@
+entity_id: CON:L1:materialverarbeitung
+typ: Concept
+layer: L1
+name: Materialverarbeitung
+domäne: MTL
+status: '[R]'
+beschreibung: >
+  Die Verarbeitung umfasst alle Verfahren von der Rohstoffaufbereitung bis zum fertigen Bauteil:
+  Legieren, Pressen, Sintern, Beschichten. Sie entscheidet ueber die erreichbaren magnetischen
+  Eigenschaften.
+derived_from:
+  - CON:L0:veraenderung
+  - CON:L0:materie
+erstellt: '2026-08-21'
+kurator: T.P.K.

@@ -1,0 +1,18 @@
+entity_id: CON:L1:kritische-rohstoffe
+typ: Concept
+layer: L1
+name: Kritische Rohstoffe
+domäne: ENV
+status: '[R]'
+beschreibung: >
+  Kritische Rohstoffe sind Elemente mit hoher wirtschaftlicher Bedeutung und hohem Versorgungsrisiko,
+  etwa Neodym, Samarium und Kobalt. Sie sind geografisch konzentriert und schwer zu substituieren.
+derived_from:
+  - CON:L0:materie
+  - CON:L0:energie
+enables:
+  - CON:L1:recycling
+  - CON:L1:smco
+  - CON:L1:ndfeb
+erstellt: '2026-08-21'
+kurator: T.P.K.

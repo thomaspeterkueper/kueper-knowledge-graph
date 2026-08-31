@@ -1,0 +1,15 @@
+entity_id: CON:L1:flux-pinning
+typ: Concept
+layer: L1
+name: Flux Pinning
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Flux Pinning verankert Magnetfeldlinien in Defekten von Typ-II-Supraleitern. Dadurch schwebt ein
+  Supraleiter stabil ueber einem Magneten, etwa bei Schwebebahnen.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:supraleitung
+  - CON:L1:magnetfeld
+erstellt: '2026-08-21'
+kurator: T.P.K.

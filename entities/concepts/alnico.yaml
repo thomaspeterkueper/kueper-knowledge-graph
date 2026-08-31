@@ -1,0 +1,16 @@
+entity_id: CON:L1:alnico
+typ: Concept
+layer: L1
+name: AlNiCo
+domäne: MTL
+status: '[R]'
+beschreibung: >
+  AlNiCo bezeichnet eine in den 1930er Jahren entwickelte Gruppe von Permanentmagnet-Legierungen
+  auf Basis von Aluminium, Nickel, Kobalt und Eisen. AlNiCo-Magnete besitzen eine hohe Remanenz und
+  eignen sich fuer vergleichsweise hohe Einsatztemperaturen, haben jedoch eine relativ geringe
+  Koerzitivfeldstaerke.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:hartmagnetische-werkstoffe
+erstellt: '2026-08-21'
+kurator: T.P.K.

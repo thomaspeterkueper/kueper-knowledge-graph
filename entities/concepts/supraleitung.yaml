@@ -1,0 +1,16 @@
+entity_id: CON:L1:supraleitung
+typ: Concept
+layer: L1
+name: Supraleitung
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Supraleitung ist der verlustfreie elektrische Transport unterhalb einer kritischen Temperatur.
+  Supraleiter verdrangen Magnetfelder aus ihrem Inneren (Meissner-Effekt).
+derived_from:
+  - CON:L0:materie
+  - CON:L0:energie
+enables:
+  - CON:L1:flux-pinning
+erstellt: '2026-08-21'
+kurator: T.P.K.

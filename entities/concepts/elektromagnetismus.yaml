@@ -1,0 +1,21 @@
+entity_id: CON:L1:elektromagnetismus
+typ: Concept
+layer: L1
+name: Elektromagnetismus
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Der Elektromagnetismus beschreibt die Vereinigung elektrischer und magnetischer Phaenomene. Bewegte
+  Ladungen erzeugen Magnetfelder; zeitlich veraenderliche Magnetfelder erzeugen elektrische
+  Spannungen.
+derived_from:
+  - CON:L0:materie
+  - CON:L0:energie
+  - CON:L0:veraenderung
+enables:
+  - CON:L1:transformator
+  - CON:L1:elektromotor
+  - CON:L1:generator
+  - CON:L1:wirbelstroeme
+erstellt: '2026-08-21'
+kurator: T.P.K.

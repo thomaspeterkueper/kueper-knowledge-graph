@@ -1,0 +1,14 @@
+entity_id: CON:L1:remanenz
+typ: Concept
+layer: L1
+name: Remanenz
+domäne: PHY
+status: '[R]'
+beschreibung: >
+  Die Remanenz ist die verbleibende Magnetisierung eines Materials nach Abschalten des aeusseren
+  Feldes. Sie bestimmt, wie stark ein Permanentmagnet ohne Feld bleibt.
+derived_from:
+  - CON:L0:materie
+  - CON:L1:hysterese
+erstellt: '2026-08-21'
+kurator: T.P.K.

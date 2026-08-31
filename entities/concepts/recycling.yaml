@@ -1,0 +1,14 @@
+entity_id: CON:L1:recycling
+typ: Concept
+layer: L1
+name: Recycling
+domäne: ENV
+status: '[R]'
+beschreibung: >
+  Recycling gewinnt Wertstoffe aus Altprodukten zurueck. Bei Magneten betrifft es insbesondere
+  Seltenerdmetalle und Kobalt aus Elektromotoren, Generatoren und Windkraftanlagen.
+derived_from:
+  - CON:L0:veraenderung
+  - CON:L1:kritische-rohstoffe
+erstellt: '2026-08-21'
+kurator: T.P.K.
