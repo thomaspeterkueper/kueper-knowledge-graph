@@ -1,0 +1,31 @@
+{
+  "schema":"KUEPER-CHEMISTRY-FOOD-THERMAL-0.1",
+  "name":"KUEPER Food Chemistry Thermal Process Canon",
+  "master":"kueper-knowledge-graph",
+  "status":"canonical",
+  "version":"0.1.0",
+  "updated":"2026-08-31",
+  "sourceDocuments":["RES-20260831-B813E7F4"],
+  "records":{
+    "knowledgeDomains":[
+      {"id":"KD:CHE-FOOD-THERMAL:N2","type":"KnowledgeDomain","code":"CHE-FOOD-THERMAL","level":"N2","title":"Thermische Lebensmittelchemie - Zucker, Zersetzung und Braeunung","status":"canonical"}
+    ],
+    "concepts":[
+      {"id":"CON:CHE:sugar-crystal-structure-loss","type":"Concept","name":"thermischer Verlust kristalliner Zuckerstruktur","status":"canonical"},
+      {"id":"CON:CHE:thermal-decomposition","type":"Concept","name":"thermische Zersetzung","status":"canonical"},
+      {"id":"CON:CHE:caramelization","type":"Concept","name":"Karamellisierung","status":"canonical"},
+      {"id":"CON:CHE:thermal-process-kinetics","type":"Concept","name":"Temperatur-Zeit-Kinetik thermischer Reaktionen","status":"canonical"},
+      {"id":"CON:CHE:matrix-water-dependence","type":"Concept","name":"Matrix- und Wassergehaltsabhaengigkeit thermischer Lebensmittelreaktionen","status":"canonical"}
+    ],
+    "consumerMappings":[
+      {"consumer":"SYS:KUEPER:ssf","localId":"PATH:SSF:CHE-KUECHE-KARAMELL-0001","relation":"COVERS","knowledgeDomain":"KD:CHE-FOOD-THERMAL:N2","targets":["CON:CHE:sugar-crystal-structure-loss","CON:CHE:thermal-decomposition","CON:CHE:caramelization","CON:CHE:thermal-process-kinetics","CON:CHE:matrix-water-dependence"],"status":"draft_mapping","sourceRef":"a58fce20a9a595408124cd9bbb14b24271ac3389"}
+    ]
+  },
+  "rules":[
+    "Do not model a universal caramelization temperature as an invariant property of a sugar.",
+    "Separate observed crystal-structure-loss or DSC thermal events from thermal decomposition and caramelization chemistry.",
+    "Thermal reaction claims require temperature and time context; advanced models should additionally represent matrix and water content.",
+    "Numeric onset values are evidence observations tied to sample form and method, not timeless canonical Concept properties.",
+    "SSF owns didactic presentation; KG owns canonical concept and KnowledgeDomain identities."
+  ]
+}
