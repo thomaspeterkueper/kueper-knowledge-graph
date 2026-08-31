@@ -2,7 +2,7 @@
 
 ## Status
 
-Draft productive, 2026-07-02
+Draft productive, 2026-07-02; erweitert 2026-08-31 um `GROUNDED_IN`.
 
 ## Zweck
 
@@ -86,6 +86,33 @@ Regeln:
 | MAPS_TO | Legacy-ID, Mapping | Canonical-ID | Migration oder Aequivalenzabbildung |
 | OWNED_BY | Document, MetadataRecord | System, Repository, Organization | Zustaendigkeit oder Besitz |
 | STORED_IN | Document | Repository, System | Speicherort / Quellsystem |
+| GROUNDED_IN | Document | Document | Quelle nutzt Ziel als kanonischen Realwissenschafts- oder Evidenzanker; projektspezifische Setzungen der Quelle werden nicht auf das Ziel uebertragen |
+
+### `GROUNDED_IN` — Realbasis ohne Wahrheitsduplikation
+
+`GROUNDED_IN` wird verwendet, wenn ein Dokument eines Projekts seine realwissenschaftliche oder technische Grundlage aus einem kanonischen Grundlagen-Dokument eines anderen Source-of-Truth-Bereichs bezieht.
+
+Beispiel:
+
+```json
+{
+  "id": "REL:DOC:OTA:OTA-TEC-0093-2026-DE:GROUNDED_IN:DOC:KUE:KUE-SCI-0172-2026-DE",
+  "type": "Relation",
+  "from": "DOC:OTA:OTA-TEC-0093-2026-DE",
+  "relation": "GROUNDED_IN",
+  "to": "DOC:KUE:KUE-SCI-0172-2026-DE",
+  "status": "canonical",
+  "source": "EXT-KUE-KG-20260831-001"
+}
+```
+
+Semantik:
+
+1. Das Ziel ist der kanonische Realwissenschafts-/Evidenzanker fuer den relevanten Teil der Quelle.
+2. `GROUNDED_IN` bedeutet nicht Identitaet, Vollstaendigkeit oder bidirektionale Aequivalenz.
+3. Fiktionale, theoretische, objektspezifische, Gameplay- oder sonstige projektspezifische Setzungen der Quelle werden nicht Bestandteil des Ziel-Dokuments.
+4. Die Relation ersetzt keine Provenienz auf Claim-Ebene; sie gibt die stabile Dokument-zu-Dokument-Grundierung an.
+5. Der Content-Owner beider Dokumente bleibt unveraendert.
 
 ## Narrative Relationstypen ab KG-0009
 
@@ -144,6 +171,11 @@ Welche NOXIA-Objekte werden durch SSF-Modul PHY-1101 freigeschaltet?
 ```
 
 ```text
+Welche OTA-Dokumente sind durch KUE-SCI-0172 realwissenschaftlich geerdet?
+-> from WHERE relation=GROUNDED_IN AND to=DOC:KUE:KUE-SCI-0172-2026-DE
+```
+
+```text
 Wo befand sich eine Figur am 17.03.2098?
 -> to WHERE from=<PER-ID> AND relation=LOCATED_AT
    AND validFrom <= 2098-03-17
@@ -170,6 +202,13 @@ KG-0003 fuehrt ein:
 docs/KG-0003-RELATIONS.md
 exports/relations-0.1.json
 exports/kxf-0.3.json
+```
+
+Die KUE↔OTA-Realbasis-Erweiterung fuehrt additiv ein:
+
+```text
+exports/document-references-kue-sci-0.1.json
+exports/relations-grounding-0.1.json
 ```
 
 Damit wird KXF ab 0.3 graph-abfragefaehig, ohne die KG-0002-Struktur zu brechen.
