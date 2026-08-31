@@ -1,0 +1,116 @@
+{
+  "schema": "KUEPER-CONTRACOMOLOGY-0.1",
+  "version": "0.1.0",
+  "updated": "2026-08-31",
+  "master": "SYS:KUEPER:knowledge-graph",
+  "sourceDocuments": ["KG-0013-CONTRACOMOLOGY-ONBOARDING", "KG-0017-CONTRACOMOLOGY-CANON"],
+  "records": {
+    "knowledge_domains": [
+      {
+        "id": "KD:KON:N1",
+        "type": "KnowledgeDomain",
+        "code": "KON",
+        "level": "N1",
+        "title": "Kontrakomologie - Orientierung",
+        "status": "canonical",
+        "epistemicStatus": "W",
+        "description": "Orientierung in der Contracomology/Kontrakomologie als kuratorisch gesetzter Werk-Theorie des KUEPER-Oekosystems; keine Behauptung externer empirischer Validierung oder Peer-Review."
+      }
+    ],
+    "entities": [
+      {
+        "id": "CON:L1:zeitform",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "Zeitform",
+        "status": "canonical",
+        "epistemicStatus": "W",
+        "definition": "Denk- und Ordnungsrahmen, in dem zeitliche Ablaeufe gegliedert, gewichtet und erlebt werden. Keine neue physikalische Zeitvariable."
+      },
+      {
+        "id": "CON:L1:avi-punkt",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "AVI-Punkt",
+        "status": "canonical",
+        "epistemicStatus": "W",
+        "definition": "Expliziter Bezugspunkt, an dem Beobachtung, Interpretation und Orientierung zusammengefuehrt werden; keine eigenstaendige physikalische Aussage des AVI-Modells."
+      },
+      {
+        "id": "CON:L1:oem",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "Omnizedentes Entfaltungsmodul",
+        "status": "canonical",
+        "epistemicStatus": "W",
+        "definition": "Strukturelle Einheit der Werk-Theorie, die einen vollstaendigen Transformationsprozess von einer offenen Ausgangslage ueber einen Uebergang zu einer veraenderten Offenheit beschreibt; Prozess, kein Zustand."
+      },
+      {
+        "id": "CON:L1:ma-u",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "Ma'U",
+        "status": "canonical_anchor",
+        "definitionStatus": "pending_definition",
+        "epistemicStatus": "W",
+        "usage": "identity_resolution_only"
+      },
+      {
+        "id": "CON:L1:ma-ta-u",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "Ma'Ta'U",
+        "status": "canonical_anchor",
+        "definitionStatus": "pending_definition",
+        "epistemicStatus": "W",
+        "usage": "identity_resolution_only"
+      },
+      {
+        "id": "CON:L1:paradigma-1",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "Objektperspektive",
+        "status": "canonical",
+        "epistemicStatus": "W",
+        "definition": "Perspektive, in der abgegrenzte Objekte, Eigenschaften und Zustaende die primaeren Beschreibungseinheiten bilden."
+      },
+      {
+        "id": "CON:L1:paradigma-2",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "Beziehungsperspektive",
+        "status": "canonical",
+        "epistemicStatus": "W",
+        "definition": "Perspektive, in der Beziehungen, Kopplungen und wechselseitige Abhaengigkeiten die primaeren Beschreibungseinheiten bilden."
+      },
+      {
+        "id": "CON:L1:paradigma-3",
+        "type": "Concept",
+        "domain": "KON",
+        "name": "Transformationsperspektive",
+        "status": "canonical",
+        "epistemicStatus": "W",
+        "definition": "Perspektive, in der Uebergaenge, Prozesse und Veraenderungsregeln zwischen Zustaenden bzw. Relationen die primaeren Beschreibungseinheiten bilden."
+      }
+    ],
+    "consumer_clearances": [
+      {
+        "id": "CLR:KG:KON:SSF:20260831",
+        "consumer": "SYS:KUEPER:ssf",
+        "status": "approved",
+        "domain": "KD:KON:N1",
+        "subjectCode": "KON",
+        "portalUrl": "https://contracomology.org/",
+        "scope": "academy_catalog_and_learning_context"
+      },
+      {
+        "id": "CLR:KG:KON:NOXIA:20260831",
+        "consumer": "SYS:KUEPER:noxia",
+        "status": "approved",
+        "domain": "KD:KON:N1",
+        "scope": "knowledge_and_competency_reference_only",
+        "note": "Gameplay mechanics and balancing remain NOXIA-owned."
+      }
+    ]
+  }
+}
