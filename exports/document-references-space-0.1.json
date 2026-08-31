@@ -1,58 +1,16 @@
 {
-  "schema": "KUEPER-DOCUMENT-REFERENCES-0.1-SHARD",
-  "name": "KUEPER Space Document References",
-  "master": "kueper-knowledge-graph",
-  "status": "canonical",
-  "version": "0.1.1",
-  "updated": "2026-08-31",
-  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS", "RES-20260831-TEC0082A", "RES-20260831-TEC0093A"],
-  "records": [
-    {
-      "id": "DOC:OTA:OTA-TEC-0082-2026-DE",
-      "canonicalId": "OTA-TEC-0082-2026-DE",
-      "type": "DocumentReference",
-      "system": "SYS:KUEPER:ota",
-      "title": "CYGNUS CTV — Cislunar Transporter Vehicle",
-      "documentType": "TEC",
-      "language": "DE",
-      "status": "canonical",
-      "version": "v1.0",
-      "canonicalUrl": null,
-      "sourceUrl": null,
-      "sourceRepository": "thomaspeterkueper/overtime-archive.org",
-      "sourcePath": "src/content/documents/OTA-TEC-0082-2026-DE.md",
-      "contentOwner": "SYS:KUEPER:ota",
-      "metadataOwner": "SYS:KUEPER:knowledge-graph",
-      "relatedEntities": [],
-      "relatedKnowledgeDomains": [
-        "KD:SPACE-ORBITAL-MECHANICS:N2",
-        "KD:SPACE-PROPULSION:N1"
-      ],
-      "prerequisiteIds": [],
-      "markerProfile": ["R", "H", "T", "F", "OFFEN"],
-      "summary": "Kanonisches OTA-Technikdossier des CYGNUS CTV. Der KG hält Identität und Metadaten; der Volltext bleibt im OverTime Archive. RES-20260831-TEC0082A prüft ausschließlich die extern prüfbare Ingenieursschicht und ändert keine fiktionalen Setzungen."
-    },
-    {
-      "id": "DOC:OTA:OTA-TEC-0093-2026-DE",
-      "canonicalId": "OTA-TEC-0093-2026-DE",
-      "type": "DocumentReference",
-      "system": "SYS:KUEPER:ota",
-      "title": "Life-Support-Kernmodul — regeneratives Umweltkontroll- und Lebenserhaltungssystem",
-      "documentType": "TEC",
-      "language": "DE",
-      "status": "draft_productive",
-      "version": "v1.0",
-      "canonicalUrl": null,
-      "sourceUrl": null,
-      "sourceRepository": "thomaspeterkueper/overtime-archive.org",
-      "sourcePath": "src/content/documents/OTA-TEC-0093-2026-DE.md",
-      "contentOwner": "SYS:KUEPER:ota",
-      "metadataOwner": "SYS:KUEPER:knowledge-graph",
-      "relatedEntities": [],
-      "relatedKnowledgeDomains": [],
-      "prerequisiteIds": [],
-      "markerProfile": ["R", "H", "F", "OFFEN"],
-      "summary": "OTA-Entwurfsdossier für ein wiederverwendbares ECLSS-Kernmodul. Die Dokumentidentität ist stabil registriert; der Inhalt bleibt bis zur OTA-Freigabe draft_productive. RES-20260831-TEC0093A prüft die extern belegbare Ingenieursschicht."
-    }
+  "schema":"KUEPER-DOCUMENT-REFERENCES-0.1-SHARD",
+  "name":"KUEPER Space Document References",
+  "master":"kueper-knowledge-graph",
+  "status":"canonical",
+  "version":"0.1.2",
+  "updated":"2026-08-31",
+  "sourceDocuments":["KG-0018-SPACE-DOMAINS-CYGNUS","RES-20260831-TEC0082A","RES-20260831-TEC0093A","RES-20260830-TEC0085A","RES-20260831-C1748BD0","RES-20260831-4CE6D2E5"],
+  "records":[
+    {"id":"DOC:OTA:OTA-TEC-0082-2026-DE","canonicalId":"OTA-TEC-0082-2026-DE","type":"DocumentReference","system":"SYS:KUEPER:ota","title":"CYGNUS CTV — Cislunar Transporter Vehicle","documentType":"TEC","language":"DE","status":"canonical","version":"v1.0","canonicalUrl":null,"sourceUrl":null,"sourceRepository":"thomaspeterkueper/overtime-archive.org","sourcePath":"src/content/documents/OTA-TEC-0082-2026-DE.md","contentOwner":"SYS:KUEPER:ota","metadataOwner":"SYS:KUEPER:knowledge-graph","relatedEntities":[],"relatedKnowledgeDomains":["KD:SPACE-ORBITAL-MECHANICS:N2","KD:SPACE-PROPULSION:N1"],"prerequisiteIds":[],"markerProfile":["R","H","T","F","OFFEN"],"summary":"Kanonisches OTA-Technikdossier des CYGNUS CTV. Der KG hält Identität und Metadaten; der Volltext bleibt im OverTime Archive."},
+    {"id":"DOC:OTA:OTA-TEC-0093-2026-DE","canonicalId":"OTA-TEC-0093-2026-DE","type":"DocumentReference","system":"SYS:KUEPER:ota","title":"Life-Support-Kernmodul — regeneratives Umweltkontroll- und Lebenserhaltungssystem","documentType":"TEC","language":"DE","status":"draft_productive","version":"v1.0","canonicalUrl":null,"sourceUrl":null,"sourceRepository":"thomaspeterkueper/overtime-archive.org","sourcePath":"src/content/documents/OTA-TEC-0093-2026-DE.md","contentOwner":"SYS:KUEPER:ota","metadataOwner":"SYS:KUEPER:knowledge-graph","relatedEntities":[],"relatedKnowledgeDomains":[],"prerequisiteIds":[],"markerProfile":["R","H","F","OFFEN"],"summary":"Stabile Dokumentidentität für das noch nicht kanonische ECLSS-Komponentendossier."},
+    {"id":"DOC:OTA:OTA-TEC-0085-2026-DE","canonicalId":"OTA-TEC-0085-2026-DE","type":"DocumentReference","system":"SYS:KUEPER:ota","title":"RL-25-Triebwerksklasse — Hydrolox-Oberstufentriebwerk","documentType":"TEC","language":"DE","status":"draft_productive","version":"v1.0","canonicalUrl":null,"sourceUrl":null,"sourceRepository":"thomaspeterkueper/overtime-archive.org","sourcePath":"src/content/documents/OTA-TEC-0085-2026-DE.md","contentOwner":"SYS:KUEPER:ota","metadataOwner":"SYS:KUEPER:knowledge-graph","relatedEntities":[],"relatedKnowledgeDomains":["KD:SPACE-PROPULSION:N2"],"prerequisiteIds":[],"markerProfile":["R","H","F","OFFEN"],"summary":"Stabile Dokumentidentität des Hydrolox-Komponenten-Testfalls. Der Audit stützt reale Hydrolox-Grundlagen, nicht die fiktionale Kombination 450 kN bei 465 s."},
+    {"id":"DOC:OTA:OTA-TEC-0019-2091-DE","canonicalId":"OTA-TEC-0019-2091-DE","type":"DocumentReference","system":"SYS:KUEPER:ota","title":"ECLSS Survival-Protokolle — Notfall-SOP für Kurzzeit-Crew-Transport","documentType":"TEC","language":"DE","status":"canonical","version":"v1.0","canonicalUrl":null,"sourceUrl":null,"sourceRepository":"thomaspeterkueper/overtime-archive.org","sourcePath":"src/content/documents/OTA-TEC-0019-2091-DE.md","contentOwner":"SYS:KUEPER:ota","metadataOwner":"SYS:KUEPER:knowledge-graph","relatedEntities":[],"relatedKnowledgeDomains":["KD:PHYS-THERM:N1"],"prerequisiteIds":[],"markerProfile":["F","R","T"],"summary":"Kanonische OTA-Survival-SOP. RES-20260831-C1748BD0 bestätigt die reale Physiologie-/Technikschicht und identifiziert drei redaktionelle Präzisierungen."},
+    {"id":"DOC:OTA:OTA-TEC-0029-2048-DE","canonicalId":"OTA-TEC-0029-2048-DE","type":"DocumentReference","system":"SYS:KUEPER:ota","title":"Quantensensorik & KI-Integration für LOD-Validierung","documentType":"TEC","language":"DE","status":"canonical","version":"v1.0","canonicalUrl":null,"sourceUrl":null,"sourceRepository":"thomaspeterkueper/overtime-archive.org","sourcePath":"src/content/documents/OTA-TEC-0029-2048-DE.md","contentOwner":"SYS:KUEPER:ota","metadataOwner":"SYS:KUEPER:knowledge-graph","relatedEntities":[],"relatedKnowledgeDomains":["KD:PHYS-THERM:N1","KD:PHYS-EM:N2"],"prerequisiteIds":[],"markerProfile":["F","T","R"],"summary":"Kanonisches OTA-Dossier zur Quantensensorik/LOD-Verifikation. RES-20260831-4CE6D2E5 bestätigt Kernanker, weist aber mehrere Quellen- und Praxisfehler zur OTA-Korrektur aus."}
   ]
 }
