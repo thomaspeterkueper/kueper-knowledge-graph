@@ -4,9 +4,11 @@
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
   "version": "0.1",
-  "updated": "2026-07-02",
+  "updated": "2026-08-31",
   "sourceDocuments": [
-    "KG-0003-RELATIONS"
+    "KG-0003-RELATIONS",
+    "EXT-KUE-KG-20260831-001",
+    "EXT-KUE-KG-20260831-002"
   ],
   "relationTypes": [
     { "id": "REQUIRES", "description": "Quelle setzt Ziel voraus." },
@@ -16,7 +18,8 @@
     { "id": "PARENT_OF", "description": "Quelle ist taxonomischer Oberbegriff von Ziel." },
     { "id": "MAPS_TO", "description": "Quelle wird auf kanonisches Ziel abgebildet." },
     { "id": "OWNED_BY", "description": "Quelle gehoert fachlich oder kuratorisch zu Ziel." },
-    { "id": "STORED_IN", "description": "Quelle ist im Zielsystem oder Repository gespeichert." }
+    { "id": "STORED_IN", "description": "Quelle ist im Zielsystem oder Repository gespeichert." },
+    { "id": "GROUNDED_IN", "description": "Quelle nutzt Ziel als kanonischen Realwissenschafts- oder Evidenzanker, ohne projektspezifische Setzungen auf das Ziel zu uebertragen." }
   ],
   "records": [
     { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-SEISM:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-SEISM:N2", "status": "canonical", "source": "KG-0003" },
