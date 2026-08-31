@@ -4,7 +4,7 @@
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
   "principle": "single_source_of_truth",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "updated": "2026-08-31",
   "sourceDocuments": [
     "KG-ARC-0001-2026-DE",
@@ -20,6 +20,7 @@
     "KG-0015-QUERY-MODEL",
     "KG-0016-EPISTEMIC-MEMORY-MODEL",
     "KG-0017-CONTRACOMOLOGY-CANON",
+    "KG-0018-SPACE-DOMAINS-CYGNUS",
     "DOCUMENT-ARCHITECTURE",
     "DOCUMENT-API",
     "KG-REQ-20260708-document-architecture-consensus",
@@ -33,8 +34,13 @@
   ],
   "registry": {
     "entityRegistry": "exports/entity-registry-0.1.json",
-    "entityRegistryShards": ["exports/entity-registry-epistemic-0.1.json"],
+    "entityRegistryShards": [
+      "exports/entity-registry-epistemic-0.1.json",
+      "exports/entity-registry-space-0.1.json"
+    ],
     "entityTypeRegistry": "exports/entity-types-0.1.json",
+    "knowledgeDomainRegistry": "exports/knowledge-domains-0.1.json",
+    "knowledgeDomainRegistryShards": ["exports/knowledge-domains-space-0.1.json"],
     "pathRegistry": "exports/path-registry-0.1.json",
     "systemRegistry": "exports/system-registry-0.1.json",
     "relationRegistry": "exports/relation-registry-0.1.json",
@@ -42,7 +48,10 @@
     "apiRegistry": "exports/api-registry-0.1.json",
     "queryRegistry": "exports/query-registry-0.1.json",
     "documentReferenceRegistry": "exports/document-references-0.1.json",
-    "documentReferenceRegistryShards": ["exports/document-references-epistemic-0.1.json"]
+    "documentReferenceRegistryShards": [
+      "exports/document-references-epistemic-0.1.json",
+      "exports/document-references-space-0.1.json"
+    ]
   },
   "resolution": {
     "functions": ["resolve", "listExports", "listIncoming", "listOutgoing", "listRelations", "listApiRoutes", "listQueries", "listDocumentReferences", "resolveEntityType", "resolvePath"],
@@ -95,6 +104,10 @@
       { "consumer": "SYS:KUEPER:ssf", "export": "exports/document-references-0.1.json", "recordSet": "records" },
       { "consumer": "SYS:KUEPER:ota", "export": "exports/document-references-0.1.json", "recordSet": "records" },
       { "consumer": "SYS:KUEPER:noxia", "export": "exports/document-references-0.1.json", "recordSet": "records" },
+      { "consumer": "SYS:KUEPER:ota", "export": "exports/document-references-space-0.1.json", "recordSet": "records" },
+      { "consumer": "SYS:KUEPER:noxia", "export": "exports/document-references-space-0.1.json", "recordSet": "records" },
+      { "consumer": "SYS:KUEPER:ssf", "export": "exports/knowledge-domains-space-0.1.json", "recordSet": "records" },
+      { "consumer": "SYS:KUEPER:noxia", "export": "exports/knowledge-domains-space-0.1.json", "recordSet": "records" },
       { "consumer": "SYS:KUEPER:ota", "api": "/api/documents/*", "registry": "exports/api-registry-0.1.json" },
       { "consumer": "SYS:KUEPER:ssf", "api": "/api/documents/*", "registry": "exports/api-registry-0.1.json" },
       { "consumer": "SYS:KUEPER:noxia", "api": "/api/documents/*", "registry": "exports/api-registry-0.1.json" },
@@ -111,6 +124,7 @@
     ],
     "sampleResolvableIds": [
       "DOC:OTA:OTA-SCI-0083-2026-DE",
+      "DOC:OTA:OTA-TEC-0082-2026-DE",
       "DOC:KUE:KUE-AST-0001-2026-DE",
       "DOC:KUE:KUE-PHI-0002-2026-DE",
       "MOD:L2:gedaechtnis-zugriffsmodell",
@@ -129,6 +143,9 @@
       "DOC:KUE:LEGAL-TERMS-DE",
       "KD:GEO-SEISM:N2",
       "KD:KON:N1",
+      "KD:SPACE:N1",
+      "KD:SPACE-ORBITAL-MECHANICS:N2",
+      "KD:SPACE-PROPULSION:N1",
       "CMP:GEO-SEISM:N2",
       "PHY-L1-000001",
       "PATH:SSF:EAR-SEISMOLOGY-0001",
