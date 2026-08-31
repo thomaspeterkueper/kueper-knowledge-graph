@@ -3,18 +3,21 @@
   "name": "KUEPER Space Entity Registry Shard",
   "master": "kueper-knowledge-graph",
   "status": "canonical",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "updated": "2026-08-31",
-  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS", "RES-20260831-TEC0093A", "RES-20260830-TEC0085A", "RES-20260831-C1748BD0", "RES-20260831-4CE6D2E5"],
+  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS", "RES-20260831-TEC0093A", "RES-20260830-TEC0085A", "RES-20260831-C1748BD0", "RES-20260831-4CE6D2E5", "RES-20260831-TEC0092A", "RES-20260831-TEC0088A"],
   "records": [
     {"id":"KD:SPACE:N1","type":"KnowledgeDomain","status":"canonical","source":"KG-0018-SPACE-DOMAINS-CYGNUS","exports":["exports/knowledge-domains-space-0.1.json","exports/kxf-0.6.json"]},
     {"id":"KD:SPACE-ORBITAL-MECHANICS:N2","type":"KnowledgeDomain","status":"canonical","source":"KG-0018-SPACE-DOMAINS-CYGNUS","exports":["exports/knowledge-domains-space-0.1.json","exports/kxf-0.6.json"]},
     {"id":"KD:SPACE-PROPULSION:N1","type":"KnowledgeDomain","status":"canonical","source":"KG-0018-SPACE-DOMAINS-CYGNUS","exports":["exports/knowledge-domains-space-0.1.json","exports/kxf-0.6.json"]},
     {"id":"KD:SPACE-PROPULSION:N2","type":"KnowledgeDomain","status":"canonical","source":"RES-20260830-TEC0085A","exports":["exports/knowledge-domains-space-0.1.json","exports/kxf-0.6.json"]},
+    {"id":"KD:SPACE-LANDING-SYSTEMS:N2","type":"KnowledgeDomain","status":"canonical","source":"RES-20260831-TEC0092A","exports":["exports/knowledge-domains-space-0.1.json","exports/kxf-0.6.json"]},
     {"id":"DOC:OTA:OTA-TEC-0082-2026-DE","type":"Document","status":"canonical","source":"KG-0018-SPACE-DOMAINS-CYGNUS","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]},
     {"id":"DOC:OTA:OTA-TEC-0093-2026-DE","type":"Document","status":"draft_productive","source":"RES-20260831-TEC0093A","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]},
     {"id":"DOC:OTA:OTA-TEC-0085-2026-DE","type":"Document","status":"draft_productive","source":"RES-20260830-TEC0085A","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]},
     {"id":"DOC:OTA:OTA-TEC-0019-2091-DE","type":"Document","status":"canonical","source":"RES-20260831-C1748BD0","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]},
-    {"id":"DOC:OTA:OTA-TEC-0029-2048-DE","type":"Document","status":"canonical","source":"RES-20260831-4CE6D2E5","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]}
+    {"id":"DOC:OTA:OTA-TEC-0029-2048-DE","type":"Document","status":"canonical","source":"RES-20260831-4CE6D2E5","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]},
+    {"id":"DOC:OTA:OTA-TEC-0092-2026-DE","type":"Document","status":"draft_productive","source":"RES-20260831-TEC0092A","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]},
+    {"id":"DOC:OTA:OTA-TEC-0088-2026-DE","type":"Document","status":"draft_productive","source":"RES-20260831-TEC0088A","exports":["exports/document-references-space-0.1.json","exports/kxf-0.6.json"]}
   ]
 }
