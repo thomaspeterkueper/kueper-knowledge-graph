@@ -3,9 +3,9 @@
   "name": "KUEPER Space Entity Registry Shard",
   "master": "kueper-knowledge-graph",
   "status": "canonical",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "updated": "2026-08-31",
-  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS"],
+  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS", "RES-20260831-TEC0093A"],
   "records": [
     {
       "id": "KD:SPACE:N1",
@@ -33,6 +33,13 @@
       "type": "Document",
       "status": "canonical",
       "source": "KG-0018-SPACE-DOMAINS-CYGNUS",
+      "exports": ["exports/document-references-space-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "DOC:OTA:OTA-TEC-0093-2026-DE",
+      "type": "Document",
+      "status": "draft_productive",
+      "source": "RES-20260831-TEC0093A",
       "exports": ["exports/document-references-space-0.1.json", "exports/kxf-0.6.json"]
     }
   ]
