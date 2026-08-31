@@ -1,0 +1,36 @@
+{
+  "schema": "KUEPER-DOCUMENT-REFERENCES-0.1-SHARD",
+  "name": "KUEPER Space Document References",
+  "master": "kueper-knowledge-graph",
+  "status": "canonical",
+  "version": "0.1.0",
+  "updated": "2026-08-31",
+  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS", "RES-20260831-TEC0082A"],
+  "records": [
+    {
+      "id": "DOC:OTA:OTA-TEC-0082-2026-DE",
+      "canonicalId": "OTA-TEC-0082-2026-DE",
+      "type": "DocumentReference",
+      "system": "SYS:KUEPER:ota",
+      "title": "CYGNUS CTV — Cislunar Transporter Vehicle",
+      "documentType": "TEC",
+      "language": "DE",
+      "status": "canonical",
+      "version": "v1.0",
+      "canonicalUrl": null,
+      "sourceUrl": null,
+      "sourceRepository": "thomaspeterkueper/overtime-archive.org",
+      "sourcePath": "src/content/documents/OTA-TEC-0082-2026-DE.md",
+      "contentOwner": "SYS:KUEPER:ota",
+      "metadataOwner": "SYS:KUEPER:knowledge-graph",
+      "relatedEntities": [],
+      "relatedKnowledgeDomains": [
+        "KD:SPACE-ORBITAL-MECHANICS:N2",
+        "KD:SPACE-PROPULSION:N1"
+      ],
+      "prerequisiteIds": [],
+      "markerProfile": ["R", "H", "T", "F", "OFFEN"],
+      "summary": "Kanonisches OTA-Technikdossier des CYGNUS CTV. Der KG hält Identität und Metadaten; der Volltext bleibt im OverTime Archive. RES-20260831-TEC0082A prüft ausschließlich die extern prüfbare Ingenieursschicht und ändert keine fiktionalen Setzungen."
+    }
+  ]
+}
