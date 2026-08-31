@@ -1,0 +1,39 @@
+{
+  "schema": "KUEPER-ENTITY-REGISTRY-0.1-SHARD",
+  "name": "KUEPER Space Entity Registry Shard",
+  "master": "kueper-knowledge-graph",
+  "status": "canonical",
+  "version": "0.1.0",
+  "updated": "2026-08-31",
+  "sourceDocuments": ["KG-0018-SPACE-DOMAINS-CYGNUS"],
+  "records": [
+    {
+      "id": "KD:SPACE:N1",
+      "type": "KnowledgeDomain",
+      "status": "canonical",
+      "source": "KG-0018-SPACE-DOMAINS-CYGNUS",
+      "exports": ["exports/knowledge-domains-space-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "KD:SPACE-ORBITAL-MECHANICS:N2",
+      "type": "KnowledgeDomain",
+      "status": "canonical",
+      "source": "KG-0018-SPACE-DOMAINS-CYGNUS",
+      "exports": ["exports/knowledge-domains-space-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "KD:SPACE-PROPULSION:N1",
+      "type": "KnowledgeDomain",
+      "status": "canonical",
+      "source": "KG-0018-SPACE-DOMAINS-CYGNUS",
+      "exports": ["exports/knowledge-domains-space-0.1.json", "exports/kxf-0.6.json"]
+    },
+    {
+      "id": "DOC:OTA:OTA-TEC-0082-2026-DE",
+      "type": "Document",
+      "status": "canonical",
+      "source": "KG-0018-SPACE-DOMAINS-CYGNUS",
+      "exports": ["exports/document-references-space-0.1.json", "exports/kxf-0.6.json"]
+    }
+  ]
+}
