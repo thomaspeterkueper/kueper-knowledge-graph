@@ -3,31 +3,56 @@
   "name":"KUEPER Magnetic Materials Canonical Concepts",
   "master":"kueper-knowledge-graph",
   "status":"canonical",
-  "version":"0.1.0",
+  "version":"0.1.1",
   "updated":"2026-08-31",
   "sourceDocuments":["KG-0021-PERMANENT-MAGNET-MATERIALS","RES-20260831-EAA9EDD9"],
   "records":{
     "knowledgeDomains":[
-      {"id":"KD:MAT-MAGNETIC-MATERIALS:N2","type":"KnowledgeDomain","code":"MAT-MAGNETIC-MATERIALS","level":"N2","title":"Magnetische Werkstoffe und Permanentmagnete - arbeitsfaehiges Grundverstaendnis","status":"canonical"}
+      {"id":"KD:PHY-MAGNETISM:N1","type":"KnowledgeDomain","code":"PHY-MAGNETISM","level":"N1","title":"Magnetfelder und Elektromagnetismus - Orientierung","status":"canonical"},
+      {"id":"KD:MAT-MAGNETIC-MATERIALS:N2","type":"KnowledgeDomain","code":"MAT-MAGNETIC-MATERIALS","level":"N2","title":"Magnetische Werkstoffe und Permanentmagnete - arbeitsfaehiges Grundverstaendnis","status":"canonical","requires":["KD:PHY-MAGNETISM:N1"]},
+      {"id":"KD:MAT-MAGNETIC-PROCESSING:N3","type":"KnowledgeDomain","code":"MAT-MAGNETIC-PROCESSING","level":"N3","title":"Magnetwerkstoffe - Prozesskette, Mikrostruktur und Kreislauf","status":"canonical","requires":["KD:MAT-MAGNETIC-MATERIALS:N2"]}
     ],
     "concepts":[
+      {"id":"CON:PHY:magnetic-field","type":"Concept","name":"Magnetfeld","status":"canonical"},
+      {"id":"CON:PHY:magnetic-dipole","type":"Concept","name":"magnetischer Dipol","status":"canonical"},
+      {"id":"CON:PHY:electromagnetism","type":"Concept","name":"Elektromagnetismus","status":"canonical"},
+      {"id":"CON:MAT:magnetic-moment","type":"Concept","name":"magnetisches Moment","status":"canonical"},
+      {"id":"CON:MAT:diamagnetism","type":"Concept","name":"Diamagnetismus","status":"canonical"},
+      {"id":"CON:MAT:paramagnetism","type":"Concept","name":"Paramagnetismus","status":"canonical"},
+      {"id":"CON:MAT:ferromagnetism","type":"Concept","name":"Ferromagnetismus","status":"canonical"},
+      {"id":"CON:MAT:magnetic-domain","type":"Concept","name":"magnetische Domaene","status":"canonical"},
+      {"id":"CON:MAT:hysteresis","type":"Concept","name":"magnetische Hysterese","status":"canonical"},
+      {"id":"CON:MAT:remanence","type":"Concept","name":"Remanenz","status":"canonical"},
+      {"id":"CON:MAT:coercivity","type":"Concept","name":"Koerzitivitaet","status":"canonical"},
+      {"id":"CON:MAT:soft-magnetic","type":"Concept","name":"weichmagnetischer Werkstoff","status":"canonical"},
+      {"id":"CON:MAT:hard-magnetic","type":"Concept","name":"hartmagnetischer Werkstoff","status":"canonical"},
       {"id":"CON:MAT:ferrite-magnet","type":"Concept","name":"Hartferrit-Permanentmagnet","status":"canonical"},
       {"id":"CON:MAT:alnico","type":"Concept","name":"AlNiCo-Permanentmagnet","status":"canonical"},
       {"id":"CON:MAT:smco","type":"Concept","name":"Samarium-Kobalt-Permanentmagnet","status":"canonical"},
       {"id":"CON:MAT:ndfeb","type":"Concept","name":"Neodym-Eisen-Bor-Permanentmagnet","status":"canonical"},
       {"id":"CON:MAT:curie-temperature","type":"Concept","name":"Curie-Temperatur","status":"canonical"},
       {"id":"CON:MAT:working-temperature","type":"Concept","name":"zulaessige Arbeitstemperatur eines Permanentmagneten","status":"canonical"},
-      {"id":"CON:MAT:demagnetization","type":"Concept","name":"Entmagnetisierung","status":"canonical"}
+      {"id":"CON:MAT:demagnetization","type":"Concept","name":"Entmagnetisierung","status":"canonical"},
+      {"id":"CON:MAT:composition","type":"Concept","name":"Werkstoffzusammensetzung","status":"canonical"},
+      {"id":"CON:MAT:microstructure","type":"Concept","name":"Mikrostruktur","status":"canonical"},
+      {"id":"CON:MAT:processing","type":"Concept","name":"Werkstoffverarbeitung","status":"canonical"},
+      {"id":"CON:MAT:critical-raw-materials","type":"Concept","name":"kritische Rohstoffe","status":"canonical"},
+      {"id":"CON:MAT:recycling","type":"Concept","name":"Werkstoffrecycling","status":"canonical"}
     ],
     "consumerMappings":[
-      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-004","relation":"COVERS","targets":["CON:MAT:ferrite-magnet","CON:MAT:alnico","CON:MAT:smco","CON:MAT:ndfeb"],"status":"draft_mapping"},
-      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-005","relation":"COVERS","targets":["CON:MAT:curie-temperature","CON:MAT:demagnetization","CON:MAT:working-temperature"],"status":"draft_mapping"}
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-001","relation":"COVERS","knowledgeDomain":"KD:PHY-MAGNETISM:N1","targets":["CON:PHY:magnetic-field","CON:PHY:magnetic-dipole","CON:PHY:electromagnetism"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-002","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:magnetic-moment","CON:MAT:diamagnetism","CON:MAT:paramagnetism","CON:MAT:ferromagnetism","CON:MAT:magnetic-domain"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-003","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:hysteresis","CON:MAT:remanence","CON:MAT:coercivity","CON:MAT:soft-magnetic","CON:MAT:hard-magnetic"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-004","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:ferrite-magnet","CON:MAT:alnico","CON:MAT:smco","CON:MAT:ndfeb"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-005","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:curie-temperature","CON:MAT:demagnetization","CON:MAT:working-temperature"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-006","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-PROCESSING:N3","targets":["CON:MAT:composition","CON:MAT:microstructure","CON:MAT:processing","CON:MAT:critical-raw-materials","CON:MAT:recycling"],"status":"draft_mapping"}
     ]
   },
   "rules":[
     "Curie temperature is not maximum operating temperature.",
     "Working temperature is grade, geometry, counter-field and criterion dependent.",
     "Market prices and supply-chain values are dated evidence snapshots, not invariant concept properties.",
-    "SSF owns teaching text; KG owns canonical concept and knowledge-domain identities."
+    "SSF local MAG-* identifiers remain draft consumer identifiers until KG assigns canonical MAT-L*-NNNNNN LearningModule IDs.",
+    "SSF owns teaching text; KG owns canonical concept, knowledge-domain and promoted learning-module identities."
   ]
 }
