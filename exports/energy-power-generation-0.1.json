@@ -3,8 +3,9 @@
   "name": "KUEPER Power Generation Knowledge Contract",
   "master": "SYS:KUEPER:knowledge-graph",
   "status": "canonical",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "updated": "2026-09-01",
+  "sourceRequests": ["SSF-KG-REQ-20260901-004-power-generation-learning-contract"],
   "records": {
     "knowledgeDomains": [
       {
@@ -24,7 +25,8 @@
       {"id":"CON:ENG:generation-efficiency","type":"Concept","name":"Wirkungsgrad der Energieerzeugung","status":"canonical"},
       {"id":"CON:ENG:generation-profile","type":"Concept","name":"Erzeugungsprofil","status":"canonical"},
       {"id":"CON:ENG:dispatchability","type":"Concept","name":"Regelbarkeit und Verfuegbarkeit von Erzeugern","status":"canonical"},
-      {"id":"CON:ENG:electrical-generation-balance","type":"Concept","name":"Elektrische Erzeugungsbilanz","status":"canonical"}
+      {"id":"CON:ENG:electrical-generation-balance","type":"Concept","name":"Elektrische Erzeugungsbilanz","status":"canonical"},
+      {"id":"CON:ENG:storage-grid-redundancy","type":"Concept","name":"Speicher-, Netz- und Redundanzkopplung","status":"canonical"}
     ],
     "learningContracts": [
       {
@@ -41,12 +43,22 @@
           "CON:ENG:generation-efficiency",
           "CON:ENG:generation-profile",
           "CON:ENG:dispatchability",
-          "CON:ENG:electrical-generation-balance"
+          "CON:ENG:electrical-generation-balance",
+          "CON:ENG:storage-grid-redundancy"
         ],
+        "applicationScope": ["solar-pv", "generator-principle", "storage-coupling", "grid-coupling", "redundancy"],
         "status": "canonical"
       }
     ],
     "consumerMappings": [
+      {
+        "consumer": "SYS:KUEPER:ssf",
+        "localId": "PATH:SSF:NOX-POWER-GENERATION-0001",
+        "relation": "IMPLEMENTS_LEARNING_CONTRACT",
+        "knowledgeDomain": "KD:ENG-POWER-GENERATION:N2",
+        "learningModule": "ENG-L1-000001",
+        "status": "canonical_mapping"
+      },
       {
         "consumer": "SYS:KUEPER:noxia",
         "localId": "UNL:NOX:power-generation",
@@ -59,7 +71,9 @@
   },
   "rules": [
     "UNL:NOX:power-generation is a NOXIA-local unlock identity, not a canonical KnowledgeDomain or LearningModule ID.",
+    "PATH:SSF:NOX-POWER-GENERATION-0001 is an SSF-local path identity implementing ENG-L1-000001; it is not a replacement canonical LearningModule ID.",
     "KG owns the canonical domain, concepts, learning-module identity and mapping; SSF owns didactic implementation; NOXIA owns unlock behavior and game integration.",
-    "The foundation module must teach technology-independent generation principles before technology-specific applications."
+    "The foundation module must teach technology-independent generation principles before technology-specific applications.",
+    "Solar PV, generator principles, storage/grid coupling and redundancy are applications of the foundation contract and must not be generalized into universal properties of every generation technology."
   ]
 }
