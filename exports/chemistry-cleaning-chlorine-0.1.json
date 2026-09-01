@@ -1,0 +1,107 @@
+{
+  "schema": "KUEPER-CHEMISTRY-CLEANING-CHLORINE-0.1",
+  "name": "KUEPER Hypochlorite Cleaning Chemistry Canon",
+  "master": "SYS:KUEPER:knowledge-graph",
+  "status": "canonical",
+  "version": "0.1.0",
+  "updated": "2026-09-01",
+  "sourceRequests": ["SSF-KG-REQ-20260901-003-CLEANING-CHLORINE-CANON"],
+  "evidenceNotes": [
+    "Public-health guidance treats household bleach as an aqueous hypochlorite system and warns against mixing bleach with acids or other cleaners because dangerous chlorine-containing vapors can be released.",
+    "No universal hard pH threshold is canonicalized for household mixtures; outcome depends on composition, concentration, buffering, temperature and other matrix conditions.",
+    "Oxidative bleaching of chromophores is represented as a Foundation-level explanatory model, not a universal single reaction mechanism for every bleach/material combination."
+  ],
+  "records": {
+    "knowledgeDomains": [
+      {
+        "id": "KD:CHM-REDOX:N2",
+        "type": "KnowledgeDomain",
+        "code": "CHM-REDOX",
+        "level": "N2",
+        "title": "Redoxchemie - arbeitsfaehiges Grundverstaendnis",
+        "parent": "KD:CHM:N1",
+        "status": "canonical",
+        "description": "Grundlagen von Oxidation und Reduktion, Elektronenuebertragung bzw. Aenderungen von Oxidationszustaenden sowie qualitativer Einordnung oxidierender und reduzierender Stoffe."
+      },
+      {
+        "id": "KD:CHM-CHEMICAL-SAFETY:N2",
+        "type": "KnowledgeDomain",
+        "code": "CHM-CHEMICAL-SAFETY",
+        "level": "N2",
+        "title": "Chemische Misch- und Anwendungssicherheit - arbeitsfaehiges Grundverstaendnis",
+        "parent": "KD:CHM:N1",
+        "status": "canonical",
+        "description": "Grundlagen zur sicheren Einordnung chemischer Gemische, inkompatibler Stoffgruppen, Freisetzungsgefahren und produktbezogener Sicherheitsgrenzen im Alltags- und Foundation-Kontext."
+      }
+    ],
+    "concepts": [
+      {"id":"CON:CHM:hypochlorite-aqueous-system","type":"Concept","name":"Hypochlorit in waessrigen Systemen","status":"canonical","definition":"Waessriges System mit Hypochlorit und pH-abhaengig protonierter hypochloriger Saeure; Zusammensetzung und Reaktivitaet haengen vom konkreten Medium ab."},
+      {"id":"CON:CHM:hypochlorous-acid-hypochlorite-equilibrium","type":"Concept","name":"Hypochlorige-Saeure/Hypochlorit-Gleichgewicht","status":"canonical","definition":"Saeure-Base-Gleichgewicht zwischen HOCl und OCl- in Wasser; Foundation-Erklaerung fuer pH-abhaengige Speziesverteilung ohne universellen harten Haushaltsschwellenwert."},
+      {"id":"CON:CHM:oxidative-bleaching-chromophores","type":"Concept","name":"Oxidatives Bleichen von Chromophoren","status":"canonical","definition":"Foundation-Modell: Oxidative chemische Veraenderungen koennen farbgebende Chromophore so veraendern, dass ihre Lichtabsorption und damit sichtbare Farbe abnimmt. Kein universeller Einzelmechanismus fuer alle Substrate."},
+      {"id":"CON:CHM:hypochlorite-acidification-chlorine-release","type":"Concept","name":"Chlorfreisetzung bei Saeuerung hypochlorithaltiger Systeme","status":"canonical","definition":"Saeuerung hypochlorithaltiger Mischungen kann das chemische Gleichgewicht so verschieben, dass molekulares Chlor bzw. gefaehrliche chlorhaltige Daempfe freigesetzt werden koennen; das konkrete Ausmass ist matrixabhaengig."},
+      {"id":"CON:CHM:incompatible-cleaner-mixing","type":"Concept","name":"Inkompatibles Mischen von Reinigungschemikalien","status":"canonical"},
+      {"id":"CON:CHM:chlorine-inhalation-hazard","type":"Concept","name":"Inhalationsgefahr durch Chlor","status":"canonical"},
+      {"id":"CON:CHM:chloramine-cleaner-hazard","type":"Concept","name":"Chloramin-Gefahr bei Hypochlorit/Ammoniak-Systemen","status":"canonical","scope":"separate_followup_case"}
+    ],
+    "requirements": [
+      {
+        "id": "REQ:CHM:HYPOCHLORITE-ACID-MIX-SAFETY-0001",
+        "type": "Requirement",
+        "title": "Hypochlorithaltige Reiniger nicht mit sauren Reinigern mischen",
+        "appliesTo": ["CON:CHM:hypochlorite-aqueous-system", "CON:CHM:incompatible-cleaner-mixing"],
+        "hazard": "CON:CHM:hypochlorite-acidification-chlorine-release",
+        "status": "canonical"
+      },
+      {
+        "id": "REQ:CHM:BLEACH-MECHANISM-QUALIFIER-0001",
+        "type": "Requirement",
+        "title": "Bleicheffekt als vereinfachtes Foundation-Modell kennzeichnen",
+        "appliesTo": ["CON:CHM:oxidative-bleaching-chromophores"],
+        "status": "canonical"
+      }
+    ],
+    "learningContracts": [
+      {
+        "id": "CHM-L1-000004",
+        "type": "LearningModule",
+        "legacyId": "LRN:SSF:CHM-CLEANING-HYPOCHLORITE-0001",
+        "consumer": "SYS:KUEPER:ssf",
+        "knowledgeDomains": ["KD:CHM-REDOX:N2", "KD:CHM-CHEMICAL-SAFETY:N2", "KD:CHM-ACID-BASE:N2"],
+        "entryQuestion": "Warum kann ein Bleichreiniger Flecken entfernen - und warum darf man ihn nicht mit sauren Reinigern mischen?",
+        "requires": ["CHM-L1-000001", "CHM-L1-000002"],
+        "teaches": [
+          "CON:CHM:hypochlorite-aqueous-system",
+          "CON:CHM:hypochlorous-acid-hypochlorite-equilibrium",
+          "CON:CHM:oxidative-bleaching-chromophores",
+          "CON:CHM:hypochlorite-acidification-chlorine-release",
+          "CON:CHM:incompatible-cleaner-mixing",
+          "CON:CHM:chlorine-inhalation-hazard"
+        ],
+        "enforcesRequirements": [
+          "REQ:CHM:HYPOCHLORITE-ACID-MIX-SAFETY-0001",
+          "REQ:CHM:BLEACH-MECHANISM-QUALIFIER-0001"
+        ],
+        "status": "canonical"
+      }
+    ],
+    "consumerMappings": [
+      {
+        "consumer": "SYS:KUEPER:ssf",
+        "localId": "PATH:SSF:CHE-REINIGUNG-CHLOR-0001",
+        "relation": "IMPLEMENTS_LEARNING_CONTRACT",
+        "learningModule": "CHM-L1-000004",
+        "knowledgeDomains": ["KD:CHM-REDOX:N2", "KD:CHM-CHEMICAL-SAFETY:N2", "KD:CHM-ACID-BASE:N2"],
+        "status": "canonical_mapping"
+      }
+    ]
+  },
+  "rules": [
+    "KD:CHE-OXIDATION, KD:CHE-REDOX and KD:CHE-SAFETY are not canonical identities for this scope.",
+    "Use KD:CHM-REDOX:N2 and KD:CHM-CHEMICAL-SAFETY:N2 plus the existing KD:CHM-ACID-BASE:N2 where applicable.",
+    "Do not teach the shortcut 'chlorine plus acid equals chlorine gas' as the canonical model; identify the relevant hypochlorite/active-chlorine system and acidification context.",
+    "Do not canonicalize a universal pH cutoff for chlorine release in household mixtures.",
+    "Do not state that chlorine universally destroys double bonds as a complete bleaching mechanism; use oxidative chromophore modification as a qualified Foundation model.",
+    "Hypochlorite plus ammonia/chloramine chemistry is retained as a separate later safety case and must not be conflated with the acidification case.",
+    "KG owns identities, prerequisite relations and safety requirements; SSF owns didactic implementation."
+  ]
+}
