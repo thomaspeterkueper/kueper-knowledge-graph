@@ -1,0 +1,9 @@
+building_id: BLD:NOX:scanner-1
+name: Scanner I
+category: science
+requires:
+  - UNL:NOX:surface-sensing
+effects:
+  - local_discovery
+created: '2026-09-01'
+curator: T.P.K.
