@@ -1,0 +1,65 @@
+{
+  "schema": "KUEPER-ENERGY-POWER-GENERATION-0.1",
+  "name": "KUEPER Power Generation Knowledge Contract",
+  "master": "SYS:KUEPER:knowledge-graph",
+  "status": "canonical",
+  "version": "0.1.0",
+  "updated": "2026-09-01",
+  "records": {
+    "knowledgeDomains": [
+      {
+        "id": "KD:ENG-POWER-GENERATION:N2",
+        "type": "KnowledgeDomain",
+        "code": "ENG-POWER-GENERATION",
+        "level": "N2",
+        "title": "Elektrische Energieerzeugung - arbeitsfaehiges Grundverstaendnis",
+        "parent": "KD:ENG:N1",
+        "status": "canonical",
+        "description": "Grundlagen technischer Energieumwandlung zu elektrischer Leistung, Leistungs- und Energiebilanzen, Wirkungsgrad, Erzeugungsprofil, Verfuegbarkeit und Systemgrenzen. Einzelne Erzeugungstechnologien werden als Anwendungen dieses Grundverstaendnisses behandelt."
+      }
+    ],
+    "concepts": [
+      {"id":"CON:ENG:power-vs-energy","type":"Concept","name":"Leistung und Energie","status":"canonical"},
+      {"id":"CON:ENG:energy-conversion-chain","type":"Concept","name":"Energieumwandlungskette","status":"canonical"},
+      {"id":"CON:ENG:generation-efficiency","type":"Concept","name":"Wirkungsgrad der Energieerzeugung","status":"canonical"},
+      {"id":"CON:ENG:generation-profile","type":"Concept","name":"Erzeugungsprofil","status":"canonical"},
+      {"id":"CON:ENG:dispatchability","type":"Concept","name":"Regelbarkeit und Verfuegbarkeit von Erzeugern","status":"canonical"},
+      {"id":"CON:ENG:electrical-generation-balance","type":"Concept","name":"Elektrische Erzeugungsbilanz","status":"canonical"}
+    ],
+    "learningContracts": [
+      {
+        "id": "ENG-L1-000001",
+        "type": "LearningModule",
+        "legacyId": "LRN:SSF:ENG-POWER-GENERATION-0001",
+        "consumer": "SYS:KUEPER:ssf",
+        "knowledgeDomain": "KD:ENG-POWER-GENERATION:N2",
+        "entryQuestion": "Wie wird aus einer Energiequelle nutzbarer elektrischer Strom?",
+        "requires": ["KD:PHYS:N1", "KD:ENG:N1"],
+        "teaches": [
+          "CON:ENG:power-vs-energy",
+          "CON:ENG:energy-conversion-chain",
+          "CON:ENG:generation-efficiency",
+          "CON:ENG:generation-profile",
+          "CON:ENG:dispatchability",
+          "CON:ENG:electrical-generation-balance"
+        ],
+        "status": "canonical"
+      }
+    ],
+    "consumerMappings": [
+      {
+        "consumer": "SYS:KUEPER:noxia",
+        "localId": "UNL:NOX:power-generation",
+        "relation": "REQUIRES_KNOWLEDGE",
+        "knowledgeDomain": "KD:ENG-POWER-GENERATION:N2",
+        "learningModule": "ENG-L1-000001",
+        "status": "canonical_mapping"
+      }
+    ]
+  },
+  "rules": [
+    "UNL:NOX:power-generation is a NOXIA-local unlock identity, not a canonical KnowledgeDomain or LearningModule ID.",
+    "KG owns the canonical domain, concepts, learning-module identity and mapping; SSF owns didactic implementation; NOXIA owns unlock behavior and game integration.",
+    "The foundation module must teach technology-independent generation principles before technology-specific applications."
+  ]
+}
