@@ -1,0 +1,23 @@
+{
+  "schema":"KUEPER-DOCUMENT-GROUNDING-RELATIONS-0.1",
+  "name":"KUEPER Cross-Repository Document Grounding Relations",
+  "master":"SYS:KUEPER:knowledge-graph",
+  "status":"canonical",
+  "version":"0.1.0",
+  "updated":"2026-09-01",
+  "records":[
+    {
+      "id":"REL:DOC:OTA-TEC-0021:GROUNDING:KUE-SCI-0183",
+      "type":"Relation",
+      "relation":"GROUNDED_IN",
+      "source":"DOC:OTA:OTA-TEC-0021-2025-DE",
+      "target":"DOC:KUE:KUE-SCI-0183-2026-DE",
+      "status":"canonical",
+      "scope":"real_science_grounding",
+      "epistemicBoundary":"The relation grounds only the real-science claims about gold hydrides under extreme conditions and evidence limits. It does not promote OTA material, confinement, metastability or technology hypotheses to KUE scientific fact.",
+      "sourceOwner":"SYS:KUEPER:ota",
+      "targetOwner":"SYS:KUEPER:kueper-com",
+      "relationOwner":"SYS:KUEPER:knowledge-graph"
+    }
+  ]
+}
