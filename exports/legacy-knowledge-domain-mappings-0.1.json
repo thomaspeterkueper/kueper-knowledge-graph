@@ -3,8 +3,8 @@
   "name":"SSF KNOW:* to canonical KD:* migration map",
   "master":"kueper-knowledge-graph",
   "status":"canonical_migration_contract",
-  "version":"0.1.0",
-  "updated":"2026-08-31",
+  "version":"0.1.1",
+  "updated":"2026-09-01",
   "consumer":"SYS:KUEPER:ssf",
   "source":"solarsciencefoundation/lib/learningPaths.ts@main",
   "rules":[
@@ -52,7 +52,11 @@
     {"legacyId":"KNOW:ENG-SYSTEMS","canonicalIds":["KD:ENG:N1"],"classification":"new_canonical_domain"},
     {"legacyId":"KNOW:CHE-WATER","canonicalIds":["KD:CHM:N1"],"classification":"maps_existing"},
     {"legacyId":"KNOW:ENG-FILTRATION","canonicalIds":["KD:ENG-WATER-TREATMENT:N2"],"classification":"new_canonical_domain"},
-    {"legacyId":"KNOW:ENV-WATER","canonicalIds":["KD:ENV:N1"],"classification":"maps_existing"}
+    {"legacyId":"KNOW:ENV-WATER","canonicalIds":["KD:ENV:N1"],"classification":"maps_existing"},
+    {"legacyId":"KNOW:CHE-REACTIONS","canonicalIds":["KD:CHM:N1"],"classification":"maps_existing","reason":"General chemical-reaction foundations are already covered by the canonical chemistry orientation domain; the legacy label is too broad to justify a separate stable domain."},
+    {"legacyId":"KNOW:CHE-ORGANIC","canonicalIds":["KD:CHM:N1"],"classification":"maps_existing","reason":"The current SSF Maillard use only requires chemistry orientation; a dedicated organic-chemistry domain should be introduced only when a stable cross-system N2 scope is required."},
+    {"legacyId":"KNOW:PHY-SURFACE-TENSION","canonicalIds":["KD:PHYS:N1"],"classification":"maps_existing","reason":"Surface tension is a physical-property concept within the current foundation scope; the legacy label does not yet justify a separate KnowledgeDomain."},
+    {"legacyId":"KNOW:PHY-CAPILLARITY","canonicalIds":["KD:PHYS:N1"],"classification":"maps_existing","reason":"Capillarity is currently consumed as a foundation-level physical phenomenon; a narrower domain can be requested later if a stable curriculum cluster emerges."}
   ],
-  "summary":{"uniqueLegacyIds":39,"mapsExisting":29,"newCanonicalDomainsDirectlyReferenced":10,"newCanonicalDomainsCreatedIncludingParents":12,"consumerLocalOnly":0}
+  "summary":{"uniqueLegacyIds":43,"mapsExisting":33,"newCanonicalDomainsDirectlyReferenced":10,"newCanonicalDomainsCreatedIncludingParents":12,"consumerLocalOnly":0}
 }
