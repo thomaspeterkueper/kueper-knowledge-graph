@@ -1,0 +1,39 @@
+{
+  "schema":"KUEPER-CHEMISTRY-ACID-BASE-0.1",
+  "name":"KUEPER Acid-Base Foundation Canon",
+  "master":"SYS:KUEPER:knowledge-graph",
+  "status":"canonical",
+  "version":"0.1.0",
+  "updated":"2026-09-01",
+  "sourceDocuments":["SSF-KG-REQ-20260901-002-ACID-BASE-FOUNDATIONS"],
+  "records":{
+    "knowledgeDomains":[
+      {"id":"KD:CHM-ACID-BASE:N2","type":"KnowledgeDomain","code":"CHM-ACID-BASE","level":"N2","title":"Saeure-Base-Chemie in waessrigen Systemen - Grundverstaendnis","parent":"KD:CHM:N1","status":"canonical"},
+      {"id":"KD:CHM-CARBONATE:N2","type":"KnowledgeDomain","code":"CHM-CARBONATE","level":"N2","title":"Carbonatchemie - Grundverstaendnis","parent":"KD:CHM:N1","status":"canonical"}
+    ],
+    "concepts":[
+      {"id":"CON:CHM:bronsted-acid-base","type":"Concept","name":"Broensted-Saeure-Base-Prinzip","status":"canonical","definition":"Saeure-Base-Modell, in dem Saeuren Protonendonatoren und Basen Protonenakzeptoren sind."},
+      {"id":"CON:CHM:hydronium-hydroxide","type":"Concept","name":"Hydronium- und Hydroxidionen in Wasser","status":"canonical"},
+      {"id":"CON:CHM:ph-scale","type":"Concept","name":"pH-Skala","status":"canonical","definition":"Logarithmisches Mass fuer die Aktivitaet von Wasserstoffionen in waessrigen Systemen; auf Foundation-Level naeherungsweise ueber H3O+-Konzentration vermittelt."},
+      {"id":"CON:CHM:neutralization","type":"Concept","name":"Neutralisation","status":"canonical"},
+      {"id":"CON:CHM:acid-base-stoichiometry","type":"Concept","name":"Saeure-Base-Stoechiometrie","status":"canonical"},
+      {"id":"CON:CHM:carbonate-acid-reaction","type":"Concept","name":"Carbonat-Saeure-Reaktion","status":"canonical"},
+      {"id":"CON:CHM:calcium-carbonate-acid","type":"Concept","name":"Calciumcarbonat mit Saeure","status":"canonical"},
+      {"id":"CON:CHM:carbon-dioxide-evolution","type":"Concept","name":"Kohlendioxidentwicklung bei Carbonat-Saeure-Reaktionen","status":"canonical"}
+    ],
+    "learningContracts":[
+      {"id":"CHM-L1-000001","type":"LearningModule","legacyId":"LRN:SSF:CHM-ACID-BASE-FOUND-0001","consumer":"SYS:KUEPER:ssf","knowledgeDomain":"KD:CHM-ACID-BASE:N2","entryQuestion":"Warum schmeckt Zitrone sauer - und Seife nicht?","requires":[],"teaches":["CON:CHM:bronsted-acid-base","CON:CHM:hydronium-hydroxide"],"status":"canonical"},
+      {"id":"CHM-L1-000002","type":"LearningModule","legacyId":"LRN:SSF:CHM-PH-FOUND-0001","consumer":"SYS:KUEPER:ssf","knowledgeDomain":"KD:CHM-ACID-BASE:N2","entryQuestion":"Was bedeutet eigentlich pH 3 oder pH 10?","requires":["CHM-L1-000001"],"teaches":["CON:CHM:ph-scale"],"status":"canonical"},
+      {"id":"CHM-L1-000003","type":"LearningModule","legacyId":"LRN:SSF:CHM-NEUTRALIZATION-FOUND-0001","consumer":"SYS:KUEPER:ssf","knowledgeDomain":"KD:CHM-ACID-BASE:N2","entryQuestion":"Was passiert, wenn Saeure und Base aufeinandertreffen?","requires":["CHM-L1-000001","CHM-L1-000002"],"teaches":["CON:CHM:neutralization","CON:CHM:acid-base-stoichiometry"],"status":"canonical"}
+    ],
+    "consumerMappings":[
+      {"consumer":"SYS:KUEPER:ssf","localId":"PATH:SSF:CHE-REINIGUNG-KALK-0001","relation":"APPLIES","knowledgeDomains":["KD:CHM-ACID-BASE:N2","KD:CHM-CARBONATE:N2"],"requiresModules":["CHM-L1-000001","CHM-L1-000002"],"targets":["CON:CHM:carbonate-acid-reaction","CON:CHM:calcium-carbonate-acid","CON:CHM:carbon-dioxide-evolution"],"status":"canonical_mapping"}
+    ]
+  },
+  "rules":[
+    "KG owns canonical identities, relations and learning-contract prerequisites; SSF owns didactic implementation.",
+    "pH is represented as a logarithmic chemical concept; KD:PHY-PH is not a canonical replacement identity.",
+    "The existing cleaning/limescale path is an application path and must not replace the prerequisite acid-base foundation modules.",
+    "Consumer repositories must not mint alternative KD:* or LearningModule identities for this scope."
+  ]
+}
