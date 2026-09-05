@@ -3,14 +3,15 @@
   "name":"KUEPER Magnetic Materials Canonical Concepts",
   "master":"kueper-knowledge-graph",
   "status":"canonical",
-  "version":"0.1.1",
-  "updated":"2026-08-31",
-  "sourceDocuments":["KG-0021-PERMANENT-MAGNET-MATERIALS","RES-20260831-EAA9EDD9"],
+  "version":"0.1.2",
+  "updated":"2026-09-05",
+  "sourceDocuments":["KG-0021-PERMANENT-MAGNET-MATERIALS","RES-20260831-EAA9EDD9","SSF modules/materials/MAG-007.yaml"],
   "records":{
     "knowledgeDomains":[
       {"id":"KD:PHY-MAGNETISM:N1","type":"KnowledgeDomain","code":"PHY-MAGNETISM","level":"N1","title":"Magnetfelder und Elektromagnetismus - Orientierung","status":"canonical"},
       {"id":"KD:MAT-MAGNETIC-MATERIALS:N2","type":"KnowledgeDomain","code":"MAT-MAGNETIC-MATERIALS","level":"N2","title":"Magnetische Werkstoffe und Permanentmagnete - arbeitsfaehiges Grundverstaendnis","status":"canonical","requires":["KD:PHY-MAGNETISM:N1"]},
-      {"id":"KD:MAT-MAGNETIC-PROCESSING:N3","type":"KnowledgeDomain","code":"MAT-MAGNETIC-PROCESSING","level":"N3","title":"Magnetwerkstoffe - Prozesskette, Mikrostruktur und Kreislauf","status":"canonical","requires":["KD:MAT-MAGNETIC-MATERIALS:N2"]}
+      {"id":"KD:MAT-MAGNETIC-PROCESSING:N3","type":"KnowledgeDomain","code":"MAT-MAGNETIC-PROCESSING","level":"N3","title":"Magnetwerkstoffe - Prozesskette, Mikrostruktur und Kreislauf","status":"canonical","requires":["KD:MAT-MAGNETIC-MATERIALS:N2"]},
+      {"id":"KD:ENG-ELECTROMAGNETIC-SYSTEMS:N3","type":"KnowledgeDomain","code":"ENG-ELECTROMAGNETIC-SYSTEMS","level":"N3","title":"Elektromagnetische technische Systeme - vertiefte Anwendung","parent":"KD:ENG:N1","status":"canonical","requires":["KD:PHYS-EM:N2","KD:MAT-MAGNETIC-MATERIALS:N2"],"description":"Vertiefte Anwendung magnetischer und elektromagnetischer Werkstoffprinzipien in elektrischen Maschinen, Transformatoren, Sensorik und magnetisch gelagerten Systemen. Die Domaene beschreibt die Systemfunktion und Werkstoffrolle; technologiespezifische Auslegung bleibt anwendungsbezogen."}
     ],
     "concepts":[
       {"id":"CON:PHY:magnetic-field","type":"Concept","name":"Magnetfeld","status":"canonical"},
@@ -37,7 +38,12 @@
       {"id":"CON:MAT:microstructure","type":"Concept","name":"Mikrostruktur","status":"canonical"},
       {"id":"CON:MAT:processing","type":"Concept","name":"Werkstoffverarbeitung","status":"canonical"},
       {"id":"CON:MAT:critical-raw-materials","type":"Concept","name":"kritische Rohstoffe","status":"canonical"},
-      {"id":"CON:MAT:recycling","type":"Concept","name":"Werkstoffrecycling","status":"canonical"}
+      {"id":"CON:MAT:recycling","type":"Concept","name":"Werkstoffrecycling","status":"canonical"},
+      {"id":"CON:ENG:electric-motor","type":"Concept","name":"Elektromotor als elektromagnetisches System","status":"canonical","definition":"Technisches System zur Umwandlung elektrischer in mechanische Energie mittels elektromagnetischer Wechselwirkung; Magnetwerkstoffe koennen je nach Maschinenprinzip als Permanentmagnete oder weichmagnetische Flussfuehrung eingesetzt werden."},
+      {"id":"CON:ENG:generator","type":"Concept","name":"Generator als elektromagnetisches System","status":"canonical","definition":"Technisches System zur Umwandlung mechanischer in elektrische Energie durch elektromagnetische Induktion; die konkrete Magnetwerkstoffrolle haengt von Bauart und Erregungsprinzip ab."},
+      {"id":"CON:ENG:transformer","type":"Concept","name":"Transformator","status":"canonical","definition":"Statisches elektromagnetisches System zur Uebertragung elektrischer Energie zwischen gekoppelten Wicklungen; weichmagnetische Kerne dienen typischerweise der Flussfuehrung und Verlustbegrenzung."},
+      {"id":"CON:ENG:hall-sensor","type":"Concept","name":"Hall-Sensor","status":"canonical","definition":"Sensorprinzip zur Erfassung magnetischer Flussdichte ueber den Hall-Effekt; der Sensor ist eine Anwendung magnetischer Felder, nicht selbst notwendig ein Magnetwerkstoff-Bauteil."},
+      {"id":"CON:ENG:magnetic-bearing","type":"Concept","name":"Magnetlager","status":"canonical","definition":"Lagerung oder Fuehrung eines beweglichen Koerpers durch magnetische Kraefte; Systeme koennen permanentmagnetische, elektromagnetische oder hybride Prinzipien verwenden."}
     ],
     "consumerMappings":[
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-001","relation":"COVERS","knowledgeDomain":"KD:PHY-MAGNETISM:N1","targets":["CON:PHY:magnetic-field","CON:PHY:magnetic-dipole","CON:PHY:electromagnetism"],"status":"draft_mapping"},
@@ -45,14 +51,17 @@
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-003","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:hysteresis","CON:MAT:remanence","CON:MAT:coercivity","CON:MAT:soft-magnetic","CON:MAT:hard-magnetic"],"status":"draft_mapping"},
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-004","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:ferrite-magnet","CON:MAT:alnico","CON:MAT:smco","CON:MAT:ndfeb"],"status":"draft_mapping"},
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-005","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:curie-temperature","CON:MAT:demagnetization","CON:MAT:working-temperature"],"status":"draft_mapping"},
-      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-006","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-PROCESSING:N3","targets":["CON:MAT:composition","CON:MAT:microstructure","CON:MAT:processing","CON:MAT:critical-raw-materials","CON:MAT:recycling"],"status":"draft_mapping"}
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-006","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-PROCESSING:N3","targets":["CON:MAT:composition","CON:MAT:microstructure","CON:MAT:processing","CON:MAT:critical-raw-materials","CON:MAT:recycling"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-007","relation":"COVERS","knowledgeDomain":"KD:ENG-ELECTROMAGNETIC-SYSTEMS:N3","requiresDomains":["KD:MAT-MAGNETIC-PROCESSING:N3"],"targets":["CON:ENG:electric-motor","CON:ENG:generator","CON:ENG:transformer","CON:ENG:hall-sensor","CON:ENG:magnetic-bearing"],"status":"draft_mapping"}
     ]
   },
   "rules":[
     "Curie temperature is not maximum operating temperature.",
     "Working temperature is grade, geometry, counter-field and criterion dependent.",
     "Market prices and supply-chain values are dated evidence snapshots, not invariant concept properties.",
-    "SSF local MAG-* identifiers remain draft consumer identifiers until KG assigns canonical MAT-L*-NNNNNN LearningModule IDs.",
+    "MAG-007 application comparisons must distinguish system function from material function: motors, generators, transformers, Hall sensors and magnetic bearings do not all require the same magnetic material class.",
+    "System-level selection depends on operating point, field requirement, losses, temperature, mechanical constraints and topology; no single permanent-magnet family is universally best.",
+    "SSF local MAG-* identifiers remain draft consumer identifiers until KG assigns canonical MAT/PHY/ENG-L*-NNNNNN LearningModule IDs.",
     "SSF owns teaching text; KG owns canonical concept, knowledge-domain and promoted learning-module identities."
   ]
 }
