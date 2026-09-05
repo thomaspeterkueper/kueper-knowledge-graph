@@ -3,15 +3,16 @@
   "name":"KUEPER Magnetic Materials Canonical Concepts",
   "master":"kueper-knowledge-graph",
   "status":"canonical",
-  "version":"0.1.2",
+  "version":"0.1.3",
   "updated":"2026-09-05",
-  "sourceDocuments":["KG-0021-PERMANENT-MAGNET-MATERIALS","RES-20260831-EAA9EDD9","SSF modules/materials/MAG-007.yaml"],
+  "sourceDocuments":["KG-0021-PERMANENT-MAGNET-MATERIALS","RES-20260831-EAA9EDD9","SSF modules/materials/MAG-007.yaml","SSF modules/materials/MAG-008.yaml"],
   "records":{
     "knowledgeDomains":[
       {"id":"KD:PHY-MAGNETISM:N1","type":"KnowledgeDomain","code":"PHY-MAGNETISM","level":"N1","title":"Magnetfelder und Elektromagnetismus - Orientierung","status":"canonical"},
       {"id":"KD:MAT-MAGNETIC-MATERIALS:N2","type":"KnowledgeDomain","code":"MAT-MAGNETIC-MATERIALS","level":"N2","title":"Magnetische Werkstoffe und Permanentmagnete - arbeitsfaehiges Grundverstaendnis","status":"canonical","requires":["KD:PHY-MAGNETISM:N1"]},
       {"id":"KD:MAT-MAGNETIC-PROCESSING:N3","type":"KnowledgeDomain","code":"MAT-MAGNETIC-PROCESSING","level":"N3","title":"Magnetwerkstoffe - Prozesskette, Mikrostruktur und Kreislauf","status":"canonical","requires":["KD:MAT-MAGNETIC-MATERIALS:N2"]},
-      {"id":"KD:ENG-ELECTROMAGNETIC-SYSTEMS:N3","type":"KnowledgeDomain","code":"ENG-ELECTROMAGNETIC-SYSTEMS","level":"N3","title":"Elektromagnetische technische Systeme - vertiefte Anwendung","parent":"KD:ENG:N1","status":"canonical","requires":["KD:PHYS-EM:N2","KD:MAT-MAGNETIC-MATERIALS:N2"],"description":"Vertiefte Anwendung magnetischer und elektromagnetischer Werkstoffprinzipien in elektrischen Maschinen, Transformatoren, Sensorik und magnetisch gelagerten Systemen. Die Domaene beschreibt die Systemfunktion und Werkstoffrolle; technologiespezifische Auslegung bleibt anwendungsbezogen."}
+      {"id":"KD:ENG-ELECTROMAGNETIC-SYSTEMS:N3","type":"KnowledgeDomain","code":"ENG-ELECTROMAGNETIC-SYSTEMS","level":"N3","title":"Elektromagnetische technische Systeme - vertiefte Anwendung","parent":"KD:ENG:N1","status":"canonical","requires":["KD:PHYS-EM:N2","KD:MAT-MAGNETIC-MATERIALS:N2"],"description":"Vertiefte Anwendung magnetischer und elektromagnetischer Werkstoffprinzipien in elektrischen Maschinen, Transformatoren, Sensorik und magnetisch gelagerten Systemen. Die Domaene beschreibt die Systemfunktion und Werkstoffrolle; technologiespezifische Auslegung bleibt anwendungsbezogen."},
+      {"id":"KD:MAT-MAGNETIC-FUNCTIONS:N3","type":"KnowledgeDomain","code":"MAT-MAGNETIC-FUNCTIONS","level":"N3","title":"Fortgeschrittene magnetische Materialfunktionen - vertiefte Anwendung","parent":"KD:MAT-MAGNETIC-MATERIALS:N2","status":"canonical","requires":["KD:PHYS-EM:N2","KD:MAT-MAGNETIC-MATERIALS:N2"],"description":"Vertiefte Einordnung feld-, verlust-, abschirmungs-, magnetokalorischer und supraleitender Funktionen. Verbindet physikalische Mechanismen mit Materialverhalten, ohne unterschiedliche Phaenomene zu einem einheitlichen Magnetwerkstoffmechanismus zu verkuerzen."}
     ],
     "concepts":[
       {"id":"CON:PHY:magnetic-field","type":"Concept","name":"Magnetfeld","status":"canonical"},
@@ -43,7 +44,13 @@
       {"id":"CON:ENG:generator","type":"Concept","name":"Generator als elektromagnetisches System","status":"canonical","definition":"Technisches System zur Umwandlung mechanischer in elektrische Energie durch elektromagnetische Induktion; die konkrete Magnetwerkstoffrolle haengt von Bauart und Erregungsprinzip ab."},
       {"id":"CON:ENG:transformer","type":"Concept","name":"Transformator","status":"canonical","definition":"Statisches elektromagnetisches System zur Uebertragung elektrischer Energie zwischen gekoppelten Wicklungen; weichmagnetische Kerne dienen typischerweise der Flussfuehrung und Verlustbegrenzung."},
       {"id":"CON:ENG:hall-sensor","type":"Concept","name":"Hall-Sensor","status":"canonical","definition":"Sensorprinzip zur Erfassung magnetischer Flussdichte ueber den Hall-Effekt; der Sensor ist eine Anwendung magnetischer Felder, nicht selbst notwendig ein Magnetwerkstoff-Bauteil."},
-      {"id":"CON:ENG:magnetic-bearing","type":"Concept","name":"Magnetlager","status":"canonical","definition":"Lagerung oder Fuehrung eines beweglichen Koerpers durch magnetische Kraefte; Systeme koennen permanentmagnetische, elektromagnetische oder hybride Prinzipien verwenden."}
+      {"id":"CON:ENG:magnetic-bearing","type":"Concept","name":"Magnetlager","status":"canonical","definition":"Lagerung oder Fuehrung eines beweglichen Koerpers durch magnetische Kraefte; Systeme koennen permanentmagnetische, elektromagnetische oder hybride Prinzipien verwenden."},
+      {"id":"CON:PHY:electromagnet","type":"Concept","name":"Elektromagnet","status":"canonical","definition":"Magnetfeldquelle, deren Feld wesentlich durch elektrischen Strom in einer Wicklung oder Leiteranordnung erzeugt wird; ein ferromagnetischer Kern kann den magnetischen Kreis beeinflussen, ist aber nicht begriffsnotwendig."},
+      {"id":"CON:PHY:eddy-current","type":"Concept","name":"Wirbelstrom","status":"canonical","definition":"Durch zeitlich veraenderlichen magnetischen Fluss in einem leitfaehigen Koerper induzierter geschlossener Strom. Wirbelstroeme koennen unerwuenschte Verluste und Erwaermung verursachen oder technisch gezielt genutzt werden."},
+      {"id":"CON:MAT:magnetic-shielding","type":"Concept","name":"magnetische Abschirmung","status":"canonical","definition":"Material- und Geometriekonzepte zur Verringerung eines Magnetfeldes in einem Zielbereich. Je nach Feldart und Frequenz beruhen sie unter anderem auf Flussfuehrung in hochpermeablen Werkstoffen, induzierten Gegenfeldern oder supraleitenden Effekten; es gibt keinen universellen Abschirmmechanismus fuer alle Magnetfelder."},
+      {"id":"CON:MAT:magnetocaloric-effect","type":"Concept","name":"magnetokalorischer Effekt","status":"canonical","definition":"Reversible thermische Reaktion geeigneter magnetischer Materialien auf eine Aenderung des angelegten Magnetfeldes, die fuer magnetische Kuehlkreislaeufe genutzt werden kann. Effektstaerke und nutzbarer Temperaturbereich sind material- und zustandsabhaengig."},
+      {"id":"CON:PHY:superconductivity","type":"Concept","name":"Supraleitung","status":"canonical","definition":"Makroskopischer quantenmechanischer Zustand bestimmter Materialien unterhalb kritischer Bedingungen, charakterisiert durch verschwindenden Gleichstromwiderstand und charakteristisches magnetisches Verhalten. Kritische Temperatur, Feld und Stromdichte begrenzen den supraleitenden Zustand."},
+      {"id":"CON:PHY:flux-pinning","type":"Concept","name":"Flux Pinning","status":"canonical","definition":"Festhalten magnetischer Flussvortizes an Defekten oder anderen Pinning-Zentren in Typ-II-Supraleitern. Pinning hemmt Vortexbewegung und ist damit fuer kritische Stromdichte, Hysterese und stabile magnetische Levitation relevant; es ist vom Meissner-Effekt zu unterscheiden."}
     ],
     "consumerMappings":[
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-001","relation":"COVERS","knowledgeDomain":"KD:PHY-MAGNETISM:N1","targets":["CON:PHY:magnetic-field","CON:PHY:magnetic-dipole","CON:PHY:electromagnetism"],"status":"draft_mapping"},
@@ -52,7 +59,8 @@
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-004","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:ferrite-magnet","CON:MAT:alnico","CON:MAT:smco","CON:MAT:ndfeb"],"status":"draft_mapping"},
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-005","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-MATERIALS:N2","targets":["CON:MAT:curie-temperature","CON:MAT:demagnetization","CON:MAT:working-temperature"],"status":"draft_mapping"},
       {"consumer":"SYS:KUEPER:ssf","localId":"MAG-006","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-PROCESSING:N3","targets":["CON:MAT:composition","CON:MAT:microstructure","CON:MAT:processing","CON:MAT:critical-raw-materials","CON:MAT:recycling"],"status":"draft_mapping"},
-      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-007","relation":"COVERS","knowledgeDomain":"KD:ENG-ELECTROMAGNETIC-SYSTEMS:N3","requiresDomains":["KD:MAT-MAGNETIC-PROCESSING:N3"],"targets":["CON:ENG:electric-motor","CON:ENG:generator","CON:ENG:transformer","CON:ENG:hall-sensor","CON:ENG:magnetic-bearing"],"status":"draft_mapping"}
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-007","relation":"COVERS","knowledgeDomain":"KD:ENG-ELECTROMAGNETIC-SYSTEMS:N3","requiresDomains":["KD:MAT-MAGNETIC-PROCESSING:N3"],"targets":["CON:ENG:electric-motor","CON:ENG:generator","CON:ENG:transformer","CON:ENG:hall-sensor","CON:ENG:magnetic-bearing"],"status":"draft_mapping"},
+      {"consumer":"SYS:KUEPER:ssf","localId":"MAG-008","relation":"COVERS","knowledgeDomain":"KD:MAT-MAGNETIC-FUNCTIONS:N3","requiresDomains":["KD:ENG-ELECTROMAGNETIC-SYSTEMS:N3"],"targets":["CON:PHY:electromagnet","CON:PHY:eddy-current","CON:MAT:magnetic-shielding","CON:MAT:magnetocaloric-effect","CON:PHY:superconductivity","CON:PHY:flux-pinning"],"status":"draft_mapping"}
     ]
   },
   "rules":[
@@ -61,6 +69,11 @@
     "Market prices and supply-chain values are dated evidence snapshots, not invariant concept properties.",
     "MAG-007 application comparisons must distinguish system function from material function: motors, generators, transformers, Hall sensors and magnetic bearings do not all require the same magnetic material class.",
     "System-level selection depends on operating point, field requirement, losses, temperature, mechanical constraints and topology; no single permanent-magnet family is universally best.",
+    "MAG-008 must keep distinct mechanisms distinct: electromagnets, eddy currents, magnetic shielding, magnetocaloric response, superconductivity and flux pinning are related through magnetic fields but are not one common material mechanism.",
+    "Eddy currents can be parasitic losses or deliberately used effects; their significance depends on conductivity, geometry and field frequency/time variation.",
+    "Magnetic shielding is mechanism- and frequency-dependent; high-permeability flux guidance, conductive eddy-current shielding and superconducting magnetic response must not be taught as interchangeable.",
+    "Flux pinning in type-II superconductors is distinct from the Meissner effect and should not be reduced to generic magnetic repulsion.",
+    "Magnetocaloric performance is material-, field- and temperature-dependent; research-system efficiency or market-readiness claims are dated evidence, not invariant concept properties.",
     "SSF local MAG-* identifiers remain draft consumer identifiers until KG assigns canonical MAT/PHY/ENG-L*-NNNNNN LearningModule IDs.",
     "SSF owns teaching text; KG owns canonical concept, knowledge-domain and promoted learning-module identities."
   ]
