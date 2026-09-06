@@ -3,12 +3,13 @@
   "name": "KUEPER Relations Registry",
   "master": "kueper-knowledge-graph",
   "status": "draft_productive",
-  "version": "0.1",
-  "updated": "2026-08-31",
+  "version": "0.1.1",
+  "updated": "2026-09-06",
   "sourceDocuments": [
     "KG-0003-RELATIONS",
     "EXT-KUE-KG-20260831-001",
-    "EXT-KUE-KG-20260831-002"
+    "EXT-KUE-KG-20260831-002",
+    "OTA-KG-REQ-20260906-TRANSFER-LOGISTICS-NETWORK"
   ],
   "relationTypes": [
     { "id": "REQUIRES", "description": "Quelle setzt Ziel voraus." },
@@ -19,7 +20,10 @@
     { "id": "MAPS_TO", "description": "Quelle wird auf kanonisches Ziel abgebildet." },
     { "id": "OWNED_BY", "description": "Quelle gehoert fachlich oder kuratorisch zu Ziel." },
     { "id": "STORED_IN", "description": "Quelle ist im Zielsystem oder Repository gespeichert." },
-    { "id": "GROUNDED_IN", "description": "Quelle nutzt Ziel als kanonischen Realwissenschafts- oder Evidenzanker, ohne projektspezifische Setzungen auf das Ziel zu uebertragen." }
+    { "id": "GROUNDED_IN", "description": "Quelle nutzt Ziel als kanonischen Realwissenschafts- oder Evidenzanker, ohne projektspezifische Setzungen auf das Ziel zu uebertragen." },
+    { "id": "EXPANDS", "description": "Quelle erweitert den dokumentierten Scope oder das Modell des Ziels, ohne es zu ersetzen." },
+    { "id": "REFERENCES", "description": "Quelle verweist dokumentarisch auf das Ziel. Die Relation behauptet fuer sich allein weder physische Nutzung noch Abhaengigkeit." },
+    { "id": "RELATED_TO", "description": "Quelle und Ziel sind fachlich oder narrativ relevant verbunden, ohne staerkere gerichtete Semantik zu behaupten." }
   ],
   "records": [
     { "id": "REL:DOC:OTA:OTA-SCI-0083-2026-DE:REQUIRES:KD:GEO-SEISM:N2", "type": "Relation", "from": "DOC:OTA:OTA-SCI-0083-2026-DE", "relation": "REQUIRES", "to": "KD:GEO-SEISM:N2", "status": "canonical", "source": "KG-0003" },
@@ -44,6 +48,8 @@
     { "id": "REL:UNL:NOX:orbital-navigation:UNLOCKS:BLD:NOX:raumhafen-1", "type": "Relation", "from": "UNL:NOX:orbital-navigation", "relation": "UNLOCKS", "to": "BLD:NOX:raumhafen-1", "status": "canonical", "source": "KG-0003" },
     { "id": "REL:MAP:KG-0002:KNOW-GEO-SEISM-N2:MAPS_TO:KD:GEO-SEISM:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-GEO-SEISM-N2", "relation": "MAPS_TO", "to": "KD:GEO-SEISM:N2", "status": "draft_productive", "source": "KG-0003" },
     { "id": "REL:MAP:KG-0002:KNOW-GEO-PETRO-N2:MAPS_TO:KD:GEO-PETRO:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-GEO-PETRO-N2", "relation": "MAPS_TO", "to": "KD:GEO-PETRO:N2", "status": "draft_productive", "source": "KG-0003" },
-    { "id": "REL:MAP:KG-0002:KNOW-MATH-BAYES-N2:MAPS_TO:KD:MATH-BAYES:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-MATH-BAYES-N2", "relation": "MAPS_TO", "to": "KD:MATH-BAYES:N2", "status": "draft_productive", "source": "KG-0003" }
+    { "id": "REL:MAP:KG-0002:KNOW-MATH-BAYES-N2:MAPS_TO:KD:MATH-BAYES:N2", "type": "Relation", "from": "MAP:KG-0002:KNOW-MATH-BAYES-N2", "relation": "MAPS_TO", "to": "KD:MATH-BAYES:N2", "status": "draft_productive", "source": "KG-0003" },
+    { "id": "REL:DOC:OTA:OTA-TEC-0122-2026-DE:REFERENCES:DOC:OTA:OTA-TEC-0082-2026-DE", "type": "Relation", "from": "DOC:OTA:OTA-TEC-0122-2026-DE", "relation": "REFERENCES", "to": "DOC:OTA:OTA-TEC-0082-2026-DE", "status": "canonical", "source": "OTA-KG-REQ-20260906-TRANSFER-LOGISTICS-NETWORK" },
+    { "id": "REL:DOC:OTA:OTA-TEC-0122-2026-DE:RELATED_TO:DOC:OTA:OTA-TEC-0092-2026-DE", "type": "Relation", "from": "DOC:OTA:OTA-TEC-0122-2026-DE", "relation": "RELATED_TO", "to": "DOC:OTA:OTA-TEC-0092-2026-DE", "status": "canonical", "source": "OTA-KG-REQ-20260906-TRANSFER-LOGISTICS-NETWORK" }
   ]
 }
