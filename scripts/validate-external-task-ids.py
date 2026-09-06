@@ -13,6 +13,13 @@ STATUSES = ("open", "done", "rejected")
 ID_RE = re.compile(r"^\s*(?:id:\s*|(?:-\s*)?\*\*ID:\*\*\s*|ID:\s*)(`?)([^`\s]+)\1\s*$", re.IGNORECASE | re.MULTILINE)
 FILENAME_ID_RE = re.compile(r"^(.+?)\.md$")
 
+# Historical L3 requests used this value as a workflow sentinel before stable
+# external-task identities were assigned. It is intentionally non-unique and
+# must not be treated as a canonical request ID. Keep it visible as a warning
+# so legacy files can be migrated incrementally without weakening uniqueness
+# checks for real IDs.
+LEGACY_PLACEHOLDER_IDS = {"REQ:L3:PENDING"}
+
 
 def declared_id(path: Path) -> str | None:
     text = path.read_text(encoding="utf-8", errors="replace")
@@ -33,8 +40,11 @@ def main() -> int:
 
     by_id: dict[str, list[Path]] = defaultdict(list)
     missing: list[Path] = []
+    legacy_placeholders: list[tuple[Path, str]] = []
     for path, task_id in rows:
-        if task_id:
+        if task_id in LEGACY_PLACEHOLDER_IDS:
+            legacy_placeholders.append((path, task_id))
+        elif task_id:
             by_id[task_id].append(path)
         else:
             missing.append(path)
@@ -67,6 +77,11 @@ def main() -> int:
             print(f"  {prefix}")
             for path in paths:
                 print(f"    - {path.relative_to(ROOT)}")
+
+    if legacy_placeholders:
+        print("Legacy placeholder IDs ignored for uniqueness (warning):")
+        for path, task_id in legacy_placeholders:
+            print(f"  - {path.relative_to(ROOT)}: {task_id}")
 
     if missing:
         print("External tasks without a parseable declared ID (warning):")
