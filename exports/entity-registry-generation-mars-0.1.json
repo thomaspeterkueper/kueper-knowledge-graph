@@ -1,0 +1,59 @@
+{
+  "schema": "KUEPER-ENTITY-REGISTRY-0.1-SHARD",
+  "name": "KUEPER Generation Mars Character Registry",
+  "master": "kueper-knowledge-graph",
+  "status": "canonical",
+  "version": "0.1.0",
+  "updated": "2026-09-06",
+  "sourceDocuments": [
+    "KG-0009-NARRATIVE-WORLD-MODEL",
+    "OTA-KG-REQ-20260905-generation-mars-bios"
+  ],
+  "records": [
+    {
+      "id": "CHAR:NXU:kaelen",
+      "type": "Character",
+      "name": "Kaelen",
+      "status": "canonical",
+      "universe": "NXU",
+      "identityOwner": "SYS:KUEPER:knowledge-graph",
+      "contentSourceOfTruth": "noxia-universe",
+      "documentReferences": ["DOC:OTA:OTA-BIO-0014-2092-DE"]
+    },
+    {
+      "id": "CHAR:NXU:rashid",
+      "type": "Character",
+      "name": "Rashid Al-Mansouri",
+      "status": "canonical",
+      "universe": "NXU",
+      "identityOwner": "SYS:KUEPER:knowledge-graph",
+      "contentSourceOfTruth": "noxia-universe",
+      "documentReferences": ["DOC:OTA:OTA-BIO-0035-2092-DE"]
+    },
+    {
+      "id": "CHAR:NXU:lena",
+      "type": "Character",
+      "name": "Lena Kowalski",
+      "status": "canonical",
+      "universe": "NXU",
+      "identityOwner": "SYS:KUEPER:knowledge-graph",
+      "contentSourceOfTruth": "noxia-universe",
+      "documentReferences": ["DOC:OTA:OTA-BIO-0036-2092-DE"]
+    },
+    {
+      "id": "CHAR:NXU:keiko",
+      "type": "Character",
+      "name": "Keiko Nakamura",
+      "status": "canonical",
+      "universe": "NXU",
+      "identityOwner": "SYS:KUEPER:knowledge-graph",
+      "contentSourceOfTruth": "noxia-universe",
+      "documentReferences": ["DOC:OTA:OTA-BIO-0037-2092-DE"]
+    }
+  ],
+  "rules": [
+    "Character records carry stable identity only; time-dependent biography properties belong in States or source-system documents.",
+    "OTA biography documents are archival/documentary projections and do not replace the character content Source of Truth.",
+    "Superseded biography documents remain historical document references but must not be resolved as the current biography for a Character."
+  ]
+}
